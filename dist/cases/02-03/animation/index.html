@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="02-03" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="從布氏鯨的 Biotwang 原音出發，認識研究者如何確認聲音來源，再用 AI 搜尋跨海域、跨年份的錄音線索。">
+  <title>海裡這一聲，是誰發出的？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.bundle.js?release=20261027-media" defer></script>
+<link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#stage">跳至照片與動畫</a>
+  <main>
+    <header class="page-heading">
+      <p class="series">AI × 生態研究 · Biotwang 聲音辨識</p>
+      <h1>海裡這一聲，是誰發出的？</h1>
+      <p class="intro">從鯨的聲音，到跨海域、跨年份的錄音線索。</p>
+    </header>
+
+    <section class="story" aria-label="布氏鯨原音、研究圖與方法動畫">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="布氏鯨照片、頻譜或研究圖；文字說明與控制在畫面外">
+          <img id="static-fallback" src="../assets/brydes-whale-mariana-noaa-original.JPG" alt="NOAA 團隊拍攝的布氏鯨來源照片；照片與本段聲音不是同一次觀察。">
+          <svg id="scene" viewBox="0 0 1000 620" role="img" aria-labelledby="scene-title scene-description" preserveAspectRatio="xMidYMid meet">
+            <title id="scene-title">海裡這一聲，是誰發出的？</title>
+            <desc id="scene-description">從布氏鯨照片與原音開始，逐步說明現場確認、頻譜、模型搜尋及各站錄音中的季節變化。完整文字和來源保留在畫面外及下方全文。</desc>
+            <g id="image-workspace"></g>
+          </svg>
+        </div>
+        <p id="frame-meta" class="frame-meta">NOAA 布氏鯨照片 · 照片與原音並非同次觀察</p>
+        <div id="visual-readout" class="visual-readout js-only" hidden>先看見鯨，再聽這段 5 秒的原音。按播放後才會發聲。</div>
+        <div id="transport" class="transport js-only" role="group" aria-label="播放控制" hidden>
+          <div class="buttons">
+            <button id="play-toggle" class="primary" type="button">播放動畫</button>
+            <button id="replay" type="button">從頭重播</button>
+            <button id="sound-toggle" class="js-only" type="button" aria-pressed="true" aria-label="切換原音播放" hidden>聲音：開</button>
+            <output id="clock" aria-label="播放時間">00:00 / 01:28</output>
+          </div>
+          <label class="timeline-label" for="timeline">播放進度</label>
+          <input id="timeline" type="range" min="0" max="88" step="0.1" value="0" aria-label="播放進度">
+        </div>
+        <div class="source-actions js-only" hidden>
+          <button id="open-source" type="button">查看這張原圖</button>
+          <a href="#source-gallery">原音、研究圖與來源</a>
+        </div>
+        <p id="player-status" class="player-status" role="status">目前顯示靜態照片。下方保留完整文字、原音連結與來源。</p>
+        <p id="audio-status" class="audio-status js-only" role="status" hidden>原音尚未播放。啟動動畫後，可用聲音按鈕切換。</p>
+        <audio id="biotwang-audio" preload="metadata" src="assets/biotwang-google-original.wav"></audio>
+      </div>
+
+      <aside class="narrative" aria-label="目前段落說明">
+        <div class="phase-meta">
+          <span id="phase-position">1 / 8</span>
+          <span id="phase-time">00:00–00:10</span>
+        </div>
+        <h2 id="phase-title">海裡這一聲，是誰發出的？</h2>
+        <p id="phase-description" class="description">布氏鯨生活在溫暖的海域。牠發出的 Biotwang，聽起來有一段像金屬顫動的聲音。先聽這段原音。</p>
+        <p id="phase-detail" class="detail">這是 Google Research 公開的 5 秒範例，按原速播放。照片由 NOAA 團隊在 2010 年拍攝；照片與這段聲音不是同一次觀察。</p>
+      </aside>
+    </section>
+
+    <nav class="phase-navigation js-only" aria-label="動畫段落" hidden><button type="button" data-phase="0">先聽鯨魚</button><button type="button" data-phase="1">確認聲音來源</button><button type="button" data-phase="2">把聲音展開</button><button type="button" data-phase="3">讓模型學會找</button><button type="button" data-phase="4">掃描歷史錄音</button><button type="button" data-phase="5">回到海中的位置</button><button type="button" data-phase="6">看出季節變化</button><button type="button" data-phase="7">這些聲音告訴我們</button></nav>
+    <noscript>
+      <p class="nojs-note">目前顯示靜態照片。下方可閱讀完整文字與來源圖，也可<a href="assets/biotwang-google-original.wav" target="_blank" rel="noopener">開啟 5 秒原音</a>，不需要啟動動畫。</p>
+    </noscript>
+    <details id="story-text" open>
+      <summary>閱讀完整文字</summary>
+      <ol class="transcript"><li><h2>海裡這一聲，是誰發出的？</h2><p>布氏鯨生活在溫暖的海域。牠發出的 Biotwang，聽起來有一段像金屬顫動的聲音。先聽這段原音。</p><p class="detail">這是 Google Research 公開的 5 秒範例，按原速播放。照片由 NOAA 團隊在 2010 年拍攝；照片與這段聲音不是同一次觀察。</p></li><li><h2>看見與聽見，要對上同一次遭遇</h2><p>目視觀察先確認附近看見的是布氏鯨；同期的水下錄音則確認出現 Biotwang。把兩項紀錄放在一起，才能將這種聲音與布氏鯨連起來。</p><p class="detail">10 次確認物種的遭遇中，9 次錄到 Biotwang。反覆的視聽配對支持發聲物種的判定；這個比例不是 AI 的準確率，也沒有指認照片中某一隻鯨正在發聲。</p></li><li><h2>聲音也有可以辨認的形狀</h2><p>再聽一次相同的片段。游標向右走，表示時間經過；線條越高，聲音頻率越高。較亮的地方，表示這段錄音在該頻率的能量較強。</p><p class="detail">這張頻譜由原音計算，先放大 0–1,200 Hz 的低頻區域。下方保留 0–8,000 Hz 總覽。顏色是相對功率，不能當成海中的實際音量。</p></li><li><h2>從人確認過的聲音學起</h2><p>研究者先標出有、沒有 Biotwang 的錄音，讓模型學習頻譜中的線索。初版模型找出的高分候選，也送回人工確認真偽，補進後續訓練。</p><p class="detail">研究另抽取隨機片段檢查，減少只看模型偏好片段的問題。這裡解說原研究的方法，沒有在這個頁面重新執行聲音辨識。</p></li><li><h2>長錄音，分成短片段來搜尋</h2><p>每段 5 秒錄音都有一個分數；分數越高，表示模型判斷越像 Biotwang。這組教學例子的最高分是 0.92，便用它代表整個 75 秒區段。它高於示意門檻 0.70，因此這個區段記為有聲。</p><p class="detail">分數與門檻都是教學設定，未重新推論，也不對應前面的原音。0.92 不是 92% 準確率。原研究為四個主要分析站分別選擇門檻，低分或零星紀錄另由人工抽查。</p></li><li><h2>把各地留下的聲音放回地圖</h2><p>研究搜尋北太平洋 13 個監測站的長期錄音。後面的時間圖聚焦在 Wake、Pagan、Tinian、Saipan 這 4 個較常錄到 Biotwang 的站點。</p><p class="detail">原圖標示的是錄音站的位置，不是鯨魚的位置。它也沒有告訴我們某一隻鯨從哪裡游到哪裡。</p></li><li><h2>有些時候，更常錄到這一聲</h2><p>作者將每天實際取得的錄音分成 75 秒區段，算出有多少比例被判定含有 Biotwang。較明顯的高峰多在 8–11 月，部分站點也有較小的春季高峰。</p><p class="detail">這是作者的 Figure 3，各站與各年仍有差異。一個區段被記為有聲，不代表整段 75 秒都在叫。圖上的百分比不是鯨魚數量；沒有錄到，也不等於沒有鯨魚。</p></li><li><h2>知道何時聽見，還不等於知道有幾隻</h2><p>確認了聲音來源，再讓 AI 搜尋大量錄音，研究者就能追問：哪些地點、哪些時段會錄到這種聲音？不同年份有沒有改變？</p><p class="detail">這些紀錄提供聲音活動的線索。要估計個體數量、確認移動路線，仍需要其他觀測。</p></li></ol>
+    </details>
+    <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title">
+      <h2 id="source-gallery-title">原音、研究圖與來源</h2>
+      <p class="source-gallery-intro">這裡保留完整來源圖與錄音。可對照動畫中的局部畫面，閱讀來源、圖軸及使用說明。<a href="assets/biotwang-google-original.wav" target="_blank" rel="noopener">開啟 5 秒原音</a>。</p>
+      <div class="source-gallery-items"><figure><a href="../assets/brydes-whale-mariana-noaa-original.JPG" target="_blank" rel="noopener"><img src="../assets/brydes-whale-mariana-noaa-original.JPG" loading="lazy" alt="布氏鯨的真實照片"></a><figcaption><h3>布氏鯨的真實照片</h3><p>NOAA Fisheries／Adam Ü，2010 年馬里亞納調查，Permit #14097。NOAA Photo Library anim2619，CC BY 2.0。這張照片不是這段音檔的同期影像，也不是 2018 年視聽配對遭遇的現場照片。</p></figcaption></figure><figure><a href="assets/spectrogram-low-frequency.png" target="_blank" rel="noopener"><img src="assets/spectrogram-low-frequency.png" loading="lazy" alt="同一段原音的低頻放大"></a><figcaption><h3>同一段原音的低頻放大</h3><p>由 5 秒原音計算的 0–1,200 Hz 頻譜。橫軸是秒，縱軸是 Hz，顏色是相對功率（dB）。這是供人閱讀的聲音展示，沒有重製模型的 mel／PCEN 輸入，也不是分類分數。</p></figcaption></figure><figure><a href="assets/spectrogram.png" target="_blank" rel="noopener"><img src="assets/spectrogram.png" loading="lazy" alt="同一段原音的頻率總覽"></a><figcaption><h3>同一段原音的頻率總覽</h3><p>0–8,000 Hz，使用與低頻放大相同的相對功率色階。原音的取樣率為 24,000 Hz。只改變觀看範圍，沒有替播放音檔濾波、加速或延長。</p></figcaption></figure><figure><a href="../assets/paper-figure-1.webp" target="_blank" rel="noopener"><img src="../assets/paper-figure-1.webp" loading="lazy" alt="Figure 1：北太平洋錄音站"></a><figcaption><h3>Figure 1：北太平洋錄音站</h3><p>Allen 等（2024），CC BY 4.0。完整原圖標示研究搜尋的 13 個 HARP 站。站點不代表鯨的位置，圖中沒有個體移動路線。</p></figcaption></figure><figure><a href="../assets/paper-figure-3.webp" target="_blank" rel="noopener"><img src="../assets/paper-figure-3.webp" loading="lazy" alt="Figure 3：每天的錄音陽性比例"></a><figcaption><h3>Figure 3：每天的錄音陽性比例</h3><p>Allen 等（2024），CC BY 4.0。四個分圖 A–D 依序為 Wake、Pagan、Saipan、Tinian；陰影標出有錄音的時段。75 秒區段達到該站門檻即記為陽性，再以當天實際錄音彙整比例；不是鯨魚數或真正持續發聲的秒數。</p></figcaption></figure></div>
+    </section>
+    <footer>
+      <h2>研究與資料來源</h2>
+      <ul class="source-links"><li><a href="https://doi.org/10.3389/fmars.2024.1394695" target="_blank" rel="noopener">Allen 等（2024）：Biotwang 物種判定與長期錄音研究</a></li><li><a href="https://research.google/blog/whistles-songs-boings-and-biotwangs-recognizing-whale-vocalizations-with-ai/" target="_blank" rel="noopener">Google Research：原音範例與模型說明</a></li><li><a href="https://www.fisheries.noaa.gov/feature-story/hey-google-find-new-whale-sound" target="_blank" rel="noopener">NOAA：研究背景</a></li><li><a href="https://www.flickr.com/photos/noaaphotolib/34590655782/" target="_blank" rel="noopener">NOAA Photo Library：照片署名與 CC BY 2.0 授權</a></li><li><a href="assets/biotwang-google-original.wav" target="_blank" rel="noopener">下載本地評閱用的 5 秒原音（原始 bytes 保留）</a></li><li><a href="assets/audio-provenance.json" target="_blank" rel="noopener">音訊參數、處理方式與原檔 hash</a></li><li><a href="SOURCE.md?release=20261027-media" target="_blank" rel="noopener">完整來源、授權狀態與製作說明</a></li><li>Google 原音的獨立重用條款未明示；這是本地試作評閱，尚未公開發布。照片與論文圖的授權分別列示，不以它們的授權推定音檔權利。</li><li>本片沒有執行新的模型推論。頻譜來自原音計算；視聽配對、人工標記和短窗彙整為教學示意；時間結果直接使用原論文 Figure 3。</li><li>逐窗分數與 0.70 門檻均為教學設定，不對應前面的原音或任何站點的實際輸出。15 個分數取最大值 0.92，僅示範一個 75 秒區段的判定；不是 92% 準確率。</li></ul>
+    </footer>
+  </main>
+
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title" aria-describedby="source-caption">
+    <div class="dialog-heading">
+      <h2 id="source-dialog-title">完整來源圖</h2>
+      <form method="dialog">
+        <button id="close-source" type="submit" value="close">關閉原圖</button>
+      </form>
+    </div>
+    <figure class="dialog-photo">
+      <img id="source-image" alt="目前畫面的完整來源圖。">
+      <figcaption id="source-caption"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

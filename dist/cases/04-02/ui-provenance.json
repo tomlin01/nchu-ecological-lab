@@ -1,0 +1,76 @@
+{
+  "case_id": "04-02",
+  "ui_revision": "navigation-media-v01",
+  "content_baseline": "web-hybrid-v01",
+  "status": "integrated_local_verified",
+  "original_parent_sha256": "6e8e1c25df0f89221e9204683bbb620134ef5e0f5a4e0802448cffe83ca5abcb",
+  "original_embed_sha256": "5b915a79d9af4359b82d5545f421f9c7226d02587ef2758bd92188e33463a575",
+  "new_ui_sources": [
+    "sidebar.css",
+    "sidebar.js",
+    "media-expand.css",
+    "media-expand.js",
+    "media-embed.css",
+    "media-embed.js",
+    "site-map.js"
+  ],
+  "chapter_navigation_preserved": true,
+  "same_media_node_prepared": true,
+  "runtime_and_media_hashes_preserved": true,
+  "embed_html_only_presentation_adapter": true,
+  "authorized_movie_link_changes": "animation/index.html",
+  "birdnet_embed_direct_mp4_links_removed": 0,
+  "new_model_inference": false,
+  "new_acceptance_event": false,
+  "external_publication": false,
+  "static_verification": "work/ecology-ai-rollout/navigation-media-v01/static-verification.json",
+  "browser_checked": true,
+  "browser_exclusion_reason": null,
+  "ui_work_source_hashes": {
+    "sidebar.css": "99f5d5ab596011c351d80de4c548ae5a13af537321910e2b8a6c94ca2316d8c4",
+    "sidebar.js": "73870db60f29713ca75f2200d0b7f8da677fb8d649263a7927399335c3a27e8c",
+    "media-expand.css": "db455e8611f990191b48acfa5ad95c19b7d26d75e62e3b5af2384c1f0d5570cc",
+    "media-expand.js": "1d51f195b7c770fddf5af0d67697aca59dad66d6393e1bcb122d753dc2f76226",
+    "media-embed.css": "561f2ec7588efb7b147b20277e64213119918cdf02487b6d29772f2a3bee379a",
+    "media-embed.js": "8db832ab2b4157cd94d9c801d9b89a96bf93e989e341458433d86f21a4cb5141",
+    "fonts/ui-sans.woff2": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998"
+  },
+  "final_shared_ui": {
+    "fonts/ui-sans.woff2": {
+      "bytes": 98204,
+      "sha256": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998"
+    },
+    "media-embed.css": {
+      "bytes": 3477,
+      "sha256": "561f2ec7588efb7b147b20277e64213119918cdf02487b6d29772f2a3bee379a"
+    },
+    "media-embed.js": {
+      "bytes": 4081,
+      "sha256": "8db832ab2b4157cd94d9c801d9b89a96bf93e989e341458433d86f21a4cb5141"
+    },
+    "media-expand.css": {
+      "bytes": 6099,
+      "sha256": "db455e8611f990191b48acfa5ad95c19b7d26d75e62e3b5af2384c1f0d5570cc"
+    },
+    "media-expand.js": {
+      "bytes": 16192,
+      "sha256": "1d51f195b7c770fddf5af0d67697aca59dad66d6393e1bcb122d753dc2f76226"
+    },
+    "sidebar.css": {
+      "bytes": 8522,
+      "sha256": "99f5d5ab596011c351d80de4c548ae5a13af537321910e2b8a6c94ca2316d8c4"
+    },
+    "sidebar.js": {
+      "bytes": 13719,
+      "sha256": "73870db60f29713ca75f2200d0b7f8da677fb8d649263a7927399335c3a27e8c"
+    },
+    "site-map.js": {
+      "bytes": 3173,
+      "sha256": "c44c731c47aeaaf8ce393586ae9ec60c8d78aa4ebfbdbdad3867fbbb5d79ddb7"
+    }
+  },
+  "final_verification": "work/ecology-ai-rollout/navigation-media-v01/verification.json",
+  "original_provenance_and_narrative_records_unchanged": true,
+  "sidebar_default_state": "collapsed",
+  "sidebar_collapsible_at_all_sizes": true
+}

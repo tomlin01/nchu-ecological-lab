@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-21T14:42:42.030988+08:00",
+  "scope": "Independent IFCB instrument Figure; main application integration owned by root.",
+  "actual_kit": [
+    "iso-kit.mjs",
+    "lathe.mjs",
+    "tube.mjs",
+    "audit.mjs"
+  ],
+  "license_file": "ANATOMY-LICENSE.txt",
+  "license_source": "/Users/tom/.agents/skills/anatomy/LICENSE",
+  "part_count": 80,
+  "solid_count": 74,
+  "tube_routes": 6,
+  "sorted_items": 170,
+  "geometry_audit": {
+    "report": "audit-report.txt",
+    "all_failures": 0,
+    "constructor_shapes_match_drawn_geometry": true,
+    "full_hook": "A.auditOrExit(R,P)",
+    "motion_scope": "Hardware static; optical/signal overlays are diagrammatic and not structural solids."
+  },
+  "lines": {
+    "dark": "0 floating ends / 12 ends / 9 lines",
+    "light": "0 floating ends / 12 ends / 9 lines",
+    "logs": [
+      "qa-dark.log",
+      "qa-light.log"
+    ]
+  },
+  "seek": {
+    "tested_times": [
+      0,
+      0.7,
+      1.7,
+      1.95,
+      2.2,
+      3.9,
+      4.2,
+      5.5,
+      6.8,
+      7.1,
+      9.8,
+      11,
+      13
+    ],
+    "reverse_state_and_svg_markup_identical": true,
+    "log": "qa-dark.log"
+  },
+  "projection": {
+    "pass": true,
+    "points": 178,
+    "maxProjectionErrorPixels": 5.229594535194337e-12,
+    "noIndependentTimer": true
+  },
+  "visual_review": {
+    "desktop": true,
+    "phone_css_width": 390,
+    "phone_horizontal_overflow": false,
+    "themes": [
+      "dark",
+      "light"
+    ],
+    "mechanism_closeups_scale": 4,
+    "inspected": [
+      "moment-0.png",
+      "moment-4-2.png",
+      "moment-5-5.png",
+      "moment-6-9.png",
+      "moment-11.png",
+      "moment-13.png",
+      "closeup-dark-4x.png",
+      "closeup-light-4x.png",
+      "phone.png",
+      "lines-dark.png",
+      "lines-light.png"
+    ],
+    "independent_review": "Second reviewer viewed 4.2s,6.9s and dark4x: upstream detection and downstream imaging distinguishable; no blocker."
+  },
+  "api": {
+    "module": "instrument.mjs",
+    "exports": [
+      "mountInstrument(parentSvgGroup)",
+      "INSTRUMENT_CSS"
+    ],
+    "instance": [
+      "render(localSeconds)",
+      "getState()",
+      "dispose()"
+    ],
+    "duration_seconds": 13,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      620
+    ]
+  },
+  "limits": [
+    "Functional illustration; no claim about the 2020 hardware layout, dimensions or parameters.",
+    "Optical paths simplified; colors are functional rather than calibrated wavelengths.",
+    "Timing, particle marker and travel are expanded for explanation.",
+    "No source ROI is claimed to be the same illustrated particle.",
+    "Integrated browser/player QA is not part of this module-only check."
+  ],
+  "hashes": {
+    "instrument.mjs": "d2f783871e4e0f7460814b3217e324341fb312411f74d29f4c45370c51a379c7",
+    "instrument-data.json": "97ae24704d8b6f29b65f6b11a516c2f439a5eb2bf8a26518a1e742214dda542d",
+    "geometry.mjs": "8a40a270e6c8aeab4b8d9adc5a9a98900fcb98e52e9f69f30fdb36fa8a92a685",
+    "styles.mjs": "23897f459aab34f24f2448ff12ea95c8d5adf0d88fdf9c54704fca225e976fe0",
+    "build.mjs": "71032fafa55aaac4d3199d8f237b026792ed833d24247eb0b628ffdf67123540",
+    "instrument.svg": "38dd0b8ff287f7780a1213478c3d90ac4c834554bc3643a3268d3ea6ffa7b4af",
+    "audit-report.txt": "779e0599adf6e4e14db0362ff94f462240365ec5c9be0ef46a6c7c52a1ee6579",
+    "ANATOMY-LICENSE.txt": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796"
+  }
+}

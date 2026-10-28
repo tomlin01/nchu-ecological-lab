@@ -1,0 +1,59 @@
+/* Shared control geometry. Palette values live in theme-tokens.css. */
+#ecology-theme-toggle,
+html[data-theme] .media-expand-toolbar button.ecology-theme-toggle {
+  box-sizing: border-box;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  min-height: 44px;
+  margin: 0;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 0;
+  background: var(--theme-button-bg);
+  color: var(--theme-button-ink);
+  font: 500 16px/1.4 "Ecology UI", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+#ecology-theme-toggle:hover,
+html[data-theme] .media-expand-toolbar button.ecology-theme-toggle:hover {
+  background: var(--theme-surface-hover);
+  color: var(--theme-ink);
+}
+#ecology-theme-toggle:focus-visible,
+html[data-theme] .media-expand-toolbar button.ecology-theme-toggle:focus-visible {
+  outline: 3px solid var(--theme-focus);
+  outline-offset: 2px;
+}
+#ecology-theme-toggle {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + 6px);
+  right: calc(max(12px, env(safe-area-inset-right, 0px)) + 72px);
+  z-index: 83;
+}
+body.ecology-sidebar-ready .ecology-sidebar-ui::before {
+  padding-right: calc(max(12px, env(safe-area-inset-right, 0px)) + 156px);
+}
+body.ecology-sidebar-ready .ecology-sidebar-toggle {
+  right: max(12px, env(safe-area-inset-right, 0px));
+}
+body.ecology-sidebar-drawer-open #ecology-theme-toggle,
+html[data-theme-media-expanded="true"] #ecology-theme-toggle { visibility: hidden; }
+html[data-theme] .media-expand-toolbar .media-expand-title { flex: 1; min-width: 0; }
+html[data-theme] .media-expand-toolbar button.ecology-theme-toggle { flex: 0 0 auto; }
+/* Theme-specific art stays hidden until the selected source replaces the old one. */
+html[data-theme-controller="ready"][data-theme="light"] img[data-theme-light][data-theme-dark]:not([data-theme-image-ready="light"]),
+html[data-theme-controller="ready"][data-theme="dark"] img[data-theme-light][data-theme-dark]:not([data-theme-image-ready="dark"]) { visibility: hidden; }
+@media (max-width: 360px) {
+  html[data-theme] .media-expand-stage.is-media-expanded > .media-expand-toolbar { gap: 8px; }
+  html[data-theme] .media-expand-toolbar button.ecology-theme-toggle { min-width: 60px; padding-inline: 10px; }
+}
+@media print {
+  #ecology-theme-toggle,
+  html[data-theme] .media-expand-toolbar button.ecology-theme-toggle { display: none !important; }
+}

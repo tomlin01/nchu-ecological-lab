@@ -1,0 +1,190 @@
+{
+  "case_id": "03-03",
+  "title": "這次叫的，還是同一隻嗎？",
+  "version": "web-v02",
+  "visual_revision": "source-comparison-plate",
+  "image_revision": "hero-v02 reused",
+  "animation_version": "prototype-v02",
+  "accepted_animation_preserved": false,
+  "status": "integrated_local_ready_for_review",
+  "model_inference_run": false,
+  "deployed": false,
+  "files": {
+    "03-03.html": {
+      "bytes": 20017,
+      "sha256": "8f4525cd028fca78090e6df56c31ab9a097b65276509ea3fb21f007b82f8042a"
+    },
+    "README.md": {
+      "bytes": 482,
+      "sha256": "7c9c6f123719a9c32de77e7077df7e75be61d5d7d8fb55361698ec4e042da94e"
+    },
+    "animation/README.md": {
+      "bytes": 1873,
+      "sha256": "b21b1361fb40a60a4c355c6bb4a4a68314939fd2644a360f74398e7451bc4ad9"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 4986,
+      "sha256": "e1d79b5f7ae68196b1075466c36b3d3787cc1d5052183a275ffaa009b1066b79"
+    },
+    "animation/app.mjs": {
+      "bytes": 13292,
+      "sha256": "db8c343d83c1d7c92d8cf56fe1c6a4cfc5062a5e744332d5afad11eea65519a4"
+    },
+    "animation/assets/audio/a.wav": {
+      "bytes": 99690,
+      "sha256": "6f8fcac5e5e11a0a5132382c16996fe03b4a65b3dfc0009206ce9569097ada73"
+    },
+    "animation/assets/audio/b.wav": {
+      "bytes": 82124,
+      "sha256": "ff4ea4138d37bb699f661bbeafc9730b6ce1dd0e15c76d86e62583cb07d24d73"
+    },
+    "animation/assets/audio/q.wav": {
+      "bytes": 118874,
+      "sha256": "03f3cc9102e5d61d9fba0524531ad32fb068c8733b699d2cbcdbbe45e39dfaef"
+    },
+    "animation/assets/audio/teaching.wav": {
+      "bytes": 8467244,
+      "sha256": "e0643681ce30c54bce28d304febeecbc629c6b3a819be978390e127d2bb8bdaa"
+    },
+    "animation/assets/little-owl-context.webp": {
+      "bytes": 229776,
+      "sha256": "a21762df548ad162ee247d0f033aaa24f72cd850dbbf67fc0953ed6ba81ab24f"
+    },
+    "animation/assets/spectrograms/a.png": {
+      "bytes": 73137,
+      "sha256": "cab3e45f57281e7caba51059cf2dd504c71638412d42c128361002a478335ce8"
+    },
+    "animation/assets/spectrograms/b.png": {
+      "bytes": 94163,
+      "sha256": "45f8a04de2641903629c05a83cbd78311993830ec7d308b0b17b179296416a1f"
+    },
+    "animation/assets/spectrograms/q.png": {
+      "bytes": 79740,
+      "sha256": "b14b18b6df67c740998a144cfc415888db832b425518e6cef51a137912c1af33"
+    },
+    "animation/audio-data.json": {
+      "bytes": 17989,
+      "sha256": "5b174ec95e5109566c815d65d03a4fcc992b62d531a277f1c6685a7bce5ec0d1"
+    },
+    "animation/embed.css": {
+      "bytes": 782,
+      "sha256": "30d71e025b5f60c30c7123065073c4bba8dcbeee391cdad65055e4bc5a62b726"
+    },
+    "animation/embed.html": {
+      "bytes": 19179,
+      "sha256": "c4c51bc4addbce9bcd40c48f4a3d49bc7cfcb2eb3d226ee8ca9e0ef54c71464f"
+    },
+    "animation/embed.js": {
+      "bytes": 7149,
+      "sha256": "267fc5b5a201d3b38a6cad4673055d10ffb15acc5612eb2509e515ac8a0fb684"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/sans.woff2": {
+      "bytes": 165912,
+      "sha256": "4a790d869453a9f3038831b5da84a0626ba4912b703ef970aada144a7ae35ce9"
+    },
+    "animation/fonts/serif.woff2": {
+      "bytes": 221544,
+      "sha256": "2d5e8ce11f3252b7e709157809fc6724586d58df4b4deb5a538d5a4fc597a986"
+    },
+    "animation/index.html": {
+      "bytes": 19101,
+      "sha256": "d15b1aac0247a3159c0ec873c426a49eff152735010e0526f458485b4f255fb2"
+    },
+    "animation/model.mjs": {
+      "bytes": 2826,
+      "sha256": "e58acc9dfaf5988c8522db83b2801564a08e2b504900208590943a9d31e4f8a2"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 1128,
+      "sha256": "59fb6447b237aa67203311cb5cb664c75c8807647739d1a172b93ed519068e70"
+    },
+    "animation/style.css": {
+      "bytes": 28018,
+      "sha256": "abc5f11e44ef9436bdef5e6e3e8f2b1dc881e6509d440d8be6c836c2c6372bec"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "assets/03-03-little-owl-hero-v02-prompt.md": {
+      "bytes": 1893,
+      "sha256": "3486d2fd70a9f07069377976c086a08bdacdcaba90a111d6fc677fbec2946154"
+    },
+    "assets/03-03-little-owl-hero-v02.webp": {
+      "bytes": 348372,
+      "sha256": "6f64bb73868af72b60e144338f51d60fcfe47c452a0976ea3a142d6796f926ca"
+    },
+    "assets/provenance.json": {
+      "bytes": 676,
+      "sha256": "8e3bf181c256cdd32b4f1c71de0e7edd657b6cfda258c3c5c17ed83d543153b6"
+    },
+    "case.css": {
+      "bytes": 25909,
+      "sha256": "7f9d8bac5b4e21f8ddfdcbaafd0271da035173c2957607778d2b596fda2b5fa9"
+    },
+    "case.js": {
+      "bytes": 11223,
+      "sha256": "55817a4f9a19ccca9e66f01240271c98db441d8183afdb3eb861056a18b719db"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 172720,
+      "sha256": "f973953a94d1bcde10fa620294d44305cdb5660cfca3213b3b0b0e978c815105"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 230168,
+      "sha256": "d7c5acc01a528c15b1ceaccd518da50f0a02de61bbc8578d35fac8fc3f90e0bc"
+    },
+    "index.html": {
+      "bytes": 512,
+      "sha256": "30bbc0b190c7410cd4bbe1f0b8aa158499c722019d4159221dbead7fdae93e28"
+    },
+    "natural-history.css": {
+      "bytes": 1408,
+      "sha256": "7c442aa439642153d96ee157a23cea1f90d1a813e839429fe3bd64bf4f109006"
+    },
+    "scene.js": {
+      "bytes": 6392,
+      "sha256": "0461031e39abc4bc42e91bb3026548e23ee5d3f9c0b41acc0aa6bd9086afc793"
+    }
+  },
+  "copy_revision": {
+    "id": "topic-03-copy-v03",
+    "date": "2026-10-24T09:29:09.164559+00:00",
+    "scope": "Reader-facing text, matching glyphs and derived 03-04 movie; original source media, timing and model data retained",
+    "review": "work/ecology-ai-rollout/topic-03-copy-v03/review/browser-verification.json"
+  },
+  "animation_preservation_scope": "Original media and timing retained; visible text and font subsets revised with user authorization.",
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "04-02",
+  "version": "hybrid-v01",
+  "duration_seconds": 88,
+  "status": "candidate_pending_review",
+  "source": "Authors Figures2/3 from Bierlich etal2024,CCBY4;displaycropandsequenceonly",
+  "runtime": "GSAP single time state,SVG image viewports and a separate symbolic camera diagram",
+  "fresh_model_inference": false,
+  "new_measurements": false,
+  "calibration_data_available": false,
+  "bai_from_resized_figure": false,
+  "input_figures_unchanged": true,
+  "files": {
+    "model.mjs": "646efbf2425abebd091197c707e2429faffb355f929e0fd4ff0a1a0dc8f00b62",
+    "app.mjs": "a073491de6c4bb3abd153902c4d6e4a9e57a56e10b6435038b0a81d902e0e9ec",
+    "sample.json": "2cd7548c740cdadb612fdc34c68e35a04e9ba3508d8be2f6b16ddacf9f1a1c6a",
+    "template.html": "4d7442ac4fdd427bd09b439cf08ff7e29a624a8b33f313373f38d57d8fecd14e",
+    "style.css": "9331f16106cbdf550f33f812a938557eb58e394c3156ab6d9b9361e1a556826f",
+    "build.py": "62a28dc6e6b35cebc9f1af63ff50411f4e17d76665593355d96fd443f30fe601"
+  },
+  "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+  "fonts": {
+    "sans": {
+      "characters": 500,
+      "missing": [],
+      "bytes": 131988
+    },
+    "serif": {
+      "characters": 500,
+      "missing": [],
+      "bytes": 175004
+    }
+  },
+  "public_deployment": false,
+  "terminology_amendment": {
+    "date": "2026-10-21",
+    "scope": "Chinese wording and required font glyphs only",
+    "user_clarification": "我指的是文字修改就好，我表達錯誤",
+    "terminology": "影格 → 幀／每一幀, adjusted to sentence context",
+    "media_unchanged": true,
+    "animation_logic_and_timing_unchanged": true,
+    "original_notes_and_embedded_research_data_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/wording-review-v01/verification.json",
+    "historical_verification_note": "Earlier playback/integration checks remain historical; this amendment used focused text/layout checks.",
+    "external_publication": false
+  }
+}

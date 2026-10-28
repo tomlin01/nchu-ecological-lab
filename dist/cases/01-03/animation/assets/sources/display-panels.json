@@ -1,0 +1,46 @@
+{
+  "coordinates": "source-image pixels, crop=[left,top,right,bottom]; display-only crop, source bytes intact",
+  "panels": {
+    "auv": {
+      "asset": "auv-figure-9.webp",
+      "width": 2500,
+      "height": 1406,
+      "crop": [
+        850,
+        730,
+        1800,
+        1350
+      ],
+      "source_type": "equipment reference photograph from another field trial",
+      "scale_calibrated": false
+    },
+    "colony": {
+      "asset": "figure-7.png",
+      "width": 2013,
+      "height": 673,
+      "crop": [
+        690,
+        100,
+        1326,
+        615
+      ],
+      "source_type": "paper Figure 7b microscopy photo detail",
+      "credit": "Ane Cecilie Kvernvik; Mo-Bjørkelund et al. (2024)",
+      "scale_calibrated": false
+    },
+    "community": {
+      "asset": "figure-7.png",
+      "width": 2013,
+      "height": 673,
+      "crop": [
+        1329,
+        100,
+        2013,
+        615
+      ],
+      "source_type": "paper Figure 7c microscopy photo detail",
+      "credit": "Anette Wold; Mo-Bjørkelund et al. (2024)",
+      "scale_calibrated": false
+    }
+  }
+}

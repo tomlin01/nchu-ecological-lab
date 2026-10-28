@@ -1,0 +1,17 @@
+{
+  "file": "mat-method-original.png",
+  "kind": "complete supplementary research figure",
+  "figure": "S5",
+  "citation": "Shedrawi et al. (2024), Scientific Reports 14, 20915",
+  "doi": "10.1038/s41598-024-71763-y",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11381547/supplementaryFiles",
+  "container": "41598_2024_71763_MOESM1_ESM.docx",
+  "member": "word/media/image5.png",
+  "license": "CC BY-NC-ND 4.0",
+  "width": 831,
+  "height": 1049,
+  "bytes": 1601228,
+  "sha256": "3647356da077c7d69e69344447bf34e2ca3ca7b477c0535830255c9f5bb0b97a",
+  "source_bytes_preserved": true,
+  "display": "Complete figure, unchanged aspect ratio; no crop or overlay."
+}

@@ -1,0 +1,406 @@
+{
+ "info": {
+  "format_version": "20261015"
+ },
+ "predictions": [
+  {
+   "filepath": "../sources/test_data/ocelot.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.9712,
+     "bbox": [
+      0.0478,
+      0.5549,
+      0.521,
+      0.2743
+     ],
+     "raw_classifications": {
+      "classes": [
+       "22976d14-d424-4f18-a67a-d8e1689cefcc;mammalia;carnivora;felidae;leopardus;pardalis;ocelot",
+       "442208b3-d712-412e-bfd3-430688698aa0;mammalia;carnivora;felidae;leopardus;wiedii;margay",
+       "05afbf7e-f878-4534-b08f-c97a02435474;mammalia;carnivora;felidae;leopardus;;leopardus species",
+       "44e7f637-f8db-4252-9804-7c200fd6516c;mammalia;carnivora;felidae;neofelis;nebulosa;clouded leopard",
+       "c5ae795b-300f-4cc7-99f7-e2c2d2810a87;mammalia;carnivora;felidae;leopardus;tigrinus;northern tiger cat"
+      ],
+      "scores": [
+       0.9938,
+       0.0033,
+       0.0016,
+       0.0004,
+       0.0004
+      ]
+     },
+     "processed_classification": {
+      "class": "22976d14-d424-4f18-a67a-d8e1689cefcc;mammalia;carnivora;felidae;leopardus;pardalis;ocelot",
+      "score": 0.9938,
+      "source": "classifier"
+     }
+    }
+   ],
+   "model_version": "4.0.3a"
+  },
+  {
+   "filepath": "../sources/test_data/american_black_bear.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.9596,
+     "bbox": [
+      0.4331,
+      0.4284,
+      0.3232,
+      0.3223
+     ],
+     "raw_classifications": {
+      "classes": [
+       "436ddfdd-bc43-44c3-a25d-34671d3430a0;mammalia;carnivora;ursidae;ursus;americanus;american black bear",
+       "febff896-db40-4ac8-bcfe-5bb99a600950;mammalia;artiodactyla;cervidae;odocoileus;hemionus;mule deer",
+       "5c7ce479-8a45-40b3-ae21-7c97dfae22f5;mammalia;artiodactyla;cervidae;odocoileus;virginianus;white-tailed deer",
+       "eb3829b0-772e-4088-ae90-f11b9fe38284;mammalia;artiodactyla;cervidae;cervus;elaphus;red deer",
+       "330bb1e9-84d6-4e41-afa9-938aee17ea29;mammalia;carnivora;ursidae;ursus;arctos;brown bear"
+      ],
+      "scores": [
+       0.9899,
+       0.0039,
+       0.0037,
+       0.0007,
+       0.0005
+      ]
+     },
+     "processed_classification": {
+      "class": "436ddfdd-bc43-44c3-a25d-34671d3430a0;mammalia;carnivora;ursidae;ursus;americanus;american black bear",
+      "score": 0.9899,
+      "source": "classifier"
+     }
+    }
+   ],
+   "model_version": "4.0.3a"
+  },
+  {
+   "filepath": "../sources/test_data/african_elephants.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.9352,
+     "bbox": [
+      0.7041,
+      0.4766,
+      0.1108,
+      0.125
+     ],
+     "raw_classifications": {
+      "classes": [
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle",
+       "8c48ed75-e275-4188-a6b1-55929d298e85;mammalia;artiodactyla;bovidae;nanger;granti;grant's gazelle",
+       "9732cefb-6a08-49f6-b61e-b9a9054368c4;mammalia;artiodactyla;bovidae;syncerus;caffer;african buffalo",
+       "ccd7d6d7-8eb2-4fdb-a6d6-f1970847e449;mammalia;artiodactyla;suidae;phacochoerus;africanus;common warthog"
+      ],
+      "scores": [
+       0.9923,
+       0.0009,
+       0.0008,
+       0.0006,
+       0.0004
+      ]
+     },
+     "processed_classification": {
+      "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+      "score": 0.9923,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.911,
+     "bbox": [
+      0.5645,
+      0.4219,
+      0.0854,
+      0.1673
+     ],
+     "raw_classifications": {
+      "classes": [
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+       "9732cefb-6a08-49f6-b61e-b9a9054368c4;mammalia;artiodactyla;bovidae;syncerus;caffer;african buffalo",
+       "539ebd55-081b-429a-9ae6-5a6a0f6999d4;mammalia;artiodactyla;bovidae;bison;bison;american bison",
+       "8c48ed75-e275-4188-a6b1-55929d298e85;mammalia;artiodactyla;bovidae;nanger;granti;grant's gazelle"
+      ],
+      "scores": [
+       0.9968,
+       0.0006,
+       0.0005,
+       0.0003,
+       0.0002
+      ]
+     },
+     "processed_classification": {
+      "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+      "score": 0.9968,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.903,
+     "bbox": [
+      0.8291,
+      0.5111,
+      0.1045,
+      0.1107
+     ],
+     "raw_classifications": {
+      "classes": [
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "dd39bbd5-077c-482e-9d33-bd176116c870;mammalia;perissodactyla;equidae;equus;quagga;plains zebra",
+       "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle",
+       "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+       "09fbf931-bbf0-4959-9df6-1082db578281;mammalia;artiodactyla;bovidae;connochaetes;taurinus;common wildebeest"
+      ],
+      "scores": [
+       0.942,
+       0.0093,
+       0.0088,
+       0.0084,
+       0.0055
+      ]
+     },
+     "processed_classification": {
+      "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+      "score": 0.942,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.8161,
+     "bbox": [
+      0.9419,
+      0.4674,
+      0.0581,
+      0.1673
+     ],
+     "raw_classifications": {
+      "classes": [
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "09fbf931-bbf0-4959-9df6-1082db578281;mammalia;artiodactyla;bovidae;connochaetes;taurinus;common wildebeest",
+       "ccd7d6d7-8eb2-4fdb-a6d6-f1970847e449;mammalia;artiodactyla;suidae;phacochoerus;africanus;common warthog",
+       "9732cefb-6a08-49f6-b61e-b9a9054368c4;mammalia;artiodactyla;bovidae;syncerus;caffer;african buffalo",
+       "dd39bbd5-077c-482e-9d33-bd176116c870;mammalia;perissodactyla;equidae;equus;quagga;plains zebra"
+      ],
+      "scores": [
+       0.741,
+       0.0939,
+       0.0794,
+       0.0195,
+       0.0173
+      ]
+     },
+     "processed_classification": {
+      "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+      "score": 0.741,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.7023,
+     "bbox": [
+      0.854,
+      0.4785,
+      0.0859,
+      0.0827
+     ],
+     "raw_classifications": {
+      "classes": [
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+       "09fbf931-bbf0-4959-9df6-1082db578281;mammalia;artiodactyla;bovidae;connochaetes;taurinus;common wildebeest",
+       "dd39bbd5-077c-482e-9d33-bd176116c870;mammalia;perissodactyla;equidae;equus;quagga;plains zebra",
+       "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle"
+      ],
+      "scores": [
+       0.9905,
+       0.0025,
+       0.001,
+       0.0009,
+       0.0008
+      ]
+     },
+     "processed_classification": {
+      "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+      "score": 0.9905,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.6329,
+     "bbox": [
+      0.3398,
+      0.4434,
+      0.084,
+      0.0911
+     ],
+     "raw_classifications": {
+      "classes": [
+       "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "7b2cdc4b-95d8-47c2-b553-d864983b0a6f;mammalia;diprotodontia;macropodidae;macropus;agilis;agile wallaby",
+       "189cdd40-b83d-48d1-a4fa-e43a104f2a23;mammalia;artiodactyla;bovidae;capra;aegagrus hircus;domestic goat",
+       "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle"
+      ],
+      "scores": [
+       0.3645,
+       0.1832,
+       0.1817,
+       0.0157,
+       0.015
+      ]
+     },
+     "processed_classification": {
+      "class": "1f689929-883d-4dae-958c-3d57ab5b6c16;;;;;;animal",
+      "score": 0.6329,
+      "source": "detector"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.1462,
+     "bbox": [
+      0.1016,
+      0.4056,
+      0.1123,
+      0.11
+     ],
+     "raw_classifications": {
+      "classes": [
+       "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+       "5c7ce479-8a45-40b3-ae21-7c97dfae22f5;mammalia;artiodactyla;cervidae;odocoileus;virginianus;white-tailed deer",
+       "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle",
+       "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+       "febff896-db40-4ac8-bcfe-5bb99a600950;mammalia;artiodactyla;cervidae;odocoileus;hemionus;mule deer"
+      ],
+      "scores": [
+       0.9809,
+       0.0041,
+       0.0016,
+       0.0015,
+       0.0013
+      ]
+     },
+     "processed_classification": {
+      "class": "f1856211-cfb7-4a5b-9158-c0f72fd09ee6;;;;;;blank",
+      "score": 0.9809,
+      "source": "classifier"
+     }
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0806,
+     "bbox": [
+      0.3208,
+      0.4141,
+      0.0728,
+      0.1165
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0592,
+     "bbox": [
+      0.377,
+      0.444,
+      0.0469,
+      0.071
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0519,
+     "bbox": [
+      0.145,
+      0.4082,
+      0.0718,
+      0.0768
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0439,
+     "bbox": [
+      0.6406,
+      0.429,
+      0.0571,
+      0.0534
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0177,
+     "bbox": [
+      0.3198,
+      0.4128,
+      0.0513,
+      0.056
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.014,
+     "bbox": [
+      0.6387,
+      0.4232,
+      0.0269,
+      0.0339
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0132,
+     "bbox": [
+      0.1416,
+      0.4082,
+      0.1055,
+      0.1224
+     ]
+    },
+    {
+     "category": "1",
+     "label": "animal",
+     "conf": 0.0103,
+     "bbox": [
+      0.4863,
+      0.4466,
+      0.0439,
+      0.0996
+     ]
+    }
+   ],
+   "model_version": "4.0.3a"
+  },
+  {
+   "filepath": "../sources/test_data/blank.jpg",
+   "detections": [],
+   "model_version": "4.0.3a"
+  }
+ ]
+}

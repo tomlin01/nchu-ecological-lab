@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "check_count": 20,
+  "checks": [
+    {
+      "name": "Main site remains unchanged",
+      "passed": true,
+      "count": 458,
+      "changed": []
+    },
+    {
+      "name": "Original source media and data bytes preserved",
+      "passed": true,
+      "count": 11,
+      "changed": []
+    },
+    {
+      "name": "Source CSV has unique image IDs",
+      "passed": true,
+      "rows": 1143
+    },
+    {
+      "name": "Displayed candidates match source row 00298",
+      "passed": true
+    },
+    {
+      "name": "Original ROI geometry 00298",
+      "passed": true
+    },
+    {
+      "name": "Displayed candidates match source row 00120",
+      "passed": true
+    },
+    {
+      "name": "Original ROI geometry 00120",
+      "passed": true
+    },
+    {
+      "name": "Displayed candidates match source row 00216",
+      "passed": true
+    },
+    {
+      "name": "Original ROI geometry 00216",
+      "passed": true
+    },
+    {
+      "name": "Displayed candidates match source row 00732",
+      "passed": true
+    },
+    {
+      "name": "Original ROI geometry 00732",
+      "passed": true
+    },
+    {
+      "name": "No new inference, manual count, or invented calibration",
+      "passed": true
+    },
+    {
+      "name": "Font coverage",
+      "passed": true
+    },
+    {
+      "name": "HTML local references resolve",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "Unique HTML IDs",
+      "passed": true
+    },
+    {
+      "name": "Seven phases retain static transcript",
+      "passed": true
+    },
+    {
+      "name": "All build tokens replaced",
+      "passed": true
+    },
+    {
+      "name": "JavaScript syntax app.mjs",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "name": "JavaScript syntax model.mjs",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "name": "Source-aware timeline model",
+      "passed": true,
+      "output": "PASS: seven contiguous phases, source scores, mechanical handoff, independent teaching counts, comparison boundaries, bounded seek"
+    }
+  ],
+  "browser_tested_by_this_script": false
+}

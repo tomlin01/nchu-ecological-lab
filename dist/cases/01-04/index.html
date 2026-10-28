@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head><script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="燈前拍到的蛾，怎麼辨認？從 AMI 的真實監測照片，了解翅形與花紋能留下哪些線索，以及物體偵測、物種分類和跨照片個體比較有何不同。">
+  <title>燈前拍到的蛾，怎麼辨認？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="case.css">
+  <link rel="stylesheet" href="font-supplement.css">
+  <link rel="stylesheet" href="hybrid.css">
+  <script src="case.js" defer></script>
+<link rel="stylesheet" href="copy-v02-fonts.css"><link rel="stylesheet" href="../../ui/sidebar.css" data-navigation-media="navigation-media-v01">
+<link rel="stylesheet" href="../../ui/media-expand.css" data-navigation-media="navigation-media-v01">
+<script src="../../ui/site-map.js" defer data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/sidebar.js" defer data-case-id="01-04" data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/media-expand.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../ui/theme-controls.css"/></head>
+<body data-page="question">
+  <div class="topic-scene" aria-hidden="true"><img id="topic-image" src="assets/01-04-moth-main.svg" alt="" fetchpriority="high"></div>
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#cases">返回主題一</a><span class="case-name">UKCEH AMI · 夜間蛾類監測</span></header>
+  <nav class="section-nav" aria-label="案例章節">
+    <div class="nav-pages">
+      <a href="#question" data-page="question">研究問題</a>
+      <a href="#roles" data-page="roles">模型分工</a>
+      <a href="#method" data-page="method">方法動畫</a>
+      <a href="#evidence" data-page="evidence">成果與限制</a>
+    </div>
+    <div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>完整閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div>
+  </nav>
+
+  <main id="case-content">
+    <section class="chapter opening" id="question" aria-labelledby="question-title" tabindex="-1">
+      <div class="opening-hero">
+        <div class="opening-intro">
+          <h1 id="question-title">燈前拍到的蛾，<br>怎麼辨認？</h1>
+          <p class="opening-question">翅形與花紋能幫我們認識蛾。<br>但有幾種、拍到幾隻，還要分別判斷。</p>
+          <a class="primary-action" href="#method">看方法動畫<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="object-space" aria-hidden="true"><img src="assets/01-04-moth-main.svg" alt="" width="1600" height="900"></div>
+        <p id="art-credit" class="art-credit">蛾形與夜間環境示意，非野外照片</p>
+      </div>
+      <div class="reading-surface opening-reading">
+        <h2>照片留下哪些線索？</h2>
+        <div class="opening-columns">
+          <div>
+            <p>夜裡，燈光會吸引昆蟲。有些蛾停在白色拍攝板上，有些短暫經過相機範圍。照片能留下翅形、花紋、觸角和身體外觀。這些都是辨認蛾的線索；照片若模糊或被遮住，能用來判斷的細節就少了。</p>
+            <p>UKCEH 的 AMI 系統把燈光與相機設在固定位置，按設定自動拍照，減少研究人員反覆到場的工作。照片保存下來後，就能逐張查看。</p>
+          </div>
+          <div>
+            <h3>同一隻蛾，可能拍到好幾次</h3>
+            <p>一隻蛾停在板上時，可能出現在好幾張照片裡。拍到幾張照片，和拍到幾隻蛾，是不同的問題。</p>
+            <p>把照片和拍攝時間一起保存，研究人員日後就能回頭確認物種判斷，或重新檢查幾張照片是否拍到同一隻蛾。</p>
+          </div>
+        </div>
+        <p class="field-context"><strong>固定設備記錄夜間來訪的蛾</strong><span>照片取回後，由軟體與人員整理</span><span>主要依據：UKCEH 官方文件及 2024 年 V4.0 手冊</span></p>
+      </div>
+    </section>
+
+    <section class="chapter" id="roles" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="roles-title">照片裡，<br>哪些地方有昆蟲？</h2><p>一張白板照片可能拍到多個昆蟲。模型會標出可能有物體的位置，方便逐一放大查看。位置找到了，是否為蛾、可能是哪一種，還要另外判斷。</p></header>
+      <article class="reading-surface text-surface">
+        <h3>框出的區域，還要看清楚</h3>
+        <p class="hybrid-evidence-note">動畫採用 AMI 資料集的三張原始監測照片。本頁實際執行物體偵測後，分數大於 0.50 的區域依序有 16、24、19 個。每個框代表模型提出的一個可能物體位置，還不是已確認的蛾。這些數字不表示物種數、獨立個體數或準確率。</p>
+        <p>放大框內的照片，可以查看翅形、花紋或其他細節。若框裡只有一團模糊影像，就得保留不確定的判斷，不能因為有框便確認它是蛾。</p>
+        <table class="roles-table">
+          <caption>AMI 的設備與分析分工</caption>
+          <thead><tr><th scope="col">分工</th><th scope="col">具體工作</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">排程與供電</th><td>設備使用電池和太陽能供電，按人員預先設定的時段開關。</td></tr>
+            <tr><th scope="row">相機與儲存</th><td>畫面像素變化達到設定條件時觸發拍照，另外也按設定間隔拍快照；照片與時間一起存進 SSD。</td></tr>
+            <tr><th scope="row">影像分析軟體</th><td>完整流程包括找出昆蟲、篩選蛾類、提出物種候選，以及比對前後照片。本次只執行物體偵測，沒有執行物種分類器或個體追蹤器。</td></tr>
+            <tr><th scope="row">研究人員</th><td>研究人員回看原圖，檢查物種判斷、模糊影像及可能的跨照片配對，修正誤判後再做生態分析。</td></tr>
+          </tbody>
+        </table>
+        <div class="method-explanation">
+          <section><h3>找到位置後，怎麼認出蛾？</h3><p>翅形與花紋能幫人員比較物種，分類模型也會提出可能的物種。這個判斷仍要回到照片確認；看不清楚或無法確定時，就保留為待確認。</p><p>AMI Data Companion 列出的完整流程包括找出昆蟲、篩選蛾類、分類、擷取影像特徵及比對前後照片。本頁示範只執行其中的物體偵測，沒有執行物種分類器。</p></section>
+          <section><h3>幾張照片，是同一隻嗎？</h3><p>假設一隻蛾在板上停了一會兒，就可能被拍進好幾張照片。比較照片時，研究人員會看外觀、影像中的位置與拍攝時間。即使軟體提出配對，也只表示「可能是同一隻」，不能直接當成已確認身分或已排除重複計數。</p><p>這次的三圖比較沒有執行追蹤模型，資料也沒有個體編號，因此個體數仍未確認。這個假設例子不代表三張來源照片實際拍到了同一隻蛾。</p></section>
+        </div>
+        <details class="method-text supplement"><summary>設備何時拍照？照片存在哪裡？</summary><h3>開機時間和拍照間隔分開設定</h3><p>研究人員設定開機時段。開機後，畫面像素變化達到條件就會觸發拍照，設備也會按設定間隔拍快照。這些功能照預設規則運作，不是機器學習，也沒有由即時 AI 判斷來改變拍照位置或時間。</p><p>2024 年 V4.0 手冊以每 10 分鐘一張快照為例。<strong>10 分鐘是該版手冊的設定例子</strong>，官方 FAQ 說明間隔可以調整。比較不同夜晚或地點前，要把各自的拍照設定一起記下來。</p><h3>照片取回後才進行辨識</h3><p>照片先保存在設備的 SSD，研究人員用另一部電腦取回。之後可以在本地分析，也可以上傳至 Antenna 等平台處理。拍照、儲存、上傳與辨識是不同步驟。</p><p>UKCEH 官方介紹把裝置端影像分析列為開發項目。現有設備能自行拍照與存檔，這裡介紹的辨識工作則在取回照片後進行。</p></details>
+      </article>
+    </section>
+
+    <section class="chapter method-chapter" id="method" aria-labelledby="method-title" tabindex="-1">
+      <header class="chapter-heading method-heading"><div><h2 id="method-title">蛾的照片，怎麼整理成紀錄？</h2><p>用三張真實照片，查看模型框出的區域，以及不同時刻拍到的蛾有哪些相似之處。</p></div><button type="button" class="standalone-link" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="reading-surface method-surface">
+        <div class="media-expand-shell"><div class="media-expand-stage" id="media-expand-stage" data-media-expand-stage data-media-expand-label="燈前拍到的蛾，怎麼辨認？ 方法動畫"><iframe id="method-frame" src="animation-hybrid/embed.html" title="AMI 真實監測照片、已執行物體偵測與跨照片比較的 78 秒方法動畫" height="850" scrolling="no" loading="eager" allow="fullscreen"></iframe></div></div>
+        <p class="player-hint">78 秒・無音訊｜可暫停、重播或跳到指定段落</p>
+        <p class="method-intro">並排放大的三個局部，對應資料集作者標為 <i>Eilema lurideola</i> 的區域。物種名稱來自作者標註；本頁實際執行的模型只找物體位置，沒有執行物種分類，也尚未另做人工物種鑑定。</p>
+        <p class="method-intro">三個局部都能回查完整原圖。本次沒有執行追蹤模型，資料也沒有跨照片個體編號，因此仍未確認它們是否為同一隻。</p>
+        <noscript><p class="nojs-note">下方保留完整文字摘要與三張原圖連結。即使動畫無法播放，仍可查看原圖及來源說明。</p></noscript>
+        <details id="method-text" class="method-text" open>
+          <summary>閱讀完整動畫文字摘要</summary>
+          <ol class="transcript"><li><h2>照片能看見蛾的哪些特徵？</h2><p>翅膀上的花紋、觸角和身體形狀，都是認識蛾的線索。照片留下這些細節，供之後辨認。</p><p class="detail">局部與完整照片可以互相對照。</p></li><li><h2>同一張照片，也有其他昆蟲</h2><p>完整照片裡，白板上可能同時出現多個昆蟲，大小和清晰程度也不同。</p><p class="detail">查看周圍的畫面，有助於理解局部在照片中的位置。</p></li><li><h2>相機守在燈前，留下影像</h2><p>燈光吸引昆蟲，相機朝向白板拍照。設備依設定時段運作，把照片保存下來，交給後續分析。</p><p class="detail">設備按設定拍照，辨識工作在取回照片後進行。</p></li><li><h2>照片的時間也要保留</h2><p>不同時刻的照片可能拍到相似的蛾。保留檔名與拍攝時間，才能回頭查看當時的完整畫面。</p><p class="detail">三張原圖的時間與連結列在動畫下方。</p></li><li><h2>框出的區域，能看清楚嗎？</h2><p>框標出模型找到的可能物體位置。放大的局部取自同一張原圖，可以回到完整照片查看周圍。框內是不是蛾、可能是哪一種，還需要分類與人員檢查。</p><p class="detail">模糊區域也可能被框出；本頁實際執行的是物體偵測。</p></li><li><h2>看起來相似，是同一隻嗎？</h2><p>資料集作者把這三個局部標為 <i>Eilema lurideola</i>。這是作者的物種標註，不是本次偵測模型的分類。拍攝時刻不同，蛾在影像中的位置也不同，需要回到原圖比較。</p><p class="detail">同種不等於同一隻。這組資料沒有個體編號，本次也沒有執行追蹤模型，不能直接確認配對或計算個體數。</p></li><li><h2>每個局部，都找得到原圖</h2><p>按「查看這張原圖」，可回看完整影像與來源。核對物種或跨照片配對時，都需要保留這條連結。</p><p class="detail">來源與時間保留原始紀錄，框來自本次物體偵測。</p></li><li><h2>記下的是來到燈前的活動</h2><p>長期累積這些照片，可以幫助了解昆蟲活動。但沒有被燈光吸引、沒有進入畫面的昆蟲，也可能仍在附近。</p><p class="detail">燈前的影像紀錄，不能直接當成整個地區的昆蟲數量。</p></li></ol>
+        </details>
+        <section class="hybrid-source-links" aria-label="方法動畫的原始資料"><h3>回看原圖與本次結果</h3><ul><li><a href="animation-hybrid/assets/frames/20230721230832-00-34.jpg" target="_blank" rel="noopener">原圖 1：2023-07-21 23:08:32</a></li><li><a href="animation-hybrid/assets/frames/20230721232832-00-35.jpg" target="_blank" rel="noopener">原圖 2：2023-07-21 23:28:32</a></li><li><a href="animation-hybrid/assets/frames/20230721234832-00-35.jpg" target="_blank" rel="noopener">原圖 3：2023-07-21 23:48:32</a></li><li><a href="animation-hybrid/assets/detector-results.json" target="_blank" rel="noopener">本次完整偵測結果</a></li><li><a href="animation-hybrid/assets/source-provenance.json" target="_blank" rel="noopener">原圖來源、時間與檔案紀錄</a></li></ul><p>來源檔記錄的時間為 2023-07-21 23:08:32、23:28:32、23:48:32，各相隔 20 分鐘。地區標記為西歐（WesternEurope），沒有確切站點或個體編號。這些時間不能證明三圖是同一站點的連續曝光，也不能用來認定拍到同一隻蛾；20 分鐘是這三張來源照片的間距，不是手冊的 10 分鐘快照設定例子。</p></section>
+        <section class="visual-note"><h3>照片、偵測與圖解各自來自哪裡？</h3><p>主視覺與夜間背景是蛾形 SVG 示意，並非野外照片。方法動畫中的三張照片來自 AMI-Traps 公開資料集，原始 JPEG 保持不變，放大局部也直接取自原圖，沒有另外生成蛾。設備圖解依官方參考繪製，不代表這三張照片使用的實際裝置。縮放、並排、照片在影片中的停留時間都是解說安排，並非野外相機運動、實際曝光間隔或蛾的移動軌跡。</p><p>本頁使用官方 Faster R-CNN／MobileNet 模型，在三張完整原圖上執行物體偵測。並排放大的區域，依偵測框與作者標註區域的重疊選取。這項選取是教學安排；框、模型分數與框的重疊程度，都不能當成辨識準確率。</p></section>
+      </div>
+    </section>
+
+    <section class="chapter" id="evidence" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="evidence-title">照片拍好了，<br>怎麼確認結果？</h2><p>設備是否正常拍照、軟體是否認對蛾、資料能說明什麼，都有各自的檢查方式。</p></header>
+      <article class="reading-surface text-surface evidence-reading">
+        <section><h3>研究者已在野外使用</h3><p>UKCEH 列出英國、巴拿馬、肯亞等地的實際使用紀錄，並提供 2024 年版操作手冊。研究者與合作夥伴使用太陽能及電池供電的設備，按排程拍照，再把保存的照片交給軟體分析。</p><p>這些紀錄說明設備已用於野外採集影像。採樣地點固定，拍照時段由人員設定；資料沒有顯示設備會依即時 AI 判斷自行改變拍照地點或時間。</p></section>
+        <div class="evidence-pair">
+          <section><h3>能整理出哪些資料？</h3><p>長期累積的照片，可以連同拍攝時間、昆蟲在照片中的位置、可能的物種，以及分類有多不確定，一起保存。研究人員能按採樣夜整理這些資料，也能回頭查看原始照片、修正判斷。</p></section>
+          <section><h3>人員要確認哪些判斷？</h3><p>研究人員回看模糊照片、修正物種誤判，也要檢查可能的重複個體。不同地區的蛾類組成與拍攝條件可能不同，因此分類器是否適用，需要用各地照片獨立檢驗。設備已有野外使用紀錄，與辨識效果是否經過當地驗證，是不同的事。</p></section>
+        </div>
+        <section class="limits"><h3>怎麼讀這些紀錄？</h3><ul>
+          <li><strong>照片數、偵測次數與個體數要分開。</strong>同一隻蛾可能出現在多張照片；配錯或漏配時，仍可能重複計數。本頁的個體配對尚未確認。</li>
+          <li><strong>看不清楚，就標記為待確認。</strong>模糊或遮擋會減少可用來辨認的細節，不確定的物種判斷應保留原圖，供人員查看。</li>
+          <li><strong>記錄的是燈前的活動。</strong>燈光會影響哪些昆蟲進入相機範圍。附近還可能有沒有來到燈前、或沒有被拍到的昆蟲。因此照片中的數量不能直接當成整個地區的族群量或密度，仍需考慮取樣範圍與被拍到的機會。</li>
+          <li><strong>拍照設定也要記下來。</strong>開關時段、觸發方式與快照間隔，會影響一晚拍到多少、拍到什麼。比較不同地點或夜晚前，要先確認各自的設定。</li>
+        </ul></section>
+        <section class="sources" id="sources"><h3>文獻與資料</h3><ol>
+          <li><p><strong>UKCEH AMI 官方介紹</strong></p><p>介紹設備如何自動拍照、哪些國家正在使用，以及照片如何交給軟體分析；也說明裝置端分析仍在開發。</p><a href="https://www.ceh.ac.uk/solutions/equipment/automated-monitoring-insects-trap" target="_blank" rel="noopener">UKCEH AMI system</a></li>
+          <li><p><strong>使用手冊 V4.0（2024）</strong></p><p>2024-04-02 版本。第 6 頁說明排程與 SSD 儲存，第 23–25 頁說明像素變化觸發，第 39 頁區分開機時段與定期快照；這些是該版手冊的設定，各地使用時可以不同。</p><a href="https://www.ceh.ac.uk/sites/default/files/2024-04/UK%20CEH%20AMI%20system%20User%20Manual%20V4.0.pdf" target="_blank" rel="noopener">UKCEH AMI 使用手冊 PDF</a></li>
+          <li><p><strong>UKCEH AMI 常見問題</strong></p><p>說明如何調整觸發和快照設定、自己分析或上傳照片，以及如何檢查資料品質。</p><a href="https://www.ceh.ac.uk/our-science/projects/ami-faq" target="_blank" rel="noopener">UKCEH AMI FAQ</a></li>
+          <li><p><strong>AMI Data Companion</strong></p><p>列出偵測、篩選、分類與跨照片追蹤的流程。它說明軟體能做哪些工作，各地資料的辨識與去重效果則要另行測試。</p><a href="https://github.com/RolnickLab/ami-data-companion" target="_blank" rel="noopener">RolnickLab 開發者儲存庫</a></li>
+          <li><p><strong>Antenna 平台</strong></p><p>說明如何分析影像，以及由人員確認或修正可能的物種判斷。實際辨識效果要看使用的資料和調查條件。</p><a href="https://www.insectai.org/" target="_blank" rel="noopener">Antenna</a></li>
+          <li><p><strong>AMI Dataset v2 與本次偵測</strong></p><p>Jain et al.（2024），<cite>Insect Identification in the Wild: The AMI Dataset</cite>。本例使用 AMI-Traps 的三張原圖與作者標註。資料集標示 MIT 授權，保留 RolnickLab 著作權及完整授權文字；本頁未散布模型權重。</p><a href="https://doi.org/10.5281/zenodo.12554005" target="_blank" rel="noopener">AMI 資料集 DOI</a> · <a href="animation-hybrid/assets/DATASET-LICENSE.txt" target="_blank" rel="noopener">資料集完整授權</a> · <a href="animation-hybrid/LICENSES.md" target="_blank" rel="noopener">素材與工具說明</a></li>
+        </ol></section>
+        <details id="original-notes" class="original-notes"><summary>展開完整原始案例筆記</summary><p>以下保留案例資料庫原文；正文另補充已核對的採影設定、儲存流程與跨照片配對界線。</p><dl class="original-fields"><div><dt>案例編號</dt><dd>01-04</dd></div><div><dt>案例名稱</dt><dd>UKCEH AMI：太陽能夜行昆蟲自動採影與AI後處理</dd></div><div><dt>年代</dt><dd>2024使用手冊；2026-10-14查閱持續部署狀態</dd></div><div><dt>研究情境</dt><dd>英國農地及多國研究點的夜間蛾類監測，以固定設備減少每晚到場採樣和逐張人工整理的負擔。</dd></div><div><dt>AI 分工</dt><dd>AMI用燈光吸引昆蟲並自動採影，後續以Antenna等平台的computer vision模型定位蛾類並判別物種。定時開關及像素變化觸發本身不是機器學習；官方仍把裝置端AI列為開發項目。</dd></div><div><dt>研究產出</dt><dd>具有時間資訊的長期影像、候選昆蟲位置、物種標籤與分類不確定度，可再整理為採樣夜的觀測紀錄。</dd></div><div><dt>已展示工作</dt><dd>UKCEH官方列出英國、巴拿馬、肯亞等地的實際部署，並提供2024版操作手冊。現行系統可用太陽能及電池按排程運作，把影像保存後交由辨識流程分析，已有研究者與合作夥伴使用。</dd></div><div><dt>階段</dt><dd>operational</dd></div><div><dt>階段說明</dt><dd>已持續使用的自主影像採集平台加AI分析流程；不屬於依即時AI判斷改變採樣位置或時間的主動採樣。</dd></div><div><dt>限制</dt><dd>燈誘紀錄不等於區域昆蟲密度；影像跨幀重複、地區物種組成與分類錯誤仍須處理。官方部署紀錄不能代替各地分類器的獨立準確度驗證。</dd></div><div><dt>來源</dt><dd><ul><li><dl><div><dt>標題</dt><dd>UKCEH AMI system</dd></div><div><dt>網址</dt><dd><a href="https://www.ceh.ac.uk/solutions/equipment/automated-monitoring-insects-trap" target="_blank" rel="noopener">https://www.ceh.ac.uk/solutions/equipment/automated-monitoring-insects-trap</a></dd></div><div><dt>年代</dt><dd>未標示；2026-10-14查閱</dd></div><div><dt>類型</dt><dd>官方文件</dd></div><div><dt>可讀範圍</dt><dd>官方網頁</dd></div><div><dt>支持內容</dt><dd>國際部署、太陽能自動採影、Antenna分類流程，以及裝置端分析仍在開發的狀態。</dd></div></dl></li><li><dl><div><dt>標題</dt><dd>User manual for the UKCEH Autonomous Monitoring of Insects (AMI) System, Version 4.0</dd></div><div><dt>網址</dt><dd><a href="https://www.ceh.ac.uk/sites/default/files/2024-04/UK%20CEH%20AMI%20system%20User%20Manual%20V4.0.pdf" target="_blank" rel="noopener">https://www.ceh.ac.uk/sites/default/files/2024-04/UK%20CEH%20AMI%20system%20User%20Manual%20V4.0.pdf</a></dd></div><div><dt>年代</dt><dd>2024</dd></div><div><dt>類型</dt><dd>官方文件</dd></div><div><dt>可讀範圍</dt><dd>全文</dd></div><div><dt>支持內容</dt><dd>2024-04-02手冊；定時器、像素變化觸發、定期快照與離線儲存，支持把自動採集與AI辨識分開。</dd></div></dl></li></ul></dd></div></dl></details>
+      </article>
+    </section>
+  </main>
+
+  <footer class="reading-controls js-only" hidden><button id="previous-page" type="button">上一頁</button><p id="page-position" aria-live="polite">1 / 4 · 研究問題</p><button id="next-page" type="button">下一頁</button></footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+{
+  "status": "fresh_inference_completed",
+  "run_utc": "2026-10-19T18:33:23.035783+00:00",
+  "scope": "Modern official developer-preview teaching inference; neither the Kahl et al. 2021 model nor the custom BirdNET used by Brunk et al. 2025; not a research rerun.",
+  "source_repository": "https://github.com/birdnet-team/birdnet-V3.0-dev",
+  "source_commit": "623dec2605c0b9dcde36b9ae320f4fbda22c57ea",
+  "model_record": "https://zenodo.org/api/records/20703646",
+  "model_doi": "10.5281/zenodo.20703646",
+  "model_version": "BirdNET+ V3.0 developer preview 3.1, Global 11K, FP16 pruned ONNX",
+  "model_license": {
+    "id": "cc-by-sa-4.0"
+  },
+  "model": {
+    "file": "BirdNET+_V3.0-preview3.1_Global_11K_FP16_pruned.onnx",
+    "bytes": 71528628,
+    "md5_verified": "8278be6e7d1a9fc1717cf953e269b2e3",
+    "sha256": "69cfc8db3ebec163feb6329e546eb56e1aadac2a309f1ee99aecfabd1aa9bd24"
+  },
+  "labels": {
+    "file": "BirdNET+_V3.0-preview3.1_Global_11K_Labels.csv",
+    "count": 11560,
+    "md5_verified": "21ccf9e984a955bfc2d5c52faab6a6ea",
+    "sha256": "8124b0ea2d187104c5e2cd95a0f937165647e20349c8fd34d4d5ef991821f8f0"
+  },
+  "audio": {
+    "file": "audio/spotted-owl-teaching.wav",
+    "sha256": "b49365e41fc9240f0e478a47af7702571c85b9a08c274ca1c3163b0b6ad1b89e",
+    "sample_rate": 44100,
+    "samples": 233856,
+    "duration_seconds": 5.3028571428571425
+  },
+  "preprocessing": {
+    "source_dtype": "int16",
+    "integer_to_float": "int16 divided by 32768",
+    "channel_mix": "mean if stereo; input mono unchanged",
+    "resampling": "scipy.signal.resample_poly with default Kaiser window, rational ratio reduced by gcd",
+    "target_sample_rate": 32000,
+    "target_samples": 169692,
+    "input_array_sha256": "c051084db6ec12c3fd851a6cd558be2991cb5f706004cd5e01a26ea610045496",
+    "extra_gain_normalization": false,
+    "external_spectrogram_computation": false,
+    "note": "Model receives raw audio and contains its own frontend. This adapter uses scipy resampling instead of official demo librosa.load."
+  },
+  "inference": {
+    "window_start_seconds": 0,
+    "window_end_source_seconds": 5.3028571428571425,
+    "input_duration_seconds": 5.302875,
+    "window_policy": "one complete source file; model supports variable-length input",
+    "padding_samples": 0,
+    "overlap_seconds": 0,
+    "confidence_threshold": null,
+    "geographic_filter": null,
+    "date_filter": null,
+    "score_transform": "none; raw model prediction output",
+    "input_name": "input",
+    "input_type": "tensor(float)",
+    "input_shape": [
+      "batch_size",
+      "samples"
+    ],
+    "actual_input_shape": [
+      1,
+      169692
+    ],
+    "outputs": [
+      {
+        "name": "predictions",
+        "shape": [
+          "batch_size",
+          11560
+        ],
+        "type": "tensor(float)"
+      },
+      {
+        "name": "embeddings_out",
+        "shape": [
+          "batch_size",
+          1280
+        ],
+        "type": "tensor(float)"
+      }
+    ],
+    "providers": [
+      "CPUExecutionProvider"
+    ]
+  },
+  "runtime": {
+    "python": "3.11.1",
+    "onnxruntime": "1.24.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.0"
+  },
+  "top_candidates": [
+    {
+      "rank": 1,
+      "class_index": 10341,
+      "label_id": "16137",
+      "scientific_name": "Strix occidentalis",
+      "common_name": "Spotted Owl",
+      "model_score": 0.7352379560470581
+    },
+    {
+      "rank": 2,
+      "class_index": 7123,
+      "label_id": "11130",
+      "scientific_name": "Ninox fusca",
+      "common_name": "Timor Boobook",
+      "model_score": 0.015422850847244263
+    },
+    {
+      "rank": 3,
+      "class_index": 7125,
+      "label_id": "11132",
+      "scientific_name": "Ninox connivens",
+      "common_name": "Barking Owl",
+      "model_score": 0.013016164302825928
+    },
+    {
+      "rank": 4,
+      "class_index": 1312,
+      "label_id": "2009",
+      "scientific_name": "Berenicornis comatus",
+      "common_name": "White-crowned Hornbill",
+      "model_score": 0.004497230052947998
+    },
+    {
+      "rank": 5,
+      "class_index": 2421,
+      "label_id": "3768",
+      "scientific_name": "Strix nigrolineata",
+      "common_name": "Black-and-white Owl",
+      "model_score": 0.0038509368896484375
+    },
+    {
+      "rank": 6,
+      "class_index": 10340,
+      "label_id": "16136",
+      "scientific_name": "Strix nivicolum",
+      "common_name": "Himalayan Owl",
+      "model_score": 0.0035725831985473633
+    },
+    {
+      "rank": 7,
+      "class_index": 10342,
+      "label_id": "16138",
+      "scientific_name": "Strix ocellata",
+      "common_name": "Mottled Wood Owl",
+      "model_score": 0.00321313738822937
+    },
+    {
+      "rank": 8,
+      "class_index": 4716,
+      "label_id": "7185",
+      "scientific_name": "Grallaria ridgelyi",
+      "common_name": "Jocotoco Antpitta",
+      "model_score": 0.0025811493396759033
+    },
+    {
+      "rank": 9,
+      "class_index": 7574,
+      "label_id": "11856",
+      "scientific_name": "Otus lettia",
+      "common_name": "Collared Scops Owl",
+      "model_score": 0.0025805532932281494
+    },
+    {
+      "rank": 10,
+      "class_index": 3157,
+      "label_id": "4797",
+      "scientific_name": "Cuculus gularis",
+      "common_name": "African Cuckoo",
+      "model_score": 0.0016705095767974854
+    }
+  ],
+  "spotted_owl_rows": [
+    {
+      "rank": 1,
+      "class_index": 10341,
+      "label_id": "16137",
+      "scientific_name": "Strix occidentalis",
+      "common_name": "Spotted Owl",
+      "model_score": 0.7352379560470581
+    }
+  ],
+  "interpretation": "Scores are model outputs, not calibrated probabilities of correctness or occupancy. NPS source label and this inference are separate evidence."
+}

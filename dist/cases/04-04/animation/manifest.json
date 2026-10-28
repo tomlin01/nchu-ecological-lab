@@ -1,0 +1,104 @@
+{
+  "case_id": "04-04",
+  "version": "prototype-v01",
+  "title": "沒量過的地方，植物特徵怎麼估？",
+  "status": "animation_ready_for_user_review",
+  "entry": "index.html",
+  "duration": 96,
+  "film": "film/04-04-plant-traits-v01.mp4",
+  "updated": "2026-10-24T14:53:22.276953+00:00",
+  "files": {
+    "README.md": {
+      "bytes": 1359,
+      "sha256": "bab90912c3d2c4eab21b439ed42a2b39915038ec0434aaa797c1082939a43688"
+    },
+    "SOURCE.md": {
+      "bytes": 10092,
+      "sha256": "b400a3e11c099e08bc4beb6a9ddfe9d27adfe58454ea1faa68aa849a47228f4f"
+    },
+    "app.mjs": {
+      "bytes": 14911,
+      "sha256": "a0ea2e6d7ab62b73a046a5104255e35e6894ba429426e223d0d1170afd0de679"
+    },
+    "assets/context-prompt.md": {
+      "bytes": 1307,
+      "sha256": "d43e428ed5e5ce38dc575af2edcad4adfe1b662f0b5ac24134246f162b47546e"
+    },
+    "assets/context-provenance.json": {
+      "bytes": 302,
+      "sha256": "051faae22332c5802b293ef99318a74b93616549b55776a14a847b664bf91f94"
+    },
+    "assets/leaf-context.png": {
+      "bytes": 2657763,
+      "sha256": "f0736bf3322fbcbf1baef3176e3a53808203eb6d9029cc6888bc1efacb99ff44"
+    },
+    "assets/observation-density.png": {
+      "bytes": 995632,
+      "sha256": "abdaede8b554902d3e01d148bb6df8ccc4b241efd8adb1310cb2fc9703915c49"
+    },
+    "assets/source-data.json": {
+      "bytes": 1282,
+      "sha256": "671364d0a9c09ee0467732955b274da24c6046ef389ef240e256e3c58cd81810"
+    },
+    "assets/spatial-transfer.png": {
+      "bytes": 1512717,
+      "sha256": "5b6b8bb4cce3ef97648c486663bb44cedb3811408344dde96bad222b2bcd054f"
+    },
+    "assets/trait-maps.png": {
+      "bytes": 6286911,
+      "sha256": "9495027e848d134b1d558079ae1e77c710811c9e2a521b7d8e1843b81ba6adf8"
+    },
+    "film/04-04-plant-traits-v01.metadata.json": {
+      "bytes": 853,
+      "sha256": "e1c1e3de1ec29bc830de11aa70f2022656924755971385d14106b2b4171097de"
+    },
+    "film/04-04-plant-traits-v01.mp4": {
+      "bytes": 3422908,
+      "sha256": "8e756dbf1c170ad15ca54c5b2c439cb4c60c93e86ac3687e515b7611dfc93f4d"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/trait-sans.woff2": {
+      "bytes": 132320,
+      "sha256": "e195c9fa472994135d2300fa6dcd752a78e75e81330db239ef2db5ce440f59ee"
+    },
+    "fonts/trait-serif.woff2": {
+      "bytes": 176680,
+      "sha256": "e8b108baac9e4a027f5d09710cb39f6820cf41b954d18b5e7ed887c3c39ff13e"
+    },
+    "index.html": {
+      "bytes": 13898,
+      "sha256": "34c0690318da9e5f3e5b20f6d9f0397581256d0cda5555d8c60a592fbab6da65"
+    },
+    "model.mjs": {
+      "bytes": 5238,
+      "sha256": "0f7ab0a6f8f976336441393e99d73994f46136500052ae0463c23c53bb0242fd"
+    },
+    "model.test.mjs": {
+      "bytes": 1422,
+      "sha256": "1ac270e1cc6fca8255a273b5019573bda1eb1956a0a76517b05eea4e01d91857"
+    },
+    "scene.mjs": {
+      "bytes": 3732,
+      "sha256": "ba4303d3b29f66d7c703785fc39a388a7e397a3040ede23b571fff56c443fc0e"
+    },
+    "style.css": {
+      "bytes": 17540,
+      "sha256": "886aaccca59be03cc2ef25aa14394b88ee619325ee7b2eca0186ccc11e409458"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "verification.json": {
+      "bytes": 3000,
+      "sha256": "ff1892570558229f27702f0ff2be756bc68884f49db5c32cdd89dad9b6169eab"
+    }
+  }
+}

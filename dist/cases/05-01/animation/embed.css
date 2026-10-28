@@ -1,0 +1,40 @@
+/* Host chrome only. The accepted composition, scene geometry and clock stay intact. */
+.embedded-canopy .player-heading,
+.embedded-canopy .reading-footer,
+.embedded-canopy .skip-link,
+.embedded-canopy #themeButton,
+.embedded-canopy #expandButton { display:none; }
+.embedded-canopy #player {
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:18px 20px 20px;
+}
+.embedded-canopy.media-expanded-view #player { padding:22px 28px 28px; }
+@media (max-width:800px) {
+  .embedded-canopy #player { padding:14px 14px 18px; }
+}
+@media (max-width:500px) {
+  .embedded-canopy #player { padding:10px 10px 16px; }
+  .embedded-canopy.media-expanded-view #player { padding:14px; }
+}
+@media print {
+  .embedded-canopy #player { padding:0; min-height:0!important; }
+}
+
+.embedded-canopy .player-status{min-height:3.6em}
+
+/* The site gutters can make the iframe narrower than the standalone player. */
+@media (max-width:350px) {
+  .embedded-canopy .stage:has(#learnScene:not([hidden])) {
+    height:auto;
+    min-height:440px;
+    overflow:visible;
+  }
+  .embedded-canopy #learnScene:not([hidden]) {
+    position:relative;
+    inset:auto;
+    min-height:440px;
+    overflow:visible;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "prototype; user review pending",
+  "duration_seconds": 78,
+  "case_id": "01-04",
+  "runtime": "Anatomy-generated SVG + GSAP single clock; local bundled JavaScript",
+  "imagery": "Original procedural moth and equipment illustration. Not field photographs.",
+  "data": "Three synthetic snapshots and an unconfirmed association; no classifier or individual counting inference performed.",
+  "manual_images_included": false,
+  "generated_main_visual_included": false,
+  "sources": {
+    "template.html": "3f047951160e0857476a8f85f9cb73984698eb76c0efc41af4ec531cc589f149",
+    "style.css": "5069dc606018339852cc4a22bdefeb064c18ee7c19592a55fd4bc57336b96d9e",
+    "app.mjs": "bbf04c9ef0dd7b63ae7652cd4901f17aa126585546d75aa6fd7d343b8dbf964b",
+    "model.mjs": "45783af632dbdeb619817f829b29b4504dfaf81e07e02be73a83e96eaf47ae8d",
+    "build.py": "bc4ccd3fe9f03cef941592b795a7825e8919e136ad2a15fd04e460e81bc44479",
+    "art/build.mjs": "e2124cf486742c93af354442d40c74d653766fed9fd824e738de1df609d05e33",
+    "art/device-geometry.mjs": "3ac41da70f8fe5a2a150833df266f094766a288520b8a0d2e80c25bd665edce8",
+    "art/moth.mjs": "9f3ffcb5092ed1e6f076eacf1ef4f18a30f291f7f9f0aba86030355dd67a50c7",
+    "art/device.svg": "a5e7cfd33fa6df967d98197c3e1e90622dcb44b05a0d4853492efe57bd12e942",
+    "art/geometry.json": "cb30677f29cf469c410f63ea2bda128631ac42c816a6f927a5a44ded272ccba3"
+  },
+  "reference_record": "work/ecology-ai-rollout/cases/01-04/source-check-v01.json",
+  "fonts": {
+    "sans": {
+      "characters": 444,
+      "missing": [],
+      "bytes": 116532,
+      "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591"
+    },
+    "serif": {
+      "characters": 444,
+      "missing": [],
+      "bytes": 155568,
+      "source_sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a"
+    }
+  },
+  "libraries": {
+    "gsap": "3.13.0",
+    "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "verification": "See separate prototype-v01/verification.json; build is not browser or visual verification."
+}

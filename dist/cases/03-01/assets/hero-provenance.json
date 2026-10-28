@@ -1,0 +1,22 @@
+{
+  "asset": "03-01-hyena-main-v01.webp",
+  "kind": "AI-generated conceptual scene",
+  "generator": "built-in imagegen",
+  "date": "2026-10-22",
+  "subject": "Crocuta crocuta",
+  "purpose": "Full-bleed case website hero only",
+  "reference_images": [],
+  "original_png": "outputs/ecology-ai-rollout-assets/03-01/03-01-hyena-main-v01.png",
+  "prompt_markdown": "outputs/ecology-ai-rollout-assets/03-01/03-01-hyena-main-v01-prompt.md",
+  "raw_sha256": "7ca50278a7dab0298ad770b06801187fff25c28d6cb01f214e0543b94a236699",
+  "webp_sha256": "fcd84f0dbf118a52f7d98eefbcb1b338600834f8a1910bf3d3cff873a8d27c9e",
+  "research_photo": false,
+  "dataset_individual": false,
+  "used_in_animation": false,
+  "image_edits": "No content edits; PNG converted to WebP for website.",
+  "website_usage": {
+    "revision": "hero-v02",
+    "role": "Shared environmental background across all four case chapters, header and footer",
+    "asset_content_changed": false
+  }
+}

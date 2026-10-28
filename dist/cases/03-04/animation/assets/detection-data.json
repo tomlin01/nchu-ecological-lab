@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "caseId": "03-04",
+  "checkedAt": "2026-10-23T05:33:40.652641+00:00",
+  "status": "source_pair_verified_selected_body_crop",
+  "source": {
+    "repository": "https://github.com/levyofi/Shermeister_et_al_2024",
+    "tag": "v1.0.0",
+    "commit": "03469a5bdeb0cc5238ec0fbd3c33b0e52246cb60",
+    "tagURL": "https://github.com/levyofi/Shermeister_et_al_2024/tree/v1.0.0",
+    "releaseDOI": "https://doi.org/10.5281/zenodo.11406382",
+    "imageURL": "https://raw.githubusercontent.com/levyofi/Shermeister_et_al_2024/v1.0.0/Data/training_data/lizard_detection/Lizards/images/IMAG0007.JPG",
+    "annotationURL": "https://raw.githubusercontent.com/levyofi/Shermeister_et_al_2024/v1.0.0/Data/training_data/lizard_detection/Lizards/annotations/IMAG0007.xml",
+    "directoryListingImageCount": 255,
+    "directoryListingAnnotationCount": 255,
+    "filenameCaseVerified": true,
+    "imageGitBlobSha1": "738d0181a6725916537d7aede1894171a247d9c2",
+    "annotationGitBlobSha1": "d5732586f65d5ce50d85759d2db939ff2fa1bd81",
+    "gitBlobHashesVerified": true
+  },
+  "image": {
+    "fileName": "IMAG0007.JPG",
+    "path": "sources/detection-example/IMAG0007.JPG",
+    "width": 4000,
+    "height": 3000,
+    "bytes": 1451486,
+    "sha256": "89d7de2ffe4cf4bbb760dfe4bacb2865a027380ff007a76aa870ba5cc8d12eb4",
+    "originalBytesPreserved": true
+  },
+  "annotation": {
+    "fileName": "IMAG0007.xml",
+    "path": "sources/detection-example/IMAG0007.xml",
+    "bytes": 784,
+    "sha256": "402c74a1c5cb85c823b0a8ee35fef405887b1e590ae756001297b2190c56d9d1",
+    "originalBytesPreserved": true,
+    "type": "Author-provided object-detection training annotation; not a new model output",
+    "bboxFormat": "xmin,ymin,xmax,ymax as recorded in source XML",
+    "coordinateIndexBase": null,
+    "coordinateNote": "Source XML does not declare zero- or one-based indexing. Values preserved verbatim; no ±1 adjustment. Display viewBox uses x=xmin, y=ymin, width=xmax-xmin, height=ymax-ymin.",
+    "objects": [
+      {
+        "annotationIndex": 0,
+        "sourceClass": "lizard",
+        "bboxXYXY": [
+          1726,
+          503,
+          1853,
+          734
+        ],
+        "displayRectXYWH": [
+          1726,
+          503,
+          127,
+          231
+        ],
+        "sourceTruncated": 0,
+        "sourceDifficult": 0,
+        "sunShade": null,
+        "markingColor": null,
+        "individualId": null,
+        "visualReview": "Head and torso are visible on the back wall; the source box cuts off part of the long tail.",
+        "pixelCrop": {
+          "path": "sources/detection-example/annotation-0-pixel-crop.png",
+          "width": 127,
+          "height": 231,
+          "sha256": "b167fbad8e722a9d0555afc97f7f1e3d48535b71a81eac655849491c05c7b7b7",
+          "operation": "Exact decoded source pixels at the recorded XML coordinates; no resampling or generated content"
+        }
+      },
+      {
+        "annotationIndex": 1,
+        "sourceClass": "lizard",
+        "bboxXYXY": [
+          2861,
+          919,
+          3122,
+          1015
+        ],
+        "displayRectXYWH": [
+          2861,
+          919,
+          261,
+          96
+        ],
+        "sourceTruncated": 0,
+        "sourceDifficult": 0,
+        "sunShade": null,
+        "markingColor": null,
+        "individualId": null,
+        "visualReview": "Lizard on the right brick; strong exposure reduces visible body detail.",
+        "pixelCrop": {
+          "path": "sources/detection-example/annotation-1-pixel-crop.png",
+          "width": 261,
+          "height": 96,
+          "sha256": "685f7ee5a3bd55b11996d47d8631f339f1ef2d800b6f99c7e4838a24fb0a15eb",
+          "operation": "Exact decoded source pixels at the recorded XML coordinates; no resampling or generated content"
+        }
+      }
+    ]
+  },
+  "selected": {
+    "annotationIndex": 0,
+    "bboxXYXY": [
+      1726,
+      503,
+      1853,
+      734
+    ],
+    "displayRectXYWH": [
+      1726,
+      503,
+      127,
+      231
+    ],
+    "label": "來源標註的身體局部",
+    "cropIncludesCompleteAnimal": false,
+    "tailPartlyOutsideSourceBox": true,
+    "needsHonestPartialCropCaption": true,
+    "reason": "The head and torso are clearer than the second overexposed target. The original source box does not contain the full tail.",
+    "sunShade": null,
+    "markingColor": null,
+    "individualId": null,
+    "sourceConfidence": null
+  },
+  "timeEvidence": {
+    "exifDateTime": "2021:01:08 11:17:32",
+    "exifDateTimeOriginal": "2021:01:08 11:17:32",
+    "exifDateTimeDigitized": "2021:01:08 11:17:32",
+    "burnedInDateText": "01/08/2021",
+    "burnedInTimeText": "11:17:28",
+    "clockDifferenceSeconds": 4,
+    "timeZone": null,
+    "note": "Camera metadata and visible timestamp differ. Preserve both; no synchronization or movement sequence inferred."
+  },
+  "evidenceLimits": {
+    "modelInferenceRun": false,
+    "newHumanSunShadeLabel": false,
+    "newHumanColorLabel": false,
+    "newIndividualIdentification": false,
+    "sameIndividualAsSun1OrShade1": null,
+    "supportsResidenceDuration": false,
+    "supportsSunShadeTransition": false,
+    "classificationGroundTruthAvailableForThisImage": false,
+    "newImageGenerated": false,
+    "originalPhotoGeometryChanged": false
+  },
+  "rights": {
+    "dataReleaseLicense": "CC BY 4.0 per Zenodo release page",
+    "repositoryCodeLicense": "MIT",
+    "paperFigureLicense": "CC BY-NC-ND",
+    "archiveMemberByteComparisonDone": false,
+    "note": "Downloaded files match the author GitHub tag API blob SHA. The full Zenodo archive was not downloaded or compared."
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "01-01-grassland-wide-v01.png",
+    "width": 1672,
+    "height": 941,
+    "source": "built-in image_gen",
+    "reference": "corresponding original topic-01 contextual PNG",
+    "prompt": "../../environment-prompts.md",
+    "sha256": "a032986168c6e4bfddaaf3c549e1b879bc2105a6f3507933ff14c774e8ec77f2",
+    "role": "generated conceptual environment; not a study photograph",
+    "pixel_edits_outside_imagegen": false
+  },
+  {
+    "file": "01-02-ocean-wide-v01.png",
+    "width": 1672,
+    "height": 941,
+    "source": "built-in image_gen generation, followed by open-water environment correction",
+    "reference": "corresponding original topic-01 contextual PNG",
+    "prompt": "../../environment-prompts.md",
+    "sha256": "930c29fe9281d88bbd7d632bb776da47694cc2073ad6a9b5e692b19ea4e00299",
+    "role": "generated conceptual environment; not a study photograph",
+    "pixel_edits_outside_imagegen": false
+  },
+  {
+    "file": "01-03-fjord-wide-v01.png",
+    "width": 1672,
+    "height": 941,
+    "source": "built-in image_gen",
+    "reference": "corresponding original topic-01 contextual PNG",
+    "prompt": "../../environment-prompts.md",
+    "sha256": "dbf8e005fcb558a855f3b32784b411a166bb939db9f1e837a80cc34c505a08db",
+    "role": "generated conceptual environment; not a study photograph",
+    "pixel_edits_outside_imagegen": false
+  },
+  {
+    "file": "01-04-night-woodland-wide-v01.png",
+    "width": 1672,
+    "height": 940,
+    "source": "built-in image_gen",
+    "reference": "corresponding original topic-01 contextual PNG",
+    "prompt": "../../environment-prompts.md",
+    "sha256": "e8165e8b4b676bd5ad65b4601552e0d5a74645cabfa30ee02200fc5d6e2f2264",
+    "role": "generated conceptual environment; not a study photograph",
+    "pixel_edits_outside_imagegen": false
+  }
+]

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="01-03" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>尋找水下的浮游植物｜研究方法動畫</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.bundle.js" defer></script>
+<link rel="stylesheet" href="embed.css"><script src="embed.js" defer></script><link rel="stylesheet" href="../../../ui/media-embed.css" data-navigation-media="navigation-media-v01">
+<script src="../../../ui/media-embed.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body data-case-id="01-03">
+  <main>
+    <noscript><p class="player-status">目前顯示靜態群聚示意；3D 比例尺暫不可用。完整敘事、來源照片與尺寸說明在下方。</p></noscript>
+    <header class="page-heading">
+      <div><h1>尋找水下的浮游植物</h1><p>從看見微小生命，到決定下一個採樣位置。</p></div>
+      <a class="source-jump" href="#research-source">研究與尺寸依據 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m-6-6 6 6 6-6"/></svg></a>
+    </header>
+
+    <section class="player" aria-label="浮游植物適應性採樣動畫">
+      <div class="stage-layout" data-phase="0">
+        <div class="stage" id="stage" aria-label="動畫畫面" tabindex="0">
+          <div id="scene-host" class="scene-host"></div>
+          <div id="source-stage" class="source-stage" aria-hidden="true" hidden></div>
+          <svg id="scene-fallback" class="scene-fallback" viewBox="0 0 1000 650" role="img" aria-label="簡化的藻細胞群聚。細胞本體以 5 微米為教學代表值；靜態示意不是可量測比例圖。">
+            <defs><radialGradient id="cell-body"><stop stop-color="#b6b47a"/><stop offset="1" stop-color="#647949"/></radialGradient>
+              <g id="fallback-cell"><ellipse rx="23" ry="27" fill="url(#cell-body)" stroke="#b5c28d"/><ellipse cx="-7" rx="6" ry="17" fill="#c7bd70"/><ellipse cx="8" cy="3" rx="6" ry="17" fill="#c7bd70"/><path d="M-4-24Q-28-58-45-35M7-24Q31-55 47-23" fill="none" stroke="#b5c28d" stroke-width="1.5"/></g>
+            </defs>
+            <g opacity=".9"><use href="#fallback-cell" x="400" y="220"/><use href="#fallback-cell" x="520" y="190"/><use href="#fallback-cell" x="630" y="245"/><use href="#fallback-cell" x="350" y="320"/><use href="#fallback-cell" x="470" y="295"/><use href="#fallback-cell" x="580" y="340"/><use href="#fallback-cell" x="430" y="410"/><use href="#fallback-cell" x="680" y="360"/><use href="#fallback-cell" x="550" y="445"/></g>
+          </svg>
+          <div class="stage-label" id="stage-label">散點視野 · 20 µm 比例尺</div>
+          <div class="data-view" id="data-view" hidden><span>分布概念</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg><strong>教學示意的量測位置</strong><small>未觀測，不代表沒有生物。</small></div>
+          <div class="sensor-note" id="sensor-note" hidden><span>感測器</span><strong>螢光訊號</strong><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg><strong>葉綠素線索</strong><small>代理量測，並非細胞數或物種辨識。</small></div>
+
+          <div class="stage-bottom"><span id="stage-key">20 µm 是尺長；細胞本體代表直徑 5 µm</span></div>
+        </div>
+
+        <aside class="caption-panel" aria-label="目前段落解說">
+          <p class="phase-position"><span id="phase-position">1 / 12</span><span id="phase-time">00:00—00:08</span></p>
+          <h2 id="phase-title">微小的浮游植物</h2>
+          <p id="phase-description">以這類單細胞藻類為例，細胞本體直徑約 5 µm，也就是 0.005 毫米。</p>
+          <p class="phase-detail" id="phase-detail">尺寸代表值依培養株 AJ01 文獻；不是所有浮游植物都一樣大，也不是 Svalbard 海試量到的尺寸。</p>
+          <p class="size-source-note" id="size-source-note"><a href="https://doi.org/10.1016/j.hal.2004.12.001" target="_blank" rel="noopener">尺寸文獻：Jacobsen 與 Veldhuis（2005）</a>。培養株 AJ01 的有鞭毛細胞直徑報告為 5 ± 1 µm；此處選 5 µm 作代表。</p>
+          <div class="score-panel" id="score-panel" hidden>
+            <p id="score-round">一輪水下選點 · 三個代表候選</p>
+            <table><caption class="visually-hidden">同一模型計算的候選分數，依序揭示各項貢獻</caption><thead><tr><th scope="col">候選</th><th scope="col" data-term="0">預測</th><th scope="col" data-term="1">不確定</th><th scope="col" data-term="2">距離扣分</th><th scope="col" data-term="3">總分</th></tr></thead><tbody id="score-body"></tbody></table>
+            <p class="score-rule" id="score-rule">逐項比較，再決定下一站。</p>
+            <p class="winner-note" id="winner-note" aria-live="off"></p>
+            <p class="score-caveat">合成教學值，非海試紀錄。距離扣分依另一載具最後通報的水平位置計算。</p>
+          </div>
+          <div class="lab-workflow" id="lab-workflow" hidden>
+            <p>實體水樣的核對流程</p>
+            <ol>
+              <li data-lab-step="0"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v17H5zM11 27h10m-5-5v5M10 16l4-5 4 3 5-7"/></svg><span>最近收到的剖面<small>人員據此安排採水</small></span></li>
+              <li data-lab-step="1"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 3h8v5l3 4v16H9V12l3-4ZM12 6h8M9 19h14"/></svg><span>船上採集瓶樣<small>任務進行中取得實體水樣</small></span></li>
+              <li data-lab-step="2"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 3h8m-6 0v8L7 26q-1 3 3 3h12q4 0 3-3l-7-15V3M11 20h10"/></svg><span>實驗室葉綠素分析<small>獨立量測核對模型推估</small></span></li>
+            </ol>
+            <small>流程示意，不是驗證數據或結果曲線。</small>
+          </div>
+          <p class="phase-takeaway" id="phase-takeaway">先認識零散細胞，再看群聚的位置。</p>
+        </aside>
+      </div>
+
+      <div class="playback js-only" hidden>
+        <div class="playback-buttons"><button id="play-toggle" class="primary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg><span>播放動畫</span></button><button id="replay" type="button">從頭重播</button></div>
+        <label class="scrubber"><span class="visually-hidden">動畫進度，秒</span><input id="timeline" type="range" min="0" max="103" step="0.05" value="0" aria-valuetext="0 秒，共 103 秒"></label>
+        <output class="clock" id="clock">00:00 / 01:43</output>
+      </div>
+      <div class="source-actions js-only" hidden><button id="open-source" type="button" disabled>目前顯示方法動畫</button><a href="#source-gallery">查看全部來源照片</a></div>
+      <p id="photo-credit" class="photo-credit" hidden></p>
+      <p class="player-status" id="player-status" role="status">動畫需 JavaScript；下方保留完整步驟與尺寸說明。</p>
+      <p class="render-notice" id="render-notice" hidden>這個環境無法建立 3D 畫面，3D 比例尺暫不可用。靜態群聚中的細胞本體採 5 µm 代表值，不代表所有浮游植物同尺寸；可閱讀下方完整說明。</p>
+      <nav class="phase-navigation js-only" aria-label="跳至動畫段落" hidden>
+        <button data-phase="0" type="button"><span>00:00</span>浮游植物</button><button data-phase="1" type="button"><span>00:20</span>海水中的分布</button><button data-phase="2" type="button"><span>00:28</span>視角切換 · 從分布概念到量測資料</button><button data-phase="3" type="button"><span>00:35</span>載具參考照片</button><button data-phase="4" type="button"><span>00:42</span>起始調查 · 兩部 AUV</button><button data-phase="5" type="button"><span>00:52</span>首次浮出 · GPS 與衛星交換</button><button data-phase="6" type="button"><span>00:57</span>教學模型 · 未量位置的預測平均</button><button data-phase="7" type="button"><span>01:04</span>候選比較 · 相對於當前深度</button><button data-phase="8" type="button"><span>01:15</span>前往航點 · 抵達後重新計分</button><button data-phase="9" type="button"><span>01:21</span>獨立核對 · 船上採水與實驗室分析</button><button data-phase="10" type="button"><span>01:29</span>Phaeocystis 群體</button><button data-phase="11" type="button"><span>01:36</span>浮游植物群聚</button>
+      </nav>
+    </section>
+
+    <div class="reading-notes">
+      <details id="story-text" open>
+        <summary>完整動畫文字版與示意界線</summary>
+        <ol class="story-list">
+          <li><h3>微小的浮游植物</h3><p>這裡以 Phaeocystis pouchetii 型單細胞藻類介紹浮游植物。細胞本體直徑約 5 µm，也就是 0.005 毫米。這個代表值依 Jacobsen 與 Veldhuis（2005）對培養株 AJ01 的 5 ± 1 µm 報告，不是所有藻類的共同尺寸，也不是本次海試量到的細胞大小。</p><p>浮游植物利用葉綠素進行光合作用，也是許多海洋生物的食物來源。它們需要陽光，因此多分布在海洋上層、仍有光線的水域。<a href="https://oceanservice.noaa.gov/facts/phyto.html" target="_blank" rel="noopener">浮游植物的特性與生態角色（NOAA）</a>。</p></li>
+          <li><h3>在海裡分布並不均勻</h3><p>有些水域的浮游植物較密集，有些較稀疏；同一片海的不同位置與深度，也可能有不同數量。原研究關注這種斑塊分布，透過三維量測找出值得進一步採水的位置。</p></li>
+          <li><h3>只量到一部分，其他位置仍未知</h3><p>一條測線只能經過部分海水。淺綠點持續保留在原位，表示分布概念；青色與橙色另行標示AUV路線與沿路量測，模型只取得這些量測資料。</p></li>
+          <li><h3>這就是水下量測的載具</h3><p>水下量測載具沿路收集螢光與水文資料，幫助研究人員了解水體中的變化。</p><p>這張 LAUV Roald 設備參考照來自另一場 Nidelva 河口任務，非本次 Svalbard 海試，只用來認識載具外形。攝影來源為 Berild 等（2024）Fig. 9，CC BY 4.0。<a href="assets/sources/auv-figure-9.webp" target="_blank" rel="noopener">查看完整設備原圖</a>。</p></li>
+          <li><h3>兩部 AUV 先沿起始測線量螢光</h3><p>水下機器人沿上下起伏的預設測線量測。AUV 量螢光，不量個別細胞的大小，也不追蹤單顆細胞。葉綠素螢光提供分布線索，是代理量測；它不直接等於細胞數、物種名稱，也不是生物自己發亮。</p></li>
+          <li><h3>首次浮出，交換量測資料</h3><p>完成起始測線後，載具浮出取得 GPS 定位並透過衛星與 hub 交換資料。水下使用的是另一載具最後已知的位置，不是即時掌握彼此。</p></li>
+          <li><h3>交換後，進入一輪水下選點</h3><p>這裡接續示範後續的一次教學決策。藍色面表示模型預測，淺綠點是固定的分布概念，並非模型已知真值。log-GP 利用已量資料，對未量位置產生預測值與預測變異；高預測值與高不確定度是不同資訊。這不是整場任務的連續軌跡重播。</p></li>
+          <li><h3>先比較理由，才標出勝出候選</h3><p>候選位置分布在相對於當前深度的三個層位，不是永久固定海水層。分數逐項加入預測值與不確定度，扣除與另一載具最後已知水平位置有關的距離懲罰。畫面顯示三個代表候選，包含全部可行候選中的最高分者；超出範圍的候選先排除。</p></li>
+          <li><h3>抵達、量測，再重算下一輪</h3><p>AUV 先前往勝出候選。抵達後，新的教學量測才加入模型，候選位置也改以新的載具位置為中心重算。顏色更新表示推估改變，不是拍到真實藻華流動。</p></li>
+          <li><h3>船上採水，交由實驗室核對</h3><p>任務進行中，人員依 hub 最近收到的剖面安排實體採水，瓶樣再進行實驗室葉綠素分析。原研究另用船載 CTD 螢光剖面核對。本段只示意船上採水與實驗室核對流程，不展示或虛構驗證曲線，也不把教學模型的數值當成研究驗證結果。</p></li>
+          <li><h3>顯微鏡下的藻類群體</h3><p><i>Phaeocystis pouchetii</i> 會形成群體。透過顯微鏡，可以看見許多細胞聚在一起的樣貌。它不是開場同一批細胞，也不採相同尺度；照片用來認識生物外形，不是前面動畫中那瓶水的驗證結果。攝影：Ane Cecilie Kvernvik。</p></li>
+          <li><h3>水中還有不同樣貌的生命</h3><p>這場藻華中，可以看到不同樣貌的浮游植物。螢光量測提供分布線索，辨認物種還需要另外觀察。照片不是 AUV 拍攝，本片也沒有執行影像分類。攝影：Anette Wold。<a href="assets/sources/figure-7.png" target="_blank" rel="noopener">查看完整 Fig. 7</a>。</p></li>
+        </ol>
+        <p class="boundary">細胞形態、海域位置、載具座標、分布符號與模型數值均為教學示意。細胞體 5 µm 是文獻支持的代表值，不是 PLOS 海試尺寸量測；大尺度資料視圖的垂直比例放大 12 倍，並與水平比例尺分開標示。本教學模型未重現原研究完整的時間衰減、通訊排程與分格策略；未重跑作者完整系統，也未宣稱新的研究成效。</p>
+      </details>
+      <section class="research-source" id="research-source" aria-labelledby="research-title">
+        <h2 id="research-title">研究與尺寸依據</h2>
+        <p>Mo-Bjørkelund et al.（2024），<cite>Multi-vehicle adaptive 3D mapping for targeted ocean sampling</cite>。支持雙 AUV 調查、機上模型、資料交換、船上採水與獨立量測核對。<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302514" target="_blank" rel="noopener">閱讀 PLOS ONE 原文</a>。</p>
+        <p>Jacobsen 與 Veldhuis（2005）的培養株 AJ01 研究，報告有鞭毛細胞直徑為 5 ± 1 µm。本動畫選 5 µm 作單一游動細胞的教學代表值；這不是所有浮游植物的共同尺寸、群體直徑或 Svalbard 海試的量測結果。<a href="https://doi.org/10.1016/j.hal.2004.12.001" target="_blank" rel="noopener">閱讀尺寸文獻（DOI: 10.1016/j.hal.2004.12.001）</a>。</p>
+        <p>生物介紹依據 NOAA National Ocean Service 的 <cite>What are phytoplankton?</cite>，說明葉綠素、陽光、海洋上層分布與食物網角色。<a href="https://oceanservice.noaa.gov/facts/phyto.html" target="_blank" rel="noopener">閱讀 NOAA 說明</a>。</p>
+        <p class="source-boundary">動畫中的細胞聚合與綠色光點是位置示意，不代表實測移動、生物發光或群聚的實際體積。25 m 為示例深度；海域資料視圖將垂直方向放大 12 倍。比例尺對應周圍空間，靜態細胞圖僅供認識形態。</p>
+      </section>
+      <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title">
+        <h2 id="source-gallery-title">照片原圖與出處</h2>
+        <p>動畫只作等比例顯示與局部裁切。這裡保留完整圖版，圖片可直接開啟。</p>
+        <div class="source-gallery-grid">
+          <figure><a href="assets/sources/auv-figure-9.webp" target="_blank" rel="noopener"><img src="assets/sources/auv-figure-9.webp" width="2500" height="1406" loading="lazy" alt="Berild等2024年Fig.9完整設備照片，包含LAUV Roald"></a><figcaption><h3>LAUV Roald 設備參考</h3><p>另一場 Nidelva 河口任務，非本次 Svalbard 海試。此處只用來認識載具外形。</p><p>Berild et al.（2024），Fig. 9，CC BY 4.0。<a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1319719/full#f9" target="_blank" rel="noopener">Frontiers 原文與圖說</a>。</p></figcaption></figure>
+          <figure><a href="assets/sources/figure-7.png" target="_blank" rel="noopener"><img src="assets/sources/figure-7.png" width="2013" height="673" loading="lazy" alt="Mo-Bjørkelund等2024年Fig.7完整圖版，包含剖面比較和兩張顯微照片"></a><figcaption><h3>原研究的顯微照片</h3><p>Fig. 7b 是 <i>Phaeocystis pouchetii</i> 群體，攝影 Ane Cecilie Kvernvik；Fig. 7c 是藻華中的浮游植物群聚，攝影 Anette Wold。</p><p>照片用來認識外形，沒有與開場細胞共用比例尺，也不作本片的影像分類或數值驗證。完整圖版另保留作者的 Fig. 7a 剖面比較。</p><p>Mo-Bjørkelund et al.（2024），Fig. 7，CC BY 4.0。<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302514" target="_blank" rel="noopener">PLOS ONE 原文</a>。</p></figcaption></figure>
+        </div>
+      </section>
+    </div>
+  </main>
+  <dialog id="source-dialog" class="source-dialog" aria-labelledby="source-dialog-title">
+    <div class="source-dialog-heading"><h2 id="source-dialog-title">完整來源原圖</h2><form method="dialog"><button type="submit">關閉原圖</button></form></div>
+    <img id="source-image" alt="完整來源原圖"><p id="source-caption"></p><a id="source-paper-link" href="#research-source" target="_blank" rel="noopener">閱讀原文與圖說</a>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "case_id": "02-04",
+  "version": "web-v01",
+  "delivery_state": "independent_website_ready_for_user_review",
+  "entry": "02-04.html",
+  "preview_url": "http://127.0.0.1:8872/ecology-ai-rollout/candidates/02-04/web-v01/02-04.html",
+  "pages": [
+    "question",
+    "method",
+    "evidence",
+    "sources"
+  ],
+  "website_accepted": false,
+  "main_site_integrated": false,
+  "publicly_deployed": false,
+  "static_checks": 17,
+  "browser_checks": 67,
+  "full_playback": {
+    "duration_seconds": 90,
+    "elapsed_seconds": 90.501,
+    "samples": 181,
+    "all_seven_phases": true,
+    "all_five_instrument_phases": true,
+    "no_seek_during_run": true,
+    "ends_paused": true
+  },
+  "accepted_animation_files_preserved": 31,
+  "protected_files_unchanged": 491,
+  "hero_original_bytes_preserved": true,
+  "hero_size": [
+    1672,
+    941
+  ],
+  "hero_is_generated_concept": true,
+  "independent_content_review": "PASS on template; root verified final original-ROI caption and built transcript/JSON injection",
+  "visual_review": "Desktop four chapters, 768 tablet, 390/320 phone, print and no-JS screenshots inspected",
+  "taste_inspector": {
+    "failures": 0,
+    "warnings": 2,
+    "allowed": [
+      "few-pictures"
+    ],
+    "scope_note": "Paged first-screen inspector cannot count images in inactive chapters; continuous-reading image count independently checked",
+    "remaining_warnings": [
+      "no-footage",
+      "still-page"
+    ]
+  },
+  "new_model_inference": false,
+  "real_roi_cell_count": null,
+  "source_media_public_reuse_confirmed": false,
+  "resolved_issue": "Method-page vertical spacing reduced so playback and range controls fit at 1440x900 and 1280x800"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "version": "copy-edit-v01",
+  "scope": "Chinese website prose only",
+  "original_animation_and_media_unchanged": true,
+  "preserved_files": 63,
+  "numeric_values_and_counts_unchanged": true,
+  "original_notes_and_json_unchanged": true,
+  "layout_and_controllers_unchanged": true,
+  "fonts_have_all_required_glyphs": true,
+  "browser_record": "work/ecology-ai-rollout/copy-review-02-v01/browser-verification.json",
+  "browser_scope": "chapter navigation, heading wrapping, fonts, overflow and media no-autoplay",
+  "full_playback_rerun": false,
+  "public_deployment": false
+}

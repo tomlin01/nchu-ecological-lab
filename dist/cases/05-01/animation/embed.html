@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+ <title>照片是平的，怎麼估出樹高？｜05-01 動畫試作</title>
+ <meta name="description" content="從同一地點的衛星照片與作者高度圖，認識AI如何向光達資料學習估計樹冠高度。100秒無聲動畫。">
+ <link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+ <script src="vendor/gsap.min.js" defer></script><script src="app.mjs" type="module"></script>
+ <link rel="stylesheet" href="embed.css">
+ <script src="embed.js" type="module"></script>
+</head>
+<body>
+ <a class="skip-link" href="#playButton">跳至播放控制</a>
+ <main id="player" class="player" aria-labelledby="pageTitle">
+  <header class="player-heading"><h1 id="pageTitle">照片是平的，<br>怎麼估出樹高？</h1><button id="themeButton" type="button" disabled aria-label="切換深色模式" aria-pressed="false">切換深色</button></header>
+  <div id="composition" class="composition">
+   <div id="stage" class="stage" tabindex="0" aria-label="100秒樹冠高度動畫；空白鍵播放或暫停，方向鍵前後一秒">
+    <section id="photoScene" class="visual-scene photo-scene" aria-label="衛星照片中的零散樹冠">
+     <div class="photo-frame">
+      <svg id="openingPhoto" data-window="photo" viewBox="152 607 449 448" role="img" aria-label="加州同一區域的衛星照片，樹冠散布在裸地上"><defs><clipPath id="initial-photo"><rect x="152" y="607" width="449" height="448"/></clipPath></defs><image data-asset="figure" href="assets/figure7.png" width="2614" height="1144" clip-path="url(#initial-photo)"/></svg>
+      <svg id="photoFocus" viewBox="0 0 449 448" aria-hidden="true"><path d="M168 73v-17h28 M258 56h28v17 M286 139v17h-28 M196 156h-28v-17"/></svg>
+     </div>
+     <p class="image-name">衛星照片<span>34.691° N, 120.097° W</span></p>
+     <p class="visual-caption">Tolan 等 · Figure 7 局部 · Maxar 影像</p>
+    </section>
+    <section id="heightScene" class="visual-scene height-scene" aria-label="地面到冠頂的高度示意" hidden>
+     <svg class="profile" viewBox="0 0 760 510" role="img" aria-label="側視概念圖。垂直線連接地面和冠頂，表示相對地面高度，沒有實測數值。">
+      <path class="ground-fill" d="M40 430H720V480H40Z"/><path class="ground-line" d="M40 430H720"/>
+      <path class="trunk" d="M287 430V300 M287 356l-52-61 M287 337l48-52 M502 430V348"/>
+      <path class="canopy-fill" d="M143 304C104 281 123 236 157 223C137 177 177 148 211 161C220 106 274 98 306 131C345 100 389 131 387 174C434 177 457 224 432 256C460 298 421 330 383 327C355 364 312 346 290 331C247 358 199 347 190 322C169 331 151 323 143 304Z"/>
+      <path class="canopy-fill secondary-canopy" d="M443 340C416 310 433 275 461 271C466 232 514 220 534 247C577 240 605 271 589 299C620 329 585 363 553 354C525 380 481 369 477 354C461 361 447 350 443 340Z"/>
+      <path class="reference-line" d="M280 116H646 M530 430H646"/>
+      <path id="heightMeasure" class="measure-line" pathLength="1" d="M630 430V116 M619 127l11-11 11 11 M619 419l11 11 11-11"/>
+      <g id="heightWords"><text x="651" y="282" class="diagram-text">高度</text><text x="572" y="100" class="small-label">冠頂</text></g>
+      <text x="560" y="467" class="small-label">當地地面</text>
+     </svg>
+     <p class="visual-caption">側視概念示意 · 不代表開場地點的樹形或實測高度</p>
+    </section>
+    <section id="learnScene" class="visual-scene learn-scene" aria-label="影像特徵學習與高度配對訓練" hidden>
+     <p id="learnTitle" class="scene-heading">先認識照片中的形狀與紋理</p>
+     <div id="features" class="learning-panel">
+      <div id="featureWindows" class="feature-windows">
+       <svg id="featurePhoto" data-window="photo" role="img" aria-label="同一張衛星照片作為學習影像的示意"/>
+       <svg class="feature-outline" viewBox="0 0 449 448" aria-hidden="true"><rect x="22" y="31" width="155" height="157"/><rect x="210" y="163" width="132" height="143"/><rect x="108" y="306" width="104" height="111"/></svg>
+      </div>
+      <p class="learning-takeaway">先學看照片，還沒有高度答案。</p>
+      <p class="visual-caption">以同一張照片示意觀察範圍；實際預訓練使用大量未標註影像。</p>
+     </div>
+     <div id="pairs" class="learning-panel" hidden>
+      <svg class="pair-diagram" viewBox="0 0 760 400" role="img" aria-label="概念配對：同一地點的衛星照片和航空光達高度參考，用來學習預測高度。">
+       <rect class="diagram-surface" x="20" y="45" width="280" height="245"/>
+       <g class="canopy-fill"><circle cx="85" cy="117" r="33"/><circle cx="205" cy="140" r="47"/><circle cx="116" cy="232" r="26"/><circle cx="237" cy="245" r="22"/></g>
+       <rect class="diagram-surface" x="460" y="45" width="280" height="245"/>
+       <g class="reference-bars"><path d="M500 245V150h38v95Z M559 245V101h38v144Z M618 245V182h38v63Z M677 245V200h38v45Z"/></g>
+       <path id="pairLink" class="measure-line" pathLength="1" d="M320 154V174 M320 164H440 M440 154V174"/>
+       <text x="160" y="333" text-anchor="middle" class="diagram-text">衛星照片</text><text x="600" y="333" text-anchor="middle" class="diagram-text">光達高度參考</text>
+       <text x="380" y="382" text-anchor="middle" class="small-label">同一地點，配在一起學</text>
+      </svg>
+      <p class="learning-takeaway">讓照片中的線索，對應到量測高度。</p>
+      <p class="visual-caption">照片與高度配對的概念示意 · 高度柱不代表實測數值。</p>
+     </div>
+    </section>
+    <section id="gediScene" class="visual-scene gedi-scene" aria-label="另一個GEDI訓練模型提供調整依據" hidden>
+     <div class="model-branches">
+      <div class="model-branch"><p class="branch-input">照片＋航空光達高度</p><span class="flow-stem" aria-hidden="true"></span><p class="branch-model">學習細緻高度</p><span class="flow-stem" aria-hidden="true"></span><p class="branch-output">細緻的高度圖</p></div>
+      <div class="model-branch gedi-branch"><p class="branch-input">照片＋GEDI 觀測</p><span class="flow-stem" aria-hidden="true"></span><p class="branch-model">訓練另一個模型</p><span class="flow-stem" aria-hidden="true"></span><p class="branch-output">另一份高度估計</p></div>
+     </div>
+     <svg class="merge-lines" viewBox="0 0 760 90" preserveAspectRatio="none" aria-hidden="true"><path id="gediLink" class="measure-line" pathLength="1" d="M190 0V30H380 M570 0V30H380V80 M369 68l11 12 11-12"/></svg>
+     <p id="gediAdjust" class="adjust-output">用另一份估計，調整細緻高度圖</p>
+     <p class="visual-caption">模型分工示意 · GEDI 不是逐格實測，也不保證每個地區都變準。</p>
+    </section>
+    <section id="compareScene" class="visual-scene compare-scene" aria-label="同一區域的照片與三個方法高度圖比較" hidden>
+     <p id="comparisonTitle" class="scene-heading">照片與高度圖，對照同一片地</p>
+     <div class="comparison-body">
+      <div class="comparison-content">
+       <div id="wipeView" class="wipe-view"><div class="wipe-frame"><svg id="wipePhoto" data-window="photo" role="img" aria-label="原衛星照片"/><svg id="wipeMap" data-window="model" role="img" aria-label="同地點作者推估的樹冠高度"/><span id="wipeLine" aria-hidden="true"></span></div><p class="image-name"><span id="wipeLeftLabel">作者推估</span><span id="wipeRightLabel">衛星照片</span></p></div>
+       <div id="comparisonPair" class="comparison-pair" hidden><figure><svg id="modelMap" data-window="model" role="img" aria-label="作者推估的高度圖"/><figcaption>作者推估</figcaption></figure><figure><svg id="otherMap" data-window="lang" role="img" aria-label="Lang等人的高度圖"/><figcaption id="otherName">Lang 等人的高度圖</figcaption></figure></div>
+      </div>
+      <div class="height-key"><p>高度<br>（公尺）</p><svg id="compareLegend" data-window="legend" role="img" aria-label="作者原色階，線性0至20公尺，紫色低、黃色高"/></div>
+     </div>
+     <p class="visual-caption">Tolan 等 · Figure 7 · Maxar 影像 · 原方向、同區域、原色彩<span>論文中的加州示例 · 高度為模型推估。</span></p>
+    </section>
+    <section id="testScene" class="visual-scene test-scene" aria-label="三組測試資料的平均絕對誤差" hidden>
+     <p class="scene-heading">高度平均差多少公尺？</p>
+     <div class="results" role="table" aria-label="SSL加GEDI模型的像元平均絕對誤差">
+      <div class="results-heading" role="row"><span role="columnheader">測試資料</span><span role="columnheader">平均絕對誤差</span></div>
+      <div class="result-row" role="row"><span role="cell">NEON test</span><div class="result-value" role="cell"><span>2.7<small> 公尺</small></span><span class="error-bar" style="--fraction:.45" aria-hidden="true"></span></div></div>
+      <div class="result-row" role="row"><span role="cell">CA-Brande</span><div class="result-value" role="cell"><span>0.6<small> 公尺</small></span><span class="error-bar" style="--fraction:.1" aria-hidden="true"></span></div></div>
+      <div class="result-row" role="row"><span role="cell">São Paulo</span><div class="result-value" role="cell"><span>5.1<small> 公尺</small></span><span class="error-bar" style="--fraction:.85" aria-hidden="true"></span></div></div>
+     </div>
+     <p class="test-meaning">數值越小，平均差距越小。</p>
+     <p class="visual-caption">同一方法：SSL + GEDI · Tolan 等，Table 2<span>逐格比較估計高度與光達參考值；三組資料不代表全球精度。</span></p>
+    </section>
+    <section id="endScene" class="visual-scene end-scene" aria-label="照片能支援高度估計，一公尺網格不是一公尺誤差" hidden>
+     <div class="end-pair"><figure><svg id="endPhoto" data-window="photo" role="img" aria-label="開場的衛星照片"/><figcaption>照片中的樹冠</figcaption></figure><figure><svg id="endMap" data-window="model" role="img" aria-label="作者推估的高度"/><figcaption>作者推估的高度</figcaption></figure><div class="height-key"><p>高度<br>（公尺）</p><svg id="endLegend" data-window="legend" role="img" aria-label="原色階0至20公尺"/></div></div>
+     <div class="grid-note"><svg viewBox="0 0 140 125" role="img" aria-label="一公尺網格的幾何示意，和原研究地圖分開"><path class="grid-lines" d="M20 15H116V111H20Z M52 15V111 M84 15V111 M20 47H116 M20 79H116"/><rect class="selected-cell" x="52" y="47" width="32" height="32"/><path class="ground-line" d="M53 87V93H83V87"/><text x="68" y="118" text-anchor="middle" class="grid-label">1 公尺</text></svg><p><strong>一公尺，說的是地圖格子。</strong><span>高度誤差，要另外檢查。</span></p></div>
+     <p class="visual-caption">上方：論文 Figure 7／Maxar；下方：2024 全球產品網格示意。<span>全球影像跨 2009–2020 年；開發期未做超過 25 公尺高樹的現地驗證。</span></p>
+    </section>
+   </div>
+   <aside class="narrative" aria-labelledby="phaseTitle"><p id="phaseLabel" class="phase-label">1 / 7 · 從上方看樹冠</p><h2 id="phaseTitle">看得見樹冠，還不知道樹高。</h2><p id="phaseCopy">從衛星照片看，綠色一團團地散在空地上。它們是樹的冠頂。但只看這張照片，怎麼知道它們離地面多高？</p><p id="phaseNote" class="phase-note">衛星照片取自作者 Figure 7；後面會回到同一個地點。</p></aside>
+  </div>
+  <div class="transport" role="group" aria-label="動畫播放控制"><div class="transport-row"><button id="playButton" class="primary" type="button" disabled aria-label="播放動畫" aria-pressed="false">播放</button><button id="replayButton" type="button" disabled>重播</button><output id="timeReadout" aria-label="目前時間與總長">00:00 / 01:40</output><button id="expandButton" type="button" disabled aria-label="同頁放大觀看" aria-pressed="false">放大觀看</button></div><label class="sr-only" for="seekRange">播放進度</label><input id="seekRange" type="range" min="0" max="100" step="0.0416666667" value="0" disabled aria-valuetext="0 秒，共 100 秒"><div class="frame-controls" role="group" aria-label="逐幀檢視"><button type="button" data-frame="-1" disabled>上一幀</button><button type="button" data-frame="1" disabled>下一幀</button><span>逐幀 · 24 fps</span></div></div>
+  <p id="status" class="player-status" role="status" aria-live="polite">正在載入圖片與來源資料。</p>
+  <div id="error" class="error-message" hidden><p id="errorCopy"></p><button id="retryButton" type="button">重新載入</button></div>
+  <nav class="phase-navigation" aria-label="選擇動畫段落"><button type="button" data-seek="0" disabled aria-current="step"><span>00:00</span>從上方看樹冠</button><button type="button" data-seek="12" disabled><span>00:12</span>高度怎麼量</button><button type="button" data-seek="24" disabled><span>00:24</span>照片和高度配對</button><button type="button" data-seek="42" disabled><span>00:42</span>GEDI 怎麼幫忙</button><button type="button" data-seek="56" disabled><span>00:56</span>比較三張高度圖</button><button type="button" data-seek="74" disabled><span>01:14</span>誤差有多少</button><button type="button" data-seek="90" disabled><span>01:30</span>照片能回答什麼</button></nav>
+  <noscript><p class="notice">動畫需要 JavaScript。下方保留完整文字與原圖。</p></noscript>
+  <div class="reading-footer">
+   <p><a href="film/05-01-canopy-height-v01.mp4" download>下載 100 秒影片（MP4）</a></p>
+   <details class="static-reading"><summary>不播放，直接閱讀</summary><ol>
+    <li><h2>從照片認出樹冠</h2><p>照片能看見樹冠的形狀和分布，但沒有直接給出離地高度。高度是當地地面到冠頂的垂直距離；光達量測能提供參考。</p></li>
+    <li><h2>讓照片與量測接起來</h2><p>模型先從未標註照片學習影像特徵，再用照片與航空光達高度資料的配對學習估高。研究者另用 GEDI 觀測訓練模型，以其高度估計調整細緻地圖。GEDI 並未逐格量遍全球，調整也不保證各地都更準。</p></li>
+    <li><h2>同一片地，地圖能看多細</h2><p>下面原圖的下排依序是衛星照片、作者推估、Lang 與 Potapov 等人的高度圖。三圖使用相同線性 0–20 公尺色階，可比較零散樹冠的細節。這是論文的地點示例，不是 2024 全球產品的新查詢。</p><img src="assets/figure7.png" width="2614" height="1144" alt="作者Figure 7完整原圖，衛星照片與三種方法的高度圖，以及共用0至20公尺色階"><p class="visual-caption">Tolan 等 · Figure 7 · Maxar 影像 · 論文 CC BY 4.0</p></li>
+    <li><h2>細緻之外，還要檢查誤差</h2><p>Table 2 的 SSL + GEDI 模型在 NEON test、CA-Brande、São Paulo 三組資料上的像元平均絕對誤差，分別是 2.7、0.6、5.1 公尺。這不是逐棵樹的誤差，也不是全球高度精度。一公尺網格只描述地圖的地面尺度。</p></li>
+    <li><h2>這張地圖表示哪個時間</h2><p>2024 全球產品使用 2009–2020 年的影像，不是同一天的全球森林。WRI 說明訓練與驗證地區有限，開發期沒有超過 25 公尺高樹的現地驗證。樹高圖能支援後續研究，但不能直接等同碳量或復育成效。</p></li>
+   </ol></details>
+   <details class="source-copy"><summary>圖片與研究來源</summary><p><a href="https://arxiv.org/html/2304.07213v3">Tolan 等：Very high resolution canopy height maps from RGB imagery using self-supervised vision transformer and convolutional decoder trained on aerial lidar</a>。固定閱讀 2023-12-15 的 arXiv v3；期刊為 Remote Sensing of Environment 300（2024），113888。圖 7 為作者公開圖版，保留 Maxar 影像署名；圖片未重新著色。</p><p><a href="https://sustainability.atmeta.com/blog/2024/04/22/using-artificial-intelligence-to-map-the-earths-forests/">Meta／WRI，2024 全球一公尺產品發布</a> · <a href="https://datasets.wri.org/datasets/meta-tree-canopy-height">WRI 資料說明與限制</a> · <a href="https://registry.opendata.aws/dataforgood-fb-forests/">AWS 資料目錄</a>。</p><p>動畫中的高度剖面、訓練配對、模型分工及網格均為概念示意；沒有執行模型、從 PNG 反推高度，或取得開場地點的原始光達配對。</p><p><a href="assets/figure7.png">查看完整原圖</a> · <a href="SOURCE.md">素材與顯示範圍紀錄</a></p></details>
+  </div>
+ </main>
+</body>
+</html>

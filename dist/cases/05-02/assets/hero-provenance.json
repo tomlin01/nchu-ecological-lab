@@ -1,0 +1,23 @@
+{
+  "file": "05-02-reef-hero-v09.webp",
+  "source": "Accepted three-study-v09 live canvas export",
+  "time_seconds": 9,
+  "width": 1600,
+  "height": 900,
+  "sha256": "29ba3374aa5085666e13b171fc8a8d0cfb9bc6eccd6b8cb27516e8158aa543bf",
+  "kind": "concept_scene_render",
+  "photograph": false,
+  "abaiang_reconstruction": false,
+  "source_app_sha256": "89dfae361eb22d3edd525fbcefb7f7de735142a38d10e95a5c3d54961eb93520",
+  "source_scene_files": {
+    "marine-life.mjs": "ed785dd9d9c5d0c9fd2bf7048c7332e3f607697b856de90441b7ead933221ca4",
+    "scan-corals.mjs": "aaa6a0cf225c387a75278d7d6825e1fbe0dbfff6c7c5b6de098ee3a28cf8b058",
+    "terrain.mjs": "1820f3009b39b894f3b007d9f29b0e06f1495ec9659a0bb74daefdee737e1038",
+    "atmosphere.mjs": "8b909a78346d0cf30c74cecf268c5bac723fa7c378c0e7ab638bede69d4e9ecd",
+    "app.mjs": "89dfae361eb22d3edd525fbcefb7f7de735142a38d10e95a5c3d54961eb93520",
+    "surface-material.mjs": "0f8725b99e4b7a0bd4f6f0d1b677ac5980dd92bacff022fb33a9875b1dd1cacc",
+    "coral-pigment.mjs": "218be9928ef3b41ffa3cec4c449c8daae1f94054e7e41219d814eb16f9cb5198",
+    "biota.mjs": "659e512220ea282d520260a05a4bbd600cc1cc9ebb20da97a04a0b47eecd70a3",
+    "surroundings.mjs": "920a747a83310c067356025a4eb9ce1e1e70fbbb48849c8df2f0d0412b830f9f"
+  }
+}

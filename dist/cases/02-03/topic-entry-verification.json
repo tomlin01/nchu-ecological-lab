@@ -1,0 +1,36 @@
+{
+  "revision": "topic-02-scroll-v02",
+  "case_id": "02-03",
+  "status": "navigation_amendment_verified",
+  "before_html_sha256": "945b93c9a72d230679db5fdeb1fb31a15a04df3904fb967117c9e417a8329954",
+  "current_html_sha256": "11784b9fb0d4989fe6bb03748291e41c2564b7fb4753fb1c66bd5573e9310d7d",
+  "new_backlink": "../../index.html#topic-02",
+  "only_backlink_changed": true,
+  "browser_checked": true,
+  "content_and_ui_versions_preserved": true,
+  "animation_and_media_unchanged": true,
+  "new_inference": false,
+  "new_acceptance_event": false,
+  "browser_record": "work/ecology-ai-rollout/topic-02-scroll-v02/browser-verification.json",
+  "browser_record_sha256": "93f3744d82aba2c820b640013dc2af811757e7528ec83b0606156c1d1d3506cf",
+  "main_topic_entry": "index.html#topic-02",
+  "entry_history": [
+    {
+      "revision": "topic-02-home-v01",
+      "case_id": "02-03",
+      "status": "integrated_local_verified",
+      "before_html_sha256": "11784b9fb0d4989fe6bb03748291e41c2564b7fb4753fb1c66bd5573e9310d7d",
+      "current_html_sha256": "945b93c9a72d230679db5fdeb1fb31a15a04df3904fb967117c9e417a8329954",
+      "new_backlink": "../../topics/02/index.html",
+      "only_backlink_changed": true,
+      "browser_checked": true,
+      "content_and_ui_versions_preserved": true,
+      "animation_and_media_unchanged": true,
+      "new_inference": false,
+      "new_acceptance_event": false,
+      "browser_record": "work/ecology-ai-rollout/topic-02-home-v01/browser-verification.json",
+      "browser_record_sha256": "4634be43f4fbd42e3e6e60d6e27f7f190439ffb48ffa4e5c466a656911e4957f",
+      "main_topic_entry": "topics/02/index.html"
+    }
+  ]
+}

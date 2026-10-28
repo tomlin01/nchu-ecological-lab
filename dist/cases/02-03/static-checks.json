@@ -1,0 +1,51 @@
+{
+  "case_id": "02-03",
+  "pages": [
+    "question",
+    "method",
+    "evidence",
+    "sources"
+  ],
+  "accepted_files": 25,
+  "accepted_originals_byte_identical": true,
+  "accepted_source_directory_unchanged": true,
+  "only_three_embed_additions": true,
+  "hero_and_figures_original_bytes": true,
+  "single_iframe": true,
+  "no_parent_audio_element": true,
+  "same_iframe_never_moved_or_reloaded": true,
+  "method_page_index": 1,
+  "transcript_phases": 8,
+  "historical_case_all_fields_preserved": true,
+  "js_syntax": [
+    "case.js",
+    "animation/embed.js"
+  ],
+  "css_parse": true,
+  "local_links_checked": 58,
+  "missing_links": [],
+  "font_coverage": [
+    {
+      "family": "Case Sans",
+      "characters": 598,
+      "missing": [],
+      "file": "fonts/case-sans.woff2",
+      "bytes": 195748,
+      "sha256": "9d90a41c91e2fb9a1aa000fef5ffec46d2f8b397fc115472918aa04cb72a1da0"
+    },
+    {
+      "family": "Case Serif",
+      "characters": 598,
+      "missing": [],
+      "file": "fonts/case-serif.woff2",
+      "bytes": 264624,
+      "sha256": "b96833f0a9f40847feb1e9dfa757424287cc3f3f18125525943a54a1f3300e53"
+    }
+  ],
+  "candidate_home_resolves": true,
+  "candidate_home": "../../../../ecology-ai-site-v01/index.html#topic-02",
+  "main_home_for_root": "../../index.html#topic-02",
+  "browser_verified_by_this_build": false,
+  "fresh_model_inference": false,
+  "public_deployment": false
+}

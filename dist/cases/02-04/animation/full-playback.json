@@ -1,0 +1,1694 @@
+{
+  "startedAt": 1792565289964,
+  "states": [
+    {
+      "wallSeconds": 0.501,
+      "time": 0.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 1.001,
+      "time": 0.967,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 1.502,
+      "time": 1.475,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 2.002,
+      "time": 1.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 2.501,
+      "time": 2.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 3.002,
+      "time": 2.966,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 3.502,
+      "time": 3.475,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 4.001,
+      "time": 3.967,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 4.502,
+      "time": 4.475,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 5.001,
+      "time": 4.967,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 5.501,
+      "time": 5.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 6.001,
+      "time": 5.967,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 6.502,
+      "time": 6.475,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 7.001,
+      "time": 6.967,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 7.501,
+      "time": 7.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 8.002,
+      "time": 7.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 8.501,
+      "time": 8.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 9.002,
+      "time": 8.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 9.502,
+      "time": 9.475,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 10.002,
+      "time": 9.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 10.501,
+      "time": 10.474,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 11.003,
+      "time": 10.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 11.501,
+      "time": 11.467,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 12.001,
+      "time": 11.975,
+      "phase": 0,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 12.501,
+      "time": 12.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 13.001,
+      "time": 12.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 13.501,
+      "time": 13.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 14.001,
+      "time": 13.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 14.501,
+      "time": 14.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 15,
+      "time": 14.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 15.5,
+      "time": 15.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 16.001,
+      "time": 15.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 16.502,
+      "time": 16.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 17.001,
+      "time": 16.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 17.5,
+      "time": 17.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 18.001,
+      "time": 17.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 18.501,
+      "time": 18.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "sample-flow",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 19,
+      "time": 18.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "optical-detection",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 19.501,
+      "time": 19.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "trigger",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 20,
+      "time": 19.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "trigger",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 20.502,
+      "time": 20.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "trigger",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 21,
+      "time": 20.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "trigger",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 21.5,
+      "time": 21.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "trigger",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 22.002,
+      "time": 21.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "flash-image",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 22.502,
+      "time": 22.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 23.002,
+      "time": 22.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 23.504,
+      "time": 23.475,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 24,
+      "time": 23.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 24.5,
+      "time": 24.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 25.001,
+      "time": 24.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 25.5,
+      "time": 25.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 26,
+      "time": 25.966,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 26.502,
+      "time": 26.474,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 27.001,
+      "time": 26.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 27.5,
+      "time": 27.466,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 28.001,
+      "time": 27.974,
+      "phase": 1,
+      "playing": true,
+      "instrumentPhase": "captured",
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 28.5,
+      "time": 28.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 29,
+      "time": 28.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 29.501,
+      "time": 29.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 30.003,
+      "time": 29.974,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 30.502,
+      "time": 30.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 31,
+      "time": 30.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 31.5,
+      "time": 31.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 32.003,
+      "time": 31.974,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 32.5,
+      "time": 32.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 33,
+      "time": 32.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 33.5,
+      "time": 33.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 34,
+      "time": 33.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 34.5,
+      "time": 34.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 35.002,
+      "time": 34.974,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 35.503,
+      "time": 35.473,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 36,
+      "time": 35.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 36.504,
+      "time": 36.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 37.002,
+      "time": 36.974,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 37.5,
+      "time": 37.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 38,
+      "time": 37.966,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 38.499,
+      "time": 38.466,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 39,
+      "time": 38.965,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 39.501,
+      "time": 39.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 40,
+      "time": 39.974,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 40.503,
+      "time": 40.474,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 41.002,
+      "time": 40.975,
+      "phase": 2,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": true,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 41.5,
+      "time": 41.47,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 42.001,
+      "time": 41.971,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 42.5,
+      "time": 42.47,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 42.999,
+      "time": 42.97,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 43.501,
+      "time": 43.474,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 43.999,
+      "time": 43.966,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 44.5,
+      "time": 44.473,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 45.001,
+      "time": 44.974,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 45.5,
+      "time": 45.466,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 45.999,
+      "time": 45.973,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 46.502,
+      "time": 46.474,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 47,
+      "time": 46.974,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 47.502,
+      "time": 47.473,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 1
+    },
+    {
+      "wallSeconds": 48,
+      "time": 47.965,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 2
+    },
+    {
+      "wallSeconds": 48.5,
+      "time": 48.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 2
+    },
+    {
+      "wallSeconds": 48.999,
+      "time": 48.965,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 3
+    },
+    {
+      "wallSeconds": 49.5,
+      "time": 49.473,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 3
+    },
+    {
+      "wallSeconds": 50,
+      "time": 49.974,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 50.5,
+      "time": 50.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 51,
+      "time": 50.973,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 51.499,
+      "time": 51.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 52,
+      "time": 51.973,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 52.499,
+      "time": 52.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 53,
+      "time": 52.973,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 53.499,
+      "time": 53.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 54,
+      "time": 53.974,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 54.499,
+      "time": 54.465,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 55,
+      "time": 54.974,
+      "phase": 3,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 4
+    },
+    {
+      "wallSeconds": 55.499,
+      "time": 55.465,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 55.999,
+      "time": 55.965,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 56.499,
+      "time": 56.465,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 57,
+      "time": 56.974,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 57.5,
+      "time": 57.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 58.001,
+      "time": 57.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 58.5,
+      "time": 58.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 59.001,
+      "time": 58.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 59.501,
+      "time": 59.474,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 60,
+      "time": 59.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 60.5,
+      "time": 60.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 61.001,
+      "time": 60.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 61.5,
+      "time": 61.474,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 62,
+      "time": 61.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 62.5,
+      "time": 62.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 63,
+      "time": 62.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 63.501,
+      "time": 63.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 63.999,
+      "time": 63.965,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 64.5,
+      "time": 64.473,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 65,
+      "time": 64.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 65.502,
+      "time": 65.474,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 66,
+      "time": 65.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 66.499,
+      "time": 66.465,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 67,
+      "time": 66.973,
+      "phase": 4,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 67.5,
+      "time": 67.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 68,
+      "time": 67.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 68.5,
+      "time": 68.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 69.001,
+      "time": 68.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 69.499,
+      "time": 69.465,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 70,
+      "time": 69.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 70.499,
+      "time": 70.465,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 71.003,
+      "time": 70.974,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 71.499,
+      "time": 71.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 71.999,
+      "time": 71.965,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 72.5,
+      "time": 72.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 73,
+      "time": 72.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 73.499,
+      "time": 73.465,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 74,
+      "time": 73.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 74.5,
+      "time": 74.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 75.001,
+      "time": 74.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 75.502,
+      "time": 75.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 76,
+      "time": 75.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 76.5,
+      "time": 76.473,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 77.001,
+      "time": 76.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 77.501,
+      "time": 77.474,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 78.001,
+      "time": 77.973,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 78.499,
+      "time": 78.47,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 79,
+      "time": 78.969,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 79.499,
+      "time": 79.469,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 80,
+      "time": 79.969,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 80.5,
+      "time": 80.469,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 80.999,
+      "time": 80.969,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 81.5,
+      "time": 81.469,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 82,
+      "time": 81.969,
+      "phase": 5,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 82.499,
+      "time": 82.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 83,
+      "time": 82.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 83.5,
+      "time": 83.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 83.999,
+      "time": 83.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 84.499,
+      "time": 84.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 85,
+      "time": 84.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 85.499,
+      "time": 85.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 86,
+      "time": 85.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 86.5,
+      "time": 86.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 87,
+      "time": 86.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 87.499,
+      "time": 87.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 87.999,
+      "time": 87.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 88.499,
+      "time": 88.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 89,
+      "time": 88.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 89.499,
+      "time": 89.469,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 89.999,
+      "time": 89.969,
+      "phase": 6,
+      "playing": true,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    },
+    {
+      "wallSeconds": 90.5,
+      "time": 90,
+      "phase": 6,
+      "playing": false,
+      "instrumentPhase": null,
+      "candidates": false,
+      "teachingCells": 0
+    }
+  ],
+  "errors": [],
+  "firstSeekBeforePlayback": 8,
+  "completedAt": 1792565380465,
+  "status": "PASS",
+  "elapsedSeconds": 90.501,
+  "phases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "mechanism": [
+    "sample-flow",
+    "optical-detection",
+    "trigger",
+    "flash-image",
+    "captured"
+  ],
+  "finalState": {
+    "time": 90,
+    "phase": 6,
+    "mode": "closing",
+    "local": 8,
+    "progress": 1,
+    "photoId": "00298",
+    "instrumentTime": 5,
+    "instrumentView": "mechanism",
+    "candidatesVisible": false,
+    "selectedCandidate": false,
+    "chainStep": "teaching",
+    "teachingCells": 0,
+    "comparisonFocus": "after",
+    "resultsFocus": "samples",
+    "newModelInference": false,
+    "manualSpeciesVerified": false,
+    "realRoiCellCount": null,
+    "hasAudio": false,
+    "duration": 90,
+    "ready": true,
+    "playing": false,
+    "reducedMotion": false,
+    "source": "00298",
+    "sourceFile": "assets/D20200701T002011_IFCB104_00298.png",
+    "sourceCrop": [
+      0,
+      0,
+      488,
+      146
+    ],
+    "candidateScores": [],
+    "candidateRevealed": false,
+    "selectedLabel": null,
+    "instrument": null,
+    "sourceDialogOpen": false,
+    "sourceImageUnmodified": true
+  },
+  "noSeekDuringPlayback": true
+}

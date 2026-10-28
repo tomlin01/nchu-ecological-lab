@@ -1,0 +1,12 @@
+/* The site palette owns reading surfaces; the original film retains its colour. */
+@media screen{
+  :root{--ground:var(--theme-ground);--surface:var(--theme-surface);--deep:var(--theme-surface-alt);--ink:var(--theme-ink);--muted:var(--theme-muted);--accent:var(--theme-accent);--link:var(--theme-accent);color-scheme:var(--theme-scheme)}
+  body,.site-header,.section-nav,.reading-controls{background:var(--ground);color:var(--ink)}
+  .reading-surface,.method-surface,.source-reading{background:var(--surface);color:var(--ink)}
+  .roles-table thead,.roles-table tbody tr:nth-child(even){background:var(--deep)}
+  .reading-controls p,.image-credit,.frame-status,.teaching-note,.player-hint,.colophon{color:var(--muted)}
+  #method-frame{background:var(--surface)}
+  .retry-action{background:var(--theme-button-bg);color:var(--theme-button-ink)}
+  body.ecology-sidebar-ready .ecology-sidebar-ui::before{background:var(--ground);color:var(--ink)}
+}
+@media print{body,.site-header,.reading-controls{background:#fff;color:#242829}.reading-surface,.method-surface,.source-reading{background:none}}

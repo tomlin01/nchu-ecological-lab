@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8944/index.html?export=1&theme=light",
+  "export_api": "EcologyLandcoverPlayer",
+  "composition_selector": "#composition",
+  "output": "05-04-dynamic-world-v01.mp4",
+  "started_at": "2026-10-26T23:30:46.753Z",
+  "completed_at": "2026-10-26T23:35:56.257Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 2880,
+  "requested_duration_seconds": 120,
+  "first_seek_seconds": 0,
+  "last_seek_seconds": 119.95833333333333,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 92,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "ffprobe": {
+    "duration_seconds": 120,
+    "decoded_frame_count": 2880,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "color_range": "tv",
+    "audio_streams": 0,
+    "bytes": 3246122
+  },
+  "faststart_verification": {
+    "verified": true,
+    "moov_offset": 32,
+    "mdat_offset": 35803
+  },
+  "source_hashes_before": {
+    "prototype-v01/app.mjs": "a929dd763d4f429806d9e3e429ff5c145e7a18036cd87544b8e3bd732859e04c",
+    "prototype-v01/assets/disagreement.png": "fb05624caf34d553173d2f265cb5faf253a7a6bea756d42aa8783914b190ea6c",
+    "prototype-v01/assets/dw-label.png": "593705d1dbc2138b5ec5255870bf8c70a11ba21c83147341224fe08a499bd466",
+    "prototype-v01/assets/dw-paper-figure2.png": "c32c0c524542feb4d756957face5a74b17c95b5df53e85c2fc865e1ba6ba53e0",
+    "prototype-v01/assets/dw-paper-figure4.png": "316454172399ba0888ded0b3fa325e32664eabc5bca9e022d06bd2b43d494a52",
+    "prototype-v01/assets/dw-paper-figure6.png": "882eb171dad9fbc69b5d435187e44db30b7d0fef90c358519834c30390071797",
+    "prototype-v01/assets/dw-threshold-05.png": "7aaeb39b7cd2a5e05b40fa17b329b88b3320b79bd603c50eb3448457d3268026",
+    "prototype-v01/assets/dw-top1.png": "a07cc11811a7c2201bd2fb1deb939470d43cc80a477ca7a0b6268a371ab4f673",
+    "prototype-v01/assets/figure-data.json": "311f8d8b1e804ac6194a8cc4214a112bb23506d08a8f45355e008f31d6699dcd",
+    "prototype-v01/assets/reference-label.png": "78fdd8e2049f0a5f0cf178aab998ab6c1a1ea29e9f85ce1a071b179dcf9e5715",
+    "prototype-v01/assets/research-results.json": "79415af530b13f425a56ffb10f5faeee692922dd1d0a7f90c5efe0f85eb4aa94",
+    "prototype-v01/assets/s2-reference-rgb.png": "6ca78b8e86416a8e3a9f99109e0f436c28051efad8f30c1e587a6237385116b4",
+    "prototype-v01/assets/source-data.json": "991dfd8efadb9048ca1e94a949fe3bcdc94cdb41786eb9b26e3ff2b641075019",
+    "prototype-v01/fonts/landcover-sans.woff2": "48e41f8d6e03ca35aacdb6743516fbb473abc7f2a013061ec82e57eb1f61e098",
+    "prototype-v01/index.html": "0491d31813834e1bf614223d327f8b7634f1e4260ca1ea2c06cd833df7723612",
+    "prototype-v01/model.mjs": "4dec145ee081c6d0175b049dddb4bf34fb18f933ebdd5ee72b9399c9952798c2",
+    "prototype-v01/scene.mjs": "68a01ffe953e1ce3d2948611c48f59b32f03c5934cf952b452ac39642088a1d1",
+    "prototype-v01/style.css": "0df7615984c5a034c998bb1d993bb4767a09a742ead1a4866b30d2e9320f4d6c",
+    "render-video-v01.cjs": "69fa737867fbd3a82578103def958aeefcdcf1b5ce66d70807ff69abe1247ea2"
+  },
+  "source_hashes_after": {
+    "prototype-v01/app.mjs": "a929dd763d4f429806d9e3e429ff5c145e7a18036cd87544b8e3bd732859e04c",
+    "prototype-v01/assets/disagreement.png": "fb05624caf34d553173d2f265cb5faf253a7a6bea756d42aa8783914b190ea6c",
+    "prototype-v01/assets/dw-label.png": "593705d1dbc2138b5ec5255870bf8c70a11ba21c83147341224fe08a499bd466",
+    "prototype-v01/assets/dw-paper-figure2.png": "c32c0c524542feb4d756957face5a74b17c95b5df53e85c2fc865e1ba6ba53e0",
+    "prototype-v01/assets/dw-paper-figure4.png": "316454172399ba0888ded0b3fa325e32664eabc5bca9e022d06bd2b43d494a52",
+    "prototype-v01/assets/dw-paper-figure6.png": "882eb171dad9fbc69b5d435187e44db30b7d0fef90c358519834c30390071797",
+    "prototype-v01/assets/dw-threshold-05.png": "7aaeb39b7cd2a5e05b40fa17b329b88b3320b79bd603c50eb3448457d3268026",
+    "prototype-v01/assets/dw-top1.png": "a07cc11811a7c2201bd2fb1deb939470d43cc80a477ca7a0b6268a371ab4f673",
+    "prototype-v01/assets/figure-data.json": "311f8d8b1e804ac6194a8cc4214a112bb23506d08a8f45355e008f31d6699dcd",
+    "prototype-v01/assets/reference-label.png": "78fdd8e2049f0a5f0cf178aab998ab6c1a1ea29e9f85ce1a071b179dcf9e5715",
+    "prototype-v01/assets/research-results.json": "79415af530b13f425a56ffb10f5faeee692922dd1d0a7f90c5efe0f85eb4aa94",
+    "prototype-v01/assets/s2-reference-rgb.png": "6ca78b8e86416a8e3a9f99109e0f436c28051efad8f30c1e587a6237385116b4",
+    "prototype-v01/assets/source-data.json": "991dfd8efadb9048ca1e94a949fe3bcdc94cdb41786eb9b26e3ff2b641075019",
+    "prototype-v01/fonts/landcover-sans.woff2": "48e41f8d6e03ca35aacdb6743516fbb473abc7f2a013061ec82e57eb1f61e098",
+    "prototype-v01/index.html": "0491d31813834e1bf614223d327f8b7634f1e4260ca1ea2c06cd833df7723612",
+    "prototype-v01/model.mjs": "4dec145ee081c6d0175b049dddb4bf34fb18f933ebdd5ee72b9399c9952798c2",
+    "prototype-v01/scene.mjs": "68a01ffe953e1ce3d2948611c48f59b32f03c5934cf952b452ac39642088a1d1",
+    "prototype-v01/style.css": "0df7615984c5a034c998bb1d993bb4767a09a742ead1a4866b30d2e9320f4d6c",
+    "render-video-v01.cjs": "69fa737867fbd3a82578103def958aeefcdcf1b5ce66d70807ff69abe1247ea2"
+  },
+  "source_hashes_unchanged": true,
+  "runtime_initial_state": {
+    "time": 0,
+    "duration": 120,
+    "phase": 0,
+    "phaseId": "landscape",
+    "local": 0,
+    "narrative": {
+      "id": "landscape",
+      "start": 0,
+      "end": 12,
+      "label": "先看地景",
+      "title": "一張地景裡，有好幾種地表。",
+      "copy": "水面、植被、房屋和道路交錯在一起。Dynamic World把衛星影像中的線索，整理成九種土地覆蓋的分數與標籤。",
+      "note": "美國Fox Valley，2019-06-08。同次觀測的L2A參考影像，處理方式與模型使用的L1C影像不同。"
+    },
+    "reducedMotion": false,
+    "compact": false,
+    "exportMode": true,
+    "labelReveal": 0,
+    "pointIndex": 1,
+    "point": {
+      "id": "B",
+      "row": 269,
+      "col": 258,
+      "x": 0.5048828125,
+      "y": 0.5263671875,
+      "projectedXY": [
+        382255,
+        4895485
+      ],
+      "longitude": -88.47364729324438,
+      "latitude": 44.20308255301093,
+      "classIndex": 6,
+      "classKey": "built",
+      "classLabel": "建成區",
+      "probabilities": [
+        0.2447221577167511,
+        0.1524796187877655,
+        0.054523274302482605,
+        0.06266583502292633,
+        0.07174491882324219,
+        0.043294016271829605,
+        0.28583836555480957,
+        0.03380826115608215,
+        0.05092355236411095
+      ],
+      "scores": [
+        {
+          "classIndex": 0,
+          "key": "water",
+          "label": "水面",
+          "probability": 0.2447221577167511,
+          "display": "24.5%",
+          "color": "#419bdf"
+        },
+        {
+          "classIndex": 1,
+          "key": "trees",
+          "label": "樹木",
+          "probability": 0.1524796187877655,
+          "display": "15.2%",
+          "color": "#397d49"
+        },
+        {
+          "classIndex": 2,
+          "key": "grass",
+          "label": "草地",
+          "probability": 0.054523274302482605,
+          "display": "5.5%",
+          "color": "#88b053"
+        },
+        {
+          "classIndex": 3,
+          "key": "flooded_vegetation",
+          "label": "淹水植被",
+          "probability": 0.06266583502292633,
+          "display": "6.3%",
+          "color": "#7a87c6"
+        },
+        {
+          "classIndex": 4,
+          "key": "crops",
+          "label": "作物",
+          "probability": 0.07174491882324219,
+          "display": "7.2%",
+          "color": "#e49635"
+        },
+        {
+          "classIndex": 5,
+          "key": "shrub_and_scrub",
+          "label": "灌木與灌叢",
+          "probability": 0.043294016271829605,
+          "display": "4.3%",
+          "color": "#dfc35a"
+        },
+        {
+          "classIndex": 6,
+          "key": "built",
+          "label": "建成區",
+          "probability": 0.28583836555480957,
+          "display": "28.6%",
+          "color": "#c4281b"
+        },
+        {
+          "classIndex": 7,
+          "key": "bare",
+          "label": "裸地",
+          "probability": 0.03380826115608215,
+          "display": "3.4%",
+          "color": "#a59b8f"
+        },
+        {
+          "classIndex": 8,
+          "key": "snow_and_ice",
+          "label": "冰雪",
+          "probability": 0.05092355236411095,
+          "display": "5.1%",
+          "color": "#b39fe1"
+        }
+      ],
+      "top1": {
+        "key": "built",
+        "label": "建成區",
+        "probability": 0.28583836555480957,
+        "display": "28.6%"
+      },
+      "top2": {
+        "key": "water",
+        "label": "水面",
+        "probability": 0.2447221577167511,
+        "display": "24.5%"
+      },
+      "margin": 0.04111620783805847,
+      "retainedAtTeachingThreshold05": false,
+      "sumRaw": 1,
+      "sumRoundedPercent": 100.1,
+      "expertReference": {
+        "rawOneIndexed": 7,
+        "classIndex": 6,
+        "key": "built",
+        "usedToSelectPoint": false
+      }
+    },
+    "referenceMode": "pair",
+    "thresholdMode": "all",
+    "updateStep": 0,
+    "validation": {
+      "tiles": 409,
+      "validPixels": 68137571,
+      "agreePixels": 50299775,
+      "agreementPercent": 73.8,
+      "reference": "Expert Consensus",
+      "table": "Table 7"
+    },
+    "hasAudio": false,
+    "modelInferenceRun": false,
+    "newPrediction": false,
+    "perPixelAccuracyClaim": false,
+    "ready": true,
+    "loading": false,
+    "error": null,
+    "attempt": 1,
+    "playing": false,
+    "theme": "light",
+    "expanded": false,
+    "suspended": false,
+    "lastPauseReason": "initial",
+    "sourceLoaded": true,
+    "composition": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "chromium_version": "156.0.8078.48",
+  "browser_page_errors": [],
+  "prohibited_requests": [],
+  "frame_buffering": "one JPEG at a time; awaited stdin write callback; no frame images saved"
+}

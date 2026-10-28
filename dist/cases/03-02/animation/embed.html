@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>這段影片裡，牠吃了多久？｜AI × 生態研究</title>
+  <meta name="description" content="沿著研究者的西伯利亞松鴉影片，看逐幀候選如何整理成候選事件，再回到原片核對。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css?v=mobile-label-v01">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.mjs" type="module"></script>
+<link rel="stylesheet" href="embed.css?v=web-v01-r1"><script src="embed.js?v=web-v01-r1" defer></script></head>
+<body data-phase="intro">
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="playerMain" class="film-page">
+    <header class="page-heading">
+      <div class="heading-copy">
+        <p class="case-reference"><span>03-02</span><span>YOLO-Behaviour</span></p>
+        <h1>這段影片裡，牠吃了多久？</h1>
+        <p class="subtitle">西伯利亞松鴉<span aria-hidden="true"> · </span>研究者原始影片節錄，含教學停格與慢播</p>
+      </div>
+      <button id="themeButton" class="text-button theme-button" type="button" aria-label="切換深色模式">切換深色</button>
+    </header>
+
+    <div class="film-layout">
+      <section class="film-main" aria-label="影片與播放控制">
+        <div id="stage" class="media-stage" aria-label="西伯利亞松鴉來源影片">
+          <video id="sourceVideo" muted playsinline preload="metadata" poster="assets/poster.jpg" src="assets/jay-clip.mp4?release=20261027-media" aria-label="研究者拍攝的西伯利亞松鴉取食影片">瀏覽器無法播放這個影片格式。</video>
+          <svg id="overlay" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+          <div class="loading-veil" aria-hidden="true"><span class="loading-mark"></span><span>正在準備影片</span></div>
+        </div>
+
+        <div class="film-caption" aria-label="目前來源畫面">
+          <p>原片時間 <output id="sourceTime">00:00.0</output></p>
+          <p>原片第幾幀 <output id="frameLabel">—</output></p>
+          <p class="score-readout">模型分數 <output id="scoreLabel">—</output></p>
+        </div>
+
+        <div class="transport" role="group" aria-label="教學動畫播放控制">
+          <div class="transport-buttons">
+            <button id="playButton" class="primary-button" type="button" aria-label="播放動畫">播放</button>
+            <button id="replayButton" class="text-button" type="button" aria-label="從頭重播動畫">重播</button>
+            <button id="fullscreenButton" class="text-button expand-button" type="button" aria-label="放大觀看影片">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg><span>放大觀看</span>
+            </button>
+            <output id="timeLabel" class="time-label" aria-label="教學動畫目前時間與總長">00:00 / 01:18</output>
+          </div>
+          <label class="sr-only" for="seekRange">教學動畫進度，可用方向鍵調整</label>
+          <input id="seekRange" class="seek-range" type="range" min="0" max="78" step="0.1" value="0" aria-valuetext="0 秒，共 78 秒">
+        </div>
+        <div class="media-feedback">
+          <p id="mediaStatus" class="media-status" role="status" aria-live="polite">正在載入來源影片。</p>
+          <button id="retryButton" class="text-button" type="button" hidden>重新載入影片</button>
+        </div>
+
+        <section class="timeline-section" aria-labelledby="timelineTitle">
+          <div class="timeline-heading"><h2 id="timelineTitle">同一段影片的時間列</h2><div class="timeline-legend" aria-label="時間列圖例"><span><i class="legend-dot" aria-hidden="true"></i>逐幀候選</span><span class="event-legend"><i class="legend-bar" aria-hidden="true"></i>候選事件</span><span class="union-legend"><i class="legend-union" aria-hidden="true"></i>重疊只計一次</span></div></div>
+          <svg id="timelineSvg" viewBox="0 0 1000 136" preserveAspectRatio="xMidYMid meet" role="img" aria-label="來源影片中的逐幀取食候選、候選事件及目前播放位置"></svg>
+          <p class="timeline-note">時間列使用原影片時間；解說中的停格與重播不計入候選秒數。</p>
+        </section>
+      </section>
+
+      <aside class="story-rail" aria-label="本段解說">
+        <div class="chapter-story" aria-live="polite" aria-atomic="true">
+          <h2 id="chapterTitle">先看牠在做什麼</h2>
+          <p id="chapterCopy">松鴉站在食物旁，低頭、抬頭，又換了姿勢。研究者想量的是：這段影片裡，有多少時間能看見牠取食？</p>
+        </div>
+
+        <figure id="zoomPanel" class="zoom-panel">
+          <div class="zoom-window"><canvas id="zoomCanvas" width="640" height="360" role="img" aria-label="同一來源畫面的嘴部與食物局部放大"></canvas></div>
+          <figcaption>同一幀的局部放大<span>幫助回看動作，不補出新的細節。</span></figcaption>
+        </figure>
+
+        <section class="result-summary" aria-labelledby="resultTitle">
+          <h3 id="resultTitle">候選時段的總時間</h3>
+          <p id="resultValue" class="result-value">待載入</p>
+          <p id="resultNote" class="result-note">候選事件仍待人工確認。</p>
+          <p class="result-boundary">取食時間不等於吃下的食物量，也不能代表牠整天的食量。</p>
+        </section>
+
+        <p class="rail-note">模型先找出候選，是否取食仍由人回看確認。</p>
+      </aside>
+    </div>
+
+    <nav id="chapterNav" class="chapter-nav" aria-label="選擇動畫段落">
+      <button type="button" data-time="0" aria-current="step"><span class="chapter-time">00:00</span><span>先看松鴉</span></button>
+      <button type="button" data-time="10"><span class="chapter-time">00:10</span><span>什麼算取食</span></button>
+      <button type="button" data-time="22"><span class="chapter-time">00:22</span><span>逐幀找候選</span></button>
+      <button type="button" data-time="36"><span class="chapter-time">00:36</span><span>接成事件</span></button>
+      <button type="button" data-time="50"><span class="chapter-time">00:50</span><span>回看原片</span></button>
+      <button type="button" data-time="64"><span class="chapter-time">01:04</span><span>累計候選時間</span></button>
+    </nav>
+
+    <noscript><style>.loading-veil{display:none}.transport,.media-feedback{display:none}</style><p class="notice">下方保留完整解說；可直接播放原速節錄。</p><video controls muted playsinline preload="metadata" poster="assets/poster.jpg" src="assets/jay-source-excerpt.mp4" style="width:100%;max-width:800px"></video></noscript>
+
+    <div class="reading-footer">
+      <details class="reading-notes">
+        <summary>閱讀六段解說</summary>
+        <ol class="transcript">
+          <li><h2>先看松鴉</h2><p>研究者拍下松鴉在食物旁的動作，想把影片中可見的取食時間記錄下來。教學播放的 78 秒包含停格、放大和重播，並不是原影片的取食時長。</p></li>
+          <li><h2>什麼算取食</h2><p>研究者先定義可以從畫面辨認的行為，標註例子，再訓練模型。這個範例留意嘴部與食物接觸的位置；局部放大只幫助觀看，不能補出被遮住的動作。</p></li>
+          <li><h2>逐幀找候選</h2><p>模型分別判讀每一幀，提出 Eat 候選框。這裡使用研究者公開的模型輸出。沒有框只表示這一幀沒有檢出候選，不能直接當作休息或沒有吃。模型分數也不代表已經人工確認。</p></li>
+          <li><h2>接成事件</h2><p>後處理依類別、位置與時間，把相關偵測整理成候選事件。事件編號用來分段，並不等於已經辨認出這隻鳥的個體身分。</p></li>
+          <li><h2>回看原片</h2><p>候選事件的開始與結束仍要回到影片核對。目前沒有可與 Jay_Sample 對應的作者人工標註，因此候選仍待確認，也不能拿其他影片的標註當答案。</p></li>
+          <li><h2>累計候選時間</h2><p>候選秒數必須依選段、每秒幀數與事件範圍計算；重疊事件不能直接重複加總。這份紀錄可協助研究者回看行為，不能單獨證明鳥吃下多少食物或健康狀況如何。</p></li>
+        </ol>
+      </details>
+      <details class="source-notes">
+        <summary>影片、模型輸出與來源</summary>
+        <div class="source-copy">
+          <p>來源為 Chan 等研究者的 YOLO-Behaviour 範例資料，使用西伯利亞松鴉的 <code>Jay_Sample.mp4</code> 影片及同名逐幀／事件輸出。<a href="https://doi.org/10.17617/3.EZNKYV" target="_blank" rel="noopener">Edmond 資料集</a>標示 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>；本頁將來源影片裁成教學片段，另加停格、慢播、重播、局部放大、框線與時間列。</p>
+          <p>候選框、類別及可用分數取自研究者既有的模型輸出。這裡未重新執行模型，也未新增人工標註。「待確認」表示還要由人回看核對，不能當作新的研究結果。模型的候選框與用來放大的區域分別標示。</p>
+          <p><a href="assets/jay-source-excerpt.mp4" target="_blank" rel="noopener">回看原速節錄</a> · <a href="SOURCE.md" target="_blank" rel="noopener">素材與計算紀錄</a></p>
+          <p>方法說明：<a href="https://doi.org/10.1111/2041-210X.14502" target="_blank" rel="noopener">YOLO-Behaviour 論文</a> · <a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/inference.html" target="_blank" rel="noopener">逐幀推論與事件文件</a> · <a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/human.html" target="_blank" rel="noopener">人工覆核文件</a>。</p>
+        </div>
+      </details>
+    </div>
+  </main>
+</body>
+</html>

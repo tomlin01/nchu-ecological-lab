@@ -1,0 +1,74 @@
+{
+  "case_id": "02-01",
+  "version": "prototype-v01",
+  "duration": 60,
+  "status": "prototype_ready_for_review",
+  "photo_count": 4,
+  "model_inference_executed": false,
+  "static_checks": 17,
+  "browser_checks": 53,
+  "final_swap_checks": 6,
+  "actual_playback_seconds": 60.415,
+  "files": {
+    "LICENSES.txt": {
+      "bytes": 433,
+      "sha256": "88c81b89c99f618d1135b5bde440c5f06024b1e396a5b7b252322eda2ae645b8"
+    },
+    "PHOTO_PROMPTS.md": {
+      "bytes": 6861,
+      "sha256": "96b9679c2b7ee60c59858e87608a4696888a5c1f9ddd8fad447f35ba6cff8bb4"
+    },
+    "README.md": {
+      "bytes": 2033,
+      "sha256": "233d8e2db7521dc7df3dd346a23c9a9fdeee18feb7289499840c34141a9ed85c"
+    },
+    "app.js": {
+      "bytes": 19074,
+      "sha256": "b568e44f7a4c3060bbbd0330203f3fd5617c6ae043aec4e78e6c9c43e31c4d8e"
+    },
+    "assets/generation-provenance.json": {
+      "bytes": 2418,
+      "sha256": "73788bceb733b0284ac2eeb79f90815e62a049a4746f6d7effcfde5c8e5ab465"
+    },
+    "assets/geometry.json": {
+      "bytes": 2975,
+      "sha256": "a7759895e1552761834ff5f8c0c13da1a221f1445d652dec745d7af4c75acde9"
+    },
+    "data.js": {
+      "bytes": 3014,
+      "sha256": "4343c89aea19ef91fd377e90e879dd74e533ae7176fd89ff7dbb918a6ab49169"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 157564,
+      "sha256": "6e9f83c79c74b8eea39c2b4a34f89de884b662650e5deaa593fab37784869431"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 214432,
+      "sha256": "6a1edf832bcf29eaf0ca2ae896b22bf4901c4a7000beeefff1fbc48426c85325"
+    },
+    "index.html": {
+      "bytes": 9106,
+      "sha256": "da3eb9caec9e16ff8bd123ebd1538e1413cc258a84c0e84fd51e7dc826037a79"
+    },
+    "provenance.json": {
+      "bytes": 1796,
+      "sha256": "0cb7ba4b016a531ab6c7f530cd0017b5db1cabca61def923216d6c219d166bab"
+    },
+    "style.css": {
+      "bytes": 13462,
+      "sha256": "5784f5ae7a07b92eae464e47af28035e257be92d7460dece067f8655935a6a71"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  }
+}

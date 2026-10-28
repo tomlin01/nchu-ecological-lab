@@ -1,0 +1,91 @@
+{
+  "case_id": "01-04",
+  "integration": "web-hybrid-v01",
+  "accepted_animation": "hybrid-v02",
+  "duration_seconds": 78,
+  "status": "locally_integrated_static_verified_browser_qa_pending",
+  "public_deployment": false,
+  "original_accepted_files": {
+    "LICENSES.md": "f2d6f9d33c83724d23d615e3459cc1812dcdb733a5668d7358e3cb4867e32662",
+    "README.md": "66efff73f84a205a5487f9b0ec9c13d3c1c6e0021f91838dab0c472a18b5fdc8",
+    "SOURCE.md": "467f75fd59a7143b0ce8e6783d0c230a552215947fcaf1ac14a40e7eea1cf2ce",
+    "app.bundle.js": "691087b07ad66aced49a062d3944217b89f1ea63bf10284f0a079c7e973202f5",
+    "assets/ANATOMY-LICENSE.txt": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796",
+    "assets/DATASET-LICENSE.txt": "e70d83b8e58af51c456b810bde4667b37ddf585b679e41b29f4a83f71df365a4",
+    "assets/detector-results.json": "2cdc0884b166a056fabcf201a3fef2da612df8bfadfea158356d1fbab972856d",
+    "assets/frames/20230721230832-00-34.jpg": "ab02b54cef90e250c57765d3657819e83dd19e4c56ae93b68cfdd21e315fe1ba",
+    "assets/frames/20230721232832-00-35.jpg": "a07eed063d1b07869df7e0988a24e542fb8024d47b84ceb735af1d8372b7c78c",
+    "assets/frames/20230721234832-00-35.jpg": "d9becbc32a8a8b384dbd626bbfdff86fb0e71637dc4ec7dcd6d742b73a4e260d",
+    "assets/labels/20230721230832-00-34.txt": "6f74bb34b74483009943851a913e4fea9695be515ff6ec199ff4bc2bb83eb526",
+    "assets/labels/20230721232832-00-35.txt": "35d360a0064b9f4d8db7d734a7a3ef75528714e30b9fa5b6fa0f8733809ef4f8",
+    "assets/labels/20230721234832-00-35.txt": "7addf6077f22206692f3406b6eb040a67270ab8135ebd72a822d93790edc1006",
+    "assets/model-provenance.json": "c9455cc4682a32fddaf370466f7a6a8f1820ad669627e5601cff764453020630",
+    "assets/sample.json": "922c15953ab6b510450897dacf4fc2eb9a0ca8be6b879787ae5b2c9e4e2ac17c",
+    "assets/source-provenance.json": "73aadc66403d911f81b38f83975b6137954312478a1cd550bacc8b431f87b7c6",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/case-sans.woff2": "755326ebbcbe54521306f5ba918c138296a1c6b20c636da2700e4cc253febe57",
+    "fonts/case-serif.woff2": "8cbf59d47246df1b4608d9137689aafca670ced63ed06ad8f1fd65be58f9b9f4",
+    "index.html": "cb716bf3483f7f6e3e22e711bb1ad5f8caa0057b48994b9d90c6a4d50ce212e9",
+    "manifest.json": "0ef880c9456e9db3c815794d382829ca3d575e68023f6b9dca213ac47b3ef2a6",
+    "provenance.json": "63460007c2d1772ea6e04eb6a6f3b83d0bc7ae01832fc03b623ef3b39661c01f",
+    "style.css": "8ae7a87b4526991e33860d9795fd750c69053f498dde6a4ffc5a639198f4b888",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "runtime_byte_preserved": {
+    "LICENSES.md": "f2d6f9d33c83724d23d615e3459cc1812dcdb733a5668d7358e3cb4867e32662",
+    "app.bundle.js": "691087b07ad66aced49a062d3944217b89f1ea63bf10284f0a079c7e973202f5",
+    "assets/ANATOMY-LICENSE.txt": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796",
+    "assets/DATASET-LICENSE.txt": "e70d83b8e58af51c456b810bde4667b37ddf585b679e41b29f4a83f71df365a4",
+    "assets/detector-results.json": "2cdc0884b166a056fabcf201a3fef2da612df8bfadfea158356d1fbab972856d",
+    "assets/frames/20230721230832-00-34.jpg": "ab02b54cef90e250c57765d3657819e83dd19e4c56ae93b68cfdd21e315fe1ba",
+    "assets/frames/20230721232832-00-35.jpg": "a07eed063d1b07869df7e0988a24e542fb8024d47b84ceb735af1d8372b7c78c",
+    "assets/frames/20230721234832-00-35.jpg": "d9becbc32a8a8b384dbd626bbfdff86fb0e71637dc4ec7dcd6d742b73a4e260d",
+    "assets/labels/20230721230832-00-34.txt": "6f74bb34b74483009943851a913e4fea9695be515ff6ec199ff4bc2bb83eb526",
+    "assets/labels/20230721232832-00-35.txt": "35d360a0064b9f4d8db7d734a7a3ef75528714e30b9fa5b6fa0f8733809ef4f8",
+    "assets/labels/20230721234832-00-35.txt": "7addf6077f22206692f3406b6eb040a67270ab8135ebd72a822d93790edc1006",
+    "assets/model-provenance.json": "c9455cc4682a32fddaf370466f7a6a8f1820ad669627e5601cff764453020630",
+    "assets/sample.json": "922c15953ab6b510450897dacf4fc2eb9a0ca8be6b879787ae5b2c9e4e2ac17c",
+    "assets/source-provenance.json": "73aadc66403d911f81b38f83975b6137954312478a1cd550bacc8b431f87b7c6",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/case-sans.woff2": "755326ebbcbe54521306f5ba918c138296a1c6b20c636da2700e4cc253febe57",
+    "fonts/case-serif.woff2": "8cbf59d47246df1b4608d9137689aafca670ced63ed06ad8f1fd65be58f9b9f4",
+    "index.html": "cb716bf3483f7f6e3e22e711bb1ad5f8caa0057b48994b9d90c6a4d50ce212e9",
+    "provenance.json": "63460007c2d1772ea6e04eb6a6f3b83d0bc7ae01832fc03b623ef3b39661c01f",
+    "style.css": "8ae7a87b4526991e33860d9795fd750c69053f498dde6a4ffc5a639198f4b888",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "documentation_amendments": {
+    "SOURCE.md": {
+      "before_sha256": "467f75fd59a7143b0ce8e6783d0c230a552215947fcaf1ac14a40e7eea1cf2ce",
+      "after_sha256": "7b48794d6fb9a4d80935b6a02150dd0d19d3f298ea260604353ef0f60f364e96"
+    },
+    "README.md": {
+      "before_sha256": "66efff73f84a205a5487f9b0ec9c13d3c1c6e0021f91838dab0c472a18b5fdc8",
+      "after_sha256": "0fc616cbfefe3ede38d5b5f0b24bb8e5235b7f6c398916f00309cc079d9fba97"
+    },
+    "manifest.json": {
+      "before_sha256": "0ef880c9456e9db3c815794d382829ca3d575e68023f6b9dca213ac47b3ef2a6",
+      "after_sha256": "1f3573c91691c169dbb886f2d99043c0ea16a9406c4c519bbeec2927c2152867"
+    }
+  },
+  "iframe_id": "method-frame",
+  "player_api": "window.caseAnimation",
+  "preserved": "Four chapters, hero/background SVG and CSS, original-notes, existing raw data scripts if present",
+  "inference": "Reuses the accepted October 20 detector run; this integration does not rerun inference",
+  "fonts": [
+    {
+      "file": "fonts/hybrid-parent-sans.woff2",
+      "characters": 628,
+      "missing": [],
+      "sha256": "c7493ea96ab9f3c17866f340938fd721265187315446a08c5abfd9889708f8b1"
+    },
+    {
+      "file": "fonts/hybrid-parent-serif.woff2",
+      "characters": 628,
+      "missing": [],
+      "sha256": "a886f4b2723e2ea7c3cfbfa0f70627186bd5668d78c8ba4a8f2037c31df048c5"
+    }
+  ]
+}

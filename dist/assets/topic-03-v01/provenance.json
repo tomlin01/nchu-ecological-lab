@@ -1,0 +1,78 @@
+{
+  "scope": "Topic 03 homepage display assets",
+  "assets": [
+    {
+      "file": "hyena-query.jpg",
+      "source": "cases/03-01/animation/assets/query.jpg",
+      "source_sha256": "30f3e45120dfa687689688df9c1d196123a55e093db551c3afe0813cce9a4a06",
+      "sha256": "5a4f38a12333e87bffe5cfce3340e242db8d6264b34c777f56bc184488284a41",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Original research image; source capture date unknown"
+    },
+    {
+      "file": "hyena-match.jpg",
+      "source": "cases/03-01/animation/assets/match.jpg",
+      "source_sha256": "cd7ae0c5fd7145eb0c85a2fcd237c0fc037aba4a4d42d67b91c29fd5dbe068a4",
+      "sha256": "15526b3b94d3c6314597f517f0b8c693c76cbb01d4aa39d0af14e7956c334c78",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Original research image; source capture date unknown"
+    },
+    {
+      "file": "jay-up.jpg",
+      "source": "cases/03-02/assets/jay-head-up.webp",
+      "source_sha256": "3cbecfb55070fbf83c32954cd93952a35a2ea89e52c9585e6463a60c951c6493",
+      "sha256": "da4d0eb273c5f67cebb2ab641bef8a5c631b1939863e345b78ae56888ae470c3",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Source frame 1650; 66.00 s"
+    },
+    {
+      "file": "jay-down.jpg",
+      "source": "cases/03-02/assets/jay-eat.webp",
+      "source_sha256": "0b5a7256d0bb4cad7490fc0f9df3690d9fa47305d70dee0e40201c132dd028e8",
+      "sha256": "5e02e4aa6cb5cb8efc6f302d83064d936af9b95f7388e090f8ba9b84f5876ba0",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Source frame 1699; 67.96 s"
+    },
+    {
+      "file": "owl.jpg",
+      "source": "cases/03-03/assets/03-03-little-owl-hero-v02.webp",
+      "source_sha256": "6f64bb73868af72b60e144338f51d60fcfe47c452a0976ea3a142d6796f926ca",
+      "sha256": "d533c29ec587f9e7e65f469d0239634ee7b3c0c92a9021c9f2cdf1cfc19e72a4",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Generated species context; not recording individual photo"
+    },
+    {
+      "file": "lizard.jpg",
+      "source": "cases/03-04/animation/assets/context.png",
+      "source_sha256": "2a3eeaff961a02c1c6fbdcd95d559382997b71e05b4527e14535f2a1c29ec10d",
+      "sha256": "befa9d4b5f5c6a46f207fb56137b542bc564519b7f11faa05285194cea3fe9aa",
+      "operation": "Proportional resize and JPEG encode for homepage only; source unchanged",
+      "role": "Generated concept; lizard in shade beside sunlit ground"
+    },
+    {
+      "file": "call-a.png",
+      "source": "cases/03-03/animation/assets/spectrograms/a.png",
+      "source_sha256": "cab3e45f57281e7caba51059cf2dd504c71638412d42c128361002a478335ce8",
+      "sha256": "cab3e45f57281e7caba51059cf2dd504c71638412d42c128361002a478335ce8",
+      "operation": "Unmodified copy",
+      "role": "Spectrogram computed from an original recording; not identity inference"
+    },
+    {
+      "file": "call-q.png",
+      "source": "cases/03-03/animation/assets/spectrograms/q.png",
+      "source_sha256": "b14b18b6df67c740998a144cfc415888db832b425518e6cef51a137912c1af33",
+      "sha256": "b14b18b6df67c740998a144cfc415888db832b425518e6cef51a137912c1af33",
+      "operation": "Unmodified copy",
+      "role": "Spectrogram computed from an original recording; not identity inference"
+    }
+  ],
+  "source_images_unchanged": true,
+  "new_image_generation": false,
+  "new_model_inference": false,
+  "rights_notes": {
+    "hyena": "Existing source licensing discrepancy retained; see cases/03-01/#photo-rights. Local integration only.",
+    "jay": "Source dataset CC BY 4.0; same original stills and frame times.",
+    "owl_calls": "Original audio CC BY 4.0; rendered source spectrograms.",
+    "generated_context": "Owl and lizard contexts do not identify source individuals or depict a common research site."
+  }
+}

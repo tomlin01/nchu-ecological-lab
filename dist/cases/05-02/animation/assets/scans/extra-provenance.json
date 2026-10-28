@@ -1,0 +1,211 @@
+{
+  "retrieved_on": "2026-10-26",
+  "purpose": "Add distinct brain-like and foliose morphology to 05-02 local v08 scene",
+  "scope": "Two new official GLBs. Existing base models unchanged. No code edits.",
+  "reference_image": "../image/Science_coral_1283902606.webp",
+  "models": [
+    {
+      "name": "diploria-labyrinthiformis",
+      "id": "87738412-3acd-45d1-bff4-3ab67093470e",
+      "title": "Diploria labyrinthiformis",
+      "usnm": "74947",
+      "shape": "圓丘狀腦紋群體；底部有採集斷面，官方預覽未見黑色展示底座。",
+      "place": "Carrie Bow Cay, Belize, North Atlantic Ocean",
+      "date": "1985-08-10",
+      "object_url": "https://3d.si.edu/object/3d/diploria-labyrinthiformis%3A87738412-3acd-45d1-bff4-3ab67093470e",
+      "filename": "diploria-labyrinthiformis.glb",
+      "document_url": "https://3d-api.si.edu/content/document/87738412-3acd-45d1-bff4-3ab67093470e/document.json",
+      "rights_metadata_url": "https://ids.si.edu/ids/media_view?id=3d_package:87738412-3acd-45d1-bff4-3ab67093470e&format=json",
+      "download_url": "https://3d-api.si.edu/content/document/3d_package:87738412-3acd-45d1-bff4-3ab67093470e/resources/usnm_74947-100k-2048_std.glb",
+      "license_id": "cc0",
+      "license_label": "CCO - Creative Commons (CC0 1.0)",
+      "preparation": "Dry (official specimen record)",
+      "reference_relationship": "Morphology reference only; not the colony in the reference photograph and not an Abaiang species observation.",
+      "file_bytes": 6086940,
+      "sha256": "c55301c7ae8d2b829f855b69f6943a4ead345e727860fa77ce1617b43496af03",
+      "triangles": 100000,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "vertex_count": 62646,
+      "position_min": [
+        -0.0500589981675148,
+        -0.0502060018479824,
+        -0.0538830012083054
+      ],
+      "position_max": [
+        0.0500489994883537,
+        0.0502130016684532,
+        0.0537689998745918
+      ],
+      "extent_xyz": [
+        0.1001079976558685,
+        0.1004190035164356,
+        0.1076520010828972
+      ],
+      "units": "m (official download label)",
+      "nodes": [
+        {
+          "mesh": 0
+        }
+      ],
+      "extensions_required": [],
+      "external_dependencies": false,
+      "textures": [
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 755028
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 735362
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 1990313
+        }
+      ],
+      "texture_roles": [
+        "baseColor",
+        "occlusion",
+        "normal"
+      ],
+      "materials": [
+        {
+          "name": "default",
+          "normalTexture": {
+            "index": 2
+          },
+          "occlusionTexture": {
+            "index": 1
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0.100000001490116,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "geometry_attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "name": "pavona-cactus-74851",
+      "id": "1b481481-8f5d-492e-8b52-23a6fe2d9cd9",
+      "title": "Pavona cactus",
+      "usnm": "74851",
+      "shape": "低矮、相接的層疊葉片群體；官方預覽未見黑色展示底座。不是先前 Leptoseris 碎片。",
+      "place": "Ylig Bay, Guam, North Pacific Ocean",
+      "date": "1970-07-25",
+      "object_url": "https://3d.si.edu/es/object/3d/pavona-cactus%3A1b481481-8f5d-492e-8b52-23a6fe2d9cd9",
+      "filename": "pavona-cactus-74851.glb",
+      "document_url": "https://3d-api.si.edu/content/document/1b481481-8f5d-492e-8b52-23a6fe2d9cd9/document.json",
+      "rights_metadata_url": "https://ids.si.edu/ids/media_view?id=3d_package:1b481481-8f5d-492e-8b52-23a6fe2d9cd9&format=json",
+      "download_url": "https://3d-api.si.edu/content/document/3d_package:1b481481-8f5d-492e-8b52-23a6fe2d9cd9/resources/Pavona_cactus-150k-4096_std.glb",
+      "license_id": "cc0",
+      "license_label": "CCO - Creative Commons (CC0 1.0)",
+      "preparation": "Dry (official specimen record)",
+      "reference_relationship": "Morphology reference only; not the colony in the reference photograph and not an Abaiang species observation.",
+      "file_bytes": 10840828,
+      "sha256": "4af75a0510a958d4a9bccf44fee46ce78982babb1d0387bf5c41a1ff2fd799dc",
+      "triangles": 149999,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "vertex_count": 90082,
+      "position_min": [
+        -0.0767330005764961,
+        -0.0640610009431839,
+        -0.0461339987814426
+      ],
+      "position_max": [
+        0.0767629966139793,
+        0.0640299990773201,
+        0.0460660010576248
+      ],
+      "extent_xyz": [
+        0.1534959971904754,
+        0.128091000020504,
+        0.0921999998390674
+      ],
+      "units": "m (official download label)",
+      "nodes": [
+        {
+          "mesh": 0
+        }
+      ],
+      "extensions_required": [],
+      "external_dependencies": false,
+      "textures": [
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            4096,
+            4096
+          ],
+          "embedded_bytes": 1584094
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            4096,
+            4096
+          ],
+          "embedded_bytes": 1321743
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            4096,
+            4096
+          ],
+          "embedded_bytes": 3250809
+        }
+      ],
+      "texture_roles": [
+        "baseColor",
+        "occlusion",
+        "normal"
+      ],
+      "materials": [
+        {
+          "name": "default",
+          "normalTexture": {
+            "index": 2
+          },
+          "occlusionTexture": {
+            "index": 1
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0.100000001490116,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "geometry_attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ]
+    }
+  ],
+  "verification": "Official previews visually inspected; per-object IDS CC0 verified; GLB version and length, mesh/accessor counts, embedded JPEG decoding and SHA256 checked; destination copies identical. Browser scene verification remains with integrator."
+}

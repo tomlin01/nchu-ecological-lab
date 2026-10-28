@@ -1,0 +1,26 @@
+{
+  "source": "outputs/ecology-ai-zebra-flower-assets/incoming/07-01-foliage-bg-v01.png",
+  "source_sha256": "0ae61a055671a2fef15ce4bdfbd294c28bb2b10252a465967e9de368616e7bad",
+  "role": "user-provided generated environment illustration, not research imagery",
+  "transformation": "full-frame WebP encoding, quality 90, method 6; no resize, crop or colour adjustment",
+  "new_ai_generation": false,
+  "actual_generation_model": null,
+  "actual_generation_prompt": null,
+  "actual_generation_date": null,
+  "actual_generation_seed": null,
+  "actual_generation_references": null,
+  "usage_terms": null,
+  "public_distribution_ready": false,
+  "license_granted": false,
+  "path": "outputs/ecology-ai-habitat-pages/assets/07-01-background.webp",
+  "sha256": "0aa2146093bb69293da7e767bbed7c3a1b0e2a36b0574e216e31f7eb3611a8ad",
+  "source_format": "PNG",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "lossless": false,
+  "source_filename_retained": "07-01-foliage-bg-v01.png",
+  "css_display": "fixed cover background may enlarge/crop; no seamless-panorama claim",
+  "review": "visually inspected source preview; suitable for labeled local background trial, not full rights review"
+}

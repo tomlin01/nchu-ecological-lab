@@ -1,0 +1,186 @@
+{
+  "case_id": "07-01",
+  "entry": "07-01.html",
+  "version": "web-hybrid-v01",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "07-01.html",
+  "files": {
+    "07-01.html": {
+      "bytes": 251004,
+      "sha256": "4eae541c3f5353928a5661d282dbd4acfda2c5ac659552ac02e9e0af43e9ad67"
+    },
+    "animation-hybrid/LICENSES.txt": {
+      "bytes": 523,
+      "sha256": "0e62ff7f1cb41fd3d12421b2ca45a01e3de0f52977e91fab02724d5fc58fe68e"
+    },
+    "animation-hybrid/README.md": {
+      "bytes": 1353,
+      "sha256": "78b16e955a2706de26ed56d36a7ee4da69d6c49eb72e7d4d536bea2fb80b0bf1"
+    },
+    "animation-hybrid/SOURCE.md": {
+      "bytes": 3088,
+      "sha256": "61038690a79e1aee46f8c65362989c3b969290df76d1ace67c7504de577a0853"
+    },
+    "animation-hybrid/app.bundle.js": {
+      "bytes": 80009,
+      "sha256": "ae57976d93cd69e444f9c699417c5fd6344e217a4bf4cee2c2059a51960a8fc4"
+    },
+    "animation-hybrid/assets/cabrera_22_23_habitat.csv": {
+      "bytes": 560147,
+      "sha256": "399ec11ae6ce18c8e9ebb050857ca7c1da4cb4a7858e24382750a92ae5e16a07"
+    },
+    "animation-hybrid/assets/dataset-README.txt": {
+      "bytes": 1783,
+      "sha256": "6f4817522aa77de7dcfe4ba676ee8da046818f414bdcdf9cdd0669e410150a0c"
+    },
+    "animation-hybrid/assets/figure-1.jpeg": {
+      "bytes": 404789,
+      "sha256": "8a664643b4695b63064be8701a1bfd7e81734fb46b243d5a8134c037e6621bb3"
+    },
+    "animation-hybrid/assets/figure-2.jpeg": {
+      "bytes": 498956,
+      "sha256": "646385ad8119de623e1d92a1bfcf58a0884bfb068fc6d3b3d0687841f76f282e"
+    },
+    "animation-hybrid/assets/network-subset.json": {
+      "bytes": 113848,
+      "sha256": "030fb7f6f053076dab5e671ede50bd5e66e3077ffe9650fb2d482a4f1205e42c"
+    },
+    "animation-hybrid/build-runtime.json": {
+      "bytes": 1673,
+      "sha256": "217004b218f4205d361415558b25512826134ce5b72548872ab3d3671ca5a279"
+    },
+    "animation-hybrid/embed.css": {
+      "bytes": 1544,
+      "sha256": "e47404b38084aa5b0aeba4579497ddfc6d54907c444c9b701925e478e2444746"
+    },
+    "animation-hybrid/embed.html": {
+      "bytes": 11338,
+      "sha256": "6b7b8a6b4bfdc63167786eee058293f270a741a04eba8748066e7467abba0b6c"
+    },
+    "animation-hybrid/embed.js": {
+      "bytes": 3598,
+      "sha256": "8d7956fd8c7014ca2c4ba8da930ae67807fbd9bf2e0978aa32af8b9e7ec14d71"
+    },
+    "animation-hybrid/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation-hybrid/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation-hybrid/fonts/case-sans.woff2": {
+      "bytes": 127932,
+      "sha256": "9521c713007453b17669085f836d8b214b8d2ac8e059eb097a9f50ecc6b96cd9"
+    },
+    "animation-hybrid/fonts/case-serif.woff2": {
+      "bytes": 170696,
+      "sha256": "541c562a37dc77a32fd4f29c0aa9fd3bfa9c2c6a48388eed8476aa46435b45bc"
+    },
+    "animation-hybrid/index.html": {
+      "bytes": 10992,
+      "sha256": "ae8b38bf6308d535f4028425f3df89e99bc58182b6c1798435aeb22e42c2c508"
+    },
+    "animation-hybrid/manifest.json": {
+      "bytes": 4724,
+      "sha256": "31464179bdc4df8c7e223afb28a00fcb17675a55f19729940db5b2229c5335f2"
+    },
+    "animation-hybrid/provenance.json": {
+      "bytes": 5348,
+      "sha256": "d64f1e63d4b6399a709660df5e600fccf6e0800b2464b76bf96f87e701ffd22f"
+    },
+    "animation-hybrid/style.css": {
+      "bytes": 11627,
+      "sha256": "a4b5241937f3fdc9267dd3284bb8b59ea957ecbeb15e273284b71d3303363b02"
+    },
+    "animation-hybrid/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/habitat-sans.woff2": {
+      "bytes": 238904,
+      "sha256": "3d6e50c2cf5a35f80fac72fe83a5698e4a18e9e9254e95fe781e408bc5d7db02"
+    },
+    "fonts/habitat-serif.woff2": {
+      "bytes": 318660,
+      "sha256": "68a047fa6b6eff6d63f474d1b023063988c7a389dc0c612253cdc3e39c633846"
+    },
+    "fonts/hybrid-parent-sans.woff2": {
+      "bytes": 152072,
+      "sha256": "9b55256f87c460ab545c460f9909ef3818b2adae4898227cd2c94621c2e451a3"
+    },
+    "fonts/hybrid-parent-serif.woff2": {
+      "bytes": 203360,
+      "sha256": "5337fe8b0bc1d3755e930de2a0a1b21e8c38d19a1b8f5748273d81116a05cab3"
+    },
+    "habitat.css": {
+      "bytes": 8451,
+      "sha256": "58a252fefcb336904b2d1a75a22d4e1281e108b53267e9472ca2cf80e0753bdb"
+    },
+    "habitat.js": {
+      "bytes": 8628,
+      "sha256": "d2073eb18e1a2008a21009c57b381dc6bbe17bd7376236d88fa758b4675fe849"
+    },
+    "hybrid-bridge.js": {
+      "bytes": 4922,
+      "sha256": "6dfb021e493e2a4ad842d45848e6d805e87419a56961968ccd95f336751f1309"
+    },
+    "hybrid.css": {
+      "bytes": 3648,
+      "sha256": "a295fd211edfe4956cfddcc5fbed64d1f1adbf749496c1cd8c6ed267756d2dde"
+    },
+    "index.html": {
+      "bytes": 554,
+      "sha256": "72d3c0883eb6c4b097fa04da70cb6595d0b2fad5250169bee46380271cef125a"
+    },
+    "natural-history.css": {
+      "bytes": 4862,
+      "sha256": "728bc5c6862f8a00ad732d89f86e80e63653a3e3980124ea7e02d2b960482c1a"
+    },
+    "site-navigation.css": {
+      "bytes": 1053,
+      "sha256": "cbf87d51021bee853493001c638305bcd507a3234b02c861df093444e68ce197"
+    },
+    "ui-provenance.json": {
+      "bytes": 3065,
+      "sha256": "7db946d09e860d1b9eda216ce5500a209c2bc2911932968e20b11190060327f9"
+    },
+    "ui-verification.json": {
+      "bytes": 3502,
+      "sha256": "c78af95110dc876091bf424dca22c773773b1d7ac66091c3bef392fa661fb3cb"
+    }
+  },
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": true,
+    "static_only": false,
+    "content_and_animation_unchanged": true
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

@@ -1,0 +1,45 @@
+@font-face{font-family:"Home Sans";src:url("fonts/home-scroll-sans.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:"Home Serif";src:url("fonts/home-scroll-serif.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+.topic-home{scroll-margin-top:var(--ecology-sidebar-toolbar-height,0px)}
+.topic-continuation{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-left:var(--gutter)}
+.next-topic{flex:none;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+.topic-continuation .art-credit{margin:0}
+@media screen and (min-width:921px) and (max-width:1100px),screen and (min-width:921px) and (max-height:760px){
+  [data-topic-scene="topic-01"] .hero-copy{padding-top:12px;padding-bottom:8px}
+  [data-topic-scene="topic-01"] .topic-intro{font-size:16px;line-height:1.7}
+  [data-topic-scene="topic-01"] .case-preview{margin-top:18px}
+}
+.topic-identification{--ground:#081e25;--muted:#b6cbce;--accent:#d0dfc3;--link-ink:#edf2e9;background:var(--ground);grid-template-rows:68px minmax(0,1fr) auto auto}
+.identification-art{position:absolute;inset:68px 0 180px 43%;z-index:-1;overflow:hidden;background:#07191e}
+.identification-image{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 52%}
+.identification-image[hidden]{display:none}
+.identification-image[data-case-image="02-02"]{object-position:58% 50%}
+.identification-image[data-case-image="02-03"]{object-position:42% 52%}
+.identification-image[data-case-image="02-04"]{object-fit:contain}
+.identification-copy{width:43%;padding-right:32px}
+#identification-title{margin:0;font:500 clamp(44px,4.25vw,68px)/1.18 "Home Serif","Songti TC",serif;letter-spacing:-.025em}
+.topic-identification .topic-intro{max-width:26em}
+.topic-identification .case-preview{min-height:110px}
+.topic-identification .case-navigation{background:#0b252c}
+.identification-footer{display:flex;align-items:center;gap:22px;padding:12px var(--gutter) 16px;min-height:56px;font-size:14px;line-height:1.7;color:var(--muted)}
+.identification-footer p{margin-right:auto}
+.identification-footer>a{flex:none;min-height:36px;display:inline-flex;align-items:center}
+#home-image-sources{margin:36px 0 20px;scroll-margin-top:calc(var(--ecology-sidebar-toolbar-height,0px) + 20px);font-size:16px;max-width:75ch}
+#home-image-sources summary{cursor:pointer;min-height:44px;color:var(--accent)}
+#home-image-sources p{margin:12px 0}
+@media(min-width:921px) and (max-height:760px){.topic-identification{grid-template-rows:56px minmax(0,1fr) auto auto}.identification-art{top:56px;bottom:164px}.identification-copy{padding-top:16px;padding-bottom:20px}.topic-identification .topic-intro{margin-top:18px;font-size:17px;line-height:1.7}.topic-identification .case-preview{margin-top:20px;min-height:92px}.topic-identification .case-link{min-height:108px;padding-block:14px}.identification-footer{padding-block:8px;min-height:56px}}
+@media(max-width:1100px) and (min-width:921px){.identification-copy{width:46%;padding-right:24px}.identification-art{left:46%}#identification-title{font-size:44px}.topic-identification .case-title{font-size:20px}.identification-footer{gap:15px;font-size:13px}}
+@media(max-width:920px){
+  .topic-continuation{order:4;display:block;padding:8px var(--gutter) 20px}.topic-continuation .art-credit{padding:5px 0 0;text-align:left}.next-topic{font-size:16px}
+  .topic-identification{display:flex}.identification-copy{width:100%;padding-right:var(--gutter)}#identification-title{font-size:clamp(38px,10vw,64px)}.topic-identification .topic-intro{max-width:34em}
+  .identification-art{position:relative;inset:auto;order:2;z-index:0;aspect-ratio:3/2;width:100%}.identification-image{position:absolute;inset:0}.identification-image[data-case-image="02-04"]{object-fit:contain}
+  .topic-identification .case-navigation{margin-top:0}.topic-identification .case-link{padding-inline:15px}
+  .identification-footer{order:4;flex-wrap:wrap;gap:4px 24px;padding-top:12px;padding-bottom:24px;font-size:14px}.identification-footer p{flex-basis:100%}
+}
+@media(max-width:680px){.topic-identification .case-title{font-size:17px;letter-spacing:-.015em}.topic-identification .case-title span{white-space:nowrap}.topic-identification .case-link{padding-inline:10px}}
+@media(max-width:380px){.topic-identification .case-title{font-size:16px}.topic-identification .case-link{padding-inline:3px}.identification-footer{font-size:13px}}
+@media(prefers-reduced-motion:no-preference){
+  .identification-image.is-active{animation:identification-arrive 420ms ease-out both}
+  @keyframes identification-arrive{from{opacity:.65;transform:scale(1.015)}to{opacity:1;transform:none}}
+}
+@media print{.topic-continuation .next-topic,.identification-art{display:none}.topic-continuation{display:block;padding:0}.topic-identification{display:block;break-before:page;background:none}.identification-copy{width:100%;padding:0}#identification-title{font-size:30pt}.topic-identification .case-navigation{background:none}.identification-footer{display:block;padding:14px 0;font-size:9pt}.identification-footer>a{display:none}#home-image-sources{font-size:10pt}#home-image-sources::details-content{display:block;content-visibility:visible}.topic-identification .case-title{color:var(--ink)}}

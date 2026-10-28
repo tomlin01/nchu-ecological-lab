@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "case_id": "02-02",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "燒過的森林裡，可以聽見哪些鳥？",
+  "preserved_files": 56,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "51d271acd66aec0e2726bd38f4d37fa6678b3bfc1e68e2e914fe9b43ac4e5e78",
+      "glyphs": 714,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "a3f43651eb1665db1dead04aed869c85da4b16ec02a2597bf5c333c5821d0cc8",
+      "glyphs": 714,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_record": "work/ecology-ai-rollout/copy-review-02-v02/browser-verification.json",
+  "full_playback_rerun": false,
+  "scientific_status_unchanged": true,
+  "public_deployment": false,
+  "existing_ids_preserved": 29,
+  "source_links_preserved": 32,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "3.0": -1,
+    "3.1": -1,
+    "0.735": 1
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "article_structure_changed_as_planned": true
+}

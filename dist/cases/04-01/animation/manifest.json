@@ -1,0 +1,118 @@
+{
+  "case_id": "04-01",
+  "version": "web-copy-v01",
+  "title": "照片裡的葉子，怎麼量出大小？",
+  "status": "copy_revised_local_verified",
+  "entry": "index.html",
+  "embed_entry": "embed.html",
+  "duration": 84,
+  "film": "film/04-01-leafmachine-web-copy-v01.mp4",
+  "derived_from": "prototype-v01",
+  "original_prototype_and_accepted_package_preserved": true,
+  "source_images_and_data_preserved": true,
+  "animation_geometry_and_timing_preserved": true,
+  "new_model_inference_run": false,
+  "new_physical_leaf_measurement": null,
+  "copy_revision": "Natural Traditional Chinese; an absent visible outline is not a confirmed model miss.",
+  "verification": "work/ecology-ai-rollout/cases/04-01/web-review-v01/verification.json",
+  "updated": "2026-10-24T10:28:27.800653+00:00",
+  "deployed": false,
+  "files": {
+    "README.md": {
+      "bytes": 818,
+      "sha256": "3c9fe3ca35615d89e9a196401f603de8b8ae58dd86eedb95e4ee44f21d6c3be3"
+    },
+    "SOURCE.md": {
+      "bytes": 4923,
+      "sha256": "8263c7d2c176b9c8050637b06c5e06292a93754b5f821cbe10d0c65835652dc9"
+    },
+    "app.mjs": {
+      "bytes": 14864,
+      "sha256": "2d625740f11ab495023bcc13a8709fc0b62b19922e682be702213b5224196d62"
+    },
+    "assets/author-overlay.png": {
+      "bytes": 5398812,
+      "sha256": "97ab2ad3ff1f0eee7e627461a80e9b9a23a5c7218abaefaf69a15a47342ff01d"
+    },
+    "assets/ruler-qc.png": {
+      "bytes": 29886,
+      "sha256": "f00ddf5df4e8fc9347d7daa3f814aa6b786fb7aa5564e9a8054f5f3efa17fa00"
+    },
+    "assets/second-overlay.png": {
+      "bytes": 8217511,
+      "sha256": "f4b162477b92fcbfbfa807eb74274f15b64904b0788f618b31526300b72e3fb3"
+    },
+    "assets/second-specimen.jpg": {
+      "bytes": 105670,
+      "sha256": "d03403a58812f6176aafa5203db40c9574f7948227e5601b034b8a9a9c687980"
+    },
+    "assets/source-data.json": {
+      "bytes": 6209,
+      "sha256": "ea48fe612158457b3fed9dc558ef7f250d1bae5d9da1f4cded93ff320b989aec"
+    },
+    "assets/specimen.jpg": {
+      "bytes": 115724,
+      "sha256": "cf7e62703b68337cab661b0bbfbfd3edcd57e2ab051628520799bc0a6fe0d0a0"
+    },
+    "embed.css": {
+      "bytes": 756,
+      "sha256": "3a69bf0325cc41f6d21e63b1e743c023d6db3f9946e5742030d876cc96627a61"
+    },
+    "embed.html": {
+      "bytes": 9207,
+      "sha256": "343fbd5f1d1155309ea3d2d85e68c7f6dcee1c7d7e852d4e4ec2d0160df64e12"
+    },
+    "embed.js": {
+      "bytes": 6620,
+      "sha256": "9f3e8226f0b7221511b6f73b65395e348db8073f13139a961d3cb8b9f22a09ee"
+    },
+    "film/04-01-leafmachine-web-copy-v01.metadata.json": {
+      "bytes": 832,
+      "sha256": "72ac4c9613735d14f52ca3c61c25e994e4f1ac7acee72f94ed6faae9c634097b"
+    },
+    "film/04-01-leafmachine-web-copy-v01.mp4": {
+      "bytes": 3089698,
+      "sha256": "7e503ce1afa3446253e1df72f442ae6909de97bb980f4e34a1bc2950583de502"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/leaf-sans.woff2": {
+      "bytes": 131104,
+      "sha256": "9ae20b8e7a26bb80bb391476d9e48569893923403c3dc9469541e90828e38f71"
+    },
+    "fonts/leaf-serif.woff2": {
+      "bytes": 174424,
+      "sha256": "960f3597edceb12d4ca0f59c2997f598508598f560cb0389d506f372d4d837a8"
+    },
+    "index.html": {
+      "bytes": 9121,
+      "sha256": "7850672ab83f2bb3c94d9111d16a638242ac654652694113a45303596fee451d"
+    },
+    "model.mjs": {
+      "bytes": 5623,
+      "sha256": "a8f50d444773f4e9e67192fa218be40d60b3db502787ee2af2bfde4ee80d6465"
+    },
+    "model.test.mjs": {
+      "bytes": 1753,
+      "sha256": "5d81a2205d0920ad1f0c1718b157197de0ff04ddcd9e6a46aeabb33f50412eb0"
+    },
+    "scene.mjs": {
+      "bytes": 2050,
+      "sha256": "9d1cdfe664d9faab86f69470aefdb958898ed8016331764d0e2813c8724ec434"
+    },
+    "style.css": {
+      "bytes": 9558,
+      "sha256": "9d190ebd0d14c764c8058726bedd781f7ee6d4178f124d6a12a68da28138e5bd"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  }
+}

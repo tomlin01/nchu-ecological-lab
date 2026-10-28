@@ -1,0 +1,61 @@
+{
+  "downloaded_utc": "2026-10-20T09:32:33.622198+00:00",
+  "repository": "https://github.com/RolnickLab/ami-data-companion",
+  "commit": "55d0787570f8c9d92c450f4fb65a58dd25cf6634",
+  "checkpoint_file": "models/fasterrcnn_mobilenet_v3_large_fpn_uqfh7u9w.pt",
+  "checkpoint_url": "https://object-arbutus.alliancecan.ca/swift/v1/AUTH_3c987b8fc90743469d42899b1fdb48eb/ami-models/moths/localization/fasterrcnn_mobilenet_v3_large_fpn_uqfh7u9w.pt",
+  "checkpoint_bytes": 151724126,
+  "checkpoint_sha256": "9cabd584284f403ad96db11f37d0ad5ace14ceb6c3be1128f08fe408fbc9c1c9",
+  "server_etag": "99ff306c18b0d6a9e0361f148f4b62d6",
+  "download_md5_matches_etag": true,
+  "checksum_note": "ETag is the observed object-store integrity value, not an independently published model checksum.",
+  "model_name": "FasterRCNN - MobileNet for AMI Moth Traps 2023",
+  "official_class": "MothObjectDetector_FasterRCNN_MobileNet_2023",
+  "license_status": {
+    "repository_LICENSE": "AGPL-3.0",
+    "pyproject_license_field": "MIT",
+    "upstream_conflict": true,
+    "checkpoint_separate_license": "not located",
+    "photo_license": "separate input asset provenance required",
+    "public_model_redistribution": false
+  },
+  "official_source_files": [
+    {
+      "upstream_path": "trapdata/ml/models/localization.py",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/trapdata/ml/models/localization.py",
+      "local_file": "official-source/trapdata__ml__models__localization.py",
+      "sha256": "24518e6448ee75228d6cdbbbf1743ad879ad952cdab2ca3d0b99f321e3a764d6"
+    },
+    {
+      "upstream_path": "trapdata/ml/utils.py",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/trapdata/ml/utils.py",
+      "local_file": "official-source/trapdata__ml__utils.py",
+      "sha256": "1bf97240f337174e48060e8fe537bd409687d42a6bbf88a9cb09e7723ba1b0b4"
+    },
+    {
+      "upstream_path": "trapdata/settings.py",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/trapdata/settings.py",
+      "local_file": "official-source/trapdata__settings.py",
+      "sha256": "b8b5b250ff3860d592cca346127443264015a487def1b08953d60fcd2ab40e6c"
+    },
+    {
+      "upstream_path": "trapdata/tests/test_pipeline.py",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/trapdata/tests/test_pipeline.py",
+      "local_file": "official-source/trapdata__tests__test_pipeline.py",
+      "sha256": "42481a2fe25c44cf2622efa9e67f202bf433791e49ba09ae133e726142a7cb7d"
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/pyproject.toml",
+      "local_file": "official-source/pyproject.toml",
+      "sha256": "07c139402f4e5ec04099e66e757e23fe39ae8b93e02c6e1d8330d91d53dd9a35"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/RolnickLab/ami-data-companion/55d0787570f8c9d92c450f4fb65a58dd25cf6634/LICENSE",
+      "local_file": "official-source/LICENSE",
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    }
+  ],
+  "image_inference_executed": false
+}

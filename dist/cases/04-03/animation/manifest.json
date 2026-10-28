@@ -1,0 +1,98 @@
+{
+  "case_id": "04-03",
+  "version": "prototype-v02",
+  "copy_revision": "v02",
+  "title": "一張照片，怎麼量出魚的長度？",
+  "status": "accepted_visual_copy_revised",
+  "accepted_visual_revision": "prototype-v01",
+  "duration": 88,
+  "entry": "index.html",
+  "film": "film/04-03-fish-length-v02.mp4",
+  "updated": "2026-10-24T12:48:59.200235+00:00",
+  "files": {
+    "README.md": {
+      "bytes": 937,
+      "sha256": "6c30cff505352e9e19a688b13cb500b544aa12f5527ea224b66a3c1272838a0a"
+    },
+    "SOURCE.md": {
+      "bytes": 6068,
+      "sha256": "6727699f080416dd995a31690ac4249dfbc37ffe142ff8fdad3b469c049d6a84"
+    },
+    "app.mjs": {
+      "bytes": 14906,
+      "sha256": "14b40a9254330f681a4915a154b3fd162f036f5ad565acd9cc515e83bc6fcb35"
+    },
+    "assets/board-detection.jpg": {
+      "bytes": 57423,
+      "sha256": "c2bf2b7541ebbe0333572d241bcfb52b5bf00f05f97496e6810be83cc5d5fc5c"
+    },
+    "assets/board-template.png": {
+      "bytes": 102493,
+      "sha256": "9d985bcefdb4f46f75648e72145869174ed543fa845b00fa3a2e5d192c41bb64"
+    },
+    "assets/fish-original.jpg": {
+      "bytes": 76351,
+      "sha256": "76b17eb02077e0c559d805e059d1ab7ae1c52f28e833e06434379fe3377a16ec"
+    },
+    "assets/source-data.json": {
+      "bytes": 1307,
+      "sha256": "d0b9c0d175cef27419a3b9f8e1b6f1842ffa19759e40ef1f27e8e54c8996a82c"
+    },
+    "assets/study-figure3.jpg": {
+      "bytes": 62191,
+      "sha256": "a7bc8d16f9a3da18fb9b0232197210f321a2388de503633aecd83a23ce86e8be"
+    },
+    "film/04-03-fish-length-v02.metadata.json": {
+      "bytes": 850,
+      "sha256": "453c01ef1ec09bd277062fa62bdd01c2b89c5457ea1689d84ef6c2ae32b068d8"
+    },
+    "film/04-03-fish-length-v02.mp4": {
+      "bytes": 2213430,
+      "sha256": "c71bc0cbc7ee542c00d0c2876b895edba7e1f8df55ee0f764f5d9add13d0ad42"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/fish-sans.woff2": {
+      "bytes": 129412,
+      "sha256": "2da5a7c9cb85f082f030d23929f064f8535d4b1394a1eb05c6ea64e3f76c7993"
+    },
+    "fonts/fish-serif.woff2": {
+      "bytes": 172068,
+      "sha256": "7caa54005071adf5fe0453c9be098fca77070f51e26353e7a7c935c13de65271"
+    },
+    "index.html": {
+      "bytes": 10145,
+      "sha256": "a3c154898f08c02bb45dddb6b9c665a28b70b4a66130b187956dda4ad31dac14"
+    },
+    "model.mjs": {
+      "bytes": 5328,
+      "sha256": "4a9f19b1dc947644744214bf6986ff1f80d7e7cb2b49c2f04224f0a02e38c844"
+    },
+    "model.test.mjs": {
+      "bytes": 1741,
+      "sha256": "92b6dce333d0fddd1cbca2e63271dd2d26e83c0057d13de4ba5cc40206376dce"
+    },
+    "scene.mjs": {
+      "bytes": 6687,
+      "sha256": "648a186bf8d0ade80d3645ef6b8dc8da9467dcc0114982245d5b53e582e976e1"
+    },
+    "style.css": {
+      "bytes": 13697,
+      "sha256": "326785438fa4d4d37c1e0650d329b40a388e4379f84608e9a7725f5b4356b32f"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "verification.json": {
+      "bytes": 2104,
+      "sha256": "e8c8419ab3a6e859c83f771241644287bf425da33a6bb7f5898828cbb7a337c4"
+    }
+  }
+}

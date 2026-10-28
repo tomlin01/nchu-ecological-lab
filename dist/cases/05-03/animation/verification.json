@@ -1,0 +1,24 @@
+{
+  "status": "PASS_WITH_LIMITATION",
+  "case_id": "05-03",
+  "version": "prototype-v01",
+  "duration_seconds": 116,
+  "normal_playback_report": "../review-v01/browser-verification.json",
+  "browser_checks": 333,
+  "browser_contexts": 14,
+  "date_followup_report": "../review-v01/date-followup.json",
+  "date_followup_checks": 167,
+  "visual_review": "../review-v01/visual-review.md",
+  "source_verification": "../review-v01/root-source-verification.json",
+  "limitations": [
+    {
+      "name": "Genuine background visibility pause",
+      "status": "NOT_VERIFIED",
+      "reason": "Known local browser limitation; not retried and not replaced by synthetic visibility events."
+    }
+  ],
+  "canonical_site_unchanged": true,
+  "model_inference_run": false,
+  "local_area_estimate_created": false,
+  "created": "2026-10-26T17:18:30.155614+00:00"
+}

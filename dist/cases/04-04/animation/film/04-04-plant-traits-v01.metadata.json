@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8919/index.html?export=1&theme=light",
+  "export_api": "EcologyTraitPlayer",
+  "composition_selector": "#composition",
+  "output": "04-04-plant-traits-v01.mp4",
+  "started_at": "2026-10-24T14:42:49.466Z",
+  "completed_at": "2026-10-24T14:47:16.369Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 2304,
+  "requested_duration_seconds": 96,
+  "first_seek_seconds": 0,
+  "last_seek_seconds": 95.95833333333333,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 92,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "ffprobe": {
+    "duration_seconds": 96,
+    "decoded_frame_count": 2304,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 10114308
+  },
+  "browser_page_errors": []
+}

@@ -1,0 +1,44 @@
+{
+  "duration_seconds": 103,
+  "core_duration_seconds": 82,
+  "runtime": "existing Three.js scene and GSAP single clock, with a pure timeline wrapper",
+  "unchanged_core_sha256": {
+    "scene.mjs": "2ee67514f3b20b1c82b13087e16eed3d9c159906c2c1e3fdf7fa72016f437c03",
+    "model.mjs": "eaa234f8d0ef98db7a474b2e7bf5e5691c932c14a925160ff32fd7e2b1b01b2d",
+    "micro-scene.mjs": "e945c30aa241c381e08df92bba4e2fadda19dfcce5d60a14784325d4131a6734",
+    "scale.mjs": "afef82a700e58dedad65d565d9be8d54cb4314ea1a8152588f8a912387404ab9"
+  },
+  "source_files": {
+    "template.html": "db53b24b9f67d6cc4a28a040440c148efbbb06f13c5ecbb65b002e830d903e7d",
+    "style.css": "87466e4fefd2ca10db0829b7fd855a87fb6f307e9e4cddd5ebf6655c90d46740",
+    "build.py": "9f9a0f334da1900b26d93c021f438e633ad8359beb279c78b1164e11e46a9e33",
+    "app.mjs": "52353333897ee1a59c1b1340d544f8a005f66b216c18590db03320126ecafc21",
+    "micro-scene.mjs": "e945c30aa241c381e08df92bba4e2fadda19dfcce5d60a14784325d4131a6734",
+    "model.mjs": "eaa234f8d0ef98db7a474b2e7bf5e5691c932c14a925160ff32fd7e2b1b01b2d",
+    "scale.mjs": "afef82a700e58dedad65d565d9be8d54cb4314ea1a8152588f8a912387404ab9",
+    "scene.mjs": "2ee67514f3b20b1c82b13087e16eed3d9c159906c2c1e3fdf7fa72016f437c03",
+    "test-mapping.mjs": "eabb5a5588bca7da077a748796bfcfbff5c1c759d9c3d70caa7b30e66862a833",
+    "timeline.mjs": "2ac76c977b0064d79afcb84eed1e1f22d28269da7b1e525a52b06a00594f92c8"
+  },
+  "source_asset_sha256": {
+    "auv-figure-9.webp": "71dd62525a46014afd5df63cf8c38325ca636f3907ff404f2759faf3c736c294",
+    "figure-7.png": "7f860556abfad474daf112543990c90349935722912e1c2547e7bd77c513dee2",
+    "display-panels.json": "8910a0b21637357cb3b8bdfa64c6c13338e9a1cf8bb4aed3336e4f67710cfb53",
+    "source-provenance.json": "c557fab7d65c912452ceb3c82f4fa9598d16784c6d4252192bb0819606129883"
+  },
+  "fonts": {
+    "sans": {
+      "characters": 624,
+      "missing": [],
+      "sha256": "595377ad8a94a00b81d06296674c1dbcc947c045a04eec05a8afdbd98e2b7042"
+    },
+    "serif": {
+      "characters": 624,
+      "missing": [],
+      "sha256": "3335858f47aa2f6aeeebb5e67b17848463aa30e3a6eed7b4f0f89adfc7af8f88"
+    }
+  },
+  "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+  "browser_verified_here": false,
+  "source_and_final_provenance_owned_by_root": true
+}

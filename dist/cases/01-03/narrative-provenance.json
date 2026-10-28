@@ -1,0 +1,20 @@
+{
+  "case_id": "01-03",
+  "version": "copy-edit-v02",
+  "revision": "copy-review-01-v02",
+  "approved_plan_items": 10,
+  "plan": "outputs/ecology-ai-rollout/copy-plan-01-v02/topic-01-revision-plan.md",
+  "source": "work/ecology-ai-rollout/cases/01-03/copy-edit-v02",
+  "before_html_sha256": "2b245e55f4836381ab166e7cba6a3a2177a1dfa42d372b32a01c106472fc40af",
+  "status": "integrated_local_verified",
+  "browser_checked": true,
+  "browser_restriction_retained": false,
+  "original_provenance_unchanged": true,
+  "runtime_media_original_styles_and_fonts_unchanged": true,
+  "new_inference": false,
+  "full_playback_rerun": false,
+  "external_publication": false,
+  "browser_exclusion_reason": null,
+  "supplemental_css_sha256": "67e1aebf069c417819ffb192e8f411c24edc03e2dfc2747b6c179b56c88f4bcf",
+  "final_verification": "work/ecology-ai-rollout/copy-review-01-v02/verification.json"
+}

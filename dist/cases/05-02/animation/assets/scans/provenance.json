@@ -1,0 +1,280 @@
+{
+  "retrieved_on": "2026-10-26",
+  "purpose": "05-02 local Three.js morphology study, bounded to three downloaded models",
+  "reference_image": "../image/Science_coral_1283902606.webp",
+  "reference_relationship": "Morphological resemblance only. These Smithsonian museum specimens are not models reconstructed from the user-provided photograph and are not the colonies shown in it.",
+  "verification": "GLB magic/version/declared length, parsed mesh counts/accessors, embedded image decode and SHA256; official scene thumbnails visually reviewed; destination copies match source bytes. Browser load is left to the integrating scene.",
+  "models": [
+    {
+      "filename": "pocillopora-81450.glb",
+      "title": "Pocillopora damicornis caespitosa",
+      "usnm_number": "81450",
+      "model_id": "14eb9321-2308-4878-8adb-831d078ba0b0",
+      "object_url": "https://3d.si.edu/object/3d/pocillopora-damicornis-caespitosa:14eb9321-2308-4878-8adb-831d078ba0b0",
+      "document_url": "https://3d-api.si.edu/content/document/14eb9321-2308-4878-8adb-831d078ba0b0/document.json",
+      "rights_metadata_url": "https://ids.si.edu/ids/media_view?id=3d_package:14eb9321-2308-4878-8adb-831d078ba0b0&format=json",
+      "download_url": "https://3d-api.si.edu/content/document/3d_package:14eb9321-2308-4878-8adb-831d078ba0b0/resources/usnm_81450-100k-2048_std.glb",
+      "license_id": "cc0",
+      "license_label": "CCO - Creative Commons (CC0 1.0)",
+      "license_description": "This media file is in the public domain (free of copyright restrictions). You can copy, modify, and distribute this work without contacting the Smithsonian. For more information and to review the 3D disclaimer, visit the Smithsonian’s <a href=\"https://www.si.edu/Termsofuse\">Terms of Use</a> page.",
+      "preparation": "Dry museum skeleton; not living coral observation",
+      "visual_selection": "Dense short branching colony; no display base visible in official preview.",
+      "file_bytes": 6567676,
+      "sha256": "0172ea2f723be4fa90e120becb4133cbc4da5ff3dc64ea5b3f9d6cbf26a0ef85",
+      "triangles": 100000,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "vertex_count": 75520,
+      "position_min": [
+        -0.119427002966404,
+        -0.071103997528553,
+        -0.0996219962835312
+      ],
+      "position_max": [
+        0.119411997497082,
+        0.0716129988431931,
+        0.100578002631664
+      ],
+      "units": "m (official download label)",
+      "extensions_required": [],
+      "external_dependencies": false,
+      "textures": [
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 709628
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 640874
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 1598971
+        }
+      ],
+      "texture_roles": [
+        "baseColor",
+        "occlusion",
+        "normal"
+      ],
+      "materials": [
+        {
+          "name": "default",
+          "normalTexture": {
+            "index": 2
+          },
+          "occlusionTexture": {
+            "index": 1
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0.100000001490116,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "geometry_attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "filename": "pocillopora-44359.glb",
+      "title": "Pocillopora damicornis",
+      "usnm_number": "44359",
+      "model_id": "5dbbb9af-2a48-4665-839e-e66faf13ff85",
+      "object_url": "https://3d.si.edu/object/3d/pocillopora-damicornis:5dbbb9af-2a48-4665-839e-e66faf13ff85",
+      "document_url": "https://3d-api.si.edu/content/document/5dbbb9af-2a48-4665-839e-e66faf13ff85/document.json",
+      "rights_metadata_url": "https://ids.si.edu/ids/media_view?id=3d_package:5dbbb9af-2a48-4665-839e-e66faf13ff85&format=json",
+      "download_url": "https://3d-api.si.edu/content/document/3d_package:5dbbb9af-2a48-4665-839e-e66faf13ff85/resources/usnm_44359-100k-2048_std.glb",
+      "license_id": "cc0",
+      "license_label": "CCO - Creative Commons (CC0 1.0)",
+      "license_description": "This media file is in the public domain (free of copyright restrictions). You can copy, modify, and distribute this work without contacting the Smithsonian. For more information and to review the 3D disclaimer, visit the Smithsonian’s <a href=\"https://www.si.edu/Termsofuse\">Terms of Use</a> page.",
+      "preparation": "Dry museum skeleton; not living coral observation",
+      "visual_selection": "Compact thick branching colony; no display base visible in official preview.",
+      "file_bytes": 6750216,
+      "sha256": "31fa5dce1d14edbea6a2fbef8fe91f01ee80c2e5455b9ff3b6234d2e3a29e40c",
+      "triangles": 99996,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "vertex_count": 69324,
+      "position_min": [
+        -0.0529740005731583,
+        -0.0378209985792637,
+        -0.0645639970898628
+      ],
+      "position_max": [
+        0.0528319999575615,
+        0.0378010012209415,
+        0.064350001513958
+      ],
+      "units": "m (official download label)",
+      "extensions_required": [],
+      "external_dependencies": false,
+      "textures": [
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 765511
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 704651
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 1860167
+        }
+      ],
+      "texture_roles": [
+        "baseColor",
+        "occlusion",
+        "normal"
+      ],
+      "materials": [
+        {
+          "name": "default",
+          "normalTexture": {
+            "index": 2
+          },
+          "occlusionTexture": {
+            "index": 1
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0.100000001490116,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "geometry_attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "filename": "leptoseris-gardineri.glb",
+      "title": "Leptoseris gardineri",
+      "usnm_number": "93447",
+      "model_id": "d8e61d2a-b986-4482-9733-fc1d5a6380b9",
+      "object_url": "https://3d.si.edu/object/3d/leptoseris-gardineri:d8e61d2a-b986-4482-9733-fc1d5a6380b9",
+      "document_url": "https://3d-api.si.edu/content/document/d8e61d2a-b986-4482-9733-fc1d5a6380b9/document.json",
+      "rights_metadata_url": "https://ids.si.edu/ids/media_view?id=3d_package:d8e61d2a-b986-4482-9733-fc1d5a6380b9&format=json",
+      "download_url": "https://3d-api.si.edu/content/document/3d_package:d8e61d2a-b986-4482-9733-fc1d5a6380b9/resources/usnm_93447-100k-2048_std.glb",
+      "license_id": "cc0",
+      "license_label": "CCO - Creative Commons (CC0 1.0)",
+      "license_description": "This media file is in the public domain (free of copyright restrictions). You can copy, modify, and distribute this work without contacting the Smithsonian. For more information and to review the 3D disclaimer, visit the Smithsonian’s <a href=\"https://www.si.edu/Termsofuse\">Terms of Use</a> page.",
+      "preparation": "Dry museum skeleton; not living coral observation",
+      "visual_selection": "Thin lobed foliose specimen; no display base visible in official preview. This is a specimen, not a whole table coral colony.",
+      "file_bytes": 4656608,
+      "sha256": "7af7aba9fa64c3bebf5fafbcb1c09bd82723361ffaba73678e96d879d1deb8ef",
+      "triangles": 100000,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "vertex_count": 57211,
+      "position_min": [
+        -0.0824960023164749,
+        -0.0731149986386299,
+        -0.0378019995987415
+      ],
+      "position_max": [
+        0.0824540033936501,
+        0.0731019973754883,
+        0.0377600006759167
+      ],
+      "units": "m (official download label)",
+      "extensions_required": [],
+      "external_dependencies": false,
+      "textures": [
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 535216
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 457432
+        },
+        {
+          "mime_type": "image/jpeg",
+          "pixels": [
+            2048,
+            2048
+          ],
+          "embedded_bytes": 1231643
+        }
+      ],
+      "texture_roles": [
+        "baseColor",
+        "occlusion",
+        "normal"
+      ],
+      "materials": [
+        {
+          "name": "default",
+          "normalTexture": {
+            "index": 2
+          },
+          "occlusionTexture": {
+            "index": 1
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicFactor": 0.100000001490116,
+            "roughnessFactor": 0.800000011920929
+          }
+        }
+      ],
+      "geometry_attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ]
+    }
+  ],
+  "runtime_selection": [
+    "pocillopora-81450.glb",
+    "pocillopora-44359.glb"
+  ],
+  "evaluated_not_used": [
+    "leptoseris-gardineri.glb"
+  ]
+}

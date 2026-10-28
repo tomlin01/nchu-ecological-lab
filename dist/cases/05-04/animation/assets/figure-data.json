@@ -1,0 +1,140 @@
+[
+  {
+    "figure": 2,
+    "page": "https://www.nature.com/articles/s41597-022-01307-4/figures/2",
+    "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01307-4/MediaObjects/41597_2022_1307_Fig2_HTML.png",
+    "caption": "Sentinel-2 tile and example reference annotation provided as part of interpreter training. This example was used to illustrate the Flooded vegetation class, which is distinguished by small “mottled” areas of water mixed with vegetation near a riverbed. Also note that some areas of the tile are left unlabeled.",
+    "source_file": "paper-figure2-full.png",
+    "asset_file": "dw-paper-figure2.png",
+    "dimensions": [
+      1708,
+      648
+    ],
+    "bytes": 1122698,
+    "sha256": "c32c0c524542feb4d756957face5a74b17c95b5df53e85c2fc865e1ba6ba53e0",
+    "license": "CC BY 4.0; caption reviewed, no separate rights exclusion stated",
+    "role": "Sentinel-2 and reference human annotation; not model output",
+    "cropRecommendations": [
+      {
+        "role": "reference RGB",
+        "xywh": [
+          0,
+          0,
+          648,
+          648
+        ]
+      },
+      {
+        "role": "human reference annotation",
+        "xywh": [
+          750,
+          0,
+          646,
+          648
+        ]
+      },
+      {
+        "role": "original legend",
+        "xywh": [
+          1408,
+          0,
+          300,
+          648
+        ]
+      }
+    ],
+    "cropNote": "Pixel rectangles refer to the saved full figure. If cropped, credit Brown et al. 2022 Figure 2 and identify cropping; preserve the original date/region and relevant legend or provide faithful text equivalents."
+  },
+  {
+    "figure": 4,
+    "page": "https://www.nature.com/articles/s41597-022-01307-4/figures/4",
+    "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01307-4/MediaObjects/41597_2022_1307_Fig4_HTML.png",
+    "caption": "Training protocol used to recover the labeling model. The bottom row shows the progression from a normalized Sentinel-2 L1C image, to class probabilities, to synthesized Sentinel-2. The dashed red and blue arrows show how the labeling model is optimized with respect to both the class probability and synthesis pathway, and the synthesis model is optimized only with respect to the synthesized imagery. The example image is retrieved from Earth Engine using ee.Image(‘GOOGLE/DYNAMICWORLD/V1/20190517T083601_20190517T083604_T37UET’).",
+    "source_file": "paper-figure4-full.png",
+    "asset_file": "dw-paper-figure4.png",
+    "dimensions": [
+      1689,
+      993
+    ],
+    "bytes": 668013,
+    "sha256": "316454172399ba0888ded0b3fa325e32664eabc5bca9e022d06bd2b43d494a52",
+    "license": "CC BY 4.0; caption reviewed, no separate rights exclusion stated",
+    "role": "Model-training workflow; synthesized Sentinel-2 panel is not a real photograph",
+    "cropRecommendations": [
+      {
+        "role": "Use full workflow; do not present synthesized Sentinel-2 as a real photograph",
+        "xywh": [
+          0,
+          0,
+          1689,
+          993
+        ]
+      }
+    ],
+    "cropNote": "Pixel rectangles refer to the saved full figure. If cropped, credit Brown et al. 2022 Figure 4 and identify cropping; preserve the original date/region and relevant legend or provide faithful text equivalents."
+  },
+  {
+    "figure": 6,
+    "page": "https://www.nature.com/articles/s41597-022-01307-4/figures/6",
+    "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-022-01307-4/MediaObjects/41597_2022_1307_Fig6_HTML.png",
+    "caption": "Examples of Sentinel-2 imagery (RGB) and corresponding Dynamic World NRT products for April 2021. Location coordinates reported for image centroid. ( a ) Brazil, ee.Image(‘GOOGLE/DYNAMICWORLD/V1/20210405T134209_20210405T134208_T22KCA’) and corresponding Dynamic World labels. ( b ) Poland, zoomed view of ee.Image(‘GOOGLE/DYNAMICWORLD/V1/20210402T095029_20210402T095027_T34UDD’) and corresponding Dynamic World product with a hillshade on the Top-1 confidence class applied to the categorical labels, revealing features not normally visible with discrete valued LULC maps.",
+    "source_file": "paper-figure6-full.png",
+    "asset_file": "dw-paper-figure6.png",
+    "dimensions": [
+      1429,
+      1253
+    ],
+    "bytes": 2278585,
+    "sha256": "882eb171dad9fbc69b5d435187e44db30b7d0fef90c358519834c30390071797",
+    "license": "CC BY 4.0; caption reviewed, no separate rights exclusion stated",
+    "role": "Real Sentinel-2 RGB and corresponding Dynamic World labels/hillshade",
+    "cropRecommendations": [
+      {
+        "role": "Brazil RGB, retain 20 km scale",
+        "xywh": [
+          0,
+          64,
+          553,
+          555
+        ]
+      },
+      {
+        "role": "Brazil labels, retain 20 km scale",
+        "xywh": [
+          576,
+          64,
+          553,
+          555
+        ]
+      },
+      {
+        "role": "Poland RGB, retain 1 km scale",
+        "xywh": [
+          0,
+          699,
+          553,
+          554
+        ]
+      },
+      {
+        "role": "Poland Top-1 hillshade labels, not terrain height",
+        "xywh": [
+          576,
+          699,
+          553,
+          554
+        ]
+      },
+      {
+        "role": "original shared legend",
+        "xywh": [
+          1151,
+          420,
+          278,
+          482
+        ]
+      }
+    ],
+    "cropNote": "Pixel rectangles refer to the saved full figure. If cropped, credit Brown et al. 2022 Figure 6 and identify cropping; preserve the original date/region and relevant legend or provide faithful text equivalents."
+  }
+]

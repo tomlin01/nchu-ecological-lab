@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="02-01" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="用真實相機照片，分清楚找位置、提出分類與人員核對。">
+  <title>相機拍下照片，接著怎麼認出動物？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.bundle.js" defer></script>
+<link rel="stylesheet" href="embed.css"><script src="embed.js" defer></script><link rel="stylesheet" href="../../../ui/media-embed.css" data-navigation-media="navigation-media-v01">
+<script src="../../../ui/media-embed.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body data-case-id="02-01">
+  <a class="skip-link" href="#stage">跳至照片與動畫</a>
+  <main>
+    <header class="page-heading">
+      <p class="series">AI × 生態研究 · SpeciesNet</p>
+      <h1>相機拍下照片，接著怎麼認出動物？</h1>
+      <p class="intro">用真實相機照片，分清楚找位置、提出分類與人員核對。</p>
+    </header>
+
+    <section class="story" aria-label="SpeciesNet 相機照片與方法動畫">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="真實相機照片或方法圖解；模型輸出、說明與控制在畫面外">
+          <img id="static-fallback" src="assets/ocelot.jpg" alt="本段使用的真實相機照片；完整原圖與來源說明可在下方閱讀。">
+          <svg id="scene" viewBox="0 0 1000 620" role="img" aria-labelledby="scene-title scene-description" preserveAspectRatio="xMidYMid meet">
+            <title id="scene-title">相機拍下照片，接著怎麼認出動物？</title>
+            <desc id="scene-description">從真實相機照片開始，分清楚找出動物位置、提出分類與人員核對。每一段的文字與來源都保留在畫面外及下方全文。</desc>
+            <g id="image-workspace"></g>
+          </svg>
+        </div>
+        <p id="frame-meta" class="frame-meta">真實相機照片 · 可查看完整原圖與來源</p>
+        <div id="transport" class="transport js-only" role="group" aria-label="播放控制" hidden>
+          <div class="buttons">
+            <button id="play-toggle" class="primary" type="button">播放動畫</button>
+            <button id="replay" type="button">從頭重播</button>
+            <output id="clock" aria-label="播放時間">00:00 / 01:00</output>
+          </div>
+          <label class="timeline-label" for="timeline">播放進度</label>
+          <input id="timeline" type="range" min="0" max="60" step="0.1" value="0" aria-label="播放進度">
+        </div>
+        <div class="source-actions js-only" hidden>
+          <button id="open-source" type="button">查看這張原圖</button>
+          <a href="#source-gallery">照片與來源</a>
+        </div>
+        <p id="player-status" class="player-status" role="status">目前顯示靜態照片。下方保留完整文字與來源。</p>
+      </div>
+
+      <aside class="narrative" aria-label="目前段落說明">
+        <div class="phase-meta">
+          <span id="phase-position">1 / 6</span>
+          <span id="phase-time">00:00</span>
+        </div>
+        <h2 id="phase-title">先看相機拍到了什麼</h2>
+        <p id="phase-description" class="description">相機留下許多照片。先看看拍到了什麼，再了解系統怎麼找出動物、提出可能的分類。</p>
+        <section id="prediction-panel" class="prediction-panel" aria-label="模型輸出" hidden>
+          <h3>模型輸出</h3>
+          <p id="prediction-label"></p>
+          <p id="prediction-score"></p>
+          <p id="prediction-note"></p>
+        </section>
+        <p id="phase-detail" class="detail">模型提出的分類，還要回到原照片核對。下方保留完整照片與來源。</p>
+      </aside>
+    </section>
+
+    <nav class="phase-navigation js-only" aria-label="動畫段落" hidden><button type="button" data-phase="0">先看原圖</button><button type="button" data-phase="1">照片各有來源</button><button type="button" data-phase="2">找位置與裁切</button><button type="button" data-phase="3">讀分類輸出</button><button type="button" data-phase="4">群體與空景</button><button type="button" data-phase="5">留下核對入口</button></nav>
+    <noscript>
+      <p class="nojs-note">目前顯示靜態照片。完整文字與來源照片均可在下方閱讀，不需要啟動動畫。</p>
+    </noscript>
+    <details id="story-text" open>
+      <summary>閱讀完整文字</summary>
+      <ol class="transcript"><li><h2>相機拍下了什麼？</h2><p>先看這張虎貓照片。動物的外形、姿態與周圍環境，都保留在完整原圖裡。</p><p class="detail">這是來源照片。接下來會分開呈現找位置、提出分類與人工核對。</p></li><li><h2>不同照片，需要分別判讀</h2><p>接著看虎貓、黑熊、象群與空景四張照片。每一張都有自己的來源，不能把它們當成同一地點的連續觀察。</p><p class="detail">畫面排列與停留時間是解說安排，不代表拍攝地點或原始時間順序。</p></li><li><h2>先找到動物，再看同圖細節</h2><p>框線標出偵測器提出的位置。選取虎貓所在的候選框後，從同一張原圖放大，保留可回查的來源。</p><p class="detail">偵測框回答位置問題；它本身不是物種分類。放大只裁切原圖，沒有生成另一張動物影像。</p></li><li><h2>分類名稱與分數，要一起看</h2><p>先看虎貓，再換黑熊。畫面呈現這次執行取得的分類輸出；名稱與分數仍要回到照片核對。</p><p class="detail">分類分數不是族群比例，也不是經人工確認的正確率。本段不把模型輸出當成已確認紀錄。</p></li><li><h2>有多個動物，也可能沒有動物</h2><p>同一張象群照片中的候選框，可能得到不同分類。逐框對照原圖與輸出，再看沒有分類候選的空景照片。</p><p class="detail">符合分類門檻的框都保留。回退為動物或判成空景的結果，也要逐框回查；框數不能直接當成個體數。</p></li><li><h2>四筆紀錄，都能回到原圖</h2><p>四張照片各保留一筆待人工覆核的紀錄。點選原圖，重新檢查位置、分類與來源。</p><p class="detail">目前沒有任何一筆被標為人工確認。照片與模型輸出保留在一起，讓後續核對有依據。</p></li></ol>
+    </details>
+    <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title">
+      <h2 id="source-gallery-title">照片與來源</h2>
+      <p class="source-gallery-intro">這裡保留完整原圖。可對照動畫中的局部畫面，閱讀每張照片的來源與使用說明。</p>
+      <div class="source-gallery-items"><figure><a href="assets/ocelot.jpg" target="_blank" rel="noopener"><img src="assets/ocelot.jpg" width="1046" height="802" loading="lazy" alt="原照片可見完整身體；照片自身保留原始日期字樣與底部掃描邊緣。"></a><figcaption><h3>P01 · 有斑紋的動物照片</h3><p>WCS Camera Traps，Wildlife Conservation Society。CDLA-Permissive-1.0；原圖未修改。</p><p>本輪整理後的模型輸出：虎貓。人工覆核仍待進行。</p></figcaption></figure><figure><a href="assets/american_black_bear.jpg" target="_blank" rel="noopener"><img src="assets/american_black_bear.jpg" width="2048" height="1536" loading="lazy" alt="真實夜間灰階相機照片；保留相機原有時間與資訊列。"></a><figcaption><h3>P02 · 夜間的黑白照片</h3><p>North American Camera Trap Images，NACTI data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>本輪整理後的模型輸出：美洲黑熊。人工覆核仍待進行。</p></figcaption></figure><figure><a href="assets/african_elephants.jpg" target="_blank" rel="noopener"><img src="assets/african_elephants.jpg" width="2048" height="1536" loading="lazy" alt="多隻象及遮擋，保留完整畫面；不要把框數直接當獨立個體數。"></a><figcaption><h3>P03 · 同張照片裡的多隻動物</h3><p>Snapshot Serengeti，Snapshot Serengeti data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>本輪整理後的模型輸出：7 個框進入分類，需逐框覆核；整理結果包含非洲象、動物、空景。人工覆核仍待進行。</p></figcaption></figure><figure><a href="assets/blank.jpg" target="_blank" rel="noopener"><img src="assets/blank.jpg" width="2048" height="1536" loading="lazy" alt="官方空景測試照片；不可推論該地沒有動物。"></a><figcaption><h3>P04 · 官方空景範例</h3><p>North American Camera Trap Images，NACTI data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>本輪整理後的模型輸出：未產生分類輸出。人工覆核仍待進行。</p></figcaption></figure></div>
+    </section>
+    <footer>
+      <h2>研究與資料來源</h2>
+      <ul class="source-links"><li><a href="https://github.com/google/cameratrapai/blob/08ba498e833a15e95e72021c4308908e8b44709d/README.md" target="_blank" rel="noopener">Google SpeciesNet 固定版本說明</a></li><li><a href="https://github.com/google/cameratrapai/blob/08ba498e833a15e95e72021c4308908e8b44709d/test_data/README.md" target="_blank" rel="noopener">官方逐圖來源及授權</a></li><li><a href="https://doi.org/10.1049/cvi2.12318" target="_blank" rel="noopener">Gadot 等，2024：整張照片與裁切分類的方法研究</a></li><li><a href="assets/predictions.json" target="_blank" rel="noopener">本輪完整推論結果，保留原始 JSON</a></li><li><a href="assets/display-data.json" target="_blank" rel="noopener">動畫讀取的顯示資料與原結果對照</a></li><li><a href="assets/official-image-credits.md" target="_blank" rel="noopener">保存在本機的官方照片來源清單</a></li><li><a href="SOURCE.md" target="_blank" rel="noopener">本片素材、推論方式與使用界線</a></li><li>四張照片分別來自 WCS、NACTI 與 Snapshot Serengeti 的官方測試範例，不是同一相機的連拍，也不冒充 WWF 秘魯調查的原始資料。</li><li>本輪使用裁切分類器 4.0.3a，未提供地點作地理篩選。偵測分數、分類器分數與整理後分數各自保留；它們不是這組資料或其他場域的準確率。</li><li>圖上只顯示符合本輪分類門檻的框，完整輸出仍保留其他偵測。動畫中的放大區維持照片比例，模型另外執行縮放等前處理。</li><li>人工覆核尚未完成，不把候選當成已確認觀測，也不進行個體辨識、去重或動物總數估計。四張示例不足以評估模型整體表現。</li></ul>
+    </footer>
+  </main>
+
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title" aria-describedby="source-caption">
+    <div class="dialog-heading">
+      <h2 id="source-dialog-title">完整來源照片</h2>
+      <form method="dialog">
+        <button id="close-source" type="submit" value="close">關閉原圖</button>
+      </form>
+    </div>
+    <figure class="dialog-photo">
+      <img id="source-image" alt="目前這張照片的完整原圖。">
+      <figcaption id="source-caption"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

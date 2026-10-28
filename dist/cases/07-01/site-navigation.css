@@ -1,0 +1,22 @@
+/* Navigation for these new portable copies only. */
+.site-topic-return { white-space: nowrap; }
+.story-stage > .scene-nav > .site-topic-return {
+  display: inline-flex; align-items: center; min-height: 44px; margin-right: auto;
+}
+body[data-case-id='07-01'] .brand.site-topic-return { font-family: HabitatSerif, serif; }
+@media screen and (max-width: 760px) {
+  .hab-header { flex-wrap: wrap; }
+  .hab-header nav, .case-links, .case-pagination {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px;
+  }
+  .hab-header nav { order: 3; width: 100%; margin-left: 0; }
+  .case-links { width: 100%; }
+  .hab-header nav a, .case-links a, .case-pagination a { white-space: nowrap; }
+  body[data-case-id='04-02'] .story-stage > .scene-nav {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 12px;
+  }
+  body[data-case-id='04-02'] .story-stage > .scene-nav > .site-topic-return {
+    grid-column: 1 / -1; justify-self: start;
+  }
+  body[data-case-id='04-02'] .story-scene { scroll-margin-top: 120px; }
+}

@@ -1,0 +1,23 @@
+{
+  "caseId": "05-04",
+  "validation": {
+    "tiles": 409,
+    "reference": "Expert Consensus",
+    "table": "Table 7",
+    "includedPixels": 68137571,
+    "agreePixels": 50299775,
+    "publishedAgreementPercent": 73.8,
+    "recomputedAgreementPercent": 73.82091005269325,
+    "scope": "Published single-scene Top-1 predictions compared with expert reference on valid pixels; not global area-adjusted accuracy or pixel confidence",
+    "sourceUrl": "https://www.nature.com/articles/s41597-022-01307-4/tables/8"
+  },
+  "service": {
+    "catalogUrl": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1",
+    "checkedDate": "2026-10-27",
+    "availableThroughObserved": "2026-10-26T12:41:43.745Z",
+    "nominalPixelMetres": 10,
+    "classes": 9,
+    "notDailyAtEveryLocation": true
+  },
+  "modelInferenceRun": false
+}

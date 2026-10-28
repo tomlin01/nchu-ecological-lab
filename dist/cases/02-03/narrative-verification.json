@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "case_id": "02-03",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 9,
+  "title": "怎麼知道這一聲來自布氏鯨？",
+  "preserved_files": 40,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "9a01e7bd2be90e9337c8c4e337f3aa95008fe7a09d1dff487d237035ce55dc3a",
+      "glyphs": 627,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "ec71491281a7694eaa27cbda51c9b5143652f94a7a9fea5f88e3e128c6bbb354",
+      "glyphs": 627,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_record": "work/ecology-ai-rollout/copy-review-02-v02/browser-verification.json",
+  "full_playback_rerun": false,
+  "scientific_status_unchanged": true,
+  "public_deployment": false,
+  "existing_ids_preserved": 20,
+  "source_links_preserved": 24,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "5": 2,
+    "10": 1,
+    "9": 1,
+    "15": 1
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "article_structure_changed_as_planned": true
+}

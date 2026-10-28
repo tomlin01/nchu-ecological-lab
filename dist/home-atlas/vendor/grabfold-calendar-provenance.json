@@ -1,0 +1,21 @@
+{
+  "name": "grabfold",
+  "version": "0.1.0",
+  "license": "MIT",
+  "source": "https://github.com/javocsoft/grabfold",
+  "reference_demo": "https://javocsoft.github.io/grabfold/examples/calendar/",
+  "registry_integrity": "sha512-Hhea2jLxbqrZYtFsbYIkFAlCZw0QP4ABQ4L8y7EB0IogoPa+x6McT2hQP8bxwF4fGsfzv4MhRj80Z1QdlLC50Q==",
+  "modules": {
+    "dist/geometry.js": "fc0733cb194d48e0e39cbd789f0cdeb08ab100b3338029173a45a26c6890c3ac",
+    "dist/sheet.js": "3532569581b3e9452cb959e1193b9549a31aca3fcf39b78191976acbf8ce5156"
+  },
+  "transformation": "Format-only IIFE wrapper: remove the one internal import and export keywords; no upstream logic edits.",
+  "exports": [
+    "FoldingSheet",
+    "foldGeometry",
+    "foldDepth"
+  ],
+  "audio_modules_included": false,
+  "gesture_controller_included": false,
+  "bundle_sha256": "e299469e836d529f721782b216d6c17f0f7596a8f171f5ed1d41de05453df303"
+}

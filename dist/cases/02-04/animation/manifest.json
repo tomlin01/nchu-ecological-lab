@@ -1,0 +1,184 @@
+{
+  "case_id": "02-04",
+  "version": "prototype-v01",
+  "entry": "index.html",
+  "preview_url": "http://127.0.0.1:8871/index.html",
+  "status": "animation_ready_for_review",
+  "duration_seconds": 90,
+  "source": "SOURCE.md",
+  "verification": "verification.json",
+  "files": {
+    "ANATOMY-LICENSE.txt": {
+      "bytes": 1061,
+      "sha256": "87c078ab9d90a3044f359e6b563d4e6afea7aa060897cf4f21618687b3856796"
+    },
+    "ANATOMY-NOTICE.md": {
+      "bytes": 516,
+      "sha256": "67e03bdd86ee6608598a542530887b012aa9195294a014c6479a6c20d2083bd6"
+    },
+    "README.md": {
+      "bytes": 976,
+      "sha256": "0eaa1dfe12451231962be68382bed475336fee013f2e302d0ee4deb4e8de3243"
+    },
+    "SOURCE.md": {
+      "bytes": 4964,
+      "sha256": "6e4f4bcb93b8f6f25314bdf1808c5e32089441c249620c5eb44b483a39fc9165"
+    },
+    "app.bundle.js": {
+      "bytes": 429171,
+      "sha256": "df193a69677d09eba8ca0cfbbc3b8a6a27047d08714e4ccce8b3d85310dc329d"
+    },
+    "assets/D20200701T002011_IFCB104_00120.png": {
+      "bytes": 191283,
+      "sha256": "68d729bd343ac962df84b60a7ac1a610e4c4d568b91f80891872ff9d86477ed8"
+    },
+    "assets/D20200701T002011_IFCB104_00216.png": {
+      "bytes": 80424,
+      "sha256": "dbb57e132191788732ad885e17655da5824fb06ba9fec8377578fb2aa7b3b81f"
+    },
+    "assets/D20200701T002011_IFCB104_00298.png": {
+      "bytes": 41055,
+      "sha256": "5de264b43ff975db72eac49b394d0dd5252505c072d8eeac42d586464fe1d8fb"
+    },
+    "assets/D20200701T002011_IFCB104_00732.png": {
+      "bytes": 64018,
+      "sha256": "a845fd4f5e6a642fa6ba134299e078c2abe6f8e858cc9eff70f845d2141f72ed"
+    },
+    "assets/D20200701T002011_IFCB104_class_scores.csv": {
+      "bytes": 448600,
+      "sha256": "dcdf9a76cf45b1a2a95f0764b654a0f6a20b38bc9f80b090ef35029d4c1f6fb8"
+    },
+    "assets/ICHA_35.pdf": {
+      "bytes": 906267,
+      "sha256": "ec7a5ef7679755f41ab84f60d4cb94cb8a7d5fea7337564d07ebb0f309780dbc"
+    },
+    "assets/asset-registry.json": {
+      "bytes": 19321,
+      "sha256": "640ca5664b28602a3319a5145a0308aeff257d5097f8d3a83bc401be46841c02"
+    },
+    "assets/display-records.json": {
+      "bytes": 2160,
+      "sha256": "e2ac53cdf0f792e0ef289e3fe6a047e9b09309b7b3f04847e3c643107c415905"
+    },
+    "assets/paper-figure-1.png": {
+      "bytes": 22921,
+      "sha256": "39e5c7fa2005a5314c2a6a2717b2c5caac118b60b4039c784170f67a28efaf98"
+    },
+    "assets/selected-roi-records.json": {
+      "bytes": 15425,
+      "sha256": "4e620b70d3eff2f2cde02f3eec71075ff314f574279c5c1545defeba74b5523a"
+    },
+    "browser-verification.json": {
+      "bytes": 3709,
+      "sha256": "c81a57a8fe9fa9515c04b85aacb93f8e4b586eed1a6158d5c4ca8c687489c800"
+    },
+    "build-runtime.json": {
+      "bytes": 3315,
+      "sha256": "f1cec323b82a9bea02e6e474f54d6460408fd939bef2c4618a8fd80434fa9715"
+    },
+    "embed.css": {
+      "bytes": 1878,
+      "sha256": "e790a6d6db8ff865e73b931136e0740d0d1c2ef312ef584eaf00b83a76dab0dd"
+    },
+    "embed.html": {
+      "bytes": 13156,
+      "sha256": "ce321fb5a61a9b0f7bbb10ea11c9b033fa314f4e52b6209401b6f84ca750dc7c"
+    },
+    "embed.js": {
+      "bytes": 2641,
+      "sha256": "2d083235ede2b392e6e81a40fbe4e872c465aad1b21f5c678fe57abbe1a97ebc"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 144252,
+      "sha256": "df312e56fa0ad82c257fddd1b7d7b1a0770647348ee1d3cb782366bf1f2a4069"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 193236,
+      "sha256": "23a691dbf12a24448968db8466cf00a4fb1d5cd65fcfa12b5a984f5a46153969"
+    },
+    "full-playback.json": {
+      "bytes": 35215,
+      "sha256": "92b7e49aebb968b49afd25431d1d4ac714b472e99f8497719a7a75a7bbe093da"
+    },
+    "index.html": {
+      "bytes": 12828,
+      "sha256": "dda90e04839cda567629c5a220dd0d18298830f2475e81d99c2294cd294f1ebe"
+    },
+    "instrument-validation.json": {
+      "bytes": 3447,
+      "sha256": "7a5577bf74cbb28cde701c80a9bcfe5d982c7ec7b4f62e8541c0e1c52c09c182"
+    },
+    "static-verification.json": {
+      "bytes": 2091,
+      "sha256": "13e4cb8c73470c607e0d0f644364b899e33b33366dd674051e6b1fa11a6f1cc2"
+    },
+    "style.css": {
+      "bytes": 10029,
+      "sha256": "f5e3bb031d0c48cd82793ffbb04e986048229e342f3e4ebdad664084ccd35df0"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "verification.json": {
+      "bytes": 2196,
+      "sha256": "ce49795ead9c2121546fada3fdd3b75a72bc2c39b3ace3a61a6b1632e6967151"
+    }
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical."
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html data-reading-type="03-02" lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script src="../../ui/theme.js"></script>
+  <link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <meta name="description" content="跟著西伯利亞松鴉的真實影片，看YOLO-Behaviour如何逐幀找出取食候選、整理事件，再回到原始影片核對時間。">
+  <title>這段影片裡，牠吃了多久？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="case.css?v=topic-03-visual-v01">
+  <link rel="stylesheet" href="../../ui/sidebar.css">
+  <link rel="stylesheet" href="../../ui/media-expand.css">
+  <link rel="stylesheet" href="../../ui/catalog-theme.css">
+  <link rel="stylesheet" href="natural-history.css">
+  <link rel="stylesheet" href="../../ui/theme-controls.css">
+  <link rel="stylesheet" href="observation.css?v=time-v03">
+  <script src="source-preview.js?v=time-v03" defer></script>
+  <script src="case.js?v=time-v03" defer></script>
+<link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-03">返回主題清單</a><span class="case-name">AI × 生態研究 · YOLO-Behaviour</span></header>
+  <nav class="section-nav" aria-label="案例章節">
+    <div class="nav-pages"><a href="#question" data-page="question">看牠吃東西</a><a href="#roles" data-page="roles">怎麼算時間</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">還要檢查什麼</a></div>
+    <div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>完整閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div>
+  </nav>
+  <main id="case-content">
+    <section id="question" class="chapter opening" aria-labelledby="question-title" tabindex="-1">
+      <div class="observation-hero">
+        <header class="observation-copy"><h1 id="question-title">這段影片裡，<br>牠吃了多久？</h1><p>抬頭、低頭，又抬頭。要記下取食時間，得把動作對回它發生的那一刻。</p><a class="observation-method" href="#method">看候選怎麼接成一段</a></header>
+        <div class="observation-board" aria-label="原影片兩個時刻與候選時段">
+          <div class="source-stills">
+            <figure><img src="assets/jay-head-up.webp" width="1920" height="1080" fetchpriority="high" alt="原始影片第1650幀，松鴉在取食支架上抬頭。"><figcaption><strong>66.00 秒</strong><span>抬頭</span><button class="source-jump js-only" type="button" data-source-frame="1650" hidden>回看這一刻</button></figcaption></figure>
+            <figure><img src="assets/jay-eat.webp" width="1920" height="1080" fetchpriority="high" alt="原始影片第1699幀，松鴉的嘴部接近食物。"><figcaption><strong>67.96 秒</strong><span>嘴部接近食物</span><button class="source-jump js-only" type="button" data-source-frame="1699" hidden>回看這一刻</button></figcaption></figure>
+          </div>
+          <figure class="source-timebar" aria-labelledby="source-timebar-title">
+            <figcaption id="source-timebar-title"><span>同一段原始影片的 14 秒</span><span class="coverage-key">模型候選時段</span></figcaption>
+            <div class="source-timebar-track" role="img" aria-label="原始影片60至74秒，色段表示模型候選時段的聯集，涵蓋4.12秒；66秒和67.96秒分別對應上方兩張停格。">
+              <span class="source-time-marker" style="left:42.85714286%"><span>66.00</span></span><span class="source-time-marker" style="left:56.85714286%"><span>67.96</span></span>
+              <div class="source-timebar-ground"><span class="source-coverage" data-start-frame="1511" data-end-frame-exclusive="1516" style="left:3.14285714%;width:1.42857143%"></span><span class="source-coverage" data-start-frame="1519" data-end-frame-exclusive="1521" style="left:5.42857143%;width:0.57142857%"></span><span class="source-coverage" data-start-frame="1562" data-end-frame-exclusive="1615" style="left:17.71428571%;width:15.14285714%"></span><span class="source-coverage" data-start-frame="1685" data-end-frame-exclusive="1702" style="left:52.85714286%;width:4.85714286%"></span><span class="source-coverage" data-start-frame="1760" data-end-frame-exclusive="1769" style="left:74.28571429%;width:2.57142857%"></span><span class="source-coverage" data-start-frame="1806" data-end-frame-exclusive="1823" style="left:87.42857143%;width:4.85714286%"></span></div><span id="source-playhead" class="source-playhead" hidden></span>
+            </div>
+            <div class="source-timebar-scale" aria-hidden="true"><span>60 秒</span><span>67 秒</span><span>74 秒</span></div>
+            <p class="coverage-caption">色段重疊只計一次，共 <strong>4.12 秒候選時間</strong>，仍待人工核對。</p>
+          </figure>
+          <details id="source-review" class="source-review js-only" hidden><summary>回看這 14 秒原始影片</summary><video id="source-preview" controls muted playsinline preload="none" poster="animation/assets/poster.jpg" data-src="animation/assets/jay-source-excerpt.mp4" aria-label="14秒原速影片，可用原生控制播放、暫停或拖動"></video><div class="source-preview-caption"><output id="source-preview-time">原始影片 60.00 秒</output><p id="source-preview-status" role="status">按下播放，或拖曳進度條查看任一時刻。</p><button id="source-preview-retry" type="button" hidden>重試原始影片</button></div></details>
+          <p class="source-board-credit">停格與影片：Chan 等人的原始資料。兩張停格供比較姿勢，未另做行為標註；色段內也可能有未檢出取食的畫面。</p>
+        </div>
+      </div>
+      <div id="watch-the-jay" class="source-context">
+        <figure><img src="assets/03-02-siberian-jay-hero-v02.webp" width="1672" height="941" loading="lazy" alt="AI生成的西伯利亞松鴉與北方森林情境，並非研究現場或影片停格。"><figcaption>西伯利亞松鴉 · AI 生成情境，非研究現場</figcaption></figure>
+        <div><h2>把取食動作記成時間</h2><p>研究者拍下松鴉在取食支架旁的動作。影片累積多了，逐段記下開始與結束會花上不少時間；YOLO-Behaviour 先整理出候選時段，供研究人員回到原始影片核對。</p><p>要量的是取食持續多久。即使時間記對了，也不等於知道牠吞下多少食物，更不能直接推算牠整天的食量或健康狀況。</p></div>
+      </div>
+    </section>
+
+    <section id="roles" class="chapter roles-page" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="roles-title">先說清楚什麼算取食，再交給模型找</h2><p>人員定義行為，模型提出逐幀候選，後處理把候選整理成事件。</p></header>
+      <article class="reading-surface">
+        <div class="editorial-row"><h3>研究者先選例子</h3><div><p>「正在吃」需要有看得見的判準。研究者先選出動作明確的畫面，標註嘴部與食物接觸的位置，再用這些例子訓練模型。</p><p>如果一個行為必須聽聲音，或看完整段動作才能分辨，就不能只靠單張畫面硬做判斷。這個範例使用資料中的 <span lang="en">Eat</span> 類別。</p></div></div>
+        <div class="editorial-row"><h3>模型一次判讀一幀</h3><div><p>YOLOv8 在每一幀提出行為框、類別與分數。框的位置很重要：這裡要留意的是嘴與食物附近的動作，不只是框住整隻鳥。</p><p>沒有框，只代表那一幀沒有檢出這個候選，不能自行改標成「休息」或「沒有吃」。分數高，也不等於研究人員已經確認。</p></div></div>
+        <div class="editorial-row"><h3>把相關候選接成一段</h3><div><p>後處理使用 SORT，比較類別、位置與時間，把相關偵測接成候選事件。每段事件都記下開始與結束，方便回看原始影片。</p><p>同一類行為出現在不同位置時，不能只因顏色相同就接成一段。事件編號也不是個體身分，不能把它當成這隻鳥在其他影片中的名字。</p></div></div>
+        <table class="roles-table"><caption>各步驟留下什麼紀錄？</caption><thead><tr><th scope="col">工作</th><th scope="col">留下的紀錄</th></tr></thead><tbody><tr><th scope="row">研究者定義並標註</th><td>哪些可見動作算在行為內，以及可供訓練的例子。</td></tr><tr><th scope="row">模型逐幀判讀</th><td>每一幀的候選位置、類別與模型分數。</td></tr><tr><th scope="row">後處理整理事件</th><td>候選事件的開始與結束，供人員回原始影片查看。</td></tr><tr><th scope="row">人員覆核</th><td>回看動作及開始、結束時間；無法確認的部分標為待確認。</td></tr></tbody></table>
+      </article>
+    </section>
+
+    <section id="method" class="chapter method-page" aria-labelledby="method-title" tabindex="-1">
+      <header class="method-heading"><div><h2 id="method-title">把同一段影片整理成時間列</h2><p>先看松鴉，再看每一幀的候選，最後回到原始影片核對開始與結束時間。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface">
+        <p class="player-hint">78 秒，沒有聲音。動畫中有停格、慢速播放與重播；原始影片的時間會另外顯示。</p>
+        <div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="這段影片裡，牠吃了多久？方法動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=mobile-label-v01-r1&release=20261027-media" title="78秒西伯利亞松鴉取食影片：逐幀候選、候選事件與回看核對" height="840" scrolling="no" loading="eager"></iframe></div></div>
+        <p id="frame-status" class="frame-status" role="status">開啟「看動畫」後會載入影片。也可以往下閱讀完整解說與來源。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入影片</button>
+        <p class="teaching-note">影片與候選都來自研究者的公開資料。本頁沿用既有模型輸出，未重新執行模型；候選仍待人工核對。</p>
+        <noscript><p class="nojs-note">互動動畫需要 JavaScript。下方可閱讀完整解說，「看牠吃東西」也有原影片的停格。</p></noscript>
+        <details id="method-text" class="method-text" open><summary>逐段閱讀動畫解說</summary><ol class="transcript">
+          <li><h3>先看牠怎麼吃</h3><p>松鴉站在林中的取食支架上，低頭碰觸食物，又抬起頭。這段時間裡，有多少是在吃東西？</p></li>
+          <li><h3>怎樣才算「正在吃」？</h3><p>研究者先選出有明確動作的畫面，標註嘴與食物接觸的位置，再拿這些例子訓練模型。局部放大取自同一幀，不補出新的細節。</p></li>
+          <li><h3>電腦一次判讀一幀</h3><p>框與分數來自作者公開的模型輸出。Eat 表示進食候選；沒有框，只表示這一幀沒有檢出，不能直接當作沒在吃。</p></li>
+          <li><h3>把相關的偵測接成一段</h3><p>後處理會比較類別、位置與時間，把相關的框接成候選事件。每條短色帶是一段候選事件；上下排開方便看出重疊，不能當作鳥的身分編號。</p></li>
+          <li><h3>回看開始和結束的地方</h3><p>慢放同一段原始影片，核對候選事件的開始與結束。相鄰事件可能重疊，事件內也可能短暫沒有檢出；這些地方要回看原始影片。</p></li>
+          <li><h3>算出候選時間，再由人核對</h3><p>先把重疊的候選區間合在一起，避免同一秒重複計算。算出的是模型候選涵蓋的時間，實際取食多久仍待人工確認。</p></li>
+        </ol></details>
+      </div>
+    </section>
+
+    <section id="evidence" class="chapter evidence-page" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="evidence-title">先找出候選，<br>取食時間仍要核對</h2><p>方法能把影片整理成待回看的時段。論文也比較了模型與人工的取食時間紀錄，兩者並不完全相同。</p></header>
+      <article class="research-conclusion" aria-labelledby="research-result-title"><div><h3 id="research-result-title">論文怎麼檢驗這件事？</h3><p>作者比較松鴉<strong>每隻、每分鐘的進食秒數</strong>。模型紀錄與人工紀錄的 Pearson 相關為 0.50，表示兩組時間紀錄有正向關係，不能當成每段時間都已量準。</p><p>這是論文的整體評估，與下方 14 秒示範分開。使用時仍要檢查場景、行為定義，以及候選事件的開始與結束。</p><a href="https://doi.org/10.1111/2041-210X.14502" target="_blank" rel="noopener">研究結果 · Table 5</a></div><div class="research-metric"><p>Pearson 相關</p><strong>0.50</strong><p>模型時間與人工時間的關係<br>不是「50% 畫面辨認正確」</p></div></article>
+      <header class="example-heading"><h3>回到這段 14 秒示範</h3><p>它說明怎麼整理候選，沒有重做論文評估。</p></header>
+      <article class="reading-surface">
+        <div class="editorial-row"><h3>4.12 秒，是候選區間涵蓋的時間</h3><div><p>本例取自原始影片的 14 秒節錄。把相交的候選事件裁到這段範圍，再合併重疊區間，得到 4.12 秒；同一秒不會因為出現在兩列而算兩次。</p><p>事件內可能短暫沒有模型框，因此這個數字與「有框的幀加起來多久」也不同。它不是經人工確認的取食持續時間，更不是這隻鳥的食物攝取量。</p><details class="technical-note"><summary>時間怎麼對回原始影片？</summary><p>來源事件的起訖幀都包含在區間內。計算先保留這項定義，再取出所選片段內的部分、求區間聯集，最後依原始影片每秒 25 幀換算。教學的停格、慢播與重播都不加入候選秒數。原始影片時間與計算方式詳見<a href="animation/SOURCE.md" target="_blank" rel="noopener">素材說明</a>及<a href="animation/assets/display-data.json" target="_blank" rel="noopener">顯示資料</a>。</p></details></div></div>
+        <div class="editorial-row"><h3>這段影片還沒有人工確認的答案</h3><div><p>公開資料包內有其他影片的人工標註，但目前無法確認它們是否對應這段 Jay_Sample。不能把那些標註拿來當這段影片的答案。</p><p>事件表也沒有每列對應的個體 ID 或框軌跡，所以動畫分列呈現各事件，不把無法對應的框與事件連在一起。</p></div></div>
+        <div class="editorial-row"><h3>換個場景，仍要重新檢查</h3><div><p>拍攝角度、遮擋與行為定義都可能影響模型表現。需要觀察動作前後的過程，或聽聲音才能分辨的行為，也不適合直接用單幀判讀。</p><p>先找候選，是為了讓人回到對應片段查看；這段示範尚未提供人工確認的取食秒數。</p></div></div>
+      </article>
+      <div class="source-layout">
+        <article class="source-reading" id="sources"><h3>研究與方法來源</h3><ol class="source-list"><li><a href="https://doi.org/10.1111/2041-210X.14502" target="_blank" rel="noopener">Chan 等人（2025）· YOLO-Behaviour</a><p>行為標註、逐幀偵測、候選事件與研究評估的主要依據。</p></li><li><a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/inference.html" target="_blank" rel="noopener">官方文件 · 逐幀推論與事件</a><p>模型輸出與後處理如何整理成事件。</p></li><li><a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/human.html" target="_blank" rel="noopener">官方文件 · 人工覆核</a><p>回看候選行為與檢查紀錄的方法。</p></li><li><a href="https://alexhang212.github.io/YOLO_Behaviour_Repo/yologuide.html" target="_blank" rel="noopener">官方文件 · 方法適用條件</a><p>哪些行為可以由單張畫面辨認，以及使用前需要確認的條件。</p></li></ol></article>
+        <article class="source-reading" id="visual-source"><h3>影片、停格與模型輸出</h3><p>頁面中的姿勢對照與時間列來自原影片及既有候選資料；森林情境圖由 AI 生成，不是研究現場或影片停格。原始影片、姿勢對照與動畫取自 Chan 等人的 <a href="https://doi.org/10.17617/3.EZNKYV" target="_blank" rel="noopener">Sample dataset for YOLO-Behaviour，Edmond V1（2024）</a>。資料頁標示 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。該授權標示適用於來源研究素材。</p><p>姿勢對照為第1650與1699幀，對應原始影片66.00與67.96秒。兩張圖只協助查看姿勢，沒有新增行為正負標註。頁面上方的候選時間列沿用原事件的開始與結束，重疊只計一次；沒有重新推論。姿勢對照與動畫保留原畫面中的森林、松鴉與取食支架。動畫取 14 秒原始影片，縮放編碼後加入教學停格、慢播、重播、局部放大與網頁標註；沒有生成或插補新的動作。</p><p>原始影片與教學片都無聲，沒有另外添加鳥叫或環境音。候選框、類別與分數取自同名模型輸出，本頁沒有重新推論。</p><p><a href="animation/SOURCE.md" target="_blank" rel="noopener">素材與計算紀錄</a> · <a href="animation/assets/display-data.json" target="_blank" rel="noopener">來源幀、候選與事件資料</a> · <a href="animation/assets/jay-source-excerpt.mp4" download>下載原速節錄</a></p></article>
+      </div>
+      <p class="colophon">研究者先用候選時段找到要看的片段，再逐段確認行為。即使確認了取食時間，也不能直接推算食量或健康狀況。</p>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看牠吃東西</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script>
+  <script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="03-02"></script>
+  <script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

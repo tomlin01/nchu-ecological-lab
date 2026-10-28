@@ -1,0 +1,1634 @@
+{
+  "case_id": "01-04",
+  "checked_date": "2026-10-20",
+  "status": "three_real_original_frames_and_author_annotations_available",
+  "source": {
+    "title": "Insect Identification in the Wild: The AMI Dataset",
+    "version": "v2",
+    "record_id": 12554005,
+    "doi": "10.5281/zenodo.12554005",
+    "url": "https://zenodo.org/records/12554005",
+    "api": "https://zenodo.org/api/records/12554005",
+    "publication_date": "2024-06-26",
+    "created": "2024-06-26T20:40:20.860131+00:00",
+    "updated": "2024-07-08T18:51:01.806178+00:00",
+    "creators": [
+      {
+        "name": "Jain, Aditya",
+        "affiliation": "Mila - Quebec Artificial Intelligence Institute",
+        "orcid": "0009-0009-4630-0651"
+      },
+      {
+        "name": "Cunha, Fagner",
+        "affiliation": "Universidade Federal do Amazonas"
+      },
+      {
+        "name": "Bunsen, Michael James",
+        "affiliation": "Mila - Quebec Artificial Intelligence Institute"
+      },
+      {
+        "name": "Cañas, Juan Sebastián",
+        "affiliation": "Mila - Quebec Artificial Intelligence Institute"
+      },
+      {
+        "name": "Pasi, Léonard",
+        "affiliation": "Mila - Quebec Artificial Intelligence Institute"
+      },
+      {
+        "name": "Pinoy, Nathan",
+        "affiliation": "Aarhus University"
+      },
+      {
+        "name": "Helsing, Flemming",
+        "affiliation": "Aarhus University"
+      },
+      {
+        "name": "Russo, JoAnne",
+        "affiliation": "Vermont Center for Ecostudies"
+      },
+      {
+        "name": "Botham, Marc",
+        "affiliation": "UK Centre for Ecology & Hydrology"
+      },
+      {
+        "name": "Sabourin, Michael",
+        "affiliation": "McGuire Center"
+      },
+      {
+        "name": "Frechette, Jonathan",
+        "affiliation": null
+      },
+      {
+        "name": "Anctil, Alexandre",
+        "affiliation": "Centre de données sur le patrimoine naturel du Québec"
+      },
+      {
+        "name": "Lopez, Yacksecari",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "Navarro, Eduardo",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "Pimentel, Filonila Perez",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "Zamora, Ana Cecilia",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "Silva, José Alejandro Ramirez",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "Gagnon, Jonathan",
+        "affiliation": null
+      },
+      {
+        "name": "August, Tom",
+        "affiliation": "UK Centre for Ecology & Hydrology"
+      },
+      {
+        "name": "Bjerge, Kim",
+        "affiliation": "Aarhus University"
+      },
+      {
+        "name": "Segura, Alba Gomez",
+        "affiliation": "UK Centre for Ecology & Hydrology"
+      },
+      {
+        "name": "Bélisle, Marc",
+        "affiliation": "Université de Sherbrooke"
+      },
+      {
+        "name": "Basset, Yves",
+        "affiliation": "Smithsonian Tropical Research Institute"
+      },
+      {
+        "name": "McFarland, Kent P.",
+        "affiliation": "Vermont Center for Ecostudies"
+      },
+      {
+        "name": "Roy, David",
+        "affiliation": "UK Centre for Ecology & Hydrology"
+      },
+      {
+        "name": "Høye, Toke Thomas",
+        "affiliation": "Aarhus University"
+      },
+      {
+        "name": "Larrivée, Maxim",
+        "affiliation": "Montreal Insectarium"
+      },
+      {
+        "name": "Rolnick, David",
+        "affiliation": "Mila - Quebec Artificial Intelligence Institute"
+      }
+    ],
+    "record_snapshot": "sources/zenodo-record.json",
+    "record_snapshot_sha256": "f9d377f1ae3c70d622d589a9b6c51526be095e350ad83648ce88f363affbcc66"
+  },
+  "rights": {
+    "license_id_from_dataset_record": "mit-license",
+    "license_name": "MIT",
+    "basis": "The Zenodo DATASET record itself declares MIT; selected assets are original AMI-Traps camera-trap photographs explicitly described by the in-archive readme. This does not rely only on an unrelated software repository license.",
+    "complete_license_path": "sources/ami-dataset-repository/LICENSE",
+    "complete_license_source_url": "https://raw.githubusercontent.com/RolnickLab/ami-dataset/b75b7f8b1c18c5721e89c4fac0d77e283b866496/LICENSE",
+    "license_sha256": "e70d83b8e58af51c456b810bde4667b37ddf585b679e41b29f4a83f71df365a4",
+    "copyright_notice": "Copyright (c) 2024 RolnickLab",
+    "reuse_condition": "Retain the copyright and permission notice with redistributed copies; attribute the dataset and distinguish any later crops or overlays.",
+    "scope": "Only the three selected AMI-Traps originals and their dataset annotations. No blanket relicense claim for AMI-GBIF third-party photographs or AMI Companion test images.",
+    "recommended_credit": "Jain et al. (2024), Insect Identification in the Wild: The AMI Dataset, v2, doi:10.5281/zenodo.12554005. Copyright (c) 2024 RolnickLab. MIT license."
+  },
+  "download": {
+    "method": "HTTP Range to official archive; ZIP64 central directory plus selected members only",
+    "archive_url": "https://zenodo.org/api/records/12554005/files/Archive.zip/content",
+    "archive_total_bytes": 16009517474,
+    "archive_publisher_md5": "67e3cc783599d9bc65c5606cf988bdc9",
+    "full_archive_md5_verified": false,
+    "reason_full_hash_not_checked": "The 16 GB archive was not downloaded; each selected member passed its published ZIP central-directory CRC32 and uncompressed-size checks.",
+    "central_directory_bytes_read": 14547419,
+    "selected_member_extraction_log": "sources/extraction-log.json",
+    "original_jpeg_bytes_total": 3757263
+  },
+  "sequence": {
+    "same_calendar_night_from_filename_and_exif": true,
+    "inter_frame_seconds": [
+      1200,
+      1200
+    ],
+    "capture_times_agree_between_filename_and_exif": true,
+    "region": "WesternEurope",
+    "precise_site_or_country": null,
+    "same_station_verified": false,
+    "visual_observation": "Similar textured white background and lighting across the three photos; this is not a substitute for a deployment ID.",
+    "safe_use": "Same-night nearby-time image comparison. Do not state these are every successive exposure, verified individual tracks, or exact UKCEH manual demonstration frames.",
+    "ground_truth_tracking_ids_available": false,
+    "scientific_identity_claim": "No individual moth identity is inferred across the three photos."
+  },
+  "frames": [
+    {
+      "original_filename": "20230721230832-00-34.jpg",
+      "local_path": "sources/ami_traps/ami_traps_dataset/images/20230721230832-00-34.jpg",
+      "archive_member": "ami_traps/ami_traps_dataset/images/20230721230832-00-34.jpg",
+      "archive_url": "https://zenodo.org/api/records/12554005/files/Archive.zip/content",
+      "dimensions_px": [
+        4096,
+        2160
+      ],
+      "mode": "RGB",
+      "sha256": "ab02b54cef90e250c57765d3657819e83dd19e4c56ae93b68cfdd21e315fe1ba",
+      "bytes": 1271178,
+      "zip_entry_crc32": 1270784113,
+      "zip_crc32_verified": true,
+      "compressed_payload_http_range": [
+        4289424282,
+        4290660043
+      ],
+      "timestamp_as_stored": "2023:07:21 23:08:32",
+      "timestamp_iso_without_timezone": "2023-07-21T23:08:32",
+      "timezone_offset_raw": "1",
+      "timezone_note": "Original raw tag retained; do not infer an exact recording location or independently validated timezone.",
+      "exif": {
+        "ExifOffset": "50",
+        "DateTime": "2023:07:21 23:08:32",
+        "TimeZoneOffset": "1",
+        "ExifVersion": "b'0220'",
+        "DateTimeOriginal": "2023:07:21 23:08:32",
+        "SubjectLocation": "(3091, 1840, 2110, 224)"
+      },
+      "dataset_metadata": {
+        "region": "WesternEurope",
+        "image_width": 4096,
+        "image_height": 2160
+      },
+      "station_id": null,
+      "individual_identity_ids": null,
+      "metadata_file": "sources/ami_traps/ami_traps_dataset/metadata/20230721230832-00-34.json",
+      "metadata_sha256": "a847d238f251e9075f2072eae332155b13c9b08716049cab874e00d2dee3df27",
+      "annotation_file": "sources/ami_traps/ami_traps_dataset/labels/20230721230832-00-34.txt",
+      "annotation_sha256": "6f74bb34b74483009943851a913e4fea9695be515ff6ec199ff4bc2bb83eb526",
+      "annotation_count": 14,
+      "annotations": [
+        {
+          "original_line": "7976 0.10407 0.28079 0.03904 0.09861",
+          "line_1based": 1,
+          "class_id": 7976,
+          "id": 7976,
+          "name": "Ostrinia nubilalis",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.10407,
+            0.28079,
+            0.03904,
+            0.09861
+          ],
+          "bbox_xyxy_pixels": [
+            346.3168,
+            500.00759999999997,
+            506.22463999999997,
+            713.0052
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "5808 0.64746 0.78583 0.06013 0.08435",
+          "line_1based": 2,
+          "class_id": 5808,
+          "id": 5808,
+          "name": "Hydriomena furcata",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.64746,
+            0.78583,
+            0.06013,
+            0.08435
+          ],
+          "bbox_xyxy_pixels": [
+            2528.84992,
+            1606.2948000000001,
+            2775.1424,
+            1788.4908
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "3852 0.55146 0.81839 0.04307 0.09329",
+          "line_1based": 3,
+          "class_id": 3852,
+          "id": 3852,
+          "name": "Eilema lurideola",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.55146,
+            0.81839,
+            0.04307,
+            0.09329
+          ],
+          "bbox_xyxy_pixels": [
+            2170.5728,
+            1666.9691999999998,
+            2346.9875199999997,
+            1868.4756
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "3852 0.86115 0.85834 0.03303 0.12462",
+          "line_1based": 4,
+          "class_id": 3852,
+          "id": 3852,
+          "name": "Eilema lurideola",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.86115,
+            0.85834,
+            0.03303,
+            0.12462
+          ],
+          "bbox_xyxy_pixels": [
+            3459.62496,
+            1719.4248,
+            3594.9158399999997,
+            1988.604
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "10896 0.10152 0.69312 0.01181 0.05178",
+          "line_1based": 5,
+          "class_id": 10896,
+          "id": 10896,
+          "name": "Tortricidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.10152,
+            0.69312,
+            0.01181,
+            0.05178
+          ],
+          "bbox_xyxy_pixels": [
+            391.63904,
+            1441.2168,
+            440.01279999999997,
+            1553.0615999999998
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.96716 0.17788 0.01481 0.07048",
+          "line_1based": 6,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.96716,
+            0.17788,
+            0.01481,
+            0.07048
+          ],
+          "bbox_xyxy_pixels": [
+            3931.15648,
+            308.10240000000005,
+            3991.81824,
+            460.3392
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "10896 0.85878 0.78023 0.00839 0.04757",
+          "line_1based": 7,
+          "class_id": 10896,
+          "id": 10896,
+          "name": "Tortricidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.85878,
+            0.78023,
+            0.00839,
+            0.04757
+          ],
+          "bbox_xyxy_pixels": [
+            3500.38016,
+            1633.9212,
+            3534.7455999999997,
+            1736.6724
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.62536 0.35534 0.01222 0.0535",
+          "line_1based": 8,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.62536,
+            0.35534,
+            0.01222,
+            0.0535
+          ],
+          "bbox_xyxy_pixels": [
+            2536.4480000000003,
+            709.7544,
+            2586.50112,
+            825.3144
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.36835 0.72027 0.00957 0.074",
+          "line_1based": 9,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.36835,
+            0.72027,
+            0.00957,
+            0.074
+          ],
+          "bbox_xyxy_pixels": [
+            1489.16224,
+            1475.8631999999998,
+            1528.36096,
+            1635.7032
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.72031 0.0341 0.00914 0.05432",
+          "line_1based": 10,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.72031,
+            0.0341,
+            0.00914,
+            0.05432
+          ],
+          "bbox_xyxy_pixels": [
+            2931.67104,
+            14.990399999999996,
+            2969.10848,
+            132.3216
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.64502 0.92032 0.0693 0.13971",
+          "line_1based": 11,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.64502,
+            0.92032,
+            0.0693,
+            0.13971
+          ],
+          "bbox_xyxy_pixels": [
+            2500.0755200000003,
+            1837.0044,
+            2783.92832,
+            2138.7780000000002
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.81365 0.3572 0.01391 0.03574",
+          "line_1based": 12,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.81365,
+            0.3572,
+            0.01391,
+            0.03574
+          ],
+          "bbox_xyxy_pixels": [
+            3304.2227199999998,
+            732.9528,
+            3361.19808,
+            810.1512
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.01983 0.06553 0.03463 0.04103",
+          "line_1based": 13,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.01983,
+            0.06553,
+            0.03463,
+            0.04103
+          ],
+          "bbox_xyxy_pixels": [
+            10.30144,
+            97.23240000000001,
+            152.14592,
+            185.85720000000003
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.98847 0.80889 0.01591 0.05228",
+          "line_1based": 14,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.98847,
+            0.80889,
+            0.01591,
+            0.05228
+          ],
+          "bbox_xyxy_pixels": [
+            4016.1894399999996,
+            1690.7399999999998,
+            4081.3568,
+            1803.6648
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        }
+      ],
+      "visually_inspected": true,
+      "caption_zh": "AMI 公開監測照片｜西歐地區｜2023-07-21 23:08:32（原檔時間）"
+    },
+    {
+      "original_filename": "20230721232832-00-35.jpg",
+      "local_path": "sources/ami_traps/ami_traps_dataset/images/20230721232832-00-35.jpg",
+      "archive_member": "ami_traps/ami_traps_dataset/images/20230721232832-00-35.jpg",
+      "archive_url": "https://zenodo.org/api/records/12554005/files/Archive.zip/content",
+      "dimensions_px": [
+        4096,
+        2160
+      ],
+      "mode": "RGB",
+      "sha256": "a07eed063d1b07869df7e0988a24e542fb8024d47b84ceb735af1d8372b7c78c",
+      "bytes": 1314070,
+      "zip_entry_crc32": 2017227677,
+      "zip_crc32_verified": true,
+      "compressed_payload_http_range": [
+        4604007056,
+        4605289954
+      ],
+      "timestamp_as_stored": "2023:07:21 23:28:32",
+      "timestamp_iso_without_timezone": "2023-07-21T23:28:32",
+      "timezone_offset_raw": "1",
+      "timezone_note": "Original raw tag retained; do not infer an exact recording location or independently validated timezone.",
+      "exif": {
+        "ExifOffset": "50",
+        "DateTime": "2023:07:21 23:28:32",
+        "TimeZoneOffset": "1",
+        "ExifVersion": "b'0220'",
+        "DateTimeOriginal": "2023:07:21 23:28:32",
+        "SubjectLocation": "(2457, 1079, 3868, 2158)"
+      },
+      "dataset_metadata": {
+        "region": "WesternEurope",
+        "image_width": 4096,
+        "image_height": 2160
+      },
+      "station_id": null,
+      "individual_identity_ids": null,
+      "metadata_file": "sources/ami_traps/ami_traps_dataset/metadata/20230721232832-00-35.json",
+      "metadata_sha256": "a847d238f251e9075f2072eae332155b13c9b08716049cab874e00d2dee3df27",
+      "annotation_file": "sources/ami_traps/ami_traps_dataset/labels/20230721232832-00-35.txt",
+      "annotation_sha256": "35d360a0064b9f4d8db7d734a7a3ef75528714e30b9fa5b6fa0f8733809ef4f8",
+      "annotation_count": 26,
+      "annotations": [
+        {
+          "original_line": "3852 0.40255 0.76129 0.05039 0.09775",
+          "line_1based": 1,
+          "class_id": 3852,
+          "id": 3852,
+          "name": "Eilema lurideola",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.40255,
+            0.76129,
+            0.05039,
+            0.09775
+          ],
+          "bbox_xyxy_pixels": [
+            1545.64608,
+            1538.8164000000002,
+            1752.0435200000002,
+            1749.9564
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "9409 0.84924 0.03023 0.04865 0.06045",
+          "line_1based": 2,
+          "class_id": 9409,
+          "id": 9409,
+          "name": "Pyralidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.84924,
+            0.03023,
+            0.04865,
+            0.06045
+          ],
+          "bbox_xyxy_pixels": [
+            3378.85184,
+            0.010800000000003307,
+            3578.12224,
+            130.5828
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "3852 0.56377 0.84377 0.03122 0.09698",
+          "line_1based": 3,
+          "class_id": 3852,
+          "id": 3852,
+          "name": "Eilema lurideola",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.56377,
+            0.84377,
+            0.03122,
+            0.09698
+          ],
+          "bbox_xyxy_pixels": [
+            2245.26336,
+            1717.8048,
+            2373.14048,
+            1927.2816
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "6315 0.81153 0.43022 0.0329 0.05287",
+          "line_1based": 4,
+          "class_id": 6315,
+          "id": 6315,
+          "name": "Lepidoptera",
+          "rank": "ORDER",
+          "yolo_cx_cy_w_h": [
+            0.81153,
+            0.43022,
+            0.0329,
+            0.05287
+          ],
+          "bbox_xyxy_pixels": [
+            3256.64768,
+            872.1756,
+            3391.4060799999997,
+            986.3747999999999
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.06925 0.62184 0.02779 0.05399",
+          "line_1based": 5,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.06925,
+            0.62184,
+            0.02779,
+            0.05399
+          ],
+          "bbox_xyxy_pixels": [
+            226.73408000000003,
+            1284.8652,
+            340.56192000000004,
+            1401.4835999999998
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.35396 0.56912 0.02356 0.06281",
+          "line_1based": 6,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.35396,
+            0.56912,
+            0.02356,
+            0.06281
+          ],
+          "bbox_xyxy_pixels": [
+            1401.56928,
+            1161.4643999999998,
+            1498.07104,
+            1297.134
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.09897 0.19007 0.03058 0.06975",
+          "line_1based": 7,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.09897,
+            0.19007,
+            0.03058,
+            0.06975
+          ],
+          "bbox_xyxy_pixels": [
+            342.75328,
+            335.22119999999995,
+            468.00896,
+            485.88120000000004
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.42869 0.92625 0.01246 0.07831",
+          "line_1based": 8,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.42869,
+            0.92625,
+            0.01246,
+            0.07831
+          ],
+          "bbox_xyxy_pixels": [
+            1730.39616,
+            1916.1252,
+            1781.4323200000001,
+            2085.2748
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.28121 0.08654 0.02839 0.08051",
+          "line_1based": 9,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.28121,
+            0.08654,
+            0.02839,
+            0.08051
+          ],
+          "bbox_xyxy_pixels": [
+            1093.69344,
+            99.97560000000001,
+            1209.9788800000001,
+            273.87719999999996
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "4781 0.30928 0.25829 0.04794 0.04209",
+          "line_1based": 10,
+          "class_id": 4781,
+          "id": 4781,
+          "name": "Eupithecia tenuiata",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.30928,
+            0.25829,
+            0.04794,
+            0.04209
+          ],
+          "bbox_xyxy_pixels": [
+            1168.62976,
+            512.4492,
+            1364.992,
+            603.3636
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.34282 0.26208 0.01668 0.08336",
+          "line_1based": 11,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.34282,
+            0.26208,
+            0.01668,
+            0.08336
+          ],
+          "bbox_xyxy_pixels": [
+            1370.03008,
+            476.06399999999996,
+            1438.35136,
+            656.1216
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.59996 0.74189 0.01538 0.07401",
+          "line_1based": 12,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.59996,
+            0.74189,
+            0.01538,
+            0.07401
+          ],
+          "bbox_xyxy_pixels": [
+            2425.9379200000003,
+            1522.5516000000002,
+            2488.9344,
+            1682.4132
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "6315 0.87259 0.98249 0.01688 0.03502",
+          "line_1based": 13,
+          "class_id": 6315,
+          "id": 6315,
+          "name": "Lepidoptera",
+          "rank": "ORDER",
+          "yolo_cx_cy_w_h": [
+            0.87259,
+            0.98249,
+            0.01688,
+            0.03502
+          ],
+          "bbox_xyxy_pixels": [
+            3539.5584,
+            2084.3568,
+            3608.69888,
+            2160.0
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.48045 0.6545 0.02202 0.07529",
+          "line_1based": 14,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.48045,
+            0.6545,
+            0.02202,
+            0.07529
+          ],
+          "bbox_xyxy_pixels": [
+            1922.8262399999999,
+            1332.4067999999997,
+            2013.02016,
+            1495.0332
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.00854 0.50705 0.01679 0.07413",
+          "line_1based": 15,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.00854,
+            0.50705,
+            0.01679,
+            0.07413
+          ],
+          "bbox_xyxy_pixels": [
+            0.5939200000000042,
+            1015.1676,
+            69.36576,
+            1175.2884000000001
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.74575 0.0259 0.02055 0.0518",
+          "line_1based": 16,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.74575,
+            0.0259,
+            0.02055,
+            0.0518
+          ],
+          "bbox_xyxy_pixels": [
+            3012.5056,
+            0.0,
+            3096.6784000000002,
+            111.88799999999999
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.4811 0.72704 0.01991 0.0716",
+          "line_1based": 17,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.4811,
+            0.72704,
+            0.01991,
+            0.0716
+          ],
+          "bbox_xyxy_pixels": [
+            1929.8099200000001,
+            1493.0784,
+            2011.36128,
+            1647.7343999999998
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "9366 0.05564 0.76322 0.07723 0.10133",
+          "line_1based": 18,
+          "class_id": 9366,
+          "id": 9366,
+          "name": "Pterophoridae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.05564,
+            0.76322,
+            0.07723,
+            0.10133
+          ],
+          "bbox_xyxy_pixels": [
+            69.73440000000002,
+            1539.1188000000002,
+            386.06848,
+            1757.9915999999998
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.51725 0.22804 0.02043 0.10455",
+          "line_1based": 19,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.51725,
+            0.22804,
+            0.02043,
+            0.10455
+          ],
+          "bbox_xyxy_pixels": [
+            2076.81536,
+            379.6524,
+            2160.49664,
+            605.4803999999999
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.61129 0.42229 0.03543 0.07848",
+          "line_1based": 20,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.61129,
+            0.42229,
+            0.03543,
+            0.07848
+          ],
+          "bbox_xyxy_pixels": [
+            2431.2832,
+            827.388,
+            2576.40448,
+            996.9048
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.16711 0.07362 0.01634 0.02842",
+          "line_1based": 21,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.16711,
+            0.07362,
+            0.01634,
+            0.02842
+          ],
+          "bbox_xyxy_pixels": [
+            651.01824,
+            128.3256,
+            717.9468800000001,
+            189.71280000000002
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.62764 0.27948 0.0621 0.1011",
+          "line_1based": 22,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.62764,
+            0.27948,
+            0.0621,
+            0.1011
+          ],
+          "bbox_xyxy_pixels": [
+            2443.63264,
+            494.4888,
+            2697.99424,
+            712.8648
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.18172 0.65537 0.06718 0.07585",
+          "line_1based": 23,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.18172,
+            0.65537,
+            0.06718,
+            0.07585
+          ],
+          "bbox_xyxy_pixels": [
+            606.7404799999999,
+            1333.6812,
+            881.90976,
+            1497.5172
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.93011 0.92431 0.02405 0.09993",
+          "line_1based": 24,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.93011,
+            0.92431,
+            0.02405,
+            0.09993
+          ],
+          "bbox_xyxy_pixels": [
+            3760.47616,
+            1888.5851999999998,
+            3858.98496,
+            2104.434
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.59957 0.07432 0.03668 0.14863",
+          "line_1based": 25,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.59957,
+            0.07432,
+            0.03668,
+            0.14863
+          ],
+          "bbox_xyxy_pixels": [
+            2380.71808,
+            0.010799999999980825,
+            2530.9593600000003,
+            321.05160000000006
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.17552 0.78501 0.03497 0.09091",
+          "line_1based": 26,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.17552,
+            0.78501,
+            0.03497,
+            0.09091
+          ],
+          "bbox_xyxy_pixels": [
+            647.31136,
+            1597.4388,
+            790.54848,
+            1793.8044
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        }
+      ],
+      "visually_inspected": true,
+      "caption_zh": "AMI 公開監測照片｜西歐地區｜2023-07-21 23:28:32（原檔時間）"
+    },
+    {
+      "original_filename": "20230721234832-00-35.jpg",
+      "local_path": "sources/ami_traps/ami_traps_dataset/images/20230721234832-00-35.jpg",
+      "archive_member": "ami_traps/ami_traps_dataset/images/20230721234832-00-35.jpg",
+      "archive_url": "https://zenodo.org/api/records/12554005/files/Archive.zip/content",
+      "dimensions_px": [
+        4096,
+        2160
+      ],
+      "mode": "RGB",
+      "sha256": "d9becbc32a8a8b384dbd626bbfdff86fb0e71637dc4ec7dcd6d742b73a4e260d",
+      "bytes": 1172015,
+      "zip_entry_crc32": 3726516682,
+      "zip_crc32_verified": true,
+      "compressed_payload_http_range": [
+        5191700683,
+        5192839568
+      ],
+      "timestamp_as_stored": "2023:07:21 23:48:32",
+      "timestamp_iso_without_timezone": "2023-07-21T23:48:32",
+      "timezone_offset_raw": "1",
+      "timezone_note": "Original raw tag retained; do not infer an exact recording location or independently validated timezone.",
+      "exif": {
+        "ExifOffset": "50",
+        "DateTime": "2023:07:21 23:48:32",
+        "TimeZoneOffset": "1",
+        "ExifVersion": "b'0220'",
+        "DateTimeOriginal": "2023:07:21 23:48:32",
+        "SubjectLocation": "(2748, 1079, 1436, 2158)"
+      },
+      "dataset_metadata": {
+        "region": "WesternEurope",
+        "image_width": 4096,
+        "image_height": 2160
+      },
+      "station_id": null,
+      "individual_identity_ids": null,
+      "metadata_file": "sources/ami_traps/ami_traps_dataset/metadata/20230721234832-00-35.json",
+      "metadata_sha256": "a847d238f251e9075f2072eae332155b13c9b08716049cab874e00d2dee3df27",
+      "annotation_file": "sources/ami_traps/ami_traps_dataset/labels/20230721234832-00-35.txt",
+      "annotation_sha256": "7addf6077f22206692f3406b6eb040a67270ab8135ebd72a822d93790edc1006",
+      "annotation_count": 21,
+      "annotations": [
+        {
+          "original_line": "8647 0.62616 0.8662 0.05969 0.14259",
+          "line_1based": 1,
+          "class_id": 8647,
+          "id": 8647,
+          "name": "Philereme transversata",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.62616,
+            0.8662,
+            0.05969,
+            0.14259
+          ],
+          "bbox_xyxy_pixels": [
+            2442.50624,
+            1716.9948,
+            2686.9964800000002,
+            2024.9892
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.54079 0.20297 0.05473 0.05669",
+          "line_1based": 2,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.54079,
+            0.20297,
+            0.05473,
+            0.05669
+          ],
+          "bbox_xyxy_pixels": [
+            2102.9888,
+            377.19,
+            2327.16288,
+            499.64040000000006
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.91649 0.33042 0.02391 0.07205",
+          "line_1based": 3,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.91649,
+            0.33042,
+            0.02391,
+            0.07205
+          ],
+          "bbox_xyxy_pixels": [
+            3704.97536,
+            635.8931999999999,
+            3802.9107200000003,
+            791.5212
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "414 0.33507 0.76183 0.01603 0.05844",
+          "line_1based": 4,
+          "class_id": 414,
+          "id": 414,
+          "name": "Agapeta hamana",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.33507,
+            0.76183,
+            0.01603,
+            0.05844
+          ],
+          "bbox_xyxy_pixels": [
+            1339.61728,
+            1582.4376,
+            1405.27616,
+            1708.6680000000001
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.68441 0.24434 0.02633 0.07658",
+          "line_1based": 5,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.68441,
+            0.24434,
+            0.02633,
+            0.07658
+          ],
+          "bbox_xyxy_pixels": [
+            2749.41952,
+            445.06800000000004,
+            2857.2672,
+            610.4807999999999
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.1017 0.49475 0.01324 0.07461",
+          "line_1based": 6,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.1017,
+            0.49475,
+            0.01324,
+            0.07461
+          ],
+          "bbox_xyxy_pixels": [
+            389.44768,
+            988.0812000000001,
+            443.67872,
+            1149.2388
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.3768 0.56574 0.01309 0.0681",
+          "line_1based": 7,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.3768,
+            0.56574,
+            0.01309,
+            0.0681
+          ],
+          "bbox_xyxy_pixels": [
+            1516.56448,
+            1148.4504,
+            1570.1811200000002,
+            1295.5464000000002
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "3852 0.81311 0.13652 0.03075 0.08727",
+          "line_1based": 8,
+          "class_id": 3852,
+          "id": 3852,
+          "name": "Eilema lurideola",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.81311,
+            0.13652,
+            0.03075,
+            0.08727
+          ],
+          "bbox_xyxy_pixels": [
+            3267.52256,
+            200.6316,
+            3393.47456,
+            389.13480000000004
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2991 0.2316 0.33362 0.01516 0.06839",
+          "line_1based": 9,
+          "class_id": 2991,
+          "id": 2991,
+          "name": "Crambidae",
+          "rank": "FAMILY",
+          "yolo_cx_cy_w_h": [
+            0.2316,
+            0.33362,
+            0.01516,
+            0.06839
+          ],
+          "bbox_xyxy_pixels": [
+            917.58592,
+            646.7580000000002,
+            979.68128,
+            794.4804
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "2392 0.30563 0.51085 0.0193 0.07527",
+          "line_1based": 10,
+          "class_id": 2392,
+          "id": 2392,
+          "name": "Chrysoteuchia culmella",
+          "rank": "SPECIES",
+          "yolo_cx_cy_w_h": [
+            0.30563,
+            0.51085,
+            0.0193,
+            0.07527
+          ],
+          "bbox_xyxy_pixels": [
+            1212.33408,
+            1022.1444000000001,
+            1291.38688,
+            1184.7276
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11304 0.21617 0.92637 0.0188 0.09026",
+          "line_1based": 11,
+          "class_id": 11304,
+          "id": 11304,
+          "name": "Yponomeuta sp.",
+          "rank": "GENUS",
+          "yolo_cx_cy_w_h": [
+            0.21617,
+            0.92637,
+            0.0188,
+            0.09026
+          ],
+          "bbox_xyxy_pixels": [
+            846.92992,
+            1903.4784,
+            923.93472,
+            2098.44
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11077 0.82166 0.26513 0.04829 0.04974",
+          "line_1based": 12,
+          "class_id": 11077,
+          "id": 11077,
+          "name": "Unidentifiable",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.82166,
+            0.26513,
+            0.04829,
+            0.04974
+          ],
+          "bbox_xyxy_pixels": [
+            3266.62144,
+            518.9616,
+            3464.4172799999997,
+            626.4
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.50747 0.4035 0.01473 0.04855",
+          "line_1based": 13,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.50747,
+            0.4035,
+            0.01473,
+            0.04855
+          ],
+          "bbox_xyxy_pixels": [
+            2048.43008,
+            819.1260000000001,
+            2108.7641599999997,
+            923.994
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.51028 0.97117 0.02662 0.03276",
+          "line_1based": 14,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.51028,
+            0.97117,
+            0.02662,
+            0.03276
+          ],
+          "bbox_xyxy_pixels": [
+            2035.5891199999999,
+            2062.3464,
+            2144.62464,
+            2133.1079999999997
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.79658 0.63588 0.02781 0.05241",
+          "line_1based": 15,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.79658,
+            0.63588,
+            0.02781,
+            0.05241
+          ],
+          "bbox_xyxy_pixels": [
+            3205.8368,
+            1316.898,
+            3319.7465599999996,
+            1430.1036000000001
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.83476 0.15702 0.01581 0.03724",
+          "line_1based": 16,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.83476,
+            0.15702,
+            0.01581,
+            0.03724
+          ],
+          "bbox_xyxy_pixels": [
+            3386.7980799999996,
+            298.944,
+            3451.55584,
+            379.38239999999996
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11077 0.63994 0.0137 0.01238 0.02552",
+          "line_1based": 17,
+          "class_id": 11077,
+          "id": 11077,
+          "name": "Unidentifiable",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.63994,
+            0.0137,
+            0.01238,
+            0.02552
+          ],
+          "bbox_xyxy_pixels": [
+            2595.8399999999997,
+            2.0303999999999998,
+            2646.54848,
+            57.153600000000004
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.01968 0.22052 0.03427 0.12109",
+          "line_1based": 18,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.01968,
+            0.22052,
+            0.03427,
+            0.12109
+          ],
+          "bbox_xyxy_pixels": [
+            10.424319999999994,
+            345.54599999999994,
+            150.79424,
+            607.1004
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.97834 0.38846 0.01329 0.09083",
+          "line_1based": 19,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.97834,
+            0.38846,
+            0.01329,
+            0.09083
+          ],
+          "bbox_xyxy_pixels": [
+            3980.06272,
+            740.9772,
+            4034.49856,
+            937.1700000000001
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "11077 0.10228 0.94051 0.19734 0.09841",
+          "line_1based": 20,
+          "class_id": 11077,
+          "id": 11077,
+          "name": "Unidentifiable",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.10228,
+            0.94051,
+            0.19734,
+            0.09841
+          ],
+          "bbox_xyxy_pixels": [
+            14.786560000000009,
+            1925.2188,
+            823.0912,
+            2137.7844
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        },
+        {
+          "original_line": "7541 0.31442 0.78811 0.02095 0.01815",
+          "line_1based": 21,
+          "class_id": 7541,
+          "id": 7541,
+          "name": "Non-Moth",
+          "rank": "NA",
+          "yolo_cx_cy_w_h": [
+            0.31442,
+            0.78811,
+            0.02095,
+            0.01815
+          ],
+          "bbox_xyxy_pixels": [
+            1244.9587199999999,
+            1682.7155999999998,
+            1330.76992,
+            1721.9196000000002
+          ],
+          "provenance": "author-supplied dataset annotation, not this session model output"
+        }
+      ],
+      "visually_inspected": true,
+      "caption_zh": "AMI 公開監測照片｜西歐地區｜2023-07-21 23:48:32（原檔時間）"
+    }
+  ],
+  "supporting_files": [
+    {
+      "path": "sources/ami_traps/readme.txt",
+      "sha256": "21ca1dfc4392eda8294d71c26a8af0421b428f9639736f633d1a4ba205741d10"
+    },
+    {
+      "path": "sources/ami_traps/ami_traps_dataset/classes.txt",
+      "sha256": "f7e101a765bcad7f7c61341ad84484bd414fb4b024c35d2cd2e41595f99a077f"
+    },
+    {
+      "path": "sources/ami_traps/ami_traps_dataset/notes.json",
+      "sha256": "281df90bb982c2e01c1aa8b60b20c985a060d3b0de6d4a1de076c1d1c7a79c8f"
+    }
+  ],
+  "viewing_notes": [
+    "All three full images were visually inspected; each includes multiple visible moths and non-moth insects.",
+    "First image has a clearly visible patterned moth below and right of center; author annotation Hydriomena furcata.",
+    "Third image has a large blurred shape near the lower-left corner; the dataset labels it Unidentifiable. Do not present it as a confident moth identification.",
+    "Species, genus, family and order annotations coexist. Keep the authors annotation rank; do not promote coarse labels to species."
+  ],
+  "preferred_first_frame_roi": {
+    "frame": "20230721230832-00-34.jpg",
+    "author_label": "Hydriomena furcata",
+    "rank": "SPECIES",
+    "bbox_normalized_cx_cy_w_h": [
+      0.64746,
+      0.78583,
+      0.06013,
+      0.08435
+    ],
+    "note": "Author dataset annotation, not a fresh AI prediction; preserve original image and use a reversible display crop."
+  },
+  "not_performed": [
+    "No generated images",
+    "No image editing or resizing",
+    "No inference or model download",
+    "No website changes",
+    "No full 16GB archive download"
+  ]
+}

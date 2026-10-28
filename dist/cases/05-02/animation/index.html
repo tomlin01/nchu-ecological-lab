@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>走進一座珊瑚礁｜05-02 水下光景版</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><h1>走進一座珊瑚礁</h1><button id="theme" aria-label="切換深色模式">深色模式</button></header>
+    <div class="view-bar" role="group" aria-label="觀看位置">
+      <button data-view="overview" aria-pressed="true">整片礁區</button>
+      <button data-view="detail" aria-pressed="false">靠近海床</button>
+      <button id="labels" aria-pressed="false">顯示標示</button>
+    </div>
+    <section class="viewport" id="viewport" aria-label="三維珊瑚礁概念場景">
+      <canvas id="scene" aria-label="左側礁坡接到中央礁坪，右側為沙地。珊瑚散布在部分海床上。"></canvas>
+      <div id="annotations" aria-hidden="true"></div>
+      <p id="loading" role="status">正在建立海床…</p>
+      <div id="error" role="alert" hidden><p>無法顯示三維場景。請確認瀏覽器已開啟圖形加速，再重新載入。</p><button id="retry">重新載入</button></div>
+      <p class="provenance">概念海床，非 Abaiang 實測地形</p>
+    </section>
+    <div class="caption"><h2 id="shot-title">先看整片礁區</h2><p id="shot-copy">較平坦的礁坪，沿著礁坡向外海下降。</p></div>
+    <div class="transport">
+      <button id="play" class="primary" disabled>播放鏡頭移動</button>
+      <button id="prev" aria-label="上一幀" disabled>上一幀</button><button id="next" aria-label="下一幀" disabled>下一幀</button>
+      <label class="scrubber"><span class="sr-only">鏡頭時間</span><input id="timeline" type="range" min="0" max="20" step="0.0416666667" value="0" disabled></label>
+      <output id="time">00:00 / 00:20</output>
+    </div>
+    <p class="note" id="note">兩個視角使用同一座模型。珊瑚的位置不會因換鏡而改變。</p>
+    <details class="source-note"><summary>圖像與模型來源</summary><p>構圖、色彩與光線參考使用者提供的照片。部分珊瑚外形採用 Smithsonian 的 CC0 標本掃描，包含分枝、腦紋圓丘與層疊葉片，並加上情境配色；這不是活體顏色觀測，也不是照片中同一株珊瑚的三維重建。魚群、其他形態與地形為概念建模；顏色不作為物種鑑定或健康指標。</p><p>掃描來源：<a href="https://3d.si.edu/object/3d/pocillopora-damicornis-caespitosa:14eb9321-2308-4878-8adb-831d078ba0b0" target="_blank" rel="noopener">USNM 81450</a>、<a href="https://3d.si.edu/object/3d/pocillopora-damicornis:5dbbb9af-2a48-4665-839e-e66faf13ff85" target="_blank" rel="noopener">USNM 44359</a>、<a href="https://3d.si.edu/object/3d/diploria-labyrinthiformis:87738412-3acd-45d1-bff4-3ab67093470e" target="_blank" rel="noopener">USNM 74947</a>、<a href="https://3d.si.edu/object/3d/pavona-cactus:1b481481-8f5d-492e-8b52-23a6fe2d9cd9" target="_blank" rel="noopener">USNM 74851</a>。岩面貼圖依照片參考生成，並非現地量測。</p></details>
+    <noscript><style>.viewport,.view-bar,.transport,header button{display:none}</style><p class="no-script">請啟用 JavaScript 觀看三維場景。這個示意要說明：珊瑚礁包含不同地形，海床上也有岩石與沙地，並非全部由珊瑚覆蓋。</p></noscript>
+  </main>
+  <script type="module">
+    import('./app.mjs').catch(error => {
+      document.getElementById('loading').hidden = true;
+      document.getElementById('error').hidden = false;
+      document.querySelector('#error p').textContent = '場景檔案沒有載入完成，請重新載入。';
+      document.getElementById('retry').onclick = () => location.reload();
+      document.querySelectorAll('.view-bar button').forEach(button => button.disabled = true);
+      console.error(error);
+    });
+  </script>
+</body></html>

@@ -1,0 +1,145 @@
+{
+  "case_id": "01-02",
+  "version": "web-hybrid-v01",
+  "status": "static_verified_browser_not_tested",
+  "accepted_user_quote": "沒問題了，換下一案",
+  "active_video": "assets/hybrid-v01/sperm-whale-hybrid-v01.mp4",
+  "active_poster": "assets/hybrid-v01/poster.jpg",
+  "duration_seconds": 65.55,
+  "chapters_seconds": [
+    0,
+    10.0,
+    17.65,
+    21.25,
+    31.15,
+    43.35,
+    48.25,
+    54.55,
+    57.55
+  ],
+  "audio_seconds": [
+    1.5,
+    7.5
+  ],
+  "core_seconds": [
+    10,
+    57.55
+  ],
+  "outro_seconds": [
+    57.55,
+    65.55
+  ],
+  "preserved_core": {
+    "file": "assets/01-02-method-v05.mp4",
+    "sha256": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25",
+    "byte_identical": true
+  },
+  "hybrid_source_files": {
+    "provenance.json": "3bbd10d9297105039f5c4ec1ba08098f6fe068fea1787a843159c8d4f91f7208",
+    "sperm-whale-hybrid-v01.mp4": "ec1afbf46e970e23a89bda9ece74cc5663906b58f1b92d6313052786c7feed05",
+    "SOURCE.md": "56ab7fbfb3d725b5c25d52c571d2fb4bfddacdb2acc029c49ac8714cf7b73ec3",
+    "poster.jpg": "34f1436229f2d3f7d06fb7e7559ee53693d4bd355df1f037a3f3d13d8fde8f36",
+    "scene.py": "7c8c192eb0a9abd9dbcf6b727f7326e35cc75bd7ea06f5ed5212dcdfbe9bc32e",
+    "README.md": "948e782092ffbb119f477bd5e1ffb388a85603cdc8fd69d21b55c8e8c50cb401",
+    "manifest.json": "e9cacc058d9e809dc14350ba36b71be6ed705a6007c752043dcfc646c78ab298"
+  },
+  "base_files": {
+    "01-02.html": "010e64535d633d39b08ad43bc9a7770a823e3f3d99b67477d13f7fe1d6741e6d",
+    "index.html": "38ef6e751e6aefac77e6c2a6aef4b92a228f0e87268f6ba501bf68bd313a47e9",
+    "provenance.json": "9286971bb72ae198d1b43808ae91ad23204ec3226c128ed232e7bbb742857740",
+    "case.css": "91a80d756e36c13e4532e56997943e6d313d0cc93aa15f2933d13c014918f1ca",
+    "README.md": "cdec75faf3debd54e6e8c0f2127cb99215641372ead82147df6daab0e3d5c745",
+    "case.js": "38df083a49871a77d2c615cec269159648d26f7243e91fb590594f2a0347ea55",
+    "fonts/case-sans.woff2": "1a3600b1e4bff9d3bcf3fabc958df0310c273e973a87ffc27f9316ee6185fedb",
+    "fonts/case-serif.woff2": "d114af4ba9b1703484f6f8d287d6a3f3d5543cb09755a01a31bd1796c3dff808",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/01-02-poster.jpg": "a552a4a37ec122373e142139b49b30518bc79295fa179a872e739b534a0f393a",
+    "assets/research-figure-1.png": "8b20e12d8446a24a8dd0961f77348b495427657cd0875d04915f14bf0c503053",
+    "assets/01-02-ocean-whale-main-v02.webp": "efdc003db6b008fa94b69c1022b28c106b75febd74ad8f33cc90a9a3d97020aa",
+    "assets/01-02-method-v05.mp4": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25"
+  },
+  "fonts": [
+    {
+      "family": "Case Sans",
+      "required_characters": 620,
+      "added_characters": 16,
+      "missing_after": []
+    },
+    {
+      "family": "Case Serif",
+      "required_characters": 620,
+      "added_characters": 16,
+      "missing_after": []
+    }
+  ],
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "60/1"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 1,
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "65.550000"
+    }
+  },
+  "original_articles_and_seven_core_transcripts_unchanged": true,
+  "live_site_unchanged_by_build": true,
+  "browser_tested": false,
+  "http_used": false,
+  "native_player_used": false,
+  "published": false,
+  "markup_checks": {
+    "html_structure_and_ids": true,
+    "chapter_times": [
+      0.0,
+      10.0,
+      17.65,
+      21.25,
+      31.15,
+      43.35,
+      48.25,
+      54.55,
+      57.55
+    ],
+    "no_autoplay": true,
+    "initial_unmuted": true,
+    "native_controls_kept": true,
+    "new_video_and_poster": true,
+    "metadata_seek_does_not_pause_play_request": true,
+    "old_duration_fallback_removed": true,
+    "source_links": true,
+    "base_css_preserved": true,
+    "css_parse": true,
+    "browser_tested": false,
+    "http_used": false,
+    "native_media_ui_used": false
+  },
+  "mock_player_checks": {
+    "kind": "node-vm mocked DOM/media events, not browser or audible playback",
+    "no_autoplay": true,
+    "primary_play_initial_unmuted": true,
+    "replay_disabled_before_metadata": true,
+    "pending_outro_seek_after_metadata": 57.55,
+    "pending_play_not_interrupted": true,
+    "all_nine_seeks_exact": true,
+    "fallback_not_truncated_at_47_55": true,
+    "user_mute_preserved_on_resume_and_replay": true,
+    "pagehide_pause": true,
+    "print_restore_pause": true
+  },
+  "checks_are_browser_validation": false
+}

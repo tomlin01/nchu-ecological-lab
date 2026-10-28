@@ -1,0 +1,21 @@
+/* Embed-only layout; the accepted animation and its controls stay unchanged. */
+html, body { margin: 0; height: auto; min-height: 0; overflow: hidden; }
+body { background: transparent; }
+main {
+  display: flow-root;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 10px 12px 12px;
+}
+.page-heading, .reading-notes { display: none !important; }
+.player-grid { grid-template-columns: minmax(0, 620px) minmax(250px, 300px); justify-content: center; gap: 20px; }
+.media-note { margin-top: 14px; }
+.phase-navigation { margin-top: 16px; }
+@media (max-width: 760px) {
+  main { padding: 8px 8px 12px; }
+  .player-grid { grid-template-columns: 1fr; gap: 18px; }
+}
+@media print { main { padding: 0; } }

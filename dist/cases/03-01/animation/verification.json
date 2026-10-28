@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "case_id": "03-01",
+  "version": "prototype-v01",
+  "candidate_only": true,
+  "browser_checks": 71,
+  "targeted_mobile_followup_checks": 2,
+  "full_playback_seconds": 80,
+  "full_playback_after_mobile_geometry_change": false,
+  "mobile_geometry_followup": "PASS; only connector path positions changed; playback logic unchanged",
+  "pixel_equal_seek_times": [
+    0,
+    7,
+    18,
+    30,
+    43,
+    58,
+    74,
+    80
+  ],
+  "source_photos_verified": 3,
+  "protected_existing_files": 1300,
+  "original_site_zip_unchanged": true,
+  "hosted_worktree_clean": true,
+  "model_inference_run": false,
+  "new_human_identity_review": false,
+  "publication": false,
+  "rights_status": "conflicting_source_claims_unresolved",
+  "source_identity_basis": "Original dataset annotation.name; no date or encounter inference",
+  "evidence": {
+    "browser-verification.json": "work/ecology-ai-rollout/cases/03-01/prototype-v01/browser-verification.json",
+    "full-playback.json": "work/ecology-ai-rollout/cases/03-01/prototype-v01/full-playback.json",
+    "pixel-seek-verification.json": "work/ecology-ai-rollout/cases/03-01/prototype-v01/pixel-seek-verification.json",
+    "font-verification.json": "work/ecology-ai-rollout/cases/03-01/prototype-v01/font-verification.json"
+  },
+  "runtime_hashes": {
+    "index.html": "a922cca515534652657cf109d4b1c2bc4f517dbf943b72c106cb2d11ed48d00d",
+    "wrapper.js": "6d9289a5c89595330ea0e8bfc294f478aa0486a38e09dac091a34bd830667bb9",
+    "embed.js": "d137b70b625325e8cc8fe7ca0e0f01a37ebd7083480270179b934863a5cfe63d",
+    "player.html": "fccc8dce4914c46a34d7a5e14a7b7b77a0484b8e3e77e781e4d2ac80d34901b5",
+    "style.css": "52018b8599935da7610fc5f502f12f861f267e56f608c41692f7f22af6afc199",
+    "app.mjs": "498c897fba05738cbbfc4599d7e783cea5277b2cec83402467a1384e79e71aa6",
+    "model.mjs": "861c41c116fcf032e21af076eb7bc89c537962a090bcf9eaf429146f025be394",
+    "ui/media-expand.js": "1d51f195b7c770fddf5af0d67697aca59dad66d6393e1bcb122d753dc2f76226",
+    "ui/media-expand.css": "db455e8611f990191b48acfa5ad95c19b7d26d75e62e3b5af2384c1f0d5570cc",
+    "ui/fonts/ui-sans.woff2": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998",
+    "fonts/case-sans.woff2": "8a3a12fcb64e8de6c13245fdcbd96f7ef8f6e10461edb2e8b42df6a4cdfcaa6e",
+    "fonts/case-serif.woff2": "2f016462ed93f700c86ca445b931c7a1b67e60f45ef113743e2a8027938b7b2d",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  }
+}

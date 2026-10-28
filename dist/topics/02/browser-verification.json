@@ -1,0 +1,1583 @@
+{
+  "status": "PASS",
+  "checks": 82,
+  "landing_checked": true,
+  "home_checked": true,
+  "landing_html_sha256": "b7d39e15cfb281d5c47c8262e17f4535fdc34a0988d8789801006648dfe6336a",
+  "checked_cases": [
+    "02-01",
+    "02-02",
+    "02-03",
+    "02-04"
+  ],
+  "case_backlinks": {
+    "02-01": true,
+    "02-02": true,
+    "02-03": true,
+    "02-04": true
+  },
+  "sidebar": {
+    "currentTopic": "topic-02",
+    "currentCase": null,
+    "home": false,
+    "default_collapsed": true,
+    "topicCount": 12,
+    "caseCount": 10
+  },
+  "regression": {
+    "checked_cases": [
+      "01-01"
+    ],
+    "status": "PASS"
+  },
+  "excluded_cases": {
+    "01-02": {
+      "browser_checked": false
+    }
+  },
+  "failed": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "sidebar": {
+        "ready": true,
+        "desktop": true,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 1.9998952346743295,
+          "x": 34.5546875,
+          "y": 140.3671875,
+          "width": 701.3984375,
+          "height": 167.03125,
+          "right": 735.953125,
+          "bottom": 307.3984375
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 1.9996117787066063,
+          "x": 34.5546875,
+          "y": 624.3984375,
+          "width": 365.5,
+          "height": 68.890625,
+          "right": 400.0546875,
+          "bottom": 693.2890625
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 1.9996117787066063,
+          "x": 412.0546875,
+          "y": 624.3984375,
+          "width": 301.9453125,
+          "height": 68.890625,
+          "right": 714,
+          "bottom": 693.2890625
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 1.9996117787066063,
+          "x": 726,
+          "y": 624.3984375,
+          "width": 365.5,
+          "height": 68.890625,
+          "right": 1091.5,
+          "bottom": 693.2890625
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 1.9996117787066063,
+          "x": 1103.5,
+          "y": 624.3984375,
+          "width": 301.9453125,
+          "height": 68.890625,
+          "right": 1405.4453125,
+          "bottom": 693.2890625
+        }
+      ],
+      "images": [
+        {
+          "x": 34.5546875,
+          "y": 332.3984375,
+          "width": 365.5,
+          "height": 279,
+          "right": 400.0546875,
+          "bottom": 611.3984375
+        },
+        {
+          "x": 412.0546875,
+          "y": 332.3984375,
+          "width": 301.9453125,
+          "height": 279,
+          "right": 714,
+          "bottom": 611.3984375
+        },
+        {
+          "x": 726,
+          "y": 332.3984375,
+          "width": 365.5,
+          "height": 279,
+          "right": 1091.5,
+          "bottom": 611.3984375
+        },
+        {
+          "x": 1103.5,
+          "y": 332.3984375,
+          "width": 301.9453125,
+          "height": 279,
+          "right": 1405.4453125,
+          "bottom": 611.3984375
+        }
+      ],
+      "footer": {
+        "x": 34.5546875,
+        "y": 758.25,
+        "width": 1370.890625,
+        "height": 121.75,
+        "right": 1405.4453125,
+        "bottom": 880
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 1440,
+        "height": 844,
+        "right": 1440,
+        "bottom": 900
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "scrollWidth": 1280,
+      "sidebar": {
+        "ready": true,
+        "desktop": true,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 1.9996780871561985,
+          "x": 30.71875,
+          "y": 132.5390625,
+          "width": 637.5,
+          "height": 124.703125,
+          "right": 668.21875,
+          "bottom": 257.2421875
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 2,
+          "x": 30.71875,
+          "y": 483.9765625,
+          "width": 323.796875,
+          "height": 58,
+          "right": 354.515625,
+          "bottom": 541.9765625
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 2,
+          "x": 366.515625,
+          "y": 483.9765625,
+          "width": 267.484375,
+          "height": 58,
+          "right": 634,
+          "bottom": 541.9765625
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 2,
+          "x": 646,
+          "y": 483.9765625,
+          "width": 323.796875,
+          "height": 58,
+          "right": 969.796875,
+          "bottom": 541.9765625
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 2,
+          "x": 981.796875,
+          "y": 483.9765625,
+          "width": 267.484375,
+          "height": 58,
+          "right": 1249.28125,
+          "bottom": 541.9765625
+        }
+      ],
+      "images": [
+        {
+          "x": 30.71875,
+          "y": 286.78125,
+          "width": 323.796875,
+          "height": 187.1953125,
+          "right": 354.515625,
+          "bottom": 473.9765625
+        },
+        {
+          "x": 366.515625,
+          "y": 286.78125,
+          "width": 267.484375,
+          "height": 187.1953125,
+          "right": 634,
+          "bottom": 473.9765625
+        },
+        {
+          "x": 646,
+          "y": 286.78125,
+          "width": 323.796875,
+          "height": 187.1953125,
+          "right": 969.796875,
+          "bottom": 473.9765625
+        },
+        {
+          "x": 981.796875,
+          "y": 286.78125,
+          "width": 267.484375,
+          "height": 187.1953125,
+          "right": 1249.28125,
+          "bottom": 473.9765625
+        }
+      ],
+      "footer": {
+        "x": 30.71875,
+        "y": 597,
+        "width": 1218.5625,
+        "height": 107,
+        "right": 1249.28125,
+        "bottom": 704
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 1280,
+        "height": 664,
+        "right": 1280,
+        "bottom": 720
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "scrollWidth": 1009,
+      "sidebar": {
+        "ready": true,
+        "desktop": false,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 1.9997066910269845,
+          "x": 24.5703125,
+          "y": 214.453125,
+          "width": 503.203125,
+          "height": 111.640625,
+          "right": 527.7734375,
+          "bottom": 326.09375
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 1.999427532327586,
+          "x": 24.5703125,
+          "y": 594.09375,
+          "width": 254.6015625,
+          "height": 56.40625,
+          "right": 279.171875,
+          "bottom": 650.5
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 1.999427532327586,
+          "x": 289.171875,
+          "y": 594.09375,
+          "width": 210.328125,
+          "height": 56.40625,
+          "right": 499.5,
+          "bottom": 650.5
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 1.999427532327586,
+          "x": 509.5,
+          "y": 594.09375,
+          "width": 254.6015625,
+          "height": 56.40625,
+          "right": 764.1015625,
+          "bottom": 650.5
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 1.999427532327586,
+          "x": 774.1015625,
+          "y": 594.09375,
+          "width": 210.328125,
+          "height": 56.40625,
+          "right": 984.4296875,
+          "bottom": 650.5
+        }
+      ],
+      "images": [
+        {
+          "x": 24.5703125,
+          "y": 351.09375,
+          "width": 254.6015625,
+          "height": 230,
+          "right": 279.171875,
+          "bottom": 581.09375
+        },
+        {
+          "x": 289.171875,
+          "y": 351.09375,
+          "width": 210.328125,
+          "height": 230,
+          "right": 499.5,
+          "bottom": 581.09375
+        },
+        {
+          "x": 509.5,
+          "y": 351.09375,
+          "width": 254.6015625,
+          "height": 230,
+          "right": 764.1015625,
+          "bottom": 581.09375
+        },
+        {
+          "x": 774.1015625,
+          "y": 351.09375,
+          "width": 210.328125,
+          "height": 230,
+          "right": 984.4296875,
+          "bottom": 581.09375
+        }
+      ],
+      "footer": {
+        "x": 24.5703125,
+        "y": 679,
+        "width": 959.859375,
+        "height": 121.75,
+        "right": 984.4296875,
+        "bottom": 800.75
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 1009,
+        "height": 764.75,
+        "right": 1009,
+        "bottom": 820.75
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "sidebar": {
+        "ready": true,
+        "desktop": false,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 1.9999149274047188,
+          "x": 20,
+          "y": 265.984375,
+          "width": 378,
+          "height": 88.15625,
+          "right": 398,
+          "bottom": 354.140625
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 1.999595905172414,
+          "x": 20,
+          "y": 622.140625,
+          "width": 191.1171875,
+          "height": 46.390625,
+          "right": 211.1171875,
+          "bottom": 668.53125
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 1.999595905172414,
+          "x": 221.1171875,
+          "y": 622.140625,
+          "width": 157.8828125,
+          "height": 46.390625,
+          "right": 379,
+          "bottom": 668.53125
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 1.999595905172414,
+          "x": 389,
+          "y": 622.140625,
+          "width": 191.1171875,
+          "height": 46.390625,
+          "right": 580.1171875,
+          "bottom": 668.53125
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 1.999595905172414,
+          "x": 590.1171875,
+          "y": 622.140625,
+          "width": 157.8828125,
+          "height": 46.390625,
+          "right": 748,
+          "bottom": 668.53125
+        }
+      ],
+      "images": [
+        {
+          "x": 20,
+          "y": 379.140625,
+          "width": 191.1171875,
+          "height": 230,
+          "right": 211.1171875,
+          "bottom": 609.140625
+        },
+        {
+          "x": 221.1171875,
+          "y": 379.140625,
+          "width": 157.8828125,
+          "height": 230,
+          "right": 379,
+          "bottom": 609.140625
+        },
+        {
+          "x": 389,
+          "y": 379.140625,
+          "width": 191.1171875,
+          "height": 230,
+          "right": 580.1171875,
+          "bottom": 609.140625
+        },
+        {
+          "x": 590.1171875,
+          "y": 379.140625,
+          "width": 157.8828125,
+          "height": 230,
+          "right": 748,
+          "bottom": 609.140625
+        }
+      ],
+      "footer": {
+        "x": 20,
+        "y": 882.25,
+        "width": 728,
+        "height": 121.75,
+        "right": 748,
+        "bottom": 1004
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 768,
+        "height": 968,
+        "right": 768,
+        "bottom": 1024
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 375,
+      "sidebar": {
+        "ready": true,
+        "desktop": false,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 1.9997086247086246,
+          "x": 20,
+          "y": 168.5,
+          "width": 335,
+          "height": 107.234375,
+          "right": 355,
+          "bottom": 275.734375
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 2.000099383820314,
+          "x": 20,
+          "y": 681.671875,
+          "width": 160.5,
+          "height": 50.3125,
+          "right": 180.5,
+          "bottom": 731.984375
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 2.000099383820314,
+          "x": 194.5,
+          "y": 681.671875,
+          "width": 160.5,
+          "height": 50.3125,
+          "right": 355,
+          "bottom": 731.984375
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 2.000099383820314,
+          "x": 20,
+          "y": 913.859375,
+          "width": 160.5,
+          "height": 50.3125,
+          "right": 180.5,
+          "bottom": 964.171875
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 2.000099383820314,
+          "x": 194.5,
+          "y": 913.859375,
+          "width": 160.5,
+          "height": 50.3125,
+          "right": 355,
+          "bottom": 964.171875
+        }
+      ],
+      "images": [
+        {
+          "x": 20,
+          "y": 551.296875,
+          "width": 160.5,
+          "height": 120.375,
+          "right": 180.5,
+          "bottom": 671.671875
+        },
+        {
+          "x": 194.5,
+          "y": 551.296875,
+          "width": 160.5,
+          "height": 120.375,
+          "right": 355,
+          "bottom": 671.671875
+        },
+        {
+          "x": 20,
+          "y": 783.484375,
+          "width": 160.5,
+          "height": 120.375,
+          "right": 180.5,
+          "bottom": 903.859375
+        },
+        {
+          "x": 194.5,
+          "y": 783.484375,
+          "width": 160.5,
+          "height": 120.375,
+          "right": 355,
+          "bottom": 903.859375
+        }
+      ],
+      "footer": {
+        "x": 20,
+        "y": 991.671875,
+        "width": 335,
+        "height": 207,
+        "right": 355,
+        "bottom": 1198.671875
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 375,
+        "height": 1170.671875,
+        "right": 375,
+        "bottom": 1226.671875
+      }
+    },
+    {
+      "width": 320,
+      "height": 760,
+      "scrollWidth": 305,
+      "sidebar": {
+        "ready": true,
+        "desktop": false,
+        "defaultCollapsed": true,
+        "expanded": false,
+        "drawerExpanded": false,
+        "currentCase": null,
+        "currentTopic": "topic-02",
+        "home": false,
+        "topicPage": "topic-02",
+        "topicCount": 12,
+        "caseCount": 10,
+        "expandedTopics": [
+          "topic-02"
+        ],
+        "topics": [
+          {
+            "id": "topic-01",
+            "title": "自主調查與採樣",
+            "cases": [
+              "01-01",
+              "01-02",
+              "01-03",
+              "01-04"
+            ]
+          },
+          {
+            "id": "topic-02",
+            "title": "物種自動辨識",
+            "cases": [
+              "02-01",
+              "02-02",
+              "02-03",
+              "02-04"
+            ]
+          },
+          {
+            "id": "topic-03",
+            "title": "個體辨識與行為量測",
+            "cases": []
+          },
+          {
+            "id": "topic-04",
+            "title": "生物性狀估測",
+            "cases": [
+              "04-02"
+            ]
+          },
+          {
+            "id": "topic-05",
+            "title": "棲地與生態系結構製圖",
+            "cases": []
+          },
+          {
+            "id": "topic-06",
+            "title": "DNA與群聚辨識",
+            "cases": []
+          },
+          {
+            "id": "topic-07",
+            "title": "物種互動與生態網絡",
+            "cases": [
+              "07-01"
+            ]
+          },
+          {
+            "id": "topic-08",
+            "title": "大尺度分布與族群變化分析",
+            "cases": []
+          },
+          {
+            "id": "topic-09",
+            "title": "統計模型與誤差處理",
+            "cases": []
+          },
+          {
+            "id": "topic-10",
+            "title": "生態預測與預警",
+            "cases": []
+          },
+          {
+            "id": "topic-11",
+            "title": "保育與復育決策",
+            "cases": []
+          },
+          {
+            "id": "topic-12",
+            "title": "文獻資料化與研究流程",
+            "cases": []
+          }
+        ],
+        "siteRoot": "http://127.0.0.1:8863/"
+      },
+      "headings": [
+        {
+          "text": "照片與聲音，怎麼認出物種？",
+          "lines": 2,
+          "x": 16,
+          "y": 167.5,
+          "width": 273,
+          "height": 90,
+          "right": 289,
+          "bottom": 257.5
+        },
+        {
+          "text": "照片裡的動物，電腦怎麼認？",
+          "lines": 2,
+          "x": 16,
+          "y": 640.9375,
+          "width": 130.5,
+          "height": 48,
+          "right": 146.5,
+          "bottom": 688.9375
+        },
+        {
+          "text": "燒過的森林裡，可以聽見哪些鳥？",
+          "lines": 2,
+          "x": 158.5,
+          "y": 640.9375,
+          "width": 130.5,
+          "height": 48,
+          "right": 289,
+          "bottom": 688.9375
+        },
+        {
+          "text": "怎麼知道這一聲來自布氏鯨？",
+          "lines": 2,
+          "x": 16,
+          "y": 848.3125,
+          "width": 130.5,
+          "height": 48,
+          "right": 146.5,
+          "bottom": 896.3125
+        },
+        {
+          "text": "數照片，為什麼可能少算細胞？",
+          "lines": 2,
+          "x": 158.5,
+          "y": 848.3125,
+          "width": 130.5,
+          "height": 48,
+          "right": 289,
+          "bottom": 896.3125
+        }
+      ],
+      "images": [
+        {
+          "x": 16,
+          "y": 533.0625,
+          "width": 130.5,
+          "height": 97.875,
+          "right": 146.5,
+          "bottom": 630.9375
+        },
+        {
+          "x": 158.5,
+          "y": 533.0625,
+          "width": 130.5,
+          "height": 97.875,
+          "right": 289,
+          "bottom": 630.9375
+        },
+        {
+          "x": 16,
+          "y": 740.4375,
+          "width": 130.5,
+          "height": 97.875,
+          "right": 146.5,
+          "bottom": 838.3125
+        },
+        {
+          "x": 158.5,
+          "y": 740.4375,
+          "width": 130.5,
+          "height": 97.875,
+          "right": 289,
+          "bottom": 838.3125
+        }
+      ],
+      "footer": {
+        "x": 16,
+        "y": 923.8125,
+        "width": 273,
+        "height": 262.5,
+        "right": 289,
+        "bottom": 1186.3125
+      },
+      "content": {
+        "x": 0,
+        "y": 56,
+        "width": 305,
+        "height": 1158.3125,
+        "right": 305,
+        "bottom": 1214.3125
+      }
+    }
+  ],
+  "results": [
+    {
+      "name": "title and four native case links",
+      "status": "PASS"
+    },
+    {
+      "name": "four source images loaded",
+      "status": "PASS"
+    },
+    {
+      "name": "page fonts loaded",
+      "status": "PASS"
+    },
+    {
+      "name": "topic page identity",
+      "status": "PASS"
+    },
+    {
+      "name": "site directory counts",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: fullscreen entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "1440: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: fullscreen entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "1280: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "1024: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "768: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "768: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "768: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "768: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "768: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "768: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "390: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "390: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "390: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "390: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "390: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "390: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "320: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "320: headings fit within two lines",
+      "status": "PASS"
+    },
+    {
+      "name": "320: images clear of headings",
+      "status": "PASS"
+    },
+    {
+      "name": "320: sidebar defaults closed",
+      "status": "PASS"
+    },
+    {
+      "name": "320: sidebar opens",
+      "status": "PASS"
+    },
+    {
+      "name": "320: Escape closes and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "02-01: pointer preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-01: keyboard preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-02: pointer preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-02: keyboard preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-03: pointer preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-03: keyboard preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: pointer preview",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: keyboard preview",
+      "status": "PASS"
+    },
+    {
+      "name": "sidebar current overview goes to landing",
+      "status": "PASS"
+    },
+    {
+      "name": "sidebar overview navigates without stale open state",
+      "status": "PASS"
+    },
+    {
+      "name": "provenance details expand",
+      "status": "PASS"
+    },
+    {
+      "name": "visible source attribution",
+      "status": "PASS"
+    },
+    {
+      "name": "reduced-motion disables image transform",
+      "status": "PASS"
+    },
+    {
+      "name": "print has all cases and expanded sources",
+      "status": "PASS"
+    },
+    {
+      "name": "print hides global sidebar",
+      "status": "PASS"
+    },
+    {
+      "name": "after print restores source disclosure",
+      "status": "PASS"
+    },
+    {
+      "name": "directory topic 02 opens landing",
+      "status": "PASS"
+    },
+    {
+      "name": "02-01: case navigation identity",
+      "status": "PASS"
+    },
+    {
+      "name": "02-01: case backlink points to topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-01: return opens topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-02: case navigation identity",
+      "status": "PASS"
+    },
+    {
+      "name": "02-02: case backlink points to topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-02: return opens topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-03: case navigation identity",
+      "status": "PASS"
+    },
+    {
+      "name": "02-03: case backlink points to topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-03: return opens topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: case navigation identity",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: case backlink points to topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: media expands in place",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: media closes without replacing iframe",
+      "status": "PASS"
+    },
+    {
+      "name": "02-04: return opens topic entrance",
+      "status": "PASS"
+    },
+    {
+      "name": "01-01 regression case and closed state",
+      "status": "PASS"
+    },
+    {
+      "name": "01-01 original topic overview fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "01-01 close still works",
+      "status": "PASS"
+    },
+    {
+      "name": "no-JS native case list",
+      "status": "PASS"
+    },
+    {
+      "name": "no-JS native link navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "touch first tap navigates",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "taps": 1,
+        "url": "http://127.0.0.1:8863/cases/02-04/02-04.html",
+        "verification_note": "Retest waits for native navigation to finish before reading URL; one tap only. No site code change."
+      }
+    },
+    {
+      "name": "no runtime errors",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "no failed page requests",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "test_corrections": [
+    "Iframe control is in reader content; entered 完整閱讀 before media regression.",
+    "First-tap navigation assertion now waits for destination URL; targeted retest PASS."
+  ]
+}

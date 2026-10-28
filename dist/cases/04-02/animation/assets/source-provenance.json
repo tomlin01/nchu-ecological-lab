@@ -1,0 +1,213 @@
+{
+  "case_id": "04-02",
+  "checked_date": "2026-10-20",
+  "status": "published_figure_fallback_ready; raw_frame_plus_calibration_not_available",
+  "paper": {
+    "title": "Automated body length and body condition measurements of whales from drone videos for rapid assessment of population health",
+    "authors": [
+      "Kevin Charles Bierlich",
+      "Sagar Karki",
+      "Clara N. Bird",
+      "Alan Fern",
+      "Leigh G. Torres"
+    ],
+    "year": 2024,
+    "doi": "10.1111/mms.13137",
+    "url": "https://doi.org/10.1111/mms.13137",
+    "author_software_page": "https://mmi.oregonstate.edu/centers-excellence/codex/software-hardware/detex-xtrax"
+  },
+  "reuse_basis": {
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "primary_evidence": {
+      "article_doi": "10.1111/mms.13137",
+      "pdf_page_1based": 1,
+      "statement": "Open access under Creative Commons Attribution; use, distribution and reproduction permitted with citation.",
+      "copyright": "© 2024 The Authors. Marine Mammal Science published by Wiley Periodicals LLC on behalf of Society for Marine Mammalogy.",
+      "license_links_in_pdf": [
+        "http://creativecommons.org/licenses/by/4.0/"
+      ],
+      "paper_sha256": "37ae0dd08dfac39365bc935630e94190b563a761fd06a5386eb3a5a53ae56ce5"
+    },
+    "separate_from_software_license": true,
+    "attribution": "Bierlich, Karki, Bird, Fern & Torres (2024), Marine Mammal Science, e13137, doi:10.1111/mms.13137. CC BY 4.0. Figure copy retrieved from Plazi / Zenodo.",
+    "presentation_modifications": "If panels are cropped or rearranged in the animation, state cropped/rearranged from Figure 2 or Figure 3 and retain the complete figure link."
+  },
+  "assets": [
+    {
+      "id": "figure-2",
+      "role": "Primary same-whale workflow panels",
+      "path": "sources/figure-2/figure.png",
+      "original_record_filename": "figure.png",
+      "bytes": 847467,
+      "sha256": "8d64c7e0a3400784e7c1912c6bd04978438ae5adbd086e4f43becd02d126d132",
+      "publisher_checksum": "md5:88e7cca032982a369fad2602ebc95f29",
+      "publisher_checksum_verified": true,
+      "record_url": "https://zenodo.org/records/20401245",
+      "api_url": "https://zenodo.org/api/records/20401245",
+      "download_url": "https://zenodo.org/api/records/20401245/files/figure.png/content",
+      "license_from_record": "cc-by-4.0",
+      "record_snapshot": "sources/figure-2-zenodo-record.json",
+      "record_snapshot_sha256": "9c7ea5036330181bcee0a9511db59b316392af5eb9592f140e8b3fbb7c88fbb5",
+      "figure_status": "Published-article figure extracted by Plazi; not raw camera imagery",
+      "modified": false,
+      "new_inference": false,
+      "dimensions_px": [
+        1421,
+        2140
+      ],
+      "mode": "RGBA",
+      "visually_inspected": true
+    },
+    {
+      "id": "figure-3",
+      "role": "Authors failed-versus-successful quality-control examples",
+      "path": "sources/figure-3/figure.png",
+      "original_record_filename": "figure.png",
+      "bytes": 1055395,
+      "sha256": "f0181ca593d8ebf79049e498fb8de6b84e7acc2593f79c659f65230085e9bdb1",
+      "publisher_checksum": "md5:2356bd323ad297a51700a031116f6204",
+      "publisher_checksum_verified": true,
+      "record_url": "https://zenodo.org/records/20401247",
+      "api_url": "https://zenodo.org/api/records/20401247",
+      "download_url": "https://zenodo.org/api/records/20401247/files/figure.png/content",
+      "license_from_record": "cc-by-4.0",
+      "record_snapshot": "sources/figure-3-zenodo-record.json",
+      "record_snapshot_sha256": "dd981a45ff291cea22eae8e386a748ad18813ac75548fe42bd07578e90a75bdd",
+      "figure_status": "Published-article figure extracted by Plazi; not raw camera imagery",
+      "modified": false,
+      "new_inference": false,
+      "dimensions_px": [
+        1185,
+        1043
+      ],
+      "mode": "RGBA",
+      "visually_inspected": true
+    },
+    {
+      "id": "paper",
+      "role": "Published article and direct license evidence",
+      "path": "sources/paper/source.pdf",
+      "original_record_filename": "source.pdf",
+      "bytes": 1645643,
+      "sha256": "37ae0dd08dfac39365bc935630e94190b563a761fd06a5386eb3a5a53ae56ce5",
+      "publisher_checksum": "md5:43352ed86aa1ad7bf70289a5843ea357",
+      "publisher_checksum_verified": true,
+      "record_url": "https://zenodo.org/records/20401239",
+      "api_url": "https://zenodo.org/api/records/20401239",
+      "download_url": "https://zenodo.org/api/records/20401239/files/source.pdf/content",
+      "license_from_record": "cc-by-4.0",
+      "record_snapshot": "sources/paper-zenodo-record.json",
+      "record_snapshot_sha256": "7d463119cf0c7231cd6c9dd9f80cf9a8eee0c72e1de15802b04a83553988aa54",
+      "figure_status": "Published article PDF",
+      "modified": false,
+      "new_inference": false
+    }
+  ],
+  "figure2": {
+    "paper_page_1based": 5,
+    "dimensions_px": [
+      1421,
+      2140
+    ],
+    "panel_display_rois": [
+      {
+        "id": "output-frame",
+        "bbox_xyxy": [
+          1123,
+          161,
+          1403,
+          324
+        ],
+        "meaning": "Unannotated frame shown in the published diagram; not separately supplied raw camera file"
+      },
+      {
+        "id": "keypoints",
+        "bbox_xyxy": [
+          407,
+          683,
+          1034,
+          950
+        ],
+        "meaning": "Authors red keypoint overlay"
+      },
+      {
+        "id": "body-length",
+        "bbox_xyxy": [
+          29,
+          1169,
+          629,
+          1510
+        ],
+        "meaning": "Authors red body-length centerline"
+      },
+      {
+        "id": "body-mask",
+        "bbox_xyxy": [
+          830,
+          1169,
+          1397,
+          1514
+        ],
+        "meaning": "Authors displayed binary whale mask"
+      },
+      {
+        "id": "bai-region",
+        "bbox_xyxy": [
+          346,
+          1717,
+          1106,
+          2052
+        ],
+        "meaning": "Authors length centerline and green body-area region"
+      }
+    ],
+    "roi_coordinate_units": "pixels of the entire published Figure 2 PNG; not original camera-frame/keypoint coordinates",
+    "same_whale_evidence": "Visual match of body markings, orientation (tail left, head right), flippers and water features across the figure, supported by the authors workflow caption.",
+    "same_original_camera_filename_verified": false,
+    "scene_boundary": "Reveal the authors existing panels as a published same-whale processing example. Do not label them as new local model outputs or unmodified raw input data.",
+    "panel_display_rois_are_approximate": true,
+    "stacked_frame_graphic_is_not_a_verified_time_series": true
+  },
+  "figure3": {
+    "paper_page_1based": 10,
+    "meaning": "Authors examples of failed (left) versus successful (right) outputs; failed cases include wake, defecation and kelp.",
+    "same_whale_or_frame_across_columns_verified": false,
+    "scene_boundary": "Do not animate left into right as a repair of the identical image. These are example images selected by the authors."
+  },
+  "unavailable_for_current_sample": {
+    "standalone_raw_frame": true,
+    "video_clip": true,
+    "original_frame_filename": true,
+    "capture_timestamp": true,
+    "separate_mask_coordinate_file": true,
+    "keypoint_coordinate_file": true,
+    "matching_results_csv": true,
+    "per_frame_barometer_or_lidar_height": true,
+    "per_frame_launch_height": true,
+    "bound_camera_calibration": true
+  },
+  "metric_measurement_status": {
+    "new_metre_measurements_supported": false,
+    "reason": "Published figure panels have no linked per-frame altitude/calibration or original image coordinate file. Do not substitute the application default height of 50 m.",
+    "figure_pixel_measurements_are_not_original_frame_measurements": true,
+    "new_bai_reproduction_supported": false,
+    "bai_note": "BAI is scale-free in pixel units, but exact original mask/centerline data are absent; differently scaled published panels are not a substitute."
+  },
+  "limited_search": {
+    "official_repository": "https://github.com/karkisa/special-train",
+    "commit": "45b9c7989293519e95dc87e54b4ec6566e12cb84",
+    "repository_snapshot": "sources/official-repository/tree.json",
+    "finding": "Pinned tree contains application source and environment files, but no sample JPG/PNG/CSV/video files. README links model weights and a tutorial.",
+    "higher_resolution": "Zenodo Figure 2 is 1421x2140, slightly larger than existing local 1372x2080. The embedded PDF Figure 2 image is 1408x2083. Wiley direct HTML request returned 403; no authentication bypass or repeated attempts.",
+    "tutorial": "Official OSU tutorial link https://media.oregonstate.edu/media/1_01o1wp56 was not readable with the web extraction tool; no tutorial video downloaded or reuse license assumed.",
+    "binary_download_bytes": 3548505
+  },
+  "not_performed": [
+    "No generated or retouched images",
+    "No new inference",
+    "No model download",
+    "No raw-movie or mass dataset download",
+    "No website or old-source edits"
+  ]
+}

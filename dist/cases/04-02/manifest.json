@@ -1,0 +1,230 @@
+{
+  "case_id": "04-02",
+  "entry": "04-02.html",
+  "version": "web-hybrid-v01",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "04-02.html",
+  "files": {
+    "04-02.html": {
+      "bytes": 1756733,
+      "sha256": "15fcc03f52af1a0e5da154d0a6964db90fb8c81e0a36ba90452166319576abff"
+    },
+    "README.md": {
+      "bytes": 1670,
+      "sha256": "1d9bf232766f49e292a0c240c6f68090dcd1e0cce115aa5fbd7f6803b8351056"
+    },
+    "animation/LICENSES.md": {
+      "bytes": 1364,
+      "sha256": "7ba763239f01f6b9c3a09a0a4602242025fedddd5b1b29ddab3e4ec8030e722d"
+    },
+    "animation/README.md": {
+      "bytes": 1297,
+      "sha256": "e1021c23d8da3e88bd33aa4c5c048432926fd026ff719cefde2c22808145fd9d"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 6093,
+      "sha256": "b68d503f61d711a065ac2414378580b4b263be6611b9c677e1b59f629579c2ae"
+    },
+    "animation/app.bundle.js": {
+      "bytes": 16429,
+      "sha256": "bef33906f2b531ce8ebe35a2a884e7d48833f7188394a6b5bb95a8ca78349c8b"
+    },
+    "animation/assets/display-panels.json": {
+      "bytes": 8649,
+      "sha256": "2cd7548c740cdadb612fdc34c68e35a04e9ba3508d8be2f6b16ddacf9f1a1c6a"
+    },
+    "animation/assets/figure-2.png": {
+      "bytes": 847467,
+      "sha256": "8d64c7e0a3400784e7c1912c6bd04978438ae5adbd086e4f43becd02d126d132"
+    },
+    "animation/assets/figure-3.png": {
+      "bytes": 1055395,
+      "sha256": "f0181ca593d8ebf79049e498fb8de6b84e7acc2593f79c659f65230085e9bdb1"
+    },
+    "animation/assets/source-provenance.json": {
+      "bytes": 9088,
+      "sha256": "87379f4d77bfd205886d3a6560d1e919056ef6e5ae6a29a82c18c5609137a30f"
+    },
+    "animation/embed.css": {
+      "bytes": 4652,
+      "sha256": "1b33d154e427c5e4676dac3d1f0c2ce91324e8a9d4a000aa10f7badb7d0e5b67"
+    },
+    "animation/embed.html": {
+      "bytes": 12278,
+      "sha256": "4686d62c59305544d0b5121e83205b6d12fc9e654b2a3a2d9b2b80f176d77d43"
+    },
+    "animation/embed.js": {
+      "bytes": 5129,
+      "sha256": "e9ed2ffa8c90a0661c1b410d8ab77ab9b9689f573b35bce161313158f22a9827"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/case-sans.woff2": {
+      "bytes": 131988,
+      "sha256": "a47ffb42e57d6471db7c1763eee2028688781462e33b9101f1144b80d10fede2"
+    },
+    "animation/fonts/case-serif.woff2": {
+      "bytes": 175004,
+      "sha256": "fd91dbe6779a73049426ab54db265c4a30303323ff6aab41d8215768d85b6afe"
+    },
+    "animation/fonts/embed-controls-supplement.woff2": {
+      "bytes": 1628,
+      "sha256": "f120e5f75dd2ff668d489983fc94ed1f6bd06037fee9c35e5a1141901441481e"
+    },
+    "animation/index.html": {
+      "bytes": 11556,
+      "sha256": "180b6a10a7d6b3c5ff39e9acd9cb4ae1bec00798c1c2a1281127cdec311f8925"
+    },
+    "animation/manifest.json": {
+      "bytes": 4293,
+      "sha256": "06d971faa287a0b0e232f3366492cf96549c97d785c1aefa44b0be62265e9b5a"
+    },
+    "animation/provenance.json": {
+      "bytes": 2010,
+      "sha256": "4d361d000803defb4216d686e0e74d57d061c4ac3117c16c0d692610a5af918a"
+    },
+    "animation/style.css": {
+      "bytes": 10927,
+      "sha256": "9331f16106cbdf550f33f812a938557eb58e394c3156ab6d9b9361e1a556826f"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "font-supplement.css": {
+      "bytes": 23640,
+      "sha256": "f1f8d8873666489b16eb7c7888a2603ebc755d887dcd114e26b8dc694e952b92"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/focus-sans.woff2": {
+      "bytes": 202216,
+      "sha256": "9d5e3c7b316261c03665e4cdfdb19f24f4fdc74cfd02b784cd8bac0c8e8c8b82"
+    },
+    "fonts/focus-serif.woff2": {
+      "bytes": 268112,
+      "sha256": "87d747385547ec4f184b5e5cb89222de98c4989ffc2642055e8f522b096494f5"
+    },
+    "fonts/hybrid-parent-sans.woff2": {
+      "bytes": 152944,
+      "sha256": "4db2637cc6677b2cb6c98a11fa8672689a024a354616c633554a093535328d8d"
+    },
+    "fonts/hybrid-parent-serif.woff2": {
+      "bytes": 202944,
+      "sha256": "0469cf28e77074ff4b0b841a8e0ecce19514c8a2b460f39c2ba2ce865b066013"
+    },
+    "fonts/paged-sans.woff2": {
+      "bytes": 160824,
+      "sha256": "8f2934760a60fb62964c09edf40398c39fc211c3161aa68cea718dff4ef7880d"
+    },
+    "fonts/paged-serif.woff2": {
+      "bytes": 172692,
+      "sha256": "c686b2b6f891f00f59ecf3be176f9ebc83b5744e01781ef55a5da921b2509b0a"
+    },
+    "fonts/story-sans-supplement.woff2": {
+      "bytes": 2844,
+      "sha256": "6ea0916252ed35422b5c089096486f965e1d82dec14075f55f2b06671ce18aa8"
+    },
+    "fonts/webpage-sans.woff2": {
+      "bytes": 239556,
+      "sha256": "1ef7c940ccaa8cb51094cd9c5ea61950752436e4da4f00201b5a210e29cae1c0"
+    },
+    "fonts/webpage-serif.woff2": {
+      "bytes": 323336,
+      "sha256": "9cdc8188c5f7220505ea40f4e6e568311106eb897de49c761718e61cb94b756e"
+    },
+    "hybrid-bridge.js": {
+      "bytes": 5546,
+      "sha256": "9cb900b0082b74beda4560771e60888910bb79037654c30079f0fbde813b7914"
+    },
+    "hybrid.css": {
+      "bytes": 1902,
+      "sha256": "e2271acd08e9977d91666f41a2e1ccc2a959b8614bd1d6f6c455aa6734d80cf8"
+    },
+    "index.html": {
+      "bytes": 531,
+      "sha256": "129653a33b181f6c5d26ba2d09052ecf9744cafd9fff5346477db21e569096e9"
+    },
+    "integration-notes.md": {
+      "bytes": 5726,
+      "sha256": "a9f64fd7bdfb9b80fd2c1ea94898a61fdcd789caa85c3e22d37e6a8d41d3cec1"
+    },
+    "narrative.css": {
+      "bytes": 8559,
+      "sha256": "ae47eda03ce4cdfc9d34bb7453bd11f1d19023798ac4ad3d259e0f4d3243c222"
+    },
+    "narrative.js": {
+      "bytes": 8570,
+      "sha256": "774bec2490cab0892286cfd6f9418b6afd4a62fe02a6cb25bb09a93fb1cc2be6"
+    },
+    "natural-history.css": {
+      "bytes": 3963,
+      "sha256": "80e20c89cb096e03f256c70c246a080672db78bc3e676b1b7f02360287e8c7f4"
+    },
+    "site-navigation.css": {
+      "bytes": 1053,
+      "sha256": "cbf87d51021bee853493001c638305bcd507a3234b02c861df093444e68ce197"
+    },
+    "ui-provenance.json": {
+      "bytes": 3058,
+      "sha256": "508594a479243b95f35d02726445fdcc8b31d43838414c9ae1a70a18214f1350"
+    },
+    "ui-verification.json": {
+      "bytes": 3489,
+      "sha256": "23e073254ff94fd21e2e10f6419b57bbfa313be1d33ff76425e3e07961f42a94"
+    },
+    "whale.webp": {
+      "bytes": 163754,
+      "sha256": "d1126f7b314df47b7a01e9e0db0cc050b1970387b29bc0d74a764c42e1a41e03"
+    }
+  },
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": true,
+    "static_only": false,
+    "content_and_animation_unchanged": true
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-27T13:29:56.525358+00:00",
+  "player_presentation_revision": {
+    "id": "player-theme-v01",
+    "date": "2026-10-27T13:29:56.525358+00:00",
+    "scope": "Embedded player theme,transport and page3 navigation only",
+    "theme_sync": true,
+    "transport_above_scene": true,
+    "same_iframe_expand": true,
+    "frame_inspection_step_seconds": 0.041666666666666664,
+    "source_video_frame_rate_claimed": false,
+    "accepted88second_core_and_source_pngs_unchanged": true,
+    "verification": "work/ecology-ai-rollout/cases/04-02/player-theme-v01/verification.json"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS_STATIC",
+  "case_id": "04-03",
+  "scope": "New local webpage controller and iframe bridge only",
+  "files_created": [
+    "case.js",
+    "index.html",
+    "animation/embed.html",
+    "animation/embed.js",
+    "animation/embed.css"
+  ],
+  "accepted_animation_source": "work/ecology-ai-rollout/cases/04-03/prototype-v02",
+  "accepted_animation_files_checked": 22,
+  "accepted_animation_files_byte_preserved": true,
+  "embed_html_only_adds_bridge_css_and_module": true,
+  "javascript_syntax": "PASS",
+  "parent_navigation_labels": [
+    "看這尾魚",
+    "怎麼量魚長",
+    "看動畫",
+    "量得準嗎"
+  ],
+  "api": "EcologyFishPlayer",
+  "bridge_api": "EcologyFishEmbed",
+  "child_events": [
+    "ecology-fish-state",
+    "ecology-fish-ready"
+  ],
+  "same_origin_and_source_checks_preserved": true,
+  "late_iframe_reading_anchor_correction_preserved": true,
+  "height_reservation": {
+    "method": "Maximum full-player natural height across five inert clone phases, including the narrow-screen result stage and narrative",
+    "measurement_uses_live_clock": false,
+    "remeasure_on": "initial sizing, font readiness, player/narrative width or expanded-mode changes",
+    "diagnostics": "EcologyFishEmbed.getState().reservedHeight and phaseHeights"
+  },
+  "not_performed": [
+    "Browser layout or uninterrupted-playback verification",
+    "Canonical integration",
+    "Rendering",
+    "Deployment"
+  ]
+}

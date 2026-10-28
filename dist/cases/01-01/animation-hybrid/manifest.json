@@ -1,0 +1,231 @@
+{
+  "case_id": "01-01",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "entry": "index.html",
+  "verification": {
+    "case_id": "01-01",
+    "version": "hybrid-v01",
+    "status": "candidate_ready_for_review",
+    "duration_seconds": 64,
+    "browser_checks": 44,
+    "static_checks": 9,
+    "pure_timeline_samples": 6401,
+    "author_JPEGs_byte_identical": 11,
+    "main_sequence_frames": 10,
+    "other_session_limitation_frames": 1,
+    "protected_files": 261,
+    "main_01_01_unchanged": true,
+    "simulated_viewports": [
+      1440,
+      1280,
+      768,
+      390,
+      320
+    ],
+    "physical_phone_tested": false,
+    "full_playback": {
+      "completed": true,
+      "normal_speed": true,
+      "duration_seconds": 64,
+      "ended_paused": true,
+      "record": "full-playback.json"
+    },
+    "fixes": [
+      "Desktop header/stage compacted so image and playback controls fit1440x900 and1280x800.",
+      "Narrative detail and duplicate legend text simplified.",
+      "Printed static fallback now labels its actual author frame1340; animated SVG stays hidden in print."
+    ],
+    "scientific_limits": [
+      "Author-extracted JPEGs, not original video playback.",
+      "No new YOLO inference or reconstruction of actual flight commands.",
+      "Teaching mean and camera-relative shift are computed from independent illustrative boxes."
+    ],
+    "external_publication": false
+  },
+  "files": {
+    "LICENSES.txt": {
+      "bytes": 420,
+      "sha256": "88d116102b3110ef26ead1b48fa4d81120455a7977439ddcb16c0fbc1788a024"
+    },
+    "README.md": {
+      "bytes": 1905,
+      "sha256": "929c6a38923ed3abaddbc42fad272e0098ee38cf22e43ab39e1e90c164e01773"
+    },
+    "SOURCE.md": {
+      "bytes": 4174,
+      "sha256": "46b070d3013c210e399f83ce02a4484f8f9c11c24d7fcfe5e5c9baf5dd0b5ec9"
+    },
+    "app.bundle.js": {
+      "bytes": 19268,
+      "sha256": "69c9819ed9be21401d43793cbd536a2b9ca7c1dc2022852fc8c16c5b328969fc"
+    },
+    "assets/frames/zebra_073124_122452-3220.jpg": {
+      "bytes": 269278,
+      "sha256": "5aaa5067b4e72aa95920239ece3e2abca18880210702ee5d785cae09b7a8f9a3"
+    },
+    "assets/frames/zebra_073124_125119-1340.jpg": {
+      "bytes": 313976,
+      "sha256": "7343c6d5228841bcda1bcf27b4d36ad6c9969f2d12df732c20b7568902a7341d"
+    },
+    "assets/frames/zebra_073124_125119-1360.jpg": {
+      "bytes": 320328,
+      "sha256": "c6cf9deee03a9458140e21a80975609ebe488811877a356eadeb9338efaca771"
+    },
+    "assets/frames/zebra_073124_125119-1380.jpg": {
+      "bytes": 312771,
+      "sha256": "ea5e614f495ddbdc7c910a17779b4f17e4150dc2c2d2724d50cc6f4c6e93ca4c"
+    },
+    "assets/frames/zebra_073124_125119-1400.jpg": {
+      "bytes": 305399,
+      "sha256": "62bf5196375d04f77b98f3a613f24b9f6249a76c0447e98ddc77d4f549f773e2"
+    },
+    "assets/frames/zebra_073124_125119-1420.jpg": {
+      "bytes": 317988,
+      "sha256": "ed900bd992da4d74b4fe5d23f94b047ac6c24f8d2493649d2d3cea4bd1bd96e9"
+    },
+    "assets/frames/zebra_073124_125119-1440.jpg": {
+      "bytes": 319526,
+      "sha256": "9a7725962bbccb916e71088101f6a93f175aa5417aabd542c11246784ceb3d79"
+    },
+    "assets/frames/zebra_073124_125119-1460.jpg": {
+      "bytes": 315282,
+      "sha256": "db20583b832c1af3128043c9f04432d55e71ecad83d058f972b9e8b201c81178"
+    },
+    "assets/frames/zebra_073124_125119-1480.jpg": {
+      "bytes": 313520,
+      "sha256": "30bf750250659e92abf87041de6967da77c545a45d051f42a7a82ee9fff4aa79"
+    },
+    "assets/frames/zebra_073124_125119-1500.jpg": {
+      "bytes": 313525,
+      "sha256": "5a93598e8d52c8594432439dc2284ea6e8858d3894c1b4fe8305e117a7789543"
+    },
+    "assets/frames/zebra_073124_125119-1520.jpg": {
+      "bytes": 312792,
+      "sha256": "8f454abdd18dea280fd982506c5c35e9521c861ef5c98cbc3d1534c8f0ed6b52"
+    },
+    "build-runtime.json": {
+      "bytes": 2881,
+      "sha256": "6dae7e2550482ea1f0658e65bdeb6ede4d82aedb04782d232238e424a618d62a"
+    },
+    "embed.css": {
+      "bytes": 1731,
+      "sha256": "85fc95af279521b252dcfb8efa1be149de12f23151cde215110e3f9a371d8e7b"
+    },
+    "embed.html": {
+      "bytes": 12462,
+      "sha256": "bb3fa002b9753a305ed2491aaccb2e45b97fcf1bc7667b3045db204ad3826ff4"
+    },
+    "embed.js": {
+      "bytes": 3622,
+      "sha256": "81c9623c881e6c7d456afa9186c935d47a85d126b581fa0fe484341cd0c228c1"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 128336,
+      "sha256": "11110986b81be57217c01b2162628e0d40ad7735939db869c2feedd151fb3703"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 170604,
+      "sha256": "b64b207822add19bac058656bdc8801b3fa9af2b266e56711a761a707112c649"
+    },
+    "index.html": {
+      "bytes": 12157,
+      "sha256": "3c31f45ef069d86a37759905d71e934719748303178ea8b31872ddfd399be5e6"
+    },
+    "provenance.json": {
+      "bytes": 12725,
+      "sha256": "95259a024d2ec4c0691ef9ef4713a75385947bb44fac198495b4a1eb6d0ebe84"
+    },
+    "style.css": {
+      "bytes": 12794,
+      "sha256": "3165bf4c90b7211540b7a460208d9978da08ad70e8e1a31782807d64bba1096e"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  },
+  "terminology_amendment": {
+    "date": "2026-10-21",
+    "scope": "Chinese wording and required font glyphs only",
+    "user_clarification": "我指的是文字修改就好，我表達錯誤",
+    "terminology": "影格 → 幀／每一幀, adjusted to sentence context",
+    "media_unchanged": true,
+    "animation_logic_and_timing_unchanged": true,
+    "original_notes_and_embedded_research_data_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/wording-review-v01/verification.json",
+    "historical_verification_note": "Earlier playback/integration checks remain historical; this amendment used focused text/layout checks.",
+    "external_publication": false
+  },
+  "integration": {
+    "status": "integrated_into_local_main_site",
+    "publicly_deployed": false,
+    "accepted_source_manifest_sha256": "9dba06aab8502749b62d129daacfb57025e80e41c16fe25295b37b195f4acd86",
+    "permitted_doc_amendments": [
+      "README.md",
+      "SOURCE.md",
+      "manifest.json"
+    ],
+    "added_wrappers": [
+      "embed.html",
+      "embed.css",
+      "embed.js"
+    ]
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical."
+}

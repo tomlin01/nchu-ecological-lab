@@ -1,0 +1,328 @@
+{
+  "case_id": "01-01",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "duration_seconds": 64,
+  "runtime": "GSAP single clock, SVG source-image viewports and independent 2D teaching geometry",
+  "input": {
+    "dataset": "https://huggingface.co/datasets/imageomics/wildwingdeployment",
+    "datasetCommit": "ff1579182aa3aa19915752190bce20c97735b403",
+    "credit": "Jenna Kline／Imageomics，WildWing Deployment Dataset",
+    "license": "CC0 1.0, per fixed dataset card",
+    "frames": [
+      {
+        "id": "author-1340",
+        "frameId": 1340,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1340.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1340.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "7343c6d5228841bcda1bcf27b4d36ad6c9969f2d12df732c20b7568902a7341d",
+        "timestamp": "2024-07-31 12:52:32",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1360",
+        "frameId": 1360,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1360.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1360.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "c6cf9deee03a9458140e21a80975609ebe488811877a356eadeb9338efaca771",
+        "timestamp": "2024-07-31 12:52:33",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1380",
+        "frameId": 1380,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1380.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1380.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "ea5e614f495ddbdc7c910a17779b4f17e4150dc2c2d2724d50cc6f4c6e93ca4c",
+        "timestamp": "2024-07-31 12:52:34",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1400",
+        "frameId": 1400,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1400.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1400.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "62bf5196375d04f77b98f3a613f24b9f6249a76c0447e98ddc77d4f549f773e2",
+        "timestamp": "2024-07-31 12:52:35",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1420",
+        "frameId": 1420,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1420.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1420.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "ed900bd992da4d74b4fe5d23f94b047ac6c24f8d2493649d2d3cea4bd1bd96e9",
+        "timestamp": "2024-07-31 12:52:36",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1440",
+        "frameId": 1440,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1440.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1440.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "9a7725962bbccb916e71088101f6a93f175aa5417aabd542c11246784ceb3d79",
+        "timestamp": "2024-07-31 12:52:36",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1460",
+        "frameId": 1460,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1460.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1460.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "db20583b832c1af3128043c9f04432d55e71ecad83d058f972b9e8b201c81178",
+        "timestamp": "2024-07-31 12:52:37",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1480",
+        "frameId": 1480,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1480.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1480.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "30bf750250659e92abf87041de6967da77c545a45d051f42a7a82ee9fff4aa79",
+        "timestamp": "2024-07-31 12:52:38",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1500",
+        "frameId": 1500,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1500.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1500.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "5a93598e8d52c8594432439dc2284ea6e8858d3894c1b4fe8305e117a7789543",
+        "timestamp": "2024-07-31 12:52:39",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      },
+      {
+        "id": "author-1520",
+        "frameId": 1520,
+        "session": "zebra_073124_125119",
+        "file": "assets/frames/zebra_073124_125119-1520.jpg",
+        "sourcePath": "sources/wildwing-author-output/zebra_073124_125119/frames/1520.jpg",
+        "width": 1280,
+        "height": 720,
+        "sha256": "8f454abdd18dea280fd982506c5c35e9521c861ef5c98cbc3d1534c8f0ed6b52",
+        "timestamp": "2024-07-31 12:52:40",
+        "csvCommands": {
+          "move_x": 0,
+          "move_y": 0,
+          "move_z": 0
+        },
+        "authorOutput": true
+      }
+    ],
+    "limitation": {
+      "id": "limit-3220",
+      "frameId": 3220,
+      "session": "zebra_073124_122452",
+      "file": "assets/frames/zebra_073124_122452-3220.jpg",
+      "sourcePath": "sources/wildwing-author-output/zebra_073124_122452/frames/3220.jpg",
+      "width": 1280,
+      "height": 720,
+      "sha256": "5aaa5067b4e72aa95920239ece3e2abca18880210702ee5d785cae09b7a8f9a3",
+      "timestamp": "2024-07-31 12:27:23",
+      "authorOutput": true
+    },
+    "displayCrops": {
+      "focus1380": [
+        30,
+        110,
+        850,
+        478
+      ],
+      "limitation": [
+        860,
+        290,
+        405,
+        230
+      ]
+    },
+    "coordinateMeaning": "Display crops are original JPEG pixel viewports, not detected boxes or measured herd centers.",
+    "sequencePlayback": "one saved JPEG per presentation second; not original video fps or inferred source timing",
+    "freshModelRun": false,
+    "realBoundingBoxCenters": null,
+    "flightCorrectionReconstructed": false,
+    "individualIdentityConfirmed": false
+  },
+  "build": {
+    "case": "01-01",
+    "duration": 64,
+    "runtime": "GSAP single clock + source JPEGs + separate 2D SVG teaching geometry",
+    "freshModelRun": false,
+    "realBoundingBoxCenters": null,
+    "flightCorrectionReconstructed": false,
+    "source_sha256": {
+      "author-1340": "7343c6d5228841bcda1bcf27b4d36ad6c9969f2d12df732c20b7568902a7341d",
+      "author-1360": "c6cf9deee03a9458140e21a80975609ebe488811877a356eadeb9338efaca771",
+      "author-1380": "ea5e614f495ddbdc7c910a17779b4f17e4150dc2c2d2724d50cc6f4c6e93ca4c",
+      "author-1400": "62bf5196375d04f77b98f3a613f24b9f6249a76c0447e98ddc77d4f549f773e2",
+      "author-1420": "ed900bd992da4d74b4fe5d23f94b047ac6c24f8d2493649d2d3cea4bd1bd96e9",
+      "author-1440": "9a7725962bbccb916e71088101f6a93f175aa5417aabd542c11246784ceb3d79",
+      "author-1460": "db20583b832c1af3128043c9f04432d55e71ecad83d058f972b9e8b201c81178",
+      "author-1480": "30bf750250659e92abf87041de6967da77c545a45d051f42a7a82ee9fff4aa79",
+      "author-1500": "5a93598e8d52c8594432439dc2284ea6e8858d3894c1b4fe8305e117a7789543",
+      "author-1520": "8f454abdd18dea280fd982506c5c35e9521c861ef5c98cbc3d1534c8f0ed6b52",
+      "limit-3220": "5aaa5067b4e72aa95920239ece3e2abca18880210702ee5d785cae09b7a8f9a3"
+    },
+    "implementation_sha256": {
+      "app.mjs": "37892ca58d19a4fb47103387fcfdbccbe3338eb59c067482e244bb9ec6c6d706",
+      "model.mjs": "a303dd686d292a695ef95231184780f8612c8d5586bccadce35afadd3c58f328",
+      "sample.json": "8773acced0eb33dd8d8fc889430a9652fcc0e802d6089784c86703a043952e63",
+      "template.html": "efd75918bc4270f92d83866b9c93497bdb1a0a2dd64c9efd8dea6f71ac6965a8",
+      "style.css": "3165bf4c90b7211540b7a460208d9978da08ad70e8e1a31782807d64bba1096e",
+      "build.py": "5d38eb102fe3ea4753fcda7cb6d437aacbbc9bfef358fb42fd19df57edbf652f"
+    },
+    "fonts": {
+      "sans": {
+        "characters": 488,
+        "missing": [],
+        "sha256": "11110986b81be57217c01b2162628e0d40ad7735939db869c2feedd151fb3703"
+      },
+      "serif": {
+        "characters": 488,
+        "missing": [],
+        "sha256": "b64b207822add19bac058656bdc8801b3fa9af2b266e56711a761a707112c649"
+      }
+    },
+    "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+    "browser_verified_here": false,
+    "terminology_amendment": {
+      "date": "2026-10-21",
+      "scope": "Chinese wording and required font glyphs only",
+      "user_clarification": "我指的是文字修改就好，我表達錯誤",
+      "terminology": "影格 → 幀／每一幀, adjusted to sentence context",
+      "media_unchanged": true,
+      "animation_logic_and_timing_unchanged": true,
+      "original_notes_and_embedded_research_data_unchanged": true,
+      "verification_record": "work/ecology-ai-rollout/wording-review-v01/verification.json",
+      "historical_verification_note": "Earlier playback/integration checks remain historical; this amendment used focused text/layout checks.",
+      "external_publication": false
+    }
+  },
+  "verification": {
+    "case_id": "01-01",
+    "version": "hybrid-v01",
+    "status": "candidate_ready_for_review",
+    "duration_seconds": 64,
+    "browser_checks": 44,
+    "static_checks": 9,
+    "pure_timeline_samples": 6401,
+    "author_JPEGs_byte_identical": 11,
+    "main_sequence_frames": 10,
+    "other_session_limitation_frames": 1,
+    "protected_files": 261,
+    "main_01_01_unchanged": true,
+    "simulated_viewports": [
+      1440,
+      1280,
+      768,
+      390,
+      320
+    ],
+    "physical_phone_tested": false,
+    "full_playback": {
+      "completed": true,
+      "normal_speed": true,
+      "duration_seconds": 64,
+      "ended_paused": true,
+      "record": "full-playback.json"
+    },
+    "fixes": [
+      "Desktop header/stage compacted so image and playback controls fit1440x900 and1280x800.",
+      "Narrative detail and duplicate legend text simplified.",
+      "Printed static fallback now labels its actual author frame1340; animated SVG stays hidden in print."
+    ],
+    "scientific_limits": [
+      "Author-extracted JPEGs, not original video playback.",
+      "No new YOLO inference or reconstruction of actual flight commands.",
+      "Teaching mean and camera-relative shift are computed from independent illustrative boxes."
+    ],
+    "external_publication": false
+  },
+  "source_document": "SOURCE.md",
+  "source_review": "work/ecology-ai-rollout/cases/01-01/hybrid-v01/source-and-story-review.md",
+  "source_interpretation": "Author frames and printed labels are retained. Teaching overlays never appear on recorded photographs. Main sequence commands were zero, and the film does not claim corrective flight from those frames.",
+  "external_publication": false,
+  "terminology_amendment": {
+    "date": "2026-10-21",
+    "scope": "Chinese wording and required font glyphs only",
+    "user_clarification": "我指的是文字修改就好，我表達錯誤",
+    "terminology": "影格 → 幀／每一幀, adjusted to sentence context",
+    "media_unchanged": true,
+    "animation_logic_and_timing_unchanged": true,
+    "original_notes_and_embedded_research_data_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/wording-review-v01/verification.json",
+    "historical_verification_note": "Earlier playback/integration checks remain historical; this amendment used focused text/layout checks.",
+    "external_publication": false
+  }
+}

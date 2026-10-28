@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8904/index.html?export=1&theme=light",
+  "composition_selector": "#composition",
+  "output": "03-04-lizard-sun-shade-v01.mp4",
+  "started_at": "2026-10-23T06:17:35.864Z",
+  "completed_at": "2026-10-23T06:20:38.767Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 2016,
+  "requested_duration_seconds": 84,
+  "first_seek_seconds": 0,
+  "last_seek_seconds": 83.95833333333333,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 92,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "ffprobe": {
+    "duration_seconds": 84,
+    "decoded_frame_count": 2016,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 3645687
+  },
+  "browser_page_errors": []
+}

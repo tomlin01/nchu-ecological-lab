@@ -1,0 +1,98 @@
+/* Natural-history catalogue preview: the NOAA photograph is an unaltered plate. */
+@media screen {
+  :root {
+    --ground:var(--theme-ground);
+    --surface:var(--theme-surface);
+    --surface-deep:var(--theme-surface-alt);
+    --ink:var(--theme-ink);
+    --muted:var(--theme-muted);
+    --accent:var(--theme-accent);
+    --link:var(--theme-accent);
+    scrollbar-color:var(--theme-scroll) var(--theme-ground);
+  }
+  ::selection { background:var(--theme-accent); color:var(--theme-on-accent); }
+  button:focus-visible, a:focus-visible, summary:focus-visible,
+  iframe:focus-visible, .chapter:focus-visible { outline-color:var(--theme-focus); }
+  html, body { background:var(--ground); color:var(--ink); }
+  .ocean-world { display:none; }
+  .site-header, .section-nav, .reading-controls { background:var(--ground); }
+  .section-nav { border-bottom:0; }
+  .reading-controls { border-top:0; }
+  .reading-controls button { background:var(--theme-button-bg); color:var(--theme-button-ink); }
+  .reading-controls button:not(:disabled):hover { background:var(--theme-surface-hover); color:var(--theme-ink); }
+
+  .opening, .paged .opening[data-active="true"] {
+    display:grid;
+    grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);
+    column-gap:clamp(32px,4vw,64px);
+    row-gap:32px;
+    align-content:start;
+    align-items:center;
+    padding:32px var(--gutter) 48px;
+  }
+  .print-photo { display:block; min-width:0; margin:0; max-width:none; }
+  .print-photo img { width:100%; height:auto; object-fit:contain; }
+  .print-photo figcaption { margin-top:12px; color:var(--muted); font-size:13px; line-height:1.75; }
+  .opening-hero { display:block; min-height:0; padding:0; }
+  .opening-copy { display:block; width:auto; min-width:0; max-width:none; margin:0; padding:0; }
+  .opening-copy h1 { font-size:clamp(34px,3.55vw,57px); line-height:1.3; color:var(--ink); }
+  .opening-lead { font-size:19px; line-height:1.85; margin-top:24px; max-width:28em; }
+  .opening-hero .primary-action { margin-top:28px; margin-bottom:0; }
+  .primary-action { background:var(--theme-accent); color:var(--theme-on-accent); }
+  .primary-action:hover { background:var(--theme-ink); color:var(--theme-ground); }
+  .image-credit { display:none; }
+  .opening-story {
+    grid-column:1/-1;
+    max-width:none;
+    margin:0;
+    padding:24px 0 0;
+    border-top:0;
+    background:none;
+    font-size:18px;
+  }
+  .opening-story p { max-width:65ch; }
+  .reading-surface, .method-surface, .source-reading, .results-reading { background:var(--surface); }
+  .original-notes, .roles-table thead { background:var(--theme-surface-alt); }
+  .roles-table tbody tr:nth-child(even) { background:var(--theme-surface-hover); }
+  #method-frame { background:var(--theme-media); }
+  html:not(.has-js) .chapter:not(.opening) { background:var(--ground); }
+}
+
+@media screen and (max-width:1100px) {
+  .opening, .paged .opening[data-active="true"] { grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:28px; }
+  .opening-copy h1 { font-size:clamp(32px,3.8vw,42px); }
+  .opening-lead { font-size:18px; margin-top:20px; }
+}
+
+@media screen and (max-width:850px) {
+  .opening, .paged .opening[data-active="true"] { grid-template-columns:minmax(0,1fr); padding:24px var(--gutter) 40px; gap:26px; }
+  .print-photo { width:100%; }
+  .print-photo img { max-height:52svh; }
+  .opening-copy { max-width:38em; }
+  .opening-copy h1 { font-size:clamp(32px,6vw,45px); }
+  .opening-lead { max-width:35em; }
+  .opening-story { font-size:17px; }
+}
+
+@media screen and (max-width:740px) {
+  .opening-copy h1 { font-size:clamp(30px,8.8vw,40px); }
+  .print-photo figcaption { font-size:12px; }
+  .opening-lead { margin-top:18px; font-size:18px; }
+  .opening-hero .primary-action { margin-top:22px; }
+  .opening-story { padding-top:24px; }
+}
+
+/* Printing remains an ink-on-white reading copy in either screen theme. */
+@media print {
+  :root[data-theme] {
+    color-scheme:light;
+    --ground:#fff;
+    --surface:#fff;
+    --surface-deep:#fff;
+    --ink:#242829;
+    --muted:#596164;
+    --accent:#465f70;
+    --link:#465f70;
+  }
+  html, body { background:#fff; color:#242829; }
+}

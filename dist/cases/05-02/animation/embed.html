@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+ <title>珊瑚礁裡，都是珊瑚嗎？｜05-02 完整研究動畫</title>
+ <meta name="description" content="以相同位置的地貌與底質分類，認識Allen Coral Atlas如何描繪淺水珊瑚礁環境。118秒無聲動畫。">
+ <link rel="icon" href="data:,"><link rel="stylesheet" href="story.css?v=full-v02">
+ <script src="story-player.mjs?v=full-v02" type="module"></script>
+</head>
+<body>
+ <a class="skip-link" href="#playButton">跳至播放控制</a>
+ <main id="player" class="player" aria-labelledby="pageTitle">
+  <header class="player-heading"><h1 id="pageTitle">珊瑚礁裡，<br>都是珊瑚嗎？</h1><button id="themeButton" type="button" disabled aria-label="切換深色模式" aria-pressed="false">切換深色</button></header>
+  <div id="composition" class="composition">
+   <div id="stage" class="stage" tabindex="0" aria-label="118秒珊瑚礁地圖動畫；空白鍵播放或暫停，方向鍵前後一秒">
+    <div id="reefWorld" aria-label="已接受的v09三維礁區開場"><div id="viewport"><canvas id="scene" aria-label="從整片礁區靠近海床，珊瑚位置不變。"></canvas><div id="annotations" hidden></div><p id="loading">正在建立海床…</p></div></div>
+    <section id="habitatScene" class="visual-scene habitat-scene" aria-label="先看整片礁區，再靠近海床"><p class="intro-note">概念礁區 · 非 Abaiang 實測地形</p></section>
+    <section id="questionsScene" class="visual-scene questions-scene" aria-label="地貌與底質是不同的分類問題" hidden>
+     <p id="questionHeading" class="scene-heading">位於礁體的哪個部位？</p>
+     <svg id="questionsCamera" class="concept-camera" viewBox="0 0 1600 900" role="img" aria-label="在同一概念礁區中，分別指出地形部位與海床材料">
+      <image id="questionOverview" data-asset="overview" href="../assets/05-02-reef-overview-v09.webp" width="1600" height="900"/><image id="questionMaterial" data-asset="concept" href="../assets/05-02-reef-hero-v09.webp" width="1600" height="900" hidden/>
+      <g id="landformMarks" class="concept-marks"><circle cx="522.512" cy="630.377" r="18" class="mark-slope"/><circle cx="896.838" cy="334.561" r="18" class="mark-flat"/></g>
+      <g id="materialMarks" class="concept-marks"><circle cx="799.877" cy="441.114" r="18" class="mark-coral"/><circle cx="1179.075" cy="508.383" r="18" class="mark-rock"/><circle cx="1371.555" cy="619.12" r="18" class="mark-sand"/></g>
+     </svg>
+     <div id="landformKeys" class="concept-keys"><p><i class="dot slope-dot" aria-hidden="true"></i>礁坡<span>向外海下降的區域</span></p><p><i class="dot flat-dot" aria-hidden="true"></i>礁坪<span>比較平坦的一帶</span></p></div>
+     <div id="materialKeys" class="concept-keys material-keys" hidden><p><i class="dot coral-dot" aria-hidden="true"></i>珊瑚</p><p><i class="dot rock-dot" aria-hidden="true"></i>岩石</p><p><i class="dot sand-dot" aria-hidden="true"></i>沙地</p></div>
+     <p class="visual-caption">概念礁區示意 · 顏色標記只用來指引閱讀，沒有量測深度。</p>
+    </section>
+    <section id="mapsScene" class="visual-scene maps-scene" aria-label="Abaiang環礁相同位置的兩種地圖分類" hidden>
+     <p id="mapHeading" class="scene-heading">地貌：位於礁體的哪個部位？</p>
+     <div id="mapSingle" class="map-single">
+      <div class="map-frame"><img id="singleGeomorphic" data-asset="geomorphic" src="../assets/reef-map-geomorphic.png" alt="官方圖資的Abaiang地貌分類圖"><img id="singleBenthic" class="map-overlay" data-asset="benthic" src="../assets/reef-map-benthic.png" alt="相同範圍的Abaiang主要底質分類圖"><span class="map-pin" data-map-pin aria-label="同一個地理位置"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="M14 0v8 M14 20v8 M0 14h8 M20 14h8"/><circle class="pin-center" cx="14" cy="14" r="2"/></svg></span></div>
+      <div id="singleAnswer" class="map-answer"><span id="singleAnswerKind">地貌分類</span><strong id="singleAnswerValue">外礁坪</strong></div>
+     </div>
+     <div id="mapPair" class="map-pair" hidden>
+      <figure><div class="map-frame"><img data-asset="geomorphic" src="../assets/reef-map-geomorphic.png" alt="Abaiang地貌圖，定位點位於外礁坪"><span class="map-pin" data-map-pin><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="M14 0v8 M14 20v8 M0 14h8 M20 14h8"/><circle class="pin-center" cx="14" cy="14" r="2"/></svg></span></div><figcaption><i class="swatch flat-swatch" aria-hidden="true"></i>地貌：外礁坪</figcaption></figure>
+      <figure><div class="map-frame"><img data-asset="benthic" src="../assets/reef-map-benthic.png" alt="相同範圍的底質圖，定位點主要底質為岩石"><span class="map-pin" data-map-pin><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="M14 0v8 M14 20v8 M0 14h8 M20 14h8"/><circle class="pin-center" cx="14" cy="14" r="2"/></svg></span></div><figcaption><i class="swatch rock-swatch" aria-hidden="true"></i>底質：岩石</figcaption></figure>
+     </div>
+     <p id="mapViewNote" class="map-view-note" hidden>畫面為底質分類圖；兩個答案皆對應同一位置。</p>
+     <div id="compactAnswers" class="compact-answers" hidden><p><i class="swatch flat-swatch" aria-hidden="true"></i>地貌：<strong>外礁坪</strong></p><p><i class="swatch rock-swatch" aria-hidden="true"></i>底質：<strong>岩石</strong></p></div>
+     <p class="visual-caption">Abaiang 環礁（吉里巴斯）· Allen Coral Atlas 公開圖資<span>相同範圍與方向；空白為未分類區域，不代表沒有珊瑚。</span></p>
+    </section>
+    <section id="makingScene" class="visual-scene making-scene" aria-label="模型分類、地貌規則與人工判讀的分工" hidden>
+     <div id="inputsView" class="inputs-view">
+      <p class="scene-heading">把影像線索，接上環境與參考資料。</p>
+      <div class="input-rows"><p>衛星影像<span>顏色與紋理</span></p><p>推估水深與波浪<span>環境條件</span></p><p>專家整理的參考類別<span>參照現地資料、影像與既有知識</span></p></div>
+      <svg id="inputLines" class="input-lines" viewBox="0 0 760 65" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M125 0V18H380 M635 0V18H380 M380 0V55 M370 44l10 11 10-11"/></svg>
+      <p class="model-output">隨機森林先做分類</p><p class="model-followup">再依地貌規則與專家判讀，修訂成圖。</p>
+      <p class="visual-caption">分工示意 · 參考標記不等於每個位置都曾現地量測。</p>
+     </div>
+     <div id="ruleView" class="rule-view" hidden>
+      <p id="ruleHeading" class="scene-heading">如果礁脊，被標在礁坪中央……</p>
+      <svg class="rule-diagram" viewBox="0 0 760 420" role="img" aria-label="概念圖：被內礁坪包圍的礁脊分類，依周圍地貌調整為內礁坪">
+       <path class="reef-flat-area" d="M115 85H610L670 150V330L600 370H150L85 310V150Z"/>
+       <text x="140" y="125" class="rule-region-label">內礁坪範圍</text>
+       <rect id="misplacedCell" x="365" y="209" width="62" height="62"/>
+       <g id="neighborLines"><path pathLength="1" d="M210 240H344 M396 135V188 M570 240H448 M396 340V292"/></g>
+       <path class="cell-outline" d="M355 199H437V281H355Z"/>
+      </svg>
+      <p id="ruleAnswer" class="rule-answer">初步分類：礁脊</p>
+      <p class="rule-explanation">周圍都是內礁坪，這一小塊的位置不符合礁脊應在邊緣的關係。</p>
+      <p class="visual-caption">依論文規則設計的概念示意 · 非 Abaiang 的實際修改紀錄。</p>
+     </div>
+    </section>
+    <section id="limitsScene" class="visual-scene limits-scene" aria-label="珊瑚藻類合併與觀察條件限制" hidden>
+     <p id="limitHeading" class="scene-heading">珊瑚與藻類，先合併成一類。</p>
+     <svg class="concept-camera" viewBox="0 0 1600 900" role="img" aria-label="用概念礁體說明觀察限制，沒有模擬真實水質變化"><image data-asset="concept" href="../assets/05-02-reef-hero-v09.webp" width="1600" height="900"/><rect id="visibilityVeil" x="0" y="0" width="1600" height="900"/></svg>
+     <div id="combinedClass" class="combined-class"><p>珊瑚<span>／</span>藻類</p><span class="joining-line" aria-hidden="true"></span><strong><i class="swatch coral-swatch" aria-hidden="true"></i>珊瑚／藻類</strong><p class="combination-note">在這類衛星影像中，兩者的訊號很相近。</p></div>
+     <p id="visibilityMessage" class="visibility-message" hidden>看不清楚，不代表沒有珊瑚。</p>
+     <p class="visual-caption">觀察條件與分類關係的概念示意 · 不是這座環礁的白化或水質變化。</p>
+    </section>
+    <section id="validationScene" class="visual-scene validation-scene" aria-label="最終地圖的地貌與底質驗證結果" hidden>
+     <p class="scene-heading">分類結果，和參考資料一致嗎？</p>
+     <table class="validation-table"><caption>30 個製圖區的平均整體正確率</caption><tbody><tr><th scope="row">地貌分類</th><td>69<span>%</span></td></tr><tr><th scope="row">底質分類</th><td>66<span>%</span></td></tr></tbody></table>
+     <p class="validation-meaning">不同地區的表現仍有差異。</p>
+     <p class="visual-caption">Lyons 等（2024）· 修訂後的最終地圖<span>這兩個比例不是定位點的信心分數，也不是活珊瑚的覆蓋比例。</span></p>
+    </section>
+    <section id="endingScene" class="visual-scene ending-scene" aria-label="回到同一位置，分開地貌、底質與珊瑚健康" hidden>
+     <div class="ending-layout"><div class="map-frame"><img data-asset="benthic" src="../assets/reef-map-benthic.png" alt="Abaiang底質分類圖，再次標出同一個位置"><span class="map-pin" data-map-pin><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="9"/><path d="M14 0v8 M14 20v8 M0 14h8 M20 14h8"/><circle class="pin-center" cx="14" cy="14" r="2"/></svg></span></div><div class="ending-answers"><p>位於哪個部位？<strong><i class="swatch flat-swatch" aria-hidden="true"></i>外礁坪</strong></p><p>主要底質是什麼？<strong><i class="swatch rock-swatch" aria-hidden="true"></i>岩石</strong></p></div></div>
+     <p class="conclusion">分類描述環境，健康仍需另外調查。</p>
+     <p class="visual-caption">畫面為底質分類圖 · Allen Coral Atlas 公開圖資<span>岩石類別不表示完全沒有生物，也不能據此判斷珊瑚死亡。</span></p>
+    </section>
+   </div>
+   <aside class="narrative" aria-labelledby="phaseTitle"><h2 id="phaseTitle">珊瑚礁裡，都是珊瑚嗎？</h2><p id="phaseCopy">同樣是一片珊瑚礁，海床可能有珊瑚，也可能是岩石、沙地或海草。要描述這片環境，光知道礁區的範圍還不夠。</p><p id="phaseNote" class="phase-note">這座概念礁區用來解釋概念，不是 Abaiang 的實測地形。</p><p id="phaseLabel" class="phase-label">1 / 7 · 先看看海床</p></aside>
+  </div>
+  <div class="transport" role="group" aria-label="動畫播放控制"><div class="transport-row"><button id="playButton" class="primary" type="button" disabled aria-label="播放動畫" aria-pressed="false">播放</button><button id="replayButton" type="button" disabled>重播</button><output id="timeReadout" aria-label="目前時間與總長">00:00 / 01:58</output><button id="expandButton" type="button" disabled aria-label="在原頁面放大觀看" aria-pressed="false">放大觀看</button></div><label class="sr-only" for="seekRange">播放進度</label><input id="seekRange" type="range" min="0" max="118" step="0.0416666667" value="0" disabled aria-valuetext="0 秒，共 118 秒"><div class="frame-controls" role="group" aria-label="逐幀檢視"><button type="button" data-frame="-1" disabled>上一幀</button><button type="button" data-frame="1" disabled>下一幀</button><span>逐幀檢視 · 24 fps</span></div></div>
+  <p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入圖片與來源資料。</p>
+  <div id="playerError" class="error-message" hidden><p id="playerErrorCopy"></p><button id="retryButton" type="button">重新載入</button></div>
+  <nav class="phase-navigation" aria-label="選擇動畫段落"><button type="button" data-seek="0" disabled aria-current="step"><span>00:00</span>先看看海床</button><button type="button" data-seek="20" disabled><span>00:20</span>分清兩個問題</button><button type="button" data-seek="36" disabled><span>00:36</span>相同位置的答案</button><button type="button" data-seek="56" disabled><span>00:56</span>分類後還要檢查</button><button type="button" data-seek="82" disabled><span>01:22</span>看不清楚的地方</button><button type="button" data-seek="98" disabled><span>01:38</span>驗證結果</button><button type="button" data-seek="110" disabled><span>01:50</span>地圖能回答什麼</button></nav>
+  <noscript><p class="notice">動畫需要 JavaScript。下方保留完整解說、地圖與來源。</p></noscript>
+  <div class="reading-footer">
+   <details class="static-reading"><summary>不播放，直接閱讀</summary><ol>
+    <li><h2>礁區裡，不只有珊瑚。</h2><p>礁坡、礁坪與潟湖，描述礁體的地形部位；沙地、岩石、海草、珊瑚／藻類等，則描述主要底質。兩張地圖回答不同問題。</p></li>
+    <li><h2>同一個位置，兩種分類。</h2><p>Abaiang 環礁（吉里巴斯）的經度 172.86525、緯度 1.86975，在官方圖資中同時位於 Outer Reef Flat（外礁坪）與 Rock（岩石）多邊形內。這是已公布的分類，不是本次現地驗證點。</p><div class="static-maps"><figure><img data-asset="geomorphic" src="../assets/reef-map-geomorphic.png" alt="Abaiang地貌分類圖"><figcaption>地貌分類</figcaption></figure><figure><img data-asset="benthic" src="../assets/reef-map-benthic.png" alt="同一範圍的主要底質分類圖"><figcaption>主要底質分類</figcaption></figure></div></li>
+    <li><h2>模型先分類，再依環境修訂。</h2><p>研究用衛星影像、推估水深、波浪等資訊，以及專家整理的參考類別，分區訓練隨機森林。之後依地貌規則與人工判讀修訂。被大面積內礁坪包圍的小片礁脊分類，是論文解釋規則修訂的例子；動畫只以概念圖說明，沒有改動 Abaiang 地圖。</p></li>
+    <li><h2>地圖仍有看不清楚的地方。</h2><p>珊瑚和藻類在這類衛星影像中的訊號相近，因此合成一類。深水與混濁也會限制辨識；空白不表示沒有珊瑚。分類顏色不是珊瑚物種、活珊瑚覆蓋或健康程度。</p></li>
+    <li><h2>五公尺網格，不等於每個地方都正確。</h2><p>最終地圖經保留參考資料檢查。30 個製圖區的平均整體正確率為地貌 69%、底質 66%。不同地區的範圍分別為 46–89% 與 49–80%；這些是區域結果範圍，不是信賴區間。地圖提供淺水礁區環境的比較依據，實際狀況仍需其他調查。</p></li>
+   </ol></details>
+   <details class="legend-reading"><summary>兩張地圖的完整圖例</summary><div class="legend-columns"><div><h2>地貌分類</h2><ul id="fullGeomorphicLegend"></ul></div><div><h2>主要底質</h2><ul id="fullBenthicLegend"></ul></div></div><noscript><p>圖例可見<a href="https://developers.google.com/earth-engine/datasets/catalog/ACA_reef_habitat_v2_0#bands">官方 v2.0 分類表</a>。</p></noscript><p class="source-copy">配色沿用官方分類表；空白區域不作生物存在與否的判定。</p></details>
+   <details class="source-copy"><summary>研究與素材來源</summary><p><a href="https://doi.org/10.1016/j.crsus.2024.100015">Lyons 等（2024），New global area estimates for coral reefs from high-resolution mapping</a>，刊於 <i>Cell Reports Sustainability</i>。方法與驗證數字依此研究，原論文圖版未拆改為動畫素材。</p><p>地圖以 <a href="https://www.allencoralatlas.org/resources/">Allen Coral Atlas 公開圖資服務</a>的局部資料製作，類別色碼依<a href="https://developers.google.com/earth-engine/datasets/catalog/ACA_reef_habitat_v2_0">官方 v2.0 資料目錄</a>。服務快照不是2018–2020年的衛星照片，也不宣稱與凍結的GEE光柵逐格完全相同。</p><p>方法與限制另見<a href="https://www.allencoralatlas.org/methods/">官方方法說明</a>。本案的棲地分類與白化監測、後續海草製圖是不同產品。2022年的地圖修訂也不能當成珊瑚在一年內增加或消失。</p><p>開場為已接受的 v09 三維概念礁區，後續說明圖取自同一座模型。動畫沒有執行分類模型、取得現地量測或產生定位點信心值。<a href="../SOURCE.md">素材與處理紀錄</a>。</p></details>
+  </div>
+<div id="legacy-hooks" hidden aria-hidden="true"><button id="theme"></button><button id="labels"></button><button id="play"></button><button id="prev"></button><button id="next"></button><input id="timeline" type="range" min="0" max="20"><output id="time"></output><p id="shot-title"></p><p id="shot-copy"></p><p id="note"></p><div id="error" hidden><p>三維場景未能載入。</p><button id="retry">重新載入</button></div></div>
+ </main>
+</body>
+</html>

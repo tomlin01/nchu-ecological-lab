@@ -1,0 +1,112 @@
+/* Load after each case's embed.css. No player, media, or source state is changed. */
+html.media-expanded-view,
+html.media-expanded-view body {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: auto !important;
+  overscroll-behavior: contain;
+}
+html.media-expanded-view {
+  scroll-padding-block: 12px;
+}
+html.media-expanded-view main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  margin: 0;
+  padding: 12px clamp(8px, 1.5vw, 22px) 24px;
+}
+html.media-expanded-view .stage {
+  max-width: none !important;
+  max-height: none !important;
+}
+html.media-expanded-view :is(.film-column, .narrative, .caption-panel, .caption) {
+  min-width: 0;
+}
+
+/* Large screens retain the explanatory side panel and all transport/source rows. */
+@media (min-width: 901px) {
+  html.media-expanded-view .story {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(290px, 27%, 370px);
+    gap: 22px;
+    align-items: start;
+  }
+  html.media-expanded-view .stage {
+    width: 100% !important;
+    height: var(--media-expanded-stage-height, 560px) !important;
+    min-height: 320px;
+    aspect-ratio: auto !important;
+    margin-inline: 0 !important;
+  }
+  html.media-expanded-view[data-media-case-id="02-02"] .player {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(290px, 28%, 380px);
+  }
+}
+
+/* Compact layouts retain each runtime's existing SVG aspect-ratio rules. */
+@media (max-width: 900px) {
+  html.media-expanded-view .story {
+    display: block;
+  }
+  html.media-expanded-view .stage {
+    width: 100% !important;
+    margin-inline: 0 !important;
+  }
+  html.media-expanded-view:is([data-media-case-id="01-01"], [data-media-case-id="01-04"], [data-media-case-id="04-02"]) .stage {
+    height: auto !important;
+    min-height: 0;
+    aspect-ratio: 1000 / 650 !important;
+  }
+  html.media-expanded-view .story > .narrative {
+    margin-top: 20px;
+  }
+}
+
+/* 01-03: the accepted marker needs at least 460px of scene height.
+   The matching grid row must grow with the scene, or controls would overlap it. */
+html.media-expanded-view[data-media-case-id="01-03"] .stage {
+  width: 100% !important;
+  height: var(--media-expanded-stage-height, 560px) !important;
+  min-height: 460px !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+}
+html.media-expanded-view[data-media-case-id="01-03"] .scene-host {
+  height: 100% !important;
+}
+@media (min-width: 901px) {
+  html.media-expanded-view[data-media-case-id="01-03"] .player {
+    grid-template-columns: minmax(0, 1fr) clamp(300px, 28%, 380px);
+    grid-template-rows: var(--media-expanded-stage-height, 560px) 76px auto auto auto auto auto;
+  }
+}
+@media (max-width: 900px) {
+  html.media-expanded-view[data-media-case-id="01-03"] .player,
+  html.media-expanded-view[data-media-case-id="01-03"] .stage-layout {
+    display: block;
+  }
+  html.media-expanded-view[data-media-case-id="01-03"] .caption-panel {
+    margin-top: 18px;
+    border-left: 0;
+  }
+}
+
+/* BirdNET keeps its existing wide/portrait source choice and native pause rules.
+   Only the old 640px / 58vh presentation caps are removed. */
+html.media-expanded-view[data-media-case-id="02-02"] .video-stage {
+  width: 100% !important;
+  max-width: none !important;
+}
+html.media-expanded-view[data-media-case-id="02-02"] .video-stage video {
+  object-fit: contain;
+}
+
+@media print {
+  html.media-expanded-view,
+  html.media-expanded-view body {
+    overflow: visible !important;
+  }
+}

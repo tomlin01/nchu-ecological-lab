@@ -1,0 +1,162 @@
+{
+  "case_id": "01-03",
+  "version": "web-hybrid-v01",
+  "status": "static_candidate_browser_not_tested",
+  "accepted_user_quote": "沒問題了，換下一案",
+  "duration_seconds": 103,
+  "core_duration_seconds": 82,
+  "master_phase_starts": [
+    0,
+    20,
+    28,
+    35,
+    42,
+    52,
+    57,
+    64,
+    75,
+    81,
+    89,
+    96
+  ],
+  "timeline": [
+    {
+      "master": [
+        0,
+        35
+      ],
+      "core": "t"
+    },
+    {
+      "master": [
+        35,
+        42
+      ],
+      "core": 35,
+      "photo": "auv"
+    },
+    {
+      "master": [
+        42,
+        89
+      ],
+      "core": "t-7"
+    },
+    {
+      "master": [
+        89,
+        96
+      ],
+      "core": 82,
+      "photo": "colony"
+    },
+    {
+      "master": [
+        96,
+        103
+      ],
+      "core": 82,
+      "photo": "community"
+    }
+  ],
+  "accepted_source_files": {
+    "app.bundle.js": "fd60d3d44e3c64928dd4b1292169ddeab0f40b3812fd3fda1b474dec95b547c9",
+    "index.html": "780c3c9436463ba92f2514e4416a98ab826bb454a7509b7dc1f1e3ef0d0ec513",
+    "provenance.json": "330621e53acfd2dedfd60c345191a84e635a1b8df38bb32a35a683897bc710c1",
+    "SOURCE.md": "97c238095d1cdd4996e0ecdc99edf0f56ab385189ac39a1b67db175f2327d9b1",
+    "README.md": "5d9675ab98a3bce370a8ef8b00b1d1eb38c10695378c78438246407ad4725304",
+    "style.css": "87466e4fefd2ca10db0829b7fd855a87fb6f307e9e4cddd5ebf6655c90d46740",
+    "manifest.json": "f558ebca1c47860b95e0a7cccf8096d005de429cd47c23c8a3e49fd33590efeb",
+    "build-runtime.json": "1a03fb81a4e1fd64d30574026a7dc9086561634a990ab1ec284e2b3148486415",
+    "LICENSES.txt": "58960264b6ede0e1134fe89c64dd5cbdb3de7f46f2d8d02440df5851357e0aaa",
+    "fonts/case-sans.woff2": "595377ad8a94a00b81d06296674c1dbcc947c045a04eec05a8afdbd98e2b7042",
+    "fonts/case-serif.woff2": "3335858f47aa2f6aeeebb5e67b17848463aa30e3a6eed7b4f0f89adfc7af8f88",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/sources/figure-7.png": "7f860556abfad474daf112543990c90349935722912e1c2547e7bd77c513dee2",
+    "assets/sources/auv-figure-9.webp": "71dd62525a46014afd5df63cf8c38325ca636f3907ff404f2759faf3c736c294",
+    "assets/sources/display-panels.json": "8910a0b21637357cb3b8bdfa64c6c13338e9a1cf8bb4aed3336e4f67710cfb53",
+    "assets/sources/source-provenance.json": "c557fab7d65c912452ceb3c82f4fa9598d16784c6d4252192bb0819606129883",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "base_files": {
+    "index.html": "ca669338fba5e3e13a3272524ea7a3c986b41c53679a563469d7526955a5e19b",
+    "01-03.html": "55fe71407c7731355c097cbf2860f7d03024b8f4181dd9671bd5fec3fe1a9be5",
+    "provenance.json": "c5bf557c558343120b2607b48cee22b0d8e88c9caa48d73450f493d92bee885f",
+    "case.css": "15c01a6b24989e0763b43fcac0b4f68f9789cd53929149fbeb2378fb25204875",
+    "README.md": "4501ba50df627cdaa0452957459f1b7998d5b19699c3f47e768ef8f017c72096",
+    "case.js": "287ca71af59f39222ad1a326b4781320a503486cca862546ece95e309e5c6d59",
+    "animation/app.bundle.js": "912f4ad9913f314d09fd3b9e791d8ce88a413256fe3cb3647b15d1e03d294575",
+    "animation/index.html": "61b7a4e2bcf2b92855f8f13ba5e7d6c7d3bc3f04b22e24b3b1115dbd79cf8b72",
+    "animation/provenance.json": "a677f89de5481b7fdd34050bfefe4c8f91c90079c54ce61f4b92a5387cf553e3",
+    "animation/embed.js": "25d3af8e74e02a7548399b72155bd9f1aa094c32f6a23890a6ad6c750397c8b7",
+    "animation/README.md": "6cbd91237ac4152e73ef9e1a1a5a357dac951b9533a8505605ed093a6b4525ec",
+    "animation/style.css": "04a173735a341d70ce0505f8e17830faf1c52d6650212ba761eb59bdd8444923",
+    "animation/embed.css": "a9275d5cbb6b098032babbfe480a4b2e965403588baa8a292edfe7d4fa5b6462",
+    "animation/LICENSES.txt": "19bdf7c6b2c2561c735a82ec597560510b4bd005c7a4118e9b9d9fd83dee4255",
+    "animation/embed.html": "009d278cfe25e0e43f3ab824225f0d569299b3a48b3ad843c97304091edc1cd4",
+    "animation/fonts/case-sans.woff2": "45e5f7f6f5567a3f35ce6b44fe4cd9aaae4787c545c3533977a4e0bb0dec574f",
+    "animation/fonts/case-serif.woff2": "3c251b064920ee533451f2ffbc4ab90167ed3a18aa7c58364f7e99d54f3be4d8",
+    "animation/fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "animation/fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "animation/vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+    "fonts/case-sans.woff2": "722cd000f98b4894c78607e5f3fd5953281ea0bc941651357c9cad638959ffcd",
+    "fonts/case-serif.woff2": "988eb9e8f3418bac26a272c66cba817a1d64fa468978599d8480a324379e2034",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/01-03-plankton-main.webp": "193acb47a92b4984ab6c2e326fa8389964241e75592baa0a8d5c08862f0ed3d9",
+    "assets/01-03-plankton-main.svg": "104f328a7fb949d51c7d2c363fdadba0e8b0732459a548857ce259db541ce5b3"
+  },
+  "original_articles_and_seven_summaries_unchanged": true,
+  "iframe_dom_relocated": false,
+  "parent_resize_behavior": "pause then report outer viewport height, without reload or seek",
+  "desktop_stage_height_rule": "max(460, min(540, hostHeight-440)); fixed playback row immediately below stage",
+  "core_seek_mapping": "explicit timeDomain=core: t<35 ? t : t+7; standard seek uses master time0..103",
+  "fonts": [
+    {
+      "family": "Case Sans",
+      "required_characters": 610,
+      "added_characters": 22,
+      "missing_after": []
+    },
+    {
+      "family": "Case Serif",
+      "required_characters": 610,
+      "added_characters": 22,
+      "missing_after": []
+    }
+  ],
+  "browser_tested_by_this_task": false,
+  "main_site_modified_by_this_task": false,
+  "published": false,
+  "unchanged_core_sha256": {
+    "scene.mjs": "2ee67514f3b20b1c82b13087e16eed3d9c159906c2c1e3fdf7fa72016f437c03",
+    "model.mjs": "eaa234f8d0ef98db7a474b2e7bf5e5691c932c14a925160ff32fd7e2b1b01b2d",
+    "micro-scene.mjs": "e945c30aa241c381e08df92bba4e2fadda19dfcce5d60a14784325d4131a6734",
+    "scale.mjs": "afef82a700e58dedad65d565d9be8d54cb4314ea1a8152588f8a912387404ab9"
+  },
+  "markup_checks": {
+    "parent_markup": true,
+    "one_iframe_no_relocation": true,
+    "full_transcript_and_source_details_collapse_with_js": true,
+    "all_source_links_available": true,
+    "child_12_phases_duration_103": true,
+    "host_height_no_child_viewport_feedback": true,
+    "desktop_stage_min_460": true,
+    "playback_fixed_row_below_stage": true,
+    "caption_natural_height_not_clipped": true,
+    "css_parse": true,
+    "browser_tested": false
+  },
+  "bridge_mock_checks": {
+    "kind": "node-vm mock of embed wrapper; no WebGL or browser executed",
+    "master_seeks_0_to_103": true,
+    "all_12_chapter_starts": true,
+    "explicit_core_mapping_35_to_42_82_to_89": true,
+    "viewport_update_does_not_seek_or_play": true,
+    "host_900_stage_460": true,
+    "full_local_source_clicks": true,
+    "message_source_validation": true
+  },
+  "static_checks_completed_at": "2026-10-20T22:56:43+08:00"
+}

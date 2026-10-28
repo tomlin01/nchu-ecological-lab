@@ -1,0 +1,78 @@
+<!doctype html>
+<html data-reading-type="03-04" lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+  <script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <meta name="description" content="從粗尾岩鬣蜥的位置與身旁光線，理解照片中的日照與陰影，再看分類成績及相機漏拍留下的限制。">
+  <title>照片很亮，蜥蜴就在曬太陽嗎？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="case.css?v=web-v01"><link rel="stylesheet" href="../../ui/sidebar.css"><link rel="stylesheet" href="../../ui/media-expand.css"><link rel="stylesheet" href="../../ui/catalog-theme.css"><link rel="stylesheet" href="natural-history.css?v=web-v01"><link rel="stylesheet" href="../../ui/theme-controls.css">
+  <script src="case.js?v=web-v01" defer></script>
+<link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-03">返回主題清單</a><span class="case-name">AI × 生態研究 · 蜥蜴的日照與陰影</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">看牠站哪裡</a><a href="#roles" data-page="roles">電腦怎麼分</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">分得準嗎</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="case-content">
+    <section id="question" class="chapter opening" aria-labelledby="question-title" tabindex="-1">
+      <div class="light-study">
+        <header class="opening-heading"><h1 id="question-title">照片很亮，<br>蜥蜴就在曬太陽嗎？</h1><div><p>同一片岩地上，陽光與陰影並存。要判斷蜥蜴有沒有受日照，先看牠站在哪裡。</p><a class="method-link" href="#method">看電腦怎麼讀照片</a></div></header>
+        <figure class="light-figure"><img src="animation/assets/context.png" width="1672" height="941" fetchpriority="high" alt="AI生成情境：完整粗尾岩鬣蜥停在右側陰影裡，左側地面受日照，陰影邊界和完整尾尖都保留。"><figcaption><div class="light-caption"><strong>左側：受日照的地面</strong><strong>右側：陰影中的蜥蜴</strong></div><p>AI 生成情境圖，用來說明位置與光線，非研究現場。</p></figcaption></figure>
+        <details id="source-reveal" class="source-reveal"><summary><span class="reveal-closed">看相機拍到的照片</span><span class="reveal-open">收起相機照片</span></summary><div class="reference-pair">
+          <figure><a href="animation/assets/shade.jpg" target="_blank" rel="noopener" aria-label="查看陰影範例照片完整原檔"><img src="animation/assets/shade.jpg" width="717" height="324" loading="lazy" alt="背景明亮、蜥蜴身體較暗的原始範例照片，作者分類為陰影。"></a><figcaption><h2>背景很亮，作者仍標為陰影</h2><p>Shade-1 · 原資料標註：陰影</p></figcaption></figure>
+          <figure><a href="animation/assets/sun.jpg" target="_blank" rel="noopener" aria-label="查看日照範例照片完整原檔"><img src="animation/assets/sun.jpg" width="486" height="195" loading="lazy" alt="另一張蜥蜴原始範例照片，作者分類為日照。"></a><figcaption><h2>另一張照片：蜥蜴在日照下</h2><p>Sun-1 · 原資料標註：日照</p></figcaption></figure>
+        </div><p class="source-note">這是兩張不同的照片。資料沒有提供足以核對拍攝先後與個體身分的資訊，因此不能把它們當成同一隻蜥蜴前後的樣子。圖下的日照與陰影標籤沿用作者記錄。</p></details>
+      </div>
+      <div class="question-followup editorial-layout"><h2>牠身邊的光線，<br>才是要觀察的環境</h2><div><p>粗尾岩鬣蜥會利用外界熱源調節身體受熱。大片明亮地面旁，也可能有一小塊陰影；整張照片的亮度，不能代替蜥蜴所在位置的照明條件。</p><p>研究者在五個半自然圍欄觀察十五隻蜥蜴，想知道牠們被拍到時是在日照下，還是在陰影裡。照片多了，就讓模型協助找出蜥蜴、判斷光線，再由研究者檢查。</p></div></div>
+    </section>
+
+    <section id="roles" class="chapter roles-page" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="roles-title">找到蜥蜴後，還要看光線和色標</h2><p>電腦先找出蜥蜴，再分別判斷牠站在日照還是陰影裡，以及牠身上的色標。</p></header>
+      <div class="detection-board">
+        <figure class="full-source"><a href="animation/assets/detection.jpg" target="_blank" rel="noopener" aria-label="查看完整相機來源照片"><svg viewBox="0 0 4000 3000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="full-source-title"><title id="full-source-title">完整原始相機照片，保留兩個來源位置標註；本頁查看左上方框的身體局部。</title><image href="animation/assets/detection.jpg" x="0" y="0" width="4000" height="3000"/><rect class="box-other" x="2861" y="919" width="261" height="96"/><rect class="box-underlay" x="1726" y="503" width="127" height="231"/><rect class="box-selected" x="1726" y="503" width="127" height="231"/></svg></a><figcaption>完整原始照片與作者畫出的框。底部的「022C」是相機加上的文字，不是蜥蜴體溫。</figcaption></figure>
+        <div class="crop-work"><figure class="body-crop"><svg viewBox="1726 503 127 231" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="body-crop-title"><title id="body-crop-title">同一來源照片中框內的身體局部，長尾沒有完整入框。</title><image href="animation/assets/detection.jpg" x="0" y="0" width="4000" height="3000"/></svg><figcaption>同一張照片的框內局部<br>長尾未完整入框</figcaption></figure><div class="parallel-questions" aria-label="日照與色標是兩個並行的分類問題"><div><h3>日照還是陰影？</h3><p>這張沒有附分類答案</p></div><div><h3>色標是什麼？</h3><p>這張沒有附分類答案</p></div></div></div>
+      </div>
+      <div class="reading-rows">
+        <article class="editorial-row"><h3>先框出蜥蜴，再看光線和色標</h3><div><p>模型先找出蜥蜴，再分別判斷日照／陰影和色標。上面的框是作者在原資料中標出的位置，右邊放大的是同一張照片的框內部分。</p><p>這張照片沒有附上日照和色標的分類答案，我們因此只看位置，不替它填答案或信心分數。放大方便觀察，但不會增加原始照片沒有的細節。</p></div></article>
+        <article class="editorial-row"><h3>認出色標後，還要確認是哪個圍欄</h3><div><p>研究在每個圍欄內使用紅、藍、白色標區分個體。不同圍欄會重複用色，知道顏色之後，還得連同圍欄資訊，才能把紀錄歸到相應個體。</p><p>如果模型沒找到動物，或照片看不清色標，研究者還需要檢查，不能直接把每個框都當成已辨認的個體。</p></div></article>
+      </div>
+    </section>
+
+    <section id="method" class="chapter method-page" aria-labelledby="method-title" tabindex="-1">
+      <header class="method-heading"><div><h2 id="method-title">照片能告訴我們蜥蜴在做什麼？</h2><p>從兩張相機照片開始，看看電腦如何找到蜥蜴、判斷光線，以及哪些時段仍無法觀察到。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface">
+        <p class="player-hint">84 秒，沒有聲音。按下播放後，可以暫停、切換段落，或在原頁面放大。</p>
+        <div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="照片很亮，蜥蜴就在曬太陽嗎？方法動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=web-v01" title="84秒粗尾岩鬣蜥動畫：日照與陰影、來源位置標註、分類結果與取樣空白" height="900" scrolling="no" loading="eager"></iframe></div></div>
+        <p id="frame-status" class="frame-status" role="status">動畫會在開啟這一頁後載入，也可以直接讀下方解說。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入動畫</button>
+        <p class="download-note"><a href="animation/film/03-04-lizard-sun-shade-copy-v02.mp4" download>下載 84 秒 MP4</a></p>
+        <noscript><p class="quiet-note">互動動畫需要 JavaScript。以下可閱讀六段解說，原始照片片與研究結果也保留在本頁。</p></noscript>
+        <details id="method-text" class="method-text" open><summary>閱讀各段解說</summary><ol class="transcript">
+          <li><h3>先看牠站哪裡</h3><p>粗尾岩鬣蜥會利用陽光與陰影調節身體受熱。圖中左邊的地面受日照，蜥蜴站在右邊陰影裡，光線要看牠所在的位置。</p></li>
+          <li><h3>照片亮，不代表牠在日照裡</h3><p>Shade-1 的背景很亮，作者仍將蜥蜴所在的位置標為陰影。Sun-1 則是另一張日照照片。判斷時要看蜥蜴與身旁地面，不能只看整張照片有多亮。</p></li>
+          <li><h3>先找蜥蜴，再看光線</h3><p>研究先找到蜥蜴，再分別判斷光線和色標。圖中的框沿用作者標註，放大後只看得到身體局部，長尾沒有完整入框。原資料沒有提供這張照片的分類答案。</p></li>
+          <li><h3>把觀察留下來</h3><p>圖下保留作者記錄的日照與陰影。至於拍攝時間和個體身分，這兩張照片沒有提供足夠資訊。相同色標會出現在不同圍欄，還要知道圍欄才能認出是哪一隻。</p></li>
+          <li><h3>研究有沒有幫助？</h3><p>作者以 95% 信心門檻篩選，約 85% 的日照／陰影預測達到門檻。將通過信心門檻的預測與人工標註比對後，分類準確率為 96.52%。這是論文評估，並非本頁範例照片的分數。</p></li>
+          <li><h3>相機之外，還有空白</h3><p>研究者把符合條件的連拍合併，估算照片記錄到的活動時段。不過，相機靠動作觸發，蜥蜴不動時可能沒有照片。這些空白不能算進全天停留時間，照片也沒有直接量到體溫。</p></li>
+        </ol></details>
+      </div>
+    </section>
+
+    <section id="evidence" class="chapter evidence-page" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="evidence-title">日照和陰影，<br>電腦分得準嗎？</h2><p>作者先篩選模型較有把握的判斷，再和人工標註比對。</p></header>
+      <section class="study-result" aria-labelledby="study-title"><div class="study-explanation"><h3 id="study-title">先篩選，再算分對多少</h3><p>作者先依模型的信心分數篩選預測，再看有多少預測通過門檻。最後才核對這些預測分得對不對，得到 96.52% 的分類準確率。</p><p>這個成績只評估日照／陰影分類，而且只看通過信心門檻的部分。相機沒拍到、模型沒找到的蜥蜴都不在這個數字裡，所以不能用它代表整個流程的正確率。</p><a href="https://doi.org/10.1111/1365-2656.14139" target="_blank" rel="noopener">原論文 §3.2 與 Figure 4c</a></div>
+        <figure class="conditional-result"><figcaption>論文的日照／陰影分類評估</figcaption><div class="confidence-gate"><span>信心門檻</span><strong>95<span>%</span></strong></div><div class="prediction-retention"><p>約 <strong>85%</strong> 的分類預測達到門檻</p><div class="retention-track" role="img" aria-label="作者報告約85%的分類預測達到95%信心門檻"><span></span></div></div><div class="subset-accuracy"><p>通過信心門檻的預測：分類準確率</p><strong>96.52<span>%</span></strong><p>與人工標註比對</p></div></figure>
+      </section>
+      <div class="reading-rows evidence-reading">
+        <article class="editorial-row"><h3>把相近時間的連拍放在一起</h3><div><p>同一隻蜥蜴在同一微環境中，10 秒內的連拍會合併成一次觀測事件。作者用這組連拍照片的開始與結束時間，估算拍到的活動時段，再比較每個圍欄、每小時觀測到的日照與陰影比例。</p><p>這樣算的是照片記錄到的時段，並非直接比較照片張數。本頁兩張範例照片缺少能核對的拍攝時間和個體資料，因此各自呈現，不把它們接成同一次活動。</p></div></article>
+        <article class="editorial-row"><h3>靜止沒被拍到，不能當作一直待在原地</h3><div><p>相機靠動作觸發，蜥蜴停著不動時可能沒有照片。最後一張照片只能告訴我們當時的位置，不能證明牠之後一直沒離開。連拍照片所記錄的時間長度，也不能當成全天停留時間。</p><p>日照與陰影描述的是照片裡的光線，沒有直接量到蜥蜴體溫。原圖底部的「022C」是相機加上的文字，不能當成牠的體溫。</p></div></article>
+      </div>
+      <div class="source-layout">
+        <article id="sources" class="source-reading"><h3>研究與原始資料</h3><p>Ben Shermeister、Danny Mor、Ofir Levy（2024），<a href="https://doi.org/10.1111/1365-2656.14139" target="_blank" rel="noopener">Leveraging camera traps and artificial intelligence to explore thermoregulation behaviour</a>。流程依 §2.5，觀測事件與限制依 §2.8，分類成績依 §3.2。</p><p>日照、陰影範例照片與完整相機照片、位置標註來自<a href="https://github.com/levyofi/Shermeister_et_al_2024/tree/v1.0.0" target="_blank" rel="noopener">作者資料 release v1.0.0</a>。資料版本見<a href="https://doi.org/10.5281/zenodo.11406382" target="_blank" rel="noopener">Zenodo</a>。</p><details class="technical-note"><summary>門檻的原文用語</summary><p>原文在報告準確率時寫信心「高於 95%」，說明約 85% 的預測通過門檻時則寫「95% 或以上」。因此這裡統稱「95% 門檻」，但保留兩種措辭的差異，沒有認定它們指的預測集合完全相同。</p></details></article>
+        <article id="visual-source" class="source-reading"><h3>圖片用途與授權</h3><p>開場岩地與蜥蜴為 AI 生成情境圖，用來說明位置和光線，並非研究現場或已知個體。其他照片保持原樣，放大的局部也取自同一張照片，沒有生成或補出細節。</p><p>作者資料 release 標示 CC BY 4.0；程式庫的 MIT 適用範圍及論文圖版的 CC BY-NC-ND 聲明另行保留。本頁沒有裁切論文中的圖版作為動畫素材，也不把原研究照片的授權套到生成圖。</p><p>這裡沿用作者照片與標註，沒有重新執行模型、另作個體鑑定，或替範例照片加上信心分數。原檔、座標和時間資訊見<a href="animation/SOURCE.md" target="_blank" rel="noopener">素材說明</a>及<a href="animation/assets/detection-data.json" target="_blank" rel="noopener">來源位置紀錄</a>。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看牠站哪裡</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script><script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="03-04"></script><script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

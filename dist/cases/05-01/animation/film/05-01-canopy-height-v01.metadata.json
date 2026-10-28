@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8931/index.html?export=1&theme=light",
+  "export_api": "EcologyCanopyPlayer",
+  "composition_selector": "#composition",
+  "output": "05-01-canopy-height-v01.mp4",
+  "started_at": "2026-10-25T15:13:47.135Z",
+  "completed_at": "2026-10-25T15:18:17.441Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 2400,
+  "requested_duration_seconds": 100,
+  "first_seek_seconds": 0,
+  "last_seek_seconds": 99.95833333333333,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 92,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "ffprobe": {
+    "duration_seconds": 100,
+    "decoded_frame_count": 2400,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 1955635
+  },
+  "browser_page_errors": []
+}

@@ -1,0 +1,53 @@
+{
+  "source": "Jay_Sample.mp4",
+  "source_sha256": "0270d2329db07a1f6db856ea977ab2a3823f97583cbe62c0d9cf0dc478cba0e9",
+  "doi": "10.17617/3.EZNKYV",
+  "license": "CC BY 4.0",
+  "stills": [
+    {
+      "file": "jay-hero.webp",
+      "source_frame": 1500,
+      "source_seconds": 60.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "25fc8cd4321a705118cb1e196d5d0acec44192ce9651a9ce473ebfa5fa5225a3",
+      "operations": [
+        "source frame extraction",
+        "WebP encoding"
+      ],
+      "generated": false
+    },
+    {
+      "file": "jay-head-up.webp",
+      "source_frame": 1650,
+      "source_seconds": 66.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "3cbecfb55070fbf83c32954cd93952a35a2ea89e52c9585e6463a60c951c6493",
+      "operations": [
+        "source frame extraction",
+        "WebP encoding"
+      ],
+      "generated": false
+    },
+    {
+      "file": "jay-eat.webp",
+      "source_frame": 1699,
+      "source_seconds": 67.96,
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "0b5a7256d0bb4cad7490fc0f9df3690d9fa47305d70dee0e40201c132dd028e8",
+      "operations": [
+        "source frame extraction",
+        "WebP encoding"
+      ],
+      "generated": false
+    }
+  ]
+}

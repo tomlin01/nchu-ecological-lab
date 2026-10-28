@@ -1,0 +1,451 @@
+{
+  "case_id": "02-03",
+  "version": "web-v01",
+  "visual_revision": "full-bleed-ocean-v02",
+  "status": "website_ready_for_review",
+  "scope": "Full-viewport NOAA photograph shared across all four pages; desktop and mobile composition, translucent reading surfaces, print-safe original photo.",
+  "browser": {
+    "status": "PASS",
+    "check_count": 20,
+    "checks": [
+      {
+        "name": "Photo fills the viewport at 1440",
+        "passed": true,
+        "detail": {
+          "fixed": "fixed",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "clientWidth": 1440,
+          "height": 900,
+          "fit": "cover",
+          "overflow": false,
+          "cta": {
+            "x": 993.609375,
+            "y": 559.1484375,
+            "width": 138,
+            "height": 55.296875,
+            "top": 559.1484375,
+            "right": 1131.609375,
+            "bottom": 614.4453125,
+            "left": 993.609375
+          },
+          "credit": {
+            "x": 43.1953125,
+            "y": 786.6015625,
+            "width": 1338.609375,
+            "height": 23.3984375,
+            "top": 786.6015625,
+            "right": 1381.8046875,
+            "bottom": 810,
+            "left": 43.1953125
+          },
+          "footAlpha": "rgba(3, 18, 29, 0.38)"
+        }
+      },
+      {
+        "name": "Hero controls and credit remain visible at 1440",
+        "passed": true,
+        "detail": {
+          "cta": {
+            "x": 993.609375,
+            "y": 559.1484375,
+            "width": 138,
+            "height": 55.296875,
+            "top": 559.1484375,
+            "right": 1131.609375,
+            "bottom": 614.4453125,
+            "left": 993.609375
+          },
+          "credit": {
+            "x": 43.1953125,
+            "y": 786.6015625,
+            "width": 1338.609375,
+            "height": 23.3984375,
+            "top": 786.6015625,
+            "right": 1381.8046875,
+            "bottom": 810,
+            "left": 43.1953125
+          }
+        }
+      },
+      {
+        "name": "Photo fills the viewport at 1280",
+        "passed": true,
+        "detail": {
+          "fixed": "fixed",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 800,
+            "top": 0,
+            "right": 1280,
+            "bottom": 800,
+            "left": 0
+          },
+          "clientWidth": 1280,
+          "height": 800,
+          "fit": "cover",
+          "overflow": false,
+          "cta": {
+            "x": 882.0234375,
+            "y": 500.9453125,
+            "width": 138,
+            "height": 55.296875,
+            "top": 500.9453125,
+            "right": 1020.0234375,
+            "bottom": 556.2421875,
+            "left": 882.0234375
+          },
+          "credit": {
+            "x": 38.3984375,
+            "y": 686.6015625,
+            "width": 1188.203125,
+            "height": 23.3984375,
+            "top": 686.6015625,
+            "right": 1226.6015625,
+            "bottom": 710,
+            "left": 38.3984375
+          },
+          "footAlpha": "rgba(3, 18, 29, 0.38)"
+        }
+      },
+      {
+        "name": "Hero controls and credit remain visible at 1280",
+        "passed": true,
+        "detail": {
+          "cta": {
+            "x": 882.0234375,
+            "y": 500.9453125,
+            "width": 138,
+            "height": 55.296875,
+            "top": 500.9453125,
+            "right": 1020.0234375,
+            "bottom": 556.2421875,
+            "left": 882.0234375
+          },
+          "credit": {
+            "x": 38.3984375,
+            "y": 686.6015625,
+            "width": 1188.203125,
+            "height": 23.3984375,
+            "top": 686.6015625,
+            "right": 1226.6015625,
+            "bottom": 710,
+            "left": 38.3984375
+          }
+        }
+      },
+      {
+        "name": "Photo fills the viewport at 768",
+        "passed": true,
+        "detail": {
+          "fixed": "fixed",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 1024,
+            "top": 0,
+            "right": 768,
+            "bottom": 1024,
+            "left": 0
+          },
+          "clientWidth": 768,
+          "height": 1024,
+          "fit": "cover",
+          "overflow": false,
+          "cta": {
+            "x": 26,
+            "y": 822.703125,
+            "width": 138,
+            "height": 55.296875,
+            "top": 822.703125,
+            "right": 164,
+            "bottom": 878,
+            "left": 26
+          },
+          "credit": {
+            "x": 26,
+            "y": 923.5546875,
+            "width": 701,
+            "height": 21.4453125,
+            "top": 923.5546875,
+            "right": 727,
+            "bottom": 945,
+            "left": 26
+          },
+          "footAlpha": "rgba(3, 18, 29, 0.38)"
+        }
+      },
+      {
+        "name": "Hero controls and credit remain visible at 768",
+        "passed": true,
+        "detail": {
+          "cta": {
+            "x": 26,
+            "y": 822.703125,
+            "width": 138,
+            "height": 55.296875,
+            "top": 822.703125,
+            "right": 164,
+            "bottom": 878,
+            "left": 26
+          },
+          "credit": {
+            "x": 26,
+            "y": 923.5546875,
+            "width": 701,
+            "height": 21.4453125,
+            "top": 923.5546875,
+            "right": 727,
+            "bottom": 945,
+            "left": 26
+          }
+        }
+      },
+      {
+        "name": "Photo fills the viewport at 390",
+        "passed": true,
+        "detail": {
+          "fixed": "fixed",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 844,
+            "top": 0,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "clientWidth": 390,
+          "height": 844,
+          "fit": "cover",
+          "overflow": false,
+          "cta": {
+            "x": 20,
+            "y": 659.6015625,
+            "width": 128,
+            "height": 52.3984375,
+            "top": 659.6015625,
+            "right": 148,
+            "bottom": 712,
+            "left": 20
+          },
+          "credit": {
+            "x": 20,
+            "y": 736.109375,
+            "width": 335,
+            "height": 42.890625,
+            "top": 736.109375,
+            "right": 355,
+            "bottom": 779,
+            "left": 20
+          },
+          "footAlpha": "rgba(3, 18, 29, 0.97)"
+        }
+      },
+      {
+        "name": "Hero controls and credit remain visible at 390",
+        "passed": true,
+        "detail": {
+          "cta": {
+            "x": 20,
+            "y": 659.6015625,
+            "width": 128,
+            "height": 52.3984375,
+            "top": 659.6015625,
+            "right": 148,
+            "bottom": 712,
+            "left": 20
+          },
+          "credit": {
+            "x": 20,
+            "y": 736.109375,
+            "width": 335,
+            "height": 42.890625,
+            "top": 736.109375,
+            "right": 355,
+            "bottom": 779,
+            "left": 20
+          }
+        }
+      },
+      {
+        "name": "Photo fills the viewport at 320",
+        "passed": true,
+        "detail": {
+          "fixed": "fixed",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 305,
+            "height": 740,
+            "top": 0,
+            "right": 305,
+            "bottom": 740,
+            "left": 0
+          },
+          "clientWidth": 305,
+          "height": 740,
+          "fit": "cover",
+          "overflow": false,
+          "cta": {
+            "x": 20,
+            "y": 545.6015625,
+            "width": 128,
+            "height": 52.3984375,
+            "top": 545.6015625,
+            "right": 148,
+            "bottom": 598,
+            "left": 20
+          },
+          "credit": {
+            "x": 20,
+            "y": 622.109375,
+            "width": 265,
+            "height": 42.890625,
+            "top": 622.109375,
+            "right": 285,
+            "bottom": 665,
+            "left": 20
+          },
+          "footAlpha": "rgba(3, 18, 29, 0.97)"
+        }
+      },
+      {
+        "name": "Hero controls and credit remain visible at 320",
+        "passed": true,
+        "detail": {
+          "cta": {
+            "x": 20,
+            "y": 545.6015625,
+            "width": 128,
+            "height": 52.3984375,
+            "top": 545.6015625,
+            "right": 148,
+            "bottom": 598,
+            "left": 20
+          },
+          "credit": {
+            "x": 20,
+            "y": 622.109375,
+            "width": 265,
+            "height": 42.890625,
+            "top": 622.109375,
+            "right": 285,
+            "bottom": 665,
+            "left": 20
+          }
+        }
+      },
+      {
+        "name": "Full-screen background does not block the main action",
+        "passed": true
+      },
+      {
+        "name": "Ocean photograph continues behind method",
+        "passed": true,
+        "detail": {
+          "active": "method",
+          "backgroundVisible": true,
+          "photo": "assets/brydes-whale-mariana-noaa-original.JPG",
+          "mask": "linear-gradient(rgba(2, 17, 28, 0.76), rgba(2, 17, 28, 0.85))"
+        }
+      },
+      {
+        "name": "Ocean photograph continues behind evidence",
+        "passed": true,
+        "detail": {
+          "active": "evidence",
+          "backgroundVisible": true,
+          "photo": "assets/brydes-whale-mariana-noaa-original.JPG",
+          "mask": "linear-gradient(rgba(2, 17, 28, 0.76), rgba(2, 17, 28, 0.85))"
+        }
+      },
+      {
+        "name": "Ocean photograph continues behind sources",
+        "passed": true,
+        "detail": {
+          "active": "sources",
+          "backgroundVisible": true,
+          "photo": "assets/brydes-whale-mariana-noaa-original.JPG",
+          "mask": "linear-gradient(rgba(2, 17, 28, 0.76), rgba(2, 17, 28, 0.85))"
+        }
+      },
+      {
+        "name": "Accepted audio still starts after visual change",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.509,
+          "currentTime": 0.468593,
+          "paused": false,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Leaving animation still stops sound immediately",
+        "passed": true
+      },
+      {
+        "name": "Full reading keeps the background attached to viewport",
+        "passed": true
+      },
+      {
+        "name": "Print shows the complete photograph instead of a background crop",
+        "passed": true
+      },
+      {
+        "name": "No-JS retains photo environment and complete article",
+        "passed": true
+      },
+      {
+        "name": "No browser errors",
+        "passed": true,
+        "detail": []
+      }
+    ],
+    "errors": [],
+    "scope": "visual-only revision; full 88-second playback not rerun because runtime and controls are byte-identical"
+  },
+  "scope_verification": {
+    "status": "PASS",
+    "source_case_js_unchanged": true,
+    "runtime_and_assets_files_unchanged": 32,
+    "other_main_and_accepted_source_files_unchanged": 434,
+    "unexpected_changes": [],
+    "changed_files": [
+      "outputs/ecology-ai-site-v01/cases/02-03/provenance.json",
+      "outputs/ecology-ai-site-v01/cases/02-03/SOURCE.md",
+      "outputs/ecology-ai-site-v01/cases/02-03/case.css",
+      "outputs/ecology-ai-site-v01/cases/02-03/02-03.html",
+      "outputs/ecology-ai-site-v01/cases/02-03/README.md",
+      "outputs/ecology-ai-site-v01/cases/02-03/design-notes.md"
+    ]
+  },
+  "prior_website_verification": "work/ecology-ai-rollout/cases/02-03/site-integration-v01/verification.json",
+  "prior_full_88_second_playback_retained_as_historical_evidence": true,
+  "full_playback_rerun_this_revision": false,
+  "user_accepted_website": false,
+  "animation_user_accepted": true,
+  "new_image_generated": false,
+  "source_photo_bytes_unchanged": true,
+  "public_deployment": false
+}

@@ -1,0 +1,1043 @@
+{
+  "case_id": "02-03",
+  "version": "prototype-v01",
+  "status": "prototype_ready_for_review",
+  "content_revision": "dual-confirmation-scores-v02",
+  "duration_seconds": 88,
+  "preview_url": "http://127.0.0.1:8870/index.html",
+  "static": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "Accepted site unchanged",
+        "passed": true,
+        "files": 410,
+        "changed": []
+      },
+      {
+        "name": "Original bytes: brydes-whale-mariana-noaa-original.JPG",
+        "passed": true
+      },
+      {
+        "name": "Original bytes: biotwang-google-original.wav",
+        "passed": true
+      },
+      {
+        "name": "Original bytes: paper-figure-1.webp",
+        "passed": true
+      },
+      {
+        "name": "Original bytes: paper-figure-3.webp",
+        "passed": true
+      },
+      {
+        "name": "Original audio format and length",
+        "passed": true
+      },
+      {
+        "name": "Displayed spectrum is unaltered calculated raster",
+        "passed": true
+      },
+      {
+        "name": "Spectrum time and frequency mapping",
+        "passed": true
+      },
+      {
+        "name": "No new model inference and honest audio license",
+        "passed": true
+      },
+      {
+        "name": "Font coverage complete",
+        "passed": true
+      },
+      {
+        "name": "HTML local references resolve",
+        "passed": true,
+        "missing": []
+      },
+      {
+        "name": "No duplicate IDs",
+        "passed": true
+      },
+      {
+        "name": "No unreplaced template tokens",
+        "passed": true
+      },
+      {
+        "name": "Static transcript covers all eight sections",
+        "passed": true
+      },
+      {
+        "name": "JavaScript syntax: app.mjs",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "JavaScript syntax: model.mjs",
+        "passed": true,
+        "error": ""
+      },
+      {
+        "name": "Time model and audio slot boundaries",
+        "passed": true,
+        "output": "PASS: contiguous phases, eight scene boundaries, two original-speed audio slots, bounded time\nPASS: evidence merges after both branches; running maximum, winning window and threshold use the same teaching values"
+      }
+    ],
+    "check_count": 17,
+    "browser_checks_included": false
+  },
+  "browser": {
+    "status": "PASS",
+    "content_revision": "dual-confirmation-scores-v02",
+    "check_count": 50,
+    "checks": [
+      {
+        "name": "Initial state is silent and original audio is ready",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0,
+          "currentTime": 0,
+          "paused": true,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Complete original clip is seekable without HTTP range support",
+        "passed": true,
+        "detail": 5
+      },
+      {
+        "name": "User click starts unmuted original-speed playback",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.717,
+          "currentTime": 0.659753,
+          "paused": false,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Pause stops both clocks",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.733,
+          "currentTime": 0.733,
+          "paused": true,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Seek into second clip is silent at source second 2",
+        "passed": true,
+        "detail": {
+          "expectedTime": 2,
+          "currentTime": 2,
+          "paused": true,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 21,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Mute stops audio while animation continues",
+        "passed": true,
+        "detail": {
+          "expectedTime": 2.375,
+          "currentTime": 2.375,
+          "paused": true,
+          "muted": true,
+          "enabled": false,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 21,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Unmute resumes the correct source time",
+        "passed": true,
+        "detail": {
+          "expectedTime": 2.6999999999999993,
+          "currentTime": 2.646396,
+          "paused": false,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 21,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Source dialog pauses both clocks",
+        "passed": true,
+        "detail": {
+          "expectedTime": 2.7250000000000014,
+          "currentTime": 2.725,
+          "paused": true,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 21,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Source dialog matches the displayed spectrum",
+        "passed": true
+      },
+      {
+        "name": "Closing source stays paused",
+        "passed": true
+      },
+      {
+        "name": "Replay restarts the original clip",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.251,
+          "currentTime": 0.207443,
+          "paused": false,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "Scene seek 0 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "photo",
+          "source": "whale",
+          "crop": [
+            0,
+            0,
+            3872,
+            2592
+          ]
+        }
+      },
+      {
+        "name": "Scene seek 18 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "encounters",
+          "source": null,
+          "crop": null
+        }
+      },
+      {
+        "name": "Scene seek 24 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "spectrum",
+          "source": "spectrum",
+          "crop": [
+            0,
+            0,
+            1600,
+            600
+          ]
+        }
+      },
+      {
+        "name": "Scene seek 39 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "learning",
+          "source": null,
+          "crop": null
+        }
+      },
+      {
+        "name": "Scene seek 54 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "windows",
+          "source": null,
+          "crop": null
+        }
+      },
+      {
+        "name": "Scene seek 64 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "map",
+          "source": "map",
+          "crop": [
+            0,
+            0,
+            2091,
+            1022
+          ]
+        }
+      },
+      {
+        "name": "Scene seek 69 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "results",
+          "source": "results",
+          "crop": [
+            0,
+            0,
+            2500,
+            1604
+          ]
+        }
+      },
+      {
+        "name": "Scene seek 75 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "results",
+          "source": "results",
+          "crop": [
+            0,
+            0,
+            1250,
+            805
+          ]
+        }
+      },
+      {
+        "name": "Scene seek 85 is deterministic and silent",
+        "passed": true,
+        "detail": {
+          "mode": "photo",
+          "source": "whale",
+          "crop": [
+            0,
+            0,
+            3872,
+            2592
+          ]
+        }
+      },
+      {
+        "name": "Spectrum cursor uses original audio seconds",
+        "passed": true,
+        "detail": "510"
+      },
+      {
+        "name": "Injected audio rejection exposes retry without crashing visuals",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.1,
+          "currentTime": 0,
+          "paused": true,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "Test rejection",
+          "blocked": true
+        }
+      },
+      {
+        "name": "Retry starts audio at current narrative time",
+        "passed": true,
+        "detail": {
+          "expectedTime": 0.38,
+          "currentTime": 0.325454,
+          "paused": false,
+          "muted": false,
+          "enabled": true,
+          "playbackRate": 1,
+          "duration": 5,
+          "slotStart": 0,
+          "finishingOriginalClip": false,
+          "pending": false,
+          "error": "",
+          "blocked": false
+        }
+      },
+      {
+        "name": "No horizontal overflow at 1440",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 778.2890625,
+          "body": 1440
+        }
+      },
+      {
+        "name": "Desktop controls remain in initial viewport at 1440",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 778.2890625,
+          "body": 1440
+        }
+      },
+      {
+        "name": "No horizontal overflow at 1280",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 672.3046875,
+          "body": 1280
+        }
+      },
+      {
+        "name": "Desktop controls remain in initial viewport at 1280",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 672.3046875,
+          "body": 1280
+        }
+      },
+      {
+        "name": "No horizontal overflow at 390",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 960.9765625,
+          "body": 390
+        }
+      },
+      {
+        "name": "No horizontal overflow at 320",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "transport": 872.0859375,
+          "body": 320
+        }
+      },
+      {
+        "name": "Print keeps static reference and full text after resize",
+        "passed": true,
+        "detail": {
+          "caption": "列印參考：NOAA 原照片；所有來源圖與完整說明見下方。",
+          "open": true,
+          "fallback": "block",
+          "playing": false,
+          "audio": true
+        }
+      },
+      {
+        "name": "After print preserves original time and pause",
+        "passed": true,
+        "detail": 75
+      },
+      {
+        "name": "Reduced motion stays paused",
+        "passed": true,
+        "detail": {
+          "time": 75,
+          "phase": 6,
+          "mode": "results",
+          "local": 7,
+          "progress": 0.5833333333333334,
+          "evidence": null,
+          "scores": null,
+          "audioTime": null,
+          "freshInference": false,
+          "photoAudioSameEncounter": false,
+          "duration": 88,
+          "playing": false,
+          "ready": true,
+          "reducedMotion": true,
+          "source": "results",
+          "sourceFile": "assets/paper-figure-3.webp",
+          "sourceCrop": [
+            0,
+            0,
+            1250,
+            805
+          ],
+          "sourceViews": {
+            "whale": [
+              0,
+              0,
+              3872,
+              2592
+            ],
+            "map": [
+              0,
+              0,
+              2091,
+              1022
+            ],
+            "results": [
+              0,
+              0,
+              2500,
+              1604
+            ],
+            "wake": [
+              0,
+              0,
+              1250,
+              805
+            ],
+            "spectrum": [
+              0,
+              0,
+              1600,
+              600
+            ]
+          },
+          "spectrumMapping": {
+            "x": 100,
+            "y": 145,
+            "width": 820,
+            "height": 307.5,
+            "duration": 5,
+            "maxHz": 1200
+          },
+          "audio": {
+            "expectedTime": null,
+            "currentTime": 0,
+            "paused": true,
+            "muted": false,
+            "enabled": true,
+            "playbackRate": 1,
+            "duration": 5,
+            "slotStart": null,
+            "finishingOriginalClip": false,
+            "pending": false,
+            "error": "",
+            "blocked": false
+          }
+        }
+      },
+      {
+        "name": "No-JS page retains all eight sections",
+        "passed": true
+      },
+      {
+        "name": "No-JS page shows source photo and audio link",
+        "passed": true
+      },
+      {
+        "name": "Visual evidence arrives before acoustic evidence",
+        "passed": true,
+        "detail": {
+          "state": {
+            "time": 11,
+            "phase": 1,
+            "mode": "encounters",
+            "local": 1,
+            "progress": 0.09090909090909091,
+            "evidence": {
+              "visual": 0.925925925925926,
+              "acoustic": 0,
+              "merged": 0,
+              "pairs": 0,
+              "conclusion": 0
+            },
+            "scores": null,
+            "audioTime": null,
+            "freshInference": false,
+            "photoAudioSameEncounter": false,
+            "duration": 88,
+            "playing": false,
+            "ready": true,
+            "reducedMotion": false,
+            "source": null,
+            "sourceFile": null,
+            "sourceCrop": null,
+            "sourceViews": {
+              "whale": [
+                0,
+                0,
+                3872,
+                2592
+              ],
+              "map": [
+                0,
+                0,
+                2091,
+                1022
+              ],
+              "results": [
+                0,
+                0,
+                2500,
+                1604
+              ],
+              "wake": [
+                0,
+                0,
+                1250,
+                805
+              ],
+              "spectrum": [
+                0,
+                0,
+                1600,
+                600
+              ]
+            },
+            "spectrumMapping": {
+              "x": 100,
+              "y": 145,
+              "width": 820,
+              "height": 307.5,
+              "duration": 5,
+              "maxHz": 1200
+            },
+            "audio": {
+              "expectedTime": null,
+              "currentTime": 0,
+              "paused": true,
+              "muted": false,
+              "enabled": true,
+              "playbackRate": 1,
+              "duration": 5,
+              "slotStart": null,
+              "finishingOriginalClip": false,
+              "pending": false,
+              "error": "",
+              "blocked": false
+            }
+          },
+          "visual": 0.934815,
+          "acoustic": 0.12,
+          "merge": 0,
+          "conclusion": 0,
+          "scores": [
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—",
+            "—"
+          ],
+          "max": "—",
+          "maxVisible": true,
+          "flying": true,
+          "verdict": true,
+          "note": "同次遭遇的雙重證據 · 圖解示意，並非照片與原音的現場重建",
+          "readout": "先用目視辨認，確認附近看見的是布氏鯨。"
+        }
+      },
+      {
+        "name": "Both observations precede their merge",
+        "passed": true,
+        "detail": {
+          "visual": 1,
+          "acoustic": 1,
+          "merged": 0,
+          "pairs": 0,
+          "conclusion": 0
+        }
+      },
+      {
+        "name": "Evidence branches merge before population of encounter pairs",
+        "passed": true,
+        "detail": {
+          "visual": 1,
+          "acoustic": 1,
+          "merged": 1,
+          "pairs": 0,
+          "conclusion": 0
+        }
+      },
+      {
+        "name": "Ten encounter records contain nine paired checks",
+        "passed": true,
+        "detail": {
+          "visual": 1,
+          "acoustic": 1,
+          "merged": 1,
+          "pairs": 10,
+          "conclusion": 0
+        }
+      },
+      {
+        "name": "Species conclusion appears after repeated paired evidence",
+        "passed": true,
+        "detail": {
+          "visual": 1,
+          "acoustic": 1,
+          "merged": 1,
+          "pairs": 10,
+          "conclusion": 1
+        }
+      },
+      {
+        "name": "Unscored windows are blank rather than zero",
+        "passed": true,
+        "detail": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ]
+      },
+      {
+        "name": "Running maximum uses only already scored windows",
+        "passed": true,
+        "detail": {
+          "revealed": 7,
+          "maximum": 0.65,
+          "winnerIndex": 6,
+          "step": "scoring",
+          "transfer": 0,
+          "threshold": 0.7,
+          "positive": false
+        }
+      },
+      {
+        "name": "Highest score visibly moves from winning window",
+        "passed": true,
+        "detail": {
+          "revealed": 15,
+          "maximum": 0.92,
+          "winnerIndex": 7,
+          "step": "maximum",
+          "transfer": 0.37615740740740744,
+          "threshold": 0.7,
+          "positive": true
+        }
+      },
+      {
+        "name": "Maximum becomes the single 75-second score before threshold",
+        "passed": true,
+        "detail": {
+          "revealed": 15,
+          "maximum": 0.92,
+          "winnerIndex": 7,
+          "step": "maximum",
+          "transfer": 1,
+          "threshold": 0.7,
+          "positive": true
+        }
+      },
+      {
+        "name": "Threshold comparison yields one positive 75-second result",
+        "passed": true,
+        "detail": {
+          "revealed": 15,
+          "maximum": 0.92,
+          "winnerIndex": 7,
+          "step": "threshold",
+          "transfer": 1,
+          "threshold": 0.7,
+          "positive": true
+        }
+      },
+      {
+        "name": "Teaching numbers are explicitly separated from source inference",
+        "passed": true,
+        "detail": "分數與門檻皆為教學設定 · 未重新推論，也不對應前面的原音"
+      },
+      {
+        "name": "Reverse seek restores identical final score scene",
+        "passed": true
+      },
+      {
+        "name": "Readable mobile score grid at 390",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "height": 30,
+          "layout": "scores",
+          "viewBox": "0 0 1000 1200"
+        }
+      },
+      {
+        "name": "Readable mobile score grid at 320",
+        "passed": true,
+        "detail": {
+          "overflow": false,
+          "height": 23.999969482421875,
+          "layout": "scores",
+          "viewBox": "0 0 1000 1200"
+        }
+      },
+      {
+        "name": "Tall score layout does not distort printed reference",
+        "passed": true,
+        "detail": {
+          "ratio": "auto",
+          "photo": "block",
+          "open": true
+        }
+      },
+      {
+        "name": "Print returns to the paused score section",
+        "passed": true
+      }
+    ],
+    "visual_review": {
+      "desktop_and_mobile_reviewed": true,
+      "changed_scenes": [
+        "dual evidence merge",
+        "15 illustrative scores, maximum, threshold"
+      ],
+      "source_media_changed": false
+    }
+  },
+  "full_playback": {
+    "status": "PASS",
+    "content_revision": "dual-confirmation-scores-v02",
+    "checks": [
+      {
+        "name": "Normal complete playback ends paused",
+        "passed": true
+      },
+      {
+        "name": "All eight scenes visited",
+        "passed": true
+      },
+      {
+        "name": "Both original clips reach native end",
+        "passed": true
+      },
+      {
+        "name": "Original-speed audio remains synchronized",
+        "passed": true
+      },
+      {
+        "name": "All numerical score stages play in order",
+        "passed": true
+      },
+      {
+        "name": "Evidence merge and final conclusion occur during normal playback",
+        "passed": true
+      },
+      {
+        "name": "No runtime error",
+        "passed": true
+      }
+    ],
+    "nominal_duration_seconds": 88,
+    "elapsed_wall_seconds": 88.101,
+    "max_audio_drift_seconds": 0.0698339999999984,
+    "visited_phases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "score_steps": [
+      "scoring",
+      "maximum",
+      "threshold"
+    ],
+    "events": [
+      {
+        "event": "play",
+        "wall": 1792550451876,
+        "time": 0.005,
+        "audio": 0.027492
+      },
+      {
+        "event": "ended",
+        "wall": 1792550456957,
+        "time": 5.086,
+        "audio": 5
+      },
+      {
+        "event": "play",
+        "wall": 1792550472881,
+        "time": 21.003,
+        "audio": 0.032213
+      },
+      {
+        "event": "ended",
+        "wall": 1792550477960,
+        "time": 26.086,
+        "audio": 5
+      }
+    ],
+    "errors": [],
+    "sample_count": 881,
+    "final_state": {
+      "time": 88,
+      "phase": 7,
+      "mode": "photo",
+      "local": 8,
+      "progress": 1,
+      "evidence": null,
+      "scores": null,
+      "audioTime": null,
+      "freshInference": false,
+      "photoAudioSameEncounter": false,
+      "duration": 88,
+      "playing": false,
+      "ready": true,
+      "reducedMotion": false,
+      "source": "whale",
+      "sourceFile": "assets/brydes-whale-mariana-noaa-original.JPG",
+      "sourceCrop": [
+        0,
+        0,
+        3872,
+        2592
+      ],
+      "sourceViews": {
+        "whale": [
+          0,
+          0,
+          3872,
+          2592
+        ],
+        "map": [
+          0,
+          0,
+          2091,
+          1022
+        ],
+        "results": [
+          0,
+          0,
+          2500,
+          1604
+        ],
+        "wake": [
+          0,
+          0,
+          1250,
+          805
+        ],
+        "spectrum": [
+          0,
+          0,
+          1600,
+          600
+        ]
+      },
+      "spectrumMapping": {
+        "x": 100,
+        "y": 145,
+        "width": 820,
+        "height": 307.5,
+        "duration": 5,
+        "maxHz": 1200
+      },
+      "audio": {
+        "expectedTime": null,
+        "currentTime": 0,
+        "paused": true,
+        "muted": false,
+        "enabled": true,
+        "playbackRate": 1,
+        "duration": 5,
+        "slotStart": null,
+        "finishingOriginalClip": false,
+        "pending": false,
+        "error": "",
+        "blocked": false
+      }
+    }
+  },
+  "audio_numerical_checks": {
+    "status": "PASS",
+    "png_axis_mapping_cell_checks": [
+      {
+        "file": "spectrogram.png",
+        "checked_cell_centers": 9,
+        "maximum_rgb_channel_error": 1,
+        "pass": true
+      },
+      {
+        "file": "spectrogram-only.png",
+        "checked_cell_centers": 9,
+        "maximum_rgb_channel_error": 1,
+        "pass": true
+      },
+      {
+        "file": "spectrogram-low-frequency.png",
+        "checked_cell_centers": 9,
+        "maximum_rgb_channel_error": 1,
+        "pass": true
+      },
+      {
+        "file": "spectrogram-low-frequency-only.png",
+        "checked_cell_centers": 9,
+        "maximum_rgb_channel_error": 1,
+        "pass": true
+      }
+    ],
+    "total_png_sample_checks": 36,
+    "stft_inverse_first_120000_samples_max_absolute_error": 5.551115123125783e-16,
+    "inverse_padding_samples_excluded": 64,
+    "source_wav_sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+    "playback_wav_sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+    "human_listening_performed": false,
+    "visual_review": "Viewed full 0..8000 Hz spectrum, full 0..1200 Hz spectrum and waveform; axis labels/units and colorbars readable, no clipping seen in labels. No manually annotated call boundaries."
+  },
+  "human_audio_species_identification_performed": false,
+  "main_site_modified": false,
+  "published": false,
+  "user_accepted": false,
+  "audio_public_redistribution_license": "unconfirmed"
+}

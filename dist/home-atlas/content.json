@@ -1,0 +1,308 @@
+{
+  "chapters": [
+    {
+      "id": "01",
+      "title": [
+        "走進野外，",
+        "怎麼找到線索？"
+      ],
+      "name": "野外調查",
+      "cases": [
+        {
+          "id": "01-01",
+          "label": "空拍動物群",
+          "question": [
+            "斑馬走動時，",
+            "空拍鏡頭怎麼跟上？"
+          ],
+          "href": "cases/01-01/01-01.html",
+          "assetIds": [
+            "01-01-zebras-grassland"
+          ],
+          "environment": "assets/environments/01-01-grassland-wide-v01.png",
+          "environmentPosition": "68% 50%",
+          "microInset": false,
+          "environmentPositionMobile": "80% 50%"
+        },
+        {
+          "id": "01-02",
+          "label": "聽聲尋鯨",
+          "question": [
+            "聽見鯨叫，",
+            "無人機該往哪裡飛？"
+          ],
+          "href": "cases/01-02/01-02.html",
+          "assetIds": [
+            "01-02-sperm-whale-ocean"
+          ],
+          "environment": "assets/environments/01-02-ocean-wide-v01.png",
+          "environmentPosition": "68% 50%",
+          "microInset": false,
+          "environmentPositionMobile": "95% 50%"
+        },
+        {
+          "id": "01-03",
+          "label": "海水採樣",
+          "question": [
+            "下一瓶海水，",
+            "該從哪裡取？"
+          ],
+          "href": "cases/01-03/01-03.html",
+          "assetIds": [
+            "01-03-phytoplankton-fjord"
+          ],
+          "environment": "assets/environments/01-03-fjord-wide-v01.png",
+          "environmentPosition": "58% 50%",
+          "microInset": true,
+          "environmentPositionMobile": "58% 50%"
+        },
+        {
+          "id": "01-04",
+          "label": "夜間蛾類",
+          "question": [
+            "燈前拍到的蛾，",
+            "怎麼辨認？"
+          ],
+          "href": "cases/01-04/01-04.html",
+          "assetIds": [
+            "01-04-moths-night"
+          ],
+          "environment": "assets/environments/01-04-night-woodland-wide-v01.png",
+          "environmentPosition": "70% 50%",
+          "microInset": false,
+          "environmentPositionMobile": "90% 50%"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "title": [
+        "照片與聲音，",
+        "怎麼認出物種？"
+      ],
+      "name": "物種辨識",
+      "cases": [
+        {
+          "id": "02-01",
+          "label": "相機照片",
+          "question": null,
+          "href": "cases/02-01/02-01.html",
+          "assetIds": [
+            "02-01-ocelot",
+            "02-01-black-bear",
+            "02-01-elephant"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "02-02",
+          "label": "森林鳥聲",
+          "question": null,
+          "href": "cases/02-02/02-02.html",
+          "assetIds": [
+            "02-02-forest-birds"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "02-03",
+          "label": "海中鯨聲",
+          "question": null,
+          "href": "cases/02-03/02-03.html",
+          "assetIds": [
+            "02-03-brydes-whale"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "02-04",
+          "label": "海水細胞",
+          "question": null,
+          "href": "cases/02-04/02-04.html",
+          "assetIds": [
+            "02-04-phytoplankton"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "title": [
+        "是同一隻嗎？",
+        "牠在做什麼？"
+      ],
+      "name": "個體與行為",
+      "cases": [
+        {
+          "id": "03-01",
+          "label": "照片裡是同一隻嗎",
+          "question": null,
+          "href": "cases/03-01/03-01.html",
+          "assetIds": [
+            "03-01-hyena-a",
+            "03-01-hyena-b"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "03-02",
+          "label": "牠吃了多久",
+          "question": null,
+          "href": "cases/03-02/03-02.html",
+          "assetIds": [
+            "03-02-jay-head-up",
+            "03-02-jay-feeding"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "03-03",
+          "label": "還是同一隻在叫嗎",
+          "question": null,
+          "href": "cases/03-03/03-03.html",
+          "assetIds": [
+            "03-03-owl-front",
+            "03-03-owl-calling"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        },
+        {
+          "id": "03-04",
+          "label": "牠在曬太陽嗎",
+          "question": null,
+          "href": "cases/03-04/03-04.html",
+          "assetIds": [
+            "03-04-agama-shade",
+            "03-04-agama-sun"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "title": [
+        "生物的特徵，",
+        "怎麼量、怎麼估？"
+      ],
+      "name": "生物特徵",
+      "cases": [
+        {
+          "id": "04-01",
+          "label": "標本葉片",
+          "question": null,
+          "href": "cases/04-01/04-01.html",
+          "assetIds": [
+            "04-01-herbarium-leaves"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false,
+          "hint": "從標本照片找出葉片，再看輪廓與尺寸。"
+        },
+        {
+          "id": "04-02",
+          "label": "灰鯨體型",
+          "question": null,
+          "href": "cases/04-02/04-02.html",
+          "assetIds": [
+            "04-02-gray-whale"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false,
+          "hint": "從空拍影像估體長與體型，不必碰到鯨。"
+        },
+        {
+          "id": "04-03",
+          "label": "魚的長度",
+          "question": null,
+          "href": "cases/04-03/04-03.html",
+          "assetIds": [
+            "04-03-fish-profile"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false,
+          "hint": "魚照裡還要有尺度，才能把影像換成長度。"
+        },
+        {
+          "id": "04-04",
+          "label": "植物群聚",
+          "question": null,
+          "href": "cases/04-04/04-04.html",
+          "assetIds": [
+            "04-04-plant-community"
+          ],
+          "environment": null,
+          "environmentPosition": null,
+          "microInset": false,
+          "hint": "利用各地紀錄推估植物的平均特徵，不是量圖中的葉子。"
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "title": [
+        "一片棲地，",
+        "怎麼畫成地圖？"
+      ],
+      "name": "棲地製圖",
+      "cases": [
+        {
+          "id": "05-01",
+          "label": "森林的高低",
+          "href": "cases/05-01/05-01.html",
+          "assetIds": [
+            "05-01-forest-canopy"
+          ],
+          "hint": "從平面照片，估出森林的高度。"
+        },
+        {
+          "id": "05-02",
+          "label": "珊瑚礁組成",
+          "href": "cases/05-02/05-02.html",
+          "assetIds": [
+            "05-02-coral-reef"
+          ],
+          "hint": "分清珊瑚、藻類與礁石，才能知道礁上有什麼。"
+        },
+        {
+          "id": "05-03",
+          "label": "海草床變化",
+          "href": "cases/05-03/05-03.html",
+          "assetIds": [
+            "05-03-seagrass-meadow"
+          ],
+          "hint": "對照相同位置，看看兩期的海草標示有何不同。"
+        },
+        {
+          "id": "05-04",
+          "label": "地表的分類",
+          "href": "cases/05-04/05-04.html",
+          "assetIds": [
+            "05-04-landscape-mosaic"
+          ],
+          "hint": "看地表的顏色，也看分類的分數。"
+        }
+      ]
+    }
+  ]
+}

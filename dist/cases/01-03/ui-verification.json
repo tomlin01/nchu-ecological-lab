@@ -1,0 +1,99 @@
+{
+  "status": "integrated_local_verified",
+  "static_status": "PASS",
+  "case_id": "01-03",
+  "content_version": "copy-edit-v02",
+  "ui_revision": "navigation-media-v01",
+  "sidebar_default_state": "collapsed",
+  "sidebar_collapsible_at_all_sizes": true,
+  "title": "下一瓶海水，該從哪裡取？",
+  "browser_checked": true,
+  "browser_target": "outputs/ecology-ai-site-v01/cases/01-03/01-03.html",
+  "browser_exclusion_reason": null,
+  "browser_record": "work/ecology-ai-rollout/navigation-media-v01/browser-verification.json",
+  "media_checks": {
+    "status": "PASS",
+    "same_dom": true,
+    "no_reload": true,
+    "no_duplicate": true,
+    "time_preserved": true,
+    "escape": true,
+    "mobile": true
+  },
+  "parent": {
+    "status": "PASS",
+    "existing_ids_preserved": 20,
+    "chapter_navigation_unchanged": true,
+    "original_notes_json_scripts_styles_unchanged": true,
+    "source_links_retained_except_authorized_movie_entries": true,
+    "media_attributes_and_source_bytes_unchanged": true,
+    "media_outer_bytes_unchanged": true,
+    "video_fallback_only_exception": false,
+    "visible_numeric_values_and_counts_preserved": true,
+    "new_expand_buttons": 1,
+    "standalone_href_replaced": "animation/index.html",
+    "no_browser_execution": true
+  },
+  "embed": {
+    "status": "PASS",
+    "existing_runtime_scripts_and_controls_unchanged": true,
+    "body_case_id_added": "01-03",
+    "authorized_direct_movie_links_removed": 0,
+    "original_html_sha256": "54843145551f254f0a4d6d3cbb46c0e98719fadd4d9c22c54fcbb83e51d32e44",
+    "no_animation_core_or_media_changes": true
+  },
+  "preserved_existing_files": 42,
+  "animation_core_excludes_modified_embed_html": true,
+  "new_ui_files": {
+    "fonts/ui-sans.woff2": {
+      "bytes": 98204,
+      "sha256": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998"
+    },
+    "media-embed.css": {
+      "bytes": 3477,
+      "sha256": "561f2ec7588efb7b147b20277e64213119918cdf02487b6d29772f2a3bee379a"
+    },
+    "media-embed.js": {
+      "bytes": 4081,
+      "sha256": "8db832ab2b4157cd94d9c801d9b89a96bf93e989e341458433d86f21a4cb5141"
+    },
+    "media-expand.css": {
+      "bytes": 6099,
+      "sha256": "db455e8611f990191b48acfa5ad95c19b7d26d75e62e3b5af2384c1f0d5570cc"
+    },
+    "media-expand.js": {
+      "bytes": 16192,
+      "sha256": "1d51f195b7c770fddf5af0d67697aca59dad66d6393e1bcb122d753dc2f76226"
+    },
+    "sidebar.css": {
+      "bytes": 8522,
+      "sha256": "99f5d5ab596011c351d80de4c548ae5a13af537321910e2b8a6c94ca2316d8c4"
+    },
+    "sidebar.js": {
+      "bytes": 13719,
+      "sha256": "73870db60f29713ca75f2200d0b7f8da677fb8d649263a7927399335c3a27e8c"
+    },
+    "site-map.js": {
+      "bytes": 3173,
+      "sha256": "c44c731c47aeaaf8ce393586ae9ec60c8d78aa4ebfbdbdad3867fbbb5d79ddb7"
+    }
+  },
+  "fonts": {
+    "status": "PASS",
+    "file": "ui/fonts/ui-sans.woff2",
+    "sha256": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998",
+    "glyphs": 261,
+    "required_codepoints": 197,
+    "missing": [],
+    "root_font_record": "work/ecology-ai-rollout/navigation-media-v01/font-verification.json"
+  },
+  "same_media_dom_strategy": "Build-time wrapper; new UI uses the existing media node",
+  "chapter_navigation_preserved": true,
+  "original_provenance_and_narrative_records_unchanged": true,
+  "new_inference": false,
+  "new_acceptance_event": false,
+  "external_publication": false,
+  "full_playback_rerun": false,
+  "main_links": 18,
+  "candidate_links": 18
+}

@@ -1,0 +1,289 @@
+{
+  "caseId": "05-03",
+  "modelInferenceRun": false,
+  "periods": [
+    "2019–2020",
+    "2023–2024"
+  ],
+  "results": {
+    "baselineKm2": 148506,
+    "netLossKm2": 5969,
+    "netLossKind": "net",
+    "denseToSparseKm2": 6221,
+    "denseToSparseScope": "tropical",
+    "validationN": 9383,
+    "validationOverall": 0.85,
+    "validationProducerSeagrass": 0.765,
+    "validationUserSeagrass": 0.932
+  },
+  "assets": {
+    "context": {
+      "file": "assets/context/seagrass.jpg",
+      "width": 1780,
+      "height": 1136,
+      "sha256": "fa78e88bb692b6e699cc18248b7af6ba89eb3416cca4297d76879c7c2c035a04"
+    },
+    "before": {
+      "file": "assets/maps/tampa-before.png",
+      "width": 1186,
+      "height": 1600,
+      "sha256": "9c5cdeda84c306671b79dd81b675a0cd1d2e10ed1a59cffaf60e2356c646e7fb"
+    },
+    "after": {
+      "file": "assets/maps/tampa-after.png",
+      "width": 1186,
+      "height": 1600,
+      "sha256": "e00ac7d0d46054a73096b61617d618001b0ca338019acf2cd77c4745cdc678a3"
+    },
+    "difference": {
+      "file": "assets/maps/tampa-difference.png",
+      "width": 1186,
+      "height": 1600,
+      "sha256": "3f44ddab83c09056e7229df2cf33d560434e1385c00953a6116807c65b070d90"
+    },
+    "detail": {
+      "file": "assets/maps/tampa-detail-before.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "1a7aae3806bd495935487ac38761671594c969e3c092a3cea255d73cbd4e10ab"
+    },
+    "detailDifference": {
+      "file": "assets/maps/tampa-detail-difference.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "4d83f1f82a7b08abbf3bfd5114247589437166f7d5414275db92ac2932de6b94"
+    }
+  },
+  "context": {
+    "file": "seagrass.jpg",
+    "width": 1780,
+    "height": 1136,
+    "bytes": 905634,
+    "sha256": "fa78e88bb692b6e699cc18248b7af6ba89eb3416cca4297d76879c7c2c035a04",
+    "credit": "Heather Dine／NOAA Photo Library",
+    "place": "Florida Keys 海草床實拍",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sanc0209_-_Flickr_-_NOAA_Photo_Library.jpg",
+    "license": "CC BY 2.0; source page also identifies public-domain NOAA work",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "modifications": "Original image bytes preserved; display crop and camera scale only",
+    "not_a_tampa_bay_observation": true,
+    "not_paired_change_evidence": true
+  },
+  "region": {
+    "label": "Tampa Bay（美國佛羅里達州）",
+    "boundsWgs84": [
+      -82.85000168683206,
+      27.479913698858223,
+      -82.34999939969113,
+      28.080078140178475
+    ],
+    "presenceOnly": true,
+    "commonValidMaskAvailable": false,
+    "commonValidMaskNote": "The released native masks mark presence only; shared presence is not a shared observed absence mask.",
+    "nominalGridMetres": 10,
+    "nativeGrid": {
+      "crs": "EPSG:4326",
+      "transform": [
+        8.983152841195215e-05,
+        0.0,
+        -82.85000168683206,
+        0.0,
+        -8.983152841195215e-05,
+        28.080078140178475
+      ],
+      "width": 5566,
+      "height": 6681,
+      "sourceWindow": [
+        32893,
+        33930,
+        5566,
+        6681
+      ],
+      "pixelSizeDegree": [
+        8.983152841195215e-05,
+        8.983152841195215e-05
+      ],
+      "nominalGridMetres": 10,
+      "approxPixelMetresAtCentre": [
+        8.853877582663202,
+        9.954762777996047
+      ],
+      "nodata": 0,
+      "dtype": "uint8",
+      "actualValues": [
+        0,
+        1
+      ],
+      "exactPairGridMatch": true
+    },
+    "detailRectangle": [
+      0.4836507366151635,
+      0.4842089507558749,
+      0.007186489399928135,
+      0.00598712767549768
+    ],
+    "scaleBar": {
+      "metres": 5000,
+      "normalizedLength": 0.10145963354519316,
+      "latitude": 27.77999591951835,
+      "approximate": true,
+      "method": "WGS84 ellipsoid parallel distance at AOI midpoint; not pixel count times 10 m",
+      "label": "約5公里"
+    },
+    "legend": [
+      {
+        "value": 1,
+        "label": "兩期有標示",
+        "color": "#53666B"
+      },
+      {
+        "value": 2,
+        "label": "僅前期有標示",
+        "color": "#D55E00"
+      },
+      {
+        "value": 3,
+        "label": "僅後期有標示",
+        "color": "#0072B2"
+      },
+      {
+        "value": 0,
+        "label": "兩期皆無標示",
+        "color": "#F1F0EA"
+      }
+    ],
+    "maskLimitations": [
+      "Both source files encode 0 as NoData and 1 as mapped seagrass; reliable non-seagrass and unobserved/background cannot be separated.",
+      "Before-only/after-only are map-mark differences, not verified habitat loss/gain or mortality.",
+      "No local area is calculated from pixel counts; EPSG:4326 pixels vary in ground width with latitude.",
+      "Natural Earth coastline is coarse context only and is not used to classify pixels or infer valid water.",
+      "The two source periods are composite windows, not exact same-day repeat photographs."
+    ],
+    "source": {
+      "doi": "10.5281/zenodo.18612240",
+      "url": "https://zenodo.org/records/18612240",
+      "license": "CC BY 4.0",
+      "attribution": "Peng et al. (2026), Global 10-meter seagrass maps, v1. Cropped and colour-rendered for this explainer.",
+      "tiffs": [
+        {
+          "period": "2019-2020",
+          "file": "sources/regional-v01/GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+          "sha256": "eb0f0e9a79eb47838f94c4648a45c264de4c705ebf3edd985c78673ef9d88d61",
+          "crc32": 2787513338,
+          "archive": "GlobalSeagrass2019_2020.zip",
+          "member": "GlobalSeagrass2019_2020/GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+          "verifiedMemberCRC": true,
+          "nativeMetadata": {
+            "file": "GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+            "crs": "EPSG:4326",
+            "bounds": [
+              -85.8048301508864,
+              25.240862853190315,
+              -79.91763110488071,
+              31.128061899196013
+            ],
+            "bounds_wgs84": [
+              -85.8048301508864,
+              25.240862853190315,
+              -79.91763110488071,
+              31.128061899196013
+            ],
+            "transform": [
+              8.983152841195215e-05,
+              0.0,
+              -85.8048301508864,
+              0.0,
+              -8.983152841195215e-05,
+              31.128061899196013
+            ],
+            "width": 65536,
+            "height": 65536,
+            "count": 1,
+            "dtype": [
+              "uint8"
+            ],
+            "nodata": 0.0,
+            "block_shapes": [
+              [
+                256,
+                256
+              ]
+            ],
+            "mask_flags": [
+              [
+                "nodata"
+              ]
+            ],
+            "tags": {
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {}
+          }
+        },
+        {
+          "period": "2023-2024",
+          "file": "sources/regional-v01/GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+          "sha256": "de810e2dbbfc090c53573a3f7cf6111257c2569fe0a1e0b4cabadac68772ded0",
+          "crc32": 3427384975,
+          "archive": "GlobalSeagrass2023_2024.zip",
+          "member": "GlobalSeagrass2023_2024/GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+          "verifiedMemberCRC": true,
+          "nativeMetadata": {
+            "file": "GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+            "crs": "EPSG:4326",
+            "bounds": [
+              -85.8048301508864,
+              25.240862853190315,
+              -79.91763110488071,
+              31.128061899196013
+            ],
+            "bounds_wgs84": [
+              -85.8048301508864,
+              25.240862853190315,
+              -79.91763110488071,
+              31.128061899196013
+            ],
+            "transform": [
+              8.983152841195215e-05,
+              0.0,
+              -85.8048301508864,
+              0.0,
+              -8.983152841195215e-05,
+              31.128061899196013
+            ],
+            "width": 65536,
+            "height": 65536,
+            "count": 1,
+            "dtype": [
+              "uint8"
+            ],
+            "nodata": 0.0,
+            "block_shapes": [
+              [
+                256,
+                256
+              ]
+            ],
+            "mask_flags": [
+              [
+                "nodata"
+              ]
+            ],
+            "tags": {
+              "AREA_OR_POINT": "Area"
+            },
+            "band_tags": {}
+          }
+        }
+      ]
+    },
+    "mapMetadata": "assets/maps/map-data.json",
+    "mapMetadataSha256": "eb3283e9a6683d4e760e535ed4a9013196c48f747d370f33a372c330237c5993"
+  },
+  "conceptDiagrams": [
+    "20x20 input window illustration",
+    "schematic dense/sparse cover"
+  ],
+  "newLocalAreaCalculated": false
+}

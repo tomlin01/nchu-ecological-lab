@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="03-01" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>兩張照片，怎麼認出同一隻？｜AI × 生態研究</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="ui/media-expand.css"><script src="wrapper.js" defer></script><script src="ui/media-expand.js" defer></script><link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body class="preview-page">
+  <a class="skip-link" href="#method-frame">跳至照片動畫</a>
+  <main class="preview-main">
+    <header class="preview-heading"><div><p class="series">AI × 生態研究 · MiewID／Wildbook</p><h1>兩張照片，<br class="mobile-break">怎麼認出同一隻？</h1><p class="intro">比對真實斑鬣狗照片，看看哪些外觀值得核對，再查看資料集的身分標註。</p></div><button type="button" data-media-expand hidden>放大觀看</button></header>
+    <div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="兩張照片，怎麼認出同一隻？照片動畫"><iframe id="method-frame" src="player.html" title="80秒斑鬣狗照片比較動畫：外觀特徵、候選照片與資料集標籤" height="820" scrolling="no" loading="eager"></iframe></div></div>
+    <p id="frame-status" class="frame-status" role="status">正在載入照片播放器。下方保留完整文字與原圖。</p><button id="retry-frame" class="secondary" type="button" hidden>重試載入照片</button>
+    <noscript><p class="notice">互動動畫需要 JavaScript。以下原照片、文字與來源連結仍可閱讀。</p></noscript>
+    <details id="reading-notes" class="reading-notes" open><summary>閱讀完整六段文字</summary><ol class="transcript">
+      <li><h2>姿勢變了，還是同一隻嗎？</h2><p>光線、背景和姿勢會改變。先看兩張斑鬣狗照片，留意身體外觀有什麼相似、又有什麼不同。資料集原有個體標籤留到最後一段才揭露。</p></li>
+      <li><h2>放大同側斑紋，保留完整照片</h2><p>局部放大讓同一側身體的斑紋更容易比較。看不清楚或被遮住的地方，放大也不會補出新的細節。框線標出為解說而選的範圍，放大內容全部取自原照片，並非模型偵測結果或注意力圖。</p></li>
+      <li><h2>把照片轉成可比較的數字</h2><p>2024 年的方法先裁出動物，再由同一個模型把外觀轉成 2,048 維的特徵向量，用餘弦距離找候選。新照片與圖錄照片都這樣處理。畫面中的符號只作示意，並非這些照片實際算出的特徵，也不能逐項當成耳、眼、鼻的量測值。</p></li>
+      <li><h2>先縮小需要比對的範圍</h2><p>模型從同一物種的圖錄找出相似照片，交給研究人員仔細核對。這裡用事先選好的照片示範候選，照片大小相同，沒有實際模型分數或排名。第三張只比較後方露出完整側身的個體，不包括前景另一隻。</p></li>
+      <li><h2>可以比較，也可以先不決定</h2><p>研究人員要對照完整照片，確認同側斑紋與看得見的部位。動畫拿一對照片示範核對，另一張先保留待確認。這是核對方法的示範，沒有請專家重新鑑定，也不會把每張照片都歸為同一隻。</p></li>
+      <li><h2>資料集把這兩張照片標為同一隻</h2><p>資料集把這兩張照片標為同一隻。最後揭露的是原有標註，並非這段動畫中模型或人員新做的判定。照片沒有可核對的日期或遭遇編號，因此只能稱為兩筆影像記錄，也無法還原完整移動路線。第三張在動畫中仍待確認。</p></li>
+    </ol></details>
+    <section class="source-gallery" aria-labelledby="gallery-title"><h2 id="gallery-title">完整來源照片</h2><p class="source-intro">照片保留原比例與動物姿勢，局部放大只方便比較。資料集的身分標註在最後揭露；動畫中的待確認狀態是用來示範核對過程。</p><div class="source-grid">
+      <figure><a href="assets/query.jpg" target="_blank" rel="noopener"><img src="assets/query.jpg" alt="第一張完整來源照片，斑鬣狗的側身與周圍環境。" loading="lazy"></a><figcaption><h3>照片一</h3><p>作為待比對照片。完整原圖保留，沒有新增個體判定。</p></figcaption></figure>
+      <figure><a href="assets/match.jpg" target="_blank" rel="noopener"><img src="assets/match.jpg" alt="第二張完整來源照片；拍攝光線和姿態與第一張不同。" loading="lazy"></a><figcaption><h3>照片二</h3><p>用來比較同側外觀。保留原本較暗的場景與姿勢，不補畫細節。</p></figcaption></figure>
+      <figure><a href="assets/other.jpg" target="_blank" rel="noopener"><img src="assets/other.jpg" alt="第三張完整照片同時出現前景頭部與後方側身；本次比較後方個體。" loading="lazy"></a><figcaption><h3>第三張，待確認</h3><p>只比較後方的側身個體，前景另一隻不在本次比較範圍內。動畫中保留待確認，不勉強配對。</p></figcaption></figure>
+    </div></section>
+    <footer class="source-footer"><p>照片提供：Botswana Predator Conservation Trust／Wild Me，Hyena ID 2022。</p><p>來源授權標示有差異，見<a href="SOURCE.md" target="_blank" rel="noopener">素材說明</a>。本版供本機檢視，沒有另外執行模型或請人員重新鑑定個體。</p><p><a href="https://lila.science/datasets/hyena-id-2022/" target="_blank" rel="noopener">Hyena ID 2022 資料集</a> · <a href="https://arxiv.org/html/2412.05602v1" target="_blank" rel="noopener">2024 年方法原文</a> · <a href="assets/display-data.json" target="_blank" rel="noopener">照片與標註資料</a> · <a href="sources/provenance.json" target="_blank" rel="noopener">來源紀錄</a></p><p>動畫秒數是解說節奏，並非拍攝時間或模型處理時間。兩個檔名也不能直接證明是兩次不同遭遇。</p></footer>
+  </main>
+</body></html>

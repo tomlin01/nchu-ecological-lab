@@ -1,0 +1,45 @@
+{
+  "sources": {
+    "sans": {
+      "source": "work/ecology-ai-whale-focus/fonts/NotoSansTC-VF.ttf",
+      "sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+      "license": "NotoSans-OFL.txt"
+    },
+    "serif": {
+      "source": "work/ecology-ai-whale-focus/fonts/NotoSerifTC-VF.ttf",
+      "sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a",
+      "license": "NotoSerif-OFL.txt"
+    }
+  },
+  "pinned_source_metadata": {
+    "fonts": [
+      {
+        "family": "Noto Sans TC",
+        "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+        "source_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/Variable/TTF/Subset/NotoSansTC-VF.ttf",
+        "source_file": "fonts/NotoSansTC-VF.ttf",
+        "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+        "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Sans/LICENSE",
+        "license_file": "fonts/NotoSans-OFL.txt",
+        "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+        "subset_file": "fonts/focus-sans.woff2",
+        "subset_sha256": "9d5e3c7b316261c03665e4cdfdb19f24f4fdc74cfd02b784cd8bac0c8e8c8b82",
+        "subset_bytes": 202216
+      },
+      {
+        "family": "Noto Serif TC",
+        "commit": "f8d157532fbfaeda587e826d4cd5b21a49186f7c",
+        "source_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Serif/Variable/TTF/Subset/NotoSerifTC-VF.ttf",
+        "source_file": "fonts/NotoSerifTC-VF.ttf",
+        "source_sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a",
+        "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/f8d157532fbfaeda587e826d4cd5b21a49186f7c/Serif/LICENSE",
+        "license_file": "fonts/NotoSerif-OFL.txt",
+        "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+        "subset_file": "fonts/focus-serif.woff2",
+        "subset_sha256": "87d747385547ec4f184b5e5cb89222de98c4989ffc2642055e8f522b096494f5",
+        "subset_bytes": 268112
+      }
+    ]
+  },
+  "corpus": "Both final HTML visible text + all original script text + habitat adapter"
+}

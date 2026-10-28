@@ -1,0 +1,52 @@
+{
+  "status": "PASS_STATIC",
+  "case_id": "04-04",
+  "scope": "New local webpage parent controller and iframe bridge only",
+  "files_created": [
+    "case.js",
+    "index.html",
+    "animation/embed.html",
+    "animation/embed.js",
+    "animation/embed.css"
+  ],
+  "original_animation_source": "work/ecology-ai-rollout/cases/04-04/prototype-v01",
+  "original_animation_files_checked": 24,
+  "original_animation_files_byte_preserved": true,
+  "embed_html_only_adds_bridge_css_and_module": true,
+  "javascript_syntax": "PASS",
+  "parent_navigation_labels": [
+    "看葉子",
+    "怎麼推估",
+    "看動畫",
+    "估得準嗎"
+  ],
+  "api": "EcologyTraitPlayer",
+  "bridge_api": "EcologyTraitEmbed",
+  "child_events": [
+    "ecology-trait-state",
+    "ecology-trait-ready"
+  ],
+  "same_origin_and_source_checks_preserved": true,
+  "late_iframe_reading_anchor_correction_preserved": true,
+  "height_reservation": {
+    "method": "Maximum full-player natural height across six inert clone scenes and PHASES narratives",
+    "scenes": [
+      "leafScene",
+      "communityScene",
+      "coverageScene",
+      "predictionScene",
+      "scopeScene",
+      "resultScene"
+    ],
+    "measurement_uses_live_clock": false,
+    "remeasure_on": "Initial sizing, font readiness, player/narrative width or expanded-mode changes, and source-created result-cell childList changes",
+    "per_frame_opacity_changes_observed": false,
+    "diagnostics": "EcologyTraitEmbed.getState().phaseHeights and reservedHeight"
+  },
+  "not_performed": [
+    "Browser layout or uninterrupted-playback verification",
+    "Canonical integration",
+    "Video rendering",
+    "Deployment"
+  ]
+}

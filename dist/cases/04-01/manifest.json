@@ -1,0 +1,177 @@
+{
+  "case_id": "04-01",
+  "title": "照片裡的葉子，怎麼量出大小？",
+  "version": "web-v01",
+  "status": "user_accepted_local_website",
+  "entry": "04-01.html",
+  "visual_revision": "specimen-leaf-ruler-v01",
+  "animation_version": "web-copy-v01",
+  "animation_entry": "animation/embed.html",
+  "animation_original_prototype_and_accepted_package_preserved": true,
+  "source_images_byte_preserved": true,
+  "website_user_accepted": true,
+  "model_inference_run": false,
+  "new_physical_leaf_measurement": null,
+  "deployed": false,
+  "updated": "2026-10-25T17:53:02.193588+00:00",
+  "files": {
+    "04-01.html": {
+      "bytes": 15905,
+      "sha256": "774de44356dba8d2d1b8af9ea8f7bbd3f05a85d98dfc902badc023af4d82dccf"
+    },
+    "README.md": {
+      "bytes": 1101,
+      "sha256": "86a214a91fe7dc7fb29f312d028a45c990057d95545b53d9bba5de8bed8c0149"
+    },
+    "animation/README.md": {
+      "bytes": 818,
+      "sha256": "3c9fe3ca35615d89e9a196401f603de8b8ae58dd86eedb95e4ee44f21d6c3be3"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 4923,
+      "sha256": "8263c7d2c176b9c8050637b06c5e06292a93754b5f821cbe10d0c65835652dc9"
+    },
+    "animation/app.mjs": {
+      "bytes": 14864,
+      "sha256": "2d625740f11ab495023bcc13a8709fc0b62b19922e682be702213b5224196d62"
+    },
+    "animation/assets/author-overlay.png": {
+      "bytes": 5398812,
+      "sha256": "97ab2ad3ff1f0eee7e627461a80e9b9a23a5c7218abaefaf69a15a47342ff01d"
+    },
+    "animation/assets/ruler-qc.png": {
+      "bytes": 29886,
+      "sha256": "f00ddf5df4e8fc9347d7daa3f814aa6b786fb7aa5564e9a8054f5f3efa17fa00"
+    },
+    "animation/assets/second-overlay.png": {
+      "bytes": 8217511,
+      "sha256": "f4b162477b92fcbfbfa807eb74274f15b64904b0788f618b31526300b72e3fb3"
+    },
+    "animation/assets/second-specimen.jpg": {
+      "bytes": 105670,
+      "sha256": "d03403a58812f6176aafa5203db40c9574f7948227e5601b034b8a9a9c687980"
+    },
+    "animation/assets/source-data.json": {
+      "bytes": 6209,
+      "sha256": "ea48fe612158457b3fed9dc558ef7f250d1bae5d9da1f4cded93ff320b989aec"
+    },
+    "animation/assets/specimen.jpg": {
+      "bytes": 115724,
+      "sha256": "cf7e62703b68337cab661b0bbfbfd3edcd57e2ab051628520799bc0a6fe0d0a0"
+    },
+    "animation/embed.css": {
+      "bytes": 756,
+      "sha256": "3a69bf0325cc41f6d21e63b1e743c023d6db3f9946e5742030d876cc96627a61"
+    },
+    "animation/embed.html": {
+      "bytes": 9207,
+      "sha256": "343fbd5f1d1155309ea3d2d85e68c7f6dcee1c7d7e852d4e4ec2d0160df64e12"
+    },
+    "animation/embed.js": {
+      "bytes": 6620,
+      "sha256": "9f3e8226f0b7221511b6f73b65395e348db8073f13139a961d3cb8b9f22a09ee"
+    },
+    "animation/film/04-01-leafmachine-web-copy-v01.metadata.json": {
+      "bytes": 832,
+      "sha256": "72ac4c9613735d14f52ca3c61c25e994e4f1ac7acee72f94ed6faae9c634097b"
+    },
+    "animation/film/04-01-leafmachine-web-copy-v01.mp4": {
+      "bytes": 3089698,
+      "sha256": "7e503ce1afa3446253e1df72f442ae6909de97bb980f4e34a1bc2950583de502"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/leaf-sans.woff2": {
+      "bytes": 131104,
+      "sha256": "9ae20b8e7a26bb80bb391476d9e48569893923403c3dc9469541e90828e38f71"
+    },
+    "animation/fonts/leaf-serif.woff2": {
+      "bytes": 174424,
+      "sha256": "960f3597edceb12d4ca0f59c2997f598508598f560cb0389d506f372d4d837a8"
+    },
+    "animation/index.html": {
+      "bytes": 9121,
+      "sha256": "7850672ab83f2bb3c94d9111d16a638242ac654652694113a45303596fee451d"
+    },
+    "animation/manifest.json": {
+      "bytes": 4189,
+      "sha256": "042d18b9a3d2f74f9a8c6160aff29bcb663143fd1ba71e35192c83661319ecd0"
+    },
+    "animation/model.mjs": {
+      "bytes": 5623,
+      "sha256": "a8f50d444773f4e9e67192fa218be40d60b3db502787ee2af2bfde4ee80d6465"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 1753,
+      "sha256": "5d81a2205d0920ad1f0c1718b157197de0ff04ddcd9e6a46aeabb33f50412eb0"
+    },
+    "animation/scene.mjs": {
+      "bytes": 2050,
+      "sha256": "9d1cdfe664d9faab86f69470aefdb958898ed8016331764d0e2813c8724ec434"
+    },
+    "animation/style.css": {
+      "bytes": 9558,
+      "sha256": "9d190ebd0d14c764c8058726bedd781f7ee6d4178f124d6a12a68da28138e5bd"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "case.css": {
+      "bytes": 18971,
+      "sha256": "ba4af89ed36bf92c741aba4dbae447a1d5637cb69284653821219f43b3264514"
+    },
+    "case.js": {
+      "bytes": 11098,
+      "sha256": "96a67c1e7d50a3cfe02920f8ec41592d9d37288f970b6d7cf36f1f93d8419f9d"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 143296,
+      "sha256": "ed63e71141db96bbdaf72a8853cbf2290fc1d245023c413108c21b91a0940114"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 191724,
+      "sha256": "6cd2a5fa88e4aafdd34852bdb4f6c1b2a9e2ebab41c1bdf689ef5735a7270328"
+    },
+    "index.html": {
+      "bytes": 375,
+      "sha256": "c81605a908cf3f93d1f0dea0383c19195c614ab1ba0bbe5c21921547c2c9c8db"
+    },
+    "scene.js": {
+      "bytes": 9307,
+      "sha256": "91ead6f44e421d65241a3bf2c0953bad21c8dd367148588a39438d54b2600b76"
+    }
+  },
+  "website_acceptance_record": "work/ecology-ai-rollout/cases/04-01/website-acceptance-v01.json",
+  "website_accepted_at_utc": "2026-10-24T10:43:37.033594+00:00",
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  }
+}

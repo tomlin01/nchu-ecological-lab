@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="02-02" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="從同視角的森林變化、兩種鳥的生活，走到真實斑點鴞錄音與 BirdNET 教學辨識，理解鳥聲如何成為保育線索。">
+  <title>森林變了，怎麼知道哪些鳥還在？</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js?v=sites-recovery-20261022&release=20261027-media" defer></script>
+<link rel="stylesheet" href="embed.css"><script src="embed.js" defer></script><link rel="stylesheet" href="../../../ui/media-embed.css" data-navigation-media="navigation-media-v01">
+<script src="../../../ui/media-embed.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body data-case-id="02-02">
+  <a class="skip-link" href="#player">跳至影片</a>
+  <main>
+    <header class="page-heading">
+      <h1>森林變了，怎麼知道哪些鳥還在？</h1>
+      <p class="intro">先看森林的變化，再看 BirdNET 怎麼從聲音找鳥。</p>
+    </header>
+
+    <section id="player" class="player" aria-label="森林變化與 BirdNET 鳥聲辨識影片">
+      <div class="video-stage">
+        <video id="method-video" controls playsinline preload="none" poster="media/poster-wide.jpg" aria-label="從森林與鳥類生活，到真實斑點鴞錄音和 BirdNET 教學辨識的 84 秒影片" aria-describedby="phase-description sound-note">
+          <source src="media/birdnet-mechanism-wide.mp4?release=20261027-media" type="video/mp4">
+          此瀏覽器無法播放影片，請回主頁閱讀完整文字說明。
+        </video>
+      </div>
+      <div class="caption" aria-live="polite" aria-atomic="true">
+        <p id="phase-position" class="phase-position">01 / 07</p>
+        <div><h2 id="phase-title">先看樹冠完整的森林</h2><p id="phase-description">從同一個視角，先看看枝葉覆蓋與林下的位置。</p></div>
+      </div>
+      <div class="player-tools js-only" hidden>
+        <button id="video-toggle" type="button" disabled>播放（含鳥聲）</button>
+        <button id="replay" type="button" disabled>從頭播放</button>
+        <button id="retry-load" type="button" hidden>重新載入影片</button>
+        <span id="clock" class="clock">00:00 / 01:24</span>
+        <label class="video-progress"><span class="sr-only">播放進度，秒</span><input id="video-progress" type="range" min="0" max="84" step="0.01" value="0"></label>
+      </div>
+      <div class="sound-tools">
+        <div class="sound-buttons js-only" hidden><button id="listen-call" type="button" disabled>聽這段鳥叫</button><button id="sound-toggle" type="button" aria-pressed="true">關閉聲音</button></div>
+        <p id="sound-note">播放時有聲音。真實鳥叫從 00:32 開始，也可按「聽這段鳥叫」直接試聽；沒有旁白。</p>
+      </div>
+      <nav id="chapter-navigation" class="chapter-navigation js-only" aria-label="跳至影片段落" hidden></nav>
+    </section>
+    <p id="player-status" class="player-status js-only" role="status" hidden></p>
+    <p id="reduced-motion-note" class="viewing-note" hidden>已採用減少動態設定，先保留靜態畫面。按播放後才會開始，也可閱讀下方森林對照與全文。</p>
+    <noscript><p class="viewing-note">按影片控制列播放即可聽見聲音，真實鳥叫從 00:32 開始。影片不會自動播放，也可閱讀下方三張森林圖與全文。</p></noscript>
+
+    <section class="forest-comparison" aria-labelledby="forest-title">
+      <h2 id="forest-title">同一視角，對照樹冠和林下</h2>
+      <p class="section-intro">上方還留下多少枝葉？地面和低矮植物有什麼改變？切換圖片，分開看這兩個位置。</p>
+      <div id="forest-tabs" class="forest-tabs js-only" role="tablist" aria-label="森林情境" hidden>
+        <button id="forest-tab-intact" type="button" role="tab" aria-controls="forest-intact" aria-selected="true" tabindex="0" data-forest="0">樹冠完整</button>
+        <button id="forest-tab-retained" type="button" role="tab" aria-controls="forest-retained" aria-selected="false" tabindex="-1" data-forest="1">火後保留較多</button>
+        <button id="forest-tab-lost" type="button" role="tab" aria-controls="forest-lost" aria-selected="false" tabindex="-1" data-forest="2">火後大量喪失</button>
+      </div>
+      <div class="forest-panels">
+        <figure id="forest-intact" class="forest-panel"><img src="../assets/forest-intact-v01.webp" width="1672" height="941" alt="樹冠完整的森林生成示意，枝葉覆蓋上方，林下保有植物。" loading="lazy"><figcaption><h3>樹冠完整</h3><p>先記住樹幹與枝葉的位置，作為切換情境時的對照。</p></figcaption></figure>
+        <figure id="forest-retained" class="forest-panel"><img src="../assets/forest-canopy-retained-v01.webp" width="1672" height="941" alt="相同視角的火後森林生成示意，保留較多樹冠，林下與地面已有改變。" loading="lazy"><figcaption><h3>火後仍保留較多樹冠</h3><p>上方還有不少枝葉，變化更多出現在地面與低矮植物。</p></figcaption></figure>
+        <figure id="forest-lost" class="forest-panel"><img src="../assets/forest-canopy-lost-v01.webp" width="1672" height="941" alt="相同視角的火後森林生成示意，大量樹冠喪失，裸露樹幹更明顯。" loading="lazy"><figcaption><h3>火後大量樹冠喪失</h3><p>枝葉覆蓋明顯減少，留下更多裸露的枯幹。</p></figcaption></figure>
+      </div>
+      <p class="comparison-note">三張都是生成情境，用來比較不同火後樣貌；不是同一地點的實測前後照片，也不是所有火災都會依序經過的變化。</p>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title"><h2 id="closing-title">從聽見鳥，到理解森林</h2><p>不同鳥類需要的食物和棲身處不一樣。把核對過的鳥聲紀錄，和森林、火災條件一起看，才能替復育與保育提供更完整的線索。</p></section>
+
+    <details id="demo-details" class="demo-details" open>
+      <summary>這次示範用了什麼</summary>
+      <dl class="demo-notes">
+        <div><dt>一段真實鳥叫</dt><dd>錄音來自美國國家公園管理局（NPS）公開的 Yosemite 斑點鴞音檔，長約 5.303 秒。影片在 32、40、64 秒重播同一段聲音；它不是 Brunk 研究收集的錄音。</dd></div>
+        <div><dt>一次真正的教學辨識</dt><dd>這次把音檔交給官方 BirdNET+ V3.0-preview3.1 做了一次推論。這是較新的模型，不是原研究的客製版本，也不是 2021 年論文使用的 CNN；<a href="assets/inference-result.json" target="_blank" rel="noopener">可查看這次推論結果</a>。</dd></div>
+        <div><dt>第一候選，仍要回聽</dt><dd>第一候選是斑點鴞，模型分數為 0.735。這不是「73.5% 正確率」，也不是這個地點有斑點鴞的機率；畫面保留待人工核對狀態。</dd></div>
+        <div><dt>聲譜幫助看懂聲音</dt><dd>聲譜由同一音檔計算：橫軸是時間，縱軸是頻率，較亮的地方代表相對聲能量較強。這個版本的模型直接接收經重採樣的聲音波形（raw audio）；畫面上的聲譜用來說明，不是模型精確的內部張量或注意力圖，也不是模型判斷理由。</dd></div>
+      </dl>
+    </details>
+
+    <details id="transcript-details" class="transcript-details" open>
+      <summary>閱讀完整文字</summary>
+      <ol id="transcript" class="transcript">
+        <li data-start="0" data-end="5" data-nav="森林變了" data-caption="從同一個視角，先看看枝葉覆蓋與林下的位置。"><h3>先看樹冠完整的森林</h3><p>從同一個視角，先看看枝葉覆蓋與林下的位置。這是生成的森林情境示意。</p></li>
+        <li data-start="5" data-end="10" data-caption="火後仍保留較多樹冠，地面與低矮植物卻已改變。"><h3>枝葉還在，林下已經不同</h3><p>火後仍保留較多樹冠，地面與低矮植物卻已改變。</p></li>
+        <li data-start="10" data-end="15" data-caption="這裡大量樹冠喪失，留下更多裸露的枯幹。火的影響不能只用「燒過」兩字概括。"><h3>樹冠大量喪失，又是另一種環境</h3><p>這裡大量樹冠喪失，留下更多裸露的枯幹。火的影響不能只用「燒過」兩字概括。</p></li>
+        <li data-start="15" data-end="27" data-nav="鳥的需要" data-caption="斑點鴞常在大樹與枝葉間休息、築巢；黑背啄木鳥會在燒過的樹幹找食物。樹皮和木材裡的甲蟲幼蟲，是牠的重要食物。"><h3>兩種鳥，尋找不同的生活條件</h3><p>斑點鴞常在大樹與枝葉間休息、築巢；黑背啄木鳥會在燒過的樹幹找食物。樹皮和木材裡的甲蟲幼蟲，是牠的重要食物。</p></li>
+        <li data-start="27" data-end="31" data-nav="錄下聲音" data-caption="看不到鳥的時候，錄音器仍能留下牠們的聲音。"><h3>看不到鳥，也可能聽見牠</h3><p>看不到鳥的時候，錄音器仍能留下牠們的聲音。</p></li>
+        <li data-start="31" data-end="39" data-nav="鳥叫與聲譜" data-caption="這是真實的斑點鴞錄音。波形隨聲音起伏；按「聽這段鳥叫」，可以一邊聽、一邊看。"><h3>先聽同一段鳥叫</h3><p>這是真實的斑點鴞錄音。波形隨聲音起伏；按「聽這段鳥叫」，可以一邊聽、一邊看。</p></li>
+        <li data-start="39" data-end="47" data-caption="同一段聲音換成聲譜：橫向是時間，縱向是頻率。較亮的地方，代表相對聲能量較強。"><h3>把聲音展開來看</h3><p>同一段聲音換成聲譜：橫向是時間，縱向是頻率。較亮的地方，代表相對聲能量較強。</p></li>
+        <li data-start="47" data-end="55" data-nav="模型怎麼學" data-caption="BirdNET 事先從標有鳥名的錄音學習。新的音訊交給學好的模型，由它提出可能的鳥種。"><h3>先學習，再辨識新的聲音</h3><p>BirdNET 事先從標有鳥名的錄音學習。新的音訊交給學好的模型，由它提出可能的鳥種。</p></li>
+        <li data-start="55" data-end="63" data-nav="真正的結果" data-caption="這次真正執行後，第一候選是斑點鴞，模型分數 0.735。這不是 73.5% 正確率。"><h3>模型提出斑點鴞</h3><p>這次真正執行後，第一候選是斑點鴞，模型分數 0.735。這不是 73.5% 正確率。</p></li>
+        <li data-start="63" data-end="71" data-nav="回聽與保育" data-caption="AI 提出的鳥名還是候選，需要人員回聽。聲音不清楚時，先保留疑問。"><h3>有了鳥名，還要回到聲音</h3><p>AI 提出的鳥名還是候選，需要人員回聽。聲音不清楚時，先保留疑問。</p></li>
+        <li data-start="71" data-end="84" data-caption="把核對過的紀錄連到森林與火災條件，有助了解不同鳥類的需要。復育與保育，不能只替一種鳥做決定。"><h3>把鳥聲連回牠們的森林</h3><p>把核對過的紀錄連到森林與火災條件，有助了解不同鳥類的需要。復育與保育，不能只替一種鳥做決定。</p></li>
+      </ol>
+    </details>
+
+    <footer class="sources" aria-label="圖像、音訊與研究來源">
+      <p>森林、鳥與幼蟲為生成情境；幼蟲為放大示意，不是實測動態。錄音器照片 © Kristin Brunk／Cornell，僅用於此研究相關報導。</p>
+      <p>84 秒 · 有鳥叫、無旁白。</p>
+      <ul class="source-links">
+        <li><a href="https://www.nps.gov/subjects/sound/sounds-spotted-owl.htm" target="_blank" rel="noopener">NPS · Yosemite 斑點鴞錄音</a></li>
+        <li><a href="https://doi.org/10.5281/zenodo.20703646" target="_blank" rel="noopener">BirdNET+ · 本次使用的官方模型</a></li>
+        <li><a href="https://doi.org/10.1016/j.ecoinf.2021.101236" target="_blank" rel="noopener">Kahl 等（2021）· BirdNET 方法論文</a></li>
+        <li><a href="https://doi.org/10.1002/fee.2843" target="_blank" rel="noopener">Brunk 等（2025）· 森林與鳥類研究</a></li>
+        <li><a href="https://www.allaboutbirds.org/guide/Spotted_Owl/lifehistory" target="_blank" rel="noopener">Cornell · 斑點鴞的生活</a></li>
+        <li><a href="https://www.allaboutbirds.org/guide/Black-backed_Woodpecker/lifehistory" target="_blank" rel="noopener">Cornell · 黑背啄木鳥的生活</a></li>
+        <li><a href="https://www.eurekalert.org/multimedia/1064135" target="_blank" rel="noopener">錄音器照片與使用說明</a></li>
+      </ul>
+    </footer>
+  </main>
+</body>
+</html>

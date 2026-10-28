@@ -1,0 +1,30 @@
+html,body{margin:0;min-height:0;height:auto;overflow:hidden;background:#111c16}
+main{width:100%;max-width:none;min-height:0;margin:0;padding:8px 0 0}
+.page-heading,.skip-link,#story-text,#source-gallery,main>footer,.nojs-note,.figure-note{display:none!important}
+.stage{margin:0;width:100%}
+.narrative{min-height:0}
+.phase-navigation{margin:12px 0 0;padding-bottom:8px;gap:4px}
+.player-status{margin-bottom:0}
+/* The parent viewport sets this height. Iframe resize reports cannot feed it back. */
+@media(min-width:901px){
+ .story{display:grid;grid-template-columns:minmax(0,1fr) clamp(320px,29%,380px);gap:20px;align-items:start}
+ .stage{height:var(--embed-stage-height,300px);width:min(100%,calc(var(--embed-stage-height,300px) * 1.612903));aspect-ratio:auto;margin-inline:auto}
+ .narrative{padding:18px}
+ .narrative h2{font-size:24px;line-height:1.55}
+ .phase-meta{margin-bottom:10px}
+ .description{font-size:18px;line-height:1.75;margin-top:12px}
+ .detail{font-size:16px;line-height:1.75;margin-top:14px}
+ .transport{padding-top:10px}
+ .timeline-label{margin-top:7px}
+ input[type=range]{min-height:32px}
+ .source-actions{margin-top:9px;gap:8px 16px}
+ .player-status{margin-top:7px;min-height:24px}
+ .phase-navigation button{font-size:14px;min-height:44px;padding:8px 10px}
+}
+@media(max-width:900px){
+ main{padding:0}
+ .stage{height:auto;aspect-ratio:1000/620;margin:0}
+ .narrative{margin-top:19px;padding:21px 18px}
+ .phase-navigation{margin-top:17px}
+ .transport,.source-actions,.player-status,.frame-meta,#network-key{margin-inline:4px}
+}

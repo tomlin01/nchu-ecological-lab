@@ -1,0 +1,61 @@
+/* Shared catalog layout, resolved through the current light/dark theme. Whale imagery and player keep their original colors. */
+@media screen {
+  html { scrollbar-color: var(--theme-scroll) var(--theme-ground); }
+  body.whale-webpage {
+    --paper: var(--theme-surface);
+    --page: var(--theme-ground);
+    --ink: var(--theme-ink);
+    --dim: var(--theme-muted);
+    --green: var(--theme-accent);
+    --green-dark: var(--theme-ink);
+    --line: var(--theme-border);
+    --soft: var(--theme-surface-alt);
+    --web-ground: var(--theme-ground);
+    --web-surface: var(--theme-surface);
+    --web-exhibit: var(--theme-surface);
+    --web-ink: var(--theme-ink);
+    --web-muted: var(--theme-muted);
+    --web-accent: var(--theme-accent);
+    --web-button: var(--theme-button-bg);
+    --web-button-ink: var(--theme-button-ink);
+    background: var(--theme-ground);
+    color: var(--theme-ink);
+  }
+  .whale-webpage::before { opacity: .1; }
+  .story-stage { background: var(--theme-surface); color: var(--theme-ink); }
+  .story-stage::before { background: none; }
+  .scene-nav, .story-footer, .reading-tools { background: var(--theme-ground); color: var(--theme-ink); border-color: var(--theme-border); }
+  .story-stage a { color: var(--theme-accent); }
+  .story-stage a:hover { color: var(--theme-ink); }
+  .story-stage :focus-visible, .reading-tools :focus-visible { outline-color: var(--theme-focus); }
+  .story-stage ::selection { background: var(--theme-accent); color: var(--theme-on-accent); }
+  .scene-nav button, .page-controls button { color: var(--theme-accent); border-color: var(--theme-border); }
+  .scene-nav button[aria-current] { background: var(--theme-button-bg); color: var(--theme-button-ink); text-decoration-thickness: 2px; }
+  .scene-nav button:hover, .page-controls button:not(:disabled):hover { color: var(--theme-button-ink); background: var(--theme-button-bg); }
+  .page-controls button:disabled { color: var(--theme-muted); border-color: var(--theme-border); }
+  .story-scene { scrollbar-color: var(--theme-scroll) var(--theme-ground); background: var(--theme-surface); }
+  .story-scene :is(h1, h2, h3) { color: var(--theme-ink); text-shadow: none; }
+  .story-scene :is(.image-truth, .story-research figcaption, .research-context, .method-truth p, #source-block-18, .hybrid-caption, .hybrid-transcript .detail, .story-terms dd) { color: var(--theme-muted); }
+  .story-scene :is(.story-terms dt, .hybrid-transcript summary) { color: var(--theme-accent); }
+  .opening.is-active { gap: 22px 40px; }
+  .opening .image-truth { padding-top: 12px; border-top:0; }
+  .story-whale { object-fit: contain; background: transparent; }
+  .research-context, .final-grid > section, .method #source-block-18 { border-color: var(--theme-border); }
+  #full-reading { color: var(--theme-ink); background: var(--theme-ground); }
+  #full-reading :is(.site-header, .section-nav, .case-hero, .chapter, .site-footer) { background: var(--theme-surface); }
+  #full-reading :is(.case-pagination, .limitations) { background: var(--theme-surface-alt); }
+  #full-reading #results { --web-ink: var(--theme-ink); --web-muted: var(--theme-muted); --web-accent: var(--theme-accent); --web-surface: var(--theme-surface-alt); background: var(--theme-surface); color: var(--theme-ink); }
+  #full-reading :is(.hybrid-caption, .hybrid-transcript .detail) { color: var(--theme-muted); }
+  #full-reading .hybrid-transcript summary { color: var(--theme-accent); }
+  body.whale-webpage ::selection { background: var(--theme-accent); color: var(--theme-on-accent); }
+  .motion-controls button:hover { background: var(--theme-surface-hover); color: var(--theme-ink); }
+  #hybrid-frame,
+  #full-reading .research-original img,
+  #full-reading .motion-stage { background: var(--theme-media); }
+
+}
+@media screen and (max-width: 740px) {
+  .story-scene { border-bottom-color: var(--theme-border); }
+  .opening.is-active { display: block; }
+  .opening .image-truth { margin-top: 14px; }
+}

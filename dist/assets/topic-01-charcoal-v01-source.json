@@ -1,0 +1,13 @@
+{
+  "kind": "AI-generated conceptual illustration edit",
+  "generator": "built-in imagegen",
+  "source_image": "outputs/ecology-ai-rollout-assets/topic-01/topic-01-main-v02.png",
+  "source_sha256": "c7ff4ffe60577a358f50c6d7d98db60ddfb8d4fb2c103494fe78126e06793b34",
+  "edited_png": "outputs/ecology-ai-rollout/home-charcoal-v01/topic-01-charcoal-v01.png",
+  "edited_png_sha256": "8922208448fb8ef847b5c11059359e6e9716c625bb7179729256cf9cb16ad8ad",
+  "webp_sha256": "36c0ecc38dc6e521c59bd037b8f8908d3b8ecea2831ab5fd98fa81affffbe1c6",
+  "edit_scope": "Charcoal studio background and floor for an isolated homepage color preview",
+  "verification_note": "Visual comparison preserves the scene arrangement and underwater placement; generative editing is not a pixel-locked background replacement. Original remains unchanged.",
+  "prompt": "outputs/ecology-ai-rollout/home-charcoal-v01/background-edit-prompt.md",
+  "research_evidence": false
+}

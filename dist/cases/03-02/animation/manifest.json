@@ -1,0 +1,119 @@
+{
+  "case_id": "03-02",
+  "revision": "prototype-v01",
+  "status": "ready_for_user_review",
+  "title": "這段影片裡，牠吃了多久？",
+  "duration_seconds": 78,
+  "source_seconds": [
+    60,
+    74
+  ],
+  "candidate_union_seconds": 4.12,
+  "model_inference_run": false,
+  "human_confirmation": "pending",
+  "website_integrated": false,
+  "deployed": false,
+  "files": {
+    "README.md": {
+      "bytes": 408,
+      "sha256": "86724846c3296847357dd8800d82f4a5b40a81b7d9445fef0e7a4bb6a4f8f1ac"
+    },
+    "SOURCE.md": {
+      "bytes": 3513,
+      "sha256": "427091937cf5e813891f357e8a6634a5e6c6e65e7c22605b032ca505f6aec274"
+    },
+    "app.mjs": {
+      "bytes": 16121,
+      "sha256": "8b51a0ba47cd269a734c4d6bf7a9b98a9fceb61aa658b62e1998c0d46ad80c77"
+    },
+    "assets/display-data.json": {
+      "bytes": 23850,
+      "sha256": "292b0d0d9430fc20402e3da535eae044b91fd3a0b6a4e043aa7e4b0f979cee2c"
+    },
+    "assets/jay-clip.mp4": {
+      "bytes": 7445803,
+      "sha256": "28b721a0ff7034789619da3f3b1b7973f376a99ce334cd5e3b7209764ca723da"
+    },
+    "assets/jay-source-excerpt.mp4": {
+      "bytes": 2568976,
+      "sha256": "d0fa9187dac684df92157200cc7294c1d1208830728cfcbfc920b599e69c2867"
+    },
+    "assets/poster.jpg": {
+      "bytes": 205814,
+      "sha256": "6e3946f52252f3aa31a62637c86db4826b38cf3cc77635133893545d2abf1ab4"
+    },
+    "embed.css": {
+      "bytes": 1190,
+      "sha256": "298d7d6827377e92f214cfd1708e2965100a08b7cc9c206deb0a41c77e09a08c"
+    },
+    "embed.html": {
+      "bytes": 10257,
+      "sha256": "fa784fb4e670f8c65082d43d9943ad4b164635f2f748d810c8aee31e02f7341e"
+    },
+    "embed.js": {
+      "bytes": 3314,
+      "sha256": "20ecd71547acebeb22ffd3a2576d436061be0424c0064983eedacf0511534984"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 163200,
+      "sha256": "3d05e5b5ff3c2cc764155221613bc7c92c406092ee749af39911ca47c238c8e3"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 215824,
+      "sha256": "596c9393952637e6ccf93d23c39e26ae173d9781eca858ad4a1c41f4fd5149ef"
+    },
+    "index.html": {
+      "bytes": 10153,
+      "sha256": "cff7b18248faae938d3b9da0cdd6f779109d22d2132d05f6fcd6531384ac0866"
+    },
+    "model.mjs": {
+      "bytes": 5268,
+      "sha256": "83d144480b1a043218cb99dfe2c0c63287ebf00f0ef28fabca3de57c79ac1c1c"
+    },
+    "sources/Jay_Sample_HyperParameters.json": {
+      "bytes": 161,
+      "sha256": "494a778c05b6c7b0ae31167557ea1f48913db7a5db5da03a2a8894f435e9942c"
+    },
+    "sources/Jay_Sample_OutputEvents.csv": {
+      "bytes": 5150,
+      "sha256": "fe9236c241b49b7b2df63962f9a5562c9aca17b210be4a986e5da0fc2c0141bb"
+    },
+    "sources/Jay_Sample_YOLO.csv": {
+      "bytes": 234480,
+      "sha256": "6bf43af959600b78f8bcfd01d4ce74cdaa70ae7e282dc4d9ddf1cd8890d65794"
+    },
+    "style.css": {
+      "bytes": 15634,
+      "sha256": "f009e1cd75ed43f84918341611a106bb7fe8f2fe3d290f988742ad292c958819"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  },
+  "display_revision": "mobile-union-label-v01",
+  "display_amendment": {
+    "changed_files": [
+      "index.html",
+      "embed.html",
+      "style.css"
+    ],
+    "scope": "Add union legend at the result stage; core playback, source media and data unchanged",
+    "deployed": false
+  },
+  "copy_revision": {
+    "id": "topic-03-copy-v03",
+    "date": "2026-10-24T09:29:09.140263+00:00",
+    "scope": "Reader-facing text, matching glyphs and derived 03-04 movie; original source media, timing and model data retained",
+    "review": "work/ecology-ai-rollout/topic-03-copy-v03/review/browser-verification.json"
+  },
+  "animation_preservation_scope": "Original media and timing retained; visible text and font subsets revised with user authorization."
+}

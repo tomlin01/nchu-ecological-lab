@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="從灰鯨的研究影像出發，看身體長度與輪廓怎麼量，也看哪些影像需要先檢查。">
+  <title>鯨有多長，從照片怎麼量？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../../ui/theme-tokens.css"><link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.bundle.js" defer></script>
+<link rel="stylesheet" href="embed.css?v=player-theme-v01"><script src="embed.js?v=player-theme-v01" defer></script><link rel="stylesheet" href="../../../ui/media-embed.css" data-navigation-media="navigation-media-v01">
+<script src="../../../ui/media-embed.js" defer data-navigation-media="navigation-media-v01"></script>
+</head>
+<body data-case-id="04-02">
+  <a class="skip-link" href="#stage">跳至研究圖與動畫</a>
+  <main>
+    <header class="page-heading"><p class="series">AI × 生態研究 · 灰鯨影像量測</p><h1>鯨有多長，<br class="mobile-break">從照片怎麼量？</h1><p class="intro">先看清楚鯨的身體，再看研究如何找出輪廓、量長度，並檢查哪些影像適合使用。</p></header>
+
+    <section class="story" aria-label="灰鯨研究影像與身體量測示範">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="研究圖與動畫畫面；操作與說明在畫面外">
+          <img id="fallback-photo" src="assets/figure-2.png" alt="本次示範引用的研究圖版完整畫面，包含作者的影像與標記。">
+          <svg id="scene" viewBox="0 0 1000 650" role="img" aria-labelledby="scene-title scene-description" preserveAspectRatio="xMidYMid meet">
+            <title id="scene-title">從灰鯨影像到身體量測</title>
+            <desc id="scene-description">以作者研究圖版中的鯨體影像與標記，說明身體長度、輪廓、量測範圍及影像品質。這些圖版不是一段連續原始影片。</desc>
+            
+            <g id="image-workspace"></g>
+          </svg>
+        </div>
+        <div id="transport" class="transport js-only" role="group" aria-label="播放控制" hidden>
+          <div class="buttons"><button id="play-toggle" type="button" class="primary">播放動畫</button><button id="replay" type="button">重播</button><output id="clock" aria-label="播放時間">00:00</output><button id="expand-player" type="button">放大觀看</button></div>
+          <label class="timeline-label" for="timeline">播放進度</label><input id="timeline" type="range" min="0" max="1" step="0.1" value="0" aria-label="播放進度"><div class="frame-controls" role="group" aria-label="逐幀檢視"><button type="button" data-frame="-1" disabled>上一幀</button><button type="button" data-frame="1" disabled>下一幀</button><span>逐幀檢視 · 1/24 秒</span></div>
+        </div>
+        <div class="source-actions js-only" hidden><button id="open-source" type="button">查看研究原圖</button><div id="source-buttons" role="group" aria-label="選擇研究圖版"></div></div>
+        <p id="player-status" class="player-status" role="status">目前顯示完整研究圖。下方保留圖版、出處與文字。</p>
+        <p class="figure-note">畫面引用作者圖版說明方法；原圖與標記可一併查看，不代表本頁重新執行了辨識或量測。</p>
+      </div>
+
+      <aside class="narrative" aria-label="當前段落說明">
+        <div class="phase-meta"><span id="phase-position">研究圖預覽</span><span id="phase-time"></span></div>
+        <h2 id="phase-title">先看鯨的身體</h2>
+        <p id="phase-description" class="description">研究圖把鯨的影像與身體標記放在一起。先確認看見了哪些部位，再看如何量測。</p>
+        <p id="phase-detail" class="detail">說明與量測狀態留在畫面外，原圖可隨時放大查看。</p>
+        <section id="measurement-readout" class="measurement-readout" aria-live="polite" hidden><h3 id="measurement-title"></h3><p id="measurement-description"></p></section>
+        <div id="data-readout" class="data-readout" hidden><p id="data-title"></p><ol id="frame-times"></ol><p id="record-status"></p></div>
+      </aside>
+    </section>
+
+    <nav class="phase-navigation js-only" aria-label="動畫段落" hidden><button type="button" data-phase="0">先看灰鯨</button><button type="button" data-phase="1">挑選幀畫面</button><button type="button" data-phase="2">關鍵位置</button><button type="button" data-phase="3">沿背部量長</button><button type="button" data-phase="4">分出鯨體</button><button type="button" data-phase="5">體型的範圍</button><button type="button" data-phase="6">像素換公尺</button><button type="button" data-phase="7">回頭檢查</button><button type="button" data-phase="8">留下可核對的紀錄</button></nav>
+    <noscript><p class="nojs-note">目前顯示靜態研究圖。下方可閱讀完整文字，並查看各張原圖。</p></noscript>
+
+    <details id="story-text" open><summary>閱讀完整文字</summary><ol class="transcript"><li><h2>鏡頭裡的鯨，有多長？</h2><p>從上方看，可以看見灰鯨的背部、頭和尾。研究人員想從這些影像，描述牠的長度與身體形狀。</p><p class="detail">這是作者研究圖中的真實灰鯨影像，並非生成的鯨。</p></li><li><h2>先找到值得仔細看的畫面</h2><p>DeteX 從影片中找出含鯨的幀畫面，讓後面的量測從這些照片開始。</p><p class="detail">本片用作者已發表的影像示例說明；不是原始影片的逐秒重播，也沒有在本輪重跑 DeteX。</p></li><li><h2>找到頭、尾與背部的位置</h2><p>XtraX 找出吻端、尾鰭缺刻及背部等位置。這些點，讓後續計算知道要沿著哪裡量。</p><p class="detail">紅點是作者圖中的輸出。尾鰭缺刻是尾鰭中央的凹口，不是尾鰭最外側的尖端。</p></li><li><h2>長度沿著背部中線走</h2><p>把背部的位置連成平滑曲線，從吻端量到尾鰭缺刻，得到影像中的長度。</p><p class="detail">身體若有彎曲，不能直接把頭尾直線當成體長。紅線來自作者，移動光點只引導閱讀，並非新的量測。</p></li><li><h2>把鯨的身體和海水分開</h2><p>白色區域標出模型保留的鯨體範圍。後續才能在這個範圍裡，量出需要的身體區域。</p><p class="detail">這是作者呈現的分割結果，稱為遮罩。它仍要與原影像對照，確認有沒有把浪花或海水也算進來。</p></li><li><h2>看長度，也看軀幹有多寬</h2><p>這項灰鯨研究選取從頭端算起、體長 20% 到 70% 的軀幹區域。綠色範圍配合長度，用來計算體面積指數 BAI。</p><p class="detail">BAI 把區域面積相對於區段長度的平方來表示，方便比較體型。它不是體重，也不能單獨診斷健康。</p></li><li><h2>還需要相機與距離資訊</h2><p>照片上的長度以像素表示。要換成公尺，需要知道影像尺寸、鏡頭與感光元件規格，以及相機距海面的高度。</p><p class="detail">此段相機圖是幾何示意。這次沒有取得與圖中鯨匹配的完整尺度資料，因此不填入推測的公尺數。</p></li><li><h2>有了輸出，還要看它量對哪裡</h2><p>浪花、遮擋和不清楚的邊緣，都可能讓關鍵點或身體範圍出錯。研究人員需要回頭檢查每張結果。</p><p class="detail">接著比較作者提供的失敗與成功示例。它們是不同影像，不是同一張照片修正前後。</p></li><li><h2>量測結果，要能連回影像</h2><p>把照片、量測位置與相機資料一起保留，研究人員才有辦法重新核對，並進一步研究鯨的體型變化。</p><p class="detail">這支動畫解釋作者流程，沒有產生新的灰鯨量測結果。</p></li></ol><p class="evidence-note">影像中的像素長度還不能直接當作公尺。換算需要相機與拍攝高度等資訊；資料不齊全時，就保留為影像上的量測示範。</p></details>
+
+    <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title"><h2 id="source-gallery-title">研究原圖與出處</h2><div class="source-gallery-items"><figure><a href="assets/figure-2.png" target="_blank" rel="noopener"><img src="assets/figure-2.png" width="1421" height="2140" loading="lazy" alt="Bierlich 等（2024），Fig. 2，CC BY 4.0 完整圖版"></a><figcaption>Bierlich 等（2024），Fig. 2，CC BY 4.0。<a href="https://zenodo.org/records/20401245" target="_blank" rel="noopener">來源圖版</a></figcaption></figure><figure><a href="assets/figure-3.png" target="_blank" rel="noopener"><img src="assets/figure-3.png" width="1185" height="1043" loading="lazy" alt="Bierlich 等（2024），Fig. 3，CC BY 4.0 完整圖版"></a><figcaption>Bierlich 等（2024），Fig. 3，CC BY 4.0。<a href="https://zenodo.org/records/20401247" target="_blank" rel="noopener">來源圖版</a></figcaption></figure></div></section>
+
+    <footer><h2>研究與工具來源</h2><ul>
+      <li><a href="https://doi.org/10.1111/mms.13137" target="_blank" rel="noopener">Bierlich 等（2024）· 鯨體長與體況影像量測研究</a>：方法、作者圖版與影像品質比較。</li>
+      <li><a href="https://mmi.oregonstate.edu/centers-excellence/codex/software-hardware/detex-xtrax" target="_blank" rel="noopener">OSU DeteX／XtraX 工具頁</a>：幀畫面篩選與鯨體量測流程。</li>
+    </ul><div class="source-note"><p>影像與作者標記取自 Bierlich、Karki、Bird、Fern 與 Torres（2024），<i>Marine Mammal Science</i>，<a href="https://doi.org/10.1111/mms.13137">doi:10.1111/mms.13137</a> 的 Figure 2、3。CC BY 4.0；原圖副本由 Plazi／Zenodo 提供。動畫將圖中面板局部顯示、重新編排，完整圖版保留於上方。沒有用生成影像取代研究影像。</p>
+<p>Figure 2 用同一灰鯨影像說明作者處理流程；它不是可直接分析的原始相機檔。Figure 3 是作者選取的不同影像示例，不能視為同一影像修正前後。本輪沒有重新執行 DeteX 或 XtraX。</p>
+<details><summary>體長、BAI 與尺度資訊</summary><p>體長沿背部中線，從吻端量到尾鰭缺刻。這項灰鯨研究的 BAI 區域取體長20%–70%。用同一尺度表示這段軀幹的面積A與總體長L時：</p><p class="formula">BAI = 100 × A / (0.50 × L)²</p><p>面積與長度平方的尺度倍率會抵消，因此BAI也能用同一原始影像的像素資料計算。體長換成公尺則需要距離、相機與影像尺寸資訊。</p><p>本次取得的是排版後的研究圖，缺少配對的原始幀畫面、遮罩、中線與校正資料。沒有把應用程式缺少高度時的50 m預設當作實測值，也沒有從這些圖重算精確BAI。</p></details>
+<p>原研究測試的86張影像中，63張成功產生合適關鍵點與遮罩，23張失敗；自動與人工量測的主要比較使用這63張成功影像。這也是每張輸出都需要品管的原因。</p>
+<p>相機投影是另繪的幾何示意，不是實際飛行紀錄。作者圖版中的紅點、紅線、白色遮罩與綠色區域已存在於原圖；動畫不把它們稱為本輪的新模型輸出。<a href="SOURCE.md">來源紀錄</a> · <a href="LICENSES.md">素材與工具說明</a>。</p></div><p>這份動畫用研究圖說明量測方法。體況指標提供身體形態的線索，不能單靠一張影像判定鯨的健康。</p></footer>
+  </main>
+
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title" aria-describedby="source-caption">
+    <div class="dialog-heading"><h2 id="source-dialog-title">研究原圖與出處</h2><form method="dialog"><button id="close-source" type="submit" value="close">關閉原圖</button></form></div>
+    <figure class="dialog-photo"><img id="source-image" alt="目前所選研究圖版的完整畫面。"><figcaption id="source-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>

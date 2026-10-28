@@ -1,0 +1,50 @@
+/* Reader typography only. Each page reuses its existing Noto Sans TC subset. */
+@media screen {
+  html[data-reading-type="home"] { --reading-sans: "Atlas Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="01-01"] { --reading-sans: "HabitatSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="01-02"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="01-03"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="01-04"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="02-01"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="02-02"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="02-03"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="02-04"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="03-01"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="03-02"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="03-03"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="03-04"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="04-01"] { --reading-sans: "Case Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="04-02"] { --reading-sans: "Whale Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="04-03"] { --reading-sans: "FishWeb Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="07-01"] { --reading-sans: "HybridParentSans", "HabitatSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+
+  :where(html[data-reading-type]) body { line-height: 1.85; }
+  /* Heading-only priority handles older ID-scoped font shorthands without changing sizes. */
+  :where(html[data-reading-type]) :is(h1, h2, h3, summary) { font-family: var(--reading-sans) !important; }
+  :where(html[data-reading-type]) h1 { font-weight: 750 !important; line-height: 1.2; letter-spacing: -.035em; }
+  :where(html[data-reading-type]) h2 { font-weight: 700 !important; line-height: 1.35; letter-spacing: -.025em; }
+  :where(html[data-reading-type]) h3 { font-weight: 650 !important; line-height: 1.5; letter-spacing: -.015em; }
+  :where(html[data-reading-type]) .opening-lead { line-height: 1.85; }
+  :where(html[data-reading-type]) .source-definitions dt { font-weight: 650; }
+  :where(html[data-reading-type]) summary { font-weight: 600 !important; }
+  :where(html[data-reading-type]) :is(.trait-tools button, .nav-pages a[aria-current="page"], .method-heading .expand-action) { font-weight: 600; }
+  :where(html[data-reading-type]) :is(.reading-controls button, .method-link) { font-weight: 500; }
+  /* Covers use the established atlas display face; case reading styles stay unchanged. */
+  :where(html[data-reading-type="home"]) .topic-title { font-family: "Atlas Serif", "Songti TC", serif !important; font-weight: 500 !important; line-height: 1.34; letter-spacing: .005em; }
+  :where(html[data-reading-type="home"][data-theme="dark"]) .topic-title { font-weight: 550 !important; }
+  :where(html[data-reading-type="home"], html[data-reading-type="01-01"], html[data-reading-type="04-02"], html[data-reading-type="07-01"]) .brand { font-family: var(--reading-sans) !important; font-weight: 600; }
+  :where(html[data-reading-type="03-01"]) .result-row strong,
+  :where(html[data-reading-type="03-02"]) .research-metric > strong,
+  :where(html[data-reading-type="03-03"]) .study-row strong,
+  :where(html[data-reading-type="03-04"]) :is(.confidence-gate strong, .subset-accuracy > strong),
+  :where(html[data-reading-type="04-03"]) .study-value { font-family: var(--reading-sans); font-weight: 750; line-height: 1.2; letter-spacing: -.035em; }
+  :where(html[data-reading-type="04-03"]) .study-value span { font-weight: 500; letter-spacing: -.015em; }
+  :where(html[data-reading-type="04-03"]) .result-summary h3 { font-weight: 650; line-height: 1.55; }
+  :where(html[data-reading-type="02-02"]) .closing-line,
+  :where(html[data-reading-type="03-03"]) :is(.training-material > p, .learning-destination, .evaluation-overview > figcaption) { font-family: var(--reading-sans); font-weight: 600; }
+}
+
+/* Keep long selected cover titles inside the existing narrow landscape panel. */
+@media screen and (max-width: 700px) and (max-height: 560px) and (orientation: landscape) {
+  :where(html[data-reading-type="home"]) .field-stage.has-environment .topic-title { font-size: 3.6vw; }
+}

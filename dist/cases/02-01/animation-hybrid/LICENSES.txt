@@ -1,0 +1,5 @@
+Photos: WCS Camera Traps / NACTI / Snapshot Serengeti, CDLA-Permissive-1.0 as listed in the official pinned test_data README. Original JPEG bytes retained.
+See assets/official-image-credits.md and assets/cdla-permissive-1.0.html.
+SpeciesNet code and classifier bundle: Apache-2.0. Model weights are not included.
+GSAP 3.13.0: GreenSock standard license, https://gsap.com/standard-license/
+Fonts: Noto Sans TC and Noto Serif TC, see fonts/*-OFL.txt.

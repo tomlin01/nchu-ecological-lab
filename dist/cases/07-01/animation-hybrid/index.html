@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="從花前的一次停留，到植物與訪花者之間的連線。以照片與動畫，認識訪花觀察如何成為可核對的紀錄。">
+  <title>誰來過這朵花？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="app.bundle.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#stage">跳至照片與動畫</a>
+  <main>
+    <header class="page-heading">
+      <p class="series">AI × 生態研究 · ACS 訪花觀察</p>
+      <h1>誰來過這朵花？</h1>
+      <p class="intro">從花前的一次停留，到植物與訪花者之間的連線。</p>
+    </header>
+
+    <section class="story" aria-label="訪花照片與方法動畫">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="訪花照片或方法圖解；說明與控制在畫面外">
+          <img id="static-fallback" src="assets/figure-2.jpeg" alt="本段訪花觀察的來源照片；完整照片與來源說明可在下方閱讀。">
+          <svg id="scene" viewBox="0 0 1000 620" role="img" aria-labelledby="scene-title scene-description" preserveAspectRatio="xMidYMid meet">
+            <title id="scene-title">誰來過這朵花？</title>
+            <desc id="scene-description">從訪花照片開始，逐步說明觀察紀錄如何連起植物與訪花者。每一段的文字與來源都保留在畫面外及下方全文。</desc>
+            <g id="image-workspace"></g>
+          </svg>
+        </div>
+        <p id="frame-meta" class="frame-meta">訪花照片 · 可查看完整原圖與來源</p>
+        <div id="transport" class="transport js-only" role="group" aria-label="播放控制" hidden>
+          <div class="buttons">
+            <button id="play-toggle" class="primary" type="button">播放動畫</button>
+            <button id="replay" type="button">從頭重播</button>
+            <output id="clock" aria-label="播放時間">00:00</output>
+          </div>
+          <label class="timeline-label" for="timeline">播放進度</label>
+          <input id="timeline" type="range" min="0" max="1" step="0.1" value="0" aria-label="播放進度">
+        </div>
+        <div class="source-actions js-only" hidden>
+          <button id="open-source" type="button">查看這張原圖</button>
+          <a href="#source-gallery">照片與來源</a>
+        </div>
+        <p id="player-status" class="player-status" role="status">目前顯示靜態照片。下方保留完整文字與來源。</p>
+      </div>
+
+      <aside class="narrative" aria-label="目前段落說明">
+        <div class="phase-meta">
+          <span id="phase-position">開始觀察</span>
+          <span id="phase-time">00:00</span>
+        </div>
+        <h2 id="phase-title">先看花前發生了什麼</h2>
+        <p id="phase-description" class="description">花前的一次停留，能留下哪些線索？從照片開始，看看植物與訪花者的關係如何被記錄下來。</p>
+        <p id="phase-detail" class="detail">每一幀的畫面都要連同來源與拍攝方式閱讀。完整文字和照片可在下方查看。</p>
+      </aside>
+    </section>
+
+    <nav class="phase-navigation js-only" aria-label="動畫段落" hidden><button type="button" data-phase="0">花前的訪客</button><button type="button" data-phase="1">把相機留下</button><button type="button" data-phase="2">找出候選</button><button type="button" data-phase="3">回看影片</button><button type="button" data-phase="4">判斷接觸</button><button type="button" data-phase="5">怎麼記次數</button><button type="button" data-phase="6">留下紀錄</button><button type="button" data-phase="7">連成網絡</button><button type="button" data-phase="8">看見與漏掉</button></nav>
+    <noscript>
+      <p class="nojs-note">目前顯示靜態照片。完整文字與來源照片均可在下方閱讀，不需要啟動動畫。</p>
+    </noscript>
+    <details id="story-text" open>
+      <summary>閱讀完整文字</summary>
+      <ol class="transcript"><li><h2>誰來過這朵花？</h2><p>花前的來客，不只有蜜蜂。小型蠅類和其他動物，也可能在花上短暫停留。</p><p class="detail">先看作者保存的真實畫面。植物與訪客之間的關係，要從這些短暫接觸慢慢整理。</p></li><li><h2>把相機留在花前</h2><p>研究者把相機對準開花的植物，按排程錄下白天或夜間的活動。影片也留下植物和觀察時段。</p><p class="detail">這是作者的 ACS 設備與部署照片。相機定時錄影，不代表每株植物全天都受到監測。</p></li><li><h2>先找出畫面裡的動物</h2><p>YOLOv5 先找出疑似訪花動物的位置。這個模型使用單一「pollinator」類別，物種名稱仍要由專家判定。</p><p class="detail">圖中的框和分數是作者原有的輸出。本片沒有重新執行模型，也沒有新增偵測框。</p></li><li><h2>有框和沒框，都還要核對</h2><p>植物的一部分可能被誤認成動物，小型訪客也可能漏掉。研究者仍人工回看影片，核對候選和漏檢。</p><p class="detail">作者圖中的誤判與漏檢例子分別展示；這些研究圖不是一段連續影片。</p></li><li><h2>經過花旁，還不算一次訪花</h2><p>這篇研究要求訪客接觸花的生殖部位至少 1 秒，才記為互動。只是飛過，或接觸時間太短，都不算。</p><p class="detail">圖解只演示判定規則。接觸時間是教學設定，不是從前面的照片量出來的。</p></li><li><h2>一個訪客，可以接觸不只一朵花</h2><p>同一隻動物還在畫面內，接著訪問另一朵花，仍是一個訪客。訪客數和接觸的花朵數要分開記。</p><p class="detail">這裡示意一個訪客接觸兩朵花。不能把每一幀的偵測框都加成新的訪客。</p></li><li><h2>確認之後，留下可以回查的紀錄</h2><p>作者的公開資料中，這一列記下 Cistus monspeliensis 上的 Lasioglossum sp.：1 個訪客、接觸 2 朵花。</p><p class="detail">這是 CSV 第 3581 行的真實資料，含調查時段與地點；前面的圖解沒有重演這一列的原始影片。</p></li><li><h2>把記錄過的關係連起來</h2><p>左邊是植物，右邊是訪客。資料裡有這一組配對，兩者之間就留下一條線。多筆紀錄逐漸形成網絡。</p><p class="detail">這裡選出 3 種植物與 3 類訪客。蜥蜴的紀錄來自人工判讀影片，並不是這個昆蟲偵測器自動辨認的結果。</p></li><li><h2>網絡仍有看不見的部分</h2><p>小型動物和夜間訪客仍可能漏檢。訪花紀錄能告訴我們誰接觸了哪些花；授粉成效還需要另外量測。</p><p class="detail">這張子網絡只呈現選出的分類，不是整個群聚。每條線只表示有記錄；沒有連線，也不表示從不互動。</p></li></ol>
+    </details>
+    <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title">
+      <h2 id="source-gallery-title">照片與來源</h2>
+      <p class="source-gallery-intro">這裡保留完整原圖。可對照動畫中的局部畫面，閱讀每張照片的來源與使用說明。</p>
+      <div class="source-gallery-items"><figure><a href="assets/figure-1.jpeg" target="_blank" rel="noopener"><img src="assets/figure-1.jpeg" loading="lazy" alt="相機與研究現場，作者完整研究圖"></a><figcaption><h3>相機與研究現場</h3><p>完整 Figure 1 的嵌入影像，含設備、日夜部署與訪花範例。動畫依段落顯示局部；完整論文仍保留版面上的圖號與圖說。</p><p>Serra-Marin 等，2025。CC BY-NC 4.0；僅用於此非商業研究導讀。</p></figcaption></figure><figure><a href="assets/figure-2.jpeg" target="_blank" rel="noopener"><img src="assets/figure-2.jpeg" loading="lazy" alt="候選、誤判與漏檢，作者完整研究圖"></a><figcaption><h3>候選、誤判與漏檢</h3><p>完整 Figure 2 的嵌入影像。原有紅框、分數與紫色漏檢圈保留。本片沒有新增偵測或重演連續影片。</p><p>Serra-Marin 等，2025。CC BY-NC 4.0；僅用於此非商業研究導讀。</p></figcaption></figure></div>
+    </section>
+    <footer>
+      <h2>研究與資料來源</h2>
+      <ul class="source-links"><li><a href="https://doi.org/10.1111/2041-210X.70165" target="_blank" rel="noopener">原論文：Comparative assessment of automated and manual monitoring in comprehensive plant–pollinator communities</a></li><li><a href="https://digital.csic.es/handle/10261/420456" target="_blank" rel="noopener">作者機構典藏：完整論文與原圖圖說</a></li><li><a href="https://zenodo.org/records/17130777" target="_blank" rel="noopener">作者公開互動資料，CC BY 4.0</a></li><li><a href="https://zenodo.org/records/17130918" target="_blank" rel="noopener">作者公開 POLLINATOR 程式</a></li><li><a href="assets/cabrera_22_23_habitat.csv" target="_blank" rel="noopener">下載原始 CSV，檔案內容未修改</a></li><li><a href="assets/dataset-README.txt" target="_blank" rel="noopener">原始資料欄位說明</a></li><li><a href="assets/network-subset.json" target="_blank" rel="noopener">本片子網絡的篩選範圍與每條連線的來源列號</a></li><li>子網絡選出 Cistus monspeliensis、Cakile maritima、Rosmarinus officinalis 三種植物，以及 Lasioglossum sp.、Eupeodes corollae、Podarcis lilfordi 三類訪客。篩選 Method＝rpi，保留正訪客數的配對，跨公開資料中的 2022–2023 調查彙整；8 條線都可回查原始紀錄。</li>
+<li>所有連線等粗，只表示曾有記錄。這不是完整群聚、單次調查，或原論文經觀察時間與花量校正的加權網絡；沒有連線也不等於自然界不會發生互動。</li>
+<li>接觸判定與計數段落為獨立教學示意，未重建任何個別影片。照片中的動物與資料列沒有被宣稱是同一個體。</li><li>網絡中的蜥蜴 Podarcis lilfordi 來自人工判讀的錄影紀錄；蜥蜴未納入這個昆蟲偵測器的訓練，不代表本片重新執行了蜥蜴辨識。</li></ul>
+    </footer>
+  </main>
+
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title" aria-describedby="source-caption">
+    <div class="dialog-heading">
+      <h2 id="source-dialog-title">完整來源照片</h2>
+      <form method="dialog">
+        <button id="close-source" type="submit" value="close">關閉原圖</button>
+      </form>
+    </div>
+    <figure class="dialog-photo">
+      <img id="source-image" alt="目前這張照片的完整原圖。">
+      <figcaption id="source-caption"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

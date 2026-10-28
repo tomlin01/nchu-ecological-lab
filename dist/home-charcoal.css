@@ -1,0 +1,120 @@
+/* Local palette study: neutral charcoal gallery.
+   Color only. Composition, motion, image rendering and reading flow stay in their own files. */
+@media screen {
+  :root,
+  #home-story,
+  #home-story .topic-home {
+    --ground: #17191a;
+    --ink: #f0eee7;
+    --muted: #b9bdbb;
+    --accent: #cdbb95;
+    --link-ink: #f0eee7;
+    --surface: #202325;
+    --surface-hover: #2a2d30;
+    --scroll-thumb: #747978;
+    color-scheme: dark;
+  }
+
+  :root {
+    scrollbar-color: var(--scroll-thumb) var(--ground);
+    accent-color: var(--accent);
+  }
+  body { background: var(--ground); color: var(--ink); caret-color: var(--accent); }
+  ::selection { background: #cdbb95; color: #17191a; }
+
+  #home-story,
+  #home-story .topic-home,
+  .home-masthead-wrap,
+  .hero-art { background-color: var(--ground); }
+  #home-story .case-navigation { background-color: var(--surface); }
+  .plate-surface img[data-case-image="02-04"] { background-color: #17191a; }
+
+  .brand,
+  .directory-link,
+  .next-topic,
+  .back-to-top,
+  .topic-page-link,
+  .topic-overview-link,
+  .preview-name,
+  #home-image-sources summary { color: var(--ink); }
+  .topic-label,
+  .art-credit,
+  .topic-number,
+  .topic-pending,
+  .directory-intro,
+  .preview-copy,
+  .case-project,
+  .identification-footer,
+  .plate-surface figcaption { color: var(--muted); }
+  .case-link { color: var(--link-ink); }
+
+  .case-link:hover,
+  .case-link:focus-visible { background-color: var(--surface-hover); }
+  .case-link:hover .case-title,
+  .case-link:focus-visible .case-title,
+  .case-link.is-previewed .case-title,
+  .plate-position.is-selected figcaption,
+  .brand:hover,
+  .directory-link:hover,
+  .next-topic:hover,
+  .back-to-top:hover,
+  .topic-page-link:hover,
+  .topic-overview-link:hover,
+  .identification-footer a:hover,
+  #home-image-sources summary:hover,
+  #home-image-sources a:hover { color: var(--accent); }
+  :is(a, button, summary):focus-visible { outline-color: var(--accent); }
+  .skip-link { background-color: var(--ink); color: var(--ground); }
+
+  body.ecology-sidebar-ready {
+    --ecology-sidebar-ground: #202325;
+    --ecology-sidebar-ink: #f0eee7;
+    --ecology-sidebar-muted: #b9bdbb;
+    --ecology-sidebar-active: #cdbb95;
+  }
+  body.ecology-sidebar-ready .ecology-sidebar-ui::before { background-color: #17191a; }
+  body.ecology-sidebar-ready .ecology-sidebar-panel { scrollbar-color: #747978 #202325; }
+  body.ecology-sidebar-ready .ecology-sidebar-topic-button[aria-expanded="true"] { background-color: #2a2d30; }
+  body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic,
+  body.ecology-sidebar-ready .ecology-sidebar-case-link[aria-current="page"] {
+    background-color: var(--ecology-sidebar-active);
+    color: #17191a;
+  }
+  body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic .ecology-sidebar-number { color: #35383a; }
+  body.ecology-sidebar-ready .ecology-sidebar-toggle,
+  body.ecology-sidebar-ready .ecology-sidebar-close { background-color: #f0eee7; color: #17191a; }
+  body.ecology-sidebar-ready .ecology-sidebar-toggle:hover,
+  body.ecology-sidebar-ready .ecology-sidebar-close:hover { background-color: #dedcd5; }
+  body.ecology-sidebar-ready .ecology-sidebar-ui :focus-visible { outline-color: #cdbb95; }
+  body.ecology-sidebar-ready .ecology-sidebar-toggle:focus-visible,
+  body.ecology-sidebar-ready .ecology-sidebar-close:focus-visible,
+  body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic:focus-visible,
+  body.ecology-sidebar-ready .ecology-sidebar-case-link[aria-current="page"]:focus-visible { outline-color: #514637; }
+}
+
+/* Keep the existing mobile treatment: only the hovered/focused case is highlighted. */
+@media screen and (max-width: 920px) {
+  .case-link.is-previewed .case-title { color: var(--link-ink); }
+  .case-link:hover .case-title,
+  .case-link:focus-visible .case-title { color: var(--accent); }
+}
+
+/* Dark preview tokens must not turn print backgrounds dark or retain green text. */
+@media print {
+  :root,
+  #home-story,
+  #home-story .topic-home {
+    --ground: #fff;
+    --ink: #242829;
+    --muted: #505455;
+    --accent: #514637;
+    --link-ink: #242829;
+    color-scheme: light;
+  }
+  body,
+  #home-story,
+  .home-masthead-wrap { background-color: #fff; color: var(--ink); }
+  #home-story .topic-home,
+  #home-story .case-navigation { background: none; }
+  .art-credit { color: var(--muted); }
+}

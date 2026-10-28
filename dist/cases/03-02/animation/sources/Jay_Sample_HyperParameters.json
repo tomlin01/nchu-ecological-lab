@@ -1,0 +1,9 @@
+{
+    "Eat": {
+        "max_age": 21.0,
+        "min_hits": 1.0,
+        "iou_threshold": 0.2,
+        "min_duration": 1.0,
+        "YOLO_Threshold": 0.1
+    }
+}

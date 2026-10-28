@@ -1,0 +1,377 @@
+/* Match the site's interface surfaces; source images, footage and research plot pixels stay intact. */
+html[data-animation-theme] {
+  --ground: var(--theme-ground);
+  --surface: var(--theme-surface);
+  --deep: var(--theme-surface-alt);
+  --ink: var(--theme-ink);
+  --muted: var(--theme-muted);
+  --accent: var(--theme-accent);
+  --link: var(--theme-accent);
+  --line: var(--theme-border);
+  --selected: var(--theme-selected);
+  --on-accent: var(--theme-on-accent);
+  --cyan: #236a78;
+  --green: #356b4d;
+  --mint: #356b4d;
+  --amber: #8a5b19;
+  color-scheme: light;
+  background: var(--ground);
+  color: var(--ink);
+}
+html[data-animation-theme="dark"] {
+  --cyan: #9edce0;
+  --green: #b5d9ae;
+  --mint: #b5c9a8;
+  --amber: #edc687;
+  color-scheme: dark;
+}
+html[data-animation-theme] body { background: var(--ground) !important; color: var(--ink); }
+html[data-animation-theme] :focus-visible { outline-color: var(--theme-focus); }
+html[data-animation-theme] ::selection { background: var(--theme-selection); color: var(--theme-selection-ink); }
+html[data-animation-theme] input[type="range"] { accent-color: var(--accent); }
+/* A rendered MP4 keeps its scene colors. Only its surrounding surface follows the host. */
+html[data-animation-native="01-02"] #method-video,
+html[data-animation-native="01-02"] .media-expand-stage.is-media-expanded {
+  background: var(--theme-surface) !important;
+}
+@media print {
+  html[data-animation-theme], html[data-animation-theme="dark"] {
+    --ground: #fff; --surface: #fff; --deep: #fff; --ink: #242829;
+    --muted: #50585a; --accent: #465f70; --link: #465f70; --line: #929c9d;
+    background: #fff; color-scheme: light;
+  }
+}
+
+/* Legacy presentation colors only. Load after each player's style/embed sheets.
+   No geometry, font, visibility, timing, raster-image or video-pixel changes.
+   Attribute palette selectors also apply to SVG nodes created after startup. */
+html[data-animation-case="01-03"][data-animation-theme] .scene-scale-hud {
+  background: var(--theme-surface) !important;
+  color: var(--theme-ink) !important;
+}
+html[data-animation-case="01-03"][data-animation-theme] .scene-scale-bar {
+  border-top-color: var(--amber) !important;
+}
+html[data-animation-case="01-03"][data-animation-theme] .scene-scale-bar > span {
+  background: var(--amber) !important;
+}
+@media screen {
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]),
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) body {
+    background-color: var(--theme-ground);
+    color: var(--theme-ink);
+  }
+
+  /* Legacy generic hover rules also covered retry/replay controls. */
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) button:hover:not(:disabled) {
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-ink);
+    border-color: var(--theme-button-bg);
+  }
+
+  /* Secondary transport/source controls had fixed dark fills. */
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) :is(.transport button, .playback button, .source-actions button, #open-source, #source-buttons button) {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-ink);
+    border-color: var(--theme-border);
+  }
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) :is(button.primary, #close-source, .skip-link) {
+    background-color: var(--theme-accent);
+    color: var(--theme-on-accent);
+    border-color: var(--theme-accent);
+  }
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) :is(.transport button, .playback button, .source-actions button, #open-source, #close-source, #source-buttons button):hover:not(:disabled) {
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-ink);
+    border-color: var(--theme-button-bg);
+  }
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) :is(.phase-navigation button, .chapter-navigation button):hover {
+    background-color: var(--theme-surface-hover);
+    color: var(--theme-ink);
+  }
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) :is(.phase-navigation button[aria-current="step"], .chapter-navigation button[aria-current="step"]) {
+    background-color: var(--theme-selected);
+    color: var(--theme-ink);
+  }
+  html[data-animation-theme]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) #source-buttons :is(button[aria-pressed="true"], button[aria-current="true"], button[data-current="true"]) {
+    background-color: var(--theme-accent);
+    color: var(--theme-on-accent);
+  }
+
+  /* Existing nonstandard accent aliases retain their meaning with readable light tones. */
+  html[data-animation-theme="light"]:is([data-animation-case="01-01"],[data-animation-case="01-03"],[data-animation-case="01-04"],[data-animation-case="02-01"],[data-animation-case="02-02"],[data-animation-case="02-03"],[data-animation-case="02-04"]) {
+    --cyan: #246675;
+    --green: #385f43;
+    --amber: #805b22;
+    --mint: #3a6652;
+    --legacy-teal-ink: #286777;
+    --legacy-green-ink: #3c6748;
+    --legacy-amber-ink: #7a5b24;
+  }
+
+  /* 01-01: the independent teaching drawing, not the author-frame image groups. */
+  html[data-animation-theme="light"][data-animation-case="01-01"] .measurement-readout { background-color: var(--theme-surface-alt); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene rect[fill="#10231a"] {
+    fill: var(--theme-surface);
+    stroke: var(--theme-border);
+  }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene :is([stroke="#587561"], [stroke="#93b6a6"]) { stroke: #557b65; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene :is([stroke="#a4bd8e"], [stroke="#a5d3c0"]) { stroke: #4c7659; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene [stroke="#d8e2cf"] { stroke: var(--theme-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene circle[fill="#c7e6d8"] { fill: #477a61; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene circle[fill="#14271c"] { fill: var(--theme-surface); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene [stroke="#e1c181"] { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #teaching-scene circle[fill="#eed6a5"] { fill: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene :is([stroke="#bcd9c9"], [stroke="#c8dac7"], [stroke="#a9d3c1"]) { stroke: #426b55; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [stroke="#d6c28c"] { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [stroke="#e1c181"] { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene circle[fill="#e1c181"] { fill: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [fill="#355a46"] { fill: #c1d6c7; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [fill="#2d4d3a"] { fill: #cbd9ce; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [fill="#0c1b12"] { fill: #e6ede4; }
+  html[data-animation-theme="light"][data-animation-case="01-01"] #architecture-scene [fill="#3b5744"] { fill: #b6c8ba; }
+
+  /* 01-03: transparent WebGL keeps its materials. Only the CSS surface and HTML
+     annotation labels change. The unclassed matte is identified by its exact
+     authored color, not by a broad div selector. */
+  html[data-animation-theme]:is([data-animation-case="01-03"]) :is(.stage, .caption-panel, .playback) { background-color: var(--theme-surface); }
+  html[data-animation-theme="light"][data-animation-case="01-03"] :is(.stage-label, .data-view, .sensor-note, .stage-bottom span) {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-ink);
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .stage-bottom { color: var(--theme-muted); }
+  html[data-animation-theme][data-animation-case="01-03"] #scene-host > div:is([style*="background: rgb(11, 32, 44)"], [style*="background: #0b202c"]) {
+    background-color: var(--theme-surface) !important;
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .scene-annotations > div {
+    color: var(--theme-ink) !important;
+    background-color: var(--theme-surface) !important;
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .scene-annotations > div:is([style*="color: rgb(236, 200, 141)"], [style*="color: #ecc88d"]) {
+    color: var(--legacy-amber-ink) !important;
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .scene-annotations line[stroke="#708b96"] { stroke: var(--theme-muted); }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .score-panel [data-revealed="false"] { color: var(--theme-muted); }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .score-panel tr.is-winner {
+    background-color: #dce8db;
+    color: var(--legacy-green-ink);
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .render-notice {
+    background-color: #eee6d5;
+    color: var(--legacy-amber-ink);
+  }
+  html[data-animation-theme="light"][data-animation-case="01-03"] .phase-navigation button span { color: var(--theme-muted); }
+  html[data-animation-theme]:is([data-animation-case="01-03"]) .source-dialog button {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-ink);
+    border-color: var(--theme-border);
+  }
+
+  /* 01-04: photo matte only; source pixels and detection outlines stay intact. */
+  html[data-animation-theme="light"][data-animation-case="01-04"] #scene rect[fill="#111912"] { fill: var(--theme-surface); }
+
+  /* 02-01: the connector between photo views is separate from detection boxes. */
+  html[data-animation-theme]:is([data-animation-case="02-01"]) .record-button {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-ink);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-01"]) .record-button:hover :is(.record-result, .record-status) { color: var(--theme-button-ink); }
+  /* The original connector group has opacity .55; keep it and use a darker light-theme stroke. */
+  html[data-animation-theme="light"][data-animation-case="02-01"] #paired-photo-group g[stroke="#c8c49d"] { stroke: #3d2b10; }
+
+  /* 02-02: HTML surround only. No rule targets video/image pixels or poster. */
+  html[data-animation-theme]:is([data-animation-case="02-02"]) {
+    --bg: var(--theme-ground);
+    --panel: var(--theme-surface);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-02"]) :is(.player-tools button, .sound-buttons button, .forest-tabs button) {
+    color: var(--theme-ink);
+    border-color: var(--theme-border);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-02"]) #video-toggle {
+    background-color: var(--green);
+    color: var(--theme-on-accent);
+    border-color: var(--green);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-02"]) :is(#video-toggle, .player-tools button, .sound-buttons button, .forest-tabs button):hover:not(:disabled) {
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-ink);
+    border-color: var(--theme-button-bg);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-02"]) :is(#sound-toggle[aria-pressed="true"], .forest-tabs button[aria-selected="true"]) {
+    background-color: var(--theme-selected);
+    color: var(--theme-ink);
+    border-color: var(--theme-border);
+  }
+
+  /* 02-03: the ocean gradient and instructional cards are authored vector
+     surfaces. NOAA, spectrogram and paper images are separate SVG images. */
+  html[data-animation-theme]:is([data-animation-case="02-03"]) #sound-toggle {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-link, var(--theme-accent));
+  }
+  html[data-animation-theme]:is([data-animation-case="02-03"]) #sound-toggle[aria-pressed="false"] {
+    background-color: var(--theme-surface-alt);
+    color: var(--theme-muted);
+  }
+  html[data-animation-theme]:is([data-animation-case="02-03"]) #sound-toggle:hover {
+    background-color: var(--theme-button-bg);
+    color: var(--theme-button-ink);
+  }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #deep-water stop[stop-color="#132e43"] { stop-color: #e2edf0; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #deep-water stop[stop-color="#06131e"] { stop-color: #cfdee4; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #scene text[fill="#edf5f4"] { fill: var(--theme-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #scene text[fill="#bbcad0"] { fill: var(--theme-muted); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #scene text:is([fill="#a4d9d8"], [fill="#9edace"]) { fill: var(--legacy-teal-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #scene text:is([fill="#ead69b"], [fill="#dfbd87"], [fill="#f1d58d"]) { fill: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #scene text[fill="#b6dfb9"] { fill: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #visual-evidence path[fill="#173a4c"] { fill: #d7e6eb; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #visual-evidence :is([stroke="#95cdd0"], [stroke="#a4d9d8"]) { stroke: #467583; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #visual-link { stroke: var(--legacy-teal-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #acoustic-link { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #encounters-group circle[fill="#0c2433"] { fill: var(--theme-surface); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #encounters-group path[stroke="#b6dfb9"] { stroke: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #paired-evidence circle[fill="#b6dfb9"] { fill: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #learning-group rect:is([fill="#173344"], [fill="#193b4d"], [fill="#203f50"]) { fill: #e0e9eb; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #learning-group :is([stroke="#8bc4c9"], [stroke="#9bbfc5"], [stroke="#a5c1c8"], [stroke="#85b9c0"]) { stroke: #507885; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #learning-group [stroke="#d9c58f"] { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #flow-arrow path[fill="#7eb9bf"] { fill: var(--legacy-teal-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #windows-group rect:is([fill="#163344"], [fill="#112633"]) { fill: var(--theme-surface); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #windows-group rect[fill="#24515e"] { fill: #d4e6ea; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #windows-group rect[fill="#394437"] { fill: #eee3c9; }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #windows-group rect[stroke="#a4d9d8"] { stroke: var(--legacy-teal-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #windows-group rect[stroke="#f1d58d"] { stroke: var(--legacy-amber-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #score-summary rect[fill="#183341"] {
+    fill: var(--theme-surface-alt);
+    stroke: var(--theme-border);
+  }
+  html[data-animation-theme="light"][data-animation-case="02-03"] #spectrum-group path[stroke="#d0dddd"] { stroke: var(--theme-muted); }
+
+  /* 02-04: discrete candidate/background palettes preserve selection states;
+     anatomy material colors, source photos and source graph colors are intact. */
+  html[data-animation-theme="light"][data-animation-case="02-04"] #scene text[fill="#edf3ef"] { fill: var(--theme-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #scene text[fill="#becdd0"] { fill: var(--theme-muted); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #scene text[fill="#c5dbc0"] { fill: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[fill="#163039"] { fill: var(--theme-surface); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[fill="#25483f"] { fill: #dce8df; }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[stroke="#c5dbc0"] { stroke: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[fill="#2b4d54"] { fill: #c7d3d1; }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[data-score][fill="#83b6ab"] { fill: #477e70; }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #candidate-group rect[data-score][fill="#c5dbc0"] { fill: var(--legacy-green-ink); }
+  html[data-animation-theme="light"][data-animation-case="02-04"] #teaching-chain > rect[fill="#112b31"] {
+    fill: var(--theme-surface);
+    stroke: var(--theme-border);
+  }
+}
+
+
+/* 03-01 presentation colors only. Load after the player and shared theme styles.
+   CSS overrides SVG presentation attributes immediately, including while paused.
+   No image, crop, opacity, geometry, font-size or playback rules are changed. */
+html[data-animation-case="03-01"][data-animation-theme] {
+  --miewid-control-ground: var(--theme-surface-alt, var(--surface));
+  --miewid-selected-ground: var(--theme-selected, var(--surface));
+  --miewid-method-ground: #e2ebe4;
+  --miewid-method-line: #527060;
+  --miewid-method-accent: #4a6b52;
+  --miewid-feature-fill: #67866c;
+  --miewid-guide-line: #53776b;
+  --miewid-record-ground: #e3ebe5;
+  --miewid-record-accent: #3d6750;
+}
+html[data-animation-case="03-01"][data-animation-theme="light"] {
+  color-scheme: light;
+}
+html[data-animation-case="03-01"][data-animation-theme="dark"] {
+  color-scheme: dark;
+  --miewid-method-ground: #244443;
+  --miewid-method-line: #8faf9e;
+  --miewid-method-accent: #d2dfb3;
+  --miewid-feature-fill: #a9bfa9;
+  --miewid-guide-line: #9eb9b2;
+  --miewid-record-ground: #24433b;
+  --miewid-record-accent: #d2dfb3;
+}
+
+/* Standard controls and the source-label readout. */
+html[data-animation-case="03-01"][data-animation-theme] button {
+  background: var(--miewid-control-ground);
+  color: var(--ink);
+}
+html[data-animation-case="03-01"][data-animation-theme] .phase-navigation button {
+  background: transparent;
+  color: var(--muted);
+}
+html[data-animation-case="03-01"][data-animation-theme] .phase-navigation button[aria-current="step"] {
+  background: var(--miewid-selected-ground);
+  color: var(--ink);
+}
+html[data-animation-case="03-01"][data-animation-theme] :is(button.primary, #close-source, .media-expand-close, [data-media-expand]) {
+  background: var(--theme-button-bg, var(--accent));
+  color: var(--theme-button-ink, var(--deep));
+}
+html[data-animation-case="03-01"][data-animation-theme] button:hover:not(:disabled) {
+  background: var(--theme-button-bg, var(--ink));
+  color: var(--theme-button-ink, var(--deep));
+}
+html[data-animation-case="03-01"][data-animation-theme] .identity-readout {
+  background: var(--miewid-record-ground);
+  color: var(--ink);
+}
+html[data-animation-case="03-01"][data-animation-theme] :is(#source-dialog, .media-expand-stage.is-media-expanded > .media-expand-toolbar) {
+  background: var(--surface);
+  color: var(--ink);
+}
+html[data-animation-case="03-01"][data-animation-theme] .media-expand-stage.is-media-expanded {
+  background: var(--ground);
+  color: var(--ink);
+}
+
+/* Photo captions are outside the image viewports; the source pixels stay intact. */
+html[data-animation-case="03-01"][data-animation-theme] #photo-workspace > g[data-panel] > text[fill="#c5d4ce"] {
+  fill: var(--muted);
+}
+
+/* Method/identity illustrations only. Keep the existing green semantic family. */
+html[data-animation-case="03-01"][data-animation-theme] #method-workspace text[fill="#eef2e8"] {
+  fill: var(--ink);
+}
+html[data-animation-case="03-01"][data-animation-theme] #encoder-illustration text[fill="#bccdcc"] {
+  fill: var(--muted);
+}
+html[data-animation-case="03-01"][data-animation-theme] #encoder-illustration > rect[fill="#244443"] {
+  fill: var(--miewid-method-ground);
+  stroke: var(--miewid-method-line);
+}
+html[data-animation-case="03-01"][data-animation-theme] #encoder-illustration path[stroke="#8faf9e"],
+html[data-animation-case="03-01"][data-animation-theme] #source-record-connection path[stroke="#8faf9e"] {
+  stroke: var(--miewid-method-line);
+}
+html[data-animation-case="03-01"][data-animation-theme] #encoder-illustration > rect[fill="#d2dfb3"] {
+  fill: var(--miewid-method-accent);
+}
+html[data-animation-case="03-01"][data-animation-theme] #encoder-illustration g > rect[fill="#a9bfa9"] {
+  fill: var(--miewid-feature-fill);
+}
+html[data-animation-case="03-01"][data-animation-theme] #source-record-connection > rect[fill="#24433b"] {
+  fill: var(--miewid-record-ground);
+}
+html[data-animation-case="03-01"][data-animation-theme] #source-record-connection text[fill="#d2dfb3"] {
+  fill: var(--miewid-record-accent);
+}
+
+/* Adapt only the connector outside the photos. The bright ROI boxes keep their
+   original stroke so source-photo contrast and annotation meaning are unchanged. */
+html[data-animation-case="03-01"][data-animation-theme] #guide-workspace > path[stroke="#9eb9b2"] {
+  stroke: var(--miewid-guide-line);
+}
+
+/* The original print stylesheet shows source photos and text, not the live SVG. */
+@media print {
+  html[data-animation-case="03-01"][data-animation-theme] {
+    color-scheme: light;
+    --miewid-control-ground: #eef0eb;
+    --miewid-selected-ground: #dce3e6;
+    --miewid-record-ground: #e3ebe5;
+  }
+}

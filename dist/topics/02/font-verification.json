@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "fonts": {
+    "Sans": {
+      "file": "fonts/topic-sans.woff2",
+      "sha256": "41aeceeef6a15001576302ef08659fb478d280e80b8eda80e4e0e916777d54b5",
+      "required_codepoints": 347,
+      "missing": []
+    },
+    "Serif": {
+      "file": "fonts/topic-serif.woff2",
+      "sha256": "fdc1257c39fed42ed28e6ed7368277693811d1f5e8528b1ff0334f1f1af137eb",
+      "required_codepoints": 347,
+      "missing": []
+    }
+  },
+  "existing_ui_font_unchanged": true,
+  "ui_font_sha256": "bc195ac33082d61ee835a2dadd0b117d3dbc42eaf54da9c14262788347731998"
+}

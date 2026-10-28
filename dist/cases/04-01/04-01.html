@@ -1,0 +1,87 @@
+<!doctype html>
+<html data-reading-type="04-01" lang="zh-Hant" data-theme="light">
+<head>
+  <script src="../../ui/theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>照片裡的葉子，怎麼量出大小？｜AI × 生態研究</title>
+  <meta name="description" content="從一張真實秋海棠標本，看葉片輪廓與尺規如何連到量測，以及為什麼仍要回到原照檢查。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <link rel="stylesheet" href="../../ui/sidebar.css">
+  <link rel="stylesheet" href="../../ui/media-expand.css">
+  <link rel="stylesheet" href="../../ui/catalog-theme.css">
+  <link rel="stylesheet" href="case.css">
+  <link rel="stylesheet" href="../../ui/theme-controls.css">
+  <script src="case.js" defer></script>
+  <script src="scene.js" defer></script>
+<link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#main-content">跳至內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-04">返回主題清單</a><span class="case-name">AI × 生態研究 · LeafMachine2</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">看標本</a><a href="#roles" data-page="roles">怎麼量大小</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">還要檢查什麼</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" hidden aria-pressed="false">連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="main-content">
+    <section id="question" class="chapter" data-active="true" tabindex="-1" aria-labelledby="question-title">
+      <div id="leaf-study" class="leaf-study" data-view="full" data-overlay="false">
+        <div class="opening-copy">
+          <h1 id="question-title">照片裡的葉子，<br>怎麼量出大小？</h1>
+          <p>這張秋海棠標本，把枝葉和採集資訊一起留了下來。照片可以放大，葉子卻沒有變大；要知道實際尺寸，得看同一張照片上的尺規。</p>
+          <div id="leaf-tools" class="leaf-tools" role="group" aria-label="查看標本與作者結果" hidden><button id="leaf-zoom" class="primary-action" type="button" disabled aria-pressed="false" aria-controls="leaf-camera">看這片葉子</button><button id="leaf-overlay" type="button" disabled aria-pressed="false" aria-controls="leaf-author-layer">看程式圈的範圍</button><button id="leaf-reset" type="button" disabled>回到完整標本</button></div>
+          <p id="leaf-status" class="leaf-status" role="status" aria-live="polite">從最下方這片葉子開始。原照上方的尺規，是大小的參照。</p>
+          <button id="leaf-load-retry" class="text-action" type="button" hidden>重新載入局部對照</button>
+          <p class="scope-note">原照與作者公布的結果分開看。本頁沒有重新執行模型，也不提供這片葉子的長度或面積。</p>
+          <a class="method-link" href="#roles">照片上的距離，怎麼換成公分？</a>
+        </div>
+        <div class="leaf-visual">
+          <figure id="leaf-map" class="specimen-map" hidden><svg viewBox="0 0 800 1200" role="img" aria-label="整張標本中的局部查看位置"><image data-leaf-image="specimen" href="animation/assets/specimen.jpg" x="0" y="0" width="800" height="1200"/><rect id="leaf-map-region" x="195" y="785" width="370" height="305" class="view-region"/></svg><figcaption>仍是這張標本，<br>框內是現在看的位置。</figcaption></figure>
+          <figure class="specimen-main">
+            <svg id="leaf-camera" viewBox="0 0 800 1200" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="leaf-image-title leaf-image-description">
+              <title id="leaf-image-title">紐約植物園秋海棠標本 NY01212184</title><desc id="leaf-image-description">完整標本、原照尺規與最下方的葉片。查看局部時，圖片與1公分的解說參照使用相同的縮放比例。</desc>
+              <defs><clipPath id="web-leaf-mask" clipPathUnits="userSpaceOnUse"><path id="web-leaf-mask-path"/></clipPath></defs>
+              <image data-leaf-image="specimen" href="animation/assets/specimen.jpg" x="0" y="0" width="800" height="1200"/>
+              <image id="leaf-author-layer" data-leaf-image="overlay" href="animation/assets/author-overlay.png" x="0" y="0" width="800" height="1200" clip-path="url(#web-leaf-mask)" opacity="0" aria-hidden="true"/>
+              <rect id="leaf-locator" x="195" y="785" width="370" height="305" class="view-region" visibility="hidden"/>
+              <g id="leaf-reference" visibility="hidden" aria-hidden="true"><path id="leaf-reference-line" class="reference-line" d="M300 1045v-5m0 3h26.7m0-3v5"/><text id="leaf-reference-label" class="reference-label" x="313.35" y="1066" text-anchor="middle">1 cm</text></g>
+            </svg>
+            <figcaption><span id="leaf-view-caption">完整標本 · NY01212184 · <i lang="la">Begonia glabra</i></span><a href="#sources">影像與授權</a></figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="opening-note">圖片放大時，代表 1 cm 的線也一起變長；它不是螢幕上的實體 1 cm。這條線依原照刻度人工標示，只用來說明尺度。</p>
+      <noscript><p class="quiet-note">局部切換需要 JavaScript。下頁仍可直接比較原照、作者結果與尺規。</p></noscript>
+    </section>
+
+    <section id="roles" class="chapter" data-active="false" tabindex="-1" aria-labelledby="roles-title">
+      <header class="chapter-heading"><h2 id="roles-title">先找對葉子，再看尺規</h2><p>電腦先找出葉片、尺規和標籤，再圈出葉片的範圍。輪廓決定量哪裡，尺規才把照片裡的距離連到公分。</p></header>
+      <div class="scale-study">
+        <figure class="ruler-figure"><svg viewBox="185 43 85 65" preserveAspectRatio="xMidYMid meet" role="img" aria-label="同一張原照的2至3公分刻度，金線是人工解說參照"><image data-leaf-image="specimen" href="animation/assets/specimen.jpg" x="0" y="0" width="800" height="1200"/><path id="source-ruler-reference" d="M212.5 58v-8m0 4h26.7m0-4v8" class="reference-line"/></svg><figcaption>同一張原照上的 2 至 3 cm。金線依這段刻度標示。</figcaption></figure>
+        <div><h3>放大改變畫面，不改變葉子</h3><p>尺規和葉子在同一張照片裡。兩者一起放大，對應關係才不會變；不能拿另一張圖片上的換算數字直接套用。</p><details class="technical-note"><summary>本頁的 1 cm 參照怎麼來？</summary><p>在這份 800×1200 顯示副本中，原始照片中 2 至 3 cm 的區間約跨 26.7 畫素，這是人工讀取的解說參照。作者另一張品質檢查（QC）圖中的 CF 123.06，對應的是不同解析度或處理條件，本頁沒有拿它校正縮圖。</p><p>作者疊圖以相同比例對到原照，只為對齊畫面；這個顯示比例也不是公分換算係數。</p></details></div>
+      </div>
+      <section class="photo-review" aria-labelledby="photo-review-title"><div class="review-heading"><h3 id="photo-review-title">回到照片看一眼</h3><p>中間這片大葉，在這份作者結果中未見獨立輪廓。尺規能換單位，卻不能替缺少的輪廓補出答案。</p></div><div class="quality-pair"><figure><svg viewBox="255 470 350 270" role="img" aria-label="原照中間的大褐葉"><image data-leaf-image="specimen" href="animation/assets/specimen.jpg" x="0" y="0" width="800" height="1200"/></svg><figcaption>原照裡的葉子</figcaption></figure><figure><svg viewBox="255 470 350 270" role="img" aria-label="同一位置的作者輸出，這片大葉未見獨立輪廓"><image data-leaf-image="overlay" href="animation/assets/author-overlay.png" x="0" y="0" width="800" height="1200"/></svg><figcaption>作者公布的這份結果</figcaption></figure></div><p class="source-note">兩邊是同一張標本、同一位置。這裡只指出可見差異，不判定缺漏原因，也沒有修正作者的模型。</p></section>
+    </section>
+
+    <section id="method" class="chapter" data-active="false" tabindex="-1" aria-labelledby="method-title">
+      <header class="method-heading"><div><h2 id="method-title">看電腦怎麼量葉子</h2><p>看葉片如何被找出來、尺規如何提供參照，再回到原照檢查。這支動畫沒有聲音。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface"><p class="player-hint">84 秒，可暫停、選擇段落，或在原頁面放大。</p><div class="media-expand-shell"><div class="media-expand-stage" id="media-expand-stage" data-media-expand-stage data-media-expand-label="照片裡的葉子，怎麼量出大小？方法動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=web-v01" title="84秒葉片量測動畫：真實標本、作者輪廓、尺規及回看原照" height="900" scrolling="no" loading="eager"></iframe></div></div><p id="frame-status" class="frame-status" role="status" aria-live="polite">開啟「看動畫」後載入播放器，下方保留完整解說。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入動畫</button><p class="download-note"><a href="animation/film/04-01-leafmachine-web-copy-v01.mp4?release=20261027-media" download>下載這支影片</a></p></div>
+      <details id="method-text" class="method-text" open><summary>閱讀動畫解說</summary><ol class="transcript"><li><h3>葉子的外形，也被留下來了</h3><p>館藏標本保留枝葉與採集資訊，照片讓不同地方的研究者能查看它。</p></li><li><h3>先分清哪一塊是一片葉子</h3><p>作者的綠色區域指出選定葉片的範圍。本頁展示既有輸出，沒有重新執行模型。</p></li><li><h3>照片放大，葉子沒有變大</h3><p>葉片與尺規參照同步縮放；1 cm 仍代表相同的實際距離。</p></li><li><h3>回到照片看一眼</h3><p>原照中的大葉，在這份結果裡沒有看到獨立輪廓，還得再檢查。</p></li><li><h3>照片這麼多，怎麼量？</h3><p>電腦協助整理更多標本，處理速度不等於量測已全部確認。</p></li><li><h3>量完之後，還得看對不對</h3><p>輪廓、尺規與細部定位點，各自都要檢查。</p></li></ol></details>
+    </section>
+
+    <section id="evidence" class="chapter" data-active="false" tabindex="-1" aria-labelledby="evidence-title">
+      <header class="chapter-heading"><h2 id="evidence-title">電腦量完，還要檢查什麼？</h2><p>LeafMachine2 減少逐張找葉子、描輪廓的工作。能不能拿留下的數字做比較，仍要看葉片與尺規是否找對。</p></header>
+      <section class="throughput-study" aria-labelledby="throughput-title"><div><h3 id="throughput-title">照片這麼多，怎麼量？</h3><p>原研究在預設設定下，每小時約處理 150 至 200 張影像。條件是 8GB 顯示記憶體的 GPU、至少 8 個 CPU 核心；解析度與葉片數也會影響速度。</p><p>這是處理影像的速度，不是每小時完成同樣數量的正確量測。</p><a class="source-link" href="https://doi.org/10.1002/aps3.11548" target="_blank" rel="noopener">Weaver、Smith（2023）· 研究方法與結果</a></div><figure class="batch-example"><div><img src="animation/assets/second-specimen.jpg" width="789" height="1200" loading="lazy" alt="Meise植物園的Impatiens noli-tangere標本原照"><img src="animation/assets/second-overlay.png" width="1980" height="3010" loading="lazy" alt="同一張標本的作者分割疊圖"></div><figcaption>另一張標本，也把原照和輸出一起保留。BR0000010808771。</figcaption></figure></section>
+      <section class="checking-study" aria-labelledby="checking-title"><h3 id="checking-title">輪廓和葉形細節，要分開檢查</h3><p>作者細看了 100 張標本照片。在 953 個確實圈到葉片的範圍中，200 片至少找到了四個特徵位置，約 21%。這些位置包括葉尖、葉片基部和葉脈上的點，論文稱為「偽地標」。21% 不是整套工具的準確率。</p><p>同一批裡，另有 118 個輪廓不完整，或畫到了葉緣外。認出這是一片葉子、畫對邊緣、找對細部位置，是不同的工作；這兩項檢查的結果不能直接相加，當成總錯誤率。</p><p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10617304/" target="_blank" rel="noopener">原文：Identifying and segmenting leaves</a></p></section>
+      <div class="source-layout" id="sources">
+        <article class="source-reading"><h3>標本照片從哪裡來？</h3><p>秋海棠 <i lang="la">Begonia glabra</i>：紐約植物園 NY01212184，<a href="https://www.gbif.org/occurrence/1929553354" target="_blank" rel="noopener">GBIF 1929553354</a>。另一張為 Meise Botanic Garden 的 <i lang="la">Impatiens noli-tangere</i>，BR0000010808771，<a href="https://www.gbif.org/occurrence/1839652692" target="_blank" rel="noopener">GBIF 1839652692</a>。</p><p>兩張影像均採 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，使用 GBIF 官方的 1200px 顯示副本；不是館藏全解析度原檔。資料紀錄的 CC0 不代替影像授權。</p><p><a href="animation/assets/specimen.jpg" target="_blank" rel="noopener">查看秋海棠原照</a> · <a href="animation/assets/second-specimen.jpg" target="_blank" rel="noopener">查看另一張原照</a></p></article>
+        <article class="source-reading"><h3>作者結果與本頁解說</h3><p>疊圖來自 William Weaver 的 <a href="https://zenodo.org/records/7764379" target="_blank" rel="noopener">2023 年 Zenodo 紀錄 7764379</a>，採 <a href="https://creativecommons.org/licenses/by/3.0/us/" target="_blank" rel="noopener">CC BY 3.0 US</a>。固定使用第 804、811 張摘要圖，不混入後續版本。</p><p>這份展示採 PCD 門檻 0.5，包含完整與部分葉片，不能當成論文 953 個遮罩抽查的精確重現。</p><details class="technical-note"><summary>局部色塊與解說線的限制</summary><p>局部視窗沿著作者圖中可見色塊的邊界，顯示原本的疊圖。這條顯示邊界不是作者原始的多邊形輪廓標記（polygon），也不拿來算葉長或面積。原圖片畫素未改，沒有補出重疊區域。</p><p>本頁 1 cm 線是人工顯示參照；未套用獨立 QC 圖中的 CF 123.06，也沒有新增單葉量測或模型結果。</p></details><p><a href="animation/assets/author-overlay.png" target="_blank" rel="noopener">完整作者疊圖</a> · <a href="animation/assets/ruler-qc.png" target="_blank" rel="noopener">作者獨立尺規 QC 圖</a> · <a href="animation/SOURCE.md" target="_blank" rel="noopener">完整素材與版本說明</a></p></article>
+      </div>
+      <p class="colophon">量完以後，再看看葉子和尺規有沒有找對。</p>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看標本</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script>
+  <script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="04-01"></script>
+  <script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

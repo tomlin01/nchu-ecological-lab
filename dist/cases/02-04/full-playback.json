@@ -1,0 +1,1524 @@
+{
+  "startedAt": 1792568066963,
+  "states": [
+    {
+      "elapsed": 0.501,
+      "time": 0.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 1.001,
+      "time": 0.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 1.501,
+      "time": 1.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 2,
+      "time": 1.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 2.501,
+      "time": 2.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 3.001,
+      "time": 2.966,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 3.501,
+      "time": 3.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 4.001,
+      "time": 3.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 4.5,
+      "time": 4.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 5,
+      "time": 4.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 5.5,
+      "time": 5.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 6,
+      "time": 5.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 6.501,
+      "time": 6.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 7.001,
+      "time": 6.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 7.501,
+      "time": 7.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 8.001,
+      "time": 7.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 8.501,
+      "time": 8.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 9,
+      "time": 8.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 9.5,
+      "time": 9.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 10,
+      "time": 9.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 10.501,
+      "time": 10.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 11.001,
+      "time": 10.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 11.501,
+      "time": 11.467,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 12.001,
+      "time": 11.967,
+      "phase": 0,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 12.501,
+      "time": 12.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 13.001,
+      "time": 12.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 13.5,
+      "time": 13.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 14.001,
+      "time": 13.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 14.502,
+      "time": 14.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 15.001,
+      "time": 14.971,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 15.501,
+      "time": 15.471,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 16.001,
+      "time": 15.971,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 16.501,
+      "time": 16.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 17.001,
+      "time": 16.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 17.501,
+      "time": 17.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 18.001,
+      "time": 17.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 18.501,
+      "time": 18.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "sample-flow"
+    },
+    {
+      "elapsed": 19,
+      "time": 18.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "optical-detection"
+    },
+    {
+      "elapsed": 19.501,
+      "time": 19.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "trigger"
+    },
+    {
+      "elapsed": 20,
+      "time": 19.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "trigger"
+    },
+    {
+      "elapsed": 20.501,
+      "time": 20.466,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "trigger"
+    },
+    {
+      "elapsed": 21.001,
+      "time": 20.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "trigger"
+    },
+    {
+      "elapsed": 21.501,
+      "time": 21.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "trigger"
+    },
+    {
+      "elapsed": 22.001,
+      "time": 21.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "flash-image"
+    },
+    {
+      "elapsed": 22.501,
+      "time": 22.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 23,
+      "time": 22.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 23.501,
+      "time": 23.466,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 24.001,
+      "time": 23.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 24.501,
+      "time": 24.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 25.001,
+      "time": 24.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 25.5,
+      "time": 25.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 26,
+      "time": 25.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 26.5,
+      "time": 26.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 27.001,
+      "time": 26.966,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 27.501,
+      "time": 27.467,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 28,
+      "time": 27.967,
+      "phase": 1,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": "captured"
+    },
+    {
+      "elapsed": 28.501,
+      "time": 28.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 29.001,
+      "time": 28.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 29.501,
+      "time": 29.466,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 30,
+      "time": 29.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 30.5,
+      "time": 30.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 31.001,
+      "time": 30.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 31.501,
+      "time": 31.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 32,
+      "time": 31.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 32.5,
+      "time": 32.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 33.001,
+      "time": 32.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 33.501,
+      "time": 33.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 34.001,
+      "time": 33.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 34.501,
+      "time": 34.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 35,
+      "time": 34.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 35.501,
+      "time": 35.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 36.001,
+      "time": 35.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 36.501,
+      "time": 36.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 37.001,
+      "time": 36.966,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 37.501,
+      "time": 37.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 38.001,
+      "time": 37.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 38.501,
+      "time": 38.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 39.001,
+      "time": 38.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 39.501,
+      "time": 39.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 40.001,
+      "time": 39.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 40.501,
+      "time": 40.467,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 41.001,
+      "time": 40.967,
+      "phase": 2,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 41.501,
+      "time": 41.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 42.001,
+      "time": 41.967,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 42.501,
+      "time": 42.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 43.001,
+      "time": 42.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 43.501,
+      "time": 43.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 44,
+      "time": 43.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 44.501,
+      "time": 44.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 45.001,
+      "time": 44.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 45.501,
+      "time": 45.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 46,
+      "time": 45.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 46.501,
+      "time": 46.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 47.001,
+      "time": 46.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 47.5,
+      "time": 47.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 48.001,
+      "time": 47.967,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 48.501,
+      "time": 48.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 49,
+      "time": 48.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 49.501,
+      "time": 49.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 50.001,
+      "time": 49.967,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 50.501,
+      "time": 50.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 51.001,
+      "time": 50.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 51.501,
+      "time": 51.466,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 52.001,
+      "time": 51.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 52.5,
+      "time": 52.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 53.001,
+      "time": 52.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 53.501,
+      "time": 53.467,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 54.001,
+      "time": 53.966,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 54.501,
+      "time": 54.466,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 55.001,
+      "time": 54.967,
+      "phase": 3,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 55.501,
+      "time": 55.467,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 56.001,
+      "time": 55.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 56.5,
+      "time": 56.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 57,
+      "time": 56.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 57.501,
+      "time": 57.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 58.001,
+      "time": 57.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 58.5,
+      "time": 58.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 59.001,
+      "time": 58.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 59.501,
+      "time": 59.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 60,
+      "time": 59.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 60.5,
+      "time": 60.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 61,
+      "time": 60.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 61.5,
+      "time": 61.467,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 62.001,
+      "time": 61.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 62.501,
+      "time": 62.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 63.001,
+      "time": 62.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 63.501,
+      "time": 63.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 64.002,
+      "time": 63.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 64.501,
+      "time": 64.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 65.001,
+      "time": 64.966,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 65.501,
+      "time": 65.466,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 66,
+      "time": 65.967,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 66.501,
+      "time": 66.467,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 67.001,
+      "time": 66.967,
+      "phase": 4,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 67.501,
+      "time": 67.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 68,
+      "time": 67.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 68.5,
+      "time": 68.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 69.001,
+      "time": 68.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 69.5,
+      "time": 69.466,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 70,
+      "time": 69.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 70.5,
+      "time": 70.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 71,
+      "time": 70.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 71.501,
+      "time": 71.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 72.001,
+      "time": 71.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 72.501,
+      "time": 72.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 73.001,
+      "time": 72.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 73.502,
+      "time": 73.471,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 74.003,
+      "time": 73.971,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 74.501,
+      "time": 74.47,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 75.001,
+      "time": 74.971,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 75.501,
+      "time": 75.471,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 76.002,
+      "time": 75.971,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 76.503,
+      "time": 76.471,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 77,
+      "time": 76.966,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 77.5,
+      "time": 77.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 78.001,
+      "time": 77.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 78.5,
+      "time": 78.466,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 79.001,
+      "time": 78.966,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 79.501,
+      "time": 79.466,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 80.001,
+      "time": 79.966,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 80.501,
+      "time": 80.466,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 81.001,
+      "time": 80.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 81.501,
+      "time": 81.467,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 82.001,
+      "time": 81.967,
+      "phase": 5,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 82.5,
+      "time": 82.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 83.001,
+      "time": 82.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 83.5,
+      "time": 83.466,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 84.001,
+      "time": 83.966,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 84.5,
+      "time": 84.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 85.001,
+      "time": 84.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 85.501,
+      "time": 85.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 86.001,
+      "time": 85.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 86.501,
+      "time": 86.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 87.001,
+      "time": 86.966,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 87.501,
+      "time": 87.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 88.001,
+      "time": 87.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 88.501,
+      "time": 88.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 89.001,
+      "time": 88.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 89.501,
+      "time": 89.467,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 90.001,
+      "time": 89.967,
+      "phase": 6,
+      "playing": true,
+      "page": "method",
+      "instrumentPhase": null
+    },
+    {
+      "elapsed": 90.501,
+      "time": 90,
+      "phase": 6,
+      "playing": false,
+      "page": "method",
+      "instrumentPhase": null
+    }
+  ],
+  "errors": [],
+  "completedAt": 1792568157464,
+  "status": "PASS",
+  "elapsedSeconds": 90.501,
+  "phases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "mechanism": [
+    "sample-flow",
+    "optical-detection",
+    "trigger",
+    "flash-image",
+    "captured"
+  ],
+  "finalState": {
+    "currentPage": "method",
+    "pageIndex": 1,
+    "paged": true,
+    "continuous": false,
+    "mobile": false,
+    "reducedMotion": false,
+    "frameHeight": 748,
+    "frameSrc": "animation/embed.html",
+    "pauseCount": 4,
+    "lastPauseReason": "frame-loaded",
+    "player": {
+      "time": 90,
+      "phase": 6,
+      "mode": "closing",
+      "local": 8,
+      "progress": 1,
+      "photoId": "00298",
+      "instrumentTime": 5,
+      "instrumentView": "mechanism",
+      "candidatesVisible": false,
+      "selectedCandidate": false,
+      "chainStep": "teaching",
+      "teachingCells": 0,
+      "comparisonFocus": "after",
+      "resultsFocus": "samples",
+      "newModelInference": false,
+      "manualSpeciesVerified": false,
+      "realRoiCellCount": null,
+      "hasAudio": false,
+      "duration": 90,
+      "ready": true,
+      "playing": false,
+      "reducedMotion": false,
+      "source": "00298",
+      "sourceFile": "assets/D20200701T002011_IFCB104_00298.png",
+      "sourceCrop": [
+        0,
+        0,
+        488,
+        146
+      ],
+      "candidateScores": [],
+      "candidateRevealed": false,
+      "selectedLabel": null,
+      "instrument": null,
+      "sourceDialogOpen": false,
+      "sourceImageUnmodified": true
+    }
+  },
+  "noSeekDuringPlayback": true
+}

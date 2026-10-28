@@ -1,0 +1,61 @@
+{
+  "status": "integrated_local_verified",
+  "static_status": "PASS",
+  "case_id": "01-01",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "斑馬走動時，空拍鏡頭怎麼跟上？",
+  "preserved_files": 61,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "e9788181fb7f9863bf5f67f6cb87c0d3c4f14c26d47b7e8e494032309e970cef",
+      "glyphs": 841,
+      "prior_glyphs": 821,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "6c0c3d573b73f7b2cc5a21db54932fae018961ff20fe5b7800605c4bdef78d1d",
+      "glyphs": 841,
+      "prior_glyphs": 821,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_checked": true,
+  "browser_record": "work/ecology-ai-rollout/copy-review-01-v02/browser-verification.json",
+  "browser_exclusion_reason": null,
+  "full_playback_rerun": false,
+  "new_inference": false,
+  "scientific_status_unchanged": true,
+  "external_publication": false,
+  "supplemental_css_sha256": "c6ca853a3cb35c40dd5307814fe9fba630ef987d93c00d7f23210546686a7c17",
+  "main_links": 40,
+  "candidate_links": 40,
+  "existing_ids_preserved": 29,
+  "h1_titles_updated": 2,
+  "source_links_preserved": 41,
+  "protected_elements": {
+    "script": 4,
+    "style": 1,
+    "svg": 0,
+    "code": 0,
+    "button": 11,
+    "video": 0,
+    "audio": 0,
+    "source": 0,
+    "iframe": 1,
+    "img": 6,
+    "input": 0
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "64": 1,
+    "1.38E+3": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "02-01",
+  "version": "hybrid-v01",
+  "duration_seconds": 60,
+  "fresh_model_inference": true,
+  "model_version": "4.0.3a",
+  "predictions_sha256": "2aa734af2f2773e44adf4a0ed629f1fb52bb19114a302c2c377aeeee0604c99e",
+  "source_photo_sha256": {
+    "ocelot": "6facb7a54a739767ba639a37097737ce2f903e8504a516255ffe1f9a82e32e6e",
+    "american_black_bear": "49cae6c6be95198c6d1c0ae50f4589372dc01a606951a22841a6939ff9d0cd17",
+    "african_elephants": "19cd899b473d99fc855bc34369a55860d3b15780c65d42b7b57585fd24d81402",
+    "blank": "77a1bd147f6dee4ba596d3711b726a2b2cb244043587cb876bf85f3e6e8849d1"
+  },
+  "fonts": {
+    "sans": {
+      "sha256": "97efee598cbb1293aacc82a8ecde20cd04aadfbb8fa0771f519efeb0a2e4f9f9",
+      "characters": 458,
+      "missing": []
+    },
+    "serif": {
+      "sha256": "cf46c4481500c3c6ea7303c7b931ae3e66b47dc2fcd4fee73ae99aaf4a233489",
+      "characters": 458,
+      "missing": []
+    }
+  },
+  "implementation_sha256": {
+    "app.mjs": "3e65dfad33b19f60bba7a0aa7e5a38a1b737da87f67f17df173118bd424960ac",
+    "model.mjs": "5ec670fc6091ba7ef5f7920f3360a711a84cf9496d11f5b944aeb365d6ad4a9f",
+    "template.html": "e79bc4b8aba61578847a1c1d3ae41fe66af2adeca608fec7e1ab775b9849a752",
+    "style.css": "1b0e10f8b8224c48e0a5b8f17a31d85e7d6141555721dfd7ce758ca459d6062e",
+    "display-data.json": "dab9666b34b85eaff3b5944bdf39c64fd72500a22d1290667ab8417bf5f74f2a",
+    "prepare_display.py": "00e036d7d350c508b8b880406073520464d1beb787e4b2bfce09cd91a7a6608c",
+    "build.py": "cc3c4a5ae624c9bb6d0775d394a19bd825227eb919c118be5a5ff59ebcd338a4"
+  },
+  "human_species_review_completed": false,
+  "browser_verified_by_build": false
+}

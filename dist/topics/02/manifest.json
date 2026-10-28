@@ -1,0 +1,92 @@
+{
+  "version": "topic-02-home-v01",
+  "type": "topic_redirect",
+  "topic_id": "topic-02",
+  "entry": "index.html",
+  "case_ids": [
+    "02-01",
+    "02-02",
+    "02-03",
+    "02-04"
+  ],
+  "status": "redirect",
+  "main_entry": "index.html#topic-02",
+  "external_publication": false,
+  "files": {
+    "SOURCE.md": {
+      "bytes": 10052,
+      "sha256": "c25ce9890b835ce6cebb8632a596cd4c3c52070e816aecbf0c813b3e397ab71b"
+    },
+    "browser-verification.json": {
+      "bytes": 37621,
+      "sha256": "4634be43f4fbd42e3e6e60d6e27f7f190439ffb48ffa4e5c466a656911e4957f"
+    },
+    "content-review.md": {
+      "bytes": 3565,
+      "sha256": "2e19a349a1dd4b46defd051c01ef73cd25e75e3fcae764cf85ebb62e6567b5e6"
+    },
+    "design-review.md": {
+      "bytes": 2654,
+      "sha256": "dcbb4dafc0018e73a960c5be7e4422dedfc6e3e8695d51dd29e516435012c719"
+    },
+    "font-verification.json": {
+      "bytes": 566,
+      "sha256": "7066f736822148c2f2edccc78f2229421aa6d3237a6cebc1c802f706aa733516"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/topic-sans.woff2": {
+      "bytes": 117816,
+      "sha256": "41aeceeef6a15001576302ef08659fb478d280e80b8eda80e4e0e916777d54b5"
+    },
+    "fonts/topic-serif.woff2": {
+      "bytes": 161848,
+      "sha256": "fdc1257c39fed42ed28e6ed7368277693811d1f5e8528b1ff0334f1f1af137eb"
+    },
+    "index.html": {
+      "bytes": 633,
+      "sha256": "638e54bf669e3bf6b028d1a74dccce105f9c34ade7f111d1bac31b6cb1f7ed22"
+    },
+    "provenance.json": {
+      "bytes": 2006,
+      "sha256": "e5e4cc2ee4272a01a516d3cd6a9e73943f75fc94c8e5a745aeda7eaeea070eee"
+    },
+    "topic.css": {
+      "bytes": 7958,
+      "sha256": "6057428e2524d99153ac96d1b8c5d4f5fe3b09dd535c7b042fac102761ae7b9d"
+    },
+    "topic.js": {
+      "bytes": 1748,
+      "sha256": "e80593b3d470bf1a82ad8167d3acc7335dad8820ce3c70bca6777025c124bac6"
+    },
+    "verification.json": {
+      "bytes": 76867,
+      "sha256": "d480601c92990e3dae36df418e7a17810a2561da35748153741503b49f22d6e5"
+    }
+  },
+  "verification": "verification.json",
+  "previous_landing": {
+    "version": "topic-02-home-v01",
+    "type": "topic_landing",
+    "topic_id": "topic-02",
+    "entry": "index.html",
+    "case_ids": [
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04"
+    ],
+    "status": "integrated_local_verified",
+    "main_entry": "topics/02/index.html",
+    "external_publication": false,
+    "verification": "verification.json"
+  },
+  "redirect_revision": "topic-02-scroll-v02",
+  "redirect_target": "../../index.html#topic-02"
+}

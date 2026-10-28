@@ -1,0 +1,7 @@
+Figures 1/2: Serra-Marin et al. (2025), CC BY-NC 4.0.
+https://creativecommons.org/licenses/by-nc/4.0/
+Extracted original embedded JPEGs from the authors' CSIC repository PDF. Display crops only.
+Interaction CSV and README: Serra-Marin (2025), CC BY 4.0. https://zenodo.org/records/17130777
+The subnetwork is a selected presence-only transformation; source rows and selection are included.
+GSAP 3.13.0: GreenSock standard license. https://gsap.com/standard-license/
+Fonts: Noto Sans TC / Noto Serif TC, see fonts/*-OFL.txt.

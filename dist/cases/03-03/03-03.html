@@ -1,0 +1,91 @@
+<!doctype html>
+<html data-reading-type="03-03" lang="zh-Hant" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+  <script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <meta name="description" content="先聽縱紋腹小鴞的真實叫聲，再看模型如何共同學習類群、物種與個體的關係，以及辨認陌生個體仍面臨的困難。">
+  <title>這次叫的，還是同一隻嗎？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="case.css?v=web-v02"><link rel="stylesheet" href="../../ui/sidebar.css"><link rel="stylesheet" href="../../ui/media-expand.css"><link rel="stylesheet" href="../../ui/catalog-theme.css"><link rel="stylesheet" href="natural-history.css?v=web-v02"><link rel="stylesheet" href="../../ui/theme-controls.css">
+  <script src="case.js" defer></script><script src="scene.js?v=web-v02" defer></script>
+<link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-03">返回主題清單</a><span class="case-name">AI × 生態研究 · 聲音個體辨識</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">聽聽鳥叫</a><a href="#roles" data-page="roles">電腦怎麼聽</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">能認出哪一隻</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="case-content">
+    <section id="question" class="chapter opening" aria-labelledby="question-title" tabindex="-1">
+      <div id="identityPlate" class="identity-plate" data-revealed="false">
+        <figure class="species-context"><img src="assets/03-03-little-owl-hero-v02.webp" width="1916" height="821" fetchpriority="high" alt="AI生成的縱紋腹小鴞與果園情境，並非任何錄音個體的實拍照片。"><figcaption>縱紋腹小鴞 · AI 生成的情境圖，並非錄音中個體的照片</figcaption></figure>
+        <div class="identity-content">
+          <header class="identity-heading"><h1 id="question-title">這次叫的，<br>還是同一隻嗎？</h1><p>三段都來自縱紋腹小鴞。</p><p class="annotation-boundary">個體編號來自原始資料，並非本頁重新辨識的結果。</p></header>
+          <div class="recording-collection" aria-label="三段真實錄音的聲譜，共同時間與頻率刻度">
+            <article class="recording" data-recording="a" aria-label="參考 A錄音與原資料標註">
+              <header class="recording-heading"><h2>參考 A</h2><p class="source-label">個體編號 <strong data-source-id="a">尚未顯示</strong></p><button type="button" data-listen="a" aria-pressed="false" aria-label="聽參考 A這段錄音">聽這段</button></header>
+              <div class="sonic-chart"><div class="sonic-frequency" aria-hidden="true"><span>8 kHz</span><span>0</span></div><div class="sonic-plot"><img src="animation/assets/spectrograms/a.png" width="1000" height="360" alt="參考 A的真實聲譜，時間0至1.5秒，頻率0至8千赫。"><span class="sonic-cursor" aria-hidden="true"></span></div><div class="sonic-time" aria-hidden="true"><span>0</span><span>1.5 秒</span></div></div>
+            </article>
+            <article class="recording" data-recording="q" aria-label="待比較錄音與原資料標註">
+              <header class="recording-heading"><h2>待比較</h2><p class="source-label">個體編號 <strong data-source-id="q">尚未顯示</strong></p><button type="button" data-listen="q" aria-pressed="false" aria-label="聽待比較這段錄音">聽這段</button></header>
+              <div class="sonic-chart"><div class="sonic-frequency" aria-hidden="true"><span>8 kHz</span><span>0</span></div><div class="sonic-plot"><img src="animation/assets/spectrograms/q.png" width="1000" height="360" alt="待比較的真實聲譜，時間0至1.5秒，頻率0至8千赫。"><span class="sonic-cursor" aria-hidden="true"></span></div><div class="sonic-time" aria-hidden="true"><span>0</span><span>1.5 秒</span></div></div>
+            </article>
+            <article class="recording" data-recording="b" aria-label="參考 B錄音與原資料標註">
+              <header class="recording-heading"><h2>參考 B</h2><p class="source-label">個體編號 <strong data-source-id="b">尚未顯示</strong></p><button type="button" data-listen="b" aria-pressed="false" aria-label="聽參考 B這段錄音">聽這段</button></header>
+              <div class="sonic-chart"><div class="sonic-frequency" aria-hidden="true"><span>8 kHz</span><span>0</span></div><div class="sonic-plot"><img src="animation/assets/spectrograms/b.png" width="1000" height="360" alt="參考 B的真實聲譜，時間0至1.5秒，頻率0至8千赫。"><span class="sonic-cursor" aria-hidden="true"></span></div><div class="sonic-time" aria-hidden="true"><span>0</span><span>1.5 秒</span></div></div>
+            </article>
+          </div>
+          <div class="identity-actions" data-ui><div class="identity-action-row"><button id="identityReveal" class="primary-action" type="button" aria-expanded="false" aria-controls="identityAnswer">看錄音的個體編號</button><a class="method-link" href="#method">看模型怎麼比較</a></div><p id="identityAnswer" aria-live="polite">先聽聽看，再揭曉是哪一隻。</p></div>
+          <div class="identity-meta" data-ui><p id="callStatus" class="call-status" role="status" aria-live="polite">按「聽這段」才會播放；重聽的是同一段錄音。</p><p class="sound-credit">錄音：Stowell 等人 · <a href="#sources">CC BY 4.0</a></p></div>
+          <audio id="callPreview" preload="none"></audio>
+          <noscript><p class="quiet-note">原資料記錄 A 來自個體 108，待比較聲音也來自 108，B 來自 193。這些編號沿用原資料，不是本頁重新辨識的答案。試聽需要 JavaScript；聲譜、下方解說與<a href="https://zenodo.org/records/1413495" target="_blank" rel="noopener">原資料集</a>仍可閱讀。</p></noscript>
+        </div>
+      </div>
+      <div class="question-followup editorial-layout"><h2>物種相同，<br>個體未必相同</h2><div><p>縱紋腹小鴞是一種小型貓頭鷹，常見於開闊林緣與果園。牠沒有耳羽束，褐色羽毛帶著白色斑點與腹部縱紋。上方插畫讓我們認識這種鳥；三段叫聲則是真實錄音，原資料各自記錄了牠們的身分。</p><p>在同一個地方反覆錄到小鴞，可能是原來那隻，也可能換了另一隻。若要追蹤個體的活動，就得比「這是小鴞」再多走一步。只憑聽起來相像，或聲譜形狀接近，還不能確定是同一隻。</p><p>研究者讓電腦學習叫聲的差異，再拿新的錄音和已知身分的錄音比較。訓練時聽過的個體，和第一次遇到的個體，會一樣容易認嗎？</p></div></div>
+    </section>
+
+    <section id="roles" class="chapter roles-page" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-opening editorial-layout"><div class="chapter-heading"><h2 id="roles-title">用已知身分，<br>練習比較聲音</h2><p>研究者把錄音屬於哪一類動物、哪個物種、哪一隻個體，一起告訴模型，幫助它學習個體間的聲音差異。</p></div><figure class="training-overview"><div class="training-material"><p>已知身分的訓練叫聲</p><div class="training-labels"><span>類群標籤</span><span>物種標籤</span><span>個體標籤</span></div></div><svg viewBox="0 0 600 72" preserveAspectRatio="none" aria-hidden="true"><path d="M100 0V18C100 45 300 40 300 63M300 0V63M500 0V18C500 45 300 40 300 63M293 56l7 7 7-7"/></svg><p class="learning-destination">一起學習聲音特徵</p><figcaption>這張圖說明模型怎麼學習。本頁三段錄音只用來聽與比較。</figcaption></figure></header>
+      <div class="reading-rows">
+        <article class="editorial-row"><h3>先把叫聲變成可比較的特徵</h3><div><p>研究使用已切好的短叫聲。OpenL3 先把聲音轉成特徵，再由適配網路調整這些特徵，讓它們更適合用來辨認個體。</p><p>模型比較的是一整組聲音特徵，不會只靠某個音高就認定是哪一隻。兩段叫聲的音高、節奏或聲譜相似，仍需要其他身分紀錄來核對。</p></div></article>
+        <article class="editorial-row"><h3>三種標籤，共同幫助訓練</h3><div><p>研究利用類群、物種與個體標籤，引導模型學習錄音之間的關係。例如，兩段聲音可以同屬鳥類、同屬縱紋腹小鴞，卻來自不同個體。</p><p>模型訓練時同時參考這幾層標籤，學習它們之間的關係，並非先認完鳥類、物種，才開始認個體。</p></div></article>
+        <article class="editorial-row"><h3>拿新叫聲和參考錄音比較</h3><div><p>學好特徵後，模型用近鄰方法找出最相近的參考錄音，再判斷新叫聲可能來自哪一隻。參考資料收錄了哪些個體、每隻有多少錄音，都會影響辨識結果。</p><details class="technical-note"><summary>聲音特徵是怎麼學出來的？</summary><p>OpenL3 負責擷取特徵，在這項研究中保持固定；適配網路則學習怎樣調整特徵來辨認個體。投影網路只在訓練時用來計算對比學習的損失，最後分類仍比較學得的特徵。本頁用圖解介紹這個方法，沒有重新執行模型。</p></details></div></article>
+      </div>
+      <p class="page-note">動畫會先用三段錄音說明怎麼比較，再介紹論文如何測試辨識能力。錄音原有的個體編號，會另外標清楚。</p>
+    </section>
+
+    <section id="method" class="chapter method-page" aria-labelledby="method-title" tabindex="-1">
+      <header class="method-heading"><div><h2 id="method-title">電腦怎麼從叫聲辨認個體？</h2><p>從三段真實叫聲開始，看看聲音特徵如何幫助比對，再讀論文的測試結果。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface">
+        <p class="player-hint">96 秒，包含真實叫聲。按下播放後才會出聲，可以暫停、重聽、切換段落，或在原頁面放大。</p>
+        <div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="這次叫的，還是同一隻嗎？聲音動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=web-v01" title="96秒小鴞聲音動畫：三段錄音、特徵學習、個體編號與兩項研究結果" height="900" scrolling="no" loading="eager"></iframe></div></div>
+        <p id="frame-status" class="frame-status" role="status">聲音動畫會在開啟這一頁後載入，也可以直接讀下方解說。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入聲音</button>
+        <noscript><p class="quiet-note">互動動畫需要 JavaScript。以下可閱讀完整解說，最後一頁另列研究結果與來源。</p></noscript>
+        <details id="method-text" class="method-text" open><summary>閱讀各段解說</summary><ol class="transcript">
+          <li><h3>同一種鳥，也有不同的聲音</h3><p>先聽兩段縱紋腹小鴞的短叫聲，記住它們的聲音。情境圖幫助認識動物，並不是錄音個體的照片。</p></li>
+          <li><h3>這次叫的，還是同一隻嗎？</h3><p>加入一段待比較聲音，可以和 A、B 反覆重聽。聽起來相像，還不足以確認身分；重播也仍是同一筆錄音。</p></li>
+          <li><h3>叫聲裡，有哪些細節？</h3><p>聲譜橫向是時間，縱向是頻率。較深的地方表示那個頻率的聲音較強。游標跟著原速錄音走，三張圖使用相同刻度。</p></li>
+          <li><h3>用已知的身分，練習比較</h3><p>類群、物種與個體標籤共同幫助模型學習聲音特徵，不是依序通過三道分類關卡。</p></li>
+          <li><h3>新的叫聲，接近哪段參考？</h3><p>模型會把新叫聲和參考錄音轉成特徵，尋找相近的錄音。動畫用這三段聲音說明步驟，沒有重新跑模型，也沒有替它們評分或排名。</p></li>
+          <li><h3>來源資料說，A 和這段是同一隻</h3><p>A 與待比較聲音的個體編號都是 108，B 是 193。這些身分記錄由原資料提供；模型辨認得如何，要另外看論文的測試。</p></li>
+          <li><h3>一起學分類關係，辨識更準了</h3><p>對已知小鴞個體的新錄音，加入類群、物種與個體的關係後，個體平衡準確率由 44.7% 提升至 70.3%。這兩個數字來自論文中同一項測試。</p></li>
+          <li><h3>辨識有進步，陌生個體仍難以準確辨認</h3><p>另一項測試涵蓋 7 個物種、21 個陌生個體，每隻只給一段參考錄音。SC 為 6.0%，最佳 HCλ 為 15.3%。分類關係有幫助，但只靠一段叫聲認陌生個體，仍很困難。</p></li>
+        </ol></details>
+      </div>
+    </section>
+
+    <section id="evidence" class="chapter evidence-page" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-opening editorial-layout"><div class="chapter-heading"><h2 id="evidence-title">認得更準了，<br>但不是每一隻都認得出來</h2><p>訓練時用過錄音的個體，與訓練時沒聽過的個體，辨識起來難度不同。研究分別做了測試。</p></div><figure class="evaluation-overview"><figcaption>兩種辨識情境</figcaption><div><p><strong>已知的小鴞個體</strong><span>訓練時已使用這些個體的錄音</span></p><svg viewBox="0 0 54 20" aria-hidden="true"><path d="M1 10h48m-8-7 8 7-8 7"/></svg><p>換新的錄音測試</p></div><div><p><strong>陌生個體</strong><span>訓練時未使用這些個體的錄音</span></p><svg viewBox="0 0 54 20" aria-hidden="true"><path d="M1 10h48m-8-7 8 7-8 7"/></svg><p>每隻只給一段參考錄音</p></div></figure></header>
+      <div class="result-studies">
+        <article class="editorial-row result-study"><div><h3>已知個體，換新的錄音測試</h3><p class="study-scope">測試對象：已知的縱紋腹小鴞個體</p><p>與只學個體差異的 SC 相比，一起學類群、物種與個體的 HC，在這項測試中辨識得更準。</p><a class="study-source" href="https://arxiv.org/html/2409.08673v1#S5.T2" target="_blank" rel="noopener">論文 Table II</a></div><figure class="study-chart"><figcaption>個體平衡準確率</figcaption><div class="study-row"><div><span>只學個體差異 <small>SC</small></span><strong>44.7%</strong></div><div class="study-track"><span style="width:44.7%" aria-hidden="true"></span></div></div><div class="study-row"><div><span>一起學分類關係 <small>HC</small></span><strong>70.3%</strong></div><div class="study-track"><span class="hierarchy-bar" style="width:70.3%" aria-hidden="true"></span></div></div><div class="study-axis" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div><p>先算每隻被辨認正確的比例，再對個體取平均。</p></figure></article>
+        <article class="editorial-row result-study"><div><h3>陌生個體，只給一段參考錄音</h3><p class="study-scope">7 個物種、21 個陌生個體</p><p>訓練時沒見過這些個體，每隻只提供一段參考聲音。最佳 HCλ 的表現優於 SC，但 15.3% 也顯示，在這種情況下仍很難準確辨認個體。</p><a class="study-source" href="https://arxiv.org/html/2409.08673v1#S5.T3" target="_blank" rel="noopener">論文 Table III</a></div><figure class="study-chart"><figcaption>個體平衡準確率</figcaption><div class="study-row"><div><span>只學個體差異 <small>SC</small></span><strong>6.0%</strong></div><div class="study-track"><span style="width:6%" aria-hidden="true"></span></div></div><div class="study-row"><div><span>加入分類層級資訊，最佳設定 <small>HCλ</small></span><strong>15.3%</strong></div><div class="study-track"><span class="hierarchy-bar" style="width:15.3%" aria-hidden="true"></span></div></div><div class="study-axis" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div><p>同樣先算每隻，再取平均；不是把所有錄音混在一起計算。</p></figure></article>
+      </div>
+      <div class="editorial-row result-boundary"><h3>兩項測試，不是同一批鳥的前後變化</h3><div><p>70.3% 與 15.3% 用的是不同個體與參考錄音設定，並非同一批小鴞前後兩次的成績。測試陌生個體時，研究者還把原有訓練錄音放進參考集合，增加辨識時的干擾。</p><p>本頁三段聲音的個體編號沿用原資料，讓我們可以核對聽到的是誰。這三段錄音不足以評估整個模型的準確率；檔名不同，也不表示它們錄於不同日期、來自不同次觀察，或能證明跨年仍是同一隻。</p></div></div>
+      <div class="source-layout">
+        <article class="source-reading" id="sources"><h3>研究與聲音來源</h3><p>方法與結果依據 Ines Nolasco、Ilyass Moummad、Dan Stowell、Emmanouil Benetos 的 <a href="https://arxiv.org/html/2409.08673v1" target="_blank" rel="noopener">Acoustic identification of individual animals with hierarchical contrastive learning，2024 年預印本 v1</a>。研究於 2025 年收錄於 ICASSP。</p><p>三段錄音出自 Dan Stowell、Tereza Petrusková、Martin Šálek、Pavel Linhart 的<a href="https://zenodo.org/records/1413495" target="_blank" rel="noopener">鳥類個體聲音資料集</a>，採 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>，原錄音著作權屬記錄者。</p><p>檔案上的 train／test 是原資料集的分組名稱，不能據此確定這三段錄音在 Nolasco 研究中被拿來訓練還是測試。本頁沿用原有個體編號，沒有重新執行模型或另外鑑定個體。</p></article>
+        <article class="source-reading" id="visual-source"><h3>圖像、播放與標註</h3><p>第一頁的小鴞與果園由 AI 生成，只用來交代物種與環境，不是研究現場或 ID 108／193 的實拍照片。旁邊三張聲譜來自實際錄音；插畫中的鳥並不是錄音裡的個體。動畫開場另用生成情境圖。</p><p>三段錄音的試聽音檔只調整音量，沒有改速度、音高或各段內的叫聲。動畫會依教學順序重播同一錄音，沒有加入配樂。波形與聲譜由實際音檔計算，三段使用共同尺度；音量差異不當作身分證據。</p><p>原錄音的 CC BY 4.0 聲明不套用到生成情境圖。完整來源紀錄、聲音處理與研究結果依據可見<a href="animation/SOURCE.md" target="_blank" rel="noopener">素材說明</a>及<a href="animation/audio-data.json" target="_blank" rel="noopener">音訊與標註紀錄</a>。</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">聽聽鳥叫</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script><script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="03-03"></script><script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

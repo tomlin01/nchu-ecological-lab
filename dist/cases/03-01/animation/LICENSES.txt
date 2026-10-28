@@ -1,0 +1,196 @@
+03-01 Hyena ID 2022 — source license claims and full texts
+
+RIGHTS STATUS: CONFLICTING SOURCE CLAIMS, NOT RESOLVED.
+This small local prototype does not claim that public redistribution or derivatives
+have been cleared. Original distributed JPEG bytes are retained. Display rectangles
+are editorial coordinates only; no cropped or altered JPEG was saved.
+
+1. LILA landing-page statement (accessed 2026-10-22)
+Source: https://lila.science/datasets/hyena-id-2022/
+"This dataset is released under the Community Data License Agreement (permissive variant)."
+Its linked license resolves to https://cdla.dev/permissive-1-0/.
+
+2. Original COCO metadata claim, preserved verbatim
+Source archive: https://storage.googleapis.com/public-datasets-lila/wild-me/hyena.coco.tar.gz
+Member: hyena.coco/annotations/instances_train2022.json
+licenses: [{"url": "http://creativecommons.org/licenses/by-nc-nd/2.0/", "id": 3, "name": "Attribution-NonCommercial-NoDerivs License"}]
+All three selected image records contain "license": 3.
+
+The landing-page claim does not erase or modify the original metadata claim.
+No precedence between them has been established by this prototype.
+
+Dataset credit: Botswana Predator Conservation Trust; Wild Me / African Carnivore Wildbook.
+Individual photographers are blank in the selected source image records.
+
+Full license text sources (plain text copies, accessed 2026-10-22):
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/CDLA-Permissive-1.0.txt
+https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC-BY-NC-ND-2.0.txt
+
+================ CDLA-Permissive-1.0 ================
+
+Community Data License Agreement – Permissive – Version 1.0
+
+This is the Community Data License Agreement – Permissive, Version 1.0 (“Agreement”).  Data is provided to You under this Agreement by each of the Data Providers.  Your exercise of any of the rights and permissions granted below constitutes Your acceptance and agreement to be bound by the terms and conditions of this Agreement.
+
+The benefits that each Data Provider receives from making Data available and that You receive from Data or otherwise under these terms and conditions shall be deemed sufficient consideration for the formation of this Agreement.  Accordingly, Data Provider(s) and You (the “Parties”) agree as follows:
+
+Section 1.  Definitions
+
+1.1 “Add” means to supplement Data with Your own or someone else’s Data, resulting in Your “Additions.”  Additions do not include Results.
+
+1.2 “Computational Use” means Your analysis (through the use of computational devices or otherwise) or other interpretation of Data.  By way of example and not limitation, “Computational Use” includes the application of any computational analytical technique, the purpose of which is the analysis of any Data in digital form to generate information about Data such as patterns, trends, correlations, inferences, insights and attributes.
+
+1.3 “Data” means the information (including copyrightable information, such as images or text), collectively or individually, whether created or gathered by a Data Provider or an Entity acting on its behalf, to which rights are granted under this Agreement.
+
+1.4 “Data Provider” means any Entity (including any employee or contractor of such Entity authorized to Publish Data on behalf of such Entity) that Publishes Data under this Agreement prior to Your Receiving it.
+
+1.5 “Enhanced Data” means the subset of Data that You Publish and that is composed of (a) Your Additions and/or (b) Modifications to Data You have received under this Agreement.
+
+1.6 “Entity” means any natural person or organization that exists under the laws of the jurisdiction in which it is organized, together with all other entities that control, are controlled by, or are under common control with that entity.  For the purposes of this definition, “control” means (a) the power, directly or indirectly, to cause the direction or management of such entity, whether by contract or otherwise, (b) the ownership of more than fifty percent (50%) of the outstanding shares or securities, (c) the beneficial ownership of such entity or, (d) the ability to appoint, whether by agreement or right, the majority of directors of an Entity.
+
+1.7 “Modify” means to delete, erase, correct or re-arrange Data, resulting in “Modifications.”  Modifications do not include Results.
+
+1.8 “Publish” means to make all or a subset of Data (including Your Enhanced Data) available in any manner which enables its Use, including by providing a copy on physical media or remote access.  For any form of Entity, that is to make the Data available to any individual who is not employed by that Entity or engaged as a contractor or agent to perform work on that Entity’s behalf.  A “Publication” occurs each time You Publish Data.
+
+1.9 “Receive” or “Receives” means to have been given access to Data, locally or remotely.
+
+1.10 “Results” means the outcomes or outputs that You obtain from Your Computational Use of Data.  Results shall not include more than a de minimis portion of the Data on which the Computational Use is based.
+
+1.11 “Sui Generis Database Rights” means rights, other than copyright, resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other equivalent rights anywhere in the world.
+
+1.12 “Use” means using Data (including accessing, copying, studying, reviewing, adapting, analyzing, evaluating, or making Computational Use of it), either by machines or humans, or a combination of both.
+
+1.13 “You” or “Your” means any Entity that Receives Data under this Agreement.
+
+Section 2.  Right and License to Use and to Publish
+
+2.1 Subject to the conditions set forth in Section 3 of this Agreement, Data Provider(s) hereby grant(s) to You a worldwide, non-exclusive, irrevocable (except as provided in Section 5) right to: (a) Use Data; and (b) Publish Data.
+
+2.2 To the extent that the Data or the coordination, selection or arrangement of Data is protected or protectable under copyright, Sui Generis Database Rights, or other law, Data Provider(s) further agree(s) that such Data or coordination, selection or arrangement is hereby licensed to You and to anyone else who Receives Data under this Agreement for Use and Publication, subject to the conditions set forth in Section 3 of this Agreement.
+
+2.3 Except for these rights and licenses expressly granted, no other intellectual property rights are granted or should be implied.
+
+Section 3.  Conditions on Rights Granted
+
+3.1 If You Publish Data You Receive or Enhanced Data:
+
+(a) You may do so under a license of Your choice provided that You give anyone who Receives the Data from You the text of this Agreement, the name of this Agreement and/or a hyperlink or other method reasonably likely to provide a copy of the text of this Agreement; and
+
+(b) You must cause any Data files containing Enhanced Data to carry prominent notices that You have changed those files; and
+
+(c) If You Publish Data You Receive, You must preserve all credit or attribution to the Data Provider(s). Such retained credit or attribution includes any of the following to the extent they exist in Data as You have Received it: legal notices or metadata; identification of the Data Provider(s); or hyperlinks to Data to the extent it is practical to do so.
+
+3.2 You may provide additional or different license terms and conditions for use, reproduction, or distribution of that Enhanced Data, or for any combination of Data and Enhanced Data as a whole, provided that Your Use and Publication of that combined Data otherwise complies with the conditions stated in this License.
+
+3.3 You and each Data Provider agree that Enhanced Data shall not be considered a work of joint authorship by virtue of its relationship to Data licensed under this Agreement and shall not require either any obligation of accounting to or the consent of any Data Provider.
+
+3.4 This Agreement imposes no obligations or restrictions on Your Use or Publication of Results.
+
+Section 4.  Data Provider(s)’ Representations
+
+4.1 Each Data Provider represents that the Data Provider has exercised reasonable care, to assure that: (a) the Data it Publishes was created or generated by it or was obtained from others with the right to Publish the Data under this Agreement; and (b) Publication of such Data does not violate any privacy or confidentiality obligation undertaken by the Data Provider.
+
+Section 5.  Termination
+
+5.1 All of Your rights under this Agreement will terminate, and Your right to Receive, Use or Publish the Data will be revoked or modified if You materially fail to comply with the terms and conditions of this Agreement and You do not cure such failure in a reasonable period of time after becoming aware of such noncompliance.  If Your rights under this Agreement terminate, You agree to cease Receipt, Use and Publication of Data.  However, Your obligations and any rights and permissions granted by You under this Agreement relating to Data that You Published prior to such termination will continue and survive.
+
+5.2 If You institute litigation against a Data Provider or anyone else who Receives the Data (including a cross-claim in a lawsuit) based on the Data, other than a claim asserting breach of this Agreement, then any rights previously granted to You to Receive, Use and Publish Data under this Agreement will terminate as of the date such litigation is filed.
+
+Section 6.  Disclaimer of Warranties and Limitation of Liability
+
+6.1 EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE DATA (INCLUDING ENHANCED DATA) IS PROVIDED ON AN “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+6.2 NEITHER YOU NOR ANY DATA PROVIDERS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE DATA OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Section 7.  Miscellaneous
+
+7.1 You agree that it is solely Your responsibility to comply with all applicable laws with regard to Your Use or Publication of Data, including any applicable privacy, data protection, security and export laws.  You agree to take reasonable steps to assist a Data Provider fulfilling responsibilities to comply with applicable laws with regard to Use or Publication of Data Received hereunder.
+
+7.2 You and Data Provider(s), collectively and individually, waive and/or agree not to assert, to the extent permitted by law, any moral rights You or they hold in Data.
+
+7.3 This Agreement confers no rights or remedies upon any person or entity other than the Parties and their respective heirs, executors, successors and assigns.
+
+7.4 The Data Provider(s) reserve no right or expectation of privacy, data protection or confidentiality in any Data that they Publish under this Agreement.  If You choose to Publish Data under this Agreement, You similarly do so with no reservation or expectation of any rights of privacy or confidentiality in that Data.
+
+7.5 The Community Data License Agreement workgroup under The Linux Foundation is the steward of this Agreement (“Steward”).  No one other than the Steward has the right to modify or publish new versions of this Agreement.  Each version will be given a distinguishing version number.  You may Use and Publish Data Received hereunder under the terms of the version of the Agreement under which You originally Received the Data, or under the terms of any subsequent version published by the Steward.
+
+
+================ CC-BY-NC-ND-2.0 ================
+
+Creative Commons Attribution-NonCommercial-NoDerivs 2.0
+
+  CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.
+
+License
+
+THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+
+BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+
+1. Definitions
+
+     a. "Collective Work" means a work, such as a periodical issue, anthology or encyclopedia, in which the Work in its entirety in unmodified form, along with a number of other contributions, constituting separate and independent works in themselves, are assembled into a collective whole. A work that constitutes a Collective Work will not be considered a Derivative Work (as defined below) for the purposes of this License.
+
+     b. "Derivative Work" means a work based upon the Work or upon the Work and other pre-existing works, such as a translation, musical arrangement, dramatization, fictionalization, motion picture version, sound recording, art reproduction, abridgment, condensation, or any other form in which the Work may be recast, transformed, or adapted, except that a work that constitutes a Collective Work will not be considered a Derivative Work for the purpose of this License. For the avoidance of doubt, where the Work is a musical composition or sound recording, the synchronization of the Work in timed-relation with a moving image ("synching") will be considered a Derivative Work for the purpose of this License.
+
+     c. "Licensor" means the individual or entity that offers the Work under the terms of this License.
+
+     d. "Original Author" means the individual or entity who created the Work.
+
+     e. "Work" means the copyrightable work of authorship offered under the terms of this License.
+
+     f. "You" means an individual or entity exercising rights under this License who has not previously violated the terms of this License with respect to the Work, or who has received express permission from the Licensor to exercise rights under this License despite a previous violation.
+
+2. Fair Use Rights. Nothing in this license is intended to reduce, limit, or restrict any rights arising from fair use, first sale or other limitations on the exclusive rights of the copyright owner under copyright law or other applicable laws.
+
+3. License Grant. Subject to the terms and conditions of this License, Licensor hereby grants You a worldwide, royalty-free, non-exclusive, perpetual (for the duration of the applicable copyright) license to exercise the rights in the Work as stated below:
+
+     a. to reproduce the Work, to incorporate the Work into one or more Collective Works, and to reproduce the Work as incorporated in the Collective Works;
+
+     b. to distribute copies or phonorecords of, display publicly, perform publicly, and perform publicly by means of a digital audio transmission the Work including as incorporated in Collective Works;
+
+The above rights may be exercised in all media and formats whether now known or hereafter devised. The above rights include the right to make such modifications as are technically necessary to exercise the rights in other media and formats, but otherwise you have no rights to make Derivative Works. All rights not expressly granted by Licensor are hereby reserved, including but not limited to the rights set forth in Sections 4(d) and 4(e).
+
+4. Restrictions.The license granted in Section 3 above is expressly made subject to and limited by the following restrictions:
+
+     a. You may distribute, publicly display, publicly perform, or publicly digitally perform the Work only under the terms of this License, and You must include a copy of, or the Uniform Resource Identifier for, this License with every copy or phonorecord of the Work You distribute, publicly display, publicly perform, or publicly digitally perform. You may not offer or impose any terms on the Work that alter or restrict the terms of this License or the recipients' exercise of the rights granted hereunder. You may not sublicense the Work. You must keep intact all notices that refer to this License and to the disclaimer of warranties. You may not distribute, publicly display, publicly perform, or publicly digitally perform the Work with any technological measures that control access or use of the Work in a manner inconsistent with the terms of this License Agreement. The above applies to the Work as incorporated in a Collective Work, but this does not require the Collective Work apart from the Work itself to be made subject to the terms of this License. If You create a Collective Work, upon notice from any Licensor You must, to the extent practicable, remove from the Collective Work any reference to such Licensor or the Original Author, as requested.
+
+     b. You may not exercise any of the rights granted to You in Section 3 above in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. The exchange of the Work for other copyrighted works by means of digital file-sharing or otherwise shall not be considered to be intended for or directed toward commercial advantage or private monetary compensation, provided there is no payment of any monetary compensation in connection with the exchange of copyrighted works.
+
+     c. If you distribute, publicly display, publicly perform, or publicly digitally perform the Work, You must keep intact all copyright notices for the Work and give the Original Author credit reasonable to the medium or means You are utilizing by conveying the name (or pseudonym if applicable) of the Original Author if supplied; the title of the Work if supplied; and to the extent reasonably practicable, the Uniform Resource Identifier, if any, that Licensor specifies to be associated with the Work, unless such URI does not refer to the copyright notice or licensing information for the Work. Such credit may be implemented in any reasonable manner; provided, however, that in the case of a Collective Work, at a minimum such credit will appear where any other comparable authorship credit appears and in a manner at least as prominent as such other comparable authorship credit.
+
+     d. For the avoidance of doubt, where the Work is a musical composition:
+
+          i. Performance Royalties Under Blanket Licenses. Licensor reserves the exclusive right to collect, whether individually or via a performance rights society (e.g. ASCAP, BMI, SESAC), royalties for the public performance or public digital performance (e.g. webcast) of the Work if that performance is primarily intended for or directed toward commercial advantage or private monetary compensation.
+
+          ii. Mechanical Rights and Statutory Royalties. Licensor reserves the exclusive right to collect, whether individually or via a music rights agency or designated agent (e.g. Harry Fox Agency), royalties for any phonorecord You create from the Work ("cover version") and distribute, subject to the compulsory license created by 17 USC Section 115 of the US Copyright Act (or the equivalent in other jurisdictions), if Your distribution of such cover version is primarily intended for or directed toward commercial advantage or private monetary compensation.
+
+     e. Webcasting Rights and Statutory Royalties. For the avoidance of doubt, where the Work is a sound recording, Licensor reserves the exclusive right to collect, whether individually or via a performance-rights society (e.g. SoundExchange), royalties for the public digital performance (e.g. webcast) of the Work, subject to the compulsory license created by 17 USC Section 114 of the US Copyright Act (or the equivalent in other jurisdictions), if Your public digital performance is primarily intended for or directed toward commercial advantage or private monetary compensation.
+
+5. Representations, Warranties and Disclaimer
+
+UNLESS OTHERWISE MUTUALLY AGREED BY THE PARTIES IN WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.
+
+6. Limitation on Liability. EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. Termination
+
+     a. This License and the rights granted hereunder will terminate automatically upon any breach by You of the terms of this License. Individuals or entities who have received Collective Works from You under this License, however, will not have their licenses terminated provided such individuals or entities remain in full compliance with those licenses. Sections 1, 2, 5, 6, 7, and 8 will survive any termination of this License.
+
+     b. Subject to the above terms and conditions, the license granted here is perpetual (for the duration of the applicable copyright in the Work). Notwithstanding the above, Licensor reserves the right to release the Work under different license terms or to stop distributing the Work at any time; provided, however that any such election will not serve to withdraw this License (or any other license that has been, or is required to be, granted under the terms of this License), and this License will continue in full force and effect unless terminated as stated above.
+
+8. Miscellaneous
+
+     a. Each time You distribute or publicly digitally perform the Work or a Collective Work, the Licensor offers to the recipient a license to the Work on the same terms and conditions as the license granted to You under this License.
+
+     b. If any provision of this License is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this License, and without further action by the parties to this agreement, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+
+     c. No term or provision of this License shall be deemed waived and no breach consented to unless such waiver or consent shall be in writing and signed by the party to be charged with such waiver or consent.
+
+     d. This License constitutes the entire agreement between the parties with respect to the Work licensed here. There are no understandings, agreements or representations with respect to the Work not specified here. Licensor shall not be bound by any additional provisions that may appear in any communication from You. This License may not be modified without the mutual written agreement of the Licensor and You.
+
+Creative Commons is not a party to this License, and makes no warranty whatsoever in connection with the Work. Creative Commons will not be liable to You or any party on any legal theory for any damages whatsoever, including without limitation any general, special, incidental or consequential damages arising in connection to this license. Notwithstanding the foregoing two (2) sentences, if Creative Commons has expressly identified itself as the Licensor hereunder, it shall have all rights and obligations of Licensor.
+
+Except for the limited purpose of indicating to the public that the Work is licensed under the CCPL, neither party will use the trademark "Creative Commons" or any related trademark or logo of Creative Commons without the prior written consent of Creative Commons. Any permitted use will be in compliance with Creative Commons' then-current trademark usage guidelines, as may be published on its website or otherwise made available upon request from time to time.
+
+Creative Commons may be contacted at http://creativecommons.org/.

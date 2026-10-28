@@ -1,0 +1,7 @@
+Author JPEGs: Jenna Kline / Imageomics, WildWing Deployment Dataset, CC0 1.0 per fixed dataset card.
+https://huggingface.co/datasets/imageomics/wildwingdeployment
+Dataset revision: ff1579182aa3aa19915752190bce20c97735b403
+Original JPEG bytes and labels retained. Display viewport crops only.
+
+GSAP 3.13.0: Copyright 2025 GreenSock. https://gsap.com/standard-license.
+Noto Sans TC and Noto Serif TC: see fonts/*-OFL.txt.

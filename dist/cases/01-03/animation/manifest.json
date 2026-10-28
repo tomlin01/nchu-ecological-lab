@@ -1,0 +1,175 @@
+{
+  "case_id": "01-03",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "entry": "index.html",
+  "verification": {
+    "status": "candidate_ready_for_review",
+    "case_id": "01-03",
+    "version": "hybrid-v01",
+    "duration_seconds": 103,
+    "original_core_seconds": 82,
+    "browser_checks": 35,
+    "static_checks": 9,
+    "matched_original_runtime_states": 36,
+    "pure_core_samples": 8201,
+    "pure_master_samples": 10301,
+    "byte_identical_core_files": 4,
+    "protected_files": 261,
+    "original_photographs_byte_identical": 2,
+    "photo_panels": 3,
+    "no_new_field_model_results": true,
+    "main_site_01_03_unchanged": true,
+    "webgl_checked": true,
+    "rendered_sizes": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "physical_phone_tested": false,
+    "browser_scope": [
+      "01-03 only"
+    ],
+    "01_02_browser_access": false,
+    "first_pass_note": "A comparison initially used an old baseline after prior seek history. Its unused macro-scene material state persisted during microscopic rendering. Both versions were reloaded from a fresh initial state and all36 comparisons matched; no production geometry was changed.",
+    "full_playback": {
+      "completed": true,
+      "normal_speed": true,
+      "duration_seconds": 103,
+      "ended_paused": true,
+      "record": "full-playback.json"
+    },
+    "public_deployment": false
+  },
+  "files": {
+    "LICENSES.txt": {
+      "bytes": 1569,
+      "sha256": "58960264b6ede0e1134fe89c64dd5cbdb3de7f46f2d8d02440df5851357e0aaa"
+    },
+    "README.md": {
+      "bytes": 1742,
+      "sha256": "5d9675ab98a3bce370a8ef8b00b1d1eb38c10695378c78438246407ad4725304"
+    },
+    "SOURCE.md": {
+      "bytes": 2926,
+      "sha256": "97c238095d1cdd4996e0ecdc99edf0f56ab385189ac39a1b67db175f2327d9b1"
+    },
+    "app.bundle.js": {
+      "bytes": 618613,
+      "sha256": "fd60d3d44e3c64928dd4b1292169ddeab0f40b3812fd3fda1b474dec95b547c9"
+    },
+    "assets/sources/auv-figure-9.webp": {
+      "bytes": 1087318,
+      "sha256": "71dd62525a46014afd5df63cf8c38325ca636f3907ff404f2759faf3c736c294"
+    },
+    "assets/sources/display-panels.json": {
+      "bytes": 1093,
+      "sha256": "8910a0b21637357cb3b8bdfa64c6c13338e9a1cf8bb4aed3336e4f67710cfb53"
+    },
+    "assets/sources/figure-7.png": {
+      "bytes": 1480750,
+      "sha256": "7f860556abfad474daf112543990c90349935722912e1c2547e7bd77c513dee2"
+    },
+    "assets/sources/source-provenance.json": {
+      "bytes": 2002,
+      "sha256": "c557fab7d65c912452ceb3c82f4fa9598d16784c6d4252192bb0819606129883"
+    },
+    "build-runtime.json": {
+      "bytes": 2318,
+      "sha256": "1a03fb81a4e1fd64d30574026a7dc9086561634a990ab1ec284e2b3148486415"
+    },
+    "embed.css": {
+      "bytes": 2157,
+      "sha256": "2c7dfe589418fe0a47d64b879f48415cb4988182bda9e4a6bb734fdaf949c565"
+    },
+    "embed.html": {
+      "bytes": 17908,
+      "sha256": "a2807ccdd8f64bfe1d22ff10c124604c91394456cf5d297914999b4a72b266c9"
+    },
+    "embed.js": {
+      "bytes": 2715,
+      "sha256": "c0b6fefd8b50a8e621d659f1bea2dae46e84db5743060efee8f83c2afc5ff6aa"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 168068,
+      "sha256": "595377ad8a94a00b81d06296674c1dbcc947c045a04eec05a8afdbd98e2b7042"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 222776,
+      "sha256": "3335858f47aa2f6aeeebb5e67b17848463aa30e3a6eed7b4f0f89adfc7af8f88"
+    },
+    "index.html": {
+      "bytes": 17603,
+      "sha256": "f8986e941c25d57591258634c78532d4d759b06f67654d6bd469cc132fa7bd94"
+    },
+    "provenance.json": {
+      "bytes": 8084,
+      "sha256": "330621e53acfd2dedfd60c345191a84e635a1b8df38bb32a35a683897bc710c1"
+    },
+    "style.css": {
+      "bytes": 14985,
+      "sha256": "87466e4fefd2ca10db0829b7fd855a87fb6f307e9e4cddd5ebf6655c90d46740"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical."
+}

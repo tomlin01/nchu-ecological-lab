@@ -1,0 +1,54 @@
+{
+  "tool": "built-in imagegen",
+  "purpose": "photorealistic synthetic camera-trap illustrations for case 02-01",
+  "user_request": "好，不過我在想照片要不要生成多張可能會比較真實？不是用畫的",
+  "photos": [
+    {
+      "id": "clear-jaguar",
+      "project_file": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/clear-jaguar-v01.png",
+      "source_file": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-e7eee899-5eaf-4c17-8fd1-1e5e742f3e74.png",
+      "sha256": "d2b364f5e47562e0328cc8b1c3818a23d98dd0555e5d888f8a5400891469d8cc",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "operation": "generate"
+    },
+    {
+      "id": "occluded-cat",
+      "project_file": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/occluded-cat-v01.png",
+      "source_file": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-a3cb02bf-d467-40b7-85b8-7b8618ef9a7d.png",
+      "sha256": "9be1b847fb5c4babe52f5e743e12bfaa85ee7a3c395443232cd551973219cf5a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "operation": "edit clear-jaguar-v01.png"
+    },
+    {
+      "id": "night-tapir",
+      "project_file": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/night-tapir-v01.png",
+      "source_file": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-2cdf284b-5721-4ce0-a8cd-f8f1a72cc725.png",
+      "sha256": "9a397639cbb24294b111ebe7ad5e3228544b249552d10d215ceb0cdd6332f38a",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "operation": "generate"
+    },
+    {
+      "id": "empty-forest",
+      "project_file": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/empty-forest-v01.png",
+      "source_file": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-ba8a6bb2-f0db-4c6d-b1ff-b1bbcf2b0bed.png",
+      "sha256": "1e63fcf38ccd459d7cfff88c5d7c95f782d7f851d5a04edb4b869e2f15932181",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "operation": "edit clear-jaguar-v01.png"
+    }
+  ],
+  "prompt_file": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/photo-prompts.md",
+  "annotations": "Authored separately in HTML; no generated or model-inferred text/boxes/scores",
+  "image_processing": "Original PNG copies preserved. Runtime WebP uses format conversion only; crops reuse the same runtime image in the browser."
+}

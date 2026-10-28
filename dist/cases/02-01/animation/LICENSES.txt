@@ -1,0 +1,11 @@
+GSAP 3.13.0
+Copyright 2025 GreenSock. All rights reserved.
+Bundled file retains its original header and license reference:
+https://gsap.com/standard-license
+
+Noto Sans TC / Noto Serif TC
+Font license texts are included in fonts/NotoSans-OFL.txt and fonts/NotoSerif-OFL.txt.
+
+Photographs
+Synthetic illustrations produced with built-in imagegen for this project.
+Not original research photographs. Provenance and prompts are included.

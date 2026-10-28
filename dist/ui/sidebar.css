@@ -1,0 +1,205 @@
+@font-face{font-family:"Ecology UI";src:url("fonts/ui-sans.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+/* Shared global directory only. Original chapter bars, page grids and player layouts remain intact. */
+body.ecology-sidebar-ready {
+  --ecology-sidebar-ground: #101c18;
+  --ecology-sidebar-ink: #edf3e8;
+  --ecology-sidebar-muted: #b7c8bb;
+  --ecology-sidebar-active: #cedfbd;
+}
+
+body.ecology-sidebar-ready .ecology-sidebar-ui {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  font: 400 16px/1.55 "Ecology UI", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  color: var(--ecology-sidebar-ink);
+}
+body.ecology-sidebar-ready .ecology-sidebar-ui *,
+body.ecology-sidebar-ready .ecology-sidebar-ui *::before,
+body.ecology-sidebar-ready .ecology-sidebar-ui *::after { box-sizing: border-box; }
+body.ecology-sidebar-ready .ecology-sidebar-ui [hidden] { display: none !important; }
+body.ecology-sidebar-ready .ecology-sidebar-panel {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: min(360px, calc(100vw - 40px));
+  max-width: 100%;
+  height: 100dvh;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 20px 14px max(20px, env(safe-area-inset-bottom));
+  background: var(--ecology-sidebar-ground);
+  color: var(--ecology-sidebar-ink);
+  pointer-events: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #6f8977 var(--ecology-sidebar-ground);
+}
+body.ecology-sidebar-ready .ecology-sidebar-heading { display: flex; align-items: center; gap: 8px; }
+body.ecology-sidebar-ready .ecology-sidebar-home {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  flex: 1;
+  color: inherit;
+  font: 600 16px/1.5 "Ecology UI", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+body.ecology-sidebar-ready .ecology-sidebar-label {
+  margin: 18px 10px 10px;
+  color: var(--ecology-sidebar-muted);
+  font: inherit;
+  font-size: 14px;
+}
+body.ecology-sidebar-ready .ecology-sidebar-topic { margin: 0 0 4px; padding: 0; }
+body.ecology-sidebar-ready .ecology-sidebar-ui button {
+  appearance: none;
+  min-height: 44px;
+  min-width: 44px;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+body.ecology-sidebar-ready .ecology-sidebar-topic-button {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) 16px;
+  align-items: start;
+  width: 100%;
+  gap: 7px;
+  padding: 11px 9px;
+  text-align: left;
+  background: transparent;
+  color: var(--ecology-sidebar-ink);
+}
+body.ecology-sidebar-ready .ecology-sidebar-number { font-size: 14px; line-height: 1.78; color: var(--ecology-sidebar-muted); }
+body.ecology-sidebar-ready .ecology-sidebar-indicator { text-align: center; }
+body.ecology-sidebar-ready .ecology-sidebar-topic-button[aria-expanded="true"] { background: #26392c; }
+body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic {
+  background: var(--ecology-sidebar-active);
+  color: #19271d;
+}
+body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic .ecology-sidebar-number { color: #334c38; }
+body.ecology-sidebar-ready .ecology-sidebar-topic-panel { padding: 5px 0 9px 12px; }
+body.ecology-sidebar-ready .ecology-sidebar-cases { margin: 0; padding: 0; list-style: none; }
+body.ecology-sidebar-ready .ecology-sidebar-cases li { margin: 0; padding: 0; }
+body.ecology-sidebar-ready .ecology-sidebar-case-link,
+body.ecology-sidebar-ready .ecology-sidebar-topic-link {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 9px;
+  color: var(--ecology-sidebar-ink);
+  font: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  border-radius: 0;
+}
+body.ecology-sidebar-ready .ecology-sidebar-case-link[aria-current="page"] {
+  background: var(--ecology-sidebar-active);
+  color: #19271d;
+  font-weight: 600;
+}
+body.ecology-sidebar-ready .ecology-sidebar-topic-link { color: var(--ecology-sidebar-muted); font-size: 14px; }
+body.ecology-sidebar-ready .ecology-sidebar-pending {
+  margin: 0;
+  padding: 10px 9px 0;
+  color: var(--ecology-sidebar-muted);
+  font: inherit;
+  font-size: 15px;
+}
+body.ecology-sidebar-ready .ecology-sidebar-ui a:hover,
+body.ecology-sidebar-ready .ecology-sidebar-ui button:hover { text-decoration: underline; text-underline-offset: 4px; }
+body.ecology-sidebar-ready .ecology-sidebar-ui :focus-visible {
+  outline: 3px solid #f0e3ac;
+  outline-offset: -3px;
+}
+body.ecology-sidebar-ready .ecology-sidebar-toggle,
+body.ecology-sidebar-ready .ecology-sidebar-close {
+  color: #19271d;
+  background: var(--ecology-sidebar-active);
+  padding: 9px 14px;
+  pointer-events: auto;
+}
+body.ecology-sidebar-ready .ecology-sidebar-toggle {
+  position: absolute;
+  top: max(8px, env(safe-area-inset-top));
+  right: 12px;
+  z-index: 3;
+}
+body.ecology-sidebar-ready .ecology-sidebar-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 58%);
+  pointer-events: auto;
+}
+
+/* Legacy cross-case header lists are duplicated by this global directory. */
+body.ecology-sidebar-ready .hab-header nav[aria-label="研究案例"],
+body.ecology-sidebar-ready #full-reading > .site-header .case-links { display: none; }
+
+@media screen {
+  /* A dedicated strip keeps the global trigger away from every sticky chapter bar. */
+  body.ecology-sidebar-ready {
+    --ecology-sidebar-toolbar-height: calc(56px + env(safe-area-inset-top, 0px));
+    --ecology-sidebar-page-header-height: 60px;
+    box-sizing: border-box;
+    padding-top: var(--ecology-sidebar-toolbar-height);
+    padding-left: 0;
+  }
+  body.ecology-sidebar-ready .ecology-sidebar-ui::before {
+    content: "主題與案例";
+    position: absolute;
+    inset: 0 0 auto;
+    display: flex;
+    align-items: center;
+    height: var(--ecology-sidebar-toolbar-height);
+    padding: env(safe-area-inset-top, 0px) 100px 0 16px;
+    background: var(--ecology-sidebar-ground);
+    color: var(--ecology-sidebar-ink);
+    font: inherit;
+    font-weight: 500;
+    pointer-events: auto;
+  }
+  body.ecology-sidebar-ready .ecology-sidebar-toggle { top: calc(env(safe-area-inset-top, 0px) + 6px); }
+  body.ecology-sidebar-ready .ecology-sidebar-panel { z-index: 2; padding-top: max(12px, env(safe-area-inset-top)); }
+  body.ecology-sidebar-ready.ecology-sidebar-drawer-open { overflow: hidden !important; }
+  body.ecology-sidebar-ready.ecology-sidebar-drawer-open .ecology-sidebar-toggle { visibility: hidden; }
+
+  /* Newer pages keep their sticky header followed by their existing chapter bar. */
+  body.ecology-sidebar-ready .site-header { top: var(--ecology-sidebar-toolbar-height); }
+  body.ecology-sidebar-ready .section-nav { top: calc(var(--ecology-sidebar-toolbar-height) + var(--ecology-sidebar-page-header-height)); }
+  /* Paged headers are grid rows, not sticky window furniture: no extra relative offset. */
+  html.paged body.ecology-sidebar-ready > .site-header,
+  html.paged body.ecology-sidebar-ready > .section-nav { top: auto; }
+
+  /* Legacy headers scroll away; their chapter bar sits directly below the new strip. */
+  body.ecology-sidebar-ready .scene-nav,
+  body.ecology-sidebar-ready #full-reading > .section-nav { top: var(--ecology-sidebar-toolbar-height); }
+  body.ecology-sidebar-ready > main > .chapter { scroll-margin-top: var(--ecology-sidebar-toolbar-height); }
+  body.ecology-sidebar-ready.ecology-sidebar-homepage .topic-home { min-height: calc(100svh - var(--ecology-sidebar-toolbar-height)); }
+  body.ecology-sidebar-ready .skip-link { z-index: 90; }
+  body.ecology-sidebar-ready.ecology-sidebar-homepage .topic-row { scroll-margin-top: calc(var(--ecology-sidebar-toolbar-height) + 24px); }
+  body.ecology-sidebar-ready.ecology-sidebar-homepage .topic-directory { scroll-margin-top: calc(var(--ecology-sidebar-toolbar-height) + 20px); }
+}
+
+@media screen and (min-width: 741px) {
+  body.ecology-sidebar-ready:has(#method-video) { --ecology-sidebar-page-header-height: 64px; }
+  /* These legacy shells own a viewport-height grid inside body. Subtract the strip once. */
+  body.ecology-sidebar-ready.story-mode #story-shell,
+  body.ecology-sidebar-ready.story-mode #story-shell > .story-stage {
+    height: calc(100dvh - var(--ecology-sidebar-toolbar-height));
+  }
+}
+
+@media screen and (max-width: 740px) {
+  body.ecology-sidebar-ready { --ecology-sidebar-page-header-height: 56px; }
+}
+
+@media print {
+  body.ecology-sidebar-ready { padding-left: 0 !important; }
+  body.ecology-sidebar-ready .ecology-sidebar-ui { display: none !important; }
+}

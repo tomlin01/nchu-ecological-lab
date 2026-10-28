@@ -1,0 +1,84 @@
+{
+  "case_id": "05-01",
+  "version": "prototype-v01",
+  "title": "照片是平的，怎麼估出樹高？",
+  "status": "animation_ready_for_user_review",
+  "entry": "index.html",
+  "duration": 100,
+  "film": "film/05-01-canopy-height-v01.mp4",
+  "updated": "2026-10-25T15:22:03.669901+00:00",
+  "files": {
+    "README.md": {
+      "bytes": 1320,
+      "sha256": "4a93ca768306b212bb2d2ab97275b4559bd7221553ed8aca2ac3434be79be1bb"
+    },
+    "SOURCE.md": {
+      "bytes": 1798,
+      "sha256": "530d6c1fc93c39c996893397481b79e5154fa211426e70fb4fa86c3882a7c9d0"
+    },
+    "app.mjs": {
+      "bytes": 15176,
+      "sha256": "5cc4193b9a56fafe923d45a751f7261f9abc58799a9efa227b13f51c6b61ef4e"
+    },
+    "assets/figure7.png": {
+      "bytes": 1838127,
+      "sha256": "d0de03294969f7ea931f74c906861fe4df8cd198210662a34eb624b04d4626ef"
+    },
+    "assets/source-data.json": {
+      "bytes": 1146,
+      "sha256": "d5c57223fb26a54379795cf324153b68c7b2f4464b3fd60f768381456b4bebb4"
+    },
+    "film/05-01-canopy-height-v01.metadata.json": {
+      "bytes": 856,
+      "sha256": "2e1cf2c383c85e279be8835b8c696678992f1c7f5025b74f32752fe2416ae410"
+    },
+    "film/05-01-canopy-height-v01.mp4": {
+      "bytes": 1955635,
+      "sha256": "dafc1a1b1f713e32be5a8afa473e65d53d3b582ceee26dcee314dc9f7842520d"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/canopy-sans.woff2": {
+      "bytes": 131668,
+      "sha256": "b4199690c9338827ba0ae373ed7adbc1007fd1beba63354ab2e6e3390ef4e57e"
+    },
+    "fonts/canopy-serif.woff2": {
+      "bytes": 175336,
+      "sha256": "79aa762f2d654e43701a9bda07dfca428c79d53ca56e68337e466421f9d42e3c"
+    },
+    "index.html": {
+      "bytes": 16882,
+      "sha256": "4d8acbe2502aed48d1aeae2242338b2472f90a9d057ab77226111313300957f3"
+    },
+    "model.mjs": {
+      "bytes": 4776,
+      "sha256": "ea979b1a486bad27c9469da2a6250eb10cb7e9ca152f3f003d0e5346c55f619c"
+    },
+    "model.test.mjs": {
+      "bytes": 2084,
+      "sha256": "93d863038692ff2a8281d1e0d547e3149b9a95a8f4e5aa4604a5b85267b7395a"
+    },
+    "scene.mjs": {
+      "bytes": 2833,
+      "sha256": "0afb7b242e4ef0819c8ba119d024fd6b0862d50fbcca09c2bf3bab8c99eb90fe"
+    },
+    "style.css": {
+      "bytes": 19814,
+      "sha256": "647455fc7d6b2be9fce7c62ee80ab9b677be2c151c9e20220aa48e318c44019c"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "verification.json": {
+      "bytes": 3669,
+      "sha256": "375f11ebd2e92745f53be625358de5c48ac9d2c5865d8b400043d23e504ee5f2"
+    }
+  }
+}

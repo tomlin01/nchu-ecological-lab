@@ -1,0 +1,26 @@
+{
+  "source": "outputs/ecology-ai-zebra-flower-assets/incoming/01-01-grassland-bg-v01",
+  "source_sha256": "6fb487f9c62d7d25938adf9c747ea3c450130fe41596f0d23f422cf5f87b1206",
+  "role": "user-provided generated environment illustration, not research imagery",
+  "transformation": "full-frame WebP encoding, quality 90, method 6; no resize, crop or colour adjustment",
+  "new_ai_generation": false,
+  "actual_generation_model": null,
+  "actual_generation_prompt": null,
+  "actual_generation_date": null,
+  "actual_generation_seed": null,
+  "actual_generation_references": null,
+  "usage_terms": null,
+  "public_distribution_ready": false,
+  "license_granted": false,
+  "path": "outputs/ecology-ai-habitat-pages/assets/01-01-background.webp",
+  "sha256": "ed2000f369f1fda74f9b6d49e094da03434dc2ff23c60475e25b7e06e320c982",
+  "source_format": "PNG",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "lossless": false,
+  "source_filename_retained": "01-01-grassland-bg-v01",
+  "css_display": "fixed cover background may enlarge/crop; no seamless-panorama claim",
+  "review": "visually inspected source preview; suitable for labeled local background trial, not full rights review"
+}

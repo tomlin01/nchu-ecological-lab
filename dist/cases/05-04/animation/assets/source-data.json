@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "caseId": "05-04",
+  "tileId": "dw_-88p4740709175_44p2043471326-20190608",
+  "location": "Fox Valley, Wisconsin, USA",
+  "date": "2019-06-08",
+  "sourceImageId": "20190608T164849_20190608T170119_T16TCQ",
+  "sourceTimeStartMilliseconds": 1560013286000,
+  "sourceType": "Published archived validation predictions; not current live Earth Engine output and not a model rerun.",
+  "nativeGrid": {
+    "crs": "EPSG:32616",
+    "transform": [
+      10.0,
+      0.0,
+      379670.0,
+      0.0,
+      -10.0,
+      4898180.0
+    ],
+    "width": 512,
+    "height": 512,
+    "bounds": [
+      379670.0,
+      4893060.0,
+      384790.0,
+      4898180.0
+    ],
+    "boundsWgs84": [
+      -88.50660753309894,
+      44.18083546121835,
+      -88.44139818359535,
+      44.22774321145412
+    ],
+    "pixelSizeMetres": [
+      10.0,
+      10.0
+    ],
+    "probabilityBandNames": [
+      "water",
+      "trees",
+      "grass",
+      "flooded_vegetation",
+      "crops",
+      "shrub_and_scrub",
+      "built",
+      "bare",
+      "snow_and_ice"
+    ],
+    "probabilityDtype": [
+      "float32",
+      "float32",
+      "float32",
+      "float32",
+      "float32",
+      "float32",
+      "float32",
+      "float32",
+      "float32"
+    ],
+    "nodataMetadata": null,
+    "finiteValidPixels": 262142,
+    "excludedNonfinitePixels": 2,
+    "probabilitySumRange": [
+      0.9999998807907104,
+      1.0000001192092896
+    ]
+  },
+  "classOrder": [
+    "water",
+    "trees",
+    "grass",
+    "flooded_vegetation",
+    "crops",
+    "shrub_and_scrub",
+    "built",
+    "bare",
+    "snow_and_ice"
+  ],
+  "classes": [
+    {
+      "index": 0,
+      "key": "water",
+      "label": "水面",
+      "color": "#419bdf"
+    },
+    {
+      "index": 1,
+      "key": "trees",
+      "label": "樹木",
+      "color": "#397d49"
+    },
+    {
+      "index": 2,
+      "key": "grass",
+      "label": "草地",
+      "color": "#88b053"
+    },
+    {
+      "index": 3,
+      "key": "flooded_vegetation",
+      "label": "淹水植被",
+      "color": "#7a87c6"
+    },
+    {
+      "index": 4,
+      "key": "crops",
+      "label": "作物",
+      "color": "#e49635"
+    },
+    {
+      "index": 5,
+      "key": "shrub_and_scrub",
+      "label": "灌木與灌叢",
+      "color": "#dfc35a"
+    },
+    {
+      "index": 6,
+      "key": "built",
+      "label": "建成區",
+      "color": "#c4281b"
+    },
+    {
+      "index": 7,
+      "key": "bare",
+      "label": "裸地",
+      "color": "#a59b8f"
+    },
+    {
+      "index": 8,
+      "key": "snow_and_ice",
+      "label": "冰雪",
+      "color": "#b39fe1"
+    }
+  ],
+  "points": [
+    {
+      "id": "A",
+      "row": 457,
+      "col": 351,
+      "x": 0.6865234375,
+      "y": 0.8935546875,
+      "projectedXY": [
+        383185.0,
+        4893605.0
+      ],
+      "longitude": -88.46159320211807,
+      "latitude": 44.18631158809649,
+      "classIndex": 6,
+      "classKey": "built",
+      "classLabel": "建成區",
+      "probabilities": [
+        0.021942049264907837,
+        0.022031068801879883,
+        0.027136461809277534,
+        0.023807980120182037,
+        0.023608503863215446,
+        0.026722757145762444,
+        0.7875185012817383,
+        0.03870166465640068,
+        0.028530994430184364
+      ],
+      "scores": [
+        {
+          "classIndex": 0,
+          "key": "water",
+          "label": "水面",
+          "probability": 0.021942049264907837,
+          "display": "2.2%",
+          "color": "#419bdf"
+        },
+        {
+          "classIndex": 1,
+          "key": "trees",
+          "label": "樹木",
+          "probability": 0.022031068801879883,
+          "display": "2.2%",
+          "color": "#397d49"
+        },
+        {
+          "classIndex": 2,
+          "key": "grass",
+          "label": "草地",
+          "probability": 0.027136461809277534,
+          "display": "2.7%",
+          "color": "#88b053"
+        },
+        {
+          "classIndex": 3,
+          "key": "flooded_vegetation",
+          "label": "淹水植被",
+          "probability": 0.023807980120182037,
+          "display": "2.4%",
+          "color": "#7a87c6"
+        },
+        {
+          "classIndex": 4,
+          "key": "crops",
+          "label": "作物",
+          "probability": 0.023608503863215446,
+          "display": "2.4%",
+          "color": "#e49635"
+        },
+        {
+          "classIndex": 5,
+          "key": "shrub_and_scrub",
+          "label": "灌木與灌叢",
+          "probability": 0.026722757145762444,
+          "display": "2.7%",
+          "color": "#dfc35a"
+        },
+        {
+          "classIndex": 6,
+          "key": "built",
+          "label": "建成區",
+          "probability": 0.7875185012817383,
+          "display": "78.8%",
+          "color": "#c4281b"
+        },
+        {
+          "classIndex": 7,
+          "key": "bare",
+          "label": "裸地",
+          "probability": 0.03870166465640068,
+          "display": "3.9%",
+          "color": "#a59b8f"
+        },
+        {
+          "classIndex": 8,
+          "key": "snow_and_ice",
+          "label": "冰雪",
+          "probability": 0.028530994430184364,
+          "display": "2.9%",
+          "color": "#b39fe1"
+        }
+      ],
+      "top1": {
+        "key": "built",
+        "label": "建成區",
+        "probability": 0.7875185012817383,
+        "display": "78.8%"
+      },
+      "top2": {
+        "key": "bare",
+        "label": "裸地",
+        "probability": 0.03870166465640068,
+        "display": "3.9%"
+      },
+      "margin": 0.7488168366253376,
+      "retainedAtTeachingThreshold05": true,
+      "sumRaw": 0.9999999813735485,
+      "sumRoundedPercent": 100.2,
+      "expertReference": {
+        "rawOneIndexed": 7,
+        "classIndex": 6,
+        "key": "built",
+        "usedToSelectPoint": false
+      }
+    },
+    {
+      "id": "B",
+      "row": 269,
+      "col": 258,
+      "x": 0.5048828125,
+      "y": 0.5263671875,
+      "projectedXY": [
+        382255.0,
+        4895485.0
+      ],
+      "longitude": -88.47364729324438,
+      "latitude": 44.20308255301093,
+      "classIndex": 6,
+      "classKey": "built",
+      "classLabel": "建成區",
+      "probabilities": [
+        0.2447221577167511,
+        0.1524796187877655,
+        0.054523274302482605,
+        0.06266583502292633,
+        0.07174491882324219,
+        0.043294016271829605,
+        0.28583836555480957,
+        0.03380826115608215,
+        0.05092355236411095
+      ],
+      "scores": [
+        {
+          "classIndex": 0,
+          "key": "water",
+          "label": "水面",
+          "probability": 0.2447221577167511,
+          "display": "24.5%",
+          "color": "#419bdf"
+        },
+        {
+          "classIndex": 1,
+          "key": "trees",
+          "label": "樹木",
+          "probability": 0.1524796187877655,
+          "display": "15.2%",
+          "color": "#397d49"
+        },
+        {
+          "classIndex": 2,
+          "key": "grass",
+          "label": "草地",
+          "probability": 0.054523274302482605,
+          "display": "5.5%",
+          "color": "#88b053"
+        },
+        {
+          "classIndex": 3,
+          "key": "flooded_vegetation",
+          "label": "淹水植被",
+          "probability": 0.06266583502292633,
+          "display": "6.3%",
+          "color": "#7a87c6"
+        },
+        {
+          "classIndex": 4,
+          "key": "crops",
+          "label": "作物",
+          "probability": 0.07174491882324219,
+          "display": "7.2%",
+          "color": "#e49635"
+        },
+        {
+          "classIndex": 5,
+          "key": "shrub_and_scrub",
+          "label": "灌木與灌叢",
+          "probability": 0.043294016271829605,
+          "display": "4.3%",
+          "color": "#dfc35a"
+        },
+        {
+          "classIndex": 6,
+          "key": "built",
+          "label": "建成區",
+          "probability": 0.28583836555480957,
+          "display": "28.6%",
+          "color": "#c4281b"
+        },
+        {
+          "classIndex": 7,
+          "key": "bare",
+          "label": "裸地",
+          "probability": 0.03380826115608215,
+          "display": "3.4%",
+          "color": "#a59b8f"
+        },
+        {
+          "classIndex": 8,
+          "key": "snow_and_ice",
+          "label": "冰雪",
+          "probability": 0.05092355236411095,
+          "display": "5.1%",
+          "color": "#b39fe1"
+        }
+      ],
+      "top1": {
+        "key": "built",
+        "label": "建成區",
+        "probability": 0.28583836555480957,
+        "display": "28.6%"
+      },
+      "top2": {
+        "key": "water",
+        "label": "水面",
+        "probability": 0.2447221577167511,
+        "display": "24.5%"
+      },
+      "margin": 0.04111620783805847,
+      "retainedAtTeachingThreshold05": false,
+      "sumRaw": 1.0,
+      "sumRoundedPercent": 100.1,
+      "expertReference": {
+        "rawOneIndexed": 7,
+        "classIndex": 6,
+        "key": "built",
+        "usedToSelectPoint": false
+      }
+    }
+  ],
+  "assets": {
+    "rgb": {
+      "file": "s2-reference-rgb.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "6ca78b8e86416a8e3a9f99109e0f436c28051efad8f30c1e587a6237385116b4",
+      "bytes": 843203,
+      "resampling": "nearest"
+    },
+    "label": {
+      "file": "dw-label.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "593705d1dbc2138b5ec5255870bf8c70a11ba21c83147341224fe08a499bd466",
+      "bytes": 36124,
+      "resampling": "nearest"
+    },
+    "threshold05": {
+      "file": "dw-threshold-05.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "7aaeb39b7cd2a5e05b40fa17b329b88b3320b79bd603c50eb3448457d3268026",
+      "bytes": 34319,
+      "resampling": "nearest"
+    },
+    "top1": {
+      "file": "dw-top1.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "a07cc11811a7c2201bd2fb1deb939470d43cc80a477ca7a0b6268a371ab4f673",
+      "bytes": 443798,
+      "resampling": "nearest"
+    },
+    "reference": {
+      "file": "reference-label.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "78fdd8e2049f0a5f0cf178aab998ab6c1a1ea29e9f85ce1a071b179dcf9e5715",
+      "bytes": 23826,
+      "resampling": "nearest"
+    },
+    "disagreement": {
+      "file": "disagreement.png",
+      "width": 1536,
+      "height": 1536,
+      "nativeWidth": 512,
+      "nativeHeight": 512,
+      "sha256": "fb05624caf34d553173d2f265cb5faf253a7a6bea756d42aa8783914b190ea6c",
+      "bytes": 31324,
+      "resampling": "nearest"
+    }
+  },
+  "rgbSource": {
+    "sourceUrl": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/16/T/CQ/2019/6/S2B_16TCQ_20190608_0_L2A/TCI.tif",
+    "stacId": "S2B_16TCQ_20190608_0_L2A",
+    "productUri": "S2B_MSIL2A_20190608T164849_N0212_R026_T16TCQ_20190608T210645.SAFE",
+    "datetimeUtc": "2019-06-08T17:01:26.615000Z",
+    "level": "L2A Surface Reflectance true-colour reference",
+    "sourceBands": [
+      "B04",
+      "B03",
+      "B02"
+    ],
+    "storedProduct": "TCI uint8 RGB; publisher-rendered true colour",
+    "sourceWindow": [
+      7967,
+      10186,
+      512,
+      512
+    ],
+    "sourceTransform": [
+      10,
+      0,
+      300000,
+      0,
+      -10,
+      5000040
+    ],
+    "localToneOperation": "No additional stretch, gamma, sharpening, or enhancement; nearest enlargement only",
+    "referenceReflectanceBandsScale": 0.0001,
+    "referenceReflectanceBandsOffset": 0,
+    "scaleNote": "Reflectance scale describes separate source B04/B03/B02 assets, not these already-rendered TCI bytes.",
+    "nativeCropSha256": "ae2675f39a5c104d07d054b01fa7d1c2e97666a35e3699d889027de20a513b96",
+    "gridExactlyMatchesProbabilityTile": true,
+    "requiredLabel": "同次觀測的 L2A 參考影像，非作者原 L1C 輸入位元組。",
+    "license": "Copernicus Sentinel free, full and open access; contains modified Copernicus Sentinel data 2019.",
+    "hostingCitation": "Sentinel-2 Cloud-Optimized GeoTIFFs, AWS Open Data / Element 84; original Sentinel-2 observations by Copernicus/ESA."
+  },
+  "top1Legend": {
+    "min": 0,
+    "max": 1,
+    "lowColor": "#f4f7f8",
+    "highColor": "#174b66",
+    "meaning": "Maximum of the nine raw class probabilities; no hillshade and no claim of elevation or calibrated correctness."
+  },
+  "teachingThreshold05": {
+    "value": 0.5,
+    "rule": "Keep original label only when source valid and Top-1 >= 0.5",
+    "status": "Custom teaching threshold, not a universal research recommendation",
+    "sourceValidPixels": 262142,
+    "sourceInvalidPixels": 2,
+    "retainedPixels": 174290,
+    "excludedByThresholdPixels": 87852,
+    "nativeMaskFile": "sources/assets-v01/dw-threshold-05-mask.tif",
+    "nativeMaskCodes": {
+      "0": "Original nonfinite/invalid probability",
+      "1": "Source valid but excluded by this threshold",
+      "2": "Retained by this threshold"
+    },
+    "transparentMeaning": "This selection did not retain the pixel, or source scores are invalid. It does not mean absent land cover.",
+    "sourceMaskCaveat": "Two NaN pixels are observed; no separate archive band identifies whether each invalid cell arose from cloud, shadow, or another cause.",
+    "modelRun": false
+  },
+  "expertReference": {
+    "bandName": "lulc",
+    "rawCoding": "1 through 9 maps to class index 0 through 8; 0 is no markup",
+    "role": "Held-out expert-consensus reference for this validation tile; not a training example",
+    "validRule": "Probability/model valid and expert raw value in 1..9",
+    "referenceValidPixels": 231771,
+    "agreementPixelsForVerificationOnly": 199264,
+    "disagreementPixelsForVerificationOnly": 32507,
+    "excludedPixels": 30373,
+    "noLocalAccuracyClaim": true,
+    "disagreementLegend": [
+      {
+        "label": "與專家參考一致",
+        "color": "#dce7e5"
+      },
+      {
+        "label": "與專家參考不一致",
+        "color": "#9b3c8f"
+      },
+      {
+        "label": "專家未標註或模型無有效分數",
+        "color": "transparent"
+      }
+    ]
+  },
+  "pointSelection": {
+    "purpose": "Two teaching examples with the same argmax label, not representative statistics.",
+    "classRule": "Class of the tile-wide highest valid Top-1 score that also has close-score pixels",
+    "aRule": "Maximum Top-1 score for this class",
+    "bRule": "Same class, Top-1 below 0.55, Top-1 minus Top-2 below 0.05, nearest image centre",
+    "expertAgreementNotUsed": true,
+    "noPointThresholdIsAResearchRecommendation": true
+  },
+  "roundingNote": "顯示值各自四捨五入到一位百分比，合計不一定為100.0%；長條寬度應使用原始float。",
+  "limits": [
+    "The archived model scores are not calibrated probabilities of correctness or land-area fractions.",
+    "RGB is a same-acquisition L2A reference; Dynamic World inference used L1C. Do not imply a new RGB-to-model run.",
+    "Both points share the built label; class names do not identify individual buildings or land ownership.",
+    "Two all-NaN probability pixels are excluded even though the TIFF nodata metadata is unset.",
+    "The expert lulc band is one-indexed; zero means no human markup, not the water class.",
+    "The publication describes approximately 5.1-km tiles; this actual file is 512 by 512 at 10 m, or 5120 m per side."
+  ],
+  "source": {
+    "doi": "10.5281/zenodo.4766508",
+    "version": "v2",
+    "license": "CC BY 4.0",
+    "attribution": "Brown et al., Dynamic World Test Tiles (v2), Zenodo. Dynamic World by Google, National Geographic Society and World Resources Institute.",
+    "probabilitiesFile": "probs_dw_-88p4740709175_44p2043471326-20190608.tif",
+    "probabilitiesSHA256": "af8beccb01682391b743df172bc49e65a430409a634a1969ba4c896a984a4697",
+    "labelsFile": "label_dw_-88p4740709175_44p2043471326-20190608.tif",
+    "labelsSHA256": "081ba8e76ecfba351f48abeac272969ce874af46a1f9d84196a8bb15717fda1a",
+    "paper": "https://doi.org/10.1038/s41597-022-01307-4"
+  },
+  "verification": {
+    "classOrderReadFromBandDescriptions": true,
+    "rawProbabilitiesRangeChecked": true,
+    "sumToOneTolerance": 2e-07,
+    "labelArgmaxMismatchPixels": 0,
+    "rgbProbabilityLabelGridMatch": true,
+    "modelRun": false,
+    "geeCredentialsUsed": false,
+    "paidApiUsed": false
+  }
+}

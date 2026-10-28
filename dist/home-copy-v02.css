@@ -1,0 +1,15 @@
+@font-face{font-family:"Home Sans";src:url("fonts/home-copy-v02-sans.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:"Home Serif";src:url("fonts/home-copy-v02-serif.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+.topic-label{margin:0 0 16px;color:var(--accent);font-size:14px;line-height:1.6}
+@media screen{
+  #topic-title{font-size:clamp(44px,4.25vw,68px);line-height:1.18;letter-spacing:-.025em}
+  .topic-intro{margin-top:22px}
+  .case-preview{margin-top:24px}
+}
+@media screen and (max-width:920px){
+  #topic-title{font-size:clamp(40px,12vw,64px)}
+  .topic-label{margin-bottom:12px}
+}
+
+@media screen and (max-width:920px){.case-title{font-size:19px;text-wrap:pretty}}
+@media screen and (max-width:380px){.case-title{font-size:18px}}

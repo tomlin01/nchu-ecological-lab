@@ -1,0 +1,147 @@
+{
+  "case_id": "07-01",
+  "version": "hybrid-v01",
+  "entry": "index.html",
+  "status": "integrated_local_main_site",
+  "verification": {
+    "case_id": "07-01",
+    "version": "hybrid-v01",
+    "status": "candidate_ready_for_user_review",
+    "duration_seconds": 90,
+    "browser_checks": 40,
+    "static_checks": 15,
+    "pure_timeline_samples": 9001,
+    "reverse_seek_pixel_comparisons": 19,
+    "protected_existing_files": 345,
+    "source_figures_byte_identical": 2,
+    "csv_original_bytes_retained": true,
+    "source_backed_binary_edges": 8,
+    "normal_speed_full_playback": {
+      "completed": true,
+      "duration_seconds": 90,
+      "seeks": 0,
+      "record": "full-playback.json"
+    },
+    "visual_review": {
+      "desktop_screenshots_reviewed": true,
+      "mobile_320_and_390_reviewed": true,
+      "fixes": [
+        "Hide SVG scene groups with display:none so child labels cannot remain visible.",
+        "Use readable mobile node codes with a 16px species key below the network.",
+        "Preserve all network edge widths and distinguish manually reviewed lizard records."
+      ]
+    },
+    "simulated_viewports": [
+      1440,
+      1280,
+      768,
+      390,
+      320
+    ],
+    "physical_phone_tested": false,
+    "safari_tested": false,
+    "new_model_inference": false,
+    "source_video_reconstructed": false,
+    "main_site_modified": false,
+    "user_accepted": false,
+    "public_deployment": false
+  },
+  "files": {
+    "LICENSES.txt": {
+      "bytes": 523,
+      "sha256": "0e62ff7f1cb41fd3d12421b2ca45a01e3de0f52977e91fab02724d5fc58fe68e"
+    },
+    "README.md": {
+      "bytes": 1353,
+      "sha256": "78b16e955a2706de26ed56d36a7ee4da69d6c49eb72e7d4d536bea2fb80b0bf1"
+    },
+    "SOURCE.md": {
+      "bytes": 3088,
+      "sha256": "61038690a79e1aee46f8c65362989c3b969290df76d1ace67c7504de577a0853"
+    },
+    "app.bundle.js": {
+      "bytes": 80009,
+      "sha256": "ae57976d93cd69e444f9c699417c5fd6344e217a4bf4cee2c2059a51960a8fc4"
+    },
+    "assets/cabrera_22_23_habitat.csv": {
+      "bytes": 560147,
+      "sha256": "399ec11ae6ce18c8e9ebb050857ca7c1da4cb4a7858e24382750a92ae5e16a07"
+    },
+    "assets/dataset-README.txt": {
+      "bytes": 1783,
+      "sha256": "6f4817522aa77de7dcfe4ba676ee8da046818f414bdcdf9cdd0669e410150a0c"
+    },
+    "assets/figure-1.jpeg": {
+      "bytes": 404789,
+      "sha256": "8a664643b4695b63064be8701a1bfd7e81734fb46b243d5a8134c037e6621bb3"
+    },
+    "assets/figure-2.jpeg": {
+      "bytes": 498956,
+      "sha256": "646385ad8119de623e1d92a1bfcf58a0884bfb068fc6d3b3d0687841f76f282e"
+    },
+    "assets/network-subset.json": {
+      "bytes": 113848,
+      "sha256": "030fb7f6f053076dab5e671ede50bd5e66e3077ffe9650fb2d482a4f1205e42c"
+    },
+    "build-runtime.json": {
+      "bytes": 1673,
+      "sha256": "217004b218f4205d361415558b25512826134ce5b72548872ab3d3671ca5a279"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 127932,
+      "sha256": "9521c713007453b17669085f836d8b214b8d2ac8e059eb097a9f50ecc6b96cd9"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 170696,
+      "sha256": "541c562a37dc77a32fd4f29c0aa9fd3bfa9c2c6a48388eed8476aa46435b45bc"
+    },
+    "index.html": {
+      "bytes": 10992,
+      "sha256": "ae8b38bf6308d535f4028425f3df89e99bc58182b6c1798435aeb22e42c2c508"
+    },
+    "provenance.json": {
+      "bytes": 5348,
+      "sha256": "d64f1e63d4b6399a709660df5e600fccf6e0800b2464b76bf96f87e701ffd22f"
+    },
+    "style.css": {
+      "bytes": 11627,
+      "sha256": "a4b5241937f3fdc9267dd3284bb8b59ea957ecbeb15e273284b71d3303363b02"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "embed.html": {
+      "bytes": 11338,
+      "sha256": "6b7b8a6b4bfdc63167786eee058293f270a741a04eba8748066e7467abba0b6c"
+    },
+    "embed.css": {
+      "bytes": 1544,
+      "sha256": "e47404b38084aa5b0aeba4579497ddfc6d54907c444c9b701925e478e2444746"
+    },
+    "embed.js": {
+      "bytes": 3598,
+      "sha256": "8d7956fd8c7014ca2c4ba8da930ae67807fbd9bf2e0978aa32af8b9e7ec14d71"
+    }
+  },
+  "integration": {
+    "entry": "embed.html",
+    "parent": "../07-01.html",
+    "public_deployment": false,
+    "runtime_original_bytes_preserved": true,
+    "historical_verification": "verification describes the standalone candidate before integration",
+    "document_amendments": [
+      "README.md",
+      "SOURCE.md",
+      "manifest.json"
+    ]
+  }
+}

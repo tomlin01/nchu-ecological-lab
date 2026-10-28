@@ -1,0 +1,49 @@
+{
+  "revision": "topic-02-home-v01",
+  "topic_id": "topic-02",
+  "entry": "topics/02/index.html",
+  "source_hashes": {
+    "template.html": "4cd237fc7daf61c0f6726965a8ab0dfcbcfe878c567a93c9e156fd1b70fdd6e7",
+    "topic.css": "6057428e2524d99153ac96d1b8c5d4f5fe3b09dd535c7b042fac102761ae7b9d",
+    "topic.js": "e80593b3d470bf1a82ad8167d3acc7335dad8820ce3c70bca6777025c124bac6",
+    "sidebar.js": "26abfc7a2c56f1e86d0e8df464360b104a0652ff25c715f7346ed9752bb91c2d",
+    "content-and-assets.md": "c25ce9890b835ce6cebb8632a596cd4c3c52070e816aecbf0c813b3e397ab71b"
+  },
+  "existing_assets": [
+    {
+      "case_id": "02-01",
+      "path": "cases/02-01/assets/02-01-jaguar-main.webp",
+      "sha256": "8063dae610eaf9d03e7f5dfe9506bb4da973de06de36094272da67a7fcad1291"
+    },
+    {
+      "case_id": "02-02",
+      "path": "cases/02-02/assets/spotted-owl-forest-v01.webp",
+      "sha256": "af4f36b4847242a7f9091d5ced5b8d9c4a4bbc09f746dc7c1aaa7509c766a185"
+    },
+    {
+      "case_id": "02-03",
+      "path": "cases/02-03/assets/brydes-whale-mariana-noaa-original.JPG",
+      "sha256": "a0046e7472df67e45277751b71b50018005a38fbaf08f33a8a43b16ce8ea67d7"
+    },
+    {
+      "case_id": "02-04",
+      "path": "cases/02-04/assets/ifcb-cell-chain-concept.png",
+      "sha256": "c6f5e39f9277910c01fd57ef48a34e84dd0775b9f82d522fe2e9cad123bc1fb4"
+    }
+  ],
+  "images_copied_or_changed": false,
+  "new_animation": false,
+  "new_inference": false,
+  "new_case": false,
+  "public_deployment": false,
+  "original_ui_revision": "navigation-media-v01",
+  "scope": "main",
+  "status": "integrated_local_verified",
+  "final_source_hashes": {
+    "template.html": "4cd237fc7daf61c0f6726965a8ab0dfcbcfe878c567a93c9e156fd1b70fdd6e7",
+    "topic.css": "6057428e2524d99153ac96d1b8c5d4f5fe3b09dd535c7b042fac102761ae7b9d",
+    "topic.js": "e80593b3d470bf1a82ad8167d3acc7335dad8820ce3c70bca6777025c124bac6",
+    "sidebar.js": "26abfc7a2c56f1e86d0e8df464360b104a0652ff25c715f7346ed9752bb91c2d"
+  },
+  "verification": "verification.json"
+}

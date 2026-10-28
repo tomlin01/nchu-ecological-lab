@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "caseId": "05-03",
+  "region": "Tampa Bay, Florida, USA",
+  "regionLabel": "美國 Tampa Bay",
+  "periods": [
+    "2019-2020",
+    "2023-2024"
+  ],
+  "semantics": "Published seagrass-mark presence comparison; not absence-validated ecological loss or gain.",
+  "aoiSelection": "Geographic bay framing including upper, middle and lower Tampa Bay; chosen for recognizable extent and readability, not for net-negative counts.",
+  "requestedBoundsWgs84": [
+    -82.85,
+    27.48,
+    -82.35,
+    28.08
+  ],
+  "boundsWgs84": [
+    -82.85000168683206,
+    27.479913698858223,
+    -82.34999939969113,
+    28.080078140178475
+  ],
+  "nativeGrid": {
+    "crs": "EPSG:4326",
+    "transform": [
+      8.983152841195215e-05,
+      0.0,
+      -82.85000168683206,
+      0.0,
+      -8.983152841195215e-05,
+      28.080078140178475
+    ],
+    "width": 5566,
+    "height": 6681,
+    "sourceWindow": [
+      32893,
+      33930,
+      5566,
+      6681
+    ],
+    "pixelSizeDegree": [
+      8.983152841195215e-05,
+      8.983152841195215e-05
+    ],
+    "nominalGridMetres": 10,
+    "approxPixelMetresAtCentre": [
+      8.853877582663202,
+      9.954762777996047
+    ],
+    "nodata": 0,
+    "dtype": "uint8",
+    "actualValues": [
+      0,
+      1
+    ],
+    "exactPairGridMatch": true
+  },
+  "tileLocationVerification": {
+    "probeFile": "GlobalSeagrass2019_2020-0001179648-0003997696.tif",
+    "inferredGlobalOrigin": [
+      -180.00001488697754,
+      90.00005235925298
+    ],
+    "candidateSuffix": "0000655360-0001048576.tif",
+    "candidateBoundsReadFromBothTiffs": true,
+    "filenameOffsetAndActualTransformAgree": true
+  },
+  "display": {
+    "width": 1186,
+    "height": 1600,
+    "resampling": "nearest",
+    "geometry": "Local equirectangular display; aspect corrected using WGS84 ground lengths at AOI midpoint. No raster values interpolated.",
+    "sourceCountsComputedBeforeDisplayResampling": true,
+    "backgroundDoesNotMeanWaterOrAbsence": true
+  },
+  "scaleBar": {
+    "metres": 5000,
+    "normalizedLength": 0.10145963354519316,
+    "latitude": 27.77999591951835,
+    "approximate": true,
+    "method": "WGS84 ellipsoid parallel distance at AOI midpoint; not pixel count times 10 m"
+  },
+  "classMapping": {
+    "1": "作者圖資有海草標示",
+    "0": "檔案 NoData／無標示；不能解讀為可靠非海草"
+  },
+  "epochLegend": [
+    {
+      "value": 1,
+      "label": "本期有標示",
+      "color": "#087F8C"
+    },
+    {
+      "value": 0,
+      "label": "無標示（不等於沒有海草）",
+      "color": "#F1F0EA"
+    }
+  ],
+  "legend": [
+    {
+      "value": 1,
+      "label": "兩期有標示",
+      "color": "#53666B"
+    },
+    {
+      "value": 2,
+      "label": "僅前期有標示",
+      "color": "#D55E00"
+    },
+    {
+      "value": 3,
+      "label": "僅後期有標示",
+      "color": "#0072B2"
+    },
+    {
+      "value": 0,
+      "label": "兩期皆無標示（原因未明）",
+      "color": "#F1F0EA"
+    }
+  ],
+  "pixelCountsForVerificationOnly": {
+    "nativeTotalPixels": 37186446,
+    "beforeMarked": 1940778,
+    "afterMarked": 1944494,
+    "bothMarked": 1675511,
+    "beforeOnlyMarked": 265267,
+    "afterOnlyMarked": 268983,
+    "unmarkedBoth": 34976685
+  },
+  "commonValidMask": {
+    "definition": "Intersection of the two native GDAL masks",
+    "meaning": "Because nodata=0 and only value 1 is valid, this intersection is shared mapped presence only.",
+    "validPixels": 1675511,
+    "doesNotEstablishJointObservedNonSeagrass": true
+  },
+  "maskLimitations": [
+    "Both source files encode 0 as NoData and 1 as mapped seagrass; reliable non-seagrass and unobserved/background cannot be separated.",
+    "Before-only/after-only are map-mark differences, not verified habitat loss/gain or mortality.",
+    "No local area is calculated from pixel counts; EPSG:4326 pixels vary in ground width with latitude.",
+    "Natural Earth coastline is coarse context only and is not used to classify pixels or infer valid water.",
+    "The two source periods are composite windows, not exact same-day repeat photographs."
+  ],
+  "assets": {
+    "before": {
+      "file": "tampa-before.png",
+      "width": 1186,
+      "height": 1600,
+      "bytes": 65389,
+      "sha256": "9c5cdeda84c306671b79dd81b675a0cd1d2e10ed1a59cffaf60e2356c646e7fb"
+    },
+    "after": {
+      "file": "tampa-after.png",
+      "width": 1186,
+      "height": 1600,
+      "bytes": 67155,
+      "sha256": "e00ac7d0d46054a73096b61617d618001b0ca338019acf2cd77c4745cdc678a3"
+    },
+    "difference": {
+      "file": "tampa-difference.png",
+      "width": 1186,
+      "height": 1600,
+      "bytes": 116125,
+      "sha256": "3f44ddab83c09056e7229df2cf33d560434e1385c00953a6116807c65b070d90"
+    },
+    "commonValidMask": {
+      "file": "tampa-common-valid-mask.png",
+      "width": 1186,
+      "height": 1600,
+      "bytes": 52698,
+      "sha256": "4fc3b98bc446b1dbead49f69cd6f6082968429869b7a038b43de88d85b779f25"
+    },
+    "shoreline": {
+      "file": "tampa-shoreline.svg",
+      "width": 1186,
+      "height": 1600,
+      "bytes": 3060,
+      "sha256": "57fe671c00dd3584d10e86c75d406afa8c25b2b7e2fe709816b94ad8b16fb644"
+    },
+    "detailBefore": {
+      "file": "tampa-detail-before.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 4087,
+      "sha256": "1a7aae3806bd495935487ac38761671594c969e3c092a3cea255d73cbd4e10ab"
+    },
+    "detailAfter": {
+      "file": "tampa-detail-after.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 4053,
+      "sha256": "c789eb157fb54e17b927dd0aad168fcb110f6212ae38520959dcf754b68589f8"
+    },
+    "detailDifference": {
+      "file": "tampa-detail-difference.png",
+      "width": 800,
+      "height": 800,
+      "bytes": 4344,
+      "sha256": "4d83f1f82a7b08abbf3bfd5114247589437166f7d5414275db92ac2932de6b94"
+    },
+    "detailCells": {
+      "file": "tampa-detail-cells.json",
+      "nativeWidth": 40,
+      "nativeHeight": 40,
+      "bytes": 30386,
+      "sha256": "bf8d149bea002b03b071ada093297b216871cb116f92d40c42a1dc9758a53065"
+    }
+  },
+  "detail40": {
+    "selection": "Nearest marked pixel to AOI centre across either period; not selected by change sign",
+    "nativeWindowInSource": [
+      35585,
+      37165,
+      40,
+      40
+    ],
+    "nativeRows": 40,
+    "nativeColumns": 40,
+    "rectangleNormalized": [
+      0.4836507366151635,
+      0.4842089507558749,
+      0.007186489399928135,
+      0.00598712767549768
+    ],
+    "boundsWgs84": [
+      -82.60817521234709,
+      27.78587988462933,
+      -82.6045819512106,
+      27.78947314576581
+    ],
+    "displayNote": "Each cell is one native angular pixel, enlarged without interpolation; not exactly 10 m square."
+  },
+  "source": {
+    "doi": "10.5281/zenodo.18612240",
+    "url": "https://zenodo.org/records/18612240",
+    "license": "CC BY 4.0",
+    "attribution": "Peng et al. (2026), Global 10-meter seagrass maps, v1. Cropped and colour-rendered for this explainer.",
+    "tiffs": [
+      {
+        "period": "2019-2020",
+        "file": "sources/regional-v01/GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+        "sha256": "eb0f0e9a79eb47838f94c4648a45c264de4c705ebf3edd985c78673ef9d88d61",
+        "crc32": 2787513338,
+        "archive": "GlobalSeagrass2019_2020.zip",
+        "member": "GlobalSeagrass2019_2020/GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+        "verifiedMemberCRC": true,
+        "nativeMetadata": {
+          "file": "GlobalSeagrass2019_2020-0000655360-0001048576.tif",
+          "crs": "EPSG:4326",
+          "bounds": [
+            -85.8048301508864,
+            25.240862853190315,
+            -79.91763110488071,
+            31.128061899196013
+          ],
+          "bounds_wgs84": [
+            -85.8048301508864,
+            25.240862853190315,
+            -79.91763110488071,
+            31.128061899196013
+          ],
+          "transform": [
+            8.983152841195215e-05,
+            0.0,
+            -85.8048301508864,
+            0.0,
+            -8.983152841195215e-05,
+            31.128061899196013
+          ],
+          "width": 65536,
+          "height": 65536,
+          "count": 1,
+          "dtype": [
+            "uint8"
+          ],
+          "nodata": 0.0,
+          "block_shapes": [
+            [
+              256,
+              256
+            ]
+          ],
+          "mask_flags": [
+            [
+              "nodata"
+            ]
+          ],
+          "tags": {
+            "AREA_OR_POINT": "Area"
+          },
+          "band_tags": {}
+        }
+      },
+      {
+        "period": "2023-2024",
+        "file": "sources/regional-v01/GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+        "sha256": "de810e2dbbfc090c53573a3f7cf6111257c2569fe0a1e0b4cabadac68772ded0",
+        "crc32": 3427384975,
+        "archive": "GlobalSeagrass2023_2024.zip",
+        "member": "GlobalSeagrass2023_2024/GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+        "verifiedMemberCRC": true,
+        "nativeMetadata": {
+          "file": "GlobalSeagrass2023_2024-0000655360-0001048576.tif",
+          "crs": "EPSG:4326",
+          "bounds": [
+            -85.8048301508864,
+            25.240862853190315,
+            -79.91763110488071,
+            31.128061899196013
+          ],
+          "bounds_wgs84": [
+            -85.8048301508864,
+            25.240862853190315,
+            -79.91763110488071,
+            31.128061899196013
+          ],
+          "transform": [
+            8.983152841195215e-05,
+            0.0,
+            -85.8048301508864,
+            0.0,
+            -8.983152841195215e-05,
+            31.128061899196013
+          ],
+          "width": 65536,
+          "height": 65536,
+          "count": 1,
+          "dtype": [
+            "uint8"
+          ],
+          "nodata": 0.0,
+          "block_shapes": [
+            [
+              256,
+              256
+            ]
+          ],
+          "mask_flags": [
+            [
+              "nodata"
+            ]
+          ],
+          "tags": {
+            "AREA_OR_POINT": "Area"
+          },
+          "band_tags": {}
+        }
+      }
+    ]
+  },
+  "shorelineSource": {
+    "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-coastline/",
+    "rights": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "license": "public domain",
+    "scale": "1:10,000,000; not 10-metre accuracy",
+    "files": [
+      {
+        "file": "ne_10m_coastline.shp",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/10m_physical/ne_10m_coastline.shp",
+        "github_blob_sha": "2066748e6cc68b7e6ac701d486658cb721cb772b",
+        "bytes": 6806860,
+        "sha256": "459a4a97c09db19aadf5244026612de9d43748be27f83a360242b99f7fabb3c1"
+      },
+      {
+        "file": "ne_10m_coastline.shx",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/10m_physical/ne_10m_coastline.shx",
+        "github_blob_sha": "030130e3c8f0938815a7d4df67240245f7d6fda7",
+        "bytes": 33164,
+        "sha256": "f873afee7f56779ce52253f740ec251c2f12244aea911dc40f0a85d75de8d5f2"
+      },
+      {
+        "file": "ne_10m_coastline.dbf",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/10m_physical/ne_10m_coastline.dbf",
+        "github_blob_sha": "f3b98cb427c017def313824234107bd18bac15c5",
+        "bytes": 392765,
+        "sha256": "9ccc214342fe400bf8c7d91d7a5b276b0457b0ada03e8d4be16ac5ba13037f3b"
+      },
+      {
+        "file": "ne_10m_coastline.prj",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/10m_physical/ne_10m_coastline.prj",
+        "github_blob_sha": "f45cbadf0074d8b7b2669559a93bc50bb95f82d4",
+        "bytes": 145,
+        "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4"
+      },
+      {
+        "file": "ne_10m_coastline.VERSION.txt",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/10m_physical/ne_10m_coastline.VERSION.txt",
+        "github_blob_sha": "ed1a12232cb009b3d13ebcdb50d9c98ceba9bc64",
+        "bytes": 11,
+        "sha256": "65172e02b490b9f5076e1a7127e85325542a6ce2b5b06b0725008930309d81ca"
+      }
+    ]
+  },
+  "verification": {
+    "gridEqual": true,
+    "valueSetsChecked": true,
+    "maskEqualsPositiveClass": true,
+    "partitionCountsClose": true,
+    "sourceMemberCRCChecked": true,
+    "fullGlobalArchiveDownloaded": false,
+    "modelRun": false
+  }
+}

@@ -1,0 +1,918 @@
+{
+  "status": "fresh_detector_inference_completed",
+  "run_utc": "2026-10-20T09:36:22.692332+00:00",
+  "scope": "Educational localization demonstration using official AMI detector; not species classification, individual identification, human review, or a full AMI pipeline rerun.",
+  "script_sha256": "0471c05212dbc55c1c46b6efeceba3d8a77d0f880eed0a38aa32a07e59ec7358",
+  "model": {
+    "name": "FasterRCNN - MobileNet for AMI Moth Traps 2023",
+    "code_commit": "55d0787570f8c9d92c450f4fb65a58dd25cf6634",
+    "checkpoint_sha256": "9cabd584284f403ad96db11f37d0ad5ace14ceb6c3be1128f08fe408fbc9c1c9",
+    "architecture": "Faster R-CNN with MobileNet v3 large FPN; exact constructor from pinned official class",
+    "num_classes": 2,
+    "class_meaning": "0 background; 1 object candidate, not a species label",
+    "anchor_sizes": [
+      [
+        64,
+        128,
+        256,
+        512
+      ],
+      [
+        64,
+        128,
+        256,
+        512
+      ],
+      [
+        64,
+        128,
+        256,
+        512
+      ]
+    ],
+    "anchor_aspect_ratios": [
+      [
+        0.5,
+        1,
+        2
+      ],
+      [
+        0.5,
+        1,
+        2
+      ],
+      [
+        0.5,
+        1,
+        2
+      ]
+    ],
+    "model_internal_transform": {
+      "min_size": [
+        800
+      ],
+      "max_size": 1333,
+      "image_mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "image_std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "rpn_score_threshold": 0.05,
+    "roi_score_threshold": 0.05,
+    "roi_nms_threshold": 0.5,
+    "max_detections_per_image": 500,
+    "application_keep_rule": "score > 0.50",
+    "application_threshold": 0.5,
+    "raw_output_scope": "All detections returned by model.forward before the separate AMI >0.50 filter; model-internal RPN/ROI thresholds and NMS still apply."
+  },
+  "runtime": {
+    "python": "3.11.1",
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "numpy": "2.4.4",
+    "device": "cpu",
+    "threads": 2
+  },
+  "images": [
+    {
+      "source_path": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721230832-00-34.jpg",
+      "source_sha256": "ab02b54cef90e250c57765d3657819e83dd19e4c56ae93b68cfdd21e315fe1ba",
+      "width": 4096,
+      "height": 2160,
+      "source_mode": "RGB",
+      "exif_orientation": 1,
+      "preprocessing": "PIL convert RGB then torchvision ToTensor; no external resize/crop/normalization. Detector handles its own transform.",
+      "input_tensor_shape": [
+        3,
+        2160,
+        4096
+      ],
+      "input_tensor_dtype": "torch.float32",
+      "forward_seconds": 0.24181320803472772,
+      "coordinate_system": "original decoded image pixels; x right, y down; xyxy",
+      "raw_model_returned_count": 16,
+      "kept_count": 16,
+      "detections": [
+        {
+          "model_output_index": 0,
+          "bbox_xyxy": [
+            346.30828857421875,
+            500.01446533203125,
+            506.2047424316406,
+            713.011474609375
+          ],
+          "score": 0.9999979734420776,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 1,
+          "bbox_xyxy": [
+            2528.870361328125,
+            1606.2930908203125,
+            2775.150634765625,
+            1788.4952392578125
+          ],
+          "score": 0.9999979734420776,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 2,
+          "bbox_xyxy": [
+            2170.56201171875,
+            1666.965576171875,
+            2346.958740234375,
+            1868.478515625
+          ],
+          "score": 0.9999912977218628,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 3,
+          "bbox_xyxy": [
+            3459.609130859375,
+            1719.4296875,
+            3594.8935546875,
+            1988.6146240234375
+          ],
+          "score": 0.9999905824661255,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 4,
+          "bbox_xyxy": [
+            391.6423645019531,
+            1441.21728515625,
+            440.0133056640625,
+            1553.0550537109375
+          ],
+          "score": 0.9998307228088379,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 5,
+          "bbox_xyxy": [
+            2536.43603515625,
+            709.7611083984375,
+            2586.496826171875,
+            825.3211669921875
+          ],
+          "score": 0.9997708201408386,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 6,
+          "bbox_xyxy": [
+            3931.141845703125,
+            308.0990295410156,
+            3991.8154296875,
+            460.3320007324219
+          ],
+          "score": 0.9996964931488037,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 7,
+          "bbox_xyxy": [
+            1489.153076171875,
+            1475.8717041015625,
+            1528.3433837890625,
+            1635.71484375
+          ],
+          "score": 0.9996645450592041,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 8,
+          "bbox_xyxy": [
+            2931.676025390625,
+            14.990639686584473,
+            2969.1259765625,
+            132.3277130126953
+          ],
+          "score": 0.9995812773704529,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 9,
+          "bbox_xyxy": [
+            2500.04931640625,
+            1837.0072021484375,
+            2783.917236328125,
+            2138.776611328125
+          ],
+          "score": 0.9948574304580688,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 10,
+          "bbox_xyxy": [
+            3304.2119140625,
+            732.94775390625,
+            3361.1767578125,
+            810.1517333984375
+          ],
+          "score": 0.9937556982040405,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 11,
+          "bbox_xyxy": [
+            1702.0556640625,
+            2044.3839111328125,
+            1871.2215576171875,
+            2157.706787109375
+          ],
+          "score": 0.991449773311615,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 12,
+          "bbox_xyxy": [
+            10.276573181152344,
+            97.23196411132812,
+            152.13954162597656,
+            185.8501739501953
+          ],
+          "score": 0.9913696050643921,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 13,
+          "bbox_xyxy": [
+            3500.381103515625,
+            1633.9273681640625,
+            3534.72998046875,
+            1736.6729736328125
+          ],
+          "score": 0.9451106190681458,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 14,
+          "bbox_xyxy": [
+            4016.199951171875,
+            1690.751953125,
+            4081.384521484375,
+            1803.6741943359375
+          ],
+          "score": 0.6921233534812927,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 15,
+          "bbox_xyxy": [
+            4011.530517578125,
+            1694.377685546875,
+            4071.476318359375,
+            1762.0703125
+          ],
+          "score": 0.5175756812095642,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        }
+      ],
+      "source_bytes_unchanged": true
+    },
+    {
+      "source_path": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721232832-00-35.jpg",
+      "source_sha256": "a07eed063d1b07869df7e0988a24e542fb8024d47b84ceb735af1d8372b7c78c",
+      "width": 4096,
+      "height": 2160,
+      "source_mode": "RGB",
+      "exif_orientation": 1,
+      "preprocessing": "PIL convert RGB then torchvision ToTensor; no external resize/crop/normalization. Detector handles its own transform.",
+      "input_tensor_shape": [
+        3,
+        2160,
+        4096
+      ],
+      "input_tensor_dtype": "torch.float32",
+      "forward_seconds": 0.20789374999003485,
+      "coordinate_system": "original decoded image pixels; x right, y down; xyxy",
+      "raw_model_returned_count": 25,
+      "kept_count": 24,
+      "detections": [
+        {
+          "model_output_index": 0,
+          "bbox_xyxy": [
+            2087.422607421875,
+            480.49151611328125,
+            2133.979248046875,
+            605.4916381835938
+          ],
+          "score": 0.9999721050262451,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 1,
+          "bbox_xyxy": [
+            1579.169189453125,
+            1538.8167724609375,
+            1752.0322265625,
+            1749.962890625
+          ],
+          "score": 0.999967098236084,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 2,
+          "bbox_xyxy": [
+            3378.8740234375,
+            0.0,
+            3578.12451171875,
+            130.58030700683594
+          ],
+          "score": 0.9999657869338989,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 3,
+          "bbox_xyxy": [
+            2245.248779296875,
+            1717.8095703125,
+            2373.13623046875,
+            1927.2919921875
+          ],
+          "score": 0.9999043941497803,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 4,
+          "bbox_xyxy": [
+            3283.1796875,
+            898.7139282226562,
+            3391.415283203125,
+            986.3837280273438
+          ],
+          "score": 0.999871015548706,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 5,
+          "bbox_xyxy": [
+            226.71572875976562,
+            1284.856201171875,
+            340.5436096191406,
+            1401.4713134765625
+          ],
+          "score": 0.9998605251312256,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 6,
+          "bbox_xyxy": [
+            1401.5806884765625,
+            1161.468017578125,
+            1498.0885009765625,
+            1297.14794921875
+          ],
+          "score": 0.9998412132263184,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 7,
+          "bbox_xyxy": [
+            2431.29541015625,
+            827.4000854492188,
+            2539.545654296875,
+            895.4495849609375
+          ],
+          "score": 0.9996930360794067,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 8,
+          "bbox_xyxy": [
+            651.0134887695312,
+            128.3313751220703,
+            717.9525756835938,
+            189.71347045898438
+          ],
+          "score": 0.9984637498855591,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 9,
+          "bbox_xyxy": [
+            2443.637939453125,
+            627.1632080078125,
+            2533.540283203125,
+            712.8618774414062
+          ],
+          "score": 0.9982921481132507,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 10,
+          "bbox_xyxy": [
+            369.290771484375,
+            335.2284240722656,
+            468.025146484375,
+            485.89312744140625
+          ],
+          "score": 0.9964784979820251,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 11,
+          "bbox_xyxy": [
+            659.8197021484375,
+            1360.2235107421875,
+            881.9129028320312,
+            1497.515625
+          ],
+          "score": 0.99530029296875,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 12,
+          "bbox_xyxy": [
+            1730.396728515625,
+            1916.1163330078125,
+            1781.43115234375,
+            2085.264892578125
+          ],
+          "score": 0.9948939085006714,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 13,
+          "bbox_xyxy": [
+            1142.5523681640625,
+            99.97516632080078,
+            1199.3541259765625,
+            273.86907958984375
+          ],
+          "score": 0.9947546720504761,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 14,
+          "bbox_xyxy": [
+            1174.20361328125,
+            512.4442749023438,
+            1364.967041015625,
+            603.357666015625
+          ],
+          "score": 0.9946358799934387,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 15,
+          "bbox_xyxy": [
+            1385.9534912109375,
+            513.21484375,
+            1438.371337890625,
+            656.1188354492188
+          ],
+          "score": 0.9932562112808228,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 16,
+          "bbox_xyxy": [
+            2425.95751953125,
+            1522.5577392578125,
+            2488.94970703125,
+            1682.4130859375
+          ],
+          "score": 0.9881608486175537,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 17,
+          "bbox_xyxy": [
+            3539.558837890625,
+            2084.357177734375,
+            3608.7119140625,
+            2160.0
+          ],
+          "score": 0.9871763586997986,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 18,
+          "bbox_xyxy": [
+            3760.481201171875,
+            1994.7166748046875,
+            3800.61474609375,
+            2104.42626953125
+          ],
+          "score": 0.9775218963623047,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 19,
+          "bbox_xyxy": [
+            1922.8443603515625,
+            1332.4130859375,
+            2013.041259765625,
+            1569.3428955078125
+          ],
+          "score": 0.9551589488983154,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 20,
+          "bbox_xyxy": [
+            0.594469428062439,
+            1015.1686401367188,
+            48.125762939453125,
+            1175.2811279296875
+          ],
+          "score": 0.9508885741233826,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 21,
+          "bbox_xyxy": [
+            3012.484619140625,
+            0.0,
+            3096.65869140625,
+            111.897705078125
+          ],
+          "score": 0.9499861001968384,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 22,
+          "bbox_xyxy": [
+            1929.8150634765625,
+            1493.06787109375,
+            2011.3465576171875,
+            1647.7301025390625
+          ],
+          "score": 0.8739168643951416,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 23,
+          "bbox_xyxy": [
+            69.74696350097656,
+            1558.68994140625,
+            375.4699401855469,
+            1688.994140625
+          ],
+          "score": 0.6649304628372192,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 24,
+          "bbox_xyxy": [
+            2380.734375,
+            128.9100341796875,
+            2435.4677734375,
+            321.0448913574219
+          ],
+          "score": 0.2453783005475998,
+          "label_id": 1,
+          "keep_at_official_threshold": false
+        }
+      ],
+      "source_bytes_unchanged": true
+    },
+    {
+      "source_path": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721234832-00-35.jpg",
+      "source_sha256": "d9becbc32a8a8b384dbd626bbfdff86fb0e71637dc4ec7dcd6d742b73a4e260d",
+      "width": 4096,
+      "height": 2160,
+      "source_mode": "RGB",
+      "exif_orientation": 1,
+      "preprocessing": "PIL convert RGB then torchvision ToTensor; no external resize/crop/normalization. Detector handles its own transform.",
+      "input_tensor_shape": [
+        3,
+        2160,
+        4096
+      ],
+      "input_tensor_dtype": "torch.float32",
+      "forward_seconds": 0.2114179580239579,
+      "coordinate_system": "original decoded image pixels; x right, y down; xyxy",
+      "raw_model_returned_count": 23,
+      "kept_count": 19,
+      "detections": [
+        {
+          "model_output_index": 0,
+          "bbox_xyxy": [
+            2442.49658203125,
+            1716.993896484375,
+            2687.0,
+            2024.9930419921875
+          ],
+          "score": 1.0,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 1,
+          "bbox_xyxy": [
+            2102.97705078125,
+            377.195068359375,
+            2327.146728515625,
+            499.6379699707031
+          ],
+          "score": 0.9999653100967407,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 2,
+          "bbox_xyxy": [
+            3266.618896484375,
+            518.9628295898438,
+            3464.414794921875,
+            626.4117431640625
+          ],
+          "score": 0.9999232292175293,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 3,
+          "bbox_xyxy": [
+            2048.44775390625,
+            819.1318359375,
+            2108.786865234375,
+            923.9998168945312
+          ],
+          "score": 0.9998534917831421,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 4,
+          "bbox_xyxy": [
+            3704.95654296875,
+            635.889404296875,
+            3802.894287109375,
+            791.512939453125
+          ],
+          "score": 0.9996660947799683,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 5,
+          "bbox_xyxy": [
+            2035.5804443359375,
+            2062.343505859375,
+            2144.605712890625,
+            2133.11181640625
+          ],
+          "score": 0.999313473701477,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 6,
+          "bbox_xyxy": [
+            1339.611572265625,
+            1582.4368896484375,
+            1405.2537841796875,
+            1708.6575927734375
+          ],
+          "score": 0.9988998174667358,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 7,
+          "bbox_xyxy": [
+            2749.441650390625,
+            445.0633544921875,
+            2857.28515625,
+            610.4794921875
+          ],
+          "score": 0.9987279772758484,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 8,
+          "bbox_xyxy": [
+            389.4510192871094,
+            988.0869750976562,
+            443.7013854980469,
+            1149.251953125
+          ],
+          "score": 0.9985253214836121,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 9,
+          "bbox_xyxy": [
+            1516.5748291015625,
+            1148.435791015625,
+            1570.200927734375,
+            1295.541015625
+          ],
+          "score": 0.9985180497169495,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 10,
+          "bbox_xyxy": [
+            3205.840576171875,
+            1316.910400390625,
+            3319.74072265625,
+            1430.1060791015625
+          ],
+          "score": 0.9976988434791565,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 11,
+          "bbox_xyxy": [
+            3267.507080078125,
+            200.62635803222656,
+            3393.462158203125,
+            389.13983154296875
+          ],
+          "score": 0.9958264231681824,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 12,
+          "bbox_xyxy": [
+            917.5725708007812,
+            646.7555541992188,
+            979.6798706054688,
+            794.4864501953125
+          ],
+          "score": 0.9949170351028442,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 13,
+          "bbox_xyxy": [
+            1212.332763671875,
+            1022.1456298828125,
+            1291.3875732421875,
+            1184.731689453125
+          ],
+          "score": 0.9844886064529419,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 14,
+          "bbox_xyxy": [
+            3386.8095703125,
+            298.9514465332031,
+            3451.56640625,
+            379.3833923339844
+          ],
+          "score": 0.9055748581886292,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 15,
+          "bbox_xyxy": [
+            2595.853271484375,
+            2.023104190826416,
+            2646.552001953125,
+            57.15083694458008
+          ],
+          "score": 0.8660764694213867,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 16,
+          "bbox_xyxy": [
+            10.425877571105957,
+            345.5441589355469,
+            150.8055419921875,
+            607.0997314453125
+          ],
+          "score": 0.8567531704902649,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 17,
+          "bbox_xyxy": [
+            3980.08056640625,
+            740.9678955078125,
+            4034.504638671875,
+            937.167236328125
+          ],
+          "score": 0.699298083782196,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 18,
+          "bbox_xyxy": [
+            14.786384582519531,
+            1925.224853515625,
+            823.0889282226562,
+            2137.794677734375
+          ],
+          "score": 0.6761384010314941,
+          "label_id": 1,
+          "keep_at_official_threshold": true
+        },
+        {
+          "model_output_index": 19,
+          "bbox_xyxy": [
+            3357.87109375,
+            254.71726989746094,
+            3431.0166015625,
+            391.4702453613281
+          ],
+          "score": 0.23226700723171234,
+          "label_id": 1,
+          "keep_at_official_threshold": false
+        },
+        {
+          "model_output_index": 20,
+          "bbox_xyxy": [
+            1244.951416015625,
+            1682.70947265625,
+            1330.7545166015625,
+            1721.9210205078125
+          ],
+          "score": 0.22972628474235535,
+          "label_id": 1,
+          "keep_at_official_threshold": false
+        },
+        {
+          "model_output_index": 21,
+          "bbox_xyxy": [
+            848.8627319335938,
+            1942.4500732421875,
+            910.6492919921875,
+            2089.349609375
+          ],
+          "score": 0.1395355463027954,
+          "label_id": 1,
+          "keep_at_official_threshold": false
+        },
+        {
+          "model_output_index": 22,
+          "bbox_xyxy": [
+            1263.5999755859375,
+            1649.677734375,
+            1340.087158203125,
+            1714.41259765625
+          ],
+          "score": 0.08848535269498825,
+          "label_id": 1,
+          "keep_at_official_threshold": false
+        }
+      ],
+      "source_bytes_unchanged": true
+    }
+  ]
+}

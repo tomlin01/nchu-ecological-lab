@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "case_id": "02-04",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "數照片，為什麼可能少算細胞？",
+  "preserved_files": 47,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "0c993d0ba98073a604dedf69fcfa26b1b2264842f3df8df80b816d58a10e7cbc",
+      "glyphs": 639,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "623445e30b5ddc80780edc52ce9d3c73d48647f20a40a0b36061a2ad25816523",
+      "glyphs": 639,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_record": "work/ecology-ai-rollout/copy-review-02-v02/browser-verification.json",
+  "full_playback_rerun": false,
+  "scientific_status_unchanged": true,
+  "public_deployment": false,
+  "existing_ids_preserved": 20,
+  "source_links_preserved": 35,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "00298": 3,
+    "83.54": 1
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "article_structure_changed_as_planned": true
+}

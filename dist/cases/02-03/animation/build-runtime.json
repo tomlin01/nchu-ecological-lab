@@ -1,0 +1,53 @@
+{
+  "case_id": "02-03",
+  "version": "prototype-v01",
+  "duration_seconds": 88,
+  "content_revision": "dual-confirmation-scores-v02",
+  "teaching_scores": true,
+  "teaching_threshold": 0.7,
+  "runtime": "GSAP narrative clock, native original-speed audio, source photos/figures, computed STFT, SVG teaching diagrams",
+  "fresh_inference": false,
+  "figure_data_recomputed": false,
+  "source_audio_seconds": 5,
+  "source_audio_playback_rate": 1,
+  "audio_slots_seconds": [
+    [
+      0,
+      5
+    ],
+    [
+      21,
+      26
+    ]
+  ],
+  "audio_tail_grace_seconds": 0.35,
+  "same_original_audio_repeated": true,
+  "photo_audio_synchronized_encounter": false,
+  "audio_public_redistribution_license": "unconfirmed",
+  "fonts": {
+    "sans": {
+      "characters": 576,
+      "missing": [],
+      "sha256": "e412e29618f1f87c5d5135e207e70a4f51f651b9aa878c22bb08d8984226d20c"
+    },
+    "serif": {
+      "characters": 576,
+      "missing": [],
+      "sha256": "1966eef0283af6af3602df7d4ef640efec2d06ebab9b0429ca6c2fc2f3c2b58f"
+    }
+  },
+  "source_hashes": {
+    "brydes-whale-mariana-noaa-original.JPG": "a0046e7472df67e45277751b71b50018005a38fbaf08f33a8a43b16ce8ea67d7",
+    "biotwang-google-original.wav": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+    "paper-figure-1.webp": "13e6da35a2dba5cfc8fd7251b35095cc87315a75c6349fe5919a3236f2b1917b",
+    "paper-figure-3.webp": "1e8243f3b79a5d13190a1b817d3475749baf15be2ed271cf1ba632e761a52f48"
+  },
+  "implementation_sha256": {
+    "app.mjs": "3fa11515a1503b457ae0e973809e32f175f44d6092b5bbaa58f2db325e128bf2",
+    "model.mjs": "4e84b1a43cbf491857a5737cdaac7a794337ec90971944347fff96272fa28343",
+    "template.html": "30effc09d0a2d64e4b5197f1227d3490557323372a749b243ef68332d7170d23",
+    "style.css": "c7dec0e416bd4999df7107567395f7f85dc2903985d072b40d171ec62366b9b1",
+    "build.py": "169541e4bee3f4c75d32f4932edf48d70c3436a7a14e10d2a814a411a6581424"
+  },
+  "browser_verified_by_build": false
+}

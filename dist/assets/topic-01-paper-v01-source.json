@@ -1,0 +1,12 @@
+{
+  "kind": "AI-generated conceptual illustration edit",
+  "generator": "built-in imagegen",
+  "source_image": "outputs/ecology-ai-rollout-assets/topic-01/topic-01-main-v02.png",
+  "source_sha256": "c7ff4ffe60577a358f50c6d7d98db60ddfb8d4fb2c103494fe78126e06793b34",
+  "candidate_png": "outputs/ecology-ai-rollout/natural-history-v01/topic-01-paper-v01.png",
+  "candidate_sha256": "6a72a4b83bf79c939ea4454aed540396ed631f2708eb96fafbe57497c299c400",
+  "webp_sha256": "2d2ef71d4ec8121967c40f71738c184b8afa279cb4352de41b5dda528be7026e",
+  "prompt": "outputs/ecology-ai-rollout/natural-history-v01/background-edit-prompt.md",
+  "scope": "Light neutral studio backdrop and floor for a natural-history catalog preview. Scene arrangement visually reviewed; generative edits are not pixel-locked. Original retained.",
+  "research_evidence": false
+}

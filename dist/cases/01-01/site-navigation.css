@@ -1,0 +1,17 @@
+/* Navigation added by this site integration only. */
+@media screen and (max-width: 760px) {
+  .hab-header { flex-wrap: wrap; }
+  .hab-header nav,
+  .case-links,
+  .case-pagination {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 12px;
+    min-width: 0;
+  }
+  .hab-header nav { order: 3; width: 100%; margin-left: 0; }
+  .case-links { width: 100%; }
+  .hab-header nav a,
+  .case-links a,
+  .case-pagination a { white-space: nowrap; }
+}

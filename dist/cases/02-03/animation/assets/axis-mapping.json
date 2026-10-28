@@ -1,0 +1,81 @@
+{
+  "duration_seconds": 5.0,
+  "source_segment_seconds": [
+    0,
+    5.0
+  ],
+  "audio_time_origin": "start of original published WAV; playbackRate must remain 1",
+  "frequency_axis_hz": [
+    0,
+    8000
+  ],
+  "source_nyquist_hz": 12000.0,
+  "spectrogram.png": {
+    "canvas_width_px": 1600,
+    "canvas_height_px": 900,
+    "left_px": 125.15311111111114,
+    "top_px": 13.66700000000003,
+    "width_px": 1286.5399388888884,
+    "height_px": 797.3048888888889,
+    "x_min_seconds": 0,
+    "x_max_seconds": 5.0,
+    "y_min_hz": 0,
+    "y_max_hz": 8000,
+    "origin": "top-left of PNG",
+    "x_formula": "left_px + time_seconds / duration_seconds * width_px",
+    "y_formula": "top_px + (1 - frequency_hz / y_max_hz) * height_px"
+  },
+  "spectrogram-only.png": {
+    "canvas_width_px": 1600,
+    "canvas_height_px": 600,
+    "left_px": 0.0,
+    "top_px": 0.0,
+    "width_px": 1600.0,
+    "height_px": 600.0,
+    "x_min_seconds": 0,
+    "x_max_seconds": 5.0,
+    "y_min_hz": 0,
+    "y_max_hz": 8000,
+    "origin": "top-left of PNG",
+    "x_formula": "left_px + time_seconds / duration_seconds * width_px",
+    "y_formula": "top_px + (1 - frequency_hz / y_max_hz) * height_px"
+  },
+  "spectrogram-low-frequency.png": {
+    "canvas_width_px": 1600,
+    "canvas_height_px": 900,
+    "left_px": 124.90311111111114,
+    "top_px": 13.66700000000003,
+    "width_px": 1286.7836888888885,
+    "height_px": 797.3048888888889,
+    "x_min_seconds": 0,
+    "x_max_seconds": 5.0,
+    "y_min_hz": 0,
+    "y_max_hz": 1200,
+    "origin": "top-left of PNG",
+    "x_formula": "left_px + time_seconds / duration_seconds * width_px",
+    "y_formula": "top_px + (1 - frequency_hz / y_max_hz) * height_px"
+  },
+  "spectrogram-low-frequency-only.png": {
+    "canvas_width_px": 1600,
+    "canvas_height_px": 600,
+    "left_px": 0.0,
+    "top_px": 0.0,
+    "width_px": 1600.0,
+    "height_px": 600.0,
+    "x_min_seconds": 0,
+    "x_max_seconds": 5.0,
+    "y_min_hz": 0,
+    "y_max_hz": 1200,
+    "origin": "top-left of PNG",
+    "x_formula": "left_px + time_seconds / duration_seconds * width_px",
+    "y_formula": "top_px + (1 - frequency_hz / y_max_hz) * height_px"
+  },
+  "low_frequency_view_note": "0..1200 Hz plot crop of the same STFT, not filtered or altered audio; identical normalization to overview",
+  "color_scale": {
+    "colormap": "viridis",
+    "vmin_db": -65,
+    "vmax_db": 0,
+    "meaning": "10 log10(|STFT|^2 / maximum |STFT|^2 in the whole clip); not SPL or model confidence"
+  },
+  "outside_time_domain": "clamp scan to 0..5 seconds; no looping implied"
+}

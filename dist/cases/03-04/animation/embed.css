@@ -1,0 +1,23 @@
+/* Host chrome only. The accepted composition, scene geometry and clock stay intact. */
+.embedded-thermo .player-heading,
+.embedded-thermo .reading-footer,
+.embedded-thermo .skip-link,
+.embedded-thermo #themeButton,
+.embedded-thermo #expandButton { display:none; }
+.embedded-thermo #player {
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:18px 20px 20px;
+}
+.embedded-thermo.media-expanded-view #player { padding:22px 28px 28px; }
+@media (max-width:800px) {
+  .embedded-thermo #player { padding:14px 14px 18px; }
+}
+@media (max-width:500px) {
+  .embedded-thermo #player { padding:10px 10px 16px; }
+  .embedded-thermo.media-expanded-view #player { padding:14px; }
+}
+@media print {
+  .embedded-thermo #player { padding:0; }
+}

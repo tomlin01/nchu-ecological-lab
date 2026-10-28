@@ -1,0 +1,82 @@
+<!doctype html>
+<html data-reading-type="04-03" lang="zh-Hant" data-theme="light">
+<head>
+  <script src="../../ui/theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>一張照片，怎麼量出魚的長度？｜AI × 生態研究</title>
+  <meta name="description" content="從同一尾魚和量測板，看尾叉長與全長的差別、照片如何對上尺規，以及調查員為什麼仍要檢查量測位置。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <link rel="stylesheet" href="../../ui/sidebar.css">
+  <link rel="stylesheet" href="../../ui/media-expand.css">
+  <link rel="stylesheet" href="../../ui/catalog-theme.css">
+  <link rel="stylesheet" href="case.css">
+  <link rel="stylesheet" href="../../ui/theme-controls.css">
+  <script src="case.js" defer></script>
+  <script src="scene.js" defer></script>
+<link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#main-content">跳至內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-04">返回主題清單</a><span class="case-name">AI × 生態研究 · 漁獲照片量測</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">看這尾魚</a><a href="#roles" data-page="roles">怎麼量魚長</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">量得準嗎</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" hidden aria-pressed="false">連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="main-content">
+    <section id="question" class="chapter" data-active="true" tabindex="-1" aria-labelledby="question-title">
+      <div id="fish-study" class="fish-study" data-view="original">
+        <div class="fish-copy">
+          <header class="opening-heading"><h1 id="question-title">一張照片，<br>怎麼量出魚的長度？</h1></header>
+          <p class="opening-lead">做漁獲調查時，除了認魚種，也要知道魚有多長。這尾魚的嘴部靠近零點，尾鰭末端卻細長：該量到凹口，還是最遠的尾尖？</p>
+          <div id="fish-tools" class="fish-tools" role="group" aria-label="比較原照、兩種量法與作者尺規標記" hidden><button type="button" data-fish-view="original" aria-pressed="true" aria-controls="fish-camera" disabled>原照</button><button type="button" data-fish-view="fork" aria-pressed="false" aria-controls="fish-camera" disabled>尾叉長</button><button type="button" data-fish-view="total" aria-pressed="false" aria-controls="fish-camera" disabled>全長</button><button type="button" data-fish-view="marks" aria-pressed="false" aria-controls="fish-author-layer" disabled>尺規標記</button></div>
+          <p id="fish-status" class="fish-status" role="status" aria-live="polite">先看完整原照。兩種量法從同一個起點開始，停在不同的尾端。</p>
+          <button id="fish-retry" class="text-action" type="button" hidden>重新載入照片對照</button>
+          <p class="scope-note">點與線是人工導讀，沒有替這尾魚新增長度。原資料也未提供它經確認的魚種和魚長。</p>
+          <a class="method-link" href="#roles">先把尺規對好，再談怎麼量</a>
+        </div>
+        <figure class="fish-figure">
+          <svg id="fish-camera" viewBox="0 0 800 450" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="fish-image-title fish-image-description"><title id="fish-image-title">同一尾魚與SPC量測板</title><desc id="fish-image-description">完整保留魚、零點和尾端。切換尾叉長或全長時，人工導讀指出同一起點與不同終點，不提供新的魚長；尺規標記則展示作者公布的板面數字框。</desc><image data-fish-image="original" href="animation/assets/fish-original.jpg" x="0" y="0" width="800" height="450"/><image id="fish-author-layer" data-fish-image="detected" href="animation/assets/board-detection.jpg" x="0" y="0" width="800" height="450" opacity="0" aria-hidden="true"/><g id="fish-guides" aria-hidden="true"></g></svg>
+          <figcaption><span id="fish-caption">完整原照 · 保留同一尾魚、零點與尾端</span><span class="source-credit">Franck Magron／SPC（2022）· CC BY-NC 4.0 · <a href="#sources">照片來源與導讀說明</a></span></figcaption>
+        </figure>
+      </div>
+      <p class="opening-note">這張是官方操作範例，沒有資料能確認它是否屬於後文 869 尾的研究比較。切換畫面只改變解說，不會算出這尾魚新的量測數值。</p>
+      <noscript><p class="quiet-note">畫面切換需要 JavaScript。完整原照、下頁的量法說明與所有來源仍可閱讀。</p></noscript>
+    </section>
+
+    <section id="roles" class="chapter" data-active="false" tabindex="-1" aria-labelledby="roles-title">
+      <header class="chapter-heading"><h2 id="roles-title">照片拍斜了，怎麼量？</h2><p>程式先辨認板上的數字，再和尺寸已知的標準板比對，調整照片的方向和比例。先把尺規對好，接著才能量魚。</p></header>
+      <div class="board-study">
+        <figure class="board-figure"><img src="animation/assets/board-detection.jpg" width="800" height="450" loading="lazy" alt="作者在同張魚板照片上偵測板面數字的位置，彩色框沒有標示魚嘴或尾叉。"><p class="figure-note">作者公布的板面數字框；框旁分數不是魚長或魚種的正確率。</p><img class="board-template" src="animation/assets/board-template.png" width="1590" height="380" loading="lazy" alt="SPC Board3標準板型，保留完整數字及刻度。"><figcaption>標記的位置對應尺寸已知的板型。Franck Magron／SPC（2022）。</figcaption></figure>
+        <div class="board-copy"><h3>尺規和量法，是兩件事</h3><dl class="length-definitions"><div><dt>尾叉長</dt><dd>從魚嘴最前端，量到尾鰭凹入的位置。</dd></div><div><dt>全長</dt><dd>從同一起點，量到尾鰭最遠的邊緣。</dd></div></dl><p>研究依魚的外形選用量法，不能把兩種長度混著比較。找到板上的刻度，也不表示魚的起點和尾端都已找對。</p><details class="technical-note"><summary>量測板上的位置，怎麼換成長度？</summary><p>作者先校正量測板照片，使零點與尺度一致，再依尾叉標記框中心的位置換算長度。文中的 2 px/mm 是校正後影像的尺度，不能套到本頁原照或螢幕縮圖。本頁沒有重新計算校正或魚長。</p></details></div>
+      </div>
+      <section class="reading-row"><h3>照片裡的秤，量的是另一件事</h3><div><p>需要重量時，研究會讀取電子秤上的數字，不是只看魚的外形就當作已經秤過重量。資料足夠後，也可以另用當地物種的長重關係估算重量；估算的重量與實際秤得的重量要分開記錄。</p><p>魚種也要另外辨認。系統的辨識結果仍可交人員核對，本頁不替這張範例補上魚名或信心分數。</p></div></section>
+      <section class="mat-study" aria-labelledby="mat-title"><h3 id="mat-title">一次拍多尾魚，兩端不能接錯</h3><p>量測墊和一次放一尾魚的量測板不同。程式先分開每尾魚，找出各自的嘴部前端和尾叉，再將同一尾魚的兩端配對，不能接到旁邊魚的尾巴。</p><details class="mat-detail"><summary>看原研究中多尾魚的量測範例</summary><figure class="mat-figure"><img src="assets/mat-method-original.png" width="831" height="1049" loading="lazy" alt="Shedrawi等人2024年補充圖S5完整原圖，呈現多魚量測墊、個別魚的定位及量測方法。"><figcaption>Shedrawi 等（2024）補充圖 S5 · 完整原圖 · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>。<a href="assets/mat-method-original.png" target="_blank" rel="noopener">開啟完整圖檔</a></figcaption></figure></details></section>
+    </section>
+
+    <section id="method" class="chapter" data-active="false" tabindex="-1" aria-labelledby="method-title">
+      <header class="method-heading"><div><h2 id="method-title">從同一張照片，看看魚長怎麼量</h2><p>先看魚與尺規，再分清尾叉長和全長，最後看作者如何比較人工與照片量測。這支動畫沒有聲音。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface"><p class="player-hint">88 秒，可暫停、選擇段落，或在原頁面放大。</p><div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="一張照片，怎麼量出魚的長度？方法動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=web-v01&release=20261027-media" title="88秒魚長量測動畫：原魚照片、尺規、量測終點與人工比較" height="900" scrolling="no" loading="eager"></iframe></div></div><p id="frame-status" class="frame-status" role="status" aria-live="polite">開啟「看動畫」後載入播放器，下方保留完整解說。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入動畫</button><p class="download-note"><a href="animation/film/04-03-fish-length-v02.mp4?release=20261027-media" download>下載 88 秒影片（MP4）</a></p></div>
+      <details id="method-text" class="method-text" open><summary>閱讀五段解說</summary><ol class="transcript"><li><h3>魚長，要從哪裡量到哪裡？</h3><p>做漁獲調查時，除了認魚種，也要記下每尾魚有多長。這尾魚的尾鰭末端細長，該量到凹口，還是最遠的尾尖？ 照片取自SPC公開範例，原資料未提供這尾魚經確認的魚種和長度；這裡也沒有重新量測。</p></li><li><h3>照片拍斜了，怎麼量？</h3><p>照片不一定拍得正。程式先辨認板上的數字，再和尺寸已知的標準板比對，調整照片的方向和比例。先把尺規對好，接著才能量魚。 彩色框是作者公布的結果；連到標準板的點和線是人工示意，沒有重新執行模型或計算這尾魚的長度。</p></li><li><h3>尾叉長和全長，差在哪裡？</h3><p>從魚嘴最前端量到尾叉凹處，叫做「尾叉長」；量到尾鰭最遠處，則是「全長」。研究依魚的外形選用量法，因此比較長度時，也得用相同的量法。 點和線由人工加上，只用來解釋從哪裡量到哪裡，並非模型替這尾魚找到的位置或算出的長度。</p></li><li><h3>量完，再對照一次原照。</h3><p>調查員會對照原照，檢查線從哪裡開始、量到哪裡，以及採用哪一種量法。需要時可以調整量測線；照片留著，日後也能回頭核對。 畫面只示範該檢查哪些位置，沒有呈現這尾魚實際判錯或修改的過程。人工確認後，仍可能有量測誤差。</p></li><li><h3>和人工量的差多少？</h3><p>研究團隊把東加市場869尾魚的AI量測結果，和現場人工量得的長度逐一比較。平均絕對差是3.4毫米。照片能幫忙記錄魚長，量測位置和結果仍要檢查。 測試魚長130–720 mm。先算每尾相差多少，不分高估或低估，再取平均；這是整批測試的平均，不是每尾的誤差上限。市場漁獲也不能代表海裡全部的魚。</p></li></ol></details>
+    </section>
+
+    <section id="evidence" class="chapter" data-active="false" tabindex="-1" aria-labelledby="evidence-title">
+      <header class="chapter-heading"><h2 id="evidence-title">和人工量的差多少？</h2><p>作者把東加市場魚隻由 AI 量測的長度，和現場人工量得的長度逐一比較。這組研究資料與第一頁的官方操作範例分開看。</p></header>
+      <div class="study-comparison">
+        <div class="result-summary"><p class="study-scope">869 尾魚 · 測試魚長 130–720 mm</p><h3>整體平均絕對差</h3><p class="study-value">3.4 <span>mm</span></p><p>先算每尾相差多少，不分高估或低估，再取平均。這不是每尾魚的誤差上限，也不是第一頁中這尾魚的誤差。</p><a class="source-link" href="https://www.nature.com/articles/s41598-024-71763-y" target="_blank" rel="noopener">Shedrawi 等（2024）· 原研究比較</a></div>
+        <figure class="study-figure"><img src="animation/assets/study-figure3.jpg" width="728" height="398" loading="lazy" alt="Shedrawi等人Figure 3完整原圖，包含AI與人工長度比較及兩種量測方式的差異圖。"><figcaption>Shedrawi 等（2024）Figure 3 · 完整原圖 · CC BY-NC-ND 4.0。圖中每個點代表一尾魚的量測比較。<a href="animation/assets/study-figure3.jpg" target="_blank" rel="noopener">開啟完整圖檔</a></figcaption></figure>
+      </div>
+      <details class="technical-note study-detail"><summary>869 尾的比較包括哪些資料？</summary><p>Figure 3(b) 標示量測墊組 462 尾，3(c) 為量測板組 407 尾，合計 869。3.4 mm 仍只對應整體，不是這裡重新算出的各組誤差。圖中的 R² 也不是「99% 準確率」。</p><p>作者另記錄了 6 筆人工量測事後更正。本頁未能從公開來源取得原始分析資料，因此沒有重新計算每尾魚的量測結果，也不把調查員保留某個數值當成獨立證明它完全正確。</p></details>
+      <section class="reading-row evidence-reading"><h3>量完，還要回到照片檢查</h3><div><p>這套方法使用依規定擺放、附有尺度參考的漁獲照片。照片不清楚、魚沒有擺好，或重要部位被遮住，都可能影響量測，結果仍要回到原照檢查。</p><p>這些照片記錄的是被捕到、被調查的魚。漁法、地點和選樣會影響看到的尺寸，不能直接當作整片海裡所有魚的大小分布。</p></div></section>
+      <div class="source-layout" id="sources">
+        <article class="source-reading"><h3>這張魚照從哪裡來？</h3><p>原照、板面數字偵測圖及標準板型，來自 Franck Magron／Pacific Community（SPC，2022）的 <a href="https://github.com/PacificCommunity/cfap-ai-models/tree/5701c3ea2962be4eaa403250d565d2e762dc7c91/YOLO_v4/SPC_Board3" target="_blank" rel="noopener">SPC Measuring Board 3 官方範例</a>，採 <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>。</p><p>原圖保留不變；尾叉長與全長的線是本頁另加的人工導讀，不是作者對這尾魚的測量結果，也沒有新增魚種、魚長或重量。板面數字框的信心值不能直接當成判對的機率。</p><p><a href="animation/assets/fish-original.jpg" target="_blank" rel="noopener">完整魚板原照</a> · <a href="animation/assets/board-detection.jpg" target="_blank" rel="noopener">作者的數字偵測圖</a> · <a href="animation/assets/board-template.png" target="_blank" rel="noopener">標準板型</a></p></article>
+        <article class="source-reading"><h3>研究結果與圖片授權</h3><p>研究依 Shedrawi 等（2024）的 <a href="https://doi.org/10.1038/s41598-024-71763-y" target="_blank" rel="noopener">Scientific Reports 論文</a>。Figure 3 與補充圖 S5 採 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>；本頁等比例顯示完整原圖，不裁切、不覆畫、不拆出其中照片或重建研究資料。</p><p>論文圖版與 SPC 範例的授權不同，不能互相代替。這裡沒有執行偵測、分類或校正模型，也沒有把官方範例中的魚當成研究中已確認納入驗證的魚隻。</p><p><a href="animation/SOURCE.md" target="_blank" rel="noopener">完整來源與量測說明</a> · <a href="assets/mat-method-original.png" target="_blank" rel="noopener">完整多尾魚量測方法圖</a> · <a href="animation/assets/study-figure3.jpg" target="_blank" rel="noopener">Figure 3 完整原圖</a></p></article>
+      </div>
+      <p class="colophon">尺規和量法一致，魚長才能比較；照片留下來，也讓結果能再核對。</p>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看這尾魚</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script>
+  <script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="04-03"></script>
+  <script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

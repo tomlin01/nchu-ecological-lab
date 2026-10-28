@@ -1,0 +1,107 @@
+{
+  "case_id": "01-01",
+  "version": "web-hybrid-v01",
+  "duration_seconds": 64,
+  "accepted_source_files": {
+    "app.bundle.js": "69c9819ed9be21401d43793cbd536a2b9ca7c1dc2022852fc8c16c5b328969fc",
+    "index.html": "e6477c42852465116000e85619a1afab443e86013346cbf02bb46d7be92bd542",
+    "provenance.json": "95259a024d2ec4c0691ef9ef4713a75385947bb44fac198495b4a1eb6d0ebe84",
+    "SOURCE.md": "4a767e42e03d500f7aee15ff6bb0420a5ce3589a5bef7dc48a1576361b2b2d9d",
+    "README.md": "47ca0ef945d5b382cb45ee10616db34d16937f7b94d1dfb4a5cd89b851390e7f",
+    "style.css": "3165bf4c90b7211540b7a460208d9978da08ad70e8e1a31782807d64bba1096e",
+    "manifest.json": "9dba06aab8502749b62d129daacfb57025e80e41c16fe25295b37b195f4acd86",
+    "build-runtime.json": "6dae7e2550482ea1f0658e65bdeb6ede4d82aedb04782d232238e424a618d62a",
+    "LICENSES.txt": "88d116102b3110ef26ead1b48fa4d81120455a7977439ddcb16c0fbc1788a024",
+    "fonts/case-sans.woff2": "11110986b81be57217c01b2162628e0d40ad7735939db869c2feedd151fb3703",
+    "fonts/case-serif.woff2": "b64b207822add19bac058656bdc8801b3fa9af2b266e56711a761a707112c649",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/frames/zebra_073124_125119-1500.jpg": "5a93598e8d52c8594432439dc2284ea6e8858d3894c1b4fe8305e117a7789543",
+    "assets/frames/zebra_073124_125119-1460.jpg": "db20583b832c1af3128043c9f04432d55e71ecad83d058f972b9e8b201c81178",
+    "assets/frames/zebra_073124_125119-1360.jpg": "c6cf9deee03a9458140e21a80975609ebe488811877a356eadeb9338efaca771",
+    "assets/frames/zebra_073124_125119-1400.jpg": "62bf5196375d04f77b98f3a613f24b9f6249a76c0447e98ddc77d4f549f773e2",
+    "assets/frames/zebra_073124_125119-1340.jpg": "7343c6d5228841bcda1bcf27b4d36ad6c9969f2d12df732c20b7568902a7341d",
+    "assets/frames/zebra_073124_125119-1380.jpg": "ea5e614f495ddbdc7c910a17779b4f17e4150dc2c2d2724d50cc6f4c6e93ca4c",
+    "assets/frames/zebra_073124_125119-1420.jpg": "ed900bd992da4d74b4fe5d23f94b047ac6c24f8d2493649d2d3cea4bd1bd96e9",
+    "assets/frames/zebra_073124_122452-3220.jpg": "5aaa5067b4e72aa95920239ece3e2abca18880210702ee5d785cae09b7a8f9a3",
+    "assets/frames/zebra_073124_125119-1480.jpg": "30bf750250659e92abf87041de6967da77c545a45d051f42a7a82ee9fff4aa79",
+    "assets/frames/zebra_073124_125119-1440.jpg": "9a7725962bbccb916e71088101f6a93f175aa5417aabd542c11246784ceb3d79",
+    "assets/frames/zebra_073124_125119-1520.jpg": "8f454abdd18dea280fd982506c5c35e9521c861ef5c98cbc3d1534c8f0ed6b52",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "accepted_runtime_and_media_byte_identical": true,
+  "accepted_source_directory_unchanged": true,
+  "doc_amendments": {
+    "SOURCE.md": {
+      "before": "4a767e42e03d500f7aee15ff6bb0420a5ce3589a5bef7dc48a1576361b2b2d9d",
+      "after": "46b070d3013c210e399f83ce02a4484f8f9c11c24d7fcfe5e5c9baf5dd0b5ec9"
+    },
+    "README.md": {
+      "before": "47ca0ef945d5b382cb45ee10616db34d16937f7b94d1dfb4a5cd89b851390e7f",
+      "after": "929c6a38923ed3abaddbc42fad272e0098ee38cf22e43ab39e1e90c164e01773"
+    },
+    "manifest.json": {
+      "before": "9dba06aab8502749b62d129daacfb57025e80e41c16fe25295b37b195f4acd86",
+      "after": "b7082e24ac17d114d426636e61de7bd884ddc98cee4887ef515acacd7dfe04ce"
+    }
+  },
+  "preserved_exact_blocks": [
+    "page-1",
+    "case-data",
+    "generated-data"
+  ],
+  "historical_original_notes_blocks": 2,
+  "historical_original_notes_unchanged": true,
+  "removed_legacy_runtime_scripts": [
+    {
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+      "characters": 72435
+    },
+    {
+      "sha256": "910e7b70dab64fa98e167f01a113944e45ecd404120ad6081d08e0520a5db14c",
+      "characters": 9978
+    },
+    {
+      "sha256": "6f7b66dadcf522bc5e62a38d8deb72b0de405ebcbf92ba13d10d8fb01ffab3f7",
+      "characters": 35896
+    },
+    {
+      "sha256": "ef999e505e60afae3d6ccaab81faecd52dba0ef830b4c75665af5105bd95c721",
+      "characters": 13700
+    },
+    {
+      "sha256": "0aa5077d0a79ff4e6801cb667984db1006224854bcad04280ac826a3b32cef69",
+      "characters": 3398
+    }
+  ],
+  "single_iframe": true,
+  "iframe_id": "hybrid-frame",
+  "parent_api": "EcologyHybrid",
+  "navigation_api": "HabitatNarrative / caseWebsite",
+  "links_checked": 79,
+  "missing_links": [],
+  "fonts": [
+    {
+      "family": "HabitatSans",
+      "required_characters": 569,
+      "added_characters": 25,
+      "missing": [],
+      "original_font_unchanged": true
+    },
+    {
+      "family": "HabitatSerif",
+      "required_characters": 569,
+      "added_characters": 25,
+      "missing": [],
+      "original_font_unchanged": true
+    }
+  ],
+  "syntax_passed": [
+    "habitat.js",
+    "hybrid-bridge.js",
+    "animation-hybrid/embed.js"
+  ],
+  "browser_verified_by_integration_agent": false,
+  "main_site_copy_authorized": true,
+  "publicly_deployed": false
+}

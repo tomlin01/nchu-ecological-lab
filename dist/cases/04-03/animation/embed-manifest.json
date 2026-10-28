@@ -1,0 +1,22 @@
+{
+  "case_id": "04-03",
+  "version": "web-embed-v01",
+  "entry": "embed.html",
+  "accepted_animation": "prototype-v02",
+  "accepted_manifest_sha256": "ce761cffe93652056134ecf5b5ce43a7f16827eb3aa908d15b70d782f1de3383",
+  "scope": "Embedding additions only; original standalone manifest and all 22 accepted files remain unchanged.",
+  "files": {
+    "embed.html": {
+      "bytes": 10214,
+      "sha256": "13fd017e32e8bf7e94e6d8af30dbc995f53293840548cb47890b60d3a4fd06a9"
+    },
+    "embed.js": {
+      "bytes": 7020,
+      "sha256": "86573b1bb32e97d1135a6fbdda0c45f1d1b78d078c3945719378dc1f1bd679d1"
+    },
+    "embed.css": {
+      "bytes": 780,
+      "sha256": "b9c28b5eec233df9e0f2e58c711313a6170edf6438fb8721519cf10caab956d2"
+    }
+  }
+}

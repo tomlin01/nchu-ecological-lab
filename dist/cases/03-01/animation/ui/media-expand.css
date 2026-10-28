@@ -1,0 +1,71 @@
+@font-face{font-family:"Ecology UI";src:url("fonts/ui-sans.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+/* Inline players retain their original dimensions and their existing controller. */
+[data-media-expand]{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:0;border-radius:0;background:#d2e2d8;color:#102229;font:500 16px/1.4 "Ecology UI","PingFang TC",sans-serif;text-decoration:none;cursor:pointer;touch-action:manipulation}
+[data-media-expand]:hover{background:#edf3e8;color:#102229}
+[data-media-expand]:focus-visible{outline:3px solid #f4df99;outline-offset:3px}
+[data-media-expand][hidden]{display:none!important}
+.media-expand-shell{min-width:0}
+.media-expand-stage{min-width:0}
+.media-expand-toolbar[hidden],.media-expand-guard[hidden],.media-expand-placeholder[hidden]{display:none!important}
+.media-expand-placeholder{width:100%;pointer-events:none;visibility:hidden}
+.media-expand-stage.is-media-expanded{
+  box-sizing:border-box;display:grid!important;grid-template-rows:auto minmax(0,1fr);
+  position:fixed!important;inset:16px!important;margin:0!important;
+  width:calc(100% - 32px)!important;max-width:none!important;min-width:0!important;
+  height:var(--media-expand-height,calc(100dvh - 32px))!important;max-height:calc(100dvh - 32px)!important;min-height:0!important;
+  padding:0!important;border:0!important;border-radius:0!important;
+  overflow:hidden!important;overscroll-behavior:contain;
+  background:#07171d;color:#edf3ef;isolation:isolate;
+}
+.media-expand-stage.is-media-expanded::backdrop{background:rgb(0 0 0 / 78%)}
+.media-expand-stage.is-media-expanded>.media-expand-toolbar{
+  box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  min-height:58px;padding:7px 16px;background:#10272e;color:#edf3ef;
+  z-index:2;font-family:"Ecology UI","PingFang TC",sans-serif;
+}
+.media-expand-title{margin:0;font-family:"Ecology UI","PingFang TC",sans-serif;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:0}
+.media-expand-stage .media-expand-close{
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+  min-width:76px;min-height:44px;margin:0;padding:9px 18px;border:0;
+  border-radius:0;background:#d2e2d8;color:#102229;font-family:"Ecology UI","PingFang TC",sans-serif;font-size:16px;font-weight:500;line-height:1.4;
+  cursor:pointer;flex-shrink:0;touch-action:manipulation;
+}
+.media-expand-stage .media-expand-close:hover{background:#fff;color:#102229}
+.media-expand-stage .media-expand-close:focus-visible{outline:3px solid #f4df99;outline-offset:3px}
+.media-expand-stage.is-media-expanded>iframe{
+  display:block!important;box-sizing:border-box;width:100%!important;min-width:0!important;max-width:none!important;
+  height:calc(var(--media-expand-height,100dvh) - var(--media-expand-toolbar-height,59px) )!important;
+  min-height:0!important;max-height:none!important;margin:0!important;border:0!important;
+  align-self:stretch;grid-row:2;background:#07171d;
+}
+.media-expand-stage.is-media-expanded>video{
+  display:block!important;box-sizing:border-box;width:100%!important;max-width:none!important;min-width:0!important;
+  height:100%!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;
+  margin:0!important;object-fit:contain!important;background:#000;grid-row:2;align-self:stretch;
+}
+.media-expand-guard{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;border:0!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+.media-expand-stage.is-media-expanded-inline{
+  position:relative!important;inset:auto!important;width:100%!important;
+  max-height:none!important;margin:0!important;box-shadow:none;scroll-margin-top:0;
+}
+@media(max-width:640px){
+  .media-expand-stage.is-media-expanded{inset:0!important;width:100%!important;height:var(--media-expand-height,100dvh)!important;max-height:100dvh!important;border:0!important}
+  .media-expand-stage.is-media-expanded>.media-expand-toolbar{padding:calc(5px + env(safe-area-inset-top,0px)) max(10px,env(safe-area-inset-right,0px)) 5px max(12px,env(safe-area-inset-left,0px));gap:10px;min-height:56px}
+  .media-expand-stage.is-media-expanded-inline{width:100%!important;inset:auto!important}
+  .media-expand-title{font-size:15px}.media-expand-stage .media-expand-close{font-size:16px;padding:8px 16px}
+}
+@media(max-height:500px) and (orientation:landscape){
+  .media-expand-stage.is-media-expanded{inset:0!important;width:100%!important;max-height:100dvh!important;height:var(--media-expand-height,100dvh)!important;border:0!important}
+  .media-expand-stage.is-media-expanded>.media-expand-toolbar{min-height:50px;padding-block:3px}
+  .media-expand-stage.is-media-expanded-inline{width:100%!important;inset:auto!important}
+}
+@media print{
+  [data-media-expand],.media-expand-toolbar,.media-expand-guard,.media-expand-placeholder{display:none!important}
+  .media-expand-stage.is-media-expanded{display:block!important;position:static!important;inset:auto!important;width:auto!important;height:auto!important;max-height:none!important;padding:0!important;border:0!important;box-shadow:none!important;overflow:visible!important}
+}
+
+/* Keep the same enlargement button in the legacy story skins. */
+#story-shell [data-media-expand],#full-reading [data-media-expand]{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:0;border-radius:0;background:#d2e2d8;color:#102229;font:500 16px/1.4 "Ecology UI","PingFang TC",sans-serif;text-decoration:none;cursor:pointer}
+#story-shell [data-media-expand]:hover,#full-reading [data-media-expand]:hover{background:#edf3e8;color:#102229}
+
+#story-shell .media-expand-stage .media-expand-close,#full-reading .media-expand-stage .media-expand-close{min-height:44px;min-width:76px;padding:9px 18px;border:0;border-radius:0;background:#d2e2d8;color:#102229;font:500 16px/1.4 "Ecology UI","PingFang TC",sans-serif}

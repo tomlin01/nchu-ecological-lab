@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "case_id": "02-04",
+  "check_count": 17,
+  "checks": [
+    {
+      "name": "Four case chapters",
+      "passed": true
+    },
+    {
+      "name": "Unique IDs",
+      "passed": true
+    },
+    {
+      "name": "Single iframe and silent parent",
+      "passed": true
+    },
+    {
+      "name": "Accepted transcript preserved",
+      "passed": true
+    },
+    {
+      "name": "Original case JSON fields preserved",
+      "passed": true
+    },
+    {
+      "name": "Hero original bytes and source geometry",
+      "passed": true
+    },
+    {
+      "name": "Research media original bytes",
+      "passed": true
+    },
+    {
+      "name": "31 accepted animation files preserved",
+      "passed": true,
+      "files": 31
+    },
+    {
+      "name": "Only three animation wrapper additions",
+      "passed": true
+    },
+    {
+      "name": "No unresolved build tokens",
+      "passed": true
+    },
+    {
+      "name": "JS syntax case.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "name": "JS syntax embed.js",
+      "passed": true,
+      "error": ""
+    },
+    {
+      "name": "CSS syntax case.css",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "CSS syntax embed.css",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "All local HTML references resolve",
+      "passed": true,
+      "count": 65,
+      "missing": []
+    },
+    {
+      "name": "Font glyph coverage",
+      "passed": true
+    },
+    {
+      "name": "Protected existing artifacts unchanged",
+      "passed": true,
+      "count": 491,
+      "changed": []
+    }
+  ],
+  "browser_verified_by_build": false
+}

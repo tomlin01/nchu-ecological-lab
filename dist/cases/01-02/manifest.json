@@ -1,0 +1,230 @@
+{
+  "case_id": "01-02",
+  "version": "copy-edit-v02",
+  "status": "static_ready_for_integration",
+  "entry": "01-02.html",
+  "accepted_user_quote": "沒問題了，換下一案",
+  "acceptance_scope": "hybrid-v01 film accepted; webpage integration authorized",
+  "browser_checked": false,
+  "http_used": false,
+  "native_media_ui_used": false,
+  "main_site_modified_by_this_task": false,
+  "files": {
+    "01-02.html": {
+      "bytes": 28279,
+      "sha256": "0671e1471bd2f4f8830539f3acb180841cb40920fedc7dbb1a396bf64f72858a"
+    },
+    "README.md": {
+      "bytes": 577,
+      "sha256": "987e791b384b7864b9fcd9319d331a160358bc11f1cb32612032bc99e83103ec"
+    },
+    "assets/01-02-method-v05.mp4": {
+      "bytes": 3102109,
+      "sha256": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25"
+    },
+    "assets/01-02-ocean-whale-main-v02.webp": {
+      "bytes": 104912,
+      "sha256": "efdc003db6b008fa94b69c1022b28c106b75febd74ad8f33cc90a9a3d97020aa"
+    },
+    "assets/01-02-poster.jpg": {
+      "bytes": 185896,
+      "sha256": "a552a4a37ec122373e142139b49b30518bc79295fa179a872e739b534a0f393a"
+    },
+    "assets/hybrid-v01/README.md": {
+      "bytes": 1557,
+      "sha256": "948e782092ffbb119f477bd5e1ffb388a85603cdc8fd69d21b55c8e8c50cb401"
+    },
+    "assets/hybrid-v01/SOURCE.md": {
+      "bytes": 2719,
+      "sha256": "56ab7fbfb3d725b5c25d52c571d2fb4bfddacdb2acc029c49ac8714cf7b73ec3"
+    },
+    "assets/hybrid-v01/manifest.json": {
+      "bytes": 2701,
+      "sha256": "e9cacc058d9e809dc14350ba36b71be6ed705a6007c752043dcfc646c78ab298"
+    },
+    "assets/hybrid-v01/poster.jpg": {
+      "bytes": 171684,
+      "sha256": "34f1436229f2d3f7d06fb7e7559ee53693d4bd355df1f037a3f3d13d8fde8f36"
+    },
+    "assets/hybrid-v01/provenance.json": {
+      "bytes": 3425,
+      "sha256": "3bbd10d9297105039f5c4ec1ba08098f6fe068fea1787a843159c8d4f91f7208"
+    },
+    "assets/hybrid-v01/scene.py": {
+      "bytes": 5851,
+      "sha256": "7c8c192eb0a9abd9dbcf6b727f7326e35cc75bd7ea06f5ed5212dcdfbe9bc32e"
+    },
+    "assets/hybrid-v01/sperm-whale-hybrid-v01.mp4": {
+      "bytes": 4612658,
+      "sha256": "ec1afbf46e970e23a89bda9ece74cc5663906b58f1b92d6313052786c7feed05"
+    },
+    "assets/research-figure-1.png": {
+      "bytes": 3753881,
+      "sha256": "8b20e12d8446a24a8dd0961f77348b495427657cd0875d04915f14bf0c503053"
+    },
+    "case.css": {
+      "bytes": 22019,
+      "sha256": "4fe88a6882accffd5ad102ba18ea04e2eff8a1a467944bc1a0738b2440136d93"
+    },
+    "case.js": {
+      "bytes": 10724,
+      "sha256": "4e87f0db651723141b38e0740ef1c04f449892ce7a36d74d96c08a19cf87575a"
+    },
+    "changes.md": {
+      "bytes": 3336,
+      "sha256": "e1dba71570667e4e99603cea1cdfd3a70ef5eeeb477321c140f87ae74ec1294f"
+    },
+    "copy-deck-v02.md": {
+      "bytes": 11260,
+      "sha256": "2d585f0d8859046870538da2bd697c08a339e3d0cd770113eccd4e1324822727"
+    },
+    "copy-v02-fonts.css": {
+      "bytes": 292,
+      "sha256": "358eebda3f957b592addcf0842a3a8b08d8e64d161f20bf14dd258133b2fec5b"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 160884,
+      "sha256": "1a3600b1e4bff9d3bcf3fabc958df0310c273e973a87ffc27f9316ee6185fedb"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 214440,
+      "sha256": "d114af4ba9b1703484f6f8d287d6a3f3d5543cb09755a01a31bd1796c3dff808"
+    },
+    "fonts/copy-v02-sans.woff2": {
+      "bytes": 206344,
+      "sha256": "bc656fe365589e0d71fe85e1c4abe5b63ff3b1c8e54d3c1f425c129a1aee5f7d"
+    },
+    "fonts/copy-v02-serif.woff2": {
+      "bytes": 278456,
+      "sha256": "9546343497918c911731a22a5706253f555b03cda39bd9cf470274280317818e"
+    },
+    "fonts/hybrid-sans-supplement.woff2": {
+      "bytes": 7248,
+      "sha256": "57c1bcafb97635936b64dcc6f335e55b035c28d6f795b6e54d8ae9a9a5d29dc5"
+    },
+    "fonts/hybrid-serif-supplement.woff2": {
+      "bytes": 8760,
+      "sha256": "f6aea0ce26990ee687163a7fc1efd0862a8cedfc90467c9f3b79c8ef403de6f2"
+    },
+    "index.html": {
+      "bytes": 531,
+      "sha256": "a32b1db775201fa3a3f2e17cda136e212feb523a7f66b41716b12a162848d80b"
+    },
+    "integration-checks.json": {
+      "bytes": 4833,
+      "sha256": "b6e9fc68535dcde249d3e948eceac4531713fc213b6e63f7d65d884b7dca490e"
+    },
+    "narrative-implementation.md": {
+      "bytes": 5553,
+      "sha256": "87bff47cf82d1e3b9b5614b47fafd0f07a322526731e5c574678c496c61f6d26"
+    },
+    "narrative-provenance.json": {
+      "bytes": 928,
+      "sha256": "d352f96bbed706b3723f490a3690764333857d53e2b85b0049d3a0cb342c5f33"
+    },
+    "narrative-verification.json": {
+      "bytes": 1654,
+      "sha256": "a8b5009627099034ba434e6a3c929fa5851bea4e8a98faf6702fe330f774c078"
+    },
+    "natural-history.css": {
+      "bytes": 3781,
+      "sha256": "7f08775f49aee5a51cca025290821b62fd7db0782f00cab46bd8d569ccbe71b2"
+    },
+    "provenance.json": {
+      "bytes": 2678,
+      "sha256": "954464673019276899717489420aaafcfcd4a3e4898739dc46162e3c94ea5851"
+    },
+    "ui-provenance.json": {
+      "bytes": 3056,
+      "sha256": "e3b6e0f9d212af27b355d71121485f63e61d7440eb1dd22797c969f81776bfbe"
+    },
+    "ui-verification.json": {
+      "bytes": 2936,
+      "sha256": "f540ab422e3fc2358f6e6a4baa848a39e3090f053215d480a63f0e54d859ea26"
+    }
+  },
+  "narrative_revision": "copy-review-01-v02",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "01-02.html",
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": false,
+    "static_only": true,
+    "content_and_animation_unchanged": true
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical.",
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

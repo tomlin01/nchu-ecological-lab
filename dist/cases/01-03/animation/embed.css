@@ -1,0 +1,30 @@
+html,body{margin:0;min-height:0;height:auto;overflow:hidden}
+body{background:#09141c}
+main{width:100%;max-width:none;min-height:0;margin:0;padding:0}
+.page-heading,.reading-notes{display:none!important}
+.player{border:0}
+.player-status{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.phase-navigation{margin-bottom:0}
+/* Fixed desktop stage and control rows are independent of caption/score length. */
+@media(min-width:801px){
+ .player{display:grid;grid-template-columns:minmax(0,1fr) clamp(300px,28%,380px);grid-template-rows:var(--embed-stage-height,460px) 76px auto auto auto auto auto;column-gap:18px;align-items:start}
+ .stage-layout{display:contents}
+ .stage{grid-column:1;grid-row:1;height:var(--embed-stage-height,460px);min-height:460px;max-height:none;aspect-ratio:auto;align-self:start}
+ .scene-host{height:100%}
+ .caption-panel{grid-column:2;grid-row:1/7;align-self:start;padding:18px;border-left:0}
+ .caption-panel h2{font-size:24px;line-height:1.55;margin-bottom:12px}
+ .caption-panel>p:not(.phase-position){font-size:17px;line-height:1.75}
+ .phase-position{margin-bottom:12px}
+ .phase-takeaway{padding-top:16px}
+ .playback{grid-column:1;grid-row:2;min-width:0;height:76px;padding:12px;gap:12px;position:relative}
+ .playback button{font-size:15px;padding-inline:12px}
+ .playback button.primary{min-width:122px}
+ .source-actions{grid-column:1;grid-row:3;min-width:0;padding:12px 12px 0;gap:12px}
+ .photo-credit{grid-column:1;grid-row:4;padding:9px 12px 0;font-size:14px;line-height:1.75}
+ .render-notice{grid-column:1;grid-row:6;margin:8px 12px 0}
+ .phase-navigation{grid-column:1/-1;grid-row:7;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:14px}
+ .phase-navigation button{font-size:13px;min-height:71px;padding:10px 9px}
+ .phase-navigation button span{font-size:12px}
+}
+@media(min-width:761px) and (max-width:800px){.stage-layout{grid-template-columns:1fr}.stage{height:460px;min-height:460px;aspect-ratio:auto}.caption-panel{border-left:0}.playback{position:relative}}
+@media(max-width:760px){.playback{position:relative}.source-actions,.photo-credit{padding-inline:5px}}

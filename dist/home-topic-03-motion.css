@@ -1,0 +1,30 @@
+/* Add a second overlap without changing either preceding scene's flow height. */
+@media screen and (min-width:921px) and (prefers-reduced-motion:no-preference) {
+  .home-topic-three-motion #home-story > #topic-02 {
+    position:sticky;
+    top:var(--ecology-sidebar-toolbar-height,0px);
+    z-index:2;
+  }
+  .home-topic-three-motion #home-story > #topic-03 {
+    position:relative;
+    z-index:3;
+  }
+  /* The old 1→2 trigger is topic 2. Measure its normal-flow position on refresh. */
+  .home-topic-three-motion.home-topic-three-measuring #home-story > #topic-02 {
+    position:relative;
+    top:auto;
+  }
+}
+@media print {
+  #home-story > #topic-02,
+  #home-story > #topic-03 {
+    position:static!important;
+    top:auto!important;
+  }
+  #topic-03 .individual-plate-motion,
+  #topic-03 .individuals-copy,
+  #topic-03 .case-navigation {
+    transform:none!important;
+    opacity:1!important;
+  }
+}

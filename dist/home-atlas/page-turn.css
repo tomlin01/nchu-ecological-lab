@@ -1,0 +1,11 @@
+/* Grabfold calendar material; our pager owns scroll triggers and DOM restoration. */
+.page-turn-layer{position:fixed;inset:0 auto 0 0;height:100dvh;z-index:30;overflow:hidden;background:var(--paper);isolation:isolate;pointer-events:none}
+.page-turn-back,.page-turn-face{position:absolute;inset:0}
+.page-turn-back{z-index:0;overflow:hidden;background:var(--paper)}
+.page-turn-face{z-index:2;--grabfold-lift:#fff}
+html[data-theme="dark"] .page-turn-face{--grabfold-lift:#626767}
+.calendar-axis,.calendar-content{position:absolute;top:0;left:0;transform:matrix(0,1,1,0,0,0);transform-origin:0 0}
+.page-turn-layer :is(.selection-guide,.trait-cue){visibility:hidden}
+.atlas-turning .topic{overflow:hidden}
+.page-turn-placeholder{pointer-events:none}
+@media print{.page-turn-layer,.page-turn-placeholder{display:none!important}}

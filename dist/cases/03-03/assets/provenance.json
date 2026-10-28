@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "display": "03-03-little-owl-hero-v02.webp",
+    "master": "outputs/ecology-ai-rollout-assets/03-03/hero-v02/03-03-little-owl-hero-v02.png",
+    "dimensions": [
+      1916,
+      821
+    ],
+    "source": "Built-in imagegen, edit of original generated little-owl scene",
+    "prompt": "03-03-little-owl-hero-v02-prompt.md",
+    "sha256": "6f64bb73868af72b60e144338f51d60fcfe47c452a0976ea3a142d6796f926ca",
+    "disclosure": "AI生成情境圖；不代表原始錄音個體、研究現場或實拍。"
+  },
+  "audio": "../animation/SOURCE.md",
+  "spectrograms": "Calculated from the same gain-only source PCM; audio-data.json records STFT and common scale."
+}

@@ -1,0 +1,144 @@
+{
+  "revision": "integration-batch-v01",
+  "completed_at": "2026-10-20T22:18:54.690170+00:00",
+  "status": "integrated_local",
+  "cases": [
+    {
+      "id": "01-01",
+      "entry": "cases/01-01/01-01.html",
+      "version": "web-hybrid-v01",
+      "animation_version": "hybrid-v01",
+      "duration_seconds": 64
+    },
+    {
+      "id": "01-04",
+      "entry": "cases/01-04/01-04.html",
+      "version": "web-hybrid-v01",
+      "animation_version": "hybrid-v02",
+      "duration_seconds": 78
+    },
+    {
+      "id": "02-01",
+      "entry": "cases/02-01/02-01.html",
+      "version": "web-hybrid-v01",
+      "animation_version": "hybrid-v01",
+      "duration_seconds": 60
+    },
+    {
+      "id": "07-01",
+      "entry": "cases/07-01/07-01.html",
+      "version": "web-hybrid-v01",
+      "animation_version": "hybrid-v01",
+      "duration_seconds": 90
+    }
+  ],
+  "browser_functional_checks": 81,
+  "source_controls_checks": 8,
+  "static_checks": 475,
+  "normal_speed_full_playback_seconds": {
+    "01-01": 64,
+    "01-04": 78,
+    "02-01": 60,
+    "07-01": 90
+  },
+  "full_playback_record": "work/ecology-ai-rollout/integration-batch-v01/full-playback.json",
+  "final_bridge_guard": {
+    "record": "work/ecology-ai-rollout/integration-batch-v01/bridge-final-fix.json",
+    "change": "Skip redundant restoration seeks when the child already matches the saved time.",
+    "functional_tests_repeated_after_guard": true,
+    "full_playback_note": "Full main-site playback preceded this final no-op-seek guard; accepted animation runtime bytes are unchanged."
+  },
+  "accepted_runtime_files_byte_identical": 80,
+  "outside_target_files_unchanged": 178,
+  "documentation_amendments": [
+    {
+      "case": "01-01",
+      "file": "SOURCE.md",
+      "before": "4a767e42e03d500f7aee15ff6bb0420a5ce3589a5bef7dc48a1576361b2b2d9d",
+      "after": "46b070d3013c210e399f83ce02a4484f8f9c11c24d7fcfe5e5c9baf5dd0b5ec9"
+    },
+    {
+      "case": "01-01",
+      "file": "README.md",
+      "before": "47ca0ef945d5b382cb45ee10616db34d16937f7b94d1dfb4a5cd89b851390e7f",
+      "after": "929c6a38923ed3abaddbc42fad272e0098ee38cf22e43ab39e1e90c164e01773"
+    },
+    {
+      "case": "01-01",
+      "file": "manifest.json",
+      "before": "9dba06aab8502749b62d129daacfb57025e80e41c16fe25295b37b195f4acd86",
+      "after": "b7082e24ac17d114d426636e61de7bd884ddc98cee4887ef515acacd7dfe04ce"
+    },
+    {
+      "case": "01-04",
+      "file": "SOURCE.md",
+      "before": "467f75fd59a7143b0ce8e6783d0c230a552215947fcaf1ac14a40e7eea1cf2ce",
+      "after": "7b48794d6fb9a4d80935b6a02150dd0d19d3f298ea260604353ef0f60f364e96"
+    },
+    {
+      "case": "01-04",
+      "file": "README.md",
+      "before": "66efff73f84a205a5487f9b0ec9c13d3c1c6e0021f91838dab0c472a18b5fdc8",
+      "after": "0fc616cbfefe3ede38d5b5f0b24bb8e5235b7f6c398916f00309cc079d9fba97"
+    },
+    {
+      "case": "01-04",
+      "file": "manifest.json",
+      "before": "0ef880c9456e9db3c815794d382829ca3d575e68023f6b9dca213ac47b3ef2a6",
+      "after": "1f3573c91691c169dbb886f2d99043c0ea16a9406c4c519bbeec2927c2152867"
+    },
+    {
+      "case": "02-01",
+      "file": "SOURCE.md",
+      "before": "46e1d761290eb0e06c48261c471ec2a50f2fda66c58f31c8c93e04d0d46958c9",
+      "after": "d80b826d1439a3655d64999af8472f91e752c1bbe0d1c8cd22a61874493fbf2f"
+    },
+    {
+      "case": "02-01",
+      "file": "README.md",
+      "before": "801290092789c613edeeeeb9c717bdc027dcd6dbfd00079974f8aa86cece7775",
+      "after": "35de2a713ae39fd4ab3b100817c091b5b60ed7ee037c698c0d3d5d3e5340c7d3"
+    },
+    {
+      "case": "02-01",
+      "file": "manifest.json",
+      "before": "edac39b0f2e3ec92250abdc953e4fedb5d4ba5fa9b93dba3cc7530f21eae9eff",
+      "after": "0eee4d8c30544028c0c9d92b63d3a316e4c45f518f83b9623a3c44a386a79330"
+    },
+    {
+      "case": "07-01",
+      "file": "SOURCE.md",
+      "before": "f6e4d88da20cef53571e655a75c7804cd9e99c539989092caafedc805ca43f8e",
+      "after": "61038690a79e1aee46f8c65362989c3b969290df76d1ace67c7504de577a0853"
+    },
+    {
+      "case": "07-01",
+      "file": "README.md",
+      "before": "be8975379fa1d1d90b83352ba154834976cba4c06d33e3bfb5e00a6bcc45f695",
+      "after": "78b16e955a2706de26ed56d36a7ee4da69d6c49eb72e7d4d536bea2fb80b0bf1"
+    },
+    {
+      "case": "07-01",
+      "file": "manifest.json",
+      "before": "121a703604e201d2c2c77083e6ca8c3cf600d9a0befef6b5a6868c0bcb04b36a",
+      "after": "29bf1e264ce5e9577ed463563ad85820c0a04684c11a5b7629317cb6e2c123d8"
+    }
+  ],
+  "viewports_checked": [
+    1440,
+    1280,
+    390,
+    320
+  ],
+  "no_js_and_print_checked": true,
+  "homepage_links": 8,
+  "homepage_art_and_code_unchanged": true,
+  "limits": {
+    "01-02_browser_retested": false,
+    "birdnet_human_audio_confirmation": "pending",
+    "speciesnet_human_species_confirmation": "pending",
+    "physical_phone_tested": false,
+    "safari_tested": false
+  },
+  "public_deployment": false
+}

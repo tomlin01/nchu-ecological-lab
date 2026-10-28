@@ -1,0 +1,311 @@
+{
+  "case_id": "05-02",
+  "title": "珊瑚礁裡，都是珊瑚嗎？",
+  "version": "web-v01",
+  "entry": "05-02.html",
+  "status": "accepted_local",
+  "updated": "2026-10-26T15:40:40.409141+00:00",
+  "animation_version": "full-story-v02",
+  "animation_entry": "animation/embed.html",
+  "animation_duration_seconds": 118,
+  "animation_user_accepted": true,
+  "website_user_accepted": true,
+  "model_inference_run": false,
+  "map_source": "official WFS snapshot 2026-10-26, not claimed identical to frozen v2.0",
+  "source_maps_byte_preserved": true,
+  "deployed": false,
+  "files": {
+    "05-02.html": {
+      "bytes": 15156,
+      "sha256": "4684651051769bd18a9eca231ff61382bf98dc6ba65ee66adf2db75ee4c20f78"
+    },
+    "README.md": {
+      "bytes": 2501,
+      "sha256": "79681b901363a8d572e0eff756aaf6d87c11afb48fcbf6bf11606dd159e40ac2"
+    },
+    "SOURCE.md": {
+      "bytes": 3909,
+      "sha256": "ac1fcb0616bbb40ed08a31fb9bdb4fa4191413cab4d781371aa18fd7354900c1"
+    },
+    "animation/app.mjs": {
+      "bytes": 13566,
+      "sha256": "89dfae361eb22d3edd525fbcefb7f7de735142a38d10e95a5c3d54961eb93520"
+    },
+    "animation/assets/reef-limestone-albedo.png": {
+      "bytes": 4742896,
+      "sha256": "8ee947d1696db186de676fd08b09c6c8cb9a8846a3db80d8b639fa628d8e7d92"
+    },
+    "animation/assets/scans/SOURCE.md": {
+      "bytes": 4834,
+      "sha256": "8a219cfc4ce8c935a3c81887b1fc228e125c98ddf364dbfa7e6dfde84939fbd1"
+    },
+    "animation/assets/scans/diploria-labyrinthiformis-lod-index.bin": {
+      "bytes": 143976,
+      "sha256": "7cd58507521816636d9fb614f76cd9cb6d6871b3e82d00bc744f846a3d1617cb"
+    },
+    "animation/assets/scans/diploria-labyrinthiformis.glb": {
+      "bytes": 6086940,
+      "sha256": "c55301c7ae8d2b829f855b69f6943a4ead345e727860fa77ce1617b43496af03"
+    },
+    "animation/assets/scans/extra-SOURCE.md": {
+      "bytes": 3845,
+      "sha256": "de870dadfe1c803453bc8618e4e68f72889a3d6bc23a3adb0e3f1a5e41d3d3a5"
+    },
+    "animation/assets/scans/extra-provenance.json": {
+      "bytes": 6760,
+      "sha256": "8a4d9a21c351c297602ff84c1289a407f084998f8a6dcb4e2d69392674ed7f30"
+    },
+    "animation/assets/scans/pavona-cactus-74851-lod-index.bin": {
+      "bytes": 143940,
+      "sha256": "5629e4020d3235befaf8bd47df68dd27e417191d05f11e6544d6cfe7df117e1b"
+    },
+    "animation/assets/scans/pavona-cactus-74851.glb": {
+      "bytes": 10840828,
+      "sha256": "4af75a0510a958d4a9bccf44fee46ce78982babb1d0387bf5c41a1ff2fd799dc"
+    },
+    "animation/assets/scans/pocillopora-44359-lod-index.bin": {
+      "bytes": 119880,
+      "sha256": "24cb880779486b36b6c709201072181ef318ebbc640f6337680a8d8b0a1fd994"
+    },
+    "animation/assets/scans/pocillopora-44359.glb": {
+      "bytes": 6750216,
+      "sha256": "31fa5dce1d14edbea6a2fbef8fe91f01ee80c2e5455b9ff3b6234d2e3a29e40c"
+    },
+    "animation/assets/scans/pocillopora-81450-lod-index.bin": {
+      "bytes": 134664,
+      "sha256": "3c44a17448f0c5d67c6d5d557df900092ba17a65150d26cc7e86f579f96c586a"
+    },
+    "animation/assets/scans/pocillopora-81450.glb": {
+      "bytes": 6567676,
+      "sha256": "0172ea2f723be4fa90e120becb4133cbc4da5ff3dc64ea5b3f9d6cbf26a0ef85"
+    },
+    "animation/assets/scans/provenance.json": {
+      "bytes": 9879,
+      "sha256": "726ef05d3833bc826b75261b8b056ae96797441ed4a58670702d2429e3693ad6"
+    },
+    "animation/atmosphere.mjs": {
+      "bytes": 4943,
+      "sha256": "8b909a78346d0cf30c74cecf268c5bac723fa7c378c0e7ab638bede69d4e9ecd"
+    },
+    "animation/biota.mjs": {
+      "bytes": 38706,
+      "sha256": "659e512220ea282d520260a05a4bbd600cc1cc9ebb20da97a04a0b47eecd70a3"
+    },
+    "animation/coral-pigment.mjs": {
+      "bytes": 1974,
+      "sha256": "218be9928ef3b41ffa3cec4c449c8daae1f94054e7e41219d814eb16f9cb5198"
+    },
+    "animation/embed-manifest.json": {
+      "bytes": 6143,
+      "sha256": "430ab74cc13f4006ab84927deb205fcd00d74e45a16e4d3a144eda812ce8aac4"
+    },
+    "animation/embed.css": {
+      "bytes": 1528,
+      "sha256": "92f6da48ef6c2d3b106b9238088ba3c1ea7b9be392824207ff244568b4a45472"
+    },
+    "animation/embed.html": {
+      "bytes": 17666,
+      "sha256": "7c5c66fbf6ddd4926ee58137f57c3145c057de19c6278dcab9566daeb0b32f1e"
+    },
+    "animation/embed.js": {
+      "bytes": 7379,
+      "sha256": "f82d5f0272f10f2d7452a515cebac8027fc9c1fc35b04d2180f2af394786f928"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/reef-sans.woff2": {
+      "bytes": 75256,
+      "sha256": "b29efb0c1a2507e41e000beee758be7564919897114adaff50c2a9cecded1ca5"
+    },
+    "animation/fonts/reef-story-sans.woff2": {
+      "bytes": 144752,
+      "sha256": "9debaf0875da9aafef1c2a7f76917d04c31a020f251d87eed444434d5f2c10f9"
+    },
+    "animation/index.html": {
+      "bytes": 4067,
+      "sha256": "c2714f3fe221d8dc0b0f19a1c89992a13f02d070ff5be3784b4812e4b99ec5ee"
+    },
+    "animation/marine-life.mjs": {
+      "bytes": 8866,
+      "sha256": "ed785dd9d9c5d0c9fd2bf7048c7332e3f607697b856de90441b7ead933221ca4"
+    },
+    "animation/scan-corals.mjs": {
+      "bytes": 5894,
+      "sha256": "aaa6a0cf225c387a75278d7d6825e1fbe0dbfff6c7c5b6de098ee3a28cf8b058"
+    },
+    "animation/story-controls.css": {
+      "bytes": 2108,
+      "sha256": "3cb07bc45f406b62947034f1aacf287c78bba103714b6073c2eb39358ce98def"
+    },
+    "animation/story-model.mjs": {
+      "bytes": 7840,
+      "sha256": "68cf923f4d07035bd0578a0a39a9a379b62091dabd27efcb3b8b2ef227a77609"
+    },
+    "animation/story-player.mjs": {
+      "bytes": 17545,
+      "sha256": "b2422b0ea3ac3de87dcb2f044613e39a167e14a3a50c6ed77bc96b9bb9f6e72e"
+    },
+    "animation/story-scene.mjs": {
+      "bytes": 4497,
+      "sha256": "b550275e2e38250e423b97edf99cf3f6f9d0970de44d4bafcda737a146570ac5"
+    },
+    "animation/story-source.json": {
+      "bytes": 9327,
+      "sha256": "8f6a09774615e874bc53b9bf6eb7250d6a6b2dbc331de1ec784bf4177ff1d419"
+    },
+    "animation/story.css": {
+      "bytes": 22849,
+      "sha256": "c91d8b78f04f63a8bf62bbdd76d3c286c617646302e9c6621b41dcc99848e6d0"
+    },
+    "animation/style.css": {
+      "bytes": 4715,
+      "sha256": "22d76e9e501f3b3632fff957cbdcaf938dfde03705b8cd955b95c1f278474984"
+    },
+    "animation/surface-material.mjs": {
+      "bytes": 11901,
+      "sha256": "0f8725b99e4b7a0bd4f6f0d1b677ac5980dd92bacff022fb33a9875b1dd1cacc"
+    },
+    "animation/surroundings.mjs": {
+      "bytes": 10622,
+      "sha256": "920a747a83310c067356025a4eb9ce1e1e70fbbb48849c8df2f0d0412b830f9f"
+    },
+    "animation/terrain.mjs": {
+      "bytes": 8879,
+      "sha256": "1820f3009b39b894f3b007d9f29b0e06f1495ec9659a0bb74daefdee737e1038"
+    },
+    "animation/vendor/BufferGeometryUtils.js": {
+      "bytes": 37724,
+      "sha256": "6d4f4f989a5f7e810522aaa36292205e3674878eed9810563417bd13ab9ba4f2"
+    },
+    "animation/vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "animation/vendor/addons/loaders/GLTFLoader.js": {
+      "bytes": 117586,
+      "sha256": "03952cb129d558f92b8e6c757fbf7c1f718b3126c4d34f264d574b40ea36054f"
+    },
+    "animation/vendor/addons/math/SimplexNoise.js": {
+      "bytes": 15148,
+      "sha256": "4b1455617135e6b477de76244de07547d95570643379b72f4758e50161b06072"
+    },
+    "animation/vendor/addons/postprocessing/EffectComposer.js": {
+      "bytes": 8517,
+      "sha256": "af78417adddaa482b742ddcfdf551ca0b35d77d58493f2e96439fdc219905ef0"
+    },
+    "animation/vendor/addons/postprocessing/MaskPass.js": {
+      "bytes": 4694,
+      "sha256": "7cd08eee9d5d6f5578beaddbdcbe9c384f6873810af27f22ab7db3ceeb127aa3"
+    },
+    "animation/vendor/addons/postprocessing/OutputPass.js": {
+      "bytes": 4200,
+      "sha256": "e31bb5e6843c43e99113198824c2242b95abe2ed9047e725691fd6453fc8321f"
+    },
+    "animation/vendor/addons/postprocessing/Pass.js": {
+      "bytes": 4234,
+      "sha256": "ac015c53e4a491b4f071535d003e6208ec56e00cfbb74942d93556dd53c45673"
+    },
+    "animation/vendor/addons/postprocessing/RenderPass.js": {
+      "bytes": 4296,
+      "sha256": "11d4309065ed205241291a6e1e3f6d54acd11ee16a753313a2b4b33a5ce4b189"
+    },
+    "animation/vendor/addons/postprocessing/SSAOPass.js": {
+      "bytes": 13505,
+      "sha256": "76e8f0d3eea92031d990fb39004676a960f6aea0aee0100e8352d956adda9c53"
+    },
+    "animation/vendor/addons/postprocessing/ShaderPass.js": {
+      "bytes": 3244,
+      "sha256": "1a07592b97c68fec70b9ece4ee32522878c9e71e8364c10f359480b8cd676ef2"
+    },
+    "animation/vendor/addons/shaders/CopyShader.js": {
+      "bytes": 729,
+      "sha256": "a33057d5ac91c43304c186ac0e8816e62bb2ed471d3a00ff3018dfd5c0389718"
+    },
+    "animation/vendor/addons/shaders/OutputShader.js": {
+      "bytes": 1876,
+      "sha256": "353479f77a8d7e2629d49ccac9fc2f5dbfdda5442e0adf867b00377a2fcb0cb2"
+    },
+    "animation/vendor/addons/shaders/SSAOShader.js": {
+      "bytes": 6984,
+      "sha256": "05cc6868f4affa46923293bcde222cb5bca67cf83aa4c4d1acc5c43b24195358"
+    },
+    "animation/vendor/addons/utils/BufferGeometryUtils.js": {
+      "bytes": 37728,
+      "sha256": "259085a7dac89e0840393a9347c77123fbc4206ec2146bf0c29ffc72e14a2800"
+    },
+    "animation/vendor/addons/utils/SkeletonUtils.js": {
+      "bytes": 11551,
+      "sha256": "28017bf37d0ecb0c4be6048db759ff14df729a562464830b064d4cc239c5af17"
+    },
+    "animation/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "animation/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "assets/05-02-reef-hero-v09.webp": {
+      "bytes": 376676,
+      "sha256": "29ba3374aa5085666e13b171fc8a8d0cfb9bc6eccd6b8cb27516e8158aa543bf"
+    },
+    "assets/05-02-reef-overview-v09.webp": {
+      "bytes": 435012,
+      "sha256": "6afba32e9b79fa8eb97e99d09d14dd3ef91abd749d893a0a62e806179d2fe1f9"
+    },
+    "assets/hero-provenance.json": {
+      "bytes": 1256,
+      "sha256": "1bb88e749dc3292908440625a601848c75504032e280cf9b1886449235eee84e"
+    },
+    "assets/map-data.json": {
+      "bytes": 6775,
+      "sha256": "651d8b3add481f886f8bc94c66b82903ec673dcfdb061f4ef070a4e7bed37d08"
+    },
+    "assets/overview-provenance.json": {
+      "bytes": 383,
+      "sha256": "4f61b90ab2121eabc061379b21530a2ce8b1d1fbc7dcbd5a40dd9ce1b442f436"
+    },
+    "assets/reef-map-benthic.png": {
+      "bytes": 141826,
+      "sha256": "970a559420eb8dd8b3b73958d723b4e5dcaf4d2277cd51255413ec57a5c26161"
+    },
+    "assets/reef-map-geomorphic.png": {
+      "bytes": 122270,
+      "sha256": "af34f44fe0cd5de852e4b6483d28fb971cb772a7861fb76f4c0903abb9637817"
+    },
+    "case.css": {
+      "bytes": 17006,
+      "sha256": "eb2d3f873b49e958e0182109ace06981fff8d66ebaa77a3401dc43cc31436349"
+    },
+    "case.js": {
+      "bytes": 11684,
+      "sha256": "3c6c828cfab8e2887d61bd4b7c836c9587a70c49943508c8d6b73410c9bbe0fa"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 143724,
+      "sha256": "3b862961c837a6981c8332f6feef6c669d558f65a284b6fc8d24e0787828ccd9"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 191528,
+      "sha256": "55b700d06349634f4b91a67d6bf391d88514b0358a8cb135cf313a346d89bb1a"
+    },
+    "index.html": {
+      "bytes": 281,
+      "sha256": "d09977570e460ba1a6dea1ebb50b1d75a0a76e900f354f6c43bdb1abcb7e9281"
+    },
+    "scene.js": {
+      "bytes": 1485,
+      "sha256": "c20387cbff9d464f9122f93235f1375b3f4ec8950b5cd5420a60950322dffe21"
+    },
+    "typography.css": {
+      "bytes": 1078,
+      "sha256": "cdb8360246cfae126993e2f743594bac53d61f6f8f89f981e2fddfc2f074a18d"
+    }
+  },
+  "accepted_opening_version": "three-study-v09",
+  "accepted_opening_seconds": 20,
+  "accepted_opening_user_accepted": true,
+  "accepted_at": "2026-10-26T15:56:28.194888+00:00"
+}

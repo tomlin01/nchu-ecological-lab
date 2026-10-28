@@ -1,0 +1,245 @@
+<!doctype html>
+<html data-animation-native="01-02" data-reading-type="01-02" lang="zh-Hant" data-theme="light">
+<head><script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="聽見鯨叫後，如何估計牠們在哪裡、選擇前往哪一群？CETI／AVATARS 海試用被動水聽器接收聲音，由模型估計位置、人員選點，讓無人機前往觀察。">
+  <title>聽見鯨叫，無人機該往哪裡飛？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="case.css">
+  <script src="case.js" defer></script>
+<link rel="stylesheet" href="copy-v02-fonts.css"><link rel="stylesheet" href="../../ui/sidebar.css" data-navigation-media="navigation-media-v01">
+<link rel="stylesheet" href="../../ui/media-expand.css" data-navigation-media="navigation-media-v01">
+<script src="../../ui/site-map.js" defer data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/sidebar.js" defer data-case-id="01-02" data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/media-expand.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../ui/catalog-theme.css"/><link rel="stylesheet" href="natural-history.css"/><link rel="stylesheet" href="../../ui/theme-controls.css"/><link rel="stylesheet" href="../../ui/reading-typography.css">
+<link rel="stylesheet" href="../../ui/animation-theme.css">
+</head>
+<body>
+  <div class="topic-scene" aria-hidden="true">
+    <img src="assets/01-02-ocean-whale-main-v02.webp" alt="" width="1672" height="941" fetchpriority="high">
+  </div>
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html#cases">返回主題一</a>
+    <span class="case-name">CETI／AVATARS · 抹香鯨</span>
+  </header>
+  <nav class="section-nav" aria-label="案例章節">
+    <div class="nav-pages">
+      <a href="#question" data-page="question"><span aria-hidden="true">1</span> 研究問題</a>
+      <a href="#roles" data-page="roles"><span aria-hidden="true">2</span> 模型分工</a>
+      <a href="#method" data-page="method"><span aria-hidden="true">3</span> 方法示意</a>
+      <a href="#evidence" data-page="evidence"><span aria-hidden="true">4</span> 成果與限制</a>
+    </div>
+    <div class="reading-actions">
+      <button class="full-toggle js-only" id="full-reading" type="button" aria-pressed="false" hidden>完整閱讀</button>
+      <button class="print-button js-only" id="print-page" type="button" hidden>列印</button>
+    </div>
+  </nav>
+
+  <main id="case-content">
+    <section class="chapter opening" id="question" aria-labelledby="question-title" tabindex="-1">
+      <div class="opening-layout">
+        <div class="opening-intro">
+          <h1 id="question-title">聽見鯨叫，<br>無人機該往哪裡飛？</h1>
+          <p class="opening-lead">收到叫聲後，研究人員還要估計鯨在哪裡、哪一群可能已浮出水面，才能選定無人機前往的位置。</p>
+          <a class="primary-action" href="#method">看方法動畫 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+          <p class="scene-caption">AI 生成水下抹香鯨情境，非研究實拍</p>
+        </div>
+        <figure class="opening-visual">
+          <img src="assets/01-02-ocean-whale-main-v02.webp" alt="海面下，一頭抹香鯨的身體從左下方延伸至右側的大頭。生成概念圖。" width="1672" height="941">
+          <figcaption>AI 生成水下抹香鯨情境，非研究實拍</figcaption>
+        </figure>
+      <div class="opening-body">
+        <div class="opening-copy">
+          <p>抹香鯨長時間待在水下，研究人員能在海面觀察牠們的時間有限。多米尼克外海的團隊讓船拖著水聽器陣列接收鯨叫，但光知道聲音的來向，還無法指定一個位置：同一群鯨可能在陣列的任一側。</p>
+          <p>研究人員移動船隻，讓同一條陣列換個位置接收聲音，逐步更新估計。接著還得判斷哪一群可能已浮出水面，選好航點、讓無人機前往；是否真的找到鯨，最後由人員確認。</p>
+        </div>
+        <dl class="opening-meta">
+          <div><dt>場域</dt><dd>加勒比海・多米尼克外海</dd></div>
+          <div><dt>研究階段</dt><dd>2025 年論文・部分自主海上試驗</dd></div>
+        </dl>
+        <p class="opening-footnote">這項研究用聲音幫忙找鯨，讓研究人員有機會近距離觀察鯨群，並沒有自動解析鯨語。</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="chapter reading-chapter" id="roles" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-heading">
+        <h2 id="roles-title">聽聲音找鯨，誰來做決定？</h2>
+        <p>模型幫忙估計位置。海試中，研究人員負責操船、選擇要前往的地方，也要確認是否看見鯨群。</p>
+      </header>
+      <div class="chapter-reading">
+      <div class="roles-layout">
+        <ol class="method-steps">
+          <li><h3>船後的水聽器接收鯨叫</h3><p>船後拖著四個排成一列的水聽器，接收鯨發出的叫聲。這是被動接收，沒有向外發射搜尋聲波。陣列約在船後 100 公尺，這是<strong>拖曳距離</strong>，不是水深。<a class="citation" href="https://arxiv.org/html/2512.05808v1#S2.SS1" target="_blank" rel="noopener">§2.1</a></p></li>
+          <li><h3>分清鯨群，估計可能的位置</h3><p>模型依聲音傳來的方向分群，使用的是高斯混合模型（GMM）。估計其中一群的位置時，單次觀測仍可能對應陣列左右兩側。粒子濾波（PF）保留這些可能位置，起始距離則參考船到上次目擊下潛處的約略距離。動畫中的兩團粒子，都在表示同一群鯨可能在哪裡。<a class="citation" href="https://arxiv.org/html/2512.05808v1#S2.SS2" target="_blank" rel="noopener">§2.2</a></p></li>
+          <li><h3>船轉彎，再換個角度聽</h3><p>人員操船移動、轉向，讓同一條陣列從另一個位置接收叫聲。原本左右都說得通的位置，遇到新的方向觀測後，可能不再一樣合理。模型用新的來向與訊號振幅，更新各候選位置的相對可能性。</p></li>
+          <li><h3>人員選定位置，無人機再前往</h3><p>研究人員參考叫聲是否持續與位置估計，選定航點並操控無人機起飛。升至 30 公尺後，無人機才自主飛向估計航點。飛行過程中，無人機操作人員也會確認是否看見鯨。<a class="citation" href="https://arxiv.org/html/2512.05808v1#S3.SS1" target="_blank" rel="noopener">§3.1</a></p></li>
+        </ol>
+        <div class="division">
+          <h3>模型做什麼，人做什麼？</h3>
+          <dl class="role-definitions">
+            <div><dt>GMM｜方向分群</dt><dd>把聲音方向的觀測分群，協助區分鯨群；它不辨認每一隻鯨。</dd></div>
+            <div><dt>PF｜位置估計</dt><dd>用許多可能的位置表示目前的估計。新觀測加入後，再調整哪些位置較有可能。</dd></div>
+            <div><dt>研究人員｜海試決策</dt><dd>操船、選擇要前往的位置、操控起降，並確認是否看見鯨。</dd></div>
+          </dl>
+          <div class="comparison">
+            <h3>哪些工作已在海上做到？</h3>
+            <table>
+              <caption>海試與模擬中的操作分工</caption>
+              <thead><tr><th scope="col">項目</th><th scope="col">海試</th><th scope="col">模擬</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">轉向、起飛與選點</th><td>由人員決定</td><td>評估機器自主決策</td></tr>
+                <tr><th scope="row">飛向估計航點</th><td>升至 30 公尺後自主導航</td><td>評估自主導航</td></tr>
+                <tr><th scope="row">確認鯨的位置</th><td>人員看見鯨後，記錄實際位置</td><td>由模擬環境提供位置</td></tr>
+              </tbody>
+            </table>
+            <p class="source-note">系統設計還包括潛浮狀態估計，並參考鯨潛浮的時間規律，以 model-based RL 規劃無人機行動。起飛時機與選點等較完整的自主決策，主要在模擬中評估。<a href="https://arxiv.org/html/2512.05808v1#S2.T1" target="_blank" rel="noopener">Table 1</a> · <a href="https://arxiv.org/html/2512.05808v1#S3.SS4" target="_blank" rel="noopener">§3.4</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="research-context" aria-labelledby="equipment-title">
+        <h3 id="equipment-title">研究現場與設備</h3>
+        <figure class="research-figure">
+          <a href="assets/research-figure-1.png" target="_blank" rel="noopener" aria-label="在新分頁查看完整研究設備圖">
+            <img src="assets/research-figure-1.png" alt="原論文圖 1：研究使用的船舶、水聽器陣列、無人機與相關感測設備。" width="2027" height="1140">
+          </a>
+          <figcaption>研究現場與設備。Bhattacharya et al.（2025），Fig. 1。保留完整原圖，未裁切或調色。<a href="https://arxiv.org/html/2512.05808v1#S0.F1" target="_blank" rel="noopener">論文原圖與圖說</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。點圖可看原尺寸。</figcaption>
+        </figure>
+      </div>
+      </div>
+    </section>
+
+    <section class="chapter method-chapter" id="method" aria-labelledby="method-title" tabindex="-1">
+      <header class="chapter-heading method-heading">
+        <h2 id="method-title">哪一群、哪個位置，怎麼選？</h2>
+        <p>聽到鯨叫後，研究人員還有兩個判斷：前往哪一群，以及先到哪個位置找。</p>
+      </header>
+      <div class="method-reading">
+      <div class="player-layout">
+        <figure class="film">
+          <div class="video-shell">
+            <button type="button" class="standalone-link" data-media-expand="media-expand-stage" hidden>放大觀看</button>
+            <div class="media-expand-shell"><div class="media-expand-stage" id="media-expand-stage" data-media-expand-stage data-media-expand-label="聽見鯨叫，無人機該往哪裡飛？ 方法動畫"><video id="method-video" controls playsinline preload="metadata" poster="assets/hybrid-v01/poster.jpg" aria-label="抹香鯨聲學定位與人工選擇流程動畫" aria-describedby="film-caption sound-note">
+              <source src="assets/hybrid-v01/sperm-whale-hybrid-v01.mp4" type="video/mp4">
+              此瀏覽器無法播放這段影片，請閱讀<a href="#method-text">完整文字版</a>。
+            </video></div></div>
+            <img class="print-poster" src="assets/hybrid-v01/poster.jpg" alt="混合影片片頭的研究照片畫面；素材來源與示意界線見下方文字版。" width="1920" height="1080">
+          </div>
+          <div class="player-controls js-only" hidden>
+            <button class="play-button" id="play-toggle" type="button">播放動畫</button>
+            <button id="replay" type="button">從頭重播</button>
+            <span id="video-clock" class="video-clock" aria-label="播放時間">00:00 / 01:05</span>
+          </div>
+          <p id="sound-note" class="sound-note">按播放開始，片頭 1.5–7.5 秒有 NOAA 點擊聲示例；方法核心與片尾無聲。可用影片音量鍵切換靜音。</p>
+          <p id="video-status" class="video-status js-only" role="status" hidden>尚未播放。65.55 秒；可在本頁放大觀看，音量與瀏覽器全螢幕仍可用影片原生控制列。</p>
+          <p id="video-error" class="video-error" role="status" hidden>影片無法載入，請閱讀<a href="#method-text">完整文字版</a>。</p>
+          <figcaption id="film-caption"><p>65.55 秒混合影片。片頭與片尾使用 Bhattacharya 等（2025）的圖 1 研究照片（CC BY 4.0）。中段的位置、波形與 A／B／C 群名是教學示意，照片中的鯨群不對應 A／B／C。NOAA 點擊聲另取自教學錄音，並非照片或海試的同步聲音，也沒有參與定位計算。</p><p class="source-note">10–57.55 秒完整保留 v05 方法示意。A／B／C 名稱、核心波形、粒子、船位與距離都是教學示意，時間經過壓縮，未重播海試資料或估計水下深度。<a href="assets/hybrid-v01/SOURCE.md" target="_blank" rel="noopener">素材來源與使用說明</a>／<a href="assets/hybrid-v01/provenance.json" target="_blank" rel="noopener">影片來源紀錄</a></p></figcaption>
+        </figure>
+        <aside class="chapter-picker" aria-label="動畫關鍵章節">
+          <h3>跳到想看的段落</h3>
+          <p class="picker-hint js-only" hidden>選取章節後停在該處，再按播放。</p>
+          <ol class="chapter-list">
+            <li><button class="chapter-seek js-only" data-time="0" type="button" hidden><span>00:00</span>抹香鯨、設備與點擊聲</button><a class="no-js-chapter" href="#text-intro">抹香鯨、設備與點擊聲</a></li>
+            <li><button class="chapter-seek js-only" data-time="10" type="button" hidden><span>00:10</span>水聽器接收鯨叫</button><a class="no-js-chapter" href="#text-listen">水聽器接收鯨叫</a></li>
+            <li><button class="chapter-seek js-only" data-time="17.65" type="button" hidden><span>00:18</span>左右都可能有鯨</button><a class="no-js-chapter" href="#text-candidates">左右都可能有鯨</a></li>
+            <li><button class="chapter-seek js-only" data-time="21.25" type="button" hidden><span>00:21</span>轉向後，再估計位置</button><a class="no-js-chapter" href="#text-update">轉向後，再估計位置</a></li>
+            <li><button class="chapter-seek js-only" data-time="31.15" type="button" hidden><span>00:31</span>為何選 A 群？</button><a class="no-js-chapter" href="#text-group">為何選 A 群？</a></li>
+            <li><button class="chapter-seek js-only" data-time="43.35" type="button" hidden><span>00:43</span>還分不清位置，先去哪裡？</button><a class="no-js-chapter" href="#text-location">還分不清位置，先去哪裡？</a></li>
+            <li><button class="chapter-seek js-only" data-time="48.25" type="button" hidden><span>00:48</span>人工起飛，再自主前往</button><a class="no-js-chapter" href="#text-flight">人工起飛，再自主前往</a></li>
+            <li><button class="chapter-seek js-only" data-time="54.55" type="button" hidden><span>00:55</span>確認是否看見鯨群</button><a class="no-js-chapter" href="#text-confirm">確認是否看見鯨群</a></li>
+                      <li><button class="chapter-seek js-only" data-time="57.55" type="button" hidden><span>00:58</span>回到研究照片</button><a class="no-js-chapter" href="#text-outro">回到研究照片</a></li>
+          </ol>
+        </aside>
+      </div>
+      <div class="selection-reading">
+        <article>
+          <h3>A 群先出現可能浮出的線索</h3>
+          <p>第一場海試優先前往最先停止發聲滿一分鐘的鯨群。動畫以 A 群示意：A 已一分鐘沒有新叫聲，B、C 還在發聲。</p>
+          <p class="emphasis">人員據此推測 A 可能已浮出，選擇前往觀察；是否真的在水面，仍要由人員確認。</p>
+          <a class="citation" href="https://arxiv.org/html/2512.05808v1#S3.SS1.SSS2" target="_blank" rel="noopener">第一場海試 §3.1.2</a>
+        </article>
+        <article>
+          <h3>如果位置還分不清楚</h3>
+          <p>另一種情況是，粒子估計尚未收斂，仍有多個可能位置。論文記錄的備用做法，是從可能已浮出鯨群的位置候選中，先查看較近的一處。</p>
+          <p class="emphasis">不能認定第一場海試必然用過這個做法，也不是每次都接在「無聲一分鐘」之後。</p>
+          <a class="citation" href="https://arxiv.org/html/2512.05808v1#S3.SS1.SSS1" target="_blank" rel="noopener">海試設定 §3.1.1</a>
+        </article>
+      </div>
+      <details class="text-version" id="method-text">
+        <summary>閱讀完整動畫文字版</summary>
+        <ol class="transcript">
+          <li id="text-intro"><h3>先認識抹香鯨與現場設備</h3><p>片頭使用 Bhattacharya 等（2025）圖 1 中的鯨群、船與拖曳水聽器陣列照片。照片中的鯨群不對應後段示意動畫的 A、B 或 C 群。</p><p>1.5–7.5 秒的點擊聲取自 NOAA Fisheries／NEFSC／Passive Acoustics Branch 的獨立教學錄音，引用年份為 2023，實際錄音日期未確認。這不是照片或本研究海試的同步音軌，也未用於位置估計。<a href="assets/hybrid-v01/SOURCE.md" target="_blank" rel="noopener">音訊來源與使用界線</a></p></li>
+          <li id="text-listen"><h3>水聽器接收鯨叫</h3><p>船拖著一條由四個水聽器組成的線性陣列，被動接收抹香鯨的叫聲，不向外發射搜尋聲波。GMM 依聲音來向分群。影片先以 A 群示範如何估計位置，此時研究人員尚未決定要前往哪一群。</p></li>
+          <li id="text-candidates"><h3>左右兩側，都可能有鯨</h3><p>估計同一群鯨的位置時，單次方向觀測仍可能對應陣列左右兩側。PF 以船到上次目擊下潛處的約略距離作為起始估計，保留兩側可能的位置。兩團粒子都在表示同一群鯨可能在哪裡，不是兩群鯨。</p></li>
+          <li id="text-update"><h3>轉向後，再估計位置</h3><p>研究人員操船轉向，讓同一條陣列在新位置接收鯨叫。原本左右都說得通的位置，在新的方向觀測下可能不再一樣合理。原研究用新的聲音來向與振幅更新位置估計；影片只示範簡化的方向更新，沒有計算振幅。新的觀測也不保證每次都縮小候選範圍。</p></li>
+          <li id="text-group"><h3>為何先前往 A 群？</h3><p>這段示範第一場海試如何選擇要前往的鯨群。研究人員暫時收不到 A 的新叫聲，便開始計時；B、C 仍在發聲。A 最先滿一分鐘沒有新叫聲，人員因而推測牠們可能已浮出，優先前往。A／B／C 名稱、波形與壓縮後的計時都只是示意。</p></li>
+          <li id="text-location"><h3>如果位置還分不清楚</h3><p>影片另示範位置估計尚未收斂的情況：從可能已浮出鯨群的位置候選中，比較與起飛位置的距離，先查看較近的一處。這是另一種情況，不表示前一段定位一定失敗，也不能據此認定第一場海試用過這個做法，或每次都接在「無聲一分鐘」之後。</p></li>
+          <li id="text-flight"><h3>人工起飛，再自主導航</h3><p>人員選好估計航點，操控無人機起飛；升至 30 公尺後，再由無人機自主飛往航點。影片中的高度沒有按實際比例繪製，到達航點也還不能確認鯨就在那裡。</p></li>
+          <li id="text-confirm"><h3>操作人員確認是否看見鯨群</h3><p>人員看見鯨群後，才能確認實際位置、取得用來比對的真值。影片只解說流程，沒有執行原研究完整的 GMM、PF 或 RL，也沒有求出鯨在水下的三維座標。</p></li>
+                  <li id="text-outro"><h3>回到研究照片</h3><p>片尾再呈現作者研究照片中的浮出鯨群。照片與核心示意是不同來源，不能把照片中的鯨群當成動畫選定的目標；這次沒有新增鯨群定位或實測結果。</p></li>
+        </ol>
+      </details>
+      </div>
+    </section>
+
+    <section class="chapter reading-chapter" id="evidence" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-heading">
+        <h2 id="evidence-title">在海上，找得有多準？</h2>
+        <p>海試顯示，位置估計能引導無人機前往鯨群附近。不過，能拿來核對誤差的只有兩次會合。</p>
+      </header>
+      <div class="chapter-reading">
+      <div class="evidence-layout">
+        <div>
+          <h3>模型提供了什麼？</h3>
+          <p>模型提供位置估計，研究人員再參考叫聲是否持續，選擇前往的鯨群與航點。海試由人員操控無人機起飛，升至 30 公尺後自主飛往航點，最後仍由人員確認是否看見鯨。</p><p>研究人員希望藉此增加近距離觀察的機會，再把估計位置與實際找到的鯨位置比較，計算會合誤差。</p>
+          <div class="field-result">
+            <h3>五次嘗試，兩次能核對位置</h3>
+            <p>多米尼克海試的五次會合嘗試中，兩次取得實際鯨位置，可用來核對會合誤差，約為 <strong>187 公尺</strong>與<strong>118 公尺</strong>，均在 200 公尺內。<a class="citation" href="https://arxiv.org/html/2512.05808v1#S3.SS1" target="_blank" rel="noopener">海試結果 §3.1</a></p>
+            <p>另外三次缺少可核對的實際鯨位置，不能直接算成失敗，也無法據此計算五次嘗試的整體成功率。模擬得到的成功率，要與海試結果分開看。</p>
+          </div>
+          <h3 class="spaced-heading">還有哪些事，這次沒驗證？</h3>
+          <ul class="limits">
+            <li>操船、選點、起降與確認實際位置都還有人員參與；海試尚未完成全流程自主作業。</li>
+            <li>動畫用立體畫面交代船、陣列與候選位置的關係，沒有估計鯨的水下深度。研究靠同一條陣列移動、轉向後取得新的觀測，並非用兩個不同深度的接收器交會來驗證完整三維定位。</li>
+            <li>只有這兩次結果，還不足以推估一般情況的成功率。論文另有 VHF 接收、陸地角度試驗與模擬；閱讀時要分清楚每一部分實際測了什麼。</li>
+          </ul>
+        </div>
+        <div class="reference-column">
+          <h3 id="glossary">四個常見名詞</h3>
+          <dl class="glossary">
+            <div><dt>AOA｜聲音到達角度</dt><dd>聲音從哪個方向傳到陣列。只有方向，還不知道離船多遠。</dd></div>
+            <div><dt>GMM｜高斯混合模型</dt><dd>將聲音到達方向分成幾群，協助追蹤不同鯨群。</dd></div>
+            <div><dt>PF｜粒子濾波</dt><dd>用一組可能的位置與各自權重，表示現在的估計；收到新觀測後再更新。</dd></div>
+            <div><dt>RL｜強化學習</dt><dd>本文結合鯨潛浮的時間規律，規劃無人機行動；較完整的自主決策主要在模擬中評估。</dd></div>
+          </dl>
+          <div class="sources" id="sources">
+            <h3>閱讀原研究</h3>
+            <p>Bhattacharya et al.（2025）<br><cite>Real-time Remote Tracking and Autonomous Planning for Whale Rendezvous using Robots</cite></p>
+            <ul class="source-list">
+              <li><a href="https://arxiv.org/html/2512.05808v1" target="_blank" rel="noopener">論文全文與方法</a><span>海試方法、人員負責的操作、位置估計與模擬。</span></li>
+              <li><a href="https://arxiv.org/abs/2512.05808" target="_blank" rel="noopener">arXiv 書目與版本</a><span>2025-12-05 公開；書目標示 ISER 2025。</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <details class="original-notes" id="original-notes">
+        <summary>展開完整原始案例筆記</summary>
+        <p class="source-note">以下保留案例資料庫原文；正文另補充選群、選點的做法，以及海試實際驗證的內容。</p>
+        <dl class="original-fields"><div><dt>案例編號 <span lang="en">(id)</span></dt><dd>01-02</dd></div><div><dt>案例名稱 <span lang="en">(name)</span></dt><dd>CETI／AVATARS：以即時聲學定位引導抹香鯨會合</dd></div><div><dt>年代 <span lang="en">(year)</span></dt><dd>2025 ISER論文；2025-12-05公開arXiv版本</dd></div><div><dt>研究情境 <span lang="en">(context)</span></dt><dd>加勒比海多米尼克外海；抹香鯨長時間下潛且短暫浮出，需把空中觀測平台引導到可收集近距離資料的位置。</dd></div><div><dt>AI 分工 <span lang="en">(ai_role)</span></dt><dd>Gaussian mixture model分離不同鯨群的聲音到達方向，particle filter估計位置。系統另設結合潛水先驗的model-based RL；海試只完成部分自主控制，完整起飛與候選目標決策另在模擬評估。</dd></div><div><dt>研究產出 <span lang="en">(outputs)</span></dt><dd>鯨群位置的信念分布、浮出狀態估計、UAV航點與會合誤差；目的是增加可觀測機會，並未自動解析鯨語。</dd></div><div><dt>已展示的工作 <span lang="en">(demonstrated)</span></dt><dd>多米尼克海試有五次會合嘗試，其中兩次取得真實鯨位置可評估，均在200公尺內；飛至30公尺後自主前往估計航點。論文另分開報告VHF接收、陸地角度估計及軟體模擬。</dd></div><div><dt>階段代碼 <span lang="en">(stage)</span></dt><dd>field</dd></div><div><dt>階段說明 <span lang="en">(stage_detail)</span></dt><dd>真實鯨群與即時感測的部分自主海試；不是多UAV全流程RL自主部署，不能把兩次可核對試驗當作整體成功率。</dd></div><div><dt>限制 <span lang="en">(limits)</span></dt><dd>海試的船舶轉向、起降、候選位置選擇及真值確認仍由人處理。兩次有真值的案例不足以證明普遍成功率，全面自主決策的證據主要來自模擬。</dd></div><div><dt>來源 <span lang="en">(sources)</span></dt><dd><ul><li><dl class="source-fields"><div><dt>標題 <span lang="en">(title)</span></dt><dd>Real-time Remote Tracking and Autonomous Planning for Whale Rendezvous using Robots</dd></div><div><dt>網址 <span lang="en">(url)</span></dt><dd><a href="https://arxiv.org/html/2512.05808v1" target="_blank" rel="noopener">https://arxiv.org/html/2512.05808v1</a></dd></div><div><dt>年代 <span lang="en">(year)</span></dt><dd>2025</dd></div><div><dt>類型 <span lang="en">(type)</span></dt><dd>會議論文（arXiv全文版本）</dd></div><div><dt>可讀範圍 <span lang="en">(access)</span></dt><dd>全文</dd></div><div><dt>支持內容 <span lang="en">(supports)</span></dt><dd>海試方法、五次嘗試中兩次具真值、人工介入項目，以及模擬與海試的能力分界。</dd></div></dl></li><li><dl class="source-fields"><div><dt>標題 <span lang="en">(title)</span></dt><dd>arXiv:2512.05808 — Real-time Remote Tracking and Autonomous Planning for Whale Rendezvous using Robots</dd></div><div><dt>網址 <span lang="en">(url)</span></dt><dd><a href="https://arxiv.org/abs/2512.05808" target="_blank" rel="noopener">https://arxiv.org/abs/2512.05808</a></dd></div><div><dt>年代 <span lang="en">(year)</span></dt><dd>2025</dd></div><div><dt>類型 <span lang="en">(type)</span></dt><dd>官方文件</dd></div><div><dt>可讀範圍 <span lang="en">(access)</span></dt><dd>官方網頁</dd></div><div><dt>支持內容 <span lang="en">(supports)</span></dt><dd>核對2025-12-05提交日期；書目欄標示International Symposium of Experimental Robotics 2025。</dd></div></dl></li></ul></dd></div></dl>
+      </details>
+      <p class="page-colophon">水下抹香鯨主視覺由 AI 生成，用來呈現情境，並非研究實拍，也不是聲學系統確認的鯨位置。設備圖取自原論文，ManimGX 方法影片則用教學示意解說流程。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="reading-controls js-only" hidden>
+    <button id="previous-page" type="button"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 12H5m6-6-6 6 6 6"/></svg>上一頁</button>
+    <p id="page-position" aria-live="polite">1 / 4 · 研究問題</p>
+    <button id="next-page" type="button">下一頁<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+  </footer>
+</body>
+</html>

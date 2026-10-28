@@ -1,0 +1,599 @@
+{
+  "version": 1,
+  "kind": "independent-transparent-concept-assets",
+  "note": "各張保留對象及環境，獨立生成；不是來源影像、身分答案、實際時間序列或測量結果。不同圖像不按相同比例顯示。",
+  "topics": [
+    {
+      "id": "01",
+      "width": 1254,
+      "height": 1254,
+      "count": 4,
+      "sourceFile": "topic-01-environment-v02.png"
+    },
+    {
+      "id": "02",
+      "width": 1254,
+      "height": 1254,
+      "count": 6,
+      "sourceFile": "topic-02-diversity-v03.png"
+    },
+    {
+      "id": "03",
+      "width": 1254,
+      "height": 1254,
+      "count": 8,
+      "sourceFile": "topic-03-comparison-v03.png"
+    },
+    {
+      "id": "04",
+      "width": 1536,
+      "height": 1024,
+      "count": 4,
+      "sourceFile": "topic-04/cover-v01 independent generated masters"
+    },
+    {
+      "id": "05",
+      "width": 1536,
+      "height": 1024,
+      "count": 4,
+      "sourceFile": "topic-05/cover-v01 independent generated masters"
+    }
+  ],
+  "assets": [
+    {
+      "id": "01-01-zebras-grassland",
+      "title": "細紋斑馬・開放草地",
+      "topic": "01",
+      "caseId": "01-01",
+      "species": "zebras",
+      "state": "草地環境",
+      "pair": null,
+      "file": "assets/topic-01/01-01-zebras-grassland-v01.png",
+      "width": 708,
+      "height": 679,
+      "source": "topic-01-environment-v02.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 0,
+        "width": 708,
+        "height": 679
+      },
+      "nonzeroAlphaPixels": 299088,
+      "sha256": "f41a4f141f4a6991a36382cf687faf5a950484bc80b5f304109704bbce466a51"
+    },
+    {
+      "id": "01-02-sperm-whale-ocean",
+      "title": "抹香鯨・海面與水下",
+      "topic": "01",
+      "caseId": "01-02",
+      "species": "sperm-whale",
+      "state": "海域環境",
+      "pair": null,
+      "file": "assets/topic-01/01-02-sperm-whale-ocean-v01.png",
+      "width": 585,
+      "height": 674,
+      "source": "topic-01-environment-v02.png",
+      "sourceBox": {
+        "left": 659,
+        "top": 0,
+        "width": 585,
+        "height": 674
+      },
+      "nonzeroAlphaPixels": 242803,
+      "sha256": "17d8c8aaed7bbf3e1ea266ac92d19b1de6daf8cc49bfdbf624531951474615c4"
+    },
+    {
+      "id": "01-03-phytoplankton-fjord",
+      "title": "浮游植物・峽灣海水",
+      "topic": "01",
+      "caseId": "01-03",
+      "species": "phytoplankton",
+      "state": "放大水體片段",
+      "pair": null,
+      "file": "assets/topic-01/01-03-phytoplankton-fjord-v01.png",
+      "width": 679,
+      "height": 609,
+      "source": "topic-01-environment-v02.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 645,
+        "width": 679,
+        "height": 609
+      },
+      "nonzeroAlphaPixels": 268898,
+      "sha256": "b4eae1211b36f213975daf98c0e76fa1957f7c310af4a1badc9a66434e669f35"
+    },
+    {
+      "id": "01-04-moths-night",
+      "title": "蛾類・夜間林緣",
+      "topic": "01",
+      "caseId": "01-04",
+      "species": "moths",
+      "state": "夜間環境",
+      "pair": null,
+      "file": "assets/topic-01/01-04-moths-night-v01.png",
+      "width": 586,
+      "height": 595,
+      "source": "topic-01-environment-v02.png",
+      "sourceBox": {
+        "left": 662,
+        "top": 635,
+        "width": 586,
+        "height": 595
+      },
+      "nonzeroAlphaPixels": 249081,
+      "sha256": "f06f603419e02ec32a98cf11b12fcb15d7b15f0d417f9362f999f49849814f79"
+    },
+    {
+      "id": "02-01-ocelot",
+      "title": "虎貓・森林地面",
+      "topic": "02",
+      "caseId": "02-01",
+      "species": "ocelot",
+      "state": "物種示例",
+      "pair": null,
+      "file": "assets/topic-02/02-01-ocelot-v01.png",
+      "width": 643,
+      "height": 444,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 8,
+        "width": 643,
+        "height": 444
+      },
+      "nonzeroAlphaPixels": 217601,
+      "sha256": "03251f70f02812fd1c193cbd7ba94c3b6d423a924dbcc719772ba99f918fc941"
+    },
+    {
+      "id": "02-01-black-bear",
+      "title": "美洲黑熊・林下",
+      "topic": "02",
+      "caseId": "02-01",
+      "species": "black-bear",
+      "state": "物種示例",
+      "pair": null,
+      "file": "assets/topic-02/02-01-black-bear-v01.png",
+      "width": 611,
+      "height": 438,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 634,
+        "top": 15,
+        "width": 611,
+        "height": 438
+      },
+      "nonzeroAlphaPixels": 199809,
+      "sha256": "4b62320199b540eaa9c436e1a533c696f206a0d55b07a3ca765562c0d371f54c"
+    },
+    {
+      "id": "02-01-elephant",
+      "title": "非洲象・開放林地",
+      "topic": "02",
+      "caseId": "02-01",
+      "species": "elephant",
+      "state": "物種示例",
+      "pair": null,
+      "file": "assets/topic-02/02-01-elephant-v01.png",
+      "width": 659,
+      "height": 451,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 425,
+        "width": 659,
+        "height": 451
+      },
+      "nonzeroAlphaPixels": 231327,
+      "sha256": "31961c0287404cf629a232d45cc936283b1295a555bc3327f0b6d7926f13957f"
+    },
+    {
+      "id": "02-02-forest-birds",
+      "title": "斑點鴞與黑背啄木鳥",
+      "topic": "02",
+      "caseId": "02-02",
+      "species": "forest-birds",
+      "state": "兩種森林鳥類",
+      "pair": null,
+      "file": "assets/topic-02/02-02-forest-birds-v01.png",
+      "width": 598,
+      "height": 487,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 646,
+        "top": 413,
+        "width": 598,
+        "height": 487
+      },
+      "nonzeroAlphaPixels": 217845,
+      "sha256": "4c82873e79046a5d93871d97ada9c5fe67a8d3a83437725ee8f2c8924b8dcd9e"
+    },
+    {
+      "id": "02-03-brydes-whale",
+      "title": "布氏鯨・海水",
+      "topic": "02",
+      "caseId": "02-03",
+      "species": "brydes-whale",
+      "state": "物種示例",
+      "pair": null,
+      "file": "assets/topic-02/02-03-brydes-whale-v01.png",
+      "width": 670,
+      "height": 416,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 13,
+        "top": 834,
+        "width": 670,
+        "height": 416
+      },
+      "nonzeroAlphaPixels": 207587,
+      "sha256": "4e21e199d459ce06359d2864d9308ca704da3e54b0e2024648beab354fa77605"
+    },
+    {
+      "id": "02-04-phytoplankton",
+      "title": "浮游植物・不同形態",
+      "topic": "02",
+      "caseId": "02-04",
+      "species": "phytoplankton",
+      "state": "放大水體片段",
+      "pair": null,
+      "file": "assets/topic-02/02-04-phytoplankton-v01.png",
+      "width": 600,
+      "height": 391,
+      "source": "topic-02-diversity-v03.png",
+      "sourceBox": {
+        "left": 644,
+        "top": 859,
+        "width": 600,
+        "height": 391
+      },
+      "nonzeroAlphaPixels": 170001,
+      "sha256": "2c62e0601ac383de08c7927a18fe7b4beefa3af1cafa9144b725d26cd8827954"
+    },
+    {
+      "id": "03-01-hyena-a",
+      "title": "斑鬣狗・側身 A",
+      "topic": "03",
+      "caseId": "03-01",
+      "species": "hyena",
+      "state": "側身 A",
+      "pair": "03-01",
+      "file": "assets/topic-03/03-01-hyena-a-v01.png",
+      "width": 646,
+      "height": 439,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 13,
+        "width": 646,
+        "height": 439
+      },
+      "nonzeroAlphaPixels": 185765,
+      "sha256": "6830006596bac88b876d4b26403721e47bcc95d0ca2a3d95d99cd56ed5f6673c"
+    },
+    {
+      "id": "03-01-hyena-b",
+      "title": "斑鬣狗・側身 B",
+      "topic": "03",
+      "caseId": "03-01",
+      "species": "hyena",
+      "state": "側身 B",
+      "pair": "03-01",
+      "file": "assets/topic-03/03-01-hyena-b-v01.png",
+      "width": 616,
+      "height": 424,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 630,
+        "top": 24,
+        "width": 616,
+        "height": 424
+      },
+      "nonzeroAlphaPixels": 166563,
+      "sha256": "18c9a129be91941c8af25230257499bbe7e8b4c2f6eefbcff24e9a26f0f9b631"
+    },
+    {
+      "id": "03-02-jay-head-up",
+      "title": "西伯利亞松鴉・抬頭",
+      "topic": "03",
+      "caseId": "03-02",
+      "species": "siberian-jay",
+      "state": "抬頭",
+      "pair": "03-02",
+      "file": "assets/topic-03/03-02-jay-head-up-v01.png",
+      "width": 622,
+      "height": 341,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 23,
+        "top": 403,
+        "width": 622,
+        "height": 341
+      },
+      "nonzeroAlphaPixels": 107502,
+      "sha256": "c0739b838b1a69607c3887bf2640fa5d48f2420de7acde0e41409dcce3fbb10d"
+    },
+    {
+      "id": "03-02-jay-feeding",
+      "title": "西伯利亞松鴉・取食姿態",
+      "topic": "03",
+      "caseId": "03-02",
+      "species": "siberian-jay",
+      "state": "取食姿態",
+      "pair": "03-02",
+      "file": "assets/topic-03/03-02-jay-feeding-v01.png",
+      "width": 598,
+      "height": 301,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 630,
+        "top": 445,
+        "width": 598,
+        "height": 301
+      },
+      "nonzeroAlphaPixels": 97215,
+      "sha256": "e913730f403c3e16e61aa58e6cabdc079017d9b65839447720b3a07f5cc26db2"
+    },
+    {
+      "id": "03-03-owl-front",
+      "title": "縱紋腹小鴞・正面",
+      "topic": "03",
+      "caseId": "03-03",
+      "species": "little-owl",
+      "state": "正面",
+      "pair": "03-03",
+      "file": "assets/topic-03/03-03-owl-front-v01.png",
+      "width": 625,
+      "height": 326,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 20,
+        "top": 698,
+        "width": 625,
+        "height": 326
+      },
+      "nonzeroAlphaPixels": 120117,
+      "sha256": "16ca52c966984b1e1fc0a7a85eb3ea34b034e21070421cec8299be8316aa5544"
+    },
+    {
+      "id": "03-03-owl-calling",
+      "title": "縱紋腹小鴞・發聲姿態",
+      "topic": "03",
+      "caseId": "03-03",
+      "species": "little-owl",
+      "state": "發聲姿態",
+      "pair": "03-03",
+      "file": "assets/topic-03/03-03-owl-calling-v01.png",
+      "width": 616,
+      "height": 321,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 630,
+        "top": 699,
+        "width": 616,
+        "height": 321
+      },
+      "nonzeroAlphaPixels": 99869,
+      "sha256": "c6c05f2a1b0fdc3b89e00713d3625b54bebfb5564a2b3553ae9497fc011364e4"
+    },
+    {
+      "id": "03-04-agama-shade",
+      "title": "粗尾岩鬣蜥・陰影情境",
+      "topic": "03",
+      "caseId": "03-04",
+      "species": "rock-agama",
+      "state": "陰影情境",
+      "pair": "03-04",
+      "file": "assets/topic-03/03-04-agama-shade-v01.png",
+      "width": 645,
+      "height": 278,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 0,
+        "top": 976,
+        "width": 645,
+        "height": 278
+      },
+      "nonzeroAlphaPixels": 121377,
+      "sha256": "b163e018ffed19ae283c965acd58af6eb2b09cd6b36b9edbd657378e9c4cba82"
+    },
+    {
+      "id": "03-04-agama-sun",
+      "title": "粗尾岩鬣蜥・日照情境",
+      "topic": "03",
+      "caseId": "03-04",
+      "species": "rock-agama",
+      "state": "日照情境",
+      "pair": "03-04",
+      "file": "assets/topic-03/03-04-agama-sun-v01.png",
+      "width": 600,
+      "height": 271,
+      "source": "topic-03-comparison-v03.png",
+      "sourceBox": {
+        "left": 630,
+        "top": 983,
+        "width": 600,
+        "height": 271
+      },
+      "nonzeroAlphaPixels": 104750,
+      "sha256": "2201c6796e258f1d1eeae804cd4781fe1d0054dbab241e708fce25c54ce9245c"
+    },
+    {
+      "id": "04-01-herbarium-leaves",
+      "topic": "04",
+      "caseId": "04-01",
+      "title": "乾燥壓製葉片標本",
+      "file": "assets/topic-04/04-01-herbarium-leaves-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "02421836a27443a1a71a444613aec6a39f3958f1a5d68b49764d2a0696623ca1",
+      "generated": true,
+      "source": "outputs/ecology-ai-rollout-assets/topic-04/cover-v01/provenance.json"
+    },
+    {
+      "id": "04-02-gray-whale",
+      "topic": "04",
+      "caseId": "04-02",
+      "title": "近海面的灰鯨",
+      "file": "assets/topic-04/04-02-gray-whale-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6e5bc14b596db2b2dc68f0cf9475037519201fcb468ebcd682e32aa9b63fd677",
+      "generated": true,
+      "source": "outputs/ecology-ai-rollout-assets/topic-04/cover-v01/provenance.json"
+    },
+    {
+      "id": "04-03-fish-profile",
+      "topic": "04",
+      "caseId": "04-03",
+      "title": "未命名魚種的側面形態",
+      "file": "assets/topic-04/04-03-fish-profile-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "494b803470268154a39a938f1f9d1057715acc8db25900d44087dd1dc3fc9a85",
+      "generated": true,
+      "source": "outputs/ecology-ai-rollout-assets/topic-04/cover-v01/provenance.json"
+    },
+    {
+      "id": "04-04-plant-community",
+      "topic": "04",
+      "caseId": "04-04",
+      "title": "不同葉形組成的活植物群聚",
+      "file": "assets/topic-04/04-04-plant-community-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8228bf9ec54005ae93af3e493ab099bcc9feb66a96009eda14c5e250c0d795a6",
+      "generated": true,
+      "source": "outputs/ecology-ai-rollout-assets/topic-04/cover-v01/provenance.json"
+    },
+    {
+      "id": "05-01-forest-canopy",
+      "file": "assets/topic-05/05-01-forest-canopy-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "master": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-01-forest-canopy-v01.png",
+      "prompt": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-01-forest-canopy-v01-prompt.md",
+      "generator": "built-in image_gen",
+      "conceptual": true,
+      "nativeAlpha": true,
+      "alphaBounds": [
+        0,
+        0,
+        1528,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "nonzeroAlphaPixels": 1091171,
+      "transparentPixels": 481693,
+      "sha256": "30578e7c710a542e9a93d05cd7259a79d1743ef72639bee4c16a9f043c36cb8b",
+      "bytes": 896990,
+      "title": "森林的高低",
+      "topic": "05",
+      "caseId": "05-01",
+      "species": null,
+      "state": "獨立棲地概念場景",
+      "pair": null,
+      "source": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-01-forest-canopy-v01.png"
+    },
+    {
+      "id": "05-02-coral-reef",
+      "file": "assets/topic-05/05-02-coral-reef-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "master": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-02-coral-reef-v01.png",
+      "prompt": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-02-coral-reef-v01-prompt.md",
+      "generator": "built-in image_gen",
+      "conceptual": true,
+      "nativeAlpha": true,
+      "alphaBounds": [
+        0,
+        0,
+        1528,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "nonzeroAlphaPixels": 1053251,
+      "transparentPixels": 519613,
+      "sha256": "b6f967065ad0b9058c08dd3a00c1e1b38a29b1d00fb63681609af6cecb786811",
+      "bytes": 658766,
+      "title": "珊瑚礁組成",
+      "topic": "05",
+      "caseId": "05-02",
+      "species": null,
+      "state": "獨立棲地概念場景",
+      "pair": null,
+      "source": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-02-coral-reef-v01.png"
+    },
+    {
+      "id": "05-03-seagrass-meadow",
+      "file": "assets/topic-05/05-03-seagrass-meadow-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "master": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-03-seagrass-meadow-v01.png",
+      "prompt": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-03-seagrass-meadow-v01-prompt.md",
+      "generator": "built-in image_gen",
+      "conceptual": true,
+      "nativeAlpha": true,
+      "alphaBounds": [
+        0,
+        0,
+        1534,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "nonzeroAlphaPixels": 1141154,
+      "transparentPixels": 431710,
+      "sha256": "a0fe5eda6552cefc3f0108eafbd29f2dcfe59036ac5ce0a50a96556d75d24dd0",
+      "bytes": 622898,
+      "title": "海草床變化",
+      "topic": "05",
+      "caseId": "05-03",
+      "species": null,
+      "state": "獨立棲地概念場景",
+      "pair": null,
+      "source": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-03-seagrass-meadow-v01.png"
+    },
+    {
+      "id": "05-04-landscape-mosaic",
+      "file": "assets/topic-05/05-04-landscape-mosaic-v01.webp",
+      "width": 1536,
+      "height": 1024,
+      "master": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-04-landscape-mosaic-v01.png",
+      "prompt": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-04-landscape-mosaic-v01-prompt.md",
+      "generator": "built-in image_gen",
+      "conceptual": true,
+      "nativeAlpha": true,
+      "alphaBounds": [
+        0,
+        0,
+        1522,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "nonzeroAlphaPixels": 1151919,
+      "transparentPixels": 420945,
+      "sha256": "8ab4a6c4184a39c38260004fe8a38b8f67460f6463943634ecd090966fcd0093",
+      "bytes": 705800,
+      "title": "地表的分類",
+      "topic": "05",
+      "caseId": "05-04",
+      "species": null,
+      "state": "獨立棲地概念場景",
+      "pair": null,
+      "source": "outputs/ecology-ai-rollout-assets/topic-05/cover-v01/05-04-landscape-mosaic-v01.png"
+    }
+  ],
+  "sourcePackage": "atlas-assets-v01"
+}

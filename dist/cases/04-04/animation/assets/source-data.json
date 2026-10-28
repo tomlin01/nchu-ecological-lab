@@ -1,0 +1,14 @@
+{
+ "caseId":"04-04",
+ "schemaVersion":1,
+ "modelInferenceRun":false,
+ "reportedTraitValue":null,
+ "conceptualWeightsOnly":true,
+ "generatedContext":true,
+ "focalTrait":{"name":"Leaf area","tryId":"3113","unit":"mm²","target":"community-weighted mean based on species mean traits; not individual leaf measurements or leaf-area index"},
+ "windows":{"leafMap":[1301,1436,307,1345],"leafRegion":[1301,1920,307,288],"leafRegionCompact":[1301,1690,307,550],"leafLegend":[1315,2280,170,270],"scopePanel":[1460,1740,1297,813]},
+ "windowNotes":"All coordinates are display windows into unchanged author PNGs. Leaf views and legend use the same lower Americas panel. Upper and lower panels have separate color ranges. AOA panel summarizes multiple well-performing traits, not a leaf-area-specific mask.",
+ "weightExample":{"large":0.75,"small":0.25,"meaning":"Illustrative relative-cover weights only; no field observations or new trait values"},
+ "results":{"traits":31,"aboveThreshold":15,"threshold":0.5,"metric":"Pearson r","scaleLabel":"1 km², as reported in the article","validation":"five-fold spatial cross-validation against held-out sPlot-derived CWM","aggregateCountsOnly":true},
+ "source":"Lusk et al. (2026), Nature Communications 17, 1203; public author repository figures"
+}

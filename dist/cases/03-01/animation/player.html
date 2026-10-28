@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="03-01" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>斑鬣狗照片比較播放器</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"><script src="vendor/gsap.min.js" defer></script><script src="embed.js" defer></script><script type="module" src="app.mjs"></script><link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body class="player-page">
+  <a class="skip-link" href="#stage">跳至照片動畫</a>
+  <main id="player-main">
+    <section class="story" aria-label="照片比較與目前段落說明">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="真實照片與方法示意，完整解說在畫面外">
+          <img id="static-fallback" src="assets/query.jpg" alt="第一張完整斑鬣狗來源照片；動畫尚未就緒時保留此圖。">
+          <svg id="scene" viewBox="0 0 1000 650" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="scene-title scene-description"><title id="scene-title">兩張照片，怎麼認出同一隻？</title><desc id="scene-description">比較真實照片與局部細節，再核對不分排名的候選照片。資料集的個體標籤在最後一段才揭露。</desc><g id="photo-workspace"></g><g id="guide-workspace"></g><g id="method-workspace"></g></svg>
+        </div>
+        <p id="frame-meta" class="frame-meta">真實來源照片 · 個體標籤留到最後揭露</p>
+        <div id="transport" class="transport" role="group" aria-label="動畫播放控制">
+          <div class="play-row"><button id="play-toggle" type="button" class="primary" disabled>播放動畫</button><button id="replay" type="button" disabled>從頭重播</button><output id="clock" aria-label="播放時間">00:00 / 01:20</output></div>
+          <label for="timeline">播放進度</label><input id="timeline" type="range" min="0" max="80" step="0.1" value="0" aria-label="播放進度">
+        </div>
+        <p id="player-status" class="player-status" role="status">正在載入來源資料與三張照片。可先選擇段落；完成後停在所選位置。</p>
+        <button id="retry-load" class="secondary" type="button" hidden>重試載入照片</button>
+        <div id="source-actions" class="source-actions" role="group" aria-label="查看完整來源照片"><button type="button" data-source="query" disabled>查看照片一</button><button type="button" data-source="match" disabled hidden>查看照片二</button><button type="button" data-source="other" disabled hidden>查看第三張</button></div>
+      </div>
+      <aside class="narrative" aria-label="目前段落解說"><div class="phase-meta"><span id="phase-position">1 / 6</span><span id="phase-time">00:00–00:10</span></div><h2 id="phase-title">姿勢變了，還是同一隻嗎？</h2><p id="phase-description">光線、背景和姿勢會改變。先看兩張斑鬣狗照片，留意身體外觀有什麼相似、又有什麼不同。</p><p id="phase-detail" class="detail">資料集原有的個體標籤在最後一段才揭露。這段動畫沒有另外執行模型或請人員重新鑑定個體。</p><p id="comparison-note" class="comparison-note" hidden>第三張只比較後方個體，前景另一隻不在這次比較範圍內。</p><div id="identity-readout" class="identity-readout" hidden><p>同一個體，依資料集原有標籤</p><p id="identity-short"></p><p class="detail">兩筆影像記錄；第三張在動畫中仍待確認。</p></div></aside>
+    </section>
+    <nav class="phase-navigation" aria-label="選擇動畫段落"><button type="button" data-phase="0">先看兩張照片</button><button type="button" data-phase="1">放大同側細節</button><button type="button" data-phase="2">整理外觀特徵</button><button type="button" data-phase="3">找出候選照片</button><button type="button" data-phase="4">回到原圖核對</button><button type="button" data-phase="5">揭露來源標籤</button></nav>
+    <p class="source-note">來源授權標示有差異，見<a href="SOURCE.md" target="_blank" rel="noopener">素材說明</a>。80 秒為教學節奏；沒有聲音、新模型推論或新的人工鑑定。</p>
+    <section class="player-reading" aria-labelledby="player-reading-title"><h2 id="player-reading-title">照片與完整文字</h2><p>完整六段文字、三張原圖及來源說明保留在<a href="index.html#reading-notes">動畫說明頁</a>。</p><noscript><p>目前顯示靜態原圖。互動需要 JavaScript；仍可由下列連結閱讀完整照片。</p></noscript><div class="static-source-list"><figure><a href="assets/query.jpg"><img src="assets/query.jpg" alt="第一張完整來源照片。"></a><figcaption>照片一</figcaption></figure><figure><a href="assets/match.jpg"><img src="assets/match.jpg" alt="第二張完整來源照片。"></a><figcaption>照片二</figcaption></figure><figure><a href="assets/other.jpg"><img src="assets/other.jpg" alt="第三張完整來源照片；只比較後方個體。"></a><figcaption>第三張，後方個體待確認</figcaption></figure></div><div id="player-transcript"><ol class="transcript">
+      <li><h2>姿勢變了，還是同一隻嗎？</h2><p>光線、背景和姿勢會改變。先看兩張斑鬣狗照片，留意身體外觀有什麼相似、又有什麼不同。資料集原有個體標籤留到最後一段才揭露。</p></li>
+      <li><h2>放大同側斑紋，保留完整照片</h2><p>局部放大讓同一側身體的斑紋更容易比較。看不清楚或被遮住的地方，放大也不會補出新的細節。框線標出為解說而選的範圍，放大內容全部取自原照片，並非模型偵測結果或注意力圖。</p></li>
+      <li><h2>把照片轉成可比較的數字</h2><p>2024 年的方法先裁出動物，再由同一個模型把外觀轉成 2,048 維的特徵向量，用餘弦距離找候選。新照片與圖錄照片都這樣處理。畫面中的符號只作示意，並非這些照片實際算出的特徵，也不能逐項當成耳、眼、鼻的量測值。</p></li>
+      <li><h2>先縮小需要比對的範圍</h2><p>模型從同一物種的圖錄找出相似照片，交給研究人員仔細核對。這裡用事先選好的照片示範候選，照片大小相同，沒有實際模型分數或排名。第三張只比較後方露出完整側身的個體，不包括前景另一隻。</p></li>
+      <li><h2>可以比較，也可以先不決定</h2><p>研究人員要對照完整照片，確認同側斑紋與看得見的部位。動畫拿一對照片示範核對，另一張先保留待確認。這是核對方法的示範，沒有請專家重新鑑定，也不會把每張照片都歸為同一隻。</p></li>
+      <li><h2>資料集把這兩張照片標為同一隻</h2><p>資料集把這兩張照片標為同一隻。最後揭露的是原有標註，並非這段動畫中模型或人員新做的判定。照片沒有可核對的日期或遭遇編號，因此只能稱為兩筆影像記錄，也無法還原完整移動路線。第三張在動畫中仍待確認。</p></li>
+    </ol></div></section>
+  </main>
+  <dialog id="source-dialog" aria-labelledby="source-title" aria-describedby="source-caption"><div class="source-dialog-heading"><h2 id="source-title">完整來源照片</h2><form method="dialog"><button id="close-source" type="submit">關閉原圖</button></form></div><figure><img id="source-image" alt="完整原圖，沒有套用動畫中的局部裁切。"><figcaption id="source-caption"></figcaption></figure><p><a id="source-file" href="assets/query.jpg" target="_blank" rel="noopener">另開完整原檔</a> · <a href="SOURCE.md" target="_blank" rel="noopener">來源說明</a></p></dialog>
+</body></html>

@@ -1,0 +1,60 @@
+{
+  "status": "integrated_local_static_verified",
+  "static_status": "PASS",
+  "case_id": "01-02",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "聽見鯨叫，無人機該往哪裡飛？",
+  "preserved_files": 23,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "bc656fe365589e0d71fe85e1c4abe5b63ff3b1c8e54d3c1f425c129a1aee5f7d",
+      "glyphs": 636,
+      "prior_glyphs": 621,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "9546343497918c911731a22a5706253f555b03cda39bd9cf470274280317818e",
+      "glyphs": 636,
+      "prior_glyphs": 621,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_checked": false,
+  "browser_record": null,
+  "browser_exclusion_reason": "prior_tool_safety_rejection_not_retested",
+  "full_playback_rerun": false,
+  "new_inference": false,
+  "scientific_status_unchanged": true,
+  "external_publication": false,
+  "supplemental_css_sha256": "358eebda3f957b592addcf0842a3a8b08d8e64d161f20bf14dd258133b2fec5b",
+  "main_links": 15,
+  "candidate_links": 15,
+  "existing_ids_preserved": 36,
+  "h1_titles_updated": 1,
+  "source_links_preserved": 37,
+  "protected_elements": {
+    "script": 1,
+    "style": 0,
+    "svg": 3,
+    "code": 0,
+    "button": 15,
+    "video": 1,
+    "audio": 0,
+    "source": 1,
+    "iframe": 0,
+    "img": 4,
+    "input": 0
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "3E+1": 1
+  }
+}

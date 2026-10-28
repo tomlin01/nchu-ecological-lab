@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>一段DNA，怎麼認出是哪種動物？｜DeepCOI動畫試作</title><meta name="description" content="128秒動畫，從蚊子、實驗與真實COI序列，看懂DeepCOI怎麼協助動物分類。"><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"><script src="vendor/gsap.min.js" defer></script><script src="app.mjs" type="module"></script></head>
+<body><a class="skip-link" href="#playButton">跳至播放控制</a>
+<main id="player" class="player" aria-labelledby="pageTitle">
+<header class="player-heading"><h1 id="pageTitle">一段DNA，<br>怎麼認出是哪種動物？</h1><button id="themeButton" type="button" aria-pressed="false">切換深色</button></header>
+<div class="transport" role="group" aria-label="動畫播放控制"><div class="transport-row"><button id="playButton" class="primary" type="button" disabled>播放</button><button id="replayButton" type="button" disabled>重播</button><output id="timeReadout">00:00 / 02:08</output><button id="expandButton" type="button" aria-pressed="false">放大觀看</button></div><label class="sr-only" for="seekRange">播放進度</label><input id="seekRange" type="range" min="0" max="128" step="0.0416666667" value="0"><div class="frame-controls" role="group" aria-label="逐幀檢視"><button type="button" data-frame="-1" disabled>上一幀</button><button type="button" data-frame="1" disabled>下一幀</button><span>逐幀檢視 · 24 fps · 無聲</span></div></div>
+<p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入序列資料。</p><div id="playerError" class="error-message" hidden><p id="playerErrorCopy"></p><button id="retryButton" type="button">重新載入</button></div>
+<div id="composition" class="composition"><div id="stage" class="stage" tabindex="0" aria-label="DeepCOI研究動畫；空白鍵播放或暫停，方向鍵前後一秒">
+<section id="animalScene" class="visual-scene animal-scene" aria-label="埃及斑蚊的實拍照片">
+  <figure class="animal-figure"><div class="animal-window"><img id="mosquitoPhoto" src="assets/aedes-aegypti-cdc.jpg" alt="埃及斑蚊停在表面上，細長的腳與黑白相間的身體清楚可見。"></div><figcaption>埃及斑蚊 <i>Aedes aegypti</i><span>CDC · PHIL 26041 · 對象介紹</span></figcaption></figure>
+  <div class="animal-question" id="animalQuestion"><span>身體的細節</span><svg viewBox="0 0 140 26" aria-hidden="true"><path d="M2 13h130m-8-8 8 8-8 8"/></svg><span>DNA裡的線索</span></div>
+</section>
+<section id="locationScene" class="visual-scene dna-scene" aria-label="動物細胞到粒線體DNA與COI條碼區段的位置示意" hidden>
+  <h2 class="scene-heading">從細胞，找到DNA條碼的位置。</h2>
+  <div class="dna-reserve" aria-hidden="true"></div>
+  <p class="visual-caption">位置、形狀與比例示意 · COI-5P是COI基因中的一段<br>雙股只顯示局部20個配對，不是完整條碼</p>
+</section>
+<section id="laboratoryScene" class="visual-scene dna-scene" aria-label="雙股DNA局部對應到定序後的字母" hidden>
+  <h2 class="scene-heading">把同一段DNA，接到定序後的字母。</h2>
+  <div class="dna-reserve" aria-hidden="true"></div>
+  <div class="experiment-strip"><span>研究者完成實驗</span><b>萃取</b><i>→</i><b>擴增</b><i>→</i><b>定序</b></div>
+  <p class="visual-caption">分子結構與字母表示示意 · 不是定序儀器的實際運作<br>局部只顯示20個字母，不是完整COI條碼</p>
+</section>
+<section id="sequenceScene" class="visual-scene" aria-label="四筆真實參考序列的相同位置對照" hidden>
+  <h2 class="scene-heading">比較相同位置，字母有些不同。</h2>
+  <div class="coi-strip"><span>COI片段</span><div class="coi-line"><i id="windowMarker"></i></div><span id="windowLabel">對齊欄位348–367</span></div>
+  <div id="sequenceRows" class="sequence-rows"></div>
+  <p class="visual-caption">作者參考資料中的四筆序列 · 色底標出不同字母<br><span id="windowSource">相同對齊位置的20個字母，不代表完整COI。</span></p>
+</section>
+<section id="learningScene" class="visual-scene" aria-label="先訓練模型，再接收新序列的機制示意" hidden>
+  <h2 class="scene-heading" id="learningHeading">先學習，再使用。</h2>
+  <div class="learning-flow"><div id="references" class="reference-stack"><p>已知分類的參考資料</p><div class="reference-entry"><span>序列</span><i>＋</i><span>分類名稱</span></div><div class="reference-entry"><span>序列</span><i>＋</i><span>分類名稱</span></div><div class="reference-entry"><span>序列</span><i>＋</i><span>分類名稱</span></div></div><div class="flow-connection" id="trainConnection"><span>訓練</span><svg viewBox="0 0 100 28" aria-hidden="true"><path d="M1 14h90m-9-8 9 8-9 8"/></svg></div><div class="trained-model" id="trainedModel"><svg viewBox="0 0 180 100" aria-hidden="true"><g class="model-lines"><path d="M20 20 80 35 155 15M20 50 80 35 155 50M20 80 80 70 155 85M20 20 80 70 155 15M20 80 80 35 155 85"/></g><g><circle cx="20" cy="20" r="7"/><circle cx="20" cy="50" r="7"/><circle cx="20" cy="80" r="7"/><circle cx="80" cy="35" r="8"/><circle cx="80" cy="70" r="8"/><circle cx="155" cy="15" r="7"/><circle cx="155" cy="50" r="7"/><circle cx="155" cy="85" r="7"/></g></svg><h3 id="modelLabel">學習序列中的特徵</h3><p>DeepCOI</p></div></div>
+  <div id="queryLane" class="query-lane"><div><p>待分類的一條序列</p><span class="query-letters">A C G T G A T C …</span></div><svg viewBox="0 0 100 28" aria-hidden="true"><path d="M1 14h90m-9-8 9 8-9 8"/></svg><strong>使用已訓練模型</strong></div>
+  <div id="tokenRibbon" class="token-ribbon"><p>讀取方式示意 · 相鄰4個字母一組</p><div><span>ACGT</span><span>CGTG</span><span>GTGA</span><i>…</i></div></div>
+  <p class="visual-caption">機制示意 · 動物樣本已完成定序</p>
+</section>
+<section id="classificationScene" class="visual-scene" aria-label="先辨認門，再同時輸出五個分類階層的欄位示意" hidden>
+  <h2 class="scene-heading">一條序列，有不同層級的分類。</h2>
+  <div class="classification-layout"><div class="phylum-step" id="phylumStep"><span class="input-sequence">A C G T …</span><div class="vertical-line"></div><h3>先分辨門</h3><p>8個目標門／其他類群</p><div class="vertical-line"></div><div class="phylum-choice">例如分到<br><strong>節肢動物門</strong></div></div><div class="joint-output" id="jointOutput"><p>由對應的模型，同時提出</p><div class="output-header"><span>階層</span><span>分類候選</span><span>分數</span></div><div class="taxon-row"><b>綱</b><span>綱的名稱</span><span>0–1</span></div><div class="taxon-row"><b>目</b><span>目的名稱</span><span>0–1</span></div><div class="taxon-row"><b>科</b><span>科的名稱</span><span>0–1</span></div><div class="taxon-row"><b>屬</b><span>屬的名稱</span><span>0–1</span></div><div class="taxon-row"><b>種</b><span>種的名稱</span><span>0–1</span></div></div></div>
+  <p class="visual-caption">分類欄位示意，未執行模型 · 「0–1」是分數範圍</p>
+</section>
+<section id="resultsScene" class="visual-scene results-scene" aria-label="論文Table4正式比較結果" hidden>
+  <h2 id="resultTitle" class="scene-heading">五個階層的平均</h2><p class="chart-measure">F1 <span>0–1，越高越好</span></p>
+  <div id="resultBars" class="result-bars"></div><div class="chart-axis"><span>0</span><span>0.5</span><span>1</span></div>
+  <p id="resultTakeaway" class="result-takeaway">DeepCOI的五階層平均較高。</p>
+  <p class="visual-caption">正式論文Table 4 · 四組節肢動物的長讀長定序資料<br>各方法使用指定門檻 · F1不是正確率</p>
+</section>
+<section id="endingScene" class="visual-scene ending-scene" aria-label="研究者核對分類候選後再使用" hidden>
+  <h2 class="scene-heading">分類候選，還要核對才能採用。</h2>
+  <div class="check-ledger" id="checkLedger"><div><span>序列</span><span>研究者檢查</span></div><p><span>品質與長度</span><span>這段資料夠不夠用？</span></p><p><span>參考資料</span><span>有沒有涵蓋相近物種？</span></p><p><span>分類候選</span><span>哪些能採用，哪些待查？</span></p></div>
+  <div class="ending-message" id="endingMessage"><span class="ending-dna">A C G T</span><svg viewBox="0 0 100 28" aria-hidden="true"><path d="M1 14h90m-9-8 9 8-9 8"/></svg><strong>協助整理大量COI條碼</strong></div>
+  <p class="closing-line" id="closingLine">整理更快，種名仍要核對。</p><p class="visual-caption">人工檢查流程示意 · 序列條數不等於動物隻數</p>
+</section>
+<div id="dnaViewport" class="dna-viewport" aria-label="三維DNA位置與序列連接示意" hidden></div></div><aside class="narrative"><p id="phaseLabel" class="phase-label">1 / 8 · 先認識蚊子</p><h2 id="phaseTitle">都是蚊子，要怎麼分種類？</h2><p id="phaseCopy">身體、翅膀和腳的細節能幫助辨認。外觀不容易判斷時，研究者也會比較DNA。</p><p id="phaseNote" class="phase-note">照片是埃及斑蚊，作為對象介紹；不是本研究的採樣照片。</p></aside></div>
+<nav class="phase-navigation" aria-label="動畫段落"><button type="button" data-seek="0"><span>00:00</span>先認識蚊子</button><button type="button" data-seek="14"><span>00:14</span>DNA在哪裡</button><button type="button" data-seek="30"><span>00:30</span>從結構到字母</button><button type="button" data-seek="46"><span>00:46</span>比較一小段DNA</button><button type="button" data-seek="62"><span>01:02</span>模型先學習</button><button type="button" data-seek="80"><span>01:20</span>提出哪些分類</button><button type="button" data-seek="98"><span>01:38</span>研究有什麼結果</button><button type="button" data-seek="114"><span>01:54</span>最後怎麼使用</button></nav>
+<footer class="reading-footer"><noscript><p>動畫需要JavaScript。下方保留完整解說與來源。</p></noscript><details class="static-reading"><summary>不播放，直接閱讀</summary><ol id="staticStory"><li>研究者可以比較DNA，協助辨認外觀不容易判斷的動物。這不代表單靠一段DNA就能辨認所有動物。</li><li>動物的條碼常取自粒線體DNA。COI-5P是COI基因中常用的條碼區段。位置與比例只作概念示意，沒有對應到本案四筆條碼的完整基因組。研究者先取得樣本，完成萃取、擴增與定序，才得到A、C、G、T序列。DeepCOI從這一步之後開始工作。</li><li>COI是常用來比較的基因片段。動畫選取作者公開資料中四筆序列的相同對齊欄位348–367，展示20個字母的真實差異。</li><li>模型先從有分類標籤的參考序列學習。新序列送入時，使用的是已訓練的模型。</li><li>第一個分類器先辨認8個目標門或其他類群；對應模型再同時提出綱、目、科、屬、種的名稱與分數。畫面只有輸出格式示意，沒有執行推論。</li><li>正式論文Table 4，在四組節肢動物的長讀長定序資料及指定門檻下，五個分類階層的平均F1為DeepCOI 0.864、RDP 0.658、BLAST 0.853。種級F1依序為0.858、0.642、0.909。F1不是正確率。</li><li>DeepCOI協助整理大量COI條碼；可靠種名仍依賴序列品質、長度與參考資料。序列條數不能直接換算動物隻數。</li></ol></details><details><summary>資料與圖片從哪裡來</summary><p>研究：Gwak與Rho，2025， <a href="https://link.springer.com/article/10.1186/s13059-025-03861-7" target="_blank" rel="noopener">DeepCOI，Genome Biology</a>。動畫使用正式Table 4的數字，沒有執行模型推論。</p><p>真實序列：<a href="https://github.com/DMnBI/DeepCOI-reproduce/blob/82c16e9ebec3e795352d33a7a6f26cca5d3c923c/Figure5/Aedes_four.msa.fasta" target="_blank" rel="noopener">作者公開的對齊資料</a>。原檔50筆、5個物種，本動畫取4個物種各1筆。資料MIT授權，© 2025 DMnBI。可查看<a href="data/sequence-window.json">本頁使用的短窗及記錄ID</a>。</p><p>蚊子實拍：<a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=26041" target="_blank" rel="noopener">CDC／Amy E. Lockwood，PHIL 26041</a>，公有領域。三維細胞、粒線體與DNA為本頁建立的概念模型，沒有實測尺度或完整基因組定位。展開雙股用來對照結構與字母，不是模擬定序平台。序列、分類機制與數字以本頁自行排版解說，未改作期刊原圖。COI-5P條碼另可參考<a href="https://www.boldsystems.org/resource-hub/faq/" target="_blank" rel="noopener">BOLD官方說明</a>。</p></details><p class="prototype-note">06-01 · 128秒動畫試作</p></footer>
+</main></body></html>

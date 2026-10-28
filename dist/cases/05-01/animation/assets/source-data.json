@@ -1,0 +1,71 @@
+{
+  "caseId": "05-01",
+  "modelInferenceRun": false,
+  "source": "Tolan et al. arXiv:2304.07213v3, Figure 7 and Table 2",
+  "sourceURL": "https://arxiv.org/html/2304.07213v3",
+  "image": {
+    "file": "assets/figure7.png",
+    "width": 2614,
+    "height": 1144,
+    "sha256": "d0de03294969f7ea931f74c906861fe4df8cd198210662a34eb624b04d4626ef"
+  },
+  "windows": {
+    "photo": [
+      152,
+      607,
+      449,
+      448
+    ],
+    "model": [
+      760,
+      607,
+      449,
+      448
+    ],
+    "lang": [
+      1368,
+      607,
+      449,
+      448
+    ],
+    "potapov": [
+      1978,
+      607,
+      449,
+      448
+    ],
+    "legend": [
+      2465,
+      270,
+      149,
+      630
+    ]
+  },
+  "results": {
+    "model": "SSL + GEDI",
+    "metric": "pixel MAE (m)",
+    "rows": [
+      {
+        "dataset": "NEON test",
+        "mae": 2.7
+      },
+      {
+        "dataset": "CA-Brande",
+        "mae": 0.6
+      },
+      {
+        "dataset": "São Paulo",
+        "mae": 5.1
+      }
+    ]
+  },
+  "globalProduct": {
+    "releaseYear": 2024,
+    "gridMetres": 1,
+    "imageYears": [
+      2009,
+      2020
+    ]
+  },
+  "rawALSLoaded": false
+}

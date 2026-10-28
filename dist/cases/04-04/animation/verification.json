@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "case_id": "04-04",
+  "version": "prototype-v01",
+  "date": "2026-10-24T14:53:22.276953+00:00",
+  "browser_checks": 365,
+  "browser_errors": [],
+  "pure_model_tests": 3,
+  "model_time_states": 2305,
+  "pixel_comparisons": [
+    {
+      "time": 90,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    },
+    {
+      "time": 70,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    },
+    {
+      "time": 56,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    },
+    {
+      "time": 39,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    },
+    {
+      "time": 23,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    },
+    {
+      "time": 0,
+      "width": 1600,
+      "height": 900,
+      "changedPixels": 0,
+      "maxChannelDelta": 0
+    }
+  ],
+  "full_playback_seconds": 96,
+  "export": {
+    "duration_seconds": 96,
+    "decoded_frame_count": 2304,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 10114308
+  },
+  "source_images_byte_preserved": {
+    "observation-density.png": "abdaede8b554902d3e01d148bb6df8ccc4b241efd8adb1310cb2fc9703915c49",
+    "trait-maps.png": "9495027e848d134b1d558079ae1e77c710811c9e2a521b7d8e1843b81ba6adf8",
+    "spatial-transfer.png": "5b6b8bb4cce3ef97648c486663bb44cedb3811408344dde96bad222b2bcd054f",
+    "leaf-context.png": "f0736bf3322fbcbf1baef3176e3a53808203eb6d9029cc6888bc1efacb99ff44"
+  },
+  "generated_context": true,
+  "conceptual_weights_only": true,
+  "new_model_inference_run": false,
+  "reported_trait_value": null,
+  "canonical_unchanged_files": 960,
+  "website_created": false,
+  "integrated": false,
+  "deployed": false,
+  "animation_user_accepted": false,
+  "visual_review": "Six export states, phone map/AOA views and decoded MP4 inspected; independent source reviewer found no blocking scientific issue.",
+  "design_tools": {
+    "source_lint": "0 FAIL / 0 WARN",
+    "impeccable": [],
+    "taste_inspector": "2 heuristic FAIL and 3 WARN documented in work review README, not claimed as a clean scan"
+  },
+  "source_window_check": "Explicit clipPath equals the displayed viewBox for the focal map; locator/legend/AOA clipped to documented source panels.",
+  "limits": [
+    "Generated vegetation is illustrative, not a research sampling site.",
+    "Relative-cover bars are a teaching example, not observed abundances or new CWM values.",
+    "The selected map is an Americas subsection from an author-repository PNG, not a new worldwide raster or a measured ground-truth layer.",
+    "The AOA map summarizes multiple traits and is not the leaf-area-only AOA.",
+    "The 15/31 count is traits with Pearson r at least 0.5 at the reported 1 km² model scale, not an accuracy percentage."
+  ]
+}

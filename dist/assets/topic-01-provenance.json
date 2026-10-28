@@ -1,0 +1,22 @@
+{
+  "status": "edited_and_saved_in_project",
+  "tool": "built-in imagegen",
+  "revision": "v02",
+  "source_file": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-fddcd68e-a570-4f67-9076-3225f27d6840.png",
+  "edit_target": "outputs/ecology-ai-rollout-assets/topic-01/topic-01-main-v01.png",
+  "supporting_reference": "outputs/ecology-ai-site-v01/cases/01-03/assets/01-03-plankton-main.webp",
+  "project_original": "outputs/ecology-ai-rollout-assets/topic-01/topic-01-main-v02.png",
+  "original_sha256": "c7ff4ffe60577a358f50c6d7d98db60ddfb8d4fb2c103494fe78126e06793b34",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "web_file": "outputs/ecology-ai-site-v01/assets/topic-01-main-v02.webp",
+  "web_sha256": "ca6cda02f0325b4d9d6d503facc2dc7c1fc40c01a26b35000cae329a249fb40b",
+  "web_bytes": 209906,
+  "processing": "Image edit by built-in imagegen; PNG copied unchanged; WebP format conversion at native dimensions, quality91 method6. No local crop or repaint.",
+  "prompt": "outputs/ecology-ai-rollout-assets/topic-01/main-visual-prompt-v02.md",
+  "correction": "Removed aerial algae and all stands; moved magnified cell illustrations below water; reduced the two AUVs and changed their visual appearance to small research instruments.",
+  "interpretation": "Conceptual exhibition; magnified microalgae; not to scale or a shared research location. The other three cases retain their composition; generated texture details may differ.",
+  "site_asset": "assets/topic-01-main-v02.webp"
+}

@@ -1,0 +1,250 @@
+{
+  "caseId": "05-02",
+  "sourceType": "Official ACA WFS snapshot, client-rendered data visualization",
+  "snapshotDate": "2026-10-26T03:19:16.493713+00:00",
+  "bbox": [
+    172.74,
+    1.68,
+    173.12,
+    2.02
+  ],
+  "bboxCRS": "EPSG:4326",
+  "projection": "EPSG:3857",
+  "bboxProjected": [
+    19229328.83963008,
+    187043.54830381525,
+    19271630.24613152,
+    224911.9690277059
+  ],
+  "width": 1600,
+  "height": 1432,
+  "anchor": {
+    "lon": 172.86525,
+    "lat": 1.86975,
+    "x": 0.32960526315784516,
+    "y": 0.4419354845127883
+  },
+  "pixelResolutionMeters": 5,
+  "pixelResolutionScope": "Research product grid; not rendered PNG pixel size or positional accuracy.",
+  "scaleBar": {
+    "metres": 5000,
+    "normalizedLength": 0.11826234457043319,
+    "approximate": true,
+    "referenceLatitude": 1.86975
+  },
+  "maps": {
+    "geomorphic": {
+      "file": "assets/reef-map-geomorphic.png",
+      "width": 1600,
+      "height": 1432,
+      "sha256": "af34f44fe0cd5de852e4b6483d28fb971cb772a7861fb76f4c0903abb9637817",
+      "bboxProjected": [
+        19229328.83963008,
+        187043.54830381525,
+        19271630.24613152,
+        224911.9690277059
+      ],
+      "anchor": {
+        "lon": 172.86525,
+        "lat": 1.86975,
+        "x": 0.32960526315784516,
+        "y": 0.4419354845127883,
+        "class_name": "Outer Reef Flat",
+        "label": "外礁坪",
+        "color": "#92739d",
+        "raster_rgba": [
+          146,
+          115,
+          157,
+          255
+        ]
+      },
+      "classes": [
+        {
+          "name": "Shallow Lagoon",
+          "label": "淺潟湖",
+          "color": "#77d0fc",
+          "feature_count": 1781
+        },
+        {
+          "name": "Deep Lagoon",
+          "label": "深潟湖",
+          "color": "#2ca2f9",
+          "feature_count": 694
+        },
+        {
+          "name": "Inner Reef Flat",
+          "label": "內礁坪",
+          "color": "#c5a7cb",
+          "feature_count": 337
+        },
+        {
+          "name": "Outer Reef Flat",
+          "label": "外礁坪",
+          "color": "#92739d",
+          "feature_count": 590
+        },
+        {
+          "name": "Reef Crest",
+          "label": "礁脊",
+          "color": "#614272",
+          "feature_count": 273
+        },
+        {
+          "name": "Terrestrial Reef Flat",
+          "label": "近岸礁坪",
+          "color": "#fbdefb",
+          "feature_count": 0
+        },
+        {
+          "name": "Sheltered Reef Slope",
+          "label": "受遮蔽的礁坡",
+          "color": "#10bda6",
+          "feature_count": 348
+        },
+        {
+          "name": "Reef Slope",
+          "label": "礁坡",
+          "color": "#288471",
+          "feature_count": 345
+        },
+        {
+          "name": "Plateau",
+          "label": "海底平台",
+          "color": "#cd6812",
+          "feature_count": 219
+        },
+        {
+          "name": "Back Reef Slope",
+          "label": "背礁坡",
+          "color": "#befbff",
+          "feature_count": 2804
+        },
+        {
+          "name": "Patch Reef",
+          "label": "斑塊礁",
+          "color": "#ffba15",
+          "feature_count": 0
+        }
+      ],
+      "geometry_validation": {
+        "invalid_features": 0,
+        "empty_after_clipping": 0,
+        "rendered_polygons": 7391,
+        "rendered_vertices": 707499,
+        "anchor_raw_matches": [
+          {
+            "id": "geomorphic_data_verbose.fid-6d786001_1a1763599a8_-732f",
+            "class_name": "Outer Reef Flat"
+          }
+        ],
+        "anchor_clipped_matches": [
+          {
+            "id": "geomorphic_data_verbose.fid-6d786001_1a1763599a8_-732f",
+            "class_name": "Outer Reef Flat"
+          }
+        ],
+        "anchor_membership_preserved": true,
+        "raster_anchor_color_matches": true,
+        "palette_only_pixels": true
+      }
+    },
+    "benthic": {
+      "file": "assets/reef-map-benthic.png",
+      "width": 1600,
+      "height": 1432,
+      "sha256": "970a559420eb8dd8b3b73958d723b4e5dcaf4d2277cd51255413ec57a5c26161",
+      "bboxProjected": [
+        19229328.83963008,
+        187043.54830381525,
+        19271630.24613152,
+        224911.9690277059
+      ],
+      "anchor": {
+        "lon": 172.86525,
+        "lat": 1.86975,
+        "x": 0.32960526315784516,
+        "y": 0.4419354845127883,
+        "class_name": "Rock",
+        "label": "岩石",
+        "color": "#b19c3a",
+        "raster_rgba": [
+          177,
+          156,
+          58,
+          255
+        ]
+      },
+      "classes": [
+        {
+          "name": "Sand",
+          "label": "沙地",
+          "color": "#ffffbe",
+          "feature_count": 6142
+        },
+        {
+          "name": "Rubble",
+          "label": "礁體碎屑",
+          "color": "#e0d05e",
+          "feature_count": 1029
+        },
+        {
+          "name": "Rock",
+          "label": "岩石",
+          "color": "#b19c3a",
+          "feature_count": 5557
+        },
+        {
+          "name": "Seagrass",
+          "label": "海草",
+          "color": "#668438",
+          "feature_count": 1492
+        },
+        {
+          "name": "Coral/Algae",
+          "label": "珊瑚／藻類",
+          "color": "#ff6161",
+          "feature_count": 6644
+        },
+        {
+          "name": "Microalgal Mats",
+          "label": "微藻墊",
+          "color": "#9bcc4f",
+          "feature_count": 1178
+        }
+      ],
+      "geometry_validation": {
+        "invalid_features": 0,
+        "empty_after_clipping": 0,
+        "rendered_polygons": 22042,
+        "rendered_vertices": 1017459,
+        "anchor_raw_matches": [
+          {
+            "id": "benthic_data_verbose.fid-6d786001_1a17558b34a_50ad",
+            "class_name": "Rock"
+          }
+        ],
+        "anchor_clipped_matches": [
+          {
+            "id": "benthic_data_verbose.fid-6d786001_1a17558b34a_50ad",
+            "class_name": "Rock"
+          }
+        ],
+        "anchor_membership_preserved": true,
+        "raster_anchor_color_matches": true,
+        "palette_only_pixels": true
+      }
+    }
+  },
+  "attribution": "Allen Coral Atlas maps © Allen Coral Atlas Partnership and Arizona State University; CC BY 4.0. Client portrayal uses published ACA v2.0 class colours.",
+  "attributionURL": "https://www.allencoralatlas.org/resources/",
+  "paletteURL": "https://developers.google.com/earth-engine/datasets/catalog/ACA_reef_habitat_v2_0#bands",
+  "unmapped": "Transparent; not classified as deep sea, absence of coral, or land.",
+  "versionNote": "Current WFS snapshot, not claimed byte-identical to the frozen ACA/reef_habitat/v2_0 raster.",
+  "modelInferenceRun": false,
+  "groundTruthValidation": false,
+  "sourceFeatureCounts": {
+    "geomorphic": 7391,
+    "benthic": 22042
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "label": "作者公開的 COI 對齊序列片段",
+  "source": {
+    "file": "Aedes_four.msa.fasta",
+    "url": "https://github.com/DMnBI/DeepCOI-reproduce/blob/82c16e9ebec3e795352d33a7a6f26cca5d3c923c/Figure5/Aedes_four.msa.fasta",
+    "commit": "82c16e9ebec3e795352d33a7a6f26cca5d3c923c",
+    "sha256": "966a5e6819c7a96890d5432a8a319983a06069f4b99dfd161427f522d04db558",
+    "record_count": 50,
+    "species_count": 5,
+    "species_counts": {
+      "Aedes nigromaculis": 15,
+      "Aedes sollicitans": 9,
+      "Aedes taeniorhynchus": 11,
+      "Aedes mitchellae": 8,
+      "Aedes sierrensis": 7
+    },
+    "alignment_length": 658,
+    "note": "原檔名稱含 four，但實際含 50 筆、5 種 Aedes。此處只展示其中 4 種各 1 筆。"
+  },
+  "selection": {
+    "method": "依來源物種出現順序選前 4 種，各取該物種的首筆記錄；取共同完整的 348–367 對齊欄位。",
+    "display_record_count": 4,
+    "omitted_species": [
+      "Aedes sierrensis"
+    ],
+    "limits": "這 20 個字母只用來比較這 4 筆公開記錄，不代表各物種全部變異，也不是物種鑑別規則。字母差異不是模型注意力或重要性分數。未執行 DeepCOI 推論。"
+  },
+  "window": {
+    "coordinate_system": "1-based alignment columns",
+    "start": 348,
+    "end": 367,
+    "length": 20,
+    "positions": [
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367
+    ],
+    "note": "座標指原始多序列對齊欄位，不是去除 gap 後的序列位置。所選 4 筆在此短窗均無 gap 或模糊字母。"
+  },
+  "variable_positions": [
+    349,
+    353,
+    355,
+    361,
+    364,
+    367
+  ],
+  "records": [
+    {
+      "id": "Aedes_nigromaculis__MOSN4746-20/1-636",
+      "specimen_id": "MOSN4746-20",
+      "species": "Aedes nigromaculis",
+      "source_record_index": 1,
+      "sequence": "TATCAGCAGGAACAGCTCAT"
+    },
+    {
+      "id": "Aedes_sollicitans__MOSN1576-18/1-658",
+      "specimen_id": "MOSN1576-18",
+      "species": "Aedes sollicitans",
+      "source_record_index": 16,
+      "sequence": "TTTCATCTGGAACTGCTCAT"
+    },
+    {
+      "id": "Aedes_taeniorhynchus__MOSN680-18/1-658",
+      "specimen_id": "MOSN680-18",
+      "species": "Aedes taeniorhynchus",
+      "source_record_index": 25,
+      "sequence": "TTTCATCTGGAACTGCCCAC"
+    },
+    {
+      "id": "Aedes_mitchellae__MOSN581-18/1-658",
+      "specimen_id": "MOSN581-18",
+      "species": "Aedes mitchellae",
+      "source_record_index": 36,
+      "sequence": "TTTCATCTGGAACTGCCCAT"
+    }
+  ],
+  "license": {
+    "spdx": "MIT",
+    "copyright": "Copyright (c) 2025 DMnBI",
+    "source_url": "https://github.com/DMnBI/DeepCOI-reproduce/blob/82c16e9ebec3e795352d33a7a6f26cca5d3c923c/LICENSE",
+    "text": "MIT License\n\nCopyright (c) 2025 DMnBI\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  }
+}

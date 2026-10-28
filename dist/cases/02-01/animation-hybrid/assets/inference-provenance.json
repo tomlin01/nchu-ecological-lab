@@ -1,0 +1,137 @@
+{
+  "status": "fresh_inference_completed",
+  "code": {
+    "repository": "https://github.com/google/cameratrapai",
+    "commit": "08ba498e833a15e95e72021c4308908e8b44709d",
+    "package_version": "5.0.6",
+    "official_tracked_source_unmodified": true,
+    "python_file_sha256": {
+      "speciesnet/__init__.py": "4bfe03bf630e0176ae316090ea7f2d75016b1755843ade9d8fa9774ba1e7ab2a",
+      "speciesnet/classifier.py": "a8c03919f662b4a03caef2d960721b1bbe2cf8fdcb32dd762cb183e05b288a26",
+      "speciesnet/classifier_test.py": "a22f3570280ad856fc758623034db27012c50bb8916bd7d4bf6549290dbe21b7",
+      "speciesnet/constants.py": "9b9bb3de72260ca5bc26542b8b6821c97d674d6dc08f60309e80accd0816fb61",
+      "speciesnet/detector.py": "c7ce49f7e94d0444d9d7676e969573ee393d8daf2ac685618dfd9f9042e7fb2d",
+      "speciesnet/detector_test.py": "3250d8a3eb7947e2bee08f66791e34d462e9d987599b7a5d12e7005733b1897a",
+      "speciesnet/display.py": "9c4dec9131d9e1416f065e55281cc0d0ed0182e3459158d35754260a4929d70e",
+      "speciesnet/ensemble.py": "bdbb32bf32d470866a3f0764399b46ecfe1976e8b986dc332823f77705496870",
+      "speciesnet/ensemble_prediction_combiner.py": "7032aab4c46c02ddee61e4a75c4bc62ebc20391fdeea773cd9f56009c063114e",
+      "speciesnet/ensemble_prediction_combiner_test.py": "44132274fd74717a1c5323d9e52e96be30f7310a3e54ac41af78517f37183b06",
+      "speciesnet/ensemble_test.py": "5f0a861b83879b0da400c5e88693c7c8eb0789ff38937b96b84343e9b69ae8e9",
+      "speciesnet/geofence_utils.py": "5eb5a19eb20749db35f47df1dcc0871815d6e13a4219eb602bbb0e880bbc2b77",
+      "speciesnet/geofence_utils_test.py": "e6e7193416a21116bd689b80e86218ad4caf6a5a54562776319ae2fe7d461702",
+      "speciesnet/geolocation.py": "68393ef5169a2a5b6d5d7a3d098da550aaa1b52ce229e9dfba3a2e4a5a665876",
+      "speciesnet/geolocation_test.py": "bee65aa6a074d17ab1a8c9e4f16122acc7a607749544dad23862192c6b2c3f7d",
+      "speciesnet/multiprocessing.py": "bf33fdcb2f97fc0c8719dec2041225005a8c781bcd99cb372b1e1131711bd938",
+      "speciesnet/multiprocessing_test.py": "51b7faa936a561435fd10683fba6002a9d4027e01d29870d5ebc32e5d37da49d",
+      "speciesnet/scripts/build_geofence_release.py": "091787bd65c7619dd4de550002f7cefb925245254c99494e31ec71ecb36d1eca",
+      "speciesnet/scripts/gpu_test.py": "33fa5a5114be58e1c3d199ff0367bf9f10b4e3259d49fdc12f12e9a09636d345",
+      "speciesnet/scripts/run_model.py": "ceaae4e180f78831022c4edd6f01074a40f56b182d356bd51c94696667d9623d",
+      "speciesnet/scripts/run_server.py": "493be61a148e16ba4c5bd06a6da1b78962497b685a3034bd0b3c3bba390d8806",
+      "speciesnet/taxonomy_utils.py": "ddb7618032f9db1d0decb2a52a05216ebd7f25bad1b1f7b7a86107dffdb1f441",
+      "speciesnet/taxonomy_utils_test.py": "db6b9e47013f0282e6f69a2b46b571d350587373a7e72cf7f29a6134248d870a",
+      "speciesnet/utils.py": "bfc656b3eb0137fe14c91018d3887d7ad5e12d09a455db43c998745b5c1b0a33",
+      "speciesnet/utils_test.py": "20b6d57fb8fc0ecb605588b5fa1d09b48af21f73e118705f49c64f2a3603cfb0"
+    },
+    "license": "Apache-2.0",
+    "license_file": "official-source/LICENSE"
+  },
+  "model": {
+    "requested_handle": "kaggle:google/speciesnet/pyTorch/v4.0.3a/1",
+    "package_info": {
+      "version": "4.0.3a",
+      "type": "always_crop",
+      "classifier": "always_crop_99710272_22x8_v12_epoch_00148.pt",
+      "classifier_labels": "always_crop_99710272_22x8_v12_epoch_00148.labels.20260609.txt",
+      "detector": "https://github.com/agentmorris/MegaDetector/releases/download/v5.0/md_v5a.0.1.pt",
+      "taxonomy": "taxonomy_release.20260609.txt",
+      "geofence": "geofence_release.20260609.json"
+    },
+    "classifier_download_url": "https://www.kaggle.com/api/v1/models/google/speciesnet/pyTorch/v4.0.3a/1/download",
+    "classifier_bundle_license": "Apache-2.0, as declared in the downloaded bundle README",
+    "detector_download_url": "https://github.com/agentmorris/MegaDetector/releases/download/v5.0/md_v5a.0.1.pt",
+    "files": [
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/README.md",
+        "bytes": 119,
+        "sha256": "5707c487b20aef8bb779d63c32d8ca11ee7d66c12e46ff4a366047622bf49811"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/always_crop_99710272_22x8_v12_epoch_00148.labels.20260609.txt",
+        "bytes": 255693,
+        "sha256": "e0c41415d9b29dfd6d2e2494205d1197d28595cc6f69cb129495f9827155547e"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/always_crop_99710272_22x8_v12_epoch_00148.pt",
+        "bytes": 224393837,
+        "sha256": "d099632044e92a0446869e06e5eb282e24706d5266b4acf5b42f5f23e2b50ade"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/geofence_release.20260609.json",
+        "bytes": 6264811,
+        "sha256": "27a88e932e411f73a4937c935fe36cf61a9060a1c488f4c69ade3f19eb8507d1"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/https___github.com_agentmorris_MegaDetector_releases_download_v5.0_md_v5a.0.1.pt",
+        "bytes": 280767041,
+        "sha256": "fe3e90e4b1955821ab7c1f88b446dc0c8cb25e109fdd1872916a55305294a5ef"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/info.json",
+        "bytes": 410,
+        "sha256": "037133d121d48a5cd53884cdee01374564f32e2cc6f1375ffb39a9bc1cf6000a"
+      },
+      {
+        "file": "cache/kagglehub/models/google/speciesnet/pyTorch/v4.0.3a/1/taxonomy_release.20260609.txt",
+        "bytes": 357417,
+        "sha256": "4bd5d1a85a63857f557d487c5d86c0911173c59b34977ebc0ee909484ce277f2"
+      }
+    ],
+    "weight_files_bytes_total": 505160878,
+    "all_model_bundle_files_bytes_total": 512039328,
+    "sha256_kind": "Locally computed hashes of actual downloaded files; no claim of independently published SHA-256 validation.",
+    "model_card_note": "The pinned source contains model cards only through v4.0.1a/b. The older card is not used as 4.0.3a performance evidence."
+  },
+  "runtime_versions": {
+    "speciesnet": "5.0.6",
+    "torch": "2.14.1",
+    "torchvision": "0.29.1",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.6",
+    "pillow": "13.0.0",
+    "yolov5": "7.0.11",
+    "ultralytics": "8.4.14",
+    "onnx": "1.23.2",
+    "onnx2torch": "1.5.15",
+    "kagglehub": "1.0.2",
+    "huggingface_hub": "2.2.0",
+    "setuptools": "81.0.0"
+  },
+  "device": {
+    "classifier": "MPS",
+    "detector": "MPS"
+  },
+  "execution": {
+    "attempt": 1,
+    "started_utc": "2026-10-20T21:15:17.997231+00:00",
+    "run_started_with_no_predictions_json": true,
+    "geofence": false,
+    "location_fields_present": false,
+    "ended_utc": "2026-10-20T21:16:28.661718+00:00",
+    "elapsed_seconds": 70.6642370223999,
+    "exit_code": 0
+  },
+  "command_relative": [
+    "python",
+    "-m",
+    "speciesnet.scripts.run_model",
+    "--model=kaggle:google/speciesnet/pyTorch/v4.0.3a/1",
+    "--instances_json=instances.json",
+    "--predictions_json=predictions.json",
+    "--nogeofence",
+    "--max_classifications_per_detection=5",
+    "--batch_size=1"
+  ],
+  "raw_output_sha256": "2aa734af2f2773e44adf4a0ed629f1fb52bb19114a302c2c377aeeee0604c99e",
+  "local_complete_record": "work/ecology-ai-rollout/cases/02-01/hybrid-v01/inference/"
+}

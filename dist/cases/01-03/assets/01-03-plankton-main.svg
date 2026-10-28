@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1200" viewBox="0 0 2000 1200">
+<title>浮游植物形態示意</title><desc>放大的簡化單細胞藻類，金綠色內部構造與兩條鞭毛。概念插畫，非海試照片或同尺度海中景象。</desc>
+<rect width="2000" height="1200" fill="#071b23"/>
+<defs><g id="cell">
+<path d="M-47-216C-85-330-171-435-277-407C-361-385-362-310-323-285" fill="none" stroke="#839b89" stroke-width="3"/>
+<path d="M51-211C105-304 224-368 307-334C389-300 403-241 377-198" fill="none" stroke="#91a38a" stroke-width="3"/>
+<path d="M-149-172C-80-254 67-259 154-158C242-56 231 96 156 178C76 268-82 253-164 168C-239 87-242-61-149-172Z" fill="#1b4547"/>
+<path d="M-142-169C-58-248 57-240 143-153C222-70 226 84 150 164C77 249-67 236-149 159C-223 89-226-71-142-169Z" fill="#365e57"/>
+<path d="M-133-159C-58-228 52-226 135-148C206-73 210 61 173 125C177 34 141-81 68-118C-10-157-85-126-177-60C-167-103-156-134-133-159Z" fill="#557767"/>
+<path d="M-139-91C-119-156-58-177-29-123C2-60-36 57-74 115C-105 163-146 137-157 89C-170 33-155-38-139-91Z" fill="#8f9d5c"/>
+<path d="M-126-103C-106-139-75-149-58-120C-34-76-61 8-89 64C-116 116-140 83-138 43C-138-9-144-63-126-103Z" fill="#c1c889"/>
+<path d="M52-144C97-169 134-118 147-59C160 7 151 74 111 136C84 177 42 129 28 73C8-1 15-116 52-144Z" fill="#a0aa64"/>
+<path d="M63-121C91-143 114-101 123-62C135-10 127 39 106 82C87 116 62 82 53 45C42-3 40-89 63-121Z" fill="#c4c990"/>
+<ellipse cx="-6" cy="22" rx="21" ry="29" fill="#b9c0a0"/>
+<ellipse cx="-2" cy="15" rx="11" ry="17" fill="#d7d8b3"/>
+<g fill="#a8b37e"><circle cx="-19" cy="-68" r="7"/><circle cx="8" cy="-103" r="5"/><circle cx="-28" cy="90" r="6"/><circle cx="17" cy="120" r="5"/><circle cx="-14" cy="160" r="6"/><circle cx="40" cy="160" r="4"/></g>
+<path d="M-179-70C-194-23-190 49-174 80" fill="none" stroke="#719582" stroke-width="5" stroke-linecap="round"/>
+<path d="M174-65C189-15 185 63 162 102" fill="none" stroke="#577a6b" stroke-width="3"/>
+</g></defs>
+<g opacity=".40" transform="translate(1130 85) rotate(-26) scale(.66)"><use href="#cell"/></g>
+<g transform="translate(1430 650) rotate(13) scale(1.62)"><use href="#cell"/></g>
+<g opacity=".60" transform="translate(1980 1170) rotate(-37) scale(.89)"><use href="#cell"/></g>
+<g fill="#3d6261"><circle cx="1855" cy="341" r="4"/><circle cx="1037" cy="1011" r="3"/><circle cx="1164" cy="1054" r="2"/><circle cx="1840" cy="853" r="3"/><circle cx="900" cy="812" r="2"/><circle cx="1904" cy="74" r="3"/><circle cx="979" cy="226" r="2"/></g>
+</svg>

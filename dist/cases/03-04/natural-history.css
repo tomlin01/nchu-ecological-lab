@@ -1,0 +1,15 @@
+/* Shared reading palette; original photos and the concept scene keep their colour. */
+@media screen{
+  :root{--ground:var(--theme-ground);--surface:var(--theme-surface);--deep:var(--theme-surface-alt);--ink:var(--theme-ink);--muted:var(--theme-muted);--accent:var(--theme-accent);--link:var(--theme-accent);color-scheme:var(--theme-scheme)}
+  body,.site-header,.section-nav,.reading-controls{background:var(--ground);color:var(--ink)}
+  .detection-board,.method-surface,.conditional-result{background:var(--surface);color:var(--ink)}
+  .source-reveal>summary,.retry-action{background:var(--theme-button-bg);color:var(--theme-button-ink)}
+  .source-reveal>summary:hover{background:var(--accent);color:var(--theme-on-accent)}
+  .frame-status,.player-hint,.source-note,.reading-controls p{color:var(--muted)}
+  #method-frame{background:var(--surface)}
+  body.ecology-sidebar-ready .ecology-sidebar-ui::before{background:var(--ground);color:var(--ink)}
+}
+@media print{body,.site-header,.reading-controls{background:#fff;color:#242829}.detection-board,.method-surface,.conditional-result{background:none}.source-reveal>summary{background:none;color:#242829}}
+/* Match the local header height after the shared sidebar defaults. */
+@media screen{body.ecology-sidebar-ready{--ecology-sidebar-page-header-height:48px}}
+@media screen and (max-width:740px){body.ecology-sidebar-ready{--ecology-sidebar-page-header-height:44px}}

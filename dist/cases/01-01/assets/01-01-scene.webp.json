@@ -1,0 +1,9 @@
+{
+  "path": "outputs/ecology-ai-habitat-pages/assets/01-01-scene.webp",
+  "source": "outputs/ecology-ai-realism-assets/derived/01-01-wildwing-scene.webp",
+  "sha256": "8537ab2eb3192e86ab8081c4bc02cea394cb9faed5682b35c527306f67eff897",
+  "transformation": "byte-identical copy",
+  "role": "existing generated main scene, not research evidence",
+  "public_distribution_ready": false,
+  "license_granted": false
+}

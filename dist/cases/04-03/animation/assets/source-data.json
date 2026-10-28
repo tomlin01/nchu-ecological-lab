@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "caseId": "04-03",
+  "modelInferenceRun": false,
+  "reportedFishLength": null,
+  "calibrationIsConcept": true,
+  "guidesAreManual": true,
+  "source": {
+    "width": 800,
+    "height": 450,
+    "repositoryCommit": "5701c3ea2962be4eaa403250d565d2e762dc7c91",
+    "role": "2022 SPC Board 3 sample photograph; not identified as one of the 869 validation fish",
+    "detectionRole": "Published board-number detections only; not fish endpoint or length results"
+  },
+  "guidePoints": {"snout": [131, 173], "fork": [553, 164], "tip": [658, 105]},
+  "guidePointMeaning": "Manual reading guides around visible anatomical regions; not accepted endpoints, labels, inferred truth or physical measurements",
+  "calibrationPairs": [
+    {"label": "10", "source": [277, 62], "target": [200, 49]},
+    {"label": "20", "source": [412, 53], "target": [400, 49]},
+    {"label": "30", "source": [551, 51], "target": [600, 49]}
+  ],
+  "calibrationPairMeaning": "Source positions read manually for teaching; target positions follow the Board 3 README. No homography fit or fish length calculated.",
+  "study": {"n": 869, "lengthRangeMm": [130, 720], "maeMm": 3.4, "matN": 462, "boardN": 407,
+    "source": "Shedrawi et al. 2024, length-validation section and Figure 3; whole-figure display retained"}
+}

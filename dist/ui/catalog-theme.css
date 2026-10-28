@@ -1,0 +1,25 @@
+:root{--catalog-ground:var(--theme-ground);--catalog-paper:var(--theme-surface);--catalog-ink:var(--theme-ink);--catalog-muted:var(--theme-muted);--catalog-accent:var(--theme-accent);--catalog-line:var(--theme-border);--ground:var(--theme-ground);--surface:var(--theme-surface);--surface-deep:var(--theme-surface-alt);--deep:var(--theme-surface-alt);--ink:var(--theme-ink);--muted:var(--theme-muted);--accent:var(--theme-accent);--link:var(--theme-accent);--link-ink:var(--theme-ink);--cyan:var(--theme-accent);color-scheme:var(--theme-scheme);scrollbar-color:var(--theme-scroll) var(--theme-ground)}
+::selection{background:var(--theme-selection);color:var(--theme-selection-ink)}
+body{caret-color:var(--theme-accent)}
+body.ecology-sidebar-ready{--ecology-sidebar-ground:var(--theme-surface);--ecology-sidebar-ink:var(--theme-ink);--ecology-sidebar-muted:var(--theme-muted);--ecology-sidebar-active:var(--theme-selected)}
+body.ecology-sidebar-ready .ecology-sidebar-ui::before{background:var(--theme-ground);color:var(--theme-ink)}
+body.ecology-sidebar-ready .ecology-sidebar-panel{scrollbar-color:var(--theme-scroll) var(--theme-surface)}
+body.ecology-sidebar-ready .ecology-sidebar-topic-button[aria-expanded=true]{background:var(--theme-surface-alt)}
+body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic,
+body.ecology-sidebar-ready .ecology-sidebar-case-link[aria-current=page]{background:var(--theme-selected);color:var(--theme-ink)}
+body.ecology-sidebar-ready .ecology-sidebar-topic-button.is-current-topic .ecology-sidebar-number{color:var(--theme-accent)}
+body.ecology-sidebar-ready .ecology-sidebar-toggle,
+body.ecology-sidebar-ready .ecology-sidebar-close{background:var(--theme-button-bg);color:var(--theme-button-ink)}
+body.ecology-sidebar-ready .ecology-sidebar-toggle:hover,
+body.ecology-sidebar-ready .ecology-sidebar-close:hover{background:var(--theme-accent);color:var(--theme-on-accent)}
+body.ecology-sidebar-ready .ecology-sidebar-ui :focus-visible{outline-color:var(--theme-focus)}
+body.ecology-sidebar-ready .ecology-sidebar-toggle:focus-visible,
+body.ecology-sidebar-ready .ecology-sidebar-close:focus-visible{outline-color:var(--theme-ground)}
+[data-media-expand],#story-shell [data-media-expand],#full-reading [data-media-expand]{background:var(--theme-button-bg);color:var(--theme-button-ink)}
+[data-media-expand]:hover,#story-shell [data-media-expand]:hover,#full-reading [data-media-expand]:hover{background:var(--theme-accent);color:var(--theme-on-accent)}
+.media-expand-stage.is-media-expanded{background:var(--theme-media);color:var(--theme-ink)}
+.media-expand-stage.is-media-expanded>.media-expand-toolbar{background:var(--theme-surface);color:var(--theme-ink)}
+.media-expand-stage .media-expand-close,#story-shell .media-expand-stage .media-expand-close,#full-reading .media-expand-stage .media-expand-close{background:var(--theme-button-bg);color:var(--theme-button-ink)}
+.media-expand-stage .media-expand-close:hover{background:var(--theme-accent);color:var(--theme-on-accent)}
+:is(a,button,summary):focus-visible,.media-expand-stage .media-expand-close:focus-visible{outline-color:var(--theme-focus)}
+@media print{body{background:#fff!important;color:#242829}.ecology-sidebar-ui{display:none!important}}

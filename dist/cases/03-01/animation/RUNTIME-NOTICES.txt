@@ -1,0 +1,3 @@
+GSAP is copied byte-for-byte from the existing local project vendor/gsap.min.js. Its original banner and licensing URL remain in that file.
+Noto Sans TC and Noto Serif TC are local subsets. Their OFL notices are included under fonts/.
+Photo source claims and full license texts are in LICENSES.txt.

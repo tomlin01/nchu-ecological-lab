@@ -1,0 +1,151 @@
+{
+  "case_id": "05-04",
+  "title": "地圖上的顏色，有多確定？",
+  "version": "web-v01",
+  "status": "completed_local_review_waived",
+  "entry": "05-04.html",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 120,
+  "mp4": "animation/film/05-04-dynamic-world-v01.mp4",
+  "mp4_bytes": 3246122,
+  "approval_required": false,
+  "user_review_waived": true,
+  "human_visual_review_completed": false,
+  "animation_user_accepted": false,
+  "website_user_accepted": false,
+  "agent_visual_review": "SHIP",
+  "model_inference_run": false,
+  "integrated": true,
+  "deployed": false,
+  "updated": "2026-10-26T23:53:00.854019+00:00",
+  "files": {
+    "05-04.html": {
+      "bytes": 34691,
+      "sha256": "3cab9662a5e82fefe095f8f96f143bb5c0b3d8bc895e80fc016dfbf7635fe7c2"
+    },
+    "README.md": {
+      "bytes": 2061,
+      "sha256": "566d93d9a3ada5b1bf77b5533ed54b63132d71c9787ba6b082284b7c476494d4"
+    },
+    "SOURCE.md": {
+      "bytes": 10939,
+      "sha256": "74d2e7907427379678a5a2f4f7e6a9599ba71b54db5d58ad77111fbf662b6111"
+    },
+    "animation/README.md": {
+      "bytes": 329,
+      "sha256": "823a8dd31f00fd931900dcc8ddcb907e126c457171ef6b5e428846ecc2f9c4d7"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 29585,
+      "sha256": "528ae46b7210d6daff3608627578ae8ddb09195377d409dacba0e6c844ca0170"
+    },
+    "animation/app.mjs": {
+      "bytes": 18324,
+      "sha256": "a929dd763d4f429806d9e3e429ff5c145e7a18036cd87544b8e3bd732859e04c"
+    },
+    "animation/assets/disagreement.png": {
+      "bytes": 31324,
+      "sha256": "fb05624caf34d553173d2f265cb5faf253a7a6bea756d42aa8783914b190ea6c"
+    },
+    "animation/assets/dw-label.png": {
+      "bytes": 36124,
+      "sha256": "593705d1dbc2138b5ec5255870bf8c70a11ba21c83147341224fe08a499bd466"
+    },
+    "animation/assets/dw-paper-figure2.png": {
+      "bytes": 1122698,
+      "sha256": "c32c0c524542feb4d756957face5a74b17c95b5df53e85c2fc865e1ba6ba53e0"
+    },
+    "animation/assets/dw-paper-figure4.png": {
+      "bytes": 668013,
+      "sha256": "316454172399ba0888ded0b3fa325e32664eabc5bca9e022d06bd2b43d494a52"
+    },
+    "animation/assets/dw-paper-figure6.png": {
+      "bytes": 2278585,
+      "sha256": "882eb171dad9fbc69b5d435187e44db30b7d0fef90c358519834c30390071797"
+    },
+    "animation/assets/dw-threshold-05.png": {
+      "bytes": 34319,
+      "sha256": "7aaeb39b7cd2a5e05b40fa17b329b88b3320b79bd603c50eb3448457d3268026"
+    },
+    "animation/assets/dw-top1.png": {
+      "bytes": 443798,
+      "sha256": "a07cc11811a7c2201bd2fb1deb939470d43cc80a477ca7a0b6268a371ab4f673"
+    },
+    "animation/assets/figure-data.json": {
+      "bytes": 5676,
+      "sha256": "311f8d8b1e804ac6194a8cc4214a112bb23506d08a8f45355e008f31d6699dcd"
+    },
+    "animation/assets/reference-label.png": {
+      "bytes": 23826,
+      "sha256": "78fdd8e2049f0a5f0cf178aab998ab6c1a1ea29e9f85ce1a071b179dcf9e5715"
+    },
+    "animation/assets/research-results.json": {
+      "bytes": 848,
+      "sha256": "79415af530b13f425a56ffb10f5faeee692922dd1d0a7f90c5efe0f85eb4aa94"
+    },
+    "animation/assets/s2-reference-rgb.png": {
+      "bytes": 843203,
+      "sha256": "6ca78b8e86416a8e3a9f99109e0f436c28051efad8f30c1e587a6237385116b4"
+    },
+    "animation/assets/source-data.json": {
+      "bytes": 16424,
+      "sha256": "991dfd8efadb9048ca1e94a949fe3bcdc94cdb41786eb9b26e3ff2b641075019"
+    },
+    "animation/film/05-04-dynamic-world-v01.mp4": {
+      "bytes": 3246122,
+      "sha256": "b44fa6b5011b1f377c7bcb1d4321762a31415b6e2459d234a4ef893a8c414d19"
+    },
+    "animation/film/metadata.json": {
+      "bytes": 9983,
+      "sha256": "cb12f26b09d83d456df9df0a371f9e6df5aa45233072a9cc94c6a5fff784ad44"
+    },
+    "animation/fonts/landcover-sans.woff2": {
+      "bytes": 147812,
+      "sha256": "48e41f8d6e03ca35aacdb6743516fbb473abc7f2a013061ec82e57eb1f61e098"
+    },
+    "animation/index.html": {
+      "bytes": 14476,
+      "sha256": "0491d31813834e1bf614223d327f8b7634f1e4260ca1ea2c06cd833df7723612"
+    },
+    "animation/model.mjs": {
+      "bytes": 7385,
+      "sha256": "4dec145ee081c6d0175b049dddb4bf34fb18f933ebdd5ee72b9399c9952798c2"
+    },
+    "animation/scene.mjs": {
+      "bytes": 3446,
+      "sha256": "68a01ffe953e1ce3d2948611c48f59b32f03c5934cf952b452ac39642088a1d1"
+    },
+    "animation/style.css": {
+      "bytes": 14617,
+      "sha256": "0df7615984c5a034c998bb1d993bb4767a09a742ead1a4866b30d2e9320f4d6c"
+    },
+    "case.css": {
+      "bytes": 18598,
+      "sha256": "2b87b57f688a042bc20741a238141931bf9ce8e081094b7bfdaabd6f9b4ee601"
+    },
+    "case.js": {
+      "bytes": 11995,
+      "sha256": "e115b1d9394d04424295aecd40cc9fac626c5b1926fa25bc55430d6d75e9f810"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 147816,
+      "sha256": "b5d938940dbe4af3b29a6bf13ac912638b22477ca536e821497b718013b93638"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 196776,
+      "sha256": "92c778c72a8bcaaca0d73b516b7edc9124d92d6d5657c51cbc0a3409cf30eae7"
+    },
+    "index.html": {
+      "bytes": 207,
+      "sha256": "21b7113a4ae2b9cdd7646884d392ee0af2da7f6bd58f831d85f0b5f40d412166"
+    },
+    "scene.js": {
+      "bytes": 6072,
+      "sha256": "80b63a55c530a8e67905bed2192d5d2e3e0fea45b6f54d30aac44dd02cb8c8b8"
+    },
+    "typography.css": {
+      "bytes": 1083,
+      "sha256": "3a5e750687c9e1d0bc8388575dfb9a241614cd6cbcecc42ca4c0358c4cbef57c"
+    }
+  }
+}

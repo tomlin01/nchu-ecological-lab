@@ -1,0 +1,195 @@
+{
+  "case_id": "04-03",
+  "title": "一張照片，怎麼量出魚的長度？",
+  "version": "web-v01",
+  "visual_revision": "same-fish-length-endpoints-v01",
+  "status": "user_accepted_local_website",
+  "entry": "04-03.html",
+  "animation_version": "prototype-v02",
+  "animation_entry": "animation/embed.html",
+  "accepted_animation_original_files_preserved": true,
+  "accepted_animation_original_file_count": 22,
+  "animation_manifest_scope": "The retained standalone snapshot; embedding additions are inventoried separately in animation/embed-manifest.json and this case manifest.",
+  "source_images_byte_preserved": true,
+  "model_inference_run": false,
+  "new_fish_measurement": null,
+  "website_user_accepted": true,
+  "deployed": false,
+  "updated": "2026-10-25T17:53:02.193588+00:00",
+  "files": {
+    "04-03.html": {
+      "bytes": 17062,
+      "sha256": "05ed1604e173941d4ec66c2e4eaeec33a63c3b06a884aac9fbee635abf526af5"
+    },
+    "README.md": {
+      "bytes": 1358,
+      "sha256": "93f626a16a7808bcaa1e917157d1d428c0b189164422eb9b57093ee8a5479201"
+    },
+    "animation/README.md": {
+      "bytes": 937,
+      "sha256": "6c30cff505352e9e19a688b13cb500b544aa12f5527ea224b66a3c1272838a0a"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 6068,
+      "sha256": "6727699f080416dd995a31690ac4249dfbc37ffe142ff8fdad3b469c049d6a84"
+    },
+    "animation/app.mjs": {
+      "bytes": 14906,
+      "sha256": "14b40a9254330f681a4915a154b3fd162f036f5ad565acd9cc515e83bc6fcb35"
+    },
+    "animation/assets/board-detection.jpg": {
+      "bytes": 57423,
+      "sha256": "c2bf2b7541ebbe0333572d241bcfb52b5bf00f05f97496e6810be83cc5d5fc5c"
+    },
+    "animation/assets/board-template.png": {
+      "bytes": 102493,
+      "sha256": "9d985bcefdb4f46f75648e72145869174ed543fa845b00fa3a2e5d192c41bb64"
+    },
+    "animation/assets/fish-original.jpg": {
+      "bytes": 76351,
+      "sha256": "76b17eb02077e0c559d805e059d1ab7ae1c52f28e833e06434379fe3377a16ec"
+    },
+    "animation/assets/source-data.json": {
+      "bytes": 1307,
+      "sha256": "d0b9c0d175cef27419a3b9f8e1b6f1842ffa19759e40ef1f27e8e54c8996a82c"
+    },
+    "animation/assets/study-figure3.jpg": {
+      "bytes": 62191,
+      "sha256": "a7bc8d16f9a3da18fb9b0232197210f321a2388de503633aecd83a23ce86e8be"
+    },
+    "animation/embed-manifest.json": {
+      "bytes": 739,
+      "sha256": "d968f370dd55f89de6375cbaa04145767d84c0c402b2fc62890d9df938e4bb6a"
+    },
+    "animation/embed.css": {
+      "bytes": 780,
+      "sha256": "b9c28b5eec233df9e0f2e58c711313a6170edf6438fb8721519cf10caab956d2"
+    },
+    "animation/embed.html": {
+      "bytes": 10237,
+      "sha256": "17d9eafef04db696cbb437022016589e33b80d06a0aa23c8cce0743fd40f7213"
+    },
+    "animation/embed.js": {
+      "bytes": 7020,
+      "sha256": "86573b1bb32e97d1135a6fbdda0c45f1d1b78d078c3945719378dc1f1bd679d1"
+    },
+    "animation/film/04-03-fish-length-v02.metadata.json": {
+      "bytes": 850,
+      "sha256": "453c01ef1ec09bd277062fa62bdd01c2b89c5457ea1689d84ef6c2ae32b068d8"
+    },
+    "animation/film/04-03-fish-length-v02.mp4": {
+      "bytes": 2213430,
+      "sha256": "c71bc0cbc7ee542c00d0c2876b895edba7e1f8df55ee0f764f5d9add13d0ad42"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/fish-sans.woff2": {
+      "bytes": 129412,
+      "sha256": "2da5a7c9cb85f082f030d23929f064f8535d4b1394a1eb05c6ea64e3f76c7993"
+    },
+    "animation/fonts/fish-serif.woff2": {
+      "bytes": 172068,
+      "sha256": "7caa54005071adf5fe0453c9be098fca77070f51e26353e7a7c935c13de65271"
+    },
+    "animation/index.html": {
+      "bytes": 10145,
+      "sha256": "a3c154898f08c02bb45dddb6b9c665a28b70b4a66130b187956dda4ad31dac14"
+    },
+    "animation/manifest.json": {
+      "bytes": 3328,
+      "sha256": "85d6f6e8220967390d5542eaadf649b95784273496709f5afc03d5a55f95d1ae"
+    },
+    "animation/model.mjs": {
+      "bytes": 5328,
+      "sha256": "4a9f19b1dc947644744214bf6986ff1f80d7e7cb2b49c2f04224f0a02e38c844"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 1741,
+      "sha256": "92b6dce333d0fddd1cbca2e63271dd2d26e83c0057d13de4ba5cc40206376dce"
+    },
+    "animation/scene.mjs": {
+      "bytes": 6687,
+      "sha256": "648a186bf8d0ade80d3645ef6b8dc8da9467dcc0114982245d5b53e582e976e1"
+    },
+    "animation/style.css": {
+      "bytes": 13697,
+      "sha256": "326785438fa4d4d37c1e0650d329b40a388e4379f84608e9a7725f5b4356b32f"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/verification.json": {
+      "bytes": 2104,
+      "sha256": "e8c8419ab3a6e859c83f771241644287bf425da33a6bb7f5898828cbb7a337c4"
+    },
+    "assets/mat-method-original.png": {
+      "bytes": 1601228,
+      "sha256": "3647356da077c7d69e69344447bf34e2ca3ca7b477c0535830255c9f5bb0b97a"
+    },
+    "assets/provenance.json": {
+      "bytes": 683,
+      "sha256": "768a64a89cbd0363190e9a6f061c40ef0b25825c5233ceb8feb916abc5ca5893"
+    },
+    "case.css": {
+      "bytes": 18862,
+      "sha256": "25fccac4046c4d64716c914259b7e509ce885c9c058ea781328ecd7ca8f6dbf2"
+    },
+    "case.js": {
+      "bytes": 11095,
+      "sha256": "3881058c99268670b3a571957a5dcf0d65b7a5facf216a7c617fb84dc6951b78"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 134152,
+      "sha256": "c22f4b3b47ada904322b84df088dfcd18479faeb770ca4288146f9880c3a9762"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 178592,
+      "sha256": "c55b896a3f2729403658123679fa2b8e2f31f404aa8c2d78269bd4dfa3358129"
+    },
+    "index.html": {
+      "bytes": 375,
+      "sha256": "8f507f39d75b496f4d70c2a0f092e7c0fc2de319052141aa6324eaf7240daf73"
+    },
+    "scene.js": {
+      "bytes": 8382,
+      "sha256": "48b394a8c5ce1a79a6dee212a4299184ccaebf801931acb26c364e2d0999e466"
+    },
+    "web-bridge-check.json": {
+      "bytes": 1433,
+      "sha256": "c809b099709b44d2a8c0411dc36290c7c80a51655a8d2a0d9ae8611a3f4e8217"
+    }
+  },
+  "website_acceptance_record": "work/ecology-ai-rollout/cases/04-03/website-acceptance-v01.json",
+  "website_accepted_at_utc": "2026-10-24T13:49:40.051170+00:00",
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  }
+}

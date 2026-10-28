@@ -1,0 +1,363 @@
+{
+  "duration": 60,
+  "modelVersion": "4.0.3a",
+  "photos": [
+    {
+      "id": "ocelot",
+      "code": "P01",
+      "src": "assets/ocelot.jpg",
+      "width": 1046,
+      "height": 802,
+      "sourceLabel": "WCS Camera Traps",
+      "credit": "Wildlife Conservation Society",
+      "title": "有斑紋的動物照片",
+      "alt": "原照片可見完整身體；照片自身保留原始日期字樣與底部掃描邊緣。",
+      "boxes": [
+        {
+          "bbox": [
+            0.0478,
+            0.5549,
+            0.521,
+            0.2743
+          ],
+          "conf": 0.9712,
+          "category": "1",
+          "sourceDetectionIndex": 0,
+          "result": {
+            "candidateLabel": "虎貓",
+            "candidateScore": 0.9938,
+            "finalLabel": "虎貓",
+            "finalScore": 0.9938,
+            "finalSource": "classifier"
+          }
+        }
+      ],
+      "result": {
+        "candidateLabel": "虎貓",
+        "candidateScore": 0.9938,
+        "finalLabel": "虎貓",
+        "finalScore": 0.9938,
+        "finalSource": "classifier",
+        "classifiedDetections": 1,
+        "totalDetections": 1
+      },
+      "reviewIndices": [
+        0
+      ],
+      "reviewStatus": "待人工覆核",
+      "originalSHA256": "6facb7a54a739767ba639a37097737ce2f903e8504a516255ffe1f9a82e32e6e",
+      "sourceURL": "https://raw.githubusercontent.com/google/cameratrapai/08ba498e833a15e95e72021c4308908e8b44709d/test_data/ocelot.jpg",
+      "license": "CDLA-Permissive-1.0",
+      "sourcePredictionFilepath": "../sources/test_data/ocelot.jpg",
+      "primaryDetectionIndex": 0,
+      "rawPrimaryClassification": {
+        "classes": [
+          "22976d14-d424-4f18-a67a-d8e1689cefcc;mammalia;carnivora;felidae;leopardus;pardalis;ocelot",
+          "442208b3-d712-412e-bfd3-430688698aa0;mammalia;carnivora;felidae;leopardus;wiedii;margay",
+          "05afbf7e-f878-4534-b08f-c97a02435474;mammalia;carnivora;felidae;leopardus;;leopardus species",
+          "44e7f637-f8db-4252-9804-7c200fd6516c;mammalia;carnivora;felidae;neofelis;nebulosa;clouded leopard",
+          "c5ae795b-300f-4cc7-99f7-e2c2d2810a87;mammalia;carnivora;felidae;leopardus;tigrinus;northern tiger cat"
+        ],
+        "scores": [
+          0.9938,
+          0.0033,
+          0.0016,
+          0.0004,
+          0.0004
+        ]
+      },
+      "processedPrimaryClassification": {
+        "class": "22976d14-d424-4f18-a67a-d8e1689cefcc;mammalia;carnivora;felidae;leopardus;pardalis;ocelot",
+        "score": 0.9938,
+        "source": "classifier"
+      }
+    },
+    {
+      "id": "american_black_bear",
+      "code": "P02",
+      "src": "assets/american_black_bear.jpg",
+      "width": 2048,
+      "height": 1536,
+      "sourceLabel": "North American Camera Trap Images",
+      "credit": "NACTI data contributors",
+      "title": "夜間的黑白照片",
+      "alt": "真實夜間灰階相機照片；保留相機原有時間與資訊列。",
+      "boxes": [
+        {
+          "bbox": [
+            0.4331,
+            0.4284,
+            0.3232,
+            0.3223
+          ],
+          "conf": 0.9596,
+          "category": "1",
+          "sourceDetectionIndex": 0,
+          "result": {
+            "candidateLabel": "美洲黑熊",
+            "candidateScore": 0.9899,
+            "finalLabel": "美洲黑熊",
+            "finalScore": 0.9899,
+            "finalSource": "classifier"
+          }
+        }
+      ],
+      "result": {
+        "candidateLabel": "美洲黑熊",
+        "candidateScore": 0.9899,
+        "finalLabel": "美洲黑熊",
+        "finalScore": 0.9899,
+        "finalSource": "classifier",
+        "classifiedDetections": 1,
+        "totalDetections": 1
+      },
+      "reviewIndices": [
+        0
+      ],
+      "reviewStatus": "待人工覆核",
+      "originalSHA256": "49cae6c6be95198c6d1c0ae50f4589372dc01a606951a22841a6939ff9d0cd17",
+      "sourceURL": "https://raw.githubusercontent.com/google/cameratrapai/08ba498e833a15e95e72021c4308908e8b44709d/test_data/american_black_bear.jpg",
+      "license": "CDLA-Permissive-1.0",
+      "sourcePredictionFilepath": "../sources/test_data/american_black_bear.jpg",
+      "primaryDetectionIndex": 0,
+      "rawPrimaryClassification": {
+        "classes": [
+          "436ddfdd-bc43-44c3-a25d-34671d3430a0;mammalia;carnivora;ursidae;ursus;americanus;american black bear",
+          "febff896-db40-4ac8-bcfe-5bb99a600950;mammalia;artiodactyla;cervidae;odocoileus;hemionus;mule deer",
+          "5c7ce479-8a45-40b3-ae21-7c97dfae22f5;mammalia;artiodactyla;cervidae;odocoileus;virginianus;white-tailed deer",
+          "eb3829b0-772e-4088-ae90-f11b9fe38284;mammalia;artiodactyla;cervidae;cervus;elaphus;red deer",
+          "330bb1e9-84d6-4e41-afa9-938aee17ea29;mammalia;carnivora;ursidae;ursus;arctos;brown bear"
+        ],
+        "scores": [
+          0.9899,
+          0.0039,
+          0.0037,
+          0.0007,
+          0.0005
+        ]
+      },
+      "processedPrimaryClassification": {
+        "class": "436ddfdd-bc43-44c3-a25d-34671d3430a0;mammalia;carnivora;ursidae;ursus;americanus;american black bear",
+        "score": 0.9899,
+        "source": "classifier"
+      }
+    },
+    {
+      "id": "african_elephants",
+      "code": "P03",
+      "src": "assets/african_elephants.jpg",
+      "width": 2048,
+      "height": 1536,
+      "sourceLabel": "Snapshot Serengeti",
+      "credit": "Snapshot Serengeti data contributors",
+      "title": "同張照片裡的多隻動物",
+      "alt": "多隻象及遮擋，保留完整畫面；不要把框數直接當獨立個體數。",
+      "boxes": [
+        {
+          "bbox": [
+            0.7041,
+            0.4766,
+            0.1108,
+            0.125
+          ],
+          "conf": 0.9352,
+          "category": "1",
+          "sourceDetectionIndex": 0,
+          "result": {
+            "candidateLabel": "非洲象",
+            "candidateScore": 0.9923,
+            "finalLabel": "非洲象",
+            "finalScore": 0.9923,
+            "finalSource": "classifier"
+          }
+        },
+        {
+          "bbox": [
+            0.5645,
+            0.4219,
+            0.0854,
+            0.1673
+          ],
+          "conf": 0.911,
+          "category": "1",
+          "sourceDetectionIndex": 1,
+          "result": {
+            "candidateLabel": "非洲象",
+            "candidateScore": 0.9968,
+            "finalLabel": "非洲象",
+            "finalScore": 0.9968,
+            "finalSource": "classifier"
+          }
+        },
+        {
+          "bbox": [
+            0.8291,
+            0.5111,
+            0.1045,
+            0.1107
+          ],
+          "conf": 0.903,
+          "category": "1",
+          "sourceDetectionIndex": 2,
+          "result": {
+            "candidateLabel": "非洲象",
+            "candidateScore": 0.942,
+            "finalLabel": "非洲象",
+            "finalScore": 0.942,
+            "finalSource": "classifier"
+          }
+        },
+        {
+          "bbox": [
+            0.9419,
+            0.4674,
+            0.0581,
+            0.1673
+          ],
+          "conf": 0.8161,
+          "category": "1",
+          "sourceDetectionIndex": 3,
+          "result": {
+            "candidateLabel": "非洲象",
+            "candidateScore": 0.741,
+            "finalLabel": "非洲象",
+            "finalScore": 0.741,
+            "finalSource": "classifier"
+          }
+        },
+        {
+          "bbox": [
+            0.854,
+            0.4785,
+            0.0859,
+            0.0827
+          ],
+          "conf": 0.7023,
+          "category": "1",
+          "sourceDetectionIndex": 4,
+          "result": {
+            "candidateLabel": "非洲象",
+            "candidateScore": 0.9905,
+            "finalLabel": "非洲象",
+            "finalScore": 0.9905,
+            "finalSource": "classifier"
+          }
+        },
+        {
+          "bbox": [
+            0.3398,
+            0.4434,
+            0.084,
+            0.0911
+          ],
+          "conf": 0.6329,
+          "category": "1",
+          "sourceDetectionIndex": 5,
+          "result": {
+            "candidateLabel": "空景",
+            "candidateScore": 0.3645,
+            "finalLabel": "動物",
+            "finalScore": 0.6329,
+            "finalSource": "detector"
+          }
+        },
+        {
+          "bbox": [
+            0.1016,
+            0.4056,
+            0.1123,
+            0.11
+          ],
+          "conf": 0.1462,
+          "category": "1",
+          "sourceDetectionIndex": 6,
+          "result": {
+            "candidateLabel": "空景",
+            "candidateScore": 0.9809,
+            "finalLabel": "空景",
+            "finalScore": 0.9809,
+            "finalSource": "classifier"
+          }
+        }
+      ],
+      "result": {
+        "candidateLabel": "非洲象",
+        "candidateScore": 0.9923,
+        "finalLabel": "非洲象",
+        "finalScore": 0.9923,
+        "finalSource": "classifier",
+        "classifiedDetections": 7,
+        "totalDetections": 15
+      },
+      "reviewIndices": [
+        0,
+        5,
+        6
+      ],
+      "reviewStatus": "待人工覆核",
+      "originalSHA256": "19cd899b473d99fc855bc34369a55860d3b15780c65d42b7b57585fd24d81402",
+      "sourceURL": "https://raw.githubusercontent.com/google/cameratrapai/08ba498e833a15e95e72021c4308908e8b44709d/test_data/african_elephants.jpg",
+      "license": "CDLA-Permissive-1.0",
+      "sourcePredictionFilepath": "../sources/test_data/african_elephants.jpg",
+      "primaryDetectionIndex": 0,
+      "rawPrimaryClassification": {
+        "classes": [
+          "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+          "dc5dbe17-a8ca-40a6-ac6a-3b6b1d63e6d6;mammalia;artiodactyla;bovidae;eudorcas;thomsonii;thomson's gazelle",
+          "8c48ed75-e275-4188-a6b1-55929d298e85;mammalia;artiodactyla;bovidae;nanger;granti;grant's gazelle",
+          "9732cefb-6a08-49f6-b61e-b9a9054368c4;mammalia;artiodactyla;bovidae;syncerus;caffer;african buffalo",
+          "ccd7d6d7-8eb2-4fdb-a6d6-f1970847e449;mammalia;artiodactyla;suidae;phacochoerus;africanus;common warthog"
+        ],
+        "scores": [
+          0.9923,
+          0.0009,
+          0.0008,
+          0.0006,
+          0.0004
+        ]
+      },
+      "processedPrimaryClassification": {
+        "class": "55631055-3e0e-4b7a-9612-dedebe9f78b0;mammalia;proboscidea;elephantidae;loxodonta;africana;african elephant",
+        "score": 0.9923,
+        "source": "classifier"
+      }
+    },
+    {
+      "id": "blank",
+      "code": "P04",
+      "src": "assets/blank.jpg",
+      "width": 2048,
+      "height": 1536,
+      "sourceLabel": "North American Camera Trap Images",
+      "credit": "NACTI data contributors",
+      "title": "官方空景範例",
+      "alt": "官方空景測試照片；不可推論該地沒有動物。",
+      "boxes": [],
+      "result": {
+        "candidateLabel": null,
+        "candidateScore": null,
+        "finalLabel": null,
+        "finalScore": null,
+        "finalSource": null,
+        "classifiedDetections": 0,
+        "totalDetections": 0
+      },
+      "reviewIndices": [],
+      "reviewStatus": "待人工覆核",
+      "originalSHA256": "77a1bd147f6dee4ba596d3711b726a2b2cb244043587cb876bf85f3e6e8849d1",
+      "sourceURL": "https://raw.githubusercontent.com/google/cameratrapai/08ba498e833a15e95e72021c4308908e8b44709d/test_data/blank.jpg",
+      "license": "CDLA-Permissive-1.0",
+      "sourcePredictionFilepath": "../sources/test_data/blank.jpg",
+      "primaryDetectionIndex": null,
+      "rawPrimaryClassification": {},
+      "processedPrimaryClassification": {}
+    }
+  ],
+  "inferenceSource": "inference/predictions.json",
+  "inferenceSHA256": "2aa734af2f2773e44adf4a0ed629f1fb52bb19114a302c2c377aeeee0604c99e",
+  "sourceRepoCommit": "08ba498e833a15e95e72021c4308908e8b44709d",
+  "displayDetectionThreshold": 0.1,
+  "geographySupplied": false,
+  "humanSpeciesReviewCompleted": false,
+  "note": "Raw inference is preserved. Display translates labels and rounds scores only. No generated photographs, authored boxes or invented model scores."
+}

@@ -1,0 +1,159 @@
+/* Palette adapter for the approved atlas layout. Images and geometry remain owned by v07. */
+html:has(> body.home-atlas-page) {
+  --atlas-paper: #f3f0e8;
+  --atlas-paper-next: #eef0e7;
+  --atlas-paper-third: #f0ede5;
+  --atlas-ink: #26332f;
+  --atlas-muted: #5b6a60;
+  --atlas-accent: #526f61;
+  --atlas-line: #9ca99e;
+  --atlas-scroll: #8a978d;
+  --atlas-overlay: rgba(243, 240, 232, .94);
+  --atlas-overlay-strong: rgba(243, 240, 232, .96);
+  --atlas-overlay-landscape: rgba(243, 240, 232, .95);
+  --atlas-status-ground: #f3f0e8;
+  --atlas-error-ink: #813f27;
+  --atlas-scheme: light;
+  --atlas-button-ground: var(--atlas-ink);
+  --atlas-button-ink: var(--atlas-paper);
+  --atlas-button-hover-ground: var(--atlas-accent);
+  --atlas-button-hover-ink: var(--atlas-paper);
+  --atlas-disabled-ink: var(--atlas-muted);
+  --atlas-focus: var(--atlas-accent);
+  --atlas-selection-ground: var(--atlas-accent);
+  --atlas-selection-ink: #ffffff;
+  background: var(--atlas-paper);
+  color-scheme: var(--atlas-scheme);
+  scrollbar-color: var(--atlas-scroll) var(--atlas-paper);
+}
+html[data-theme="dark"]:has(> body.home-atlas-page) {
+  --atlas-paper: #17191a;
+  --atlas-paper-next: #1b1e1f;
+  --atlas-paper-third: #202325;
+  --atlas-ink: #f0eee7;
+  --atlas-muted: #b9bdbb;
+  --atlas-accent: #cdbb95;
+  --atlas-line: #7a8382;
+  --atlas-scroll: #858e8c;
+  --atlas-overlay: rgba(23, 25, 26, .94);
+  --atlas-overlay-strong: rgba(23, 25, 26, .96);
+  --atlas-overlay-landscape: rgba(23, 25, 26, .95);
+  --atlas-status-ground: #292d2f;
+  --atlas-error-ink: #edc2a5;
+  --atlas-scheme: dark;
+  --atlas-selection-ink: #17191a;
+}
+
+/* These aliases intentionally beat the older catalog-theme.css root aliases. */
+body.home-atlas-page {
+  --paper: var(--atlas-paper);
+  --paper-next: var(--atlas-paper-next);
+  --paper-third: var(--atlas-paper-third);
+  --ink: var(--atlas-ink);
+  --muted: var(--atlas-muted);
+  --accent: var(--atlas-accent);
+  --line: var(--atlas-line);
+  color: var(--atlas-ink);
+  background: var(--atlas-paper);
+  color-scheme: var(--atlas-scheme);
+  caret-color: var(--atlas-ink);
+  scrollbar-color: var(--atlas-scroll) var(--atlas-paper);
+}
+body.home-atlas-page ::selection {
+  background: var(--atlas-selection-ground);
+  color: var(--atlas-selection-ink);
+}
+body.home-atlas-page .site-header,
+body.home-atlas-page .field-backgrounds,
+body.home-atlas-page .environment-layer { background: var(--atlas-paper); }
+body.home-atlas-page .topic-stage { background: var(--atlas-paper); }
+body.home-atlas-page .gallery-topic .topic-stage { background: var(--atlas-paper-next); }
+body.home-atlas-page #topic-03 .topic-stage { background: var(--atlas-paper-third); }
+body.home-atlas-page .topic-title,
+body.home-atlas-page .brand { color: var(--atlas-ink); }
+body.home-atlas-page .site-header nav a,
+body.home-atlas-page .selection-status,
+body.home-atlas-page .topic-footer { color: var(--atlas-muted); }
+body.home-atlas-page .site-header nav a[aria-current],
+body.home-atlas-page .site-header nav a:hover,
+body.home-atlas-page .topic-footer > a,
+body.home-atlas-page .reset-selection,
+body.home-atlas-page .fallback-links a,
+body.home-atlas-page .case-choice { color: var(--atlas-ink); }
+body.home-atlas-page .case-choice:hover,
+body.home-atlas-page .fallback-links a:hover,
+body.home-atlas-page .topic-footer > a:hover { color: var(--atlas-accent); }
+body.home-atlas-page .case-choice[aria-pressed="true"] {
+  color: var(--atlas-ink);
+  text-decoration-color: var(--atlas-ink);
+}
+body.home-atlas-page .reset-selection:disabled,
+body.home-atlas-page .case-choice:disabled {
+  color: var(--atlas-disabled-ink);
+  opacity: 1;
+}
+body.home-atlas-page .read-case,
+body.home-atlas-page .skip-link {
+  background: var(--atlas-button-ground);
+  color: var(--atlas-button-ink);
+}
+body.home-atlas-page .read-case:hover {
+  background: var(--atlas-button-hover-ground);
+  color: var(--atlas-button-hover-ink);
+}
+body.home-atlas-page :is(a, button):focus-visible { outline-color: var(--atlas-focus); }
+body.home-atlas-page .selection-guide path { stroke: var(--atlas-accent); }
+body.home-atlas-page .field-stage.has-environment .topic-panel,
+body.home-atlas-page .field-stage.has-environment .topic-footer { background: var(--atlas-overlay); }
+body.home-atlas-page .asset-button.is-micro-inset { background: var(--atlas-overlay-strong); }
+body.home-atlas-page .micro-label {
+  background: var(--atlas-paper);
+  color: var(--atlas-ink);
+}
+body.home-atlas-page .asset-status {
+  background: var(--atlas-status-ground);
+  color: var(--atlas-ink);
+}
+body.home-atlas-page .asset-status:has(#retry-assets:not([hidden])) { color: var(--atlas-error-ink); }
+body.home-atlas-page .asset-status button { color: var(--atlas-ink); }
+body.home-atlas-page .asset-status button:hover { color: var(--atlas-accent); }
+
+@media (max-width: 900px) {
+  body.home-atlas-page .gallery-topic .topic-panel { background: var(--atlas-paper-next); }
+  body.home-atlas-page .gallery-topic#topic-03 .topic-panel { background: var(--atlas-paper-third); }
+  body.home-atlas-page .field-stage .topic-panel,
+  body.home-atlas-page .field-stage.has-environment .topic-panel { background: var(--atlas-paper); }
+  body.home-atlas-page .field-stage .topic-footer,
+  body.home-atlas-page .field-stage.has-environment .topic-footer { background: var(--atlas-overlay-strong); }
+}
+@media (max-width: 900px) and (max-height: 560px) and (orientation: landscape) {
+  body.home-atlas-page .gallery-topic .topic-panel,
+  body.home-atlas-page .gallery-topic#topic-03 .topic-panel,
+  body.home-atlas-page .field-stage .topic-panel { background: transparent; }
+  body.home-atlas-page .field-stage.has-environment .topic-panel { background: var(--atlas-overlay-landscape); }
+}
+@media print {
+  html:has(> body.home-atlas-page),
+  html[data-theme="dark"]:has(> body.home-atlas-page) {
+    --atlas-paper: #ffffff;
+    --atlas-paper-next: #ffffff;
+    --atlas-paper-third: #ffffff;
+    --atlas-ink: #242829;
+    --atlas-muted: #50585a;
+    --atlas-accent: #465f70;
+    --atlas-line: #929c9d;
+    --atlas-overlay: #ffffff;
+    --atlas-overlay-strong: #ffffff;
+    --atlas-overlay-landscape: #ffffff;
+    --atlas-status-ground: #ffffff;
+    --atlas-error-ink: #242829;
+    --atlas-scheme: light;
+    color-scheme: light !important;
+    background: #ffffff !important;
+  }
+  body.home-atlas-page { background: #ffffff !important; color: var(--atlas-ink); }
+  body.home-atlas-page .topic-stage,
+  body.home-atlas-page .field-stage.has-environment .topic-panel,
+  body.home-atlas-page .topic-footer,
+  body.home-atlas-page .field-stage.has-environment .topic-footer { background: transparent !important; }
+}

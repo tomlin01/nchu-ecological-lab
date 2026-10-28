@@ -1,0 +1,214 @@
+{
+  "case_id": "02-01",
+  "version": "web-hybrid-v01",
+  "status": "user_authorized_local_integration_browser_qa_by_root",
+  "accepted_animation": "hybrid-v01",
+  "duration_seconds": 60,
+  "accepted_runtime_sha256": {
+    "app.bundle.js": "1814908a8fc7e7ea1d8691564cac09451e08694673074f67851744a0f81d0f07",
+    "index.html": "6a0d2fb7c6063b73b2810e16bd2cb4ac6a6fc75f4a0c8f2c3a767814449bb127",
+    "provenance.json": "09dfdf017307bb802af62e7c4d88a7b359cfc1e9f9c60b4f2bfb2bd2020452f0",
+    "style.css": "1b0e10f8b8224c48e0a5b8f17a31d85e7d6141555721dfd7ce758ca459d6062e",
+    "build-runtime.json": "edf2c2657e971e80ca9ae6ecb3e846885f734c502a8e270afa6838ca51f887a7",
+    "LICENSES.txt": "94764b7571f7202253c84084e7ac418251be171e15e03b1752deea4c84b2013f",
+    "fonts/case-sans.woff2": "97efee598cbb1293aacc82a8ecde20cd04aadfbb8fa0771f519efeb0a2e4f9f9",
+    "fonts/case-serif.woff2": "cf46c4481500c3c6ea7303c7b931ae3e66b47dc2fcd4fee73ae99aaf4a233489",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/inference-provenance.json": "eb9230c9f61439e10ee69e5f32f68584ae6b2222c321ec0c64cabe46a0a0636c",
+    "assets/blank.jpg": "77a1bd147f6dee4ba596d3711b726a2b2cb244043587cb876bf85f3e6e8849d1",
+    "assets/display-data.json": "dab9666b34b85eaff3b5944bdf39c64fd72500a22d1290667ab8417bf5f74f2a",
+    "assets/ocelot.jpg": "6facb7a54a739767ba639a37097737ce2f903e8504a516255ffe1f9a82e32e6e",
+    "assets/american_black_bear.jpg": "49cae6c6be95198c6d1c0ae50f4589372dc01a606951a22841a6939ff9d0cd17",
+    "assets/cdla-permissive-1.0.html": "7aa95c1c9582f9b0c1696ca80db11ed3329d30bc580147d41aa68c9c681ccd83",
+    "assets/official-image-credits.md": "f76472d356814c752370ae09340af728a8d00346f9ba204a79b321042b9091ef",
+    "assets/african_elephants.jpg": "19cd899b473d99fc855bc34369a55860d3b15780c65d42b7b57585fd24d81402",
+    "assets/predictions.json": "2aa734af2f2773e44adf4a0ed629f1fb52bb19114a302c2c377aeeee0604c99e",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "copied_docs_amended": {
+    "README.md": {
+      "before_sha256": "801290092789c613edeeeeb9c717bdc027dcd6dbfd00079974f8aa86cece7775",
+      "after_sha256": "35de2a713ae39fd4ab3b100817c091b5b60ed7ee037c698c0d3d5d3e5340c7d3"
+    },
+    "SOURCE.md": {
+      "before_sha256": "46e1d761290eb0e06c48261c471ec2a50f2fda66c58f31c8c93e04d0d46958c9",
+      "after_sha256": "d80b826d1439a3655d64999af8472f91e752c1bbe0d1c8cd22a61874493fbf2f"
+    },
+    "manifest.json": {
+      "before_sha256": "edac39b0f2e3ec92250abdc953e4fedb5d4ba5fa9b93dba3cc7530f21eae9eff",
+      "after_sha256": "0eee4d8c30544028c0c9d92b63d3a316e4c45f518f83b9623a3c44a386a79330"
+    }
+  },
+  "main_visual": "Previous generated hero/background bytes retained; real method photos are separately credited.",
+  "method_fresh_inference": true,
+  "human_species_review_completed": false,
+  "individual_tracking": false,
+  "original_case": {
+    "id": "02-01",
+    "name": "SpeciesNet／Wildlife Insights：相機陷阱的跨地區物種初篩",
+    "year": "2019起平台使用；2025開源；2026部署回顧",
+    "context": "WWF秘魯Tahuamanu森林相機調查，以及美國Idaho等大型相機網絡，每年需處理大量哺乳類與鳥類照片。",
+    "ai_role": "深度學習分類器配合MegaDetector定位動物，產生物種或較高階分類標籤及信心分數，供人員優先檢閱。約2,500個輸出類別含高階分類群與非動物類，不能全稱為2,500種物種。",
+    "outputs": "照片中的動物位置、候選分類標籤及信心分數；再連結相機地點與拍攝時間，形成經覆核的物種觀測表。",
+    "demonstrated": "WWF官方報告已將秘魯136台相機的影像交由Wildlife Insights／SpeciesNet處理。Google的2026回顧另確認Idaho將模型納入既有工作流程，以物種初篩加速最後的人工核對。",
+    "stage": "operational",
+    "stage_detail": "已在保育機構的平台與實際調查流程使用；2025是開源年份，不是首次部署年份。部署證據來自使用者WWF及開發者Google。",
+    "limits": "分類分數不是現地出現率或族群密度；罕見、遮蔽及地區訓練不足物種須特別覆核。照片初篩本身也不完成個體辨識或獨立個體計數。",
+    "sources": [
+      {
+        "title": "Using the power of AI to identify and track species",
+        "url": "https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/",
+        "year": "2025",
+        "type": "官方實作報告",
+        "access": "官方網頁",
+        "supports": "WWF作為實際使用機構，說明2019起平台使用、2025開源，以及秘魯136台相機與樹冠橋監測場景。"
+      },
+      {
+        "title": "Where wild things roam: Identifying wildlife with SpeciesNet",
+        "url": "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/",
+        "year": "2026",
+        "type": "官方實作報告",
+        "access": "官方網頁",
+        "supports": "2026-03-06開發團隊回顧；模型類別、與MegaDetector整合及Idaho人機核對工作流程。"
+      }
+    ]
+  },
+  "previous_page_provenance": {
+    "case_id": "02-01",
+    "version": "web-v01",
+    "status": "website_ready_for_review",
+    "accepted_animation": "prototype-v01",
+    "duration_seconds": 60,
+    "animation_original_files": {
+      "LICENSES.txt": "88c81b89c99f618d1135b5bde440c5f06024b1e396a5b7b252322eda2ae645b8",
+      "PHOTO_PROMPTS.md": "96b9679c2b7ee60c59858e87608a4696888a5c1f9ddd8fad447f35ba6cff8bb4",
+      "README.md": "233d8e2db7521dc7df3dd346a23c9a9fdeee18feb7289499840c34141a9ed85c",
+      "app.js": "b568e44f7a4c3060bbbd0330203f3fd5617c6ae043aec4e78e6c9c43e31c4d8e",
+      "assets/clear-jaguar.webp": "8063dae610eaf9d03e7f5dfe9506bb4da973de06de36094272da67a7fcad1291",
+      "assets/empty-forest.webp": "4512a43e8b0708baccc7312bc11b584ad2131e0851028ea26b4315ba6a610420",
+      "assets/generation-provenance.json": "73788bceb733b0284ac2eeb79f90815e62a049a4746f6d7effcfde5c8e5ab465",
+      "assets/geometry.json": "a7759895e1552761834ff5f8c0c13da1a221f1445d652dec745d7af4c75acde9",
+      "assets/night-tapir.webp": "d73b9446e6552997bddcc6a5548acee636027be2b6b93db0df4c8a9a8efd6e02",
+      "assets/occluded-cat.webp": "ea63ecdfb7c16a6d668a5e8a9ca341e2a2a324ef62ff2568aca63410d3e3bc11",
+      "data.js": "ffd7a283f8d38e80c11b116352f81c97a342a99d318ba49cd76fb26823e09838",
+      "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "fonts/case-sans.woff2": "6e9f83c79c74b8eea39c2b4a34f89de884b662650e5deaa593fab37784869431",
+      "fonts/case-serif.woff2": "6a1edf832bcf29eaf0ca2ae896b22bf4901c4a7000beeefff1fbc48426c85325",
+      "index.html": "cd55180e06b4868c9a74e1684e19291f08d4b3bd47f517dec593e8d4dec6f3a5",
+      "manifest.json": "c010d5f51fc3e8fa94f5819509b73b17365ebe6dfa02a6d9d7e552e11ceb517c",
+      "provenance.json": "0cb7ba4b016a531ab6c7f530cd0017b5db1cabca61def923216d6c219d166bab",
+      "style.css": "5784f5ae7a07b92eae464e47af28035e257be92d7460dece067f8655935a6a71",
+      "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "images": {
+      "02-01-jaguar-main.webp": "8063dae610eaf9d03e7f5dfe9506bb4da973de06de36094272da67a7fcad1291",
+      "02-01-forest-bg.webp": "4512a43e8b0708baccc7312bc11b584ad2131e0851028ea26b4315ba6a610420",
+      "occluded-cat.webp": "ea63ecdfb7c16a6d668a5e8a9ca341e2a2a324ef62ff2568aca63410d3e3bc11",
+      "night-tapir.webp": "d73b9446e6552997bddcc6a5548acee636027be2b6b93db0df4c8a9a8efd6e02"
+    },
+    "image_generation": "previously generated using built-in imagegen; no new image generation in website build",
+    "embed_changes": "Additional wrapper HTML/CSS/JS only; original 20 animation files copied without changes.",
+    "fonts": [
+      {
+        "file": "fonts/case-sans.woff2",
+        "characters": 606,
+        "missing": [],
+        "bytes": 198804
+      },
+      {
+        "file": "fonts/case-serif.woff2",
+        "characters": 606,
+        "missing": [],
+        "bytes": 268096
+      }
+    ],
+    "original_case": {
+      "id": "02-01",
+      "name": "SpeciesNet／Wildlife Insights：相機陷阱的跨地區物種初篩",
+      "year": "2019起平台使用；2025開源；2026部署回顧",
+      "context": "WWF秘魯Tahuamanu森林相機調查，以及美國Idaho等大型相機網絡，每年需處理大量哺乳類與鳥類照片。",
+      "ai_role": "深度學習分類器配合MegaDetector定位動物，產生物種或較高階分類標籤及信心分數，供人員優先檢閱。約2,500個輸出類別含高階分類群與非動物類，不能全稱為2,500種物種。",
+      "outputs": "照片中的動物位置、候選分類標籤及信心分數；再連結相機地點與拍攝時間，形成經覆核的物種觀測表。",
+      "demonstrated": "WWF官方報告已將秘魯136台相機的影像交由Wildlife Insights／SpeciesNet處理。Google的2026回顧另確認Idaho將模型納入既有工作流程，以物種初篩加速最後的人工核對。",
+      "stage": "operational",
+      "stage_detail": "已在保育機構的平台與實際調查流程使用；2025是開源年份，不是首次部署年份。部署證據來自使用者WWF及開發者Google。",
+      "limits": "分類分數不是現地出現率或族群密度；罕見、遮蔽及地區訓練不足物種須特別覆核。照片初篩本身也不完成個體辨識或獨立個體計數。",
+      "sources": [
+        {
+          "title": "Using the power of AI to identify and track species",
+          "url": "https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/",
+          "year": "2025",
+          "type": "官方實作報告",
+          "access": "官方網頁",
+          "supports": "WWF作為實際使用機構，說明2019起平台使用、2025開源，以及秘魯136台相機與樹冠橋監測場景。"
+        },
+        {
+          "title": "Where wild things roam: Identifying wildlife with SpeciesNet",
+          "url": "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/",
+          "year": "2026",
+          "type": "官方實作報告",
+          "access": "官方網頁",
+          "supports": "2026-03-06開發團隊回顧；模型類別、與MegaDetector整合及Idaho人機核對工作流程。"
+        }
+      ]
+    },
+    "candidate_home_href": "../../../../ecology-ai-site-v01/index.html#topic-02",
+    "integrated_home_href": "../../index.html#topic-02"
+  },
+  "wrapper_files": [
+    "animation-hybrid/embed.html",
+    "animation-hybrid/embed.css",
+    "animation-hybrid/embed.js",
+    "hybrid.css",
+    "font-supplement.css"
+  ],
+  "parent_controller": "case.js byte-identical; reading mode keeps the same iframe in place",
+  "source_dialog_adapter": "Embedded source actions open complete original JPEG in a new tab; standalone modal unchanged.",
+  "fonts": [
+    {
+      "file": "fonts/hybrid-parent-sans.woff2",
+      "characters": 615,
+      "missing": [],
+      "sha256": "1b62c6ee5ada6b326ed7b90c32e2c5387e5780ed00ea48c6dfb73842ba8d0d72"
+    },
+    {
+      "file": "fonts/hybrid-parent-serif.woff2",
+      "characters": 615,
+      "missing": [],
+      "sha256": "5066d5e6713e2cd00ae2491f967dfdd4cd4cb24ef2e5c6bd6344abc86fd9bd94"
+    }
+  ],
+  "browser_verified_here": false,
+  "copy_edit_revision": {
+    "revision": "copy-review-02-v01",
+    "scope": "Website editorial text and parent-page animation transcript only",
+    "skill": "humanizer, adapted to Traditional Chinese science communication",
+    "before_html_sha256": "3377389837c2030b42089d0355a19a8e9b09fe4872f0a81b31155eb643765ab3",
+    "animation_runtime_and_media_unchanged": true,
+    "original_notes_and_research_json_unchanged": true,
+    "layout_and_controllers_unchanged": true,
+    "new_font_files_only": true,
+    "scientific_review_status_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/copy-review-02-v01/verification.json",
+    "main_site_integrated": true,
+    "browser_verification": "work/ecology-ai-rollout/copy-review-02-v01/browser-verification.json"
+  },
+  "narrative_revision": {
+    "version": "copy-edit-v02",
+    "plan": "outputs/ecology-ai-rollout/copy-plan-02-v02/topic-02-revision-plan.md",
+    "user_instruction": "好，你一起修改",
+    "approved_items": 10,
+    "scope": "Titles, prose ordering, concrete explanations and technical-detail disclosure",
+    "before_html_sha256": "227da0a3f1da7485945ebb43cb627ff1573deef864985619e2ced4e0806fb6bc",
+    "media_runtime_and_control_css_unchanged": true,
+    "scientific_status_unchanged": true,
+    "new_inference": false,
+    "full_playback_rerun": false,
+    "verification": "work/ecology-ai-rollout/copy-review-02-v02/verification.json",
+    "title_type_adjustment": null,
+    "status": "implemented_local_verified",
+    "browser_checks": 211
+  }
+}

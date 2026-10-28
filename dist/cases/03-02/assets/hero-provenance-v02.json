@@ -1,0 +1,18 @@
+{
+  "revision": "hero-v02",
+  "kind": "AI-generated conceptual hero",
+  "tool": "built-in imagegen",
+  "generated_original": "outputs/ecology-ai-rollout-assets/03-02/hero-v02/03-02-siberian-jay-hero-v02.png",
+  "prompt": "outputs/ecology-ai-rollout-assets/03-02/hero-v02/03-02-siberian-jay-hero-v02-prompt.md",
+  "source_images_supplied": false,
+  "research_frames_modified": false,
+  "width": 1672,
+  "height": 941,
+  "source_png_sha256": "58a10a1c0ff032d4d51b5d48d74896710347fd6a478525b7e808d5031b2ca7c0",
+  "display_file": "assets/03-02-siberian-jay-hero-v02.webp",
+  "display_sha256": "6af57fc78696259df5e2308f85bd72e856dbd1aa66b25c321084d4bf3cb638b8",
+  "display_operations": [
+    "WebP encoding only"
+  ],
+  "disclosure": "AI 生成情境主圖；不是研究現場或影片停格"
+}

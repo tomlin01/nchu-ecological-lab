@@ -1,0 +1,22 @@
+{
+  "case_id": "04-04",
+  "version": "web-embed-v01",
+  "entry": "embed.html",
+  "accepted_animation": "prototype-v01",
+  "accepted_manifest_sha256": "7ccf83b5d852bee3bc1d220eba80c048b107661c5b9ffd243de0114e52b9b1d1",
+  "scope": "Embedding additions only; all 24 accepted standalone files are unchanged.",
+  "files": {
+    "embed.html": {
+      "bytes": 13967,
+      "sha256": "aad7fd89f3903fa6d485917845ffe3616b4e3d538129ca0452cedf08cf4543c5"
+    },
+    "embed.js": {
+      "bytes": 7187,
+      "sha256": "378193397b4fbea8db870ec9f61cefc11509d2a86ed345fc4d0d826f39ca0062"
+    },
+    "embed.css": {
+      "bytes": 792,
+      "sha256": "120495e33fd48880e74e3fffdd325c0317c428373ad7d5b646f8dc5d8ed44f1d"
+    }
+  }
+}

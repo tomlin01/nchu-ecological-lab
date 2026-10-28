@@ -1,0 +1,341 @@
+{
+  "case_id": "02-03",
+  "version": "copy-edit-v02",
+  "status": "website_ready_for_review",
+  "files": {
+    "02-03.html": {
+      "bytes": 24371,
+      "sha256": "71bf9b6df274416312994522f47fbc2359487d4a8c00a2c61fea78e6f81268eb"
+    },
+    "README.md": {
+      "bytes": 604,
+      "sha256": "d8c4065273d9210eccb0e6ae96f29c46e66341aee0f6ca756c75df236398f50f"
+    },
+    "SOURCE.md": {
+      "bytes": 1070,
+      "sha256": "cf639e72ffda72bf2113dfc257bd2c0685520bf736ffcdf86005c51475c79bbe"
+    },
+    "animation/README.md": {
+      "bytes": 1177,
+      "sha256": "317966371aa096510f2e3d3bb90cafcecf3f3880528703d18caa352a7ad4ce02"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 5521,
+      "sha256": "656aa36b54f9783260c3078a18a304e76888a18f842ad902a5ba6d6d2b5c7f05"
+    },
+    "animation/app.bundle.js": {
+      "bytes": 26283,
+      "sha256": "1b869be26dad258f7a84a83670f00c862a036b1400508ebbd572a3a6c697c397"
+    },
+    "animation/assets/audio-provenance.json": {
+      "bytes": 5269,
+      "sha256": "3525e7aa687d7f4e663eed38cc053a00cad009a8504037fff044d1e2fccfdd97"
+    },
+    "animation/assets/axis-mapping.json": {
+      "bytes": 2552,
+      "sha256": "066b977ba79cdcd96194aaeb4087ffab6a72dbb2e8e9f9764cd009e2572a67ab"
+    },
+    "animation/assets/biotwang-google-original.wav": {
+      "bytes": 240044,
+      "sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7"
+    },
+    "animation/assets/spectrogram-low-frequency-only.png": {
+      "bytes": 142459,
+      "sha256": "77572e27780936a3ed2086ef37a197344e787339f2573f63ee55934343183bef"
+    },
+    "animation/assets/spectrogram-low-frequency.png": {
+      "bytes": 189395,
+      "sha256": "f3dbdfe215e8ac33d5e4c12e51dde8b544f46df5132326aabb33ebb449b276c7"
+    },
+    "animation/assets/spectrogram-only.png": {
+      "bytes": 325868,
+      "sha256": "6b6553515211d2a9427f77cf45177802c6308a3dcdcb5417c53e36b1530cb61f"
+    },
+    "animation/assets/spectrogram.png": {
+      "bytes": 445911,
+      "sha256": "e2ee0173803725f03ccf8bbee05d33a0e4add44ac9fc89ca3e91abe3773df8a6"
+    },
+    "animation/assets/waveform.json": {
+      "bytes": 239709,
+      "sha256": "556cba110c3cac9f8ff96defeccf9704ce065436cf18295a77d1579d65acb12e"
+    },
+    "animation/build-runtime.json": {
+      "bytes": 1965,
+      "sha256": "fd4d647167729b97127e6d12e5fb2adfe9f87b9451035dbba545ca9ad7b3f438"
+    },
+    "animation/embed.css": {
+      "bytes": 2272,
+      "sha256": "77e0b0128987818469d3770f09fac10ca485fd9a92bb3717bc23b09f77441a4b"
+    },
+    "animation/embed.html": {
+      "bytes": 14341,
+      "sha256": "e488a68976599ccd9e1ac9ffb1f72b5376290815661d9d1253fcdc250521cb08"
+    },
+    "animation/embed.js": {
+      "bytes": 3260,
+      "sha256": "e21c608b73df4f0cd349f9c6cfc10159bd838f41e35d6441630706a3425ad29d"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/case-sans.woff2": {
+      "bytes": 151044,
+      "sha256": "e412e29618f1f87c5d5135e207e70a4f51f651b9aa878c22bb08d8984226d20c"
+    },
+    "animation/fonts/case-serif.woff2": {
+      "bytes": 200900,
+      "sha256": "1966eef0283af6af3602df7d4ef640efec2d06ebab9b0429ca6c2fc2f3c2b58f"
+    },
+    "animation/index.html": {
+      "bytes": 14013,
+      "sha256": "7a16cc6eecd6bdc79d70d9e91467588663d9cd528b5fbac370892d532f33e2f8"
+    },
+    "animation/manifest.json": {
+      "bytes": 5399,
+      "sha256": "cbfd1fe6e7921bb6c1c1d8b9a064b59ad194a418928481d575bdf5a7d8d71284"
+    },
+    "animation/style.css": {
+      "bytes": 12584,
+      "sha256": "c7dec0e416bd4999df7107567395f7f85dc2903985d072b40d171ec62366b9b1"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/verification.json": {
+      "bytes": 25689,
+      "sha256": "07772e8db65eeddf6b89d75f4ec06329f84c3b329a0dae7eb1c82710c246f9f2"
+    },
+    "assets/brydes-whale-mariana-noaa-original.JPG": {
+      "bytes": 5967231,
+      "sha256": "a0046e7472df67e45277751b71b50018005a38fbaf08f33a8a43b16ce8ea67d7"
+    },
+    "assets/paper-figure-1.webp": {
+      "bytes": 540958,
+      "sha256": "13e6da35a2dba5cfc8fd7251b35095cc87315a75c6349fe5919a3236f2b1917b"
+    },
+    "assets/paper-figure-3.webp": {
+      "bytes": 442658,
+      "sha256": "1e8243f3b79a5d13190a1b817d3475749baf15be2ed271cf1ba632e761a52f48"
+    },
+    "case.css": {
+      "bytes": 17705,
+      "sha256": "a82ddc4ac977e8eb5833f9c280fe860a05e576dca3c41579506fc40753372c3d"
+    },
+    "case.js": {
+      "bytes": 8080,
+      "sha256": "a37576141e8b7d4528ce3b8c53e942a0159bc4ff8154c39ec79395f598efa353"
+    },
+    "content-review.md": {
+      "bytes": 10409,
+      "sha256": "aa838b9059576af63560b851e828126cbe201427641e8557e140d8f65e11a9b3"
+    },
+    "copy-deck-v02.md": {
+      "bytes": 10112,
+      "sha256": "e023050167cf1b6b7fa1dfb4f217c8642d66717a464e3683c92bc36e5eebe40c"
+    },
+    "copy-deck.md": {
+      "bytes": 9797,
+      "sha256": "2025689ec335e190d9c8cdbdeec6d517e4670bcf8a81309efa0cb98201a1d6cd"
+    },
+    "copy-edit-notes.md": {
+      "bytes": 5587,
+      "sha256": "d5ee300b1028e91eb878dd198ab00d930477cc5b03c253442d3af266f27ead14"
+    },
+    "copy-fonts.css": {
+      "bytes": 298,
+      "sha256": "1b712135536446fa135ec91ba04ab77b0d4c14b708368bfa437e6d80edaf8514"
+    },
+    "copy-v02-fonts.css": {
+      "bytes": 381,
+      "sha256": "9fa512d77b4d97f99c6c2791caba163e5d283d6370fb2ab06cc205e53dda06ec"
+    },
+    "copy-verification.json": {
+      "bytes": 599,
+      "sha256": "3e13bbca4142d7e1694ee22d40e346a150013409f6481846433e186987422ecb"
+    },
+    "design-notes.md": {
+      "bytes": 2440,
+      "sha256": "1903c7ee92ad1f5af9b12b589d59a424a26771e00657fd17a17b16f273333c44"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 195748,
+      "sha256": "9d90a41c91e2fb9a1aa000fef5ffec46d2f8b397fc115472918aa04cb72a1da0"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 264624,
+      "sha256": "b96833f0a9f40847feb1e9dfa757424287cc3f3f18125525943a54a1f3300e53"
+    },
+    "fonts/copy-parent-sans.woff2": {
+      "bytes": 201576,
+      "sha256": "944a3cd3894e7eb8ae6e95fb4d5ebf896b8cb032f45d78ace814a573f4343b89"
+    },
+    "fonts/copy-parent-serif.woff2": {
+      "bytes": 272252,
+      "sha256": "0d7ae15c4e97935149f6a5191a1f133cf8fb3c300251e5210b419c407297a522"
+    },
+    "fonts/copy-v02-sans.woff2": {
+      "bytes": 166588,
+      "sha256": "423eff5cc9e1a51541b810fe418f81279fb977927025feeacd9c406978f3d702"
+    },
+    "fonts/copy-v02-serif.woff2": {
+      "bytes": 221464,
+      "sha256": "f56ca293d475562498d9365e33e3c55bc9d4cd588e1144a08e9e5eac9506cff5"
+    },
+    "index.html": {
+      "bytes": 490,
+      "sha256": "1ba694d3e8e59f02cd4976edf60956df6f9d09cd5a247401d00dbd9f849c4b18"
+    },
+    "narrative-implementation.md": {
+      "bytes": 4918,
+      "sha256": "d9015ce32fbb8075afc5af732c0c8508b190ef2b1518e033932f7bbd8b093441"
+    },
+    "narrative-verification.json": {
+      "bytes": 1185,
+      "sha256": "590d15eda85b72eb667f00ae4cb97eb2f8ccf859483459d60890237e29b1b704"
+    },
+    "natural-history.css": {
+      "bytes": 4119,
+      "sha256": "795d175f5f67ec9e79add65f8c830ff089a2607c6856bcd5b0da5a3b4f7eb0b5"
+    },
+    "previous-website-verification.json": {
+      "bytes": 12393,
+      "sha256": "bd32369574f88a6c64c56bc9b0a932970fc717e675075b30917ca7efe17f2404"
+    },
+    "provenance.json": {
+      "bytes": 9704,
+      "sha256": "2d19e101590975d06be7102c249dc02da2ff78066716343860bf51b191391736"
+    },
+    "static-checks.json": {
+      "bytes": 1405,
+      "sha256": "c6bfab6458f70116f26c971a1445e57e3c15652750374737f5d8dba54af96a6d"
+    },
+    "topic-entry-verification.json": {
+      "bytes": 1642,
+      "sha256": "a11757742390d22c381e5402801a721cf818e07245da79146511afe1f7609560"
+    },
+    "ui-provenance.json": {
+      "bytes": 3057,
+      "sha256": "3a3b855bd39dc3297ef6b58d6513f034a5e319e83034c3b962c2272c1587f253"
+    },
+    "ui-verification.json": {
+      "bytes": 3491,
+      "sha256": "aa75a4925cece6a9614e55ad130925d6e5661c939562e4db79b3afca466c73b6"
+    },
+    "verification.json": {
+      "bytes": 12393,
+      "sha256": "bd32369574f88a6c64c56bc9b0a932970fc717e675075b30917ca7efe17f2404"
+    }
+  },
+  "local_integration": {
+    "entry": "02-03.html",
+    "home_href": "../../index.html#topic-02",
+    "public_deployment": false,
+    "website_user_review": "pending"
+  },
+  "verification": "verification.json",
+  "visual_revision": "full-bleed-ocean-v02",
+  "entry": "02-03.html",
+  "copy_edit_revision": {
+    "revision": "copy-review-02-v01",
+    "scope": "Website editorial text and parent-page animation transcript only",
+    "skill": "humanizer, adapted to Traditional Chinese science communication",
+    "before_html_sha256": "0d8bd0bd671096b91c50fcf1a79fbb5a7086f10b7ea60e5788cb94a07e4717e8",
+    "animation_runtime_and_media_unchanged": true,
+    "original_notes_and_research_json_unchanged": true,
+    "layout_and_controllers_unchanged": true,
+    "new_font_files_only": true,
+    "scientific_review_status_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/copy-review-02-v01/verification.json"
+  },
+  "narrative_revision": "copy-review-02-v02",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "02-03.html",
+  "topic_entry": "index.html#topic-02",
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": true,
+    "static_only": false,
+    "content_and_animation_unchanged": true
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical.",
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

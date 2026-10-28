@@ -1,0 +1,12 @@
+/* Host-page chrome lives outside this iframe; accepted film and controls stay intact. */
+.embedded-behaviour .page-heading,.embedded-behaviour .reading-footer,
+.embedded-behaviour .skip-link,.embedded-behaviour #fullscreenButton{display:none}
+.embedded-behaviour .film-page{max-width:none;padding:18px 20px 20px;margin:0}
+.embedded-behaviour .chapter-nav{margin-top:20px}
+.embedded-behaviour .film-layout{gap:28px;grid-template-columns:minmax(0,7fr) minmax(210px,3fr)}
+.embedded-behaviour .chapter-story h2{font-size:25px}
+.embedded-behaviour .chapter-story p{font-size:16px}
+.embedded-behaviour.media-expanded-view .film-page{padding:22px 28px 28px}
+@media(max-width:800px){.embedded-behaviour .film-page{padding:14px 14px 18px}.embedded-behaviour .film-layout{display:flex;gap:22px}.embedded-behaviour .chapter-story h2{font-size:23px}}
+@media(max-width:500px){.embedded-behaviour .film-page{padding:10px 10px 16px}.embedded-behaviour.media-expanded-view .film-page{padding:14px}.embedded-behaviour .chapter-story p{font-size:15px}}
+@media print{.embedded-behaviour .film-page{padding:0}.embedded-behaviour .reading-footer{display:block}.embedded-behaviour .page-heading{display:block}}

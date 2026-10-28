@@ -1,0 +1,97 @@
+{
+  "case_id": "01-02",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "entry": "sperm-whale-hybrid-v01.mp4",
+  "verification": {
+    "status": "candidate_ready_for_user_review",
+    "duration_seconds": 65.55,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 60,
+    "frames": 3933,
+    "core_frame_comparison": {
+      "compared_frames": 2853,
+      "all_frames_stats": "work/ecology-ai-rollout/cases/01-02/hybrid-v01/media/core-ssim.txt",
+      "source_indices": [
+        0,
+        1,
+        300,
+        900,
+        1426,
+        2100,
+        2750,
+        2852
+      ],
+      "output_indices": [
+        600,
+        601,
+        900,
+        1500,
+        2026,
+        2700,
+        3350,
+        3452
+      ],
+      "sample_ssim": [
+        0.999842,
+        0.999842,
+        0.999817,
+        0.999713,
+        0.999656,
+        0.999618,
+        0.999829,
+        0.99983
+      ],
+      "minimum_ssim": 0.99916,
+      "mean_ssim": 0.9997354265685243,
+      "method": "all 2853 decoded YUV frames, in order, after permitted re-encoding"
+    },
+    "audio_report": "work/ecology-ai-rollout/cases/01-02/hybrid-v01/final-audio-verification.json",
+    "audio_report_sha256": "cb898e83898a1000de4974b3a9f8aec54f8c2ce566d9e9aa76e9c51915c893bf",
+    "film_report": "work/ecology-ai-rollout/cases/01-02/hybrid-v01/film-verification.json",
+    "film_report_sha256": "3eead18fed0fe359aa6c2dad9de82962bb8601bcf4fc69056d5aa7e6b1ca5d5a",
+    "reviewed_final_frames": [
+      150,
+      360,
+      600,
+      2220,
+      3450,
+      3720
+    ],
+    "full_playback_or_human_listening_claimed": false,
+    "browser_checked": false,
+    "main_site_updated": false,
+    "external_publication": false,
+    "protected_sources_unchanged": true,
+    "final_mp4_sha256": "ec1afbf46e970e23a89bda9ece74cc5663906b58f1b92d6313052786c7feed05"
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1557,
+      "sha256": "948e782092ffbb119f477bd5e1ffb388a85603cdc8fd69d21b55c8e8c50cb401"
+    },
+    "SOURCE.md": {
+      "bytes": 2719,
+      "sha256": "56ab7fbfb3d725b5c25d52c571d2fb4bfddacdb2acc029c49ac8714cf7b73ec3"
+    },
+    "poster.jpg": {
+      "bytes": 171684,
+      "sha256": "34f1436229f2d3f7d06fb7e7559ee53693d4bd355df1f037a3f3d13d8fde8f36"
+    },
+    "provenance.json": {
+      "bytes": 3425,
+      "sha256": "3bbd10d9297105039f5c4ec1ba08098f6fe068fea1787a843159c8d4f91f7208"
+    },
+    "scene.py": {
+      "bytes": 5851,
+      "sha256": "7c8c192eb0a9abd9dbcf6b727f7326e35cc75bd7ea06f5ed5212dcdfbe9bc32e"
+    },
+    "sperm-whale-hybrid-v01.mp4": {
+      "bytes": 4612658,
+      "sha256": "ec1afbf46e970e23a89bda9ece74cc5663906b58f1b92d6313052786c7feed05"
+    }
+  }
+}

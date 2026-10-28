@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "case_id": "04-03",
+  "revision": "prototype-v02",
+  "scope": "Traditional Chinese wording and required font glyphs; MP4 regenerated with revised text",
+  "date": "2026-10-24T12:48:59.200235+00:00",
+  "browser_checks": 51,
+  "browser_errors": [],
+  "preservation": {
+    "status": "PASS",
+    "logic": [
+      "model.mjs",
+      "scene.mjs"
+    ],
+    "fonts": [
+      {
+        "file": "fish-serif.woff2",
+        "added": "些做別口叫呈嗎因圈團好實將幫忙批接據日根此直連過釋隊際非頭",
+        "old_advances_preserved": true
+      },
+      {
+        "file": "fish-sans.woff2",
+        "added": "些做別口叫呈嗎因圈團好實將幫忙批接據日根此直連過釋隊際非頭",
+        "old_advances_preserved": true
+      }
+    ],
+    "html_structure_preserved": true,
+    "external_urls_preserved": true,
+    "html_numbers_preserved": true,
+    "animation_states_checked": 2113,
+    "reduced_motion_states_checked": 2113,
+    "all_rendered_chinese_glyphs_present": true,
+    "source_document_change": "Section headings only; source-document body, URLs and numbers unchanged"
+  },
+  "prior_original_and_delivery_files_preserved": 22,
+  "prior_zip_preserved": true,
+  "source_images_and_data_unchanged": true,
+  "playback_controller_and_css_unchanged": true,
+  "animation_states_unchanged": 2113,
+  "reduced_motion_states_unchanged": 2113,
+  "video": {
+    "duration_seconds": 88,
+    "decoded_frame_count": 2112,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 5208949
+  },
+  "full_playback_basis": "Original normal 88-second playback retained; controller, state calculations and timing unchanged. New text/layout checked at five times in four viewports and both themes; MP4 decoded separately.",
+  "canonical_unchanged_files": 920,
+  "model_inference_run": false,
+  "new_fish_measurement": null,
+  "integrated": false,
+  "deployed": false,
+  "visual_review": "Updated desktop/export and phone text inspected; decoded new MP4 conclusion checked."
+}

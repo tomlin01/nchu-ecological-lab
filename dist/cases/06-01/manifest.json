@@ -1,0 +1,157 @@
+{
+  "case_id": "06-01",
+  "title": "一段DNA，怎麼認出是哪種動物？",
+  "version": "web-v01",
+  "status": "completed_local",
+  "entry": "06-01.html",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 128,
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "user_review_waived": false,
+  "model_inference_run": false,
+  "integrated": true,
+  "deployed": false,
+  "updated": "2026-10-28T01:44:04.055252+00:00",
+  "files": {
+    "06-01.html": {
+      "bytes": 18559,
+      "sha256": "df016eab07ee5013b75d50c4dac4e4301c0c1f00aea599546d39ef4817f155ad"
+    },
+    "README.md": {
+      "bytes": 2209,
+      "sha256": "b3c01cce54f9397a51096b4cc8dc302ffa179bc2e0d8e9dbe2fea7355311368d"
+    },
+    "SOURCE.md": {
+      "bytes": 3548,
+      "sha256": "f79393be7fef9ac3865424fa37314faf90f785eaaa36d70e5d57dada718e5f89"
+    },
+    "animation/README.md": {
+      "bytes": 2195,
+      "sha256": "17f65a5f6c101f5857a8fbce0311897cfd436dd78be0a7010c5d20cffc168421"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 3548,
+      "sha256": "f79393be7fef9ac3865424fa37314faf90f785eaaa36d70e5d57dada718e5f89"
+    },
+    "animation/app.mjs": {
+      "bytes": 16434,
+      "sha256": "793fd59891906066a61fc750eed687ffdb391fa585ab26ba41e5c26d586e3668"
+    },
+    "animation/assets/aedes-aegypti-cdc.jpg": {
+      "bytes": 32397,
+      "sha256": "e060b2e56905a6609af2d2592a2bc3939a49a7ffc0f7c44bd0cb1db95f35531f"
+    },
+    "animation/data/sequence-window.json": {
+      "bytes": 4018,
+      "sha256": "30a3ef679a7d85e87f1371fa5355c4845f370eb0680596f963c592ac9a5e9792"
+    },
+    "animation/dna-three.mjs": {
+      "bytes": 21160,
+      "sha256": "c01fe0ccf4960ac16398a70f6211c8c808be9bf171efb0bd1af3f90899cf7728"
+    },
+    "animation/film/06-01-deepcoi-v01.mp4": {
+      "bytes": 6300636,
+      "sha256": "19b8b5ea9758f82f008776a280946bb494e93c7353318c95541ede4fa6850995"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/coi-sans.woff2": {
+      "bytes": 137136,
+      "sha256": "0d713a70a758d89a81313ba268af66c4ec98d2a338a18f615c1631ae5df578ea"
+    },
+    "animation/fonts/coi-serif.woff2": {
+      "bytes": 182220,
+      "sha256": "4ca10669c2d4023916ab3140451660782ebdcc605f5329fa71343c7885345e4c"
+    },
+    "animation/index.html": {
+      "bytes": 13098,
+      "sha256": "09175ede4f30817dd0d2af1c1e382134312659e78e942f575a352394c0a6971f"
+    },
+    "animation/model.mjs": {
+      "bytes": 3753,
+      "sha256": "8f2b749ee528ab6553cc9a27a285d1f8d40fecfbaf7c106be0b52d49b896cb94"
+    },
+    "animation/scene.mjs": {
+      "bytes": 6797,
+      "sha256": "77d99eabdfd5d123221b7ccb6e8c92a889552a7b24b2d5da8549b7bb1aa08b4e"
+    },
+    "animation/style.css": {
+      "bytes": 19092,
+      "sha256": "e5ea2c88135923a9c1a785e244eb131192d3d8824e885772b06d210614617164"
+    },
+    "animation/vendor/LICENSE-three.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "animation/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "case.css": {
+      "bytes": 16284,
+      "sha256": "73faf5a9e206cec6941c0d311d969f263450ce2926adac4985f197fb76de17c7"
+    },
+    "case.js": {
+      "bytes": 12304,
+      "sha256": "318b22802c1d4667efe1ab6eff087c009fed5e80d5cf5d15833b170d87559191"
+    },
+    "data/sequence-window.json": {
+      "bytes": 4018,
+      "sha256": "30a3ef679a7d85e87f1371fa5355c4845f370eb0680596f963c592ac9a5e9792"
+    },
+    "dna-notes.md": {
+      "bytes": 2220,
+      "sha256": "9976c7adbcae583814deec70713bb8403f64560203de5770c5e8e0b6eb95ec76"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 134464,
+      "sha256": "fdd26f6a2146f045de2707370ea79a0b576f95e4df6b1356aef3c1a4ebe5b443"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 179524,
+      "sha256": "f46f2f1d6fb8e9b7be02f836056ea55f9fd75ed50ae613df1d24695379e13a56"
+    },
+    "hero.js": {
+      "bytes": 1138,
+      "sha256": "2ff47a86cee6e95e64caf7166cebfbaba784ba4446a106fe1a2c56e2fb69ae64"
+    },
+    "index.html": {
+      "bytes": 185,
+      "sha256": "e1eae0277d76e9e93f9ca52cef56636a21ab6376f97e7323b5ad8267a63eba2a"
+    },
+    "research-notes.md": {
+      "bytes": 14461,
+      "sha256": "17764c1c4940aae36334fd865915c39d0356893665ce3367864729e4a1f9ddcc"
+    }
+  },
+  "mp4": "animation/film/06-01-deepcoi-v01.mp4",
+  "mp4_bytes": 6300636,
+  "agent_visual_review": "SHIP",
+  "human_visual_review_completed": false,
+  "verification": "work/ecology-ai-rollout/cases/06-01/web-review-v01/verification.json",
+  "mp4_frame_count": 3072,
+  "mp4_duration_seconds": 128
+}

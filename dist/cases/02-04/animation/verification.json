@@ -1,0 +1,79 @@
+{
+  "case_id": "02-04",
+  "version": "prototype-v01",
+  "status": "PASS",
+  "delivery_state": "independent_animation_ready_for_user_review",
+  "animation_accepted": false,
+  "website_integrated": false,
+  "publicly_deployed": false,
+  "duration_seconds": 90,
+  "audio": false,
+  "static": {
+    "status": "PASS",
+    "checks": 20,
+    "evidence": "static-verification.json"
+  },
+  "browser": {
+    "status": "PASS",
+    "checks": 41,
+    "evidence": "browser-verification.json"
+  },
+  "normal_playback": {
+    "status": "PASS",
+    "elapsed_seconds": 90.501,
+    "samples": 181,
+    "all_seven_phases": true,
+    "all_five_instrument_phases": true,
+    "no_seek_during_run": true,
+    "evidence": "full-playback.json"
+  },
+  "visual_review": {
+    "status": "PASS",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile_widths": [
+      390,
+      320
+    ],
+    "reviewed": [
+      "original micrographs",
+      "pier deployment photograph",
+      "Anatomy mechanism",
+      "stored numeric classification scores",
+      "independent four-cell illustration",
+      "both original Figure 1 panels",
+      "original Figure 3 crop and legend",
+      "print fallback",
+      "no-JS fallback"
+    ],
+    "evidence_work_directory": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/02-04/prototype-v01",
+    "source_plot_limit": "Original research plot labels remain small on phones; full source image can be opened."
+  },
+  "instrument": {
+    "evidence": "instrument-validation.json",
+    "parts": 80,
+    "kit": "Anatomy",
+    "functional_illustration": true
+  },
+  "sources": {
+    "original_files_preserved": 11,
+    "new_model_inference": false,
+    "real_roi_cell_count": null,
+    "independent_micrometer_calibration": null,
+    "all_media_public_reuse_confirmed": false
+  },
+  "main_site": {
+    "unchanged_files": 458,
+    "website_accepted": 8,
+    "animation_accepted": 8,
+    "readable_pages": 9,
+    "zip_rewritten": false
+  },
+  "resolved_issues": [
+    "GSAP first-seek initialization now uses explicit fromTo start",
+    "Figure 1 caption uses supported periods instead of guessed dates",
+    "Print caption explicitly identifies its static ROI"
+  ]
+}

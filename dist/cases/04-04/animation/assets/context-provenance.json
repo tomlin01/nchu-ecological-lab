@@ -1,0 +1,9 @@
+{
+  "kind": "AI-generated illustrative botanical scene",
+  "tool": "imagegen",
+  "project_file": "leaf-context.png",
+  "sha256": "f0736bf3322fbcbf1baef3176e3a53808203eb6d9029cc6888bc1efacb99ff44",
+  "not_a_research_observation": true,
+  "no_trait_measurements": true,
+  "prompt": "context-prompt.md"
+}

@@ -1,0 +1,13 @@
+/* Parent additions only; the four-page layout and original main visual are retained. */
+.method-source-links{display:flex;flex-wrap:wrap;gap:9px 20px;margin:18px 0;font-size:16px}
+.hybrid-source-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:25px}
+.hybrid-source-gallery figure{min-width:0;break-inside:avoid}
+.hybrid-source-gallery img{width:100%;height:auto;object-fit:contain}
+.hybrid-source-gallery figcaption{font-size:16px;line-height:1.8;margin-top:12px;color:var(--muted)}
+.hybrid-source-gallery h3{font-size:21px;color:var(--ink)}
+.hybrid-source-gallery figcaption p{margin-top:8px;overflow-wrap:anywhere}
+#method-text .transcript h2{font-size:22px;line-height:1.6}
+#method-text .transcript .detail{font-size:16px;color:var(--muted);margin-top:9px}
+.photo-comparison .contact-sheet img{aspect-ratio:auto;object-fit:contain}
+@media(max-width:740px){.hybrid-source-gallery{grid-template-columns:1fr}.method-source-links{gap:10px 18px}}
+@media print{.hybrid-source-gallery{display:block}.hybrid-source-gallery figure{margin-top:18px}.hybrid-source-gallery img{max-height:150mm;object-fit:contain}.hybrid-source-gallery figcaption{font-size:10pt}}

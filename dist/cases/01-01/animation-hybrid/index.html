@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant" data-animation-case="01-01" data-animation-theme="light" data-theme="light">
+<head>
+<script src="../../../ui/animation-theme.js"></script>
+<link rel="stylesheet" href="../../../ui/theme-tokens.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="從作者保存的斑馬幀畫面，了解影像偵測、群中心、取景規則與現場人員的分工。">
+  <title>斑馬移動時，鏡頭怎麼跟上？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script><script src="app.bundle.js" defer></script>
+<link rel="stylesheet" href="../../../ui/animation-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#stage">跳至幀畫面與動畫</a>
+  <main>
+    <header class="page-heading"><p class="series">AI × 生態研究 · WildWing</p><h1>斑馬移動時，<br class="mobile-break">鏡頭怎麼跟上？</h1><p class="intro">動物一走動，就可能離開畫面。系統要反覆看位置，讓鏡頭繼續留下可分析的影像。</p></header>
+    <section class="story" aria-label="WildWing 作者保存的幀畫面與獨立教學動畫">
+      <div class="film-column">
+        <div id="stage" class="stage" tabindex="0" aria-label="作者保存的幀畫面或獨立教學圖；說明與控制在畫面外">
+          <img id="fallback-photo" src="assets/frames/zebra_073124_125119-1340.jpg" alt="WildWing 作者任務的完整偵測幀畫面，保留原有框、標籤與分數。">
+          <svg id="scene" viewBox="0 0 1000 650" role="img" aria-labelledby="scene-title scene-description" preserveAspectRatio="xMidYMid meet">
+            <title id="scene-title">從作者保存的斑馬幀畫面，到影像位置與取景規則</title>
+            <desc id="scene-description">作者保存的幀畫面依序換張，不補間動物位置。另用三個獨立示意框解釋算術平均中心、水平方向的取景原理，以及地面筆電處理與人員監督。</desc>
+            <g id="image-workspace"></g>
+          </svg>
+        </div>
+        <p id="frame-meta" class="frame-meta">作者任務的幀畫面 · zebra_073124_125119 · frame 1340 · 2024-07-31 12:52:32</p>
+        <p id="sequence-note" class="figure-note">作者抽樣幀序列，非連續即時影片。此處每一幀停留一秒，不代表原始幀率。</p>
+        <div id="transport" class="transport js-only" role="group" aria-label="播放控制" hidden>
+          <div class="buttons"><button id="play-toggle" type="button" class="primary">播放動畫</button><button id="replay" type="button">從頭重播</button><output id="clock" aria-label="播放時間">00:00 / 01:04</output></div>
+          <label class="timeline-label" for="timeline">播放進度</label><input id="timeline" type="range" min="0" max="64" step="0.1" value="0" aria-label="播放進度">
+        </div>
+        <div class="source-actions js-only" hidden><button id="open-source" type="button">查看這張作者原圖</button><a href="#source-gallery">每一幀的來源</a></div>
+        <p id="player-status" class="player-status" role="status">目前顯示作者保存的幀畫面。下方保留完整文字與來源。</p>
+        <p class="figure-note">作者保存的偵測幀畫面，非本輪模型推論。Jenna Kline／Imageomics，WildWing Deployment Dataset，CC0 1.0。教學圖與照片分開呈現。</p>
+      </div>
+      <aside class="narrative" aria-label="目前段落說明">
+        <div class="phase-meta"><span id="phase-position">1 / 7</span><span id="phase-time">00:00–00:10</span></div>
+        <h2 id="phase-title">斑馬在活動，鏡頭要持續看見牠們</h2>
+        <p id="phase-description" class="description">研究人員希望動物群移動時，仍能留下可分析的畫面。先看作者任務中保存的一組抽樣幀畫面。</p>
+        <p id="phase-detail" class="detail">照片中的框與標籤是作者保存的偵測結果。這裡依序換張，展示節奏與原始影片分開。</p>
+        <div id="teaching-readout" class="teaching-readout" hidden><p id="teaching-status">淺綠點：各框中心；金色點：平均位置。</p><p id="framing-reference" hidden>中央淡色區：取景參考範圍。</p></div>
+      </aside>
+    </section>
+    <nav class="phase-navigation js-only" aria-label="動畫段落" hidden><button data-phase="0" type="button">先看斑馬群</button><button data-phase="1" type="button">回看作者框</button><button data-phase="2" type="button">找出平均位置</button><button data-phase="3" type="button">規則調整取景</button><button data-phase="4" type="button">地面筆電處理</button><button data-phase="5" type="button">標籤仍會出錯</button><button data-phase="6" type="button">人員持續監督</button></nav>
+    <noscript><p class="nojs-note">目前顯示作者保存的靜態幀畫面。完整文字與各張原圖均可在下方閱讀，不需要啟動動畫。</p></noscript>
+    <details id="story-text" open><summary>閱讀完整文字</summary><ol class="transcript"><li><h2>斑馬在活動，鏡頭要持續看見牠們</h2><p>研究人員希望動物群移動時，仍能留下可分析的畫面。先看作者任務中保存的一組抽樣幀畫面。</p><p class="detail">照片中的框與標籤是作者保存的偵測結果。這裡依序換張，展示節奏與原始影片分開。</p></li><li><h2>先找出畫面裡的動物</h2><p>停在第 1380 幀，回看作者當時保存的偵測框。框提供畫面中的位置，讓後續程式知道要看哪裡。</p><p class="detail">第 1380 幀在這裡放大檢視。原圖中的分數是模型的偵測分數，不等於辨識準確率。</p></li><li><h2>把幾個位置，整理成一個參考點</h2><p>接下來改用三個獨立示意框。先找每個框的中心，再把三個位置取算術平均，得到這組偵測的平均中心。</p><p class="detail">每個示意框各算一次，得到的是影像位置的平均。原照片與這組教學座標分開呈現。</p></li><li><h2>參考點偏右，怎麼讓取景跟上？</h2><p>當平均位置偏離中央範圍，導航規則會決定如何調整取景。這裡只示意水平方向的相對移動，讓平均位置回到中央。</p><p class="detail">這段只解釋取景原理，不能當作前述幀畫面的實際飛行紀錄。</p></li><li><h2>畫面傳到地面，再把指令送回</h2><p>無人機把畫面送到地面的 GPU 筆電。YOLO 負責找動物，導航程式再依位置資訊產生指令，傳回無人機。</p><p class="detail">影像辨識使用模型，取景調整依照預先設定的規則。</p></li><li><h2>找到框，不表示物種判對</h2><p>另一場任務的作者輸出，將畫面中的動物標成 sheep。保留這個結果，才能看見辨識仍有需要檢查的地方。</p><p class="detail">這是另一場任務的幀畫面，原標籤與分數保持原樣。辨識結果仍要回到影像核對。</p></li><li><h2>有人在場，才能及時接手</h2><p>回到主序列最後一幀。飛手與動物福利專家在現場監督，必要時可接管；留下的影片，再供研究人員分析動物活動。</p><p class="detail">試驗在The Wilds保育中心進行。遮擋、影像品質與動物反應，都需要現場人員留意。</p></li></ol><p class="evidence-note">所選的十幀作者畫面的位移指令全為零，公開高度欄位亦有儀器問題；本片不以它們還原精確高度或實際修正航跡。移動規則只在獨立教學圖示範，不是重現某次飛行控制。</p></details>
+    <section id="source-gallery" class="source-gallery" aria-labelledby="source-gallery-title">
+      <h2 id="source-gallery-title">每一幀的來源</h2>
+      <p class="source-gallery-intro">框、物種標籤與分數已在作者 JPEG 裡。完整原檔不修改；局部放大只改變閱讀範圍。</p>
+      <div class="source-gallery-items"><figure><a href="assets/frames/zebra_073124_125119-1380.jpg" target="_blank" rel="noopener"><img src="assets/frames/zebra_073124_125119-1380.jpg" width="1280" height="720" loading="lazy" alt="回看的主序列第 1380 幀，保留作者原框與標籤。"></a><figcaption><h3>回看的主序列第 1380 幀</h3><p>這張保留作者當時輸出的框和分數；本片不從它推算實際群中心。</p><p>zebra_073124_125119 · frame 1380 · 2024-07-31 12:52:34</p><p>Jenna Kline／Imageomics，CC0 1.0。點圖可看完整 JPEG。</p></figcaption></figure><figure><a href="assets/frames/zebra_073124_122452-3220.jpg" target="_blank" rel="noopener"><img src="assets/frames/zebra_073124_122452-3220.jpg" width="1280" height="720" loading="lazy" alt="另一任務的限制示例 3220，保留作者原框與標籤。"></a><figcaption><h3>另一任務的限制示例 3220</h3><p>原作者輸出包含 sheep 標籤。它來自另一任務，不接成主序列的下一刻。</p><p>zebra_073124_122452 · frame 3220 · 2024-07-31 12:27:23</p><p>Jenna Kline／Imageomics，CC0 1.0。點圖可看完整 JPEG。</p></figcaption></figure></div>
+      <details open><summary>主序列的十幀完整畫面</summary><ol class="source-sequence-links"><li><a href="assets/frames/zebra_073124_125119-1340.jpg" target="_blank" rel="noopener">frame 1340 · 12:52:32</a></li><li><a href="assets/frames/zebra_073124_125119-1360.jpg" target="_blank" rel="noopener">frame 1360 · 12:52:33</a></li><li><a href="assets/frames/zebra_073124_125119-1380.jpg" target="_blank" rel="noopener">frame 1380 · 12:52:34</a></li><li><a href="assets/frames/zebra_073124_125119-1400.jpg" target="_blank" rel="noopener">frame 1400 · 12:52:35</a></li><li><a href="assets/frames/zebra_073124_125119-1420.jpg" target="_blank" rel="noopener">frame 1420 · 12:52:36</a></li><li><a href="assets/frames/zebra_073124_125119-1440.jpg" target="_blank" rel="noopener">frame 1440 · 12:52:36</a></li><li><a href="assets/frames/zebra_073124_125119-1460.jpg" target="_blank" rel="noopener">frame 1460 · 12:52:37</a></li><li><a href="assets/frames/zebra_073124_125119-1480.jpg" target="_blank" rel="noopener">frame 1480 · 12:52:38</a></li><li><a href="assets/frames/zebra_073124_125119-1500.jpg" target="_blank" rel="noopener">frame 1500 · 12:52:39</a></li><li><a href="assets/frames/zebra_073124_125119-1520.jpg" target="_blank" rel="noopener">frame 1520 · 12:52:40</a></li></ol></details>
+    </section>
+    <footer><h2>研究與資料來源</h2><ul>
+      <li><a href="https://par.nsf.gov/servlets/purl/10588069" target="_blank" rel="noopener">Kline 等 · WildWing 論文全文</a>：地面 GPU 筆電、影像辨識、導航規則及現場人員分工。</li>
+      <li><a href="https://huggingface.co/datasets/imageomics/wildwingdeployment" target="_blank" rel="noopener">Imageomics WildWing Deployment Dataset</a>：作者 JPEG 與任務 CSV；本片使用固定版本的原始檔案。</li>
+      <li><a href="https://imageomics.github.io/wildwing/wiki.html" target="_blank" rel="noopener">作者部署說明</a>：人工設定、操作與可接管範圍。</li>
+    </ul><div class="source-note"><p>本例取自美國俄亥俄州 The Wilds 保育中心的研究。作者保存的幀畫面與獨立教學圖均沒有新增飛行、辨識或行為分析結果。</p><p>幀編號不能直接換算成原始影片秒數；CSV 時間只有整秒，部分幀畫面共用同一時間戳。偵測分數不是辨識準確率，框也不是個體編號。</p></div></footer>
+  </main>
+  <dialog id="source-dialog" aria-labelledby="source-dialog-title" aria-describedby="source-caption">
+    <div class="dialog-heading"><h2 id="source-dialog-title">作者保存的完整幀畫面</h2><form method="dialog"><button id="close-source" type="submit" value="close">關閉原圖</button></form></div>
+    <figure class="dialog-photo"><img id="source-image" alt="目前這一幀的完整作者 JPEG。"><figcaption id="source-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>

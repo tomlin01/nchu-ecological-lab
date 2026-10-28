@@ -1,0 +1,60 @@
+{
+  "status": "integrated_local_verified",
+  "static_status": "PASS",
+  "case_id": "01-03",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "下一瓶海水，該從哪裡取？",
+  "preserved_files": 35,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "17ac6b7e986ac1a31a2731c6bf44c72de4731890d36c564e9dbfbdf70ecfba90",
+      "glyphs": 636,
+      "prior_glyphs": 617,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "0bc4efc3eb4a7031641b952c566acd97e71f9281a1d8eb0ef4d9848f8c27641c",
+      "glyphs": 636,
+      "prior_glyphs": 617,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_checked": true,
+  "browser_record": "work/ecology-ai-rollout/copy-review-01-v02/browser-verification.json",
+  "browser_exclusion_reason": null,
+  "full_playback_rerun": false,
+  "new_inference": false,
+  "scientific_status_unchanged": true,
+  "external_publication": false,
+  "supplemental_css_sha256": "67e1aebf069c417819ffb192e8f411c24edc03e2dfc2747b6c179b56c88f4bcf",
+  "main_links": 14,
+  "candidate_links": 14,
+  "existing_ids_preserved": 20,
+  "h1_titles_updated": 1,
+  "source_links_preserved": 18,
+  "protected_elements": {
+    "script": 1,
+    "style": 0,
+    "svg": 4,
+    "code": 0,
+    "button": 4,
+    "video": 0,
+    "audio": 0,
+    "source": 0,
+    "iframe": 1,
+    "img": 3,
+    "input": 0
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "3": -1
+  }
+}

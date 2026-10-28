@@ -1,0 +1,171 @@
+{
+  "source_file": "../sources/biotwang-google-original.wav",
+  "source_url": "https://storage.googleapis.com/gweb-research2023-media/media/WhaleBioacoustics-BrydesBiotwang.wav",
+  "source_sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+  "source_bytes": 240044,
+  "playback_file": "biotwang-teaching-original-speed.wav",
+  "playback_sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+  "playback_is_byte_identical_copy": true,
+  "processing": {
+    "trim": false,
+    "resample": false,
+    "gain_change": false,
+    "filter": false,
+    "fade": false,
+    "loop": false,
+    "speed_change": false,
+    "synthesis": false
+  },
+  "audio": {
+    "sample_rate_hz": 24000,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "encoding": "PCM signed 16-bit little-endian",
+    "sample_count": 120000,
+    "duration_seconds": 5.0,
+    "peak_absolute_normalized": 0.999969482421875,
+    "rms_normalized": 0.25449537902906627,
+    "dc_mean": 1.4597574869791666e-07,
+    "peak_dbfs": -0.00026507636037961915,
+    "full_scale_sample_count": 1
+  },
+  "stft": {
+    "function": "scipy.signal.stft",
+    "window": "periodic Hann (sym=False)",
+    "nperseg": 2048,
+    "hop_samples": 256,
+    "noverlap": 1792,
+    "nfft": 2048,
+    "detrend": false,
+    "scaling": "spectrum",
+    "one_sided": true,
+    "boundary": "zeros",
+    "padded": true,
+    "frequency_bin_spacing_hz": 11.71875,
+    "time_step_seconds": 0.010666666666666666,
+    "window_duration_seconds": 0.08533333333333333,
+    "frequency_bins": 1025,
+    "time_bins": 470,
+    "last_center_seconds": 5.002666666666667,
+    "display_time_domain_seconds": [
+      0,
+      5.0
+    ],
+    "power_reference_max_abs_stft_squared": 0.14409557468225528,
+    "display_floor_db": -65,
+    "edge_note": "STFT boundary uses zero extension; padded centers after 5 s are clipped from display; playback audio is not padded."
+  },
+  "image_sizes_px": {
+    "spectrogram.png": [
+      1600,
+      900
+    ],
+    "spectrogram-only.png": [
+      1600,
+      600
+    ],
+    "spectrogram-low-frequency.png": [
+      1600,
+      900
+    ],
+    "spectrogram-low-frequency-only.png": [
+      1600,
+      600
+    ],
+    "waveform.png": [
+      1600,
+      480
+    ]
+  },
+  "verification": {
+    "source_unchanged": true,
+    "playback_byte_identical": true,
+    "duration_sample_count_consistent": true,
+    "all_samples_finite": true,
+    "waveform_each_sample_once": true,
+    "png_dimensions_correct": true,
+    "human_listening_performed": false
+  },
+  "scope": "Teaching spectrogram computed from the same official audio. Not CNN input replication, attention, classification, calibrated SPL, or manual call-boundary annotation.",
+  "rights_status": "Official-source origin verified; independent reuse license remains unconfirmed after source-agent review. Do not describe this Google WAV as NOAA public domain. Processing does not settle reuse rights.",
+  "runtime": {
+    "python": "3.11.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "pillow": "12.1.0"
+  },
+  "command": "python3 audio/prepare_audio.py (from prototype-v01)",
+  "external_commands": [
+    {
+      "command": [
+        "ffprobe",
+        "-v",
+        "error",
+        "-show_streams",
+        "-show_format",
+        "-of",
+        "json",
+        "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/02-03/prototype-v01/sources/biotwang-google-original.wav"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "outputs": [
+    {
+      "file": "axis-mapping.json",
+      "bytes": 2552,
+      "sha256": "066b977ba79cdcd96194aaeb4087ffab6a72dbb2e8e9f9764cd009e2572a67ab"
+    },
+    {
+      "file": "biotwang-teaching-original-speed.wav",
+      "bytes": 240044,
+      "sha256": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7"
+    },
+    {
+      "file": "ffprobe-original.json",
+      "bytes": 1480,
+      "sha256": "a0fd0fc5a86aecb452b3362aa4a09f28730579a30b3e66fa0463bc124472ffa5"
+    },
+    {
+      "file": "prepare_audio.py",
+      "bytes": 12555,
+      "sha256": "d207b52bc12df81e3cf037b3de27f7f7c96aeb59d1cb5dffd6a734612e461a19"
+    },
+    {
+      "file": "spectrogram-data.npz",
+      "bytes": 539291,
+      "sha256": "7ef65fdc3dd0d2406b5e09bc78e285f5e52c98037a03d9a1d77d25d329b710ff"
+    },
+    {
+      "file": "spectrogram-low-frequency-only.png",
+      "bytes": 142459,
+      "sha256": "77572e27780936a3ed2086ef37a197344e787339f2573f63ee55934343183bef"
+    },
+    {
+      "file": "spectrogram-low-frequency.png",
+      "bytes": 189395,
+      "sha256": "f3dbdfe215e8ac33d5e4c12e51dde8b544f46df5132326aabb33ebb449b276c7"
+    },
+    {
+      "file": "spectrogram-only.png",
+      "bytes": 325868,
+      "sha256": "6b6553515211d2a9427f77cf45177802c6308a3dcdcb5417c53e36b1530cb61f"
+    },
+    {
+      "file": "spectrogram.png",
+      "bytes": 445911,
+      "sha256": "e2ee0173803725f03ccf8bbee05d33a0e4add44ac9fc89ca3e91abe3773df8a6"
+    },
+    {
+      "file": "waveform.json",
+      "bytes": 239709,
+      "sha256": "556cba110c3cac9f8ff96defeccf9704ce065436cf18295a77d1579d65acb12e"
+    },
+    {
+      "file": "waveform.png",
+      "bytes": 178301,
+      "sha256": "49b47f5fbe72a2a720c62748b5cef8ab1e522b56aa574e6b9588aa965750a179"
+    }
+  ]
+}

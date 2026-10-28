@@ -1,0 +1,199 @@
+{
+  "case_id": "04-04",
+  "title": "沒量過的地方，植物特徵怎麼估？",
+  "version": "web-v01",
+  "visual_revision": "leaf-community-prediction-v01",
+  "status": "accepted_local",
+  "entry": "04-04.html",
+  "animation_version": "prototype-v01",
+  "animation_entry": "animation/embed.html",
+  "accepted_animation_original_files_preserved": true,
+  "accepted_animation_original_file_count": 24,
+  "animation_manifest_scope": "Retained standalone snapshot; embedding additions are listed in embed-manifest.json and this case manifest.",
+  "generated_context": true,
+  "conceptual_weights_only": true,
+  "source_images_byte_preserved": true,
+  "model_inference_run": false,
+  "new_trait_measurement": null,
+  "website_user_accepted": true,
+  "deployed": false,
+  "updated": "2026-10-25T17:53:02.193588+00:00",
+  "files": {
+    "04-04.html": {
+      "bytes": 19367,
+      "sha256": "93b0d273e36115fa88b2f742ef717180a3d883b6cf9c89800a28445012779cff"
+    },
+    "README.md": {
+      "bytes": 1623,
+      "sha256": "4029799c3724aa98cd204cb806cc330584c9e006b0bea8ebdb1d302ffbc01f6b"
+    },
+    "animation/README.md": {
+      "bytes": 1359,
+      "sha256": "bab90912c3d2c4eab21b439ed42a2b39915038ec0434aaa797c1082939a43688"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 10092,
+      "sha256": "b400a3e11c099e08bc4beb6a9ddfe9d27adfe58454ea1faa68aa849a47228f4f"
+    },
+    "animation/app.mjs": {
+      "bytes": 14911,
+      "sha256": "a0ea2e6d7ab62b73a046a5104255e35e6894ba429426e223d0d1170afd0de679"
+    },
+    "animation/assets/context-prompt.md": {
+      "bytes": 1307,
+      "sha256": "d43e428ed5e5ce38dc575af2edcad4adfe1b662f0b5ac24134246f162b47546e"
+    },
+    "animation/assets/context-provenance.json": {
+      "bytes": 302,
+      "sha256": "051faae22332c5802b293ef99318a74b93616549b55776a14a847b664bf91f94"
+    },
+    "animation/assets/leaf-context.png": {
+      "bytes": 2657763,
+      "sha256": "f0736bf3322fbcbf1baef3176e3a53808203eb6d9029cc6888bc1efacb99ff44"
+    },
+    "animation/assets/observation-density.png": {
+      "bytes": 995632,
+      "sha256": "abdaede8b554902d3e01d148bb6df8ccc4b241efd8adb1310cb2fc9703915c49"
+    },
+    "animation/assets/source-data.json": {
+      "bytes": 1282,
+      "sha256": "671364d0a9c09ee0467732955b274da24c6046ef389ef240e256e3c58cd81810"
+    },
+    "animation/assets/spatial-transfer.png": {
+      "bytes": 1512717,
+      "sha256": "5b6b8bb4cce3ef97648c486663bb44cedb3811408344dde96bad222b2bcd054f"
+    },
+    "animation/assets/trait-maps.png": {
+      "bytes": 6286911,
+      "sha256": "9495027e848d134b1d558079ae1e77c710811c9e2a521b7d8e1843b81ba6adf8"
+    },
+    "animation/embed-manifest.json": {
+      "bytes": 714,
+      "sha256": "a61ea52e54870fd95a343c4964e44b88d5fadcdb56d884b22c2d96b48e48e29b"
+    },
+    "animation/embed.css": {
+      "bytes": 792,
+      "sha256": "120495e33fd48880e74e3fffdd325c0317c428373ad7d5b646f8dc5d8ed44f1d"
+    },
+    "animation/embed.html": {
+      "bytes": 13990,
+      "sha256": "71ab97184a3f9cfcdcebcf8c08eca146c0a99547033497b8c8739f26fc4cf325"
+    },
+    "animation/embed.js": {
+      "bytes": 7187,
+      "sha256": "378193397b4fbea8db870ec9f61cefc11509d2a86ed345fc4d0d826f39ca0062"
+    },
+    "animation/film/04-04-plant-traits-v01.metadata.json": {
+      "bytes": 853,
+      "sha256": "e1c1e3de1ec29bc830de11aa70f2022656924755971385d14106b2b4171097de"
+    },
+    "animation/film/04-04-plant-traits-v01.mp4": {
+      "bytes": 3422908,
+      "sha256": "8e756dbf1c170ad15ca54c5b2c439cb4c60c93e86ac3687e515b7611dfc93f4d"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/trait-sans.woff2": {
+      "bytes": 132320,
+      "sha256": "e195c9fa472994135d2300fa6dcd752a78e75e81330db239ef2db5ce440f59ee"
+    },
+    "animation/fonts/trait-serif.woff2": {
+      "bytes": 176680,
+      "sha256": "e8b108baac9e4a027f5d09710cb39f6820cf41b954d18b5e7ed887c3c39ff13e"
+    },
+    "animation/index.html": {
+      "bytes": 13898,
+      "sha256": "34c0690318da9e5f3e5b20f6d9f0397581256d0cda5555d8c60a592fbab6da65"
+    },
+    "animation/manifest.json": {
+      "bytes": 3571,
+      "sha256": "bc640046553fd3bdb0c4ced3458ee8cc1a24b553c657c0b854943a9723d06676"
+    },
+    "animation/model.mjs": {
+      "bytes": 5238,
+      "sha256": "0f7ab0a6f8f976336441393e99d73994f46136500052ae0463c23c53bb0242fd"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 1422,
+      "sha256": "1ac270e1cc6fca8255a273b5019573bda1eb1956a0a76517b05eea4e01d91857"
+    },
+    "animation/scene.mjs": {
+      "bytes": 3732,
+      "sha256": "ba4303d3b29f66d7c703785fc39a388a7e397a3040ede23b571fff56c443fc0e"
+    },
+    "animation/style.css": {
+      "bytes": 17540,
+      "sha256": "886aaccca59be03cc2ef25aa14394b88ee619325ee7b2eca0186ccc11e409458"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/verification.json": {
+      "bytes": 3000,
+      "sha256": "ff1892570558229f27702f0ff2be756bc68884f49db5c32cdd89dad9b6169eab"
+    },
+    "case.css": {
+      "bytes": 21441,
+      "sha256": "e54213f66b61874cfcd596850feebe51963a2acfb1a57e81be9200ca75028d0e"
+    },
+    "case.js": {
+      "bytes": 11114,
+      "sha256": "985ebfbbc5f88488b65ec6ecaf42c4400ea2da310ff05c8f30347bb22ca7d890"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 142248,
+      "sha256": "26d9152fa7ed593402bc7b2a50fcd586818b9adb48227dbf06391efb49af878a"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 189320,
+      "sha256": "18ebef415c6d6efcbc51454326e1d5603a735c66c6ccccf8fb5caf4eb5275bd6"
+    },
+    "index.html": {
+      "bytes": 378,
+      "sha256": "1ff3b222cb8754d9eaded2608e6e4ca3148e8f3b9b43b3fe2e0f577c8b59f05a"
+    },
+    "scene.js": {
+      "bytes": 9152,
+      "sha256": "f699ac013fb771da236d9d80338099f54c0f238186d2af6354052f848d255616"
+    },
+    "typography.css": {
+      "bytes": 1081,
+      "sha256": "2e5f9a6e7928dc4d3c156d859e78cea4a6db589eb1a594da13bc95ffaa866109"
+    },
+    "web-bridge-check.json": {
+      "bytes": 1663,
+      "sha256": "f0c743054b83c5bf73576e0b3b89a70b64847f3ffb265e54e5949109ef3e12aa"
+    }
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  }
+}

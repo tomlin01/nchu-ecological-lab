@@ -1,0 +1,113 @@
+{
+  "case_id": "05-03",
+  "title": "海底的草地，變少了嗎？",
+  "version": "prototype-v01",
+  "entry": "index.html",
+  "duration_seconds": 116,
+  "status": "animation_ready_for_user_review",
+  "user_accepted": false,
+  "model_inference_run": false,
+  "integrated": false,
+  "deployed": false,
+  "data_semantics": "Comparison of published mapped-presence marks; NoData is not absence. Global outcomes are separately cited published results.",
+  "source_data": "assets/source-data.json",
+  "updated": "2026-10-26T17:18:30.155614+00:00",
+  "files": {
+    "DESIGN.md": {
+      "bytes": 2802,
+      "sha256": "198f353f384b02bf4db53352281d99ebd628fe9ed17d1009e105cc7cbb2d2613"
+    },
+    "README.md": {
+      "bytes": 1850,
+      "sha256": "0c40eeb88db1ba749dfcd29820cc55b7ce2e36d3c78cab82a9048b100c136efb"
+    },
+    "SOURCE.md": {
+      "bytes": 4472,
+      "sha256": "06260416c0937b21edd8f533479137985b3f77e46c1e758f0053e5e5393cf9e9"
+    },
+    "app.mjs": {
+      "bytes": 17893,
+      "sha256": "00aed5927db4fa50b0cd8da0898a3ad96860b059cdde7c73212d7f7aa66c3435"
+    },
+    "assets/context/provenance.json": {
+      "bytes": 784,
+      "sha256": "255b241384a03d0284ef3268ff52dbe7e1fee8a663543be170a6387061f5fa2b"
+    },
+    "assets/context/seagrass.jpg": {
+      "bytes": 905634,
+      "sha256": "fa78e88bb692b6e699cc18248b7af6ba89eb3416cca4297d76879c7c2c035a04"
+    },
+    "assets/maps/map-data.json": {
+      "bytes": 12421,
+      "sha256": "eb3283e9a6683d4e760e535ed4a9013196c48f747d370f33a372c330237c5993"
+    },
+    "assets/maps/tampa-after.png": {
+      "bytes": 67155,
+      "sha256": "e00ac7d0d46054a73096b61617d618001b0ca338019acf2cd77c4745cdc678a3"
+    },
+    "assets/maps/tampa-before.png": {
+      "bytes": 65389,
+      "sha256": "9c5cdeda84c306671b79dd81b675a0cd1d2e10ed1a59cffaf60e2356c646e7fb"
+    },
+    "assets/maps/tampa-common-valid-mask.png": {
+      "bytes": 52698,
+      "sha256": "4fc3b98bc446b1dbead49f69cd6f6082968429869b7a038b43de88d85b779f25"
+    },
+    "assets/maps/tampa-detail-after.png": {
+      "bytes": 4053,
+      "sha256": "c789eb157fb54e17b927dd0aad168fcb110f6212ae38520959dcf754b68589f8"
+    },
+    "assets/maps/tampa-detail-before.png": {
+      "bytes": 4087,
+      "sha256": "1a7aae3806bd495935487ac38761671594c969e3c092a3cea255d73cbd4e10ab"
+    },
+    "assets/maps/tampa-detail-cells.json": {
+      "bytes": 30386,
+      "sha256": "bf8d149bea002b03b071ada093297b216871cb116f92d40c42a1dc9758a53065"
+    },
+    "assets/maps/tampa-detail-difference.png": {
+      "bytes": 4344,
+      "sha256": "4d83f1f82a7b08abbf3bfd5114247589437166f7d5414275db92ac2932de6b94"
+    },
+    "assets/maps/tampa-difference.png": {
+      "bytes": 116125,
+      "sha256": "3f44ddab83c09056e7229df2cf33d560434e1385c00953a6116807c65b070d90"
+    },
+    "assets/maps/tampa-shoreline.svg": {
+      "bytes": 3060,
+      "sha256": "57fe671c00dd3584d10e86c75d406afa8c25b2b7e2fe709816b94ad8b16fb644"
+    },
+    "assets/source-data.json": {
+      "bytes": 8936,
+      "sha256": "620f6fe67b0082c41a53d828e4df05c993f64c72ff8c1d5a5ea47721a1705623"
+    },
+    "fonts/seagrass-sans.woff2": {
+      "bytes": 147828,
+      "sha256": "0e8d055645e2052c8088bb1ba9f7368051f7508c082438a9006f53d27310b099"
+    },
+    "index.html": {
+      "bytes": 14261,
+      "sha256": "2015ea53cf48906d2871bb1a169ca2ea127c8e21f906ef9f4d45be9324322633"
+    },
+    "model.mjs": {
+      "bytes": 6592,
+      "sha256": "2d0bae82e4794fc5279290b76d7f21e2f0fd9fc95f1cf4c2ae515bf3640e5027"
+    },
+    "scene.mjs": {
+      "bytes": 3466,
+      "sha256": "b29c5102eca0d62b7144dca12dd4f3fd90b9d9b74abed77921428f350ae78c0c"
+    },
+    "serve-preview.py": {
+      "bytes": 753,
+      "sha256": "ef2ea6b8cd7c2210e4df098dd44a6193564b68be0c88f79ecb2566e1deb845d5"
+    },
+    "style.css": {
+      "bytes": 13462,
+      "sha256": "0e1dcdacbd0003fb6bddfe8bd8dd29304a83bdfa6ea415fae167b3f969c7fd83"
+    },
+    "verification.json": {
+      "bytes": 847,
+      "sha256": "a7f154014dfc2b6967e6123f51dd8acb9be5a9d1252e39e49ecdfe5d89a40686"
+    }
+  }
+}

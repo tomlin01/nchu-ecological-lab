@@ -1,0 +1,69 @@
+{
+  "status": "integrated_local_verified",
+  "static_status": "PASS",
+  "case_id": "01-04",
+  "version": "copy-edit-v02",
+  "approved_plan_items": 10,
+  "title": "燈前拍到的蛾，怎麼辨認？",
+  "preserved_files": 55,
+  "fonts": [
+    {
+      "file": "fonts/copy-v02-sans.woff2",
+      "sha256": "257a0ec7ae832557c266119d442a59d0886627613205c09806ac5e2e7029c97c",
+      "glyphs": 657,
+      "prior_glyphs": 645,
+      "prior_glyphs_retained": true,
+      "missing": []
+    },
+    {
+      "file": "fonts/copy-v02-serif.woff2",
+      "sha256": "1f7547beb5c97353c5d3a957d3f5e6c3ec67c42b1a3f5b1b07ad3dc8d8c89b1d",
+      "glyphs": 657,
+      "prior_glyphs": 645,
+      "prior_glyphs_retained": true,
+      "missing": []
+    }
+  ],
+  "content_review": "PASS",
+  "browser_checked": true,
+  "browser_record": "work/ecology-ai-rollout/copy-review-01-v02/browser-verification.json",
+  "browser_exclusion_reason": null,
+  "full_playback_rerun": false,
+  "new_inference": false,
+  "scientific_status_unchanged": true,
+  "external_publication": false,
+  "supplemental_css_sha256": "358eebda3f957b592addcf0842a3a8b08d8e64d161f20bf14dd258133b2fec5b",
+  "main_links": 17,
+  "candidate_links": 17,
+  "existing_ids_preserved": 20,
+  "h1_titles_updated": 1,
+  "source_links_preserved": 23,
+  "protected_elements": {
+    "script": 1,
+    "style": 0,
+    "svg": 1,
+    "code": 0,
+    "button": 4,
+    "video": 0,
+    "audio": 0,
+    "source": 0,
+    "iframe": 1,
+    "img": 2,
+    "input": 0
+  },
+  "original_notes_and_json_unchanged": true,
+  "media_elements_and_controls_unchanged": true,
+  "numeric_values_preserved": true,
+  "numeric_repetition_delta": {
+    "1E+1": 1,
+    "2023": 1,
+    "7": 1,
+    "21": 1,
+    "23": 3,
+    "8": 1,
+    "32": 3,
+    "28": 1,
+    "48": 1,
+    "2E+1": 1
+  }
+}

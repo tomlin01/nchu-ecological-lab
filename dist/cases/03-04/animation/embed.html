@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light" class="embedded-thermo">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+  <title>照片很亮，蜥蜴就在曬太陽嗎？｜AI × 生態研究</title>
+  <meta name="description" content="從粗尾岩鬣蜥的真實照片，分清日照與陰影、來源位置標註、分類評估與相機沒拍到的時段。">
+  <link rel="icon" href="data:,"><script type="module" src="embed.js?v=web-v01"></script><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="embed.css?v=web-v01"><script src="vendor/gsap.min.js" defer></script><script src="app.mjs" type="module"></script>
+</head>
+<body data-phase="context">
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="player" class="player">
+    <header class="player-heading"><div><p>03-04 · 粗尾岩鬣蜥</p><h1>照片很亮，蜥蜴就在曬太陽嗎？</h1></div><button id="themeButton" type="button" disabled aria-pressed="false">切換深色</button></header>
+    <div id="composition" class="composition" aria-label="84秒蜥蜴日照與陰影動畫">
+      <div id="stage" class="stage" tabindex="0" aria-label="照片與本段解說，可按空白鍵播放或暫停">
+        <section class="scene scene-context" data-scene="0" aria-labelledby="scene0Title">
+          <header class="scene-heading"><h2 id="scene0Title">先看牠站哪裡</h2></header>
+          <figure class="context-photo"><img data-asset="context" src="assets/context.png" width="1672" height="941" alt="AI生成的粗尾岩鬣蜥停在陰影中，完整長尾與左側受日照的岩地同時可見。"><figcaption>AI 生成情境圖，非研究現場</figcaption></figure>
+          <div class="light-contrast"><span>旁邊的地面有日照</span><span>蜥蜴停在陰影側</span></div>
+        </section>
+
+        <section class="scene scene-photos" data-scene="1" aria-labelledby="scene1Title" inert>
+          <header class="scene-heading"><h2 id="scene1Title">照片亮，不代表牠在日照裡</h2></header>
+          <div class="reference-pair">
+            <figure id="shadeReference"><img data-asset="shade" src="assets/shade.jpg" width="717" height="324" alt="作者標為陰影的來源例圖，蜥蜴身旁與背景有明亮區域。"><figcaption><strong>陰影</strong><span>Shade-1 · 作者標註</span></figcaption></figure>
+            <figure id="sunReference"><img data-asset="sun" src="assets/sun.jpg" width="486" height="195" alt="作者標為日照的另一張來源例圖。"><figcaption><strong>日照</strong><span>Sun-1 · 作者標註</span></figcaption></figure>
+          </div>
+          <p id="photoPairNote" class="scene-note">先看蜥蜴與近旁地面的光線。</p>
+        </section>
+
+        <section class="scene scene-detection" data-scene="2" aria-labelledby="scene2Title" inert>
+          <header class="scene-heading"><h2 id="scene2Title">先找蜥蜴，再看光線</h2></header>
+          <div class="detection-layout">
+            <figure class="source-detection"><svg id="detectionImage" viewBox="0 0 4000 3000" role="img" aria-label="完整照片與作者標出的位置"><image data-asset="detection" href="assets/detection.jpg" x="0" y="0" width="4000" height="3000"/><g id="sourceBoxes"></g></svg><figcaption>完整原照與作者畫出的框</figcaption></figure>
+            <div id="cropAndQuestions" class="crop-and-questions"><figure class="source-crop"><svg id="detectionCrop" viewBox="0 0 1 1" role="img" aria-labelledby="cropTitle"><title id="cropTitle">作者標示框內的身體局部，長尾未完整入框。</title><image data-asset="detection" href="assets/detection.jpg" x="0" y="0" width="4000" height="3000"/></svg><figcaption id="detectionCropCaption">作者標示框內的身體局部<br>長尾未完整入框</figcaption></figure><div id="classificationQuestions" class="classification-questions" aria-label="兩個分開的分類問題"><div><h3>日照／陰影？</h3><p>這張照片未附答案</p></div><div><h3>色標是什麼？</h3><p>這張照片未附答案</p></div></div></div>
+          </div>
+          <p class="scene-note">照片底部的相機印字不是蜥蜴體溫。圖中的框沿用作者標註。</p>
+        </section>
+
+        <section class="scene scene-records" data-scene="3" aria-labelledby="scene3Title" inert>
+          <header class="scene-heading"><h2 id="scene3Title">每張照片，保留自己的紀錄</h2><p>兩張照片各自呈現，不能確認是同一隻的前後時刻。</p></header>
+          <div class="observation-list">
+            <article data-observation-row="0"><figure><img data-asset="shade" src="assets/shade.jpg" width="717" height="324" alt="Shade-1來源例圖。"><figcaption>Shade-1</figcaption></figure><dl><div><dt>作者分類</dt><dd>陰影</dd></div><div><dt>拍攝時間</dt><dd class="unknown">未提供</dd></div><div><dt>圍欄／個體</dt><dd class="unknown">未提供</dd></div></dl></article>
+            <article data-observation-row="1"><figure><img data-asset="sun" src="assets/sun.jpg" width="486" height="195" alt="Sun-1來源例圖。"><figcaption>Sun-1</figcaption></figure><dl><div><dt>作者分類</dt><dd>日照</dd></div><div><dt>拍攝時間</dt><dd class="unknown">未提供</dd></div><div><dt>圍欄／個體</dt><dd class="unknown">未提供</dd></div></dl></article>
+          </div>
+          <p class="scene-note">不同圍欄可重複用色；只有色標，還不能跨圍欄確認個體。</p>
+        </section>
+
+        <section class="scene scene-results" data-scene="4" aria-labelledby="scene4Title" inert>
+          <header class="scene-heading"><h2 id="scene4Title">作者驗證了什麼？</h2></header>
+          <div class="result-layout"><div class="result-photo-strip"><figure><img data-asset="shade" src="assets/shade.jpg" width="717" height="324" alt="陰影來源例圖。"><figcaption>陰影來源例圖</figcaption></figure><figure><img data-asset="sun" src="assets/sun.jpg" width="486" height="195" alt="日照來源例圖。"><figcaption>日照來源例圖</figcaption></figure></div>
+            <div id="paperResults" class="paper-results"><div class="confidence-condition"><p>分類預測的信心門檻</p><strong>95<span>%</span></strong></div><div class="retained-predictions"><p>約 <strong>85%</strong> 的預測達到門檻</p><div class="retention-track" role="img" aria-label="約百分之85的日照陰影分類預測達到95%信心門檻"><span></span></div><p class="result-small">這個比例表示有多少預測通過篩選，還不是分對多少。</p></div><div class="validated-result"><p>通過門檻後，分類有多準</p><strong>96.52<span>%</span></strong><p>與人工標註比較</p></div></div>
+          </div>
+          <p class="scene-note">數字來自論文 §3.2 的分類評估，不是替這兩張照片打的分數。</p>
+        </section>
+
+        <section class="scene scene-gaps" data-scene="5" aria-labelledby="scene5Title" inert>
+          <header class="scene-heading"><h2 id="scene5Title">沒有照片，就不知道牠在哪裡</h2></header>
+          <div class="sampling-layout"><figure><img data-asset="shade" src="assets/shade.jpg" width="717" height="324" alt="一張保留下來的蜥蜴來源照片。"><figcaption>有照片：能回看被拍到的這一刻</figcaption></figure><div id="samplingGap" class="sampling-gap"><h3>沒有照片的時段</h3><p>位置未知</p><p>停留多久，未知</p><span>相機沒拍到的時段，無法從照片補回</span></div></div>
+          <div class="closing-boundary"><p>不能補成全天停留時間</p><p>沒有直接量到蜥蜴體溫</p></div>
+          <p class="scene-note">蜥蜴靜止時，相機可能沒有拍照。連拍記錄到的時段，無法代表全天活動。</p>
+        </section>
+      </div>
+      <aside class="narrative" aria-label="本段解說"><p id="phaseLabel" class="phase-label">1 / 6 · 先看牠站哪裡</p><h2 id="phaseTitle">陽光與陰影，就在牠身旁。</h2><p id="phaseCopy">這是粗尾岩鬣蜥，會利用陽光與陰影調節身體受熱。牠旁邊的地面很亮，自己卻站在陰影裡。判斷時要看牠所在的位置。</p><p id="phaseNote" class="phase-note">這張插畫由 AI 生成，用來說明光線，並非研究現場照片。</p></aside>
+    </div>
+    <div class="transport" role="group" aria-label="動畫播放控制"><div class="transport-row"><button id="playButton" class="primary-button" type="button" disabled>播放</button><button id="replayButton" type="button" disabled>重播</button><output id="timeReadout" aria-label="播放時間">00:00 / 01:24</output><button id="expandButton" type="button" disabled aria-pressed="false">放大觀看</button></div><label class="sr-only" for="seekRange">播放進度</label><input id="seekRange" type="range" disabled min="0" max="84" step="0.01" value="0" aria-valuetext="0 秒，共 84 秒"></div>
+    <p id="status" class="player-status" role="status" aria-live="polite">正在載入照片與作者標註。這支動畫沒有聲音。</p><div id="error" class="error-message" hidden><p id="errorCopy"></p><button id="retryButton" type="button">重試載入</button></div>
+    <nav class="phase-navigation" aria-label="選擇動畫段落"><button type="button" disabled data-seek="0" aria-current="step"><span>00:00</span>先看牠站哪裡</button><button type="button" disabled data-seek="12"><span>00:12</span>比較相機照片</button><button type="button" disabled data-seek="26"><span>00:26</span>找蜥蜴看光線</button><button type="button" disabled data-seek="40"><span>00:40</span>記下照片資訊</button><button type="button" disabled data-seek="54"><span>00:54</span>研究結果</button><button type="button" disabled data-seek="68"><span>01:08</span>沒有拍到的時段</button></nav>
+    <noscript><p class="nojs-note">動畫需要 JavaScript。下方保留六段解說與來源，原始照片也可直接查看。</p></noscript>
+    <div class="reading-footer"><details id="readingNotes"><summary>閱讀完整六段解說</summary><ol class="transcript"><li><h2>先看牠站哪裡</h2><p>粗尾岩鬣蜥會利用陽光與陰影調節身體受熱。這張插畫把蜥蜴、陰影與受日照的地面放在一起，讓我們先看清牠站的位置。</p></li><li><h2>照片很亮，不代表牠正在受日照</h2><p>Shade-1 的背景很亮，作者仍把蜥蜴的位置標為陰影。Sun-1 是另一張日照照片。兩張照片缺少可核對的拍攝時間和個體資料，不能接成同一隻蜥蜴移動的前後畫面。</p></li><li><h2>先找蜥蜴，再看光線</h2><p>研究先找出蜥蜴，再分別判斷日照／陰影和色標。完整原照上的框沿用作者標註，放大後只看得到身體局部，長尾沒有完整入框。原資料沒有提供這張照片的日照、色標、個體身分或信心分數，因此這裡不填答案。底部相機印字也不是蜥蜴體溫。</p></li><li><h2>保留每張照片的紀錄</h2><p>圖中保留作者記錄的日照與陰影，拍攝時間和個體身分則註明未提供。紅、藍、白色標在同一圍欄內能幫助區分個體，但不同圍欄會重複用色。</p></li><li><h2>研究有沒有幫助？</h2><p>作者使用 95% 信心門檻篩選日照／陰影分類，約 85% 預測達到門檻。通過信心門檻的部分與人工標註比較後，分類準確率為 96.52%。這個成績只算通過門檻的分類。沒有拍到或沒有找到的蜥蜴不在其中，也不能用它表示全天行為判斷的正確率。這些數字並非本頁例圖的分數。</p></li><li><h2>相機沒拍到的時段</h2><p>同一隻蜥蜴在同一微環境中，10 秒內的連拍會合併成一次觀測事件。作者用連拍起訖估算照片記錄到的活動時段。不過，相機可能漏拍靜止的蜥蜴，因此不能把這些時段當成全天總停留時間。本例缺少拍攝時間與個體資料，不能直接合併；作者比較的也不是單純照片張數比例。</p></li></ol></details><details id="sourceNotes"><summary>照片從哪裡來，研究怎麼做</summary><div class="source-copy"><p>研究：Shermeister、Mor、Levy（2024），<a href="https://doi.org/10.1111/1365-2656.14139" target="_blank" rel="noopener">Leveraging camera traps and artificial intelligence to explore thermoregulation behaviour</a>。方法與限制依 §2.5、§2.8，三個百分比依 §3.2。</p><p>原圖與 XML 來自<a href="https://github.com/levyofi/Shermeister_et_al_2024/tree/v1.0.0" target="_blank" rel="noopener">作者資料 release v1.0.0</a>，資料 release 見<a href="https://doi.org/10.5281/zenodo.11406382" target="_blank" rel="noopener">Zenodo</a>。資料採 CC BY 4.0；程式碼的 MIT 與論文圖版授權是不同範圍。本頁沒有拆裁論文圖版作素材。</p><p>開場插畫由 AI 生成，用來說明蜥蜴身旁的光線。其他照片保持原樣，圖中的框和放大局部都依作者 XML 座標顯示。這裡沒有重新執行模型或 Grad-CAM，也沒有另作個體鑑定或加上分類分數。XML 未說明座標從哪裡起算，因此照原值使用，沒有加一或減一。</p><p>原文在報告準確率時寫「高於 95%」，說明約 85% 的預測通過篩選時則寫「95% 或以上」。畫面統稱「95% 門檻」，但保留兩種措辭的差異，沒有認定它們指的預測集合完全相同。原檔、時間資訊與授權見 <a href="SOURCE.md" target="_blank" rel="noopener">素材說明</a>。</p><p><a href="assets/shade.jpg" target="_blank" rel="noopener">陰影例圖原檔</a> · <a href="assets/sun.jpg" target="_blank" rel="noopener">日照例圖原檔</a> · <a href="assets/detection.jpg" target="_blank" rel="noopener">完整相機照片</a></p></div></details></div>
+  </main>
+</body>
+</html>

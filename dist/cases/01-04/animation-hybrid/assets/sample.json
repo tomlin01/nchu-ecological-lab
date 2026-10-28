@@ -1,0 +1,596 @@
+{
+  "dataset": "Insect Identification in the Wild: The AMI Dataset",
+  "datasetUrl": "https://doi.org/10.5281/zenodo.12554005",
+  "datasetPart": "AMI-Traps",
+  "license": "MIT, declared on the dataset record",
+  "credit": "Jain 等，AMI Dataset",
+  "region": "WesternEurope",
+  "stationId": null,
+  "individualIdentityConfirmed": false,
+  "frames": [
+    {
+      "id": "F01",
+      "file": "assets/frames/20230721230832-00-34.jpg",
+      "originalFilename": "20230721230832-00-34.jpg",
+      "sourcePath": "work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721230832-00-34.jpg",
+      "width": 4096,
+      "height": 2160,
+      "sha256": "ab02b54cef90e250c57765d3657819e83dd19e4c56ae93b68cfdd21e315fe1ba",
+      "captureLabel": "23:08:32",
+      "captureDate": "2023-07-21",
+      "roi": {
+        "x": 2170.56201171875,
+        "y": 1666.965576171875,
+        "width": 176.396728515625,
+        "height": 201.512939453125
+      },
+      "roiBasis": "Actual model output; selected for teaching by maximum overlap with first author-annotated Eilema lurideola region",
+      "roiModelOutputIndex": 2,
+      "roiScore": 0.9999912977218628,
+      "roiAuthorIoU": 0.9997432845684752,
+      "authorAnnotation": {
+        "classId": 3852,
+        "name": "Eilema lurideola",
+        "bbox_xyxy": [
+          2170.5728,
+          1666.9691999999998,
+          2346.9875199999997,
+          1868.4756
+        ],
+        "identityLabel": null
+      },
+      "detections": [
+        {
+          "x": 346.30828857421875,
+          "y": 500.01446533203125,
+          "width": 159.89645385742188,
+          "height": 212.99700927734375,
+          "score": 0.9999979734420776,
+          "modelOutputIndex": 0
+        },
+        {
+          "x": 2528.870361328125,
+          "y": 1606.2930908203125,
+          "width": 246.2802734375,
+          "height": 182.2021484375,
+          "score": 0.9999979734420776,
+          "modelOutputIndex": 1
+        },
+        {
+          "x": 2170.56201171875,
+          "y": 1666.965576171875,
+          "width": 176.396728515625,
+          "height": 201.512939453125,
+          "score": 0.9999912977218628,
+          "modelOutputIndex": 2
+        },
+        {
+          "x": 3459.609130859375,
+          "y": 1719.4296875,
+          "width": 135.284423828125,
+          "height": 269.1849365234375,
+          "score": 0.9999905824661255,
+          "modelOutputIndex": 3
+        },
+        {
+          "x": 391.6423645019531,
+          "y": 1441.21728515625,
+          "width": 48.370941162109375,
+          "height": 111.8377685546875,
+          "score": 0.9998307228088379,
+          "modelOutputIndex": 4
+        },
+        {
+          "x": 2536.43603515625,
+          "y": 709.7611083984375,
+          "width": 50.060791015625,
+          "height": 115.56005859375,
+          "score": 0.9997708201408386,
+          "modelOutputIndex": 5
+        },
+        {
+          "x": 3931.141845703125,
+          "y": 308.0990295410156,
+          "width": 60.673583984375,
+          "height": 152.23297119140625,
+          "score": 0.9996964931488037,
+          "modelOutputIndex": 6
+        },
+        {
+          "x": 1489.153076171875,
+          "y": 1475.8717041015625,
+          "width": 39.1903076171875,
+          "height": 159.8431396484375,
+          "score": 0.9996645450592041,
+          "modelOutputIndex": 7
+        },
+        {
+          "x": 2931.676025390625,
+          "y": 14.990639686584473,
+          "width": 37.449951171875,
+          "height": 117.33707332611084,
+          "score": 0.9995812773704529,
+          "modelOutputIndex": 8
+        },
+        {
+          "x": 2500.04931640625,
+          "y": 1837.0072021484375,
+          "width": 283.867919921875,
+          "height": 301.7694091796875,
+          "score": 0.9948574304580688,
+          "modelOutputIndex": 9
+        },
+        {
+          "x": 3304.2119140625,
+          "y": 732.94775390625,
+          "width": 56.96484375,
+          "height": 77.2039794921875,
+          "score": 0.9937556982040405,
+          "modelOutputIndex": 10
+        },
+        {
+          "x": 1702.0556640625,
+          "y": 2044.3839111328125,
+          "width": 169.1658935546875,
+          "height": 113.3228759765625,
+          "score": 0.991449773311615,
+          "modelOutputIndex": 11
+        },
+        {
+          "x": 10.276573181152344,
+          "y": 97.23196411132812,
+          "width": 141.86296844482422,
+          "height": 88.61820983886719,
+          "score": 0.9913696050643921,
+          "modelOutputIndex": 12
+        },
+        {
+          "x": 3500.381103515625,
+          "y": 1633.9273681640625,
+          "width": 34.348876953125,
+          "height": 102.74560546875,
+          "score": 0.9451106190681458,
+          "modelOutputIndex": 13
+        },
+        {
+          "x": 4016.199951171875,
+          "y": 1690.751953125,
+          "width": 65.1845703125,
+          "height": 112.9222412109375,
+          "score": 0.6921233534812927,
+          "modelOutputIndex": 14
+        },
+        {
+          "x": 4011.530517578125,
+          "y": 1694.377685546875,
+          "width": 59.94580078125,
+          "height": 67.692626953125,
+          "score": 0.5175756812095642,
+          "modelOutputIndex": 15
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "file": "assets/frames/20230721232832-00-35.jpg",
+      "originalFilename": "20230721232832-00-35.jpg",
+      "sourcePath": "work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721232832-00-35.jpg",
+      "width": 4096,
+      "height": 2160,
+      "sha256": "a07eed063d1b07869df7e0988a24e542fb8024d47b84ceb735af1d8372b7c78c",
+      "captureLabel": "23:28:32",
+      "captureDate": "2023-07-21",
+      "roi": {
+        "x": 1579.169189453125,
+        "y": 1538.8167724609375,
+        "width": 172.863037109375,
+        "height": 211.1461181640625
+      },
+      "roiBasis": "Actual model output; selected for teaching by maximum overlap with first author-annotated Eilema lurideola region",
+      "roiModelOutputIndex": 1,
+      "roiScore": 0.999967098236084,
+      "roiAuthorIoU": 0.8375020626214775,
+      "authorAnnotation": {
+        "classId": 3852,
+        "name": "Eilema lurideola",
+        "bbox_xyxy": [
+          1545.64608,
+          1538.8164000000002,
+          1752.0435200000002,
+          1749.9564
+        ],
+        "identityLabel": null
+      },
+      "detections": [
+        {
+          "x": 2087.422607421875,
+          "y": 480.49151611328125,
+          "width": 46.556640625,
+          "height": 125.0001220703125,
+          "score": 0.9999721050262451,
+          "modelOutputIndex": 0
+        },
+        {
+          "x": 1579.169189453125,
+          "y": 1538.8167724609375,
+          "width": 172.863037109375,
+          "height": 211.1461181640625,
+          "score": 0.999967098236084,
+          "modelOutputIndex": 1
+        },
+        {
+          "x": 3378.8740234375,
+          "y": 0.0,
+          "width": 199.25048828125,
+          "height": 130.58030700683594,
+          "score": 0.9999657869338989,
+          "modelOutputIndex": 2
+        },
+        {
+          "x": 2245.248779296875,
+          "y": 1717.8095703125,
+          "width": 127.887451171875,
+          "height": 209.482421875,
+          "score": 0.9999043941497803,
+          "modelOutputIndex": 3
+        },
+        {
+          "x": 3283.1796875,
+          "y": 898.7139282226562,
+          "width": 108.235595703125,
+          "height": 87.6697998046875,
+          "score": 0.999871015548706,
+          "modelOutputIndex": 4
+        },
+        {
+          "x": 226.71572875976562,
+          "y": 1284.856201171875,
+          "width": 113.827880859375,
+          "height": 116.6151123046875,
+          "score": 0.9998605251312256,
+          "modelOutputIndex": 5
+        },
+        {
+          "x": 1401.5806884765625,
+          "y": 1161.468017578125,
+          "width": 96.5078125,
+          "height": 135.679931640625,
+          "score": 0.9998412132263184,
+          "modelOutputIndex": 6
+        },
+        {
+          "x": 2431.29541015625,
+          "y": 827.4000854492188,
+          "width": 108.250244140625,
+          "height": 68.04949951171875,
+          "score": 0.9996930360794067,
+          "modelOutputIndex": 7
+        },
+        {
+          "x": 651.0134887695312,
+          "y": 128.3313751220703,
+          "width": 66.9390869140625,
+          "height": 61.38209533691406,
+          "score": 0.9984637498855591,
+          "modelOutputIndex": 8
+        },
+        {
+          "x": 2443.637939453125,
+          "y": 627.1632080078125,
+          "width": 89.90234375,
+          "height": 85.69866943359375,
+          "score": 0.9982921481132507,
+          "modelOutputIndex": 9
+        },
+        {
+          "x": 369.290771484375,
+          "y": 335.2284240722656,
+          "width": 98.734375,
+          "height": 150.66470336914062,
+          "score": 0.9964784979820251,
+          "modelOutputIndex": 10
+        },
+        {
+          "x": 659.8197021484375,
+          "y": 1360.2235107421875,
+          "width": 222.09320068359375,
+          "height": 137.2921142578125,
+          "score": 0.99530029296875,
+          "modelOutputIndex": 11
+        },
+        {
+          "x": 1730.396728515625,
+          "y": 1916.1163330078125,
+          "width": 51.034423828125,
+          "height": 169.1485595703125,
+          "score": 0.9948939085006714,
+          "modelOutputIndex": 12
+        },
+        {
+          "x": 1142.5523681640625,
+          "y": 99.97516632080078,
+          "width": 56.8017578125,
+          "height": 173.89391326904297,
+          "score": 0.9947546720504761,
+          "modelOutputIndex": 13
+        },
+        {
+          "x": 1174.20361328125,
+          "y": 512.4442749023438,
+          "width": 190.763427734375,
+          "height": 90.91339111328125,
+          "score": 0.9946358799934387,
+          "modelOutputIndex": 14
+        },
+        {
+          "x": 1385.9534912109375,
+          "y": 513.21484375,
+          "width": 52.4178466796875,
+          "height": 142.90399169921875,
+          "score": 0.9932562112808228,
+          "modelOutputIndex": 15
+        },
+        {
+          "x": 2425.95751953125,
+          "y": 1522.5577392578125,
+          "width": 62.9921875,
+          "height": 159.8553466796875,
+          "score": 0.9881608486175537,
+          "modelOutputIndex": 16
+        },
+        {
+          "x": 3539.558837890625,
+          "y": 2084.357177734375,
+          "width": 69.153076171875,
+          "height": 75.642822265625,
+          "score": 0.9871763586997986,
+          "modelOutputIndex": 17
+        },
+        {
+          "x": 3760.481201171875,
+          "y": 1994.7166748046875,
+          "width": 40.133544921875,
+          "height": 109.7095947265625,
+          "score": 0.9775218963623047,
+          "modelOutputIndex": 18
+        },
+        {
+          "x": 1922.8443603515625,
+          "y": 1332.4130859375,
+          "width": 90.1968994140625,
+          "height": 236.9298095703125,
+          "score": 0.9551589488983154,
+          "modelOutputIndex": 19
+        },
+        {
+          "x": 0.594469428062439,
+          "y": 1015.1686401367188,
+          "width": 47.531293511390686,
+          "height": 160.11248779296875,
+          "score": 0.9508885741233826,
+          "modelOutputIndex": 20
+        },
+        {
+          "x": 3012.484619140625,
+          "y": 0.0,
+          "width": 84.174072265625,
+          "height": 111.897705078125,
+          "score": 0.9499861001968384,
+          "modelOutputIndex": 21
+        },
+        {
+          "x": 1929.8150634765625,
+          "y": 1493.06787109375,
+          "width": 81.531494140625,
+          "height": 154.6622314453125,
+          "score": 0.8739168643951416,
+          "modelOutputIndex": 22
+        },
+        {
+          "x": 69.74696350097656,
+          "y": 1558.68994140625,
+          "width": 305.7229766845703,
+          "height": 130.30419921875,
+          "score": 0.6649304628372192,
+          "modelOutputIndex": 23
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "file": "assets/frames/20230721234832-00-35.jpg",
+      "originalFilename": "20230721234832-00-35.jpg",
+      "sourcePath": "work/ecology-ai-rollout/cases/01-04/hybrid-v02/sources/ami_traps/ami_traps_dataset/images/20230721234832-00-35.jpg",
+      "width": 4096,
+      "height": 2160,
+      "sha256": "d9becbc32a8a8b384dbd626bbfdff86fb0e71637dc4ec7dcd6d742b73a4e260d",
+      "captureLabel": "23:48:32",
+      "captureDate": "2023-07-21",
+      "roi": {
+        "x": 3267.507080078125,
+        "y": 200.62635803222656,
+        "width": 125.955078125,
+        "height": 188.5134735107422
+      },
+      "roiBasis": "Actual model output; selected for teaching by maximum overlap with first author-annotated Eilema lurideola region",
+      "roiModelOutputIndex": 11,
+      "roiScore": 0.9958264231681824,
+      "roiAuthorIoU": 0.9997241793292942,
+      "authorAnnotation": {
+        "classId": 3852,
+        "name": "Eilema lurideola",
+        "bbox_xyxy": [
+          3267.52256,
+          200.6316,
+          3393.47456,
+          389.13480000000004
+        ],
+        "identityLabel": null
+      },
+      "detections": [
+        {
+          "x": 2442.49658203125,
+          "y": 1716.993896484375,
+          "width": 244.50341796875,
+          "height": 307.9991455078125,
+          "score": 1.0,
+          "modelOutputIndex": 0
+        },
+        {
+          "x": 2102.97705078125,
+          "y": 377.195068359375,
+          "width": 224.169677734375,
+          "height": 122.44290161132812,
+          "score": 0.9999653100967407,
+          "modelOutputIndex": 1
+        },
+        {
+          "x": 3266.618896484375,
+          "y": 518.9628295898438,
+          "width": 197.7958984375,
+          "height": 107.44891357421875,
+          "score": 0.9999232292175293,
+          "modelOutputIndex": 2
+        },
+        {
+          "x": 2048.44775390625,
+          "y": 819.1318359375,
+          "width": 60.339111328125,
+          "height": 104.86798095703125,
+          "score": 0.9998534917831421,
+          "modelOutputIndex": 3
+        },
+        {
+          "x": 3704.95654296875,
+          "y": 635.889404296875,
+          "width": 97.937744140625,
+          "height": 155.62353515625,
+          "score": 0.9996660947799683,
+          "modelOutputIndex": 4
+        },
+        {
+          "x": 2035.5804443359375,
+          "y": 2062.343505859375,
+          "width": 109.0252685546875,
+          "height": 70.768310546875,
+          "score": 0.999313473701477,
+          "modelOutputIndex": 5
+        },
+        {
+          "x": 1339.611572265625,
+          "y": 1582.4368896484375,
+          "width": 65.6422119140625,
+          "height": 126.220703125,
+          "score": 0.9988998174667358,
+          "modelOutputIndex": 6
+        },
+        {
+          "x": 2749.441650390625,
+          "y": 445.0633544921875,
+          "width": 107.843505859375,
+          "height": 165.4161376953125,
+          "score": 0.9987279772758484,
+          "modelOutputIndex": 7
+        },
+        {
+          "x": 389.4510192871094,
+          "y": 988.0869750976562,
+          "width": 54.2503662109375,
+          "height": 161.16497802734375,
+          "score": 0.9985253214836121,
+          "modelOutputIndex": 8
+        },
+        {
+          "x": 1516.5748291015625,
+          "y": 1148.435791015625,
+          "width": 53.6260986328125,
+          "height": 147.105224609375,
+          "score": 0.9985180497169495,
+          "modelOutputIndex": 9
+        },
+        {
+          "x": 3205.840576171875,
+          "y": 1316.910400390625,
+          "width": 113.900146484375,
+          "height": 113.1956787109375,
+          "score": 0.9976988434791565,
+          "modelOutputIndex": 10
+        },
+        {
+          "x": 3267.507080078125,
+          "y": 200.62635803222656,
+          "width": 125.955078125,
+          "height": 188.5134735107422,
+          "score": 0.9958264231681824,
+          "modelOutputIndex": 11
+        },
+        {
+          "x": 917.5725708007812,
+          "y": 646.7555541992188,
+          "width": 62.1072998046875,
+          "height": 147.73089599609375,
+          "score": 0.9949170351028442,
+          "modelOutputIndex": 12
+        },
+        {
+          "x": 1212.332763671875,
+          "y": 1022.1456298828125,
+          "width": 79.0548095703125,
+          "height": 162.5860595703125,
+          "score": 0.9844886064529419,
+          "modelOutputIndex": 13
+        },
+        {
+          "x": 3386.8095703125,
+          "y": 298.9514465332031,
+          "width": 64.7568359375,
+          "height": 80.43194580078125,
+          "score": 0.9055748581886292,
+          "modelOutputIndex": 14
+        },
+        {
+          "x": 2595.853271484375,
+          "y": 2.023104190826416,
+          "width": 50.69873046875,
+          "height": 55.12773275375366,
+          "score": 0.8660764694213867,
+          "modelOutputIndex": 15
+        },
+        {
+          "x": 10.425877571105957,
+          "y": 345.5441589355469,
+          "width": 140.37966442108154,
+          "height": 261.5555725097656,
+          "score": 0.8567531704902649,
+          "modelOutputIndex": 16
+        },
+        {
+          "x": 3980.08056640625,
+          "y": 740.9678955078125,
+          "width": 54.424072265625,
+          "height": 196.1993408203125,
+          "score": 0.699298083782196,
+          "modelOutputIndex": 17
+        },
+        {
+          "x": 14.786384582519531,
+          "y": 1925.224853515625,
+          "width": 808.3025436401367,
+          "height": 212.56982421875,
+          "score": 0.6761384010314941,
+          "modelOutputIndex": 18
+        }
+      ]
+    }
+  ],
+  "inference": {
+    "executed": true,
+    "resultFile": "assets/detector-results.json",
+    "modelName": "FasterRCNN - MobileNet for AMI Moth Traps 2023",
+    "sourceCommit": "55d0787570f8c9d92c450f4fb65a58dd25cf6634",
+    "threshold": 0.5,
+    "classMeaning": "物體候選，不是物種名稱",
+    "speciesClassifierExecuted": false,
+    "trackerExecuted": false
+  }
+}

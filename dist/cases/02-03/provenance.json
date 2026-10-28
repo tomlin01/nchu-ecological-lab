@@ -1,0 +1,170 @@
+{
+  "case_id": "02-03",
+  "version": "web-v01",
+  "status": "website_candidate_ready_for_root_qa",
+  "visual_revision": "full-bleed-ocean-v02",
+  "entry": "02-03.html",
+  "candidate_home": "../../../../ecology-ai-site-v01/index.html#topic-02",
+  "main_home_on_integration": "../../index.html#topic-02",
+  "main_site_written_by_this_build": false,
+  "publicly_deployed": false,
+  "accepted_animation": {
+    "version": "prototype-v01",
+    "content_revision": "dual-confirmation-scores-v02",
+    "duration_seconds": 88,
+    "source_files": {
+      "app.bundle.js": "737dcf8eb72bb2b36e0175f4187a246db791fb7c63e674bc0935100d57367922",
+      "index.html": "6b9b349174f0165a5d16802e9f349418027fcdd68a8ab4236bbd1860a7b09542",
+      "SOURCE.md": "de77b1e607852d91259a37faad166c634d8d4900cd9d924645754c916e429ed8",
+      "README.md": "317966371aa096510f2e3d3bb90cafcecf3f3880528703d18caa352a7ad4ce02",
+      "style.css": "c7dec0e416bd4999df7107567395f7f85dc2903985d072b40d171ec62366b9b1",
+      "manifest.json": "56e9c130b6acfa26cd0ed6d1f7cdd8d1f4bccefe46a9db946c188fc849abfa0d",
+      "verification.json": "07772e8db65eeddf6b89d75f4ec06329f84c3b329a0dae7eb1c82710c246f9f2",
+      "build-runtime.json": "fd4d647167729b97127e6d12e5fb2adfe9f87b9451035dbba545ca9ad7b3f438",
+      "fonts/case-sans.woff2": "e412e29618f1f87c5d5135e207e70a4f51f651b9aa878c22bb08d8984226d20c",
+      "fonts/case-serif.woff2": "1966eef0283af6af3602df7d4ef640efec2d06ebab9b0429ca6c2fc2f3c2b58f",
+      "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "assets/spectrogram-low-only.png": "77572e27780936a3ed2086ef37a197344e787339f2573f63ee55934343183bef",
+      "assets/paper-figure-1.webp": "13e6da35a2dba5cfc8fd7251b35095cc87315a75c6349fe5919a3236f2b1917b",
+      "assets/spectrogram-low-frequency-only.png": "77572e27780936a3ed2086ef37a197344e787339f2573f63ee55934343183bef",
+      "assets/audio-provenance.json": "3525e7aa687d7f4e663eed38cc053a00cad009a8504037fff044d1e2fccfdd97",
+      "assets/biotwang-google-original.wav": "f9db96ae5535307b6110c18331a7cdf625d1acbbebaed24e99898a222ccf41d7",
+      "assets/spectrogram.png": "e2ee0173803725f03ccf8bbee05d33a0e4add44ac9fc89ca3e91abe3773df8a6",
+      "assets/axis-mapping.json": "066b977ba79cdcd96194aaeb4087ffab6a72dbb2e8e9f9764cd009e2572a67ab",
+      "assets/spectrogram-only.png": "6b6553515211d2a9427f77cf45177802c6308a3dcdcb5417c53e36b1530cb61f",
+      "assets/paper-figure-3.webp": "1e8243f3b79a5d13190a1b817d3475749baf15be2ed271cf1ba632e761a52f48",
+      "assets/brydes-whale-mariana-noaa-original.JPG": "a0046e7472df67e45277751b71b50018005a38fbaf08f33a8a43b16ce8ea67d7",
+      "assets/waveform.json": "556cba110c3cac9f8ff96defeccf9704ce065436cf18295a77d1579d65acb12e",
+      "assets/spectrogram-low-frequency.png": "f3dbdfe215e8ac33d5e4c12e51dde8b544f46df5132326aabb33ebb449b276c7",
+      "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "copied_all_25_byte_identical": true,
+    "added_wrappers": [
+      "embed.html",
+      "embed.css",
+      "embed.js"
+    ]
+  },
+  "parent_assets": {
+    "brydes-whale-mariana-noaa-original.JPG": {
+      "sha256": "a0046e7472df67e45277751b71b50018005a38fbaf08f33a8a43b16ce8ea67d7",
+      "source": "outputs/ecology-ai-rollout/candidates/02-03/prototype-v01/assets/brydes-whale-mariana-noaa-original.JPG",
+      "original_bytes_preserved": true
+    },
+    "paper-figure-1.webp": {
+      "sha256": "13e6da35a2dba5cfc8fd7251b35095cc87315a75c6349fe5919a3236f2b1917b",
+      "source": "outputs/ecology-ai-rollout/candidates/02-03/prototype-v01/assets/paper-figure-1.webp",
+      "original_bytes_preserved": true
+    },
+    "paper-figure-3.webp": {
+      "sha256": "1e8243f3b79a5d13190a1b817d3475749baf15be2ed271cf1ba632e761a52f48",
+      "source": "outputs/ecology-ai-rollout/candidates/02-03/prototype-v01/assets/paper-figure-3.webp",
+      "original_bytes_preserved": true
+    }
+  },
+  "photo_credit": "NOAA Fisheries / Adam Ü; Mariana Archipelago2010; NOAA Photo Library anim2619; CC BY2.0; Permit#14097",
+  "paper_figure_credit": "Allen et al.2024 Figures1/3; CC BY4.0",
+  "audio_reuse_license": "unconfirmed; local review only; not publicly deployed",
+  "fresh_model_inference": false,
+  "teaching_scores": [
+    0.92,
+    0.7
+  ],
+  "teaching_scores_are_not_source_audio_predictions": true,
+  "photo_and_audio_same_encounter": false,
+  "fonts": [
+    {
+      "family": "Case Sans",
+      "characters": 598,
+      "missing": [],
+      "file": "fonts/case-sans.woff2",
+      "bytes": 195748,
+      "sha256": "9d90a41c91e2fb9a1aa000fef5ffec46d2f8b397fc115472918aa04cb72a1da0"
+    },
+    {
+      "family": "Case Serif",
+      "characters": 598,
+      "missing": [],
+      "file": "fonts/case-serif.woff2",
+      "bytes": 264624,
+      "sha256": "b96833f0a9f40847feb1e9dfa757424287cc3f3f18125525943a54a1f3300e53"
+    }
+  ],
+  "historical_case_json_source": "outputs/ecology-ai-12-directions.json",
+  "historical_case_json": {
+    "id": "02-03",
+    "name": "NOAA／Google：布氏鯨Biotwang聲音辨識",
+    "year": "2024論文與模型；使用歷史北太平洋錄音",
+    "context": "馬里亞納群島及中、西北太平洋長期水下錄音；原先未知發聲物種的Biotwang聲音需要建立可靠標籤。",
+    "ai_role": "研究先用同步目擊與聲納浮標錄音確認布氏鯨發聲，再以人工標註、active learning和EfficientNet CNN訓練偵測器，掃描歷史水聽器資料。AI擴展已確認聲音的搜尋，不獨自決定其生物來源。",
+    "outputs": "5秒聲音片段的分類分數，彙整為75秒偵測區段及各站每日有聲比例，形成物種發聲的時間紀錄。",
+    "demonstrated": "10次已確認布氏鯨目擊中有9次同時錄到Biotwang。研究把模型應用至13個PIPAN站的歷史資料，按站設定閾值並人工抽查低發生站；開發團隊報告處理逾20萬小時錄音。",
+    "stage": "real_data",
+    "stage_detail": "真實視聽同步證據加長期聲學資料回溯分析；多物種模型已公開，這篇研究未證明全海域持續即時辨識服務。",
+    "limits": "叫聲缺席不能證明鯨缺席，聲音發生量也不是個體數。訓練／測試採隨機切分，不能把其分類性能當作對全新海域或新年份的獨立外部驗證。",
+    "sources": [
+      {
+        "title": "Bryde’s whales produce Biotwang calls, which occur seasonally in long-term acoustic recordings from the central and western North Pacific",
+        "url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2024.1394695/full",
+        "year": "2024",
+        "type": "期刊論文",
+        "access": "全文",
+        "supports": "DOI 10.3389/fmars.2024.1394695；視聽物種確認、CNN與active learning、13站、分段方式、站別閾值及資料切分。"
+      },
+      {
+        "title": "Whistles, songs, boings, and biotwangs: Recognizing whale vocalizations with AI",
+        "url": "https://research.google/blog/whistles-songs-boings-and-biotwangs-recognizing-whale-vocalizations-with-ai/",
+        "year": "2024",
+        "type": "官方實作報告",
+        "access": "官方網頁",
+        "supports": "2024-09-18模型團隊報告；8種鯨類、12聲音類別、模型公開與逾20萬小時歷史錄音應用。"
+      }
+    ]
+  },
+  "visual_system": {
+    "source_photo_original_bytes": true,
+    "display": "CSS cover and dark readability overlays across four pages",
+    "new_image_generated": false,
+    "desktop_focus": "whale left and center, copy right",
+    "mobile_focus": "title above, whale in middle, action and credit below"
+  },
+  "verified_local_delivery": {
+    "entry": "http://127.0.0.1:8863/cases/02-03/02-03.html?visual=2",
+    "website_user_review": "pending",
+    "latest_verification": "verification.json",
+    "visual_browser_checks": 20,
+    "prior_full_playback": "site-integration-v01; 88 seconds, runtime unchanged",
+    "public_deployment": false
+  },
+  "copy_edit_revision": {
+    "revision": "copy-review-02-v01",
+    "scope": "Website editorial text and parent-page animation transcript only",
+    "skill": "humanizer, adapted to Traditional Chinese science communication",
+    "before_html_sha256": "0d8bd0bd671096b91c50fcf1a79fbb5a7086f10b7ea60e5788cb94a07e4717e8",
+    "animation_runtime_and_media_unchanged": true,
+    "original_notes_and_research_json_unchanged": true,
+    "layout_and_controllers_unchanged": true,
+    "new_font_files_only": true,
+    "scientific_review_status_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/copy-review-02-v01/verification.json",
+    "main_site_integrated": true,
+    "browser_verification": "work/ecology-ai-rollout/copy-review-02-v01/browser-verification.json"
+  },
+  "narrative_revision": {
+    "version": "copy-edit-v02",
+    "plan": "outputs/ecology-ai-rollout/copy-plan-02-v02/topic-02-revision-plan.md",
+    "user_instruction": "好，你一起修改",
+    "approved_items": 9,
+    "scope": "Titles, prose ordering, concrete explanations and technical-detail disclosure",
+    "before_html_sha256": "48ecc340375b260f04dca7ad0977544cf087ed0d0e7cd153abb1dd9616a40200",
+    "media_runtime_and_control_css_unchanged": true,
+    "scientific_status_unchanged": true,
+    "new_inference": false,
+    "full_playback_rerun": false,
+    "verification": "work/ecology-ai-rollout/copy-review-02-v02/verification.json",
+    "title_type_adjustment": "Desktop heading slightly reduced to retain approved title in two lines",
+    "status": "implemented_local_verified",
+    "browser_checks": 211
+  }
+}

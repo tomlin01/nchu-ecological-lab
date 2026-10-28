@@ -1,0 +1,39 @@
+{
+  "version": "01-03-hybrid-v01",
+  "photos": [
+    {
+      "file": "auv-figure-9.webp",
+      "width": 2500,
+      "height": 1406,
+      "bytes": 1087318,
+      "sha256": "71dd62525a46014afd5df63cf8c38325ca636f3907ff404f2759faf3c736c294",
+      "asset_url": "https://www.frontiersin.org/files/Articles/1319719/xml-images/fmars-10-1319719-g009.webp",
+      "article_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1319719/full",
+      "credit": "Berild et al. (2024), Figure 9",
+      "license": "CC BY 4.0",
+      "subject": "LAUV Roald; equipment reference from a separate Nidelva river plume study",
+      "same_svalbard_trial": false,
+      "source_bytes_modified": false
+    },
+    {
+      "file": "figure-7.png",
+      "width": 2013,
+      "height": 673,
+      "bytes": 1480750,
+      "sha256": "7f860556abfad474daf112543990c90349935722912e1c2547e7bd77c513dee2",
+      "asset_url": "https://journals.plos.org/plosone/article/figure/image?download&size=large&id=10.1371/journal.pone.0302514.g007",
+      "article_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302514",
+      "credit": "Mo-Bjørkelund et al. (2024), Figure 7; panel b: Ane Cecilie Kvernvik; panel c: Anette Wold",
+      "license": "CC BY 4.0",
+      "subject": "b: Phaeocystis pouchetii colony; c: phytoplankton community in the bloom",
+      "source_bytes_modified": false
+    }
+  ],
+  "display": "Local original bytes; viewport crop only. Original full figures linked separately. No generated photos or image retouch.",
+  "evidence_limits": [
+    "Reference LAUV photo does not document the Svalbard May 2022 mission.",
+    "Microscopy photos show morphology; they are not AUV fluorescence images or proof of quantitative prediction accuracy.",
+    "Photograph panels are not matched to the introductory 5 micrometre cell illustration or synthetic model.",
+    "No cell size, count, classification or new field observations are inferred from these crops."
+  ]
+}

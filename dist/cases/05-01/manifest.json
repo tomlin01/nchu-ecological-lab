@@ -1,0 +1,160 @@
+{
+  "case_id": "05-01",
+  "title": "照片是平的，怎麼估出樹高？",
+  "version": "web-v01",
+  "visual_revision": "registered-photo-height-v01",
+  "status": "integrated_local_ready_for_review",
+  "entry": "05-01.html",
+  "animation_version": "prototype-v01",
+  "animation_entry": "animation/embed.html",
+  "accepted_animation_original_files_preserved": true,
+  "accepted_animation_original_file_count": 19,
+  "animation_manifest_scope": "Retained standalone snapshot; host additions in embed-manifest.json.",
+  "source_images_byte_preserved": true,
+  "conceptual_diagrams": true,
+  "generated_images": false,
+  "model_inference_run": false,
+  "per_tree_height_computed": false,
+  "website_user_accepted": false,
+  "deployed": false,
+  "updated": "2026-10-25T17:14:56.095264+00:00",
+  "files": {
+    "05-01.html": {
+      "bytes": 19496,
+      "sha256": "c102c150adcc22ca4b452d061cf56bc608bdc2459544d17d3bb30d0552848573"
+    },
+    "README.md": {
+      "bytes": 1635,
+      "sha256": "a5892e599b02db06c72dcb6e8b326b9f9ed8553215b96343662261b4e0f181e4"
+    },
+    "animation/README.md": {
+      "bytes": 1320,
+      "sha256": "4a93ca768306b212bb2d2ab97275b4559bd7221553ed8aca2ac3434be79be1bb"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 1798,
+      "sha256": "530d6c1fc93c39c996893397481b79e5154fa211426e70fb4fa86c3882a7c9d0"
+    },
+    "animation/app.mjs": {
+      "bytes": 15176,
+      "sha256": "5cc4193b9a56fafe923d45a751f7261f9abc58799a9efa227b13f51c6b61ef4e"
+    },
+    "animation/assets/figure7.png": {
+      "bytes": 1838127,
+      "sha256": "d0de03294969f7ea931f74c906861fe4df8cd198210662a34eb624b04d4626ef"
+    },
+    "animation/assets/source-data.json": {
+      "bytes": 1146,
+      "sha256": "d5c57223fb26a54379795cf324153b68c7b2f4464b3fd60f768381456b4bebb4"
+    },
+    "animation/embed-manifest.json": {
+      "bytes": 742,
+      "sha256": "d9fe8c3d2bdba87e7cb32bc471f7b7fd83880b670a47e71389988a57465c9362"
+    },
+    "animation/embed.css": {
+      "bytes": 1172,
+      "sha256": "035c8067aca4bb96e2290dc0870291a3c44456733401906451314d109d1f4353"
+    },
+    "animation/embed.html": {
+      "bytes": 16972,
+      "sha256": "fd37221f4e80b65598728abccd20acf783b31f638c19a15197a5eb655de78351"
+    },
+    "animation/embed.js": {
+      "bytes": 7715,
+      "sha256": "c446163bfc7d6d8dfb3d67fe6227c7192633463422f793bf58acf78d8b467ddd"
+    },
+    "animation/film/05-01-canopy-height-v01.metadata.json": {
+      "bytes": 856,
+      "sha256": "2e1cf2c383c85e279be8835b8c696678992f1c7f5025b74f32752fe2416ae410"
+    },
+    "animation/film/05-01-canopy-height-v01.mp4": {
+      "bytes": 1955635,
+      "sha256": "dafc1a1b1f713e32be5a8afa473e65d53d3b582ceee26dcee314dc9f7842520d"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/canopy-sans.woff2": {
+      "bytes": 131668,
+      "sha256": "b4199690c9338827ba0ae373ed7adbc1007fd1beba63354ab2e6e3390ef4e57e"
+    },
+    "animation/fonts/canopy-serif.woff2": {
+      "bytes": 175336,
+      "sha256": "79aa762f2d654e43701a9bda07dfca428c79d53ca56e68337e466421f9d42e3c"
+    },
+    "animation/index.html": {
+      "bytes": 16882,
+      "sha256": "4d8acbe2502aed48d1aeae2242338b2472f90a9d057ab77226111313300957f3"
+    },
+    "animation/manifest.json": {
+      "bytes": 2821,
+      "sha256": "4ce47c9657cbc616f281a7418d93b57117b009d031751755eec18cd4c3dff815"
+    },
+    "animation/model.mjs": {
+      "bytes": 4776,
+      "sha256": "ea979b1a486bad27c9469da2a6250eb10cb7e9ca152f3f003d0e5346c55f619c"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 2084,
+      "sha256": "93d863038692ff2a8281d1e0d547e3149b9a95a8f4e5aa4604a5b85267b7395a"
+    },
+    "animation/scene.mjs": {
+      "bytes": 2833,
+      "sha256": "0afb7b242e4ef0819c8ba119d024fd6b0862d50fbcca09c2bf3bab8c99eb90fe"
+    },
+    "animation/style.css": {
+      "bytes": 19814,
+      "sha256": "647455fc7d6b2be9fce7c62ee80ab9b677be2c151c9e20220aa48e318c44019c"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/verification.json": {
+      "bytes": 3669,
+      "sha256": "375f11ebd2e92745f53be625358de5c48ac9d2c5865d8b400043d23e504ee5f2"
+    },
+    "case.css": {
+      "bytes": 20696,
+      "sha256": "5386bf9e9b6d9c6a3471c683d8d8542a617d4d81310b0925e6ba6fd5921f33a9"
+    },
+    "case.js": {
+      "bytes": 11124,
+      "sha256": "4c47bdc53b5c2075e565092ce87c2cd45456d6a71996005167cc2f9e7bc033f4"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 132828,
+      "sha256": "c44ba3b7dbd4d669e0140559b3de0cb41a18f09997fb9cd4b9a79b500e3b011b"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 176768,
+      "sha256": "42d190df8534c537051d70415f9f7a64bf230c5ccfadbbc94e90b76ab97ea742"
+    },
+    "index.html": {
+      "bytes": 238,
+      "sha256": "9cb2101757b3e1db512a175b3eeb6ddf2e50d144ee15ec68a028f6d1563324b3"
+    },
+    "scene.js": {
+      "bytes": 4028,
+      "sha256": "1592b58b378c0328d5203ec2c4c0f17824b1f0492ff0533df87ec300645df404"
+    },
+    "typography.css": {
+      "bytes": 1083,
+      "sha256": "aa7f3b3038e58a7b245e455ee5840daa9312024b208803b46646ad0d3ca092c7"
+    }
+  },
+  "copy_revision": "web-copy-v01"
+}

@@ -1,0 +1,14 @@
+html,body{margin:0;overflow:hidden}
+body{background:transparent}
+main{padding:0;max-width:none}
+.page-heading,footer,#story-text{display:none}
+.story{grid-template-columns:minmax(0,1fr) 270px;gap:24px}
+.stage{margin:0}
+.narrative{padding:22px 20px}
+.narrative h2{font-size:23px}
+.description{font-size:17px}
+.figure-note{margin-bottom:12px}
+.player-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.phase-navigation{margin-top:17px;padding-bottom:4px}
+@media(min-width:801px){.stage{height:clamp(300px,30vw,380px);aspect-ratio:auto}}
+@media(max-width:800px){.story{display:block}.narrative{margin-top:22px;padding:22px}.stage{margin:0}.description{font-size:18px}.phase-navigation{margin-top:18px}}

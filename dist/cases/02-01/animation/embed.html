@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>相機拍下照片，接著怎麼認出動物？｜SpeciesNet</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="data.js?release=20261027-media" defer></script>
+  <script src="app.js" defer></script>
+<link rel="stylesheet" href="embed.css"><script src="embed.js" defer></script></head>
+<body>
+  <main>
+    <header class="page-heading"><h1>相機拍下照片，<br>接著怎麼認出動物？</h1><p>跟著同一張照片，看框選、分類與人工核對各自做什麼。</p></header>
+    <section class="player" aria-label="SpeciesNet 照片分類流程動畫">
+      <div class="player-grid">
+        <div class="visual-column">
+          <div id="stage" class="stage" tabindex="0" aria-label="照片、動物框與分類紀錄" hidden>
+            <div id="photo-layer" class="photo-layer"></div>
+            <div id="crop-layer" class="crop-layer"></div>
+            <section id="records" class="records" aria-labelledby="records-title" hidden><h2 id="records-title">每張照片，都能回頭查看</h2><p>點選紀錄，打開同一張原圖。</p><div id="record-rows" class="record-rows"></div></section>
+          </div>
+          <div id="fallback-gallery" class="fallback-gallery">
+            <figure><img src="../assets/02-01-jaguar-main.webp" width="1536" height="1024" alt="白天的森林相機情境照片，動物清楚可見。"><figcaption>P01 · 白天的清楚影像</figcaption></figure>
+            <figure><img src="../assets/occluded-cat.webp" width="1536" height="1024" alt="森林相機情境照片，動物被枝葉遮住。"><figcaption>P02 · 被枝葉遮住的動物</figcaption></figure>
+            <figure><img src="../assets/night-tapir.webp" width="1536" height="1024" alt="夜間相機風格的黑白動物照片。"><figcaption>P03 · 夜間的黑白影像</figcaption></figure>
+            <figure><img src="../assets/02-01-forest-bg.webp" width="1536" height="1024" alt="森林步道上沒有可見動物的情境照片。"><figcaption>P04 · 沒有可見動物的影像</figcaption></figure>
+          </div>
+          <div class="source-strip" id="source-strip" aria-label="這一批的來源照片" hidden></div>
+          <div class="playback js-only" hidden>
+            <div class="playback-buttons"><button id="play-toggle" class="primary" type="button">播放動畫</button><button id="replay" type="button">從頭重播</button></div>
+            <label class="scrubber"><span class="visually-hidden">播放進度，秒</span><input id="timeline" type="range" min="0" max="60" step="0.05" value="0" aria-valuetext="0 秒，共 60 秒"></label>
+            <output id="clock" class="clock">00:00 / 01:00</output>
+          </div>
+          <p id="player-status" class="player-status" role="status">目前是靜態版本，下方保留完整文字流程。</p>
+          <p id="load-notice" class="load-notice" role="status" hidden>動畫暫時無法載入。仍可閱讀照片與下方文字流程。</p>
+        </div>
+        <aside class="caption-panel" aria-label="當前段落說明">
+          <p class="phase-position"><span id="phase-position">1 / 6</span><span id="phase-time">00:00–00:08</span></p>
+          <h2 id="phase-title">相機留下照片，判讀才開始</h2>
+          <p id="phase-description">清楚的動物、被遮住的身體、夜間影像與空景，都是研究人員要整理的照片。</p>
+          <p class="phase-detail" id="phase-detail">先看完整照片，再決定哪些地方值得仔細查看。</p>
+          <dl id="selection-info" class="selection-info" hidden><div><dt>正在查看</dt><dd id="selected-code"></dd></div><div><dt>模型建議</dt><dd id="selected-model"></dd></div><div><dt>核對狀態</dt><dd id="selected-status"></dd></div></dl>
+          <p class="phase-takeaway" id="phase-takeaway">照片保持原樣，後面的判斷另行記錄。</p>
+        </aside>
+      </div>
+      <p class="media-note">四張照片為 AI 生成情境；框選、分類與人工核對都是方法示意，未執行 SpeciesNet。</p>
+      <nav class="phase-navigation js-only" aria-label="跳到動畫段落" hidden>
+        <button data-phase="0" type="button"><span>00:00</span>照片從哪裡來</button><button data-phase="1" type="button"><span>00:08</span>挑一張仔細看</button><button data-phase="2" type="button"><span>00:16</span>框選與裁切</button><button data-phase="3" type="button"><span>00:27</span>提出可能的分類</button><button data-phase="4" type="button"><span>00:39</span>人員回頭核對</button><button data-phase="5" type="button"><span>00:51</span>保留每張原圖</button>
+      </nav>
+    </section>
+
+    <div class="reading-notes">
+      <details id="story-text" open><summary>完整文字流程</summary><ol class="story-list">
+        <li><h3>自動相機留下各種照片</h3><p>照片裡可能有清楚的動物、局部身體、夜間影像，也可能只有森林空景。研究工作從整理這些照片開始。</p></li>
+        <li><h3>從一批照片中選一張查看</h3><p>照片編號與來源一起保留。AI 分析的是已收集到的影像，不是在森林裡操控或追蹤動物。</p></li>
+        <li><h3>先找位置，再裁出框內內容</h3><p>偵測器先找出動物的位置，此時框只表示「動物」，還沒有物種名稱。本動畫選用裁切分類路徑，把同一張原圖的框內內容交給分類器。裁切能放大已有細節，卻不能補出被枝葉遮住的身體。</p></li>
+        <li><h3>分類可以停在較粗的範圍</h3><p>分類器提出可能的名稱，整理規則再決定能保留多細的分類。清楚照片與遮蔽照片分別示範到物種與只到貓科的結果。這不是「只要遮蔽，就一定回傳貓科」的固定規則。SpeciesNet 也有整張影像分類的路徑，並非所有模式都必須先裁切。</p></li>
+        <li><h3>由人員接受、修改或保留疑問</h3><p>人員查看原圖與模型建議，再決定是否確認。示例中的清楚照片獲得確認；遮蔽與夜間照片仍保留較粗分類和待確認狀態。模型建議不會自動變成人工確認。</p></li>
+        <li><h3>整理結果連回同一張照片</h3><p>已確認、待確認與空景照片都留在清單中，可以打開原圖。空景只表示這張照片沒有可見動物，不代表該地永久沒有動物。相機與時段欄位是原先附帶的示意資料，不是模型從影像推算的地點或精確時間。這裡沒有辨識個體、跨照片去重或計算動物總數。</p></li>
+      </ol></details>
+      <details class="method-note"><summary>地點、分類層級與版本</summary><p>地點資訊可以交給整合規則限制分類結果，但不會代替照片判讀，也不是從照片查證動物所在地。原始分類候選與規則整理後的結果應分開保留。</p><p>「空景」「只判為動物」與「無法判定」是不同結果。較高分類群與空景等標籤，也不能直接加成物種數。</p><p>本示意參考 Google 開源程式 2026-10-16 的固定版本，套件宣告為 5.0.6。該版本可對多個符合條件的偵測區域分類；動畫聚焦一個框，並未聲稱完整重現 Wildlife Insights 當前的後端系統。</p></details>
+      <section class="sources" aria-labelledby="sources-title"><h2 id="sources-title">回到原始來源</h2><ul>
+        <li><a href="https://github.com/google/cameratrapai/blob/08ba498e833a15e95e72021c4308908e8b44709d/README.md" target="_blank" rel="noopener">Google SpeciesNet 固定版本說明</a><p>偵測、分類、整合規則及逐偵測輸出的工作方式。</p></li>
+        <li><a href="https://wildlifeinsights.org/get-started/identify-images/image-projects" target="_blank" rel="noopener">Wildlife Insights 人員覆核說明</a><p>回看原圖，接受、修改或保留未確認結果。</p></li>
+        <li><a href="https://doi.org/10.1049/cvi2.12318" target="_blank" rel="noopener">Gadot 等，2024 方法研究</a><p>裁出動物區域再分類的技術動機。</p></li>
+        <li><a href="https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/" target="_blank" rel="noopener">WWF 的秘魯森林相機案例</a><p>相機影像與平台使用情境，不作為本示意分類準確率的證據。</p></li>
+        <li><a href="https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/" target="_blank" rel="noopener">Google Research 的工作流程回顧</a><p>物種初篩與人員核對的分工。</p></li>
+      </ul></section>
+    </div>
+  </main>
+  <dialog id="original-dialog" aria-labelledby="original-title"><div class="dialog-heading"><h2 id="original-title">查看原圖</h2><button id="close-original" type="button">關閉</button></div><img id="original-image" alt=""><p id="original-caption"></p></dialog>
+</body>
+</html>

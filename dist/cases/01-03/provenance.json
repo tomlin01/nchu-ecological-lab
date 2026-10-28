@@ -1,0 +1,57 @@
+{
+  "status": "website_candidate",
+  "image": {
+    "status": "user_supplied_concept_image",
+    "file": "assets/01-03-plankton-main.webp",
+    "original": "/Users/tom/Documents/Codex/2026-10-14/new-chat/outputs/ecology-ai-rollout-assets/01-03/incoming/01-03-plankton-main-v01.png",
+    "original_sha256": "7e683779aa5e79229967b2f6f069bb4e43450cc252f2e55911fe770b2813bf76",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "accepted_animation_base": "prototype-v06",
+  "animation_revision": "prototype-v08",
+  "animation_original_files": {
+    "app.bundle.js": "912f4ad9913f314d09fd3b9e791d8ce88a413256fe3cb3647b15d1e03d294575",
+    "index.html": "61b7a4e2bcf2b92855f8f13ba5e7d6c7d3bc3f04b22e24b3b1115dbd79cf8b72",
+    "provenance.json": "a677f89de5481b7fdd34050bfefe4c8f91c90079c54ce61f4b92a5387cf553e3",
+    "README.md": "6cbd91237ac4152e73ef9e1a1a5a357dac951b9533a8505605ed093a6b4525ec",
+    "style.css": "04a173735a341d70ce0505f8e17830faf1c52d6650212ba761eb59bdd8444923",
+    "LICENSES.txt": "19bdf7c6b2c2561c735a82ec597560510b4bd005c7a4118e9b9d9fd83dee4255",
+    "fonts/case-sans.woff2": "45e5f7f6f5567a3f35ce6b44fe4cd9aaae4787c545c3533977a4e0bb0dec574f",
+    "fonts/case-serif.woff2": "3c251b064920ee533451f2ffbc4ab90167ed3a18aa7c58364f7e99d54f3be4d8",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "embed_changes": "Only wrapper CSS and parent/child pause/seek/height bridge; original index remains available",
+  "fonts": {
+    "sans": {
+      "characters": 594,
+      "missing": [],
+      "bytes": 161356
+    },
+    "serif": {
+      "characters": 594,
+      "missing": [],
+      "bytes": 215352
+    }
+  },
+  "sources": {
+    "template.html": "2fdf83bddeb910950e836c0165750e992a43b1765f4a7bed705854789a79389a",
+    "case.css": "15c01a6b24989e0763b43fcac0b4f68f9789cd53929149fbeb2378fb25204875",
+    "case.js": "287ca71af59f39222ad1a326b4781320a503486cca862546ece95e309e5c6d59",
+    "hero-fallback.svg": "104f328a7fb949d51c7d2c363fdadba0e8b0732459a548857ce259db541ce5b3"
+  },
+  "hybrid_integration": {
+    "version": "web-hybrid-v01",
+    "duration_seconds": 103,
+    "source": "animation/provenance.json",
+    "accepted_source_files_count": 18,
+    "copied_byte_identical": true,
+    "user_quote": "沒問題了，換下一案",
+    "articles_preserved": true,
+    "status": "static_candidate_browser_not_tested"
+  }
+}

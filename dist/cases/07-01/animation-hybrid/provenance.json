@@ -1,0 +1,160 @@
+{
+  "case_id": "07-01",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "runtime": {
+    "case_id": "07-01",
+    "version": "hybrid-v01",
+    "duration_seconds": 90,
+    "runtime": "Local GSAP clock with source-image viewports, SVG teaching diagrams and source-backed binary network",
+    "figures_original_bytes_preserved": true,
+    "new_model_inference": false,
+    "real_video_reconstructed": false,
+    "network_weighted": false,
+    "network_full_community": false,
+    "fonts": {
+      "sans": {
+        "characters": 484,
+        "missing": [],
+        "sha256": "9521c713007453b17669085f836d8b214b8d2ac8e059eb097a9f50ecc6b96cd9"
+      },
+      "serif": {
+        "characters": 484,
+        "missing": [],
+        "sha256": "541c562a37dc77a32fd4f29c0aa9fd3bfa9c2c6a48388eed8476aa46435b45bc"
+      }
+    },
+    "source_hashes": {
+      "figure-1.jpeg": "8a664643b4695b63064be8701a1bfd7e81734fb46b243d5a8134c037e6621bb3",
+      "figure-2.jpeg": "646385ad8119de623e1d92a1bfcf58a0884bfb068fc6d3b3d0687841f76f282e",
+      "cabrera_22_23_habitat.csv": "399ec11ae6ce18c8e9ebb050857ca7c1da4cb4a7858e24382750a92ae5e16a07"
+    },
+    "implementation_sha256": {
+      "app.mjs": "565fa1ffeabc5d6c72146dbdb94db9822bf385333b5b7d9d93c2095287cda616",
+      "model.mjs": "462cf42edb8df443725054c6fc714191f7c04d4c453ee531af5dd8a39674b402",
+      "template.html": "9de43cd239ca29d8b337e1ade89868bd2510dfc01afab4ae57b7e2c57a0f9093",
+      "style.css": "a4b5241937f3fdc9267dd3284bb8b59ea957ecbeb15e273284b71d3303363b02",
+      "network.json": "030fb7f6f053076dab5e671ede50bd5e66e3077ffe9650fb2d482a4f1205e42c",
+      "build.py": "4461d30b960811f116729c64c0f48e8a05a7a793b0fe5928d0d7b574304bd9e7",
+      "prepare_network.py": "a4b1a6af7f9634896bc5df2f3ab6665ba3a2f99112bef5e2841a5526695c93c3"
+    },
+    "browser_verified_by_build": false
+  },
+  "source_figures": [
+    {
+      "id": "figure-1",
+      "file": "figure-1.jpeg",
+      "source_pdf": "paper-csic.pdf",
+      "pdf_page": 5,
+      "printed_page": 2964,
+      "pdf_xref": 227,
+      "width": 2079,
+      "height": 1975,
+      "bytes": 404789,
+      "sha256": "8a664643b4695b63064be8701a1bfd7e81734fb46b243d5a8134c037e6621bb3",
+      "extraction": "original embedded JPEG bytes; no crop, resize, recolour, added box, or recompression",
+      "license": "CC BY-NC 4.0",
+      "source_url": "https://digital.csic.es/bitstream/10261/420456/1/Comparative_assessmento_automated_manual_monitoring.pdf"
+    },
+    {
+      "id": "figure-2",
+      "file": "figure-2.jpeg",
+      "source_pdf": "paper-csic.pdf",
+      "pdf_page": 10,
+      "printed_page": 2969,
+      "pdf_xref": 316,
+      "width": 2080,
+      "height": 1377,
+      "bytes": 498956,
+      "sha256": "646385ad8119de623e1d92a1bfcf58a0884bfb068fc6d3b3d0687841f76f282e",
+      "extraction": "original embedded JPEG bytes; no crop, resize, recolour, added box, or recompression",
+      "license": "CC BY-NC 4.0",
+      "source_url": "https://digital.csic.es/bitstream/10261/420456/1/Comparative_assessmento_automated_manual_monitoring.pdf",
+      "pdf_vector_panel_letters": "a–d labels are separate PDF text, absent from raw embedded JPEG; full PDF/page preview preserves them."
+    }
+  ],
+  "dataset": {
+    "url": "https://zenodo.org/records/17130777",
+    "license": "CC BY 4.0",
+    "sha256": "399ec11ae6ce18c8e9ebb050857ca7c1da4cb4a7858e24382750a92ae5e16a07",
+    "transformation": "Selected unweighted presence-only ACS subnetwork; original CSV preserved.",
+    "audit": "assets/network-subset.json"
+  },
+  "display_crops": {
+    "figure2_visitors": [
+      0,
+      0,
+      1010,
+      646
+    ],
+    "figure1_day_station": [
+      620,
+      205,
+      484,
+      370
+    ],
+    "figure1_night_station": [
+      620,
+      653,
+      484,
+      370
+    ],
+    "figure2_false_positive": [
+      1068,
+      0,
+      1012,
+      646
+    ],
+    "figure2_false_negative": [
+      0,
+      730,
+      1010,
+      647
+    ]
+  },
+  "verification": {
+    "case_id": "07-01",
+    "version": "hybrid-v01",
+    "status": "candidate_ready_for_user_review",
+    "duration_seconds": 90,
+    "browser_checks": 40,
+    "static_checks": 15,
+    "pure_timeline_samples": 9001,
+    "reverse_seek_pixel_comparisons": 19,
+    "protected_existing_files": 345,
+    "source_figures_byte_identical": 2,
+    "csv_original_bytes_retained": true,
+    "source_backed_binary_edges": 8,
+    "normal_speed_full_playback": {
+      "completed": true,
+      "duration_seconds": 90,
+      "seeks": 0,
+      "record": "full-playback.json"
+    },
+    "visual_review": {
+      "desktop_screenshots_reviewed": true,
+      "mobile_320_and_390_reviewed": true,
+      "fixes": [
+        "Hide SVG scene groups with display:none so child labels cannot remain visible.",
+        "Use readable mobile node codes with a 16px species key below the network.",
+        "Preserve all network edge widths and distinguish manually reviewed lizard records."
+      ]
+    },
+    "simulated_viewports": [
+      1440,
+      1280,
+      768,
+      390,
+      320
+    ],
+    "physical_phone_tested": false,
+    "safari_tested": false,
+    "new_model_inference": false,
+    "source_video_reconstructed": false,
+    "main_site_modified": false,
+    "user_accepted": false,
+    "public_deployment": false
+  },
+  "source_notes": "SOURCE.md",
+  "public_deployment": false
+}

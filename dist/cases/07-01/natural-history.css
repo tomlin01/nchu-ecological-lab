@@ -1,0 +1,77 @@
+/* Shared catalog layout, resolved through the current light/dark theme. Original images and player remain unchanged. */
+@media screen {
+  html { scrollbar-color: var(--theme-scroll) var(--theme-ground); }
+  body.case-document {
+    --page: var(--theme-ground);
+    --paper: var(--theme-surface);
+    --ink: var(--theme-ink);
+    --dim: var(--theme-muted);
+    --green: var(--theme-accent);
+    --green-dark: var(--theme-ink);
+    --line: var(--theme-border);
+    --soft: var(--theme-surface-alt);
+    --habitat: var(--theme-surface);
+    --habitat-ink: var(--theme-ink);
+    --habitat-dim: var(--theme-muted);
+    --hab-bg: var(--theme-ground);
+    --hab-plane: var(--theme-surface);
+    --hab-ink: var(--theme-ink);
+    --hab-muted: var(--theme-muted);
+    --hab-accent: var(--theme-accent);
+    --hab-reading: var(--theme-surface);
+    --hab-control-ink: var(--theme-ink);
+    background-color: var(--theme-ground);
+    color: var(--theme-ink);
+  }
+  body.story-mode::before { opacity: .1; }
+  .story-mode #story-shell { padding-inline: clamp(18px, 3vw, 44px); }
+  .hab-header, .scene-nav, .hab-pager { background: var(--theme-ground); color: var(--theme-ink); }
+  .hab-header { border-bottom:0; }
+  .scene-nav { padding-top: 10px; }
+  #story-shell .scene-nav button { border-bottom-color: var(--theme-border) !important; }
+  #story-shell .scene-nav button[aria-current] { background: var(--theme-button-bg) !important; color: var(--theme-button-ink) !important; }
+  #story-shell button { border-color: var(--theme-border); color: var(--theme-accent); }
+  #story-shell button:not(:disabled):hover { background: var(--theme-button-bg); color: var(--theme-button-ink); }
+  #story-shell button:disabled { color: var(--theme-muted); border-color: var(--theme-border); }
+  #story-shell :focus-visible, .hab-return:focus-visible { outline-color: var(--theme-focus); }
+  #story-shell ::selection { background: var(--theme-accent); color: var(--theme-on-accent); }
+  #story-shell a { color: var(--theme-accent); }
+  #story-shell a:hover { color: var(--theme-ink); }
+  .story-pages { background: var(--theme-surface); border-block: 1px solid var(--theme-border); }
+  .story-scene { padding: 32px 36px; scrollbar-color: var(--theme-scroll) var(--theme-ground); }
+  .hab-intro { gap: clamp(24px, 3vw, 44px); }
+  .hab-photo img { object-fit: contain; background: transparent; }
+  #story-shell .hab-photo .motion-provenance { padding-top: 12px; margin-top: 14px; border-top:0; }
+  .hab-background-note { padding-top: 16px; border-top:0; }
+  #story-shell :is(.method-role, details), .content-tile { border-color: var(--theme-border); }
+  #story-shell :is(.hybrid-caption, .hybrid-transcript .detail, .source-meta, .source-support, dd) { color: var(--theme-muted); }
+  #story-shell :is(summary, .hybrid-transcript summary, .hybrid-sources summary) { color: var(--theme-accent); }
+  #story-shell .research-original img { background: var(--theme-media); }
+  .hab-pager { border-top:0; }
+  #full-reading { background: var(--theme-ground); color: var(--theme-ink); }
+  #full-reading :is(.site-header, .section-nav, .case-hero, .reading-content, .site-footer) { background: var(--theme-surface); color: var(--theme-ink); }
+  #full-reading :is(.case-pagination, .limitations) { background: var(--theme-surface-alt); }
+  #full-reading :is(.case-context, .case-meta, .source-meta, .source-support, .hybrid-caption, .hybrid-transcript .detail, .research-original figcaption, .motion-provenance, .site-footer, dd) { color: var(--theme-muted); }
+  #full-reading :is(.hybrid-transcript summary, .hybrid-sources summary) { color: var(--theme-accent); }
+  .hab-return { color: var(--theme-accent); }
+  body.case-document ::selection { background: var(--theme-accent); color: var(--theme-on-accent); }
+  #story-method-slot .motion-controls button,
+  #full-reading .motion-controls button,
+  #full-reading [data-close-image],
+  #full-reading [data-zoom] { background: var(--theme-button-bg); color: var(--theme-button-ink); }
+  #story-method-slot .motion-controls button:not(:disabled):hover,
+  #full-reading .motion-controls button:not(:disabled):hover { background: var(--theme-surface-hover); color: var(--theme-ink); }
+  #story-method-slot .motion-phases li.is-current { background: var(--theme-surface-alt); color: var(--theme-ink); }
+  #hybrid-frame,
+  #full-reading .research-original img { background: var(--theme-media); }
+  #full-reading .motion-stage { background: var(--theme-media); }
+
+}
+@media screen and (max-width: 740px) {
+  .story-mode #story-shell { padding-inline: 14px; }
+  .scene-nav { padding-block: 6px; }
+  .story-pages { border: 0; background: transparent; }
+  .story-scene { padding: 26px 20px; background: var(--theme-surface); border-block: 1px solid var(--theme-border); }
+  .hab-photo { margin-top: 28px; }
+  .hab-pager { background: var(--theme-ground); }
+}

@@ -1,0 +1,53 @@
+{
+  "accepted_animation": {
+    "source": "outputs/ecology-ai-rollout/candidates/01-02/manimgx-v05-selection/whale-selection-v05.mp4",
+    "accepted_by_user": "2026-10-18 current turn",
+    "sha256": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25",
+    "bytes": 3102109,
+    "copied_byte_identical": true
+  },
+  "figure": {
+    "url": "https://arxiv.org/html/2512.05808v1/ISER_2025_Setup.png",
+    "paper": "https://arxiv.org/html/2512.05808v1",
+    "credit": "Bhattacharya et al. (2025), Figure 1",
+    "license": "Article marked CC BY 4.0",
+    "modified": false,
+    "sha256": "8b20e12d8446a24a8dd0961f77348b495427657cd0875d04915f14bf0c503053"
+  },
+  "background": {
+    "source": "outputs/ecology-ai-rollout-assets/01-02/incoming/01-02-ocean-whale-main-v02.png",
+    "source_sha256": "e532e4577715a6e0e8ed1a2efa3f9214f4fc9123c38bccb5cfa28b508cd95de6",
+    "source_dimensions": [
+      1672,
+      941
+    ],
+    "source_format": "PNG",
+    "source_bytes": 1842313,
+    "received": "2026-10-19",
+    "origin": "User supplied in requested incoming directory following main-visual-prompt-v02.md",
+    "generator": "Not supplied",
+    "license": "Not supplied",
+    "purpose": "Shared underwater sperm-whale main visual across four chapters; full-image view on narrow opening layouts.",
+    "visible_label": "AI 生成水下抹香鯨情境，非研究實拍",
+    "derived_file": "assets/01-02-ocean-whale-main-v02.webp",
+    "derived_sha256": "efdc003db6b008fa94b69c1022b28c106b75febd74ad8f33cc90a9a3d97020aa",
+    "derived_bytes": 104912,
+    "processing": "Converted to WebP quality 90 at original dimensions. No crop, recolour, retouch or upscale. Responsive layout and neutral scrim via CSS.",
+    "below_requested_dimensions": true,
+    "interpretation": "Environmental concept illustration; does not represent a confirmed acoustic localization or research observation."
+  },
+  "status": "01-02 web-hybrid-v01 local integration; static verification only",
+  "wording_revision": "work/ecology-ai-rollout/cases/01-02/web-v06/copy-edit-notes.md",
+  "prior_status": "Local web-v06 Chinese wording revision",
+  "active_animation": {
+    "file": "assets/hybrid-v01/sperm-whale-hybrid-v01.mp4",
+    "poster": "assets/hybrid-v01/poster.jpg",
+    "duration_seconds": 65.55,
+    "sha256": "ec1afbf46e970e23a89bda9ece74cc5663906b58f1b92d6313052786c7feed05",
+    "source_record": "assets/hybrid-v01/provenance.json",
+    "accepted_user_quote": "沒問題了，換下一案",
+    "preserved_core_file": "assets/01-02-method-v05.mp4",
+    "core_sha256": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25",
+    "original_article_unchanged": true
+  }
+}

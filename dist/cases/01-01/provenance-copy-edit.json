@@ -1,0 +1,20 @@
+{
+  "status": "wording_revision_candidate",
+  "source": "outputs/ecology-ai-habitat-pages/01-01.html",
+  "source_sha256": "138a8afa9277c844296d02cf2a8f992b8cd72a6e35390b5ffb57f7829f461123",
+  "changed_text_nodes": 59,
+  "animation_and_controller_scripts_unchanged": 8,
+  "inline_media_preserved": true,
+  "original_notes_unchanged": true,
+  "fonts": {
+    "sans": {
+      "missing": [],
+      "bytes": 207372
+    },
+    "serif": {
+      "missing": [],
+      "bytes": 275196
+    }
+  },
+  "local_navigation": "Other accepted cases remain linked in the original outputs tree; this folder is not a standalone collection."
+}

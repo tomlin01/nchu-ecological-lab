@@ -1,0 +1,36 @@
+{
+  "case_id": "01-04",
+  "version": "hybrid-v02",
+  "status": "candidate_pending_user_review",
+  "duration_seconds": 78,
+  "photos": "Three actual AMI-Traps photographs, unchanged bytes; display crops refer to original image coordinates",
+  "dataset": "https://doi.org/10.5281/zenodo.12554005",
+  "dataset_license": "MIT declared on dataset record; bundled license retained",
+  "device": "Existing Anatomy SVG reused; functional schematic, not the actual sample camera",
+  "inference": "Fresh official MobileNet detector on all three complete images; boxes and raw scores saved; no classifier or tracker",
+  "subject_selection": "One model box per frame selected by overlap with an author-annotated Eilema lurideola region for teaching comparison; not an accuracy assessment",
+  "individual_identity": "unknown",
+  "source_files": {
+    "model.mjs": "04c1d354e64e5cd84a98ad07edb5670baed4cfc9bcacdbd0ecbf9badbbeb3ad2",
+    "app.mjs": "d84b3cd8259847d47557f424b4f1aa9274a7d4d9e85bf4fe42de603d2e126498",
+    "sample.json": "922c15953ab6b510450897dacf4fc2eb9a0ca8be6b879787ae5b2c9e4e2ac17c",
+    "template.html": "a24f190f7ba26294a46aea4cbedb118ae6d5ab20133eb29c4471f1a823a4144a",
+    "style.css": "8ae7a87b4526991e33860d9795fd750c69053f498dde6a4ffc5a639198f4b888",
+    "build.py": "d61a79e5ee28fe48c4d9db9cf187f91dc60408e974f54ca2bfd91b9a6fd7f09e"
+  },
+  "device_svg_sha256": "a5e7cfd33fa6df967d98197c3e1e90622dcb44b05a0d4853492efe57bd12e942",
+  "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+  "fonts": {
+    "sans": {
+      "characters": 483,
+      "missing": [],
+      "bytes": 127328
+    },
+    "serif": {
+      "characters": 483,
+      "missing": [],
+      "bytes": 169548
+    }
+  },
+  "public_deployment": false
+}

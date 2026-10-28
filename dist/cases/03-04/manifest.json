@@ -1,0 +1,192 @@
+{
+  "case_id": "03-04",
+  "title": "照片很亮，蜥蜴就在曬太陽嗎？",
+  "version": "web-v01",
+  "visual_revision": "sun-shade-relationship-v01",
+  "status": "integrated_local_ready_for_review",
+  "entry": "03-04.html",
+  "animation_version": "prototype-v01",
+  "animation_entry": "animation/embed.html",
+  "accepted_animation_original_files_preserved": false,
+  "model_inference_run": false,
+  "website_user_accepted": false,
+  "deployed": false,
+  "files": {
+    "03-04.html": {
+      "bytes": 16238,
+      "sha256": "fd260459aec66c5aac06d65849b2cf7fc89390b31b29e02f651bbca2f4a63310"
+    },
+    "README.md": {
+      "bytes": 1396,
+      "sha256": "e7d744290d0fca773b9436b6ad1f224391a78eab7111790f2c05b947513b8bfa"
+    },
+    "animation/IMPLEMENTATION.md": {
+      "bytes": 4012,
+      "sha256": "44e6f91d5538b10fbe86d01d9f7610901ede94f49930795b69afe20dda03f01e"
+    },
+    "animation/README.md": {
+      "bytes": 1710,
+      "sha256": "445fc7606bc2b21e0c397bc782782cf80576b4c17ff2d5657a6b63fea99a0928"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 3710,
+      "sha256": "60134f14a63815f4ad6490d4fc78563ce28f93bdb69d684d5b96a188f545b7b5"
+    },
+    "animation/app.mjs": {
+      "bytes": 15012,
+      "sha256": "1d31c301f65c7bacdf62b04dddef6a4fceba0b1079a0f82a9e7b6e12a810d7bc"
+    },
+    "animation/assets/context.png": {
+      "bytes": 3320667,
+      "sha256": "2a3eeaff961a02c1c6fbdcd95d559382997b71e05b4527e14535f2a1c29ec10d"
+    },
+    "animation/assets/detection-annotation.xml": {
+      "bytes": 784,
+      "sha256": "402c74a1c5cb85c823b0a8ee35fef405887b1e590ae756001297b2190c56d9d1"
+    },
+    "animation/assets/detection-data.json": {
+      "bytes": 5594,
+      "sha256": "f986e3fcb2d1fe57815440152f9c4151b5a1e66e584f41a7ecd38da03c7ad4d2"
+    },
+    "animation/assets/detection.jpg": {
+      "bytes": 1451486,
+      "sha256": "89d7de2ffe4cf4bbb760dfe4bacb2865a027380ff007a76aa870ba5cc8d12eb4"
+    },
+    "animation/assets/shade.jpg": {
+      "bytes": 37921,
+      "sha256": "8ea6e4c3f77c86e9d988f21862196b8971b156018991c4d9435569108df1558b"
+    },
+    "animation/assets/sun.jpg": {
+      "bytes": 24698,
+      "sha256": "6e8f7f8b7c1429b40e944afec855056d26016ca571dc13959857a11e9ded3707"
+    },
+    "animation/embed.css": {
+      "bytes": 729,
+      "sha256": "bc02b7f8cd9238eddbeafbc5ffc0ecca7832904981fbf0c5a266d24d1fe855ff"
+    },
+    "animation/embed.html": {
+      "bytes": 13939,
+      "sha256": "d1027bead709877c5e80c33dcdd7eb3ed1cbb28165fd950ac012e6af4570990f"
+    },
+    "animation/embed.js": {
+      "bytes": 6729,
+      "sha256": "4d510e9cdbb3bc8b05ea2e2093b00d8fa2621a621957ad2ee9fa9901d89594a4"
+    },
+    "animation/film/03-04-lizard-sun-shade-copy-v02.metadata.json": {
+      "bytes": 845,
+      "sha256": "afaaa67d5655bc045138e34ebb027b757819f4a3ad91fcbd5040f215772adaef"
+    },
+    "animation/film/03-04-lizard-sun-shade-copy-v02.mp4": {
+      "bytes": 3714776,
+      "sha256": "655c9d06b65b5bde016c33ae2b2213b9463a6228c20b48071873fb8b9cee51b8"
+    },
+    "animation/film/03-04-lizard-sun-shade-v01.metadata.json": {
+      "bytes": 818,
+      "sha256": "a488034e9b39febdbba3be0eeeb266515eaacff6f41996e18e9476d7a1ce7a02"
+    },
+    "animation/film/03-04-lizard-sun-shade-v01.mp4": {
+      "bytes": 3645687,
+      "sha256": "d28839913de74767e85d0008c95369f83a98b1e6c2a359e83cfb829ab8ef18c8"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/case-sans.woff2": {
+      "bytes": 159668,
+      "sha256": "57930859f5b6a4de9a40c0e02e7d485e1908d371ec7b46486ff43290facf3dcc"
+    },
+    "animation/fonts/case-serif.woff2": {
+      "bytes": 213060,
+      "sha256": "c5c451e824bf7976b80c09d1efcb1973ffc1b55456c3021c5d07a69aa8a30348"
+    },
+    "animation/index.html": {
+      "bytes": 13809,
+      "sha256": "4c709968d14fcd8cb19ebfa33f184fba7e35f02c51cc11aa3259c6f970d92267"
+    },
+    "animation/manifest.json": {
+      "bytes": 4585,
+      "sha256": "255ab142e883c56d44518fa3c363e097a20989febcf95c17a73ee0f71d7eb74c"
+    },
+    "animation/model.mjs": {
+      "bytes": 7015,
+      "sha256": "e8db311dcdf45f8624cc97ca80a58787c6be17c902e97a853671648febbd8509"
+    },
+    "animation/model.test.mjs": {
+      "bytes": 2216,
+      "sha256": "edd02bc43cd8874dc87a2df32a5d228e93af520faceed373a2dc44a8775d35e3"
+    },
+    "animation/style.css": {
+      "bytes": 23910,
+      "sha256": "6d98bbdbfa064281cf5dd755c44dc505dc46bfac4b1ab74a5cb08bb49bc623ea"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation/verification.json": {
+      "bytes": 959,
+      "sha256": "111d867349a61b86e29235a86573d297da1e873d300ef4497dacd2aa6ced120b"
+    },
+    "case.css": {
+      "bytes": 21470,
+      "sha256": "451b78d1cf064f7947ac45a4cebfd2788ab22fceb6849d568b5f0f5d3c9a6fa0"
+    },
+    "case.js": {
+      "bytes": 10757,
+      "sha256": "0a0222d931459039e7d17d0f30b054535e0e6cdd0e69d81b47b75fb6fe6233c5"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 158312,
+      "sha256": "fb0ad42128fd659b9ff957c191182a0b530e326ff49cce63b558348e5e9db198"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 210648,
+      "sha256": "2ac5e08dc760c9c1981fa0c3aa6f1a6a36224daefa60955332be2a4fda592605"
+    },
+    "index.html": {
+      "bytes": 521,
+      "sha256": "4aba720af895ae6c2a22ce370095d92f33ccd483d517858b3a6a324c3db7a302"
+    },
+    "natural-history.css": {
+      "bytes": 1418,
+      "sha256": "c78857ba6d91d6352d9bf59297d565311c210926c2a9f0060c26568d570fc27a"
+    }
+  },
+  "copy_revision": {
+    "id": "topic-03-copy-v03",
+    "date": "2026-10-24T09:29:09.185708+00:00",
+    "scope": "Reader-facing text, matching glyphs and derived 03-04 movie; original source media, timing and model data retained",
+    "review": "work/ecology-ai-rollout/topic-03-copy-v03/review/browser-verification.json"
+  },
+  "animation_preservation_scope": "Original media and timing retained; visible text and font subsets revised with user authorization.",
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

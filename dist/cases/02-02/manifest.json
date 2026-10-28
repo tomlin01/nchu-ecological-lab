@@ -1,0 +1,383 @@
+{
+  "case_id": "02-02",
+  "version": "copy-edit-v02",
+  "status": "website_ready_for_review",
+  "entry": "02-02.html",
+  "animation": "prototype-v04 with audible playback",
+  "public_deployment": false,
+  "verification": "work/ecology-ai-rollout/cases/02-02/web-v01/verification.json",
+  "files": {
+    "02-02.html": {
+      "bytes": 26837,
+      "sha256": "baab60dd49afb387648052b39885a51f7e7b9693712dea6a891176b74c68a60b"
+    },
+    "LICENSES.md": {
+      "bytes": 5273,
+      "sha256": "09198884a974d116b187ee1ac9ff347156189f3d6b6ad1591639ef8e67f5a713"
+    },
+    "README.md": {
+      "bytes": 604,
+      "sha256": "7df7c58ea06292c84ff0aa63c70e7c25942c1199a2e8ab34a75944d8ce6a9e5f"
+    },
+    "animation/LICENSES.md": {
+      "bytes": 5273,
+      "sha256": "09198884a974d116b187ee1ac9ff347156189f3d6b6ad1591639ef8e67f5a713"
+    },
+    "animation/PHOTO_PROMPTS.md": {
+      "bytes": 4176,
+      "sha256": "2855eebcc386509bee9df947143d150c1fe4a7584d3625656bf9fe7b18ec574d"
+    },
+    "animation/README.md": {
+      "bytes": 6470,
+      "sha256": "733180f7cfa5ae2fbda6c2889e9933f1e97e2efc24f399ac46cc824b42dee965"
+    },
+    "animation/REUSED_PHOTO_PROMPTS.md": {
+      "bytes": 5627,
+      "sha256": "9c5338232a54ffa37ab5940df184459569288f668c0f6a16350d10cae6f116a4"
+    },
+    "animation/app.js": {
+      "bytes": 14640,
+      "sha256": "f93d94c42b5ef5a7b5c9a3abb3cd574126b7505bceddd1a2cef8fb208ea45210"
+    },
+    "animation/assets/inference-result.json": {
+      "bytes": 5679,
+      "sha256": "060e741979bf277d23bca47e5872da6aba771c25f326a165a34e27d016d214a8"
+    },
+    "animation/assets/recorder-brunk.jpg": {
+      "bytes": 97221,
+      "sha256": "e6addb6d192b7ce72db679a36f6d237013aa309db59079bef42eee23b2094ede"
+    },
+    "animation/assets/spotted-owl-original.mp3": {
+      "bytes": 87420,
+      "sha256": "72451e56c402534c790520f066dd2392ee151e438eef9487b798ddd03d3f07d2"
+    },
+    "animation/assets/waveform.json": {
+      "bytes": 248029,
+      "sha256": "c659a73613d77d9c2131b164ad78d338dc195227816921a3043ae609e452a7ff"
+    },
+    "animation/embed.css": {
+      "bytes": 1693,
+      "sha256": "b6503e7cae1663d8b62faefda892ebdbba3ff305bc69c00967606acc86d031e9"
+    },
+    "animation/embed.html": {
+      "bytes": 13145,
+      "sha256": "cf7f86ddf5373c74366a1cc34067fdde988d5d529d652f8fcc595628ae5e5bf8"
+    },
+    "animation/embed.js": {
+      "bytes": 2608,
+      "sha256": "a902ecdc58bce80c2d610a80e45669845b866af1d0678b2c23270acd3629f73e"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/case-sans.woff2": {
+      "bytes": 122760,
+      "sha256": "a87b8a7fb759ff86f0269aa7b91fb22db2b97526e52ed05e28ef906c12b8da4a"
+    },
+    "animation/fonts/case-serif.woff2": {
+      "bytes": 162720,
+      "sha256": "06a2add8e9dfc1cfbc21bd259aa908cc49b0cfd23ec5ce4a70e8d2206412180b"
+    },
+    "animation/image-provenance.json": {
+      "bytes": 4212,
+      "sha256": "129547b283d5dc7ccd8cfb06628dc1394ec87c74b98e41670f8f32a0eabbd496"
+    },
+    "animation/index.html": {
+      "bytes": 13152,
+      "sha256": "8d2e1f9ca8ac2cffdbfd1ab87f548f255381e9c25b437e5bc8d0eed956613af3"
+    },
+    "animation/media/birdnet-mechanism-portrait.mp4": {
+      "bytes": 7249845,
+      "sha256": "087bf4b8da5baa4c95c5149ef167b0cecd2a72303cfb8d39191a24dbe50c8b2c"
+    },
+    "animation/media/birdnet-mechanism-wide.mp4": {
+      "bytes": 10835570,
+      "sha256": "d5e55e627748cbc499a6c05adfa3b7339ef0e5077e4f5b9ccf9329498798f346"
+    },
+    "animation/media/poster-portrait.jpg": {
+      "bytes": 324382,
+      "sha256": "9f8278b2d7d6de6bda800d17a4e8ac42ffdf68131d2abae891c3766e72198b2c"
+    },
+    "animation/media/poster-wide.jpg": {
+      "bytes": 501497,
+      "sha256": "2d17ebfe69bbfac2a17315bc3a870122b909f01fd18ec4773b73a2703279f100"
+    },
+    "animation/provenance.json": {
+      "bytes": 17089,
+      "sha256": "9017036f02a7560de23b40de3e5cf8356d0827e4333b53a36cd0ecc7f1a3ea06"
+    },
+    "animation/scene.py": {
+      "bytes": 9411,
+      "sha256": "5c494a8733b24bf6772cf14f408ee7d995313dce2544913e854b86b31c008990"
+    },
+    "animation/style.css": {
+      "bytes": 11076,
+      "sha256": "4285427ceeb83787dd65696b3114814e0faad6113605e90098632a76538e73be"
+    },
+    "assets/black-backed-woodpecker-v01.webp": {
+      "bytes": 451218,
+      "sha256": "ed368aee92569173d9025e77c3b552a93e2357b0c5e5226629e81b11e1645b3c"
+    },
+    "assets/forest-canopy-lost-v01.webp": {
+      "bytes": 670910,
+      "sha256": "94a7601ed96a3b75c9751f27047776ede5880438b85c9392cd90bbe4057cb921"
+    },
+    "assets/forest-canopy-retained-v01.webp": {
+      "bytes": 601110,
+      "sha256": "e23e244bd75dd5a6a3aeb6c1f5f4d0a8f57c1555624d523e713ba4559a43ffdc"
+    },
+    "assets/forest-intact-v01.webp": {
+      "bytes": 644224,
+      "sha256": "5c028a51afc471ec6855f956a9f6976e961a0c20e6a7a4f0bee5c1dac67e6caf"
+    },
+    "assets/inference-result.json": {
+      "bytes": 5679,
+      "sha256": "060e741979bf277d23bca47e5872da6aba771c25f326a165a34e27d016d214a8"
+    },
+    "assets/recorder-brunk.jpg": {
+      "bytes": 97221,
+      "sha256": "e6addb6d192b7ce72db679a36f6d237013aa309db59079bef42eee23b2094ede"
+    },
+    "assets/spectrogram-only.png": {
+      "bytes": 180523,
+      "sha256": "d37628e1b5c9d35d63d124298353a89dc98897ff4ad8690c11e452ae30ca79af"
+    },
+    "assets/spectrogram.png": {
+      "bytes": 248030,
+      "sha256": "e4d52ad1b03967ad2769fa64b4f82605af4fbc420ad9925eb2bf38146f672cc2"
+    },
+    "assets/spotted-owl-forest-v01.webp": {
+      "bytes": 604394,
+      "sha256": "af4f36b4847242a7f9091d5ced5b8d9c4a4bbc09f746dc7c1aaa7509c766a185"
+    },
+    "assets/spotted-owl-original.mp3": {
+      "bytes": 87420,
+      "sha256": "72451e56c402534c790520f066dd2392ee151e438eef9487b798ddd03d3f07d2"
+    },
+    "assets/spotted-owl-teaching.wav": {
+      "bytes": 678826,
+      "sha256": "9b2f7193f0d5b01d5bbb10b056ac975b84c0912f294947a7eb346c7d5bc84640"
+    },
+    "assets/waveform.json": {
+      "bytes": 248029,
+      "sha256": "c659a73613d77d9c2131b164ad78d338dc195227816921a3043ae609e452a7ff"
+    },
+    "assets/wood-borer-larva-v01.webp": {
+      "bytes": 460576,
+      "sha256": "270725c1e148dfae043527a11046a33dee1917ae8f193ff3c1e1cc82ebf647f4"
+    },
+    "case.css": {
+      "bytes": 18669,
+      "sha256": "0ac7d0d635af847372b8ae7d0d89f2604b79f1d0f8f1cc769439d7a34cadaf2d"
+    },
+    "case.js": {
+      "bytes": 9060,
+      "sha256": "b7592c6dae119d0aab02e92239be84673db087c60ec24e42282303ecb182e505"
+    },
+    "copy-deck-v02.md": {
+      "bytes": 11777,
+      "sha256": "2300444e3b06ba22652f000c926a2cf718411116a92bfa63d725fe22af9dd473"
+    },
+    "copy-deck.md": {
+      "bytes": 11018,
+      "sha256": "82a1c635e61439c1bba963bd78efaabdc8ef8d66f3cf15b667e69ff6ab18421d"
+    },
+    "copy-edit-notes.md": {
+      "bytes": 5277,
+      "sha256": "ef674602355dcdee06f6ca7d6595dae31dbcd88f0ed1262481ec0aa0f2b18c83"
+    },
+    "copy-fonts.css": {
+      "bytes": 298,
+      "sha256": "1b712135536446fa135ec91ba04ab77b0d4c14b708368bfa437e6d80edaf8514"
+    },
+    "copy-v02-fonts.css": {
+      "bytes": 292,
+      "sha256": "358eebda3f957b592addcf0842a3a8b08d8e64d161f20bf14dd258133b2fec5b"
+    },
+    "copy-verification.json": {
+      "bytes": 599,
+      "sha256": "b2b36bdd07936ae59cbcb8a6ae4af6bfb127dfeeb59021d33bc6bc99b4e2e6bd"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 182824,
+      "sha256": "26cae4cfedd5efb4798ec96e9df67f4d99367a1a4bca59ff47ef58c708b07a83"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 242216,
+      "sha256": "f5951da6a737eecb5f1d4a2c87c0289ce318fbcf7fcdd7a90d3b8ab2e1929a4a"
+    },
+    "fonts/copy-parent-sans.woff2": {
+      "bytes": 225860,
+      "sha256": "2aa5736a7828832f77fb146b1c353b5d29d57b1cda6de027ab5b16972e867157"
+    },
+    "fonts/copy-parent-serif.woff2": {
+      "bytes": 303308,
+      "sha256": "7609a9eca369cd0a82a337afe3f8c11c232253e19efdad8e1c9f58d389c131eb"
+    },
+    "fonts/copy-v02-sans.woff2": {
+      "bytes": 193940,
+      "sha256": "e697732661c7f883b99e2b308f9c98f90ba7dd1609b7e1f0d9cbdcd4815dec4a"
+    },
+    "fonts/copy-v02-serif.woff2": {
+      "bytes": 256700,
+      "sha256": "c4a29e399c1fd3a9b048a7ba314c50b83296546851312431fe7804fc9d3a45f2"
+    },
+    "index.html": {
+      "bytes": 534,
+      "sha256": "1ea962ddaa2138d320935d6bf64c66295c3873574c93855e1ef31c4daccf889f"
+    },
+    "narrative-implementation.md": {
+      "bytes": 4619,
+      "sha256": "36c9de9d5ad5515a508b1903aaa84725888d52a143b52e2f428ddba9ac128778"
+    },
+    "narrative-verification.json": {
+      "bytes": 1188,
+      "sha256": "05e126672a5a279de2f16d82432060af2ab57f470cbc06862fb162233770ee7e"
+    },
+    "natural-history.css": {
+      "bytes": 3987,
+      "sha256": "436a1aaf626f856dc488723890338db5013959d3048393118aa98c751372b1bd"
+    },
+    "provenance.json": {
+      "bytes": 2408,
+      "sha256": "5a7558a9b3185eed2d66ccd47f121dc0776a9cd305d535fe68799de791288971"
+    },
+    "topic-entry-verification.json": {
+      "bytes": 1642,
+      "sha256": "f1dc566c399d7753da9c57d2657db38c29e96e567aa21ec0c97bd175b2736198"
+    },
+    "ui-provenance.json": {
+      "bytes": 3057,
+      "sha256": "8e966c78a3e56b6fa0b32c76db4d5e31bcf3c5c14189f6a4a790eb50db3a5e1b"
+    },
+    "ui-verification.json": {
+      "bytes": 3497,
+      "sha256": "d00fa139ab8c3602a62bfdf13b04be49c8e8777dfa04a2beb5f49157987c637e"
+    }
+  },
+  "copy_edit_revision": {
+    "revision": "copy-review-02-v01",
+    "scope": "Website editorial text and parent-page animation transcript only",
+    "skill": "humanizer, adapted to Traditional Chinese science communication",
+    "before_html_sha256": "0cae66e777269bc202c684b6b0ef04cf7800cb1ccb6cb41480d61e93ea15b625",
+    "animation_runtime_and_media_unchanged": true,
+    "original_notes_and_research_json_unchanged": true,
+    "layout_and_controllers_unchanged": true,
+    "new_font_files_only": true,
+    "scientific_review_status_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/copy-review-02-v01/verification.json"
+  },
+  "narrative_revision": "copy-review-02-v02",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "02-02.html",
+  "topic_entry": "index.html#topic-02",
+  "sites_hosting_revision": {
+    "date": "2026-10-21T15:08:28.806375+00:00",
+    "scope": "Sites hosting copy only",
+    "reason": "Sites MP4 Range requests return the entire file with HTTP 200; native seek failed. Load unchanged MP4 bytes through a cached blob URL before enabling controls.",
+    "media_bytes_changed": false,
+    "research_content_changed": false,
+    "baseline_preserved": "outputs/ecology-ai-site-v01/",
+    "cache_version": "sites-seek-20261021",
+    "native_preload": "none; the player fetches each original video once before using the blob URL"
+  },
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": true,
+    "static_only": false,
+    "content_and_animation_unchanged": true
+  },
+  "sites_loading_recovery": {
+    "revision": "sites-recovery-20261022",
+    "date": "2026-10-22T08:09:10.972684+00:00",
+    "scope": "BirdNET loading recovery only; approved theme and home layout preserved",
+    "changes": [
+      "same-variant retry",
+      "failed blob eviction and revocation",
+      "abort obsolete incomplete downloads",
+      "request metadata after blob assignment"
+    ],
+    "home_layout_and_motion_changed": false,
+    "media_changed": false
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical.",
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

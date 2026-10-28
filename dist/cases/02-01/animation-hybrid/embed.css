@@ -1,0 +1,26 @@
+/* The accepted standalone stays byte-identical; only this iframe wrapper changes. */
+html,body{margin:0;min-height:0;height:auto;overflow:hidden;background:#121d19}
+main{display:flow-root;width:100%;max-width:none;height:auto;min-height:0;margin:0;padding:0}
+.page-heading,.skip-link,#story-text,#source-gallery,main>footer,.nojs-note{display:none!important}
+.story{grid-template-columns:minmax(0,1fr) 300px;gap:22px}
+.stage{height:var(--embed-stage-height,320px);width:100%;margin:0;aspect-ratio:auto}
+.enhanced .stage[data-mode="records"]{height:max(var(--embed-stage-height,320px),360px)}
+.narrative{padding:19px 18px}
+.narrative h2{font-size:24px;line-height:1.55}
+.description{font-size:17px;line-height:1.75;margin-top:13px}
+.detail{font-size:16px;line-height:1.75;margin-top:15px}
+.phase-meta{margin-bottom:12px}
+.prediction-panel{margin-top:16px;padding-top:14px}
+#prediction-score{font-size:24px}
+.phase-navigation{margin-top:14px;gap:5px;padding-bottom:8px}
+.phase-navigation button{font-size:14px;min-height:44px;padding:8px 10px}
+.source-actions{margin-top:10px}
+@media(max-width:900px){
+ .story{display:block}
+ .stage{height:auto;aspect-ratio:1000/620;margin:0}
+ .stage[data-layout="paired"]{aspect-ratio:1000/1240}
+ .enhanced .stage[data-mode="records"]{height:auto;aspect-ratio:auto}
+ .narrative{margin-top:18px}
+ .transport,.source-actions,.player-status,.frame-meta,.crop-legend{margin-inline:4px}
+}
+@media print{html,body{overflow:visible}main{padding:0}}

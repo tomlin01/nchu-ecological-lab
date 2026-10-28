@@ -1,0 +1,132 @@
+{
+  "case_id": "01-02",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "duration_seconds": 65.55,
+  "segments": [
+    {
+      "name": "intro",
+      "start": 0,
+      "duration": 10,
+      "frames": 600
+    },
+    {
+      "name": "accepted_core",
+      "start": 10,
+      "duration": 47.55,
+      "frames": 2853,
+      "first_output_frame": 600,
+      "last_output_frame": 3452,
+      "source_frames": "0..2852"
+    },
+    {
+      "name": "outro",
+      "start": 57.55,
+      "duration": 8,
+      "frames": 480
+    }
+  ],
+  "photo_crops": {
+    "figure_dimensions": [
+      2027,
+      1140
+    ],
+    "whales_xyxy": [
+      1450,
+      590,
+      2008,
+      1005
+    ],
+    "boat_xyxy": [
+      15,
+      35,
+      735,
+      470
+    ],
+    "method": "PIL memory crop, no retouch or recoloring"
+  },
+  "input_sha256": {
+    "outputs/ecology-ai-rollout/candidates/01-02/manimgx-v05-selection/whale-selection-v05.mp4": "07c0a3c9cc2a42c3d00a73e92ec95803bda9ba3fe00ed42fe9e425cc301e0a25",
+    "outputs/ecology-ai-site-v01/cases/01-02/assets/research-figure-1.png": "8b20e12d8446a24a8dd0961f77348b495427657cd0875d04915f14bf0c503053",
+    "work/ecology-ai-rollout/cases/01-02/hybrid-v01/sources/sperm-whale-clicks-teaching-6s.wav": "ae842f18f1810afb01e658180f00b589c971de7d92e97e69fc8e36e91a6d9839"
+  },
+  "audio": {
+    "source": "work/ecology-ai-rollout/cases/01-02/hybrid-v01/sources/sperm-whale-clicks-teaching-6s.wav",
+    "source_sha256": "ae842f18f1810afb01e658180f00b589c971de7d92e97e69fc8e36e91a6d9839",
+    "source_sample_rate": 48000,
+    "source_samples": 288000,
+    "source_segment_seconds": [
+      0,
+      6
+    ],
+    "gain": 1,
+    "starts_at_seconds": 1.5,
+    "ends_at_seconds": 7.5,
+    "start_sample": 72000,
+    "end_sample_exclusive": 360000,
+    "timeline_samples": 3146400,
+    "waveform_source": "same six-second source WAV, min/max envelope",
+    "waveform_display_scaling": "relative to source peak for visibility; no audio gain",
+    "aac_alignment_lag_samples": 0,
+    "decoded_correlation": 0.9972002251105558,
+    "core_peak": 0.0,
+    "outro_peak": 0.0,
+    "source_peak": 0.3763427734375,
+    "not_synchronized_to_research_trial_or_core": true
+  },
+  "research_image_url": "https://arxiv.org/html/2512.05808v1/ISER_2025_Setup.png",
+  "audio_original_url": "https://www.fisheries.noaa.gov/s3/2023-04/Phma-clicks-NOAA-PAGroup-01-sperm-clip.mp3",
+  "core_comparison": {
+    "compared_frames": 2853,
+    "all_frames_stats": "work/ecology-ai-rollout/cases/01-02/hybrid-v01/media/core-ssim.txt",
+    "source_indices": [
+      0,
+      1,
+      300,
+      900,
+      1426,
+      2100,
+      2750,
+      2852
+    ],
+    "output_indices": [
+      600,
+      601,
+      900,
+      1500,
+      2026,
+      2700,
+      3350,
+      3452
+    ],
+    "sample_ssim": [
+      0.999842,
+      0.999842,
+      0.999817,
+      0.999713,
+      0.999656,
+      0.999618,
+      0.999829,
+      0.99983
+    ],
+    "minimum_ssim": 0.99916,
+    "mean_ssim": 0.9997354265685243,
+    "method": "all 2853 decoded YUV frames, in order, after permitted re-encoding"
+  },
+  "review": {
+    "root_reviewed_final_frames": [
+      150,
+      360,
+      600,
+      2220,
+      3450,
+      3720
+    ],
+    "full_playback": false,
+    "browser_used": false,
+    "native_player_used": false,
+    "integrated_into_main_site": false,
+    "external_publication": false
+  },
+  "source_detail": "SOURCE.md"
+}

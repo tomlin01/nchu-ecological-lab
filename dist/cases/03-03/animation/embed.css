@@ -1,0 +1,23 @@
+/* Only the host chrome is removed. Scenes, audio controls, waveform and cursor geometry stay original. */
+.embedded-acoustic .player-heading,
+.embedded-acoustic .reading-footer,
+.embedded-acoustic .skip-link,
+.embedded-acoustic #themeButton,
+.embedded-acoustic #expandButton { display: none; }
+.embedded-acoustic #player {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 18px 20px 20px;
+}
+.embedded-acoustic.media-expanded-view #player { padding: 22px 28px 28px; }
+@media (max-width: 800px) {
+  .embedded-acoustic #player { padding: 14px 14px 18px; }
+}
+@media (max-width: 500px) {
+  .embedded-acoustic #player { padding: 10px 10px 16px; }
+  .embedded-acoustic.media-expanded-view #player { padding: 14px; }
+}
+@media print {
+  .embedded-acoustic #player { padding: 0; }
+}

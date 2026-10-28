@@ -1,0 +1,121 @@
+<!doctype html>
+<html data-reading-type="02-01" lang="zh-Hant" data-theme="light">
+<head><script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="照片裡的動物，電腦怎麼認？用真實相機照片看 SpeciesNet 的偵測框、分類結果與分數，了解人員如何核對，以及照片能回答哪些生態問題。">
+  <title>照片裡的動物，電腦怎麼認？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="case.css">
+  <script src="case.js" defer></script>
+<link rel="stylesheet" href="hybrid.css"><link rel="stylesheet" href="font-supplement.css"><link rel="stylesheet" href="copy-fonts.css"><link rel="stylesheet" href="copy-v02-fonts.css"><link rel="stylesheet" href="../../ui/sidebar.css" data-navigation-media="navigation-media-v01">
+<link rel="stylesheet" href="../../ui/media-expand.css" data-navigation-media="navigation-media-v01">
+<script src="../../ui/site-map.js" defer data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/sidebar.js" defer data-case-id="02-01" data-navigation-media="navigation-media-v01"></script>
+<script src="../../ui/media-expand.js" defer data-navigation-media="navigation-media-v01"></script>
+<link rel="stylesheet" href="../../ui/catalog-theme.css"/><link rel="stylesheet" href="natural-history.css"/><link rel="stylesheet" href="../../ui/theme-controls.css"/><link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+  <div class="topic-scene" aria-hidden="true"><img src="assets/02-01-forest-bg.webp" width="1536" height="1024" alt=""></div>
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-02"><span aria-hidden="true">←</span> 返回主題清單</a><span class="case-name">AI × 生態研究 · SpeciesNet</span></header>
+  <nav class="section-nav" aria-label="案例章節">
+    <div class="nav-pages">
+      <a href="#question" data-page="question">研究問題</a>
+      <a href="#roles" data-page="roles">模型分工</a>
+      <a href="#method" data-page="method">方法動畫</a>
+      <a href="#evidence" data-page="evidence">成果與限制</a>
+    </div>
+    <div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div>
+  </nav>
+
+  <main id="case-content">
+    <section class="chapter opening" id="question" aria-labelledby="question-title" tabindex="-1">
+      <div class="opening-hero">
+        <div class="opening-intro">
+          <h1 id="question-title">照片裡的動物，<br>電腦怎麼認？</h1>
+          <p class="opening-question">有的動物只露出半個身體，有的出現在黑白夜拍裡。電腦怎麼替這些照片分類？判錯時，我們又怎麼發現？</p>
+          <a class="primary-action" href="#method">看方法動畫<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <figure class="hero-photo">
+          <img id="topic-image" src="assets/02-01-jaguar-main.webp" width="1536" height="1024" alt="一隻美洲豹走過森林地面，從尾巴、身體到頭部與四肢都完整可見。" fetchpriority="high">
+          <figcaption id="art-credit">首頁主視覺與背景為 AI 生成情境；方法照片使用真實來源原圖。</figcaption>
+        </figure>
+      </div>
+      <article class="reading-surface opening-reading">
+        <div class="opening-columns">
+          <section><h2>照片清楚，還是只看見一部分？</h2><p>森林裡的自動相機拍到動物，也拍到空景。有時動物的身體很清楚，有時只露出一部分；黑白夜拍又少了顏色可供判斷。</p><p>SpeciesNet 會先找出影像中的目標，再提出分類結果。畫面上的框與分數，就是這套處理留下的結果。它們和照片裡的動物是否相符，仍要回到原圖檢查。</p></section>
+          <section><h2>用四張照片看辨識結果</h2><p>虎貓、黑熊、象群與空景這四張示例照片，來自不同資料集。它們並非秘魯調查的影像，也不是同一地點的連續觀察。</p><p>四張照片都保留原圖和模型結果，目前仍待人工核對。框線標示位置，分類名稱則是模型對影像的判斷，兩者都要和照片內容對照。</p></section>
+        </div>
+        <p class="field-context"><strong>SpeciesNet／Wildlife Insights</strong><span>相機收集照片 → 模型初篩 → 人員核對</span><span>示例：虎貓、黑熊、象群與空景照片</span></p>
+      </article>
+    </section>
+
+    <section class="chapter editorial-chapter" id="roles" aria-labelledby="roles-title" tabindex="-1">
+      <div class="editorial-layout">
+        <header class="chapter-heading"><h2 id="roles-title">框裡是什麼，<br>分數又代表什麼？</h2><p>黑白照片與象群照片，會得到什麼分類？先看結果，再對照電腦處理了哪一塊影像。</p></header>
+        <article class="reading-surface text-surface">
+          <section class="photo-comparison" aria-labelledby="photo-comparison-title">
+<h3 id="photo-comparison-title">黑白照片與象群照片的分類結果</h3>
+<div class="contact-sheet">
+<figure><a href="animation-hybrid/assets/american_black_bear.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/american_black_bear.jpg" width="2048" height="1536" loading="lazy" alt="NACTI 的真實夜間黑白相機照片，保留原有相機時間與資訊列。"></a><figcaption><strong>黑白照片的分類與分數</strong><p>分類器的首選是美洲黑熊，分數為 0.9899。這是模型給的分數，不能直接當成判對的機率。這項結果尚未經獨立人工核對。</p></figcaption></figure>
+<figure><a href="animation-hybrid/assets/african_elephants.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/african_elephants.jpg" width="2048" height="1536" loading="lazy" alt="Snapshot Serengeti 的完整象群照片，多隻動物與遮擋都保留在原圖中。"></a><figcaption><strong>象群照片的七個框</strong><p>這張照片有七個框進入分類，結果包含非洲象、動物與空景。每個框圈住了什麼？框內影像和分類名稱相符嗎？七個框都尚待人工核對，不能直接當成七隻動物。</p></figcaption></figure>
+</div><p class="photo-note">這兩張照片來自 SpeciesNet 官方測試資料，原始來源為 NACTI 與 Snapshot Serengeti，授權為 CDLA-Permissive-1.0。它們來自不同調查，不是秘魯調查的照片，也不能視為同一地點的連拍。動畫會呈現各個框的分類結果。<a href="animation-hybrid/SOURCE.md" target="_blank" rel="noopener">照片與推論來源</a></p>
+</section>
+          <div class="method-explanation">
+            <section><h3>框線只找位置，分類還要再做一步</h3><p>動畫中的框線圈出電腦找到的區域。這一步由 MegaDetector 處理，還沒有判斷物種。接著把框內影像裁切出來，交給分類器提出分類。</p><p>裁切影像取自同一張原圖。放大能讓原有細節更容易查看，被遮住的部位仍然看不到。動畫先呈現虎貓與黑熊的主要偵測框，再比較象群照片中七個符合分類門檻的框，以及它們得到的三種結果。<a href="https://doi.org/10.1049/cvi2.12318" target="_blank" rel="noopener">裁切分類的研究依據</a></p><p>要檢查某個分類，先對照框內影像與完整原圖；要知道模型整體辨識得準不準，則需要一批經人工核對的照片來測試。</p></section>
+          </div>
+          <table class="roles-table">
+            <caption>開源 SpeciesNet 的方法分工</caption>
+            <thead><tr><th scope="col">誰來做</th><th scope="col">做什麼</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">MegaDetector<br><span>找出位置</span></th><td>框出動物、人或車的位置。這一步指出「在哪裡」，還沒有判斷動物是哪個物種。</td></tr>
+              <tr><th scope="row">分類器<br><span>提出可能名稱</span></th><td>分析裁切影像或整張照片，從模型已有的分類標籤中選出可能的結果。標籤可能是物種，也可能是較大的類群。</td></tr>
+              <tr><th scope="row">整理規則<br><span>決定保留哪一層</span></th><td>彙整偵測與分類結果；若啟用地理限制，也會納入判斷。線索不足時，可能只保留屬、科，或涵蓋範圍更廣的分類。</td></tr>
+              <tr><th scope="row">研究人員<br><span>回看原圖</span></th><td>對照框內影像與分類名稱，接受或修改建議。影像若仍看不清楚，就保留待確認狀態，未必能判定到物種。</td></tr>
+            </tbody>
+          </table>
+          <div class="method-explanation">
+            <section><h3>判成空景，和沒有進入分類有何不同？</h3><p>象群照片有框被判為空景，這個標籤只描述框內的區域。另一張空景照片沒有偵測框，因此沒有進入分類。兩種情況留下的結果不同。</p><p>「動物」表示模型只能判斷到涵蓋範圍較廣的分類層級；「無法判定」（unknown）則表示整理規則找不到可採用的分類。這些結果要分別記錄，不能統稱沒有動物；無法判定也可能只是影像線索不足。</p></section>
+          </div>
+          <details class="supplement"><summary>相機地點如何幫忙？</summary><p>這四張照片的分析沒有提供地點資訊。若提供相機所在地、啟用地理限制，而且該類別有對應規則，系統才會依地點篩選分類結果。地點資料來自相機紀錄，並非由照片推測。</p><p>這個版本的開源程式若因地理規則排除首選標籤，會嘗試從「科」往更高階層彙整，不會直接改選第二名。地理規則未必涵蓋當地所有物種，罕見或意外的結果仍須人工檢查。<a href="https://github.com/google/cameratrapai/blob/08ba498e833a15e95e72021c4308908e8b44709d/speciesnet/geofence_utils.py" target="_blank" rel="noopener">固定版本的地理規則</a></p></details>
+        </article>
+      </div>
+    </section>
+
+    <section class="chapter method-chapter" id="method" aria-labelledby="method-title" tabindex="-1">
+      <header class="chapter-heading method-heading"><h2 id="method-title">四張照片的辨識過程</h2><button type="button" class="standalone-link" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="reading-surface method-surface">
+        <div class="media-expand-shell"><div class="media-expand-stage" id="media-expand-stage" data-media-expand-stage data-media-expand-label="照片裡的動物，電腦怎麼認？ 方法動畫"><iframe id="method-frame" src="animation-hybrid/embed.html" title="SpeciesNet 分析四張真實相機照片的 60 秒動畫：偵測框、從原圖裁切的影像、每個框的分類結果，以及仍待人工核對的紀錄" height="850" scrolling="no" loading="eager" allow="fullscreen"></iframe></div></div>
+        <p class="player-hint">60 秒・無音訊｜可暫停、重播或跳到指定段落</p><nav class="method-source-links" aria-label="方法來源"><a href="#method-originals">四張完整原圖</a></nav>
+        <p class="method-intro">動畫播放 SpeciesNet 處理四張真實照片後保存的結果。框線標在哪裡、分類是否符合框內影像，都可以對照原圖檢查。四筆紀錄均待人工核對。</p>
+        <noscript><p class="nojs-note">以下保留完整文字摘要。若播放器顯示不完整，可閱讀下方文字摘要。</p></noscript>
+        <details id="method-text" class="method-text" open><summary>閱讀六段動畫說明與原圖</summary><ol class="transcript"><li><h2>相機拍下了什麼？</h2><p>這張照片保留了動物的外形、姿態與周圍環境。模型將牠判為虎貓，這項分類仍待人工核對。</p><p class="detail">辨識從這張原圖開始：先找出動物的位置，再判斷分類，最後由人員核對。</p></li><li><h2>不同照片，需要分別判讀</h2><p>虎貓、黑熊、象群與空景這四張照片來自不同來源，不能用來描述同一地點的連續變化。</p><p class="detail">畫面排列與停留時間是解說安排，不代表拍攝地點或原始時間順序。</p></li><li><h2>先找到動物，再看同一張照片的細節</h2><p>框線標出偵測器找到的位置。選取虎貓所在的框，就能放大查看同一張原圖的細節。</p><p class="detail">偵測框標示位置，物種分類要交給下一步處理。放大畫面取自原圖，沒有另外生成動物影像。</p></li><li><h2>分數高，就表示判對了嗎？</h2><p>黑熊照片的首選分類是美洲黑熊，分數為 0.9899。對照原圖，才能檢查這個分類是否符合照片內容。</p><p class="detail">這個分數不能直接當成判對的機率，也不是族群比例或經人工驗證的正確率。測量準確率需要一批經人工核對的照片；這些示例仍待人工確認。</p></li><li><h2>七個框，和照片裡的動物相符嗎？</h2><p>象群照片的七個框各自圈住了什麼？框內影像與分類名稱是否相符？結果包含非洲象、動物與空景，需要逐一核對。</p><p class="detail">動畫保留所有符合分類門檻的框，七個框不能直接當成七隻動物。另一張空景照片沒有偵測框，也沒有分類結果；這和框內被判為空景的情況不同。</p></li><li><h2>四筆紀錄，都能回到原圖</h2><p>四張照片各保留一筆待人工核對的紀錄。打開原圖後，檢查框的位置與分類名稱；看不清楚的結果，繼續保留待確認。</p><p class="detail">目前四筆紀錄都尚未經人工確認。每筆都保留照片與模型結果，方便後續核對。</p></li></ol><h3 id="method-originals">四張完整來源照片</h3><div class="hybrid-source-gallery"><figure><a href="animation-hybrid/assets/ocelot.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/ocelot.jpg" width="1046" height="802" loading="lazy" alt="原照片可見完整身體；照片自身保留原始日期字樣與底部掃描邊緣。"></a><figcaption><h3>P01 · 有斑紋的動物照片</h3><p>WCS Camera Traps，Wildlife Conservation Society。CDLA-Permissive-1.0；原圖未修改。</p><p>模型分類結果：虎貓。尚待人工核對。</p></figcaption></figure><figure><a href="animation-hybrid/assets/american_black_bear.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/american_black_bear.jpg" width="2048" height="1536" loading="lazy" alt="真實夜間灰階相機照片；保留相機原有時間與資訊列。"></a><figcaption><h3>P02 · 夜間的黑白照片</h3><p>North American Camera Trap Images，NACTI data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>模型分類結果：美洲黑熊。尚待人工核對。</p></figcaption></figure><figure><a href="animation-hybrid/assets/african_elephants.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/african_elephants.jpg" width="2048" height="1536" loading="lazy" alt="照片中有多隻象，部分身體互相遮住；偵測框的數量不等於不同個體的數量。"></a><figcaption><h3>P03 · 同一張照片裡的多隻動物</h3><p>Snapshot Serengeti，Snapshot Serengeti data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>7 個框進入分類，結果包含非洲象、動物、空景。每個框都尚待人工核對。</p></figcaption></figure><figure><a href="animation-hybrid/assets/blank.jpg" target="_blank" rel="noopener"><img src="animation-hybrid/assets/blank.jpg" width="2048" height="1536" loading="lazy" alt="官方空景測試照片；不可推論該地沒有動物。"></a><figcaption><h3>P04 · 官方空景範例</h3><p>North American Camera Trap Images，NACTI data contributors。CDLA-Permissive-1.0；原圖未修改。</p><p>模型未產生分類結果。這張照片仍待人工核對。</p></figcaption></figure></div></details>
+        <details class="supplement"><summary>這段動畫如何製作？</summary><p>SpeciesNet 也有整張照片的分類模式；這段動畫採用裁切分類，沒有另行生成動物影像。</p><p class="method-note">這次分析使用 SpeciesNet 程式 5.0.6、4.0.3a 裁切分類器與 MegaDetector md_v5a.0.1，未提供地點進行地理篩選。網頁播放的是已保存的結果，60 秒為解說長度。物種仍待人工核對，也尚未辨認不同照片是否拍到同一隻動物或排除重複紀錄。</p><p>這裡核對的程式版本為 <code>08ba498e833a15e95e72021c4308908e8b44709d</code>，套件版本為 5.0.6。四張官方照片使用這份程式、4.0.3a 裁切分類器與 MegaDetector 分析，完整結果以 JSON 格式保存。分析時未提供地理資訊；四張照片僅用來說明流程，未用於測量現場準確率。</p><nav class="method-source-links" aria-label="動畫製作資料"><a href="animation-hybrid/assets/predictions.json" target="_blank" rel="noopener">完整分析結果（JSON）</a><a href="animation-hybrid/assets/inference-provenance.json" target="_blank" rel="noopener">模型執行紀錄</a><a href="animation-hybrid/SOURCE.md" target="_blank" rel="noopener">素材與處理說明</a></nav></details>
+      </div>
+    </section>
+
+    <section class="chapter editorial-chapter" id="evidence" aria-labelledby="evidence-title" tabindex="-1">
+      <div class="editorial-layout">
+        <header class="chapter-heading"><h2 id="evidence-title">照片分好類後，<br>怎麼用來研究動物？</h2><p>模型已用在秘魯森林與愛達荷州的相機調查中。分類結果能協助整理照片；要研究動物數量，還需要檢查紀錄品質與取樣方式。</p></header>
+        <article class="reading-surface text-surface evidence-reading">
+          <section><h3>秘魯森林與愛達荷州的實際應用</h3><p>WWF 的 2025 年報告介紹了秘魯 Tahuamanu 的調查。研究團隊將 <strong>136 台相機</strong>拍到的影像交給 Wildlife Insights／SpeciesNet 處理。Google Research 在 2026 年的回顧中，也介紹了美國愛達荷州的做法：模型先初篩，人員再核對。<a href="#sources">查看來源</a></p><p>Wildlife Insights 平台從 2019 年就已投入使用。SpeciesNet 則在 2025 年開源，公開程式供更多人使用與檢查。這兩個年份分別指平台應用與程式開源。</p></section>
+          <section class="section-block"><h3>研究人員怎麼檢查結果？</h3><p>人員先對照原圖與分類結果，必要時修改名稱；看不清楚就維持待確認。動物位置、模型分數與確認狀態和原圖一起保存，相機地點及拍攝時間也要留下，才找得到這筆紀錄的來處。</p><p>各地的物種與拍攝條件不同，辨識表現需要用當地經人工核對的照片測試。罕見動物、嚴重遮蔽、夜間影像，以及訓練資料較少的地區，都需要仔細檢查。</p></section>
+          <section class="limits"><h3>照片變多，代表動物變多了嗎？</h3><p>相機多拍到幾張照片，可能是同一隻動物又走過。這個初篩流程尚未辨認個體，也沒有排除不同照片中的重複紀錄，因此不能直接把照片數當成動物數。</p><p>相機放在哪裡、拍了多久、哪些動物容易進入畫面，都會影響紀錄。要估計出現率、族群密度或變化趨勢，還需要另外的取樣設計與分析，不能只看照片數量或分類分數。</p><p>空景也要留下。一張照片沒有檢出動物，只描述那張影像的結果，不能據此認定當地一直沒有動物。</p></section>
+          <details class="supplement"><summary>平台應用與開源版本，如何區分？</summary><p>實際應用與人工核對的說明來自 Wildlife Insights 官方資料；裁切分類與整理規則則依據開源 SpeciesNet 程式。兩者有關，但平台實際使用的程式未必與這裡引用的 GitHub 版本相同。</p></details>
+          <section class="sources" id="sources"><h3>文獻與資料</h3><ol>
+            <li><p><strong>WWF · 秘魯 Tahuamanu 調查（2025）</strong></p><p>2025 年 3 月 3 日發布，記錄 136 台相機影像的處理情境。文章中的個體調查成果，不當作 SpeciesNet 自動辨認個體的證據。</p><a href="https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/" target="_blank" rel="noopener">Using the power of AI to identify and track species</a></li>
+            <li><p><strong>Google Research · SpeciesNet 應用回顧（2026）</strong></p><p>2026 年 3 月 6 日發布，介紹愛達荷州如何先用模型初篩，再由人員核對。</p><a href="https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/" target="_blank" rel="noopener">Where wild things roam: Identifying wildlife with SpeciesNet</a></li>
+            <li><p><strong>SpeciesNet · 固定版本官方說明</strong></p><p>說明偵測器、分類器、整理規則，以及裁切與整張影像兩種路徑。此處固定 2026 年 10 月 16 日的程式版本，避免日後更新改變引用內容。</p><a href="https://github.com/google/cameratrapai/blob/08ba498e833a15e95e72021c4308908e8b44709d/README.md" target="_blank" rel="noopener">Google cameratrapai README</a></li>
+            <li><p><strong>Gadot 等 · 裁切分類研究（2024）</strong></p><p>研究探討先裁切動物影像再分類的做法，包括動物在畫面中太小、不同地區背景不同等問題。論文測得的表現不能直接套用到秘魯或愛達荷州。</p><a href="https://doi.org/10.1049/cvi2.12318" target="_blank" rel="noopener">研究論文 · DOI 10.1049/cvi2.12318</a></li>
+            <li><p><strong>Wildlife Insights · 人工核對說明</strong></p><p>說明如何查看原圖、接受或修改 AI 建議，並區分待核對與使用者已確認的紀錄。查閱日期：2026 年 10 月 19 日。</p><a href="https://wildlifeinsights.org/get-started/identify-images/image-projects" target="_blank" rel="noopener">Identify images in image projects</a><br><a href="https://www.wildlifeinsights.org/get-started/basics/projects" target="_blank" rel="noopener">Projects：Identify 與 Catalogued 狀態</a></li>
+          <li><p><strong>四張官方原圖與模型分析結果（2026-10-21）</strong></p><p>照片來自 WCS、NACTI 與 Snapshot Serengeti，保留原始 JPEG 及完整模型結果。象群照片中各框的分類不同；空景照片未產生分類結果。四筆紀錄都尚待人工核對。</p><a href="animation-hybrid/assets/official-image-credits.md" target="_blank" rel="noopener">每張官方照片的來源</a><br><a href="animation-hybrid/SOURCE.md" target="_blank" rel="noopener">素材與推論說明</a></li></ol></section>
+          <details id="original-notes" class="original-notes"><summary>展開完整原始案例筆記</summary><p>以下保留案例資料庫原文（2026-10-14 資料整理版本）。正文另補充本輪固定版本的開源方法，以及人工核對的說明。</p><dl class="original-fields"><div><dt>案例編號</dt><dd>02-01</dd></div><div><dt>案例名稱</dt><dd>SpeciesNet／Wildlife Insights：相機陷阱的跨地區物種初篩</dd></div><div><dt>年代</dt><dd>2019起平台使用；2025開源；2026部署回顧</dd></div><div><dt>研究情境</dt><dd>WWF秘魯Tahuamanu森林相機調查，以及美國Idaho等大型相機網絡，每年需處理大量哺乳類與鳥類照片。</dd></div><div><dt>AI 分工</dt><dd>深度學習分類器配合MegaDetector定位動物，產生物種或較高階分類標籤及信心分數，供人員優先檢閱。約2,500個輸出類別含高階分類群與非動物類，不能全稱為2,500種物種。</dd></div><div><dt>研究產出</dt><dd>照片中的動物位置、候選分類標籤及信心分數；再連結相機地點與拍攝時間，形成經覆核的物種觀測表。</dd></div><div><dt>已展示工作</dt><dd>WWF官方報告已將秘魯136台相機的影像交由Wildlife Insights／SpeciesNet處理。Google的2026回顧另確認Idaho將模型納入既有工作流程，以物種初篩加速最後的人工核對。</dd></div><div><dt>階段</dt><dd>operational</dd></div><div><dt>階段說明</dt><dd>已在保育機構的平台與實際調查流程使用；2025是開源年份，不是首次部署年份。部署證據來自使用者WWF及開發者Google。</dd></div><div><dt>限制</dt><dd>分類分數不是現地出現率或族群密度；罕見、遮蔽及地區訓練不足物種須特別覆核。照片初篩本身也不完成個體辨識或獨立個體計數。</dd></div><div><dt>來源</dt><dd><ul><li><dl><div><dt>標題</dt><dd>Using the power of AI to identify and track species</dd></div><div><dt>網址</dt><dd><a href="https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/" target="_blank" rel="noopener">https://www.worldwildlife.org/news/stories/using-the-power-of-ai-to-identify-and-track-species/</a></dd></div><div><dt>年代</dt><dd>2025</dd></div><div><dt>類型</dt><dd>官方實作報告</dd></div><div><dt>可讀範圍</dt><dd>官方網頁</dd></div><div><dt>支持內容</dt><dd>WWF作為實際使用機構，說明2019起平台使用、2025開源，以及秘魯136台相機與樹冠橋監測場景。</dd></div></dl></li><li><dl><div><dt>標題</dt><dd>Where wild things roam: Identifying wildlife with SpeciesNet</dd></div><div><dt>網址</dt><dd><a href="https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/" target="_blank" rel="noopener">https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/</a></dd></div><div><dt>年代</dt><dd>2026</dd></div><div><dt>類型</dt><dd>官方實作報告</dd></div><div><dt>可讀範圍</dt><dd>官方網頁</dd></div><div><dt>支持內容</dt><dd>2026-03-06開發團隊回顧；模型類別、與MegaDetector整合及Idaho人機核對工作流程。</dd></div></dl></li></ul></dd></div></dl></details>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="reading-controls js-only" hidden><button id="previous-page" type="button">上一頁</button><p id="page-position" aria-live="polite">1 / 4 · 研究問題</p><button id="next-page" type="button">下一頁</button></footer>
+</body>
+</html>

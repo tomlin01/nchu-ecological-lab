@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "case_id": "03-04",
+  "revision": "prototype-v01",
+  "duration_seconds": 84,
+  "video": {
+    "duration_seconds": 84,
+    "decoded_frame_count": 2016,
+    "fps": 24,
+    "width": 1600,
+    "height": 900,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_streams": 0,
+    "bytes": 3645687
+  },
+  "browser_scope": {
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "six_scenes": true,
+    "reverse_seek_pixel_checks": 9,
+    "failed_fetch_recovery": true,
+    "reduced_motion": true,
+    "normal_full_playback": true
+  },
+  "source_images_and_xml_unchanged": true,
+  "canonical_site_files_unchanged": 796,
+  "visual_review": "prototype-review-v01/review.md",
+  "user_accepted": false,
+  "site_integrated": false,
+  "deployed": false,
+  "limitations": [
+    "No Safari or physical-phone test",
+    "No research model inference or new scientific validation"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "version": "full-story-v02",
+  "entry": "embed.html",
+  "duration_seconds": 118,
+  "accepted_opening": "three-study-v09",
+  "accepted_opening_seconds": 20,
+  "complete_animation_user_accepted": true,
+  "clock": "single RAF controlled research timeline; accepted core seek only",
+  "accepted_core_hashes": {
+    "marine-life.mjs": "ed785dd9d9c5d0c9fd2bf7048c7332e3f607697b856de90441b7ead933221ca4",
+    "index.html": "c2714f3fe221d8dc0b0f19a1c89992a13f02d070ff5be3784b4812e4b99ec5ee",
+    "scan-corals.mjs": "aaa6a0cf225c387a75278d7d6825e1fbe0dbfff6c7c5b6de098ee3a28cf8b058",
+    "terrain.mjs": "1820f3009b39b894f3b007d9f29b0e06f1495ec9659a0bb74daefdee737e1038",
+    "atmosphere.mjs": "8b909a78346d0cf30c74cecf268c5bac723fa7c378c0e7ab638bede69d4e9ecd",
+    "style.css": "22d76e9e501f3b3632fff957cbdcaf938dfde03705b8cd955b95c1f278474984",
+    "app.mjs": "89dfae361eb22d3edd525fbcefb7f7de735142a38d10e95a5c3d54961eb93520",
+    "surface-material.mjs": "0f8725b99e4b7a0bd4f6f0d1b677ac5980dd92bacff022fb33a9875b1dd1cacc",
+    "coral-pigment.mjs": "218be9928ef3b41ffa3cec4c449c8daae1f94054e7e41219d814eb16f9cb5198",
+    "biota.mjs": "659e512220ea282d520260a05a4bbd600cc1cc9ebb20da97a04a0b47eecd70a3",
+    "surroundings.mjs": "920a747a83310c067356025a4eb9ce1e1e70fbbb48849c8df2f0d0412b830f9f",
+    "fonts/reef-sans.woff2": "b29efb0c1a2507e41e000beee758be7564919897114adaff50c2a9cecded1ca5",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "assets/reef-limestone-albedo.png": "8ee947d1696db186de676fd08b09c6c8cb9a8846a3db80d8b639fa628d8e7d92",
+    "assets/scans/pocillopora-81450-lod-index.bin": "3c44a17448f0c5d67c6d5d557df900092ba17a65150d26cc7e86f579f96c586a",
+    "assets/scans/pocillopora-81450.glb": "0172ea2f723be4fa90e120becb4133cbc4da5ff3dc64ea5b3f9d6cbf26a0ef85",
+    "assets/scans/provenance.json": "726ef05d3833bc826b75261b8b056ae96797441ed4a58670702d2429e3693ad6",
+    "assets/scans/diploria-labyrinthiformis.glb": "c55301c7ae8d2b829f855b69f6943a4ead345e727860fa77ce1617b43496af03",
+    "assets/scans/SOURCE.md": "8a219cfc4ce8c935a3c81887b1fc228e125c98ddf364dbfa7e6dfde84939fbd1",
+    "assets/scans/pavona-cactus-74851-lod-index.bin": "5629e4020d3235befaf8bd47df68dd27e417191d05f11e6544d6cfe7df117e1b",
+    "assets/scans/extra-provenance.json": "8a4d9a21c351c297602ff84c1289a407f084998f8a6dcb4e2d69392674ed7f30",
+    "assets/scans/pavona-cactus-74851.glb": "4af75a0510a958d4a9bccf44fee46ce78982babb1d0387bf5c41a1ff2fd799dc",
+    "assets/scans/extra-SOURCE.md": "de870dadfe1c803453bc8618e4e68f72889a3d6bc23a3adb0e3f1a5e41d3d3a5",
+    "assets/scans/pocillopora-44359.glb": "31fa5dce1d14edbea6a2fbef8fe91f01ee80c2e5455b9ff3b6234d2e3a29e40c",
+    "assets/scans/pocillopora-44359-lod-index.bin": "24cb880779486b36b6c709201072181ef318ebbc640f6337680a8d8b0a1fd994",
+    "assets/scans/diploria-labyrinthiformis-lod-index.bin": "7cd58507521816636d9fb614f76cd9cb6d6871b3e82d00bc744f846a3d1617cb",
+    "vendor/three.module.js": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+    "vendor/THREE-LICENSE.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "vendor/three.core.js": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+    "vendor/BufferGeometryUtils.js": "6d4f4f989a5f7e810522aaa36292205e3674878eed9810563417bd13ab9ba4f2",
+    "vendor/addons/utils/SkeletonUtils.js": "28017bf37d0ecb0c4be6048db759ff14df729a562464830b064d4cc239c5af17",
+    "vendor/addons/utils/BufferGeometryUtils.js": "259085a7dac89e0840393a9347c77123fbc4206ec2146bf0c29ffc72e14a2800",
+    "vendor/addons/math/SimplexNoise.js": "4b1455617135e6b477de76244de07547d95570643379b72f4758e50161b06072",
+    "vendor/addons/postprocessing/SSAOPass.js": "76e8f0d3eea92031d990fb39004676a960f6aea0aee0100e8352d956adda9c53",
+    "vendor/addons/postprocessing/Pass.js": "ac015c53e4a491b4f071535d003e6208ec56e00cfbb74942d93556dd53c45673",
+    "vendor/addons/postprocessing/MaskPass.js": "7cd08eee9d5d6f5578beaddbdcbe9c384f6873810af27f22ab7db3ceeb127aa3",
+    "vendor/addons/postprocessing/EffectComposer.js": "af78417adddaa482b742ddcfdf551ca0b35d77d58493f2e96439fdc219905ef0",
+    "vendor/addons/postprocessing/ShaderPass.js": "1a07592b97c68fec70b9ece4ee32522878c9e71e8364c10f359480b8cd676ef2",
+    "vendor/addons/postprocessing/OutputPass.js": "e31bb5e6843c43e99113198824c2242b95abe2ed9047e725691fd6453fc8321f",
+    "vendor/addons/postprocessing/RenderPass.js": "11d4309065ed205241291a6e1e3f6d54acd11ee16a753313a2b4b33a5ce4b189",
+    "vendor/addons/shaders/SSAOShader.js": "05cc6868f4affa46923293bcde222cb5bca67cf83aa4c4d1acc5c43b24195358",
+    "vendor/addons/shaders/OutputShader.js": "353479f77a8d7e2629d49ccac9fc2f5dbfdda5442e0adf867b00377a2fcb0cb2",
+    "vendor/addons/shaders/CopyShader.js": "a33057d5ac91c43304c186ac0e8816e62bb2ed471d3a00ff3018dfd5c0389718",
+    "vendor/addons/loaders/GLTFLoader.js": "03952cb129d558f92b8e6c757fbf7c1f718b3126c4d34f264d574b40ea36054f"
+  },
+  "inactive_legacy_bridge": [
+    "embed.js",
+    "embed.css"
+  ],
+  "files": {
+    "embed.html": {
+      "bytes": 17666,
+      "sha256": "7c5c66fbf6ddd4926ee58137f57c3145c057de19c6278dcab9566daeb0b32f1e"
+    },
+    "story-player.mjs": {
+      "bytes": 17545,
+      "sha256": "b2422b0ea3ac3de87dcb2f044613e39a167e14a3a50c6ed77bc96b9bb9f6e72e"
+    },
+    "story-model.mjs": {
+      "bytes": 7840,
+      "sha256": "68cf923f4d07035bd0578a0a39a9a379b62091dabd27efcb3b8b2ef227a77609"
+    },
+    "story-scene.mjs": {
+      "bytes": 4497,
+      "sha256": "b550275e2e38250e423b97edf99cf3f6f9d0970de44d4bafcda737a146570ac5"
+    },
+    "story-source.json": {
+      "bytes": 9327,
+      "sha256": "8f6a09774615e874bc53b9bf6eb7250d6a6b2dbc331de1ec784bf4177ff1d419"
+    },
+    "story.css": {
+      "bytes": 22849,
+      "sha256": "c91d8b78f04f63a8bf62bbdd76d3c286c617646302e9c6621b41dcc99848e6d0"
+    },
+    "story-controls.css": {
+      "bytes": 2108,
+      "sha256": "3cb07bc45f406b62947034f1aacf287c78bba103714b6073c2eb39358ce98def"
+    },
+    "fonts/reef-story-sans.woff2": {
+      "bytes": 144752,
+      "sha256": "9debaf0875da9aafef1c2a7f76917d04c31a020f251d87eed444434d5f2c10f9"
+    }
+  }
+}

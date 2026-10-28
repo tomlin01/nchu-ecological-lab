@@ -1,0 +1,121 @@
+{
+  "dataset": "Hyena ID 2022",
+  "sourceUrl": "https://lila.science/datasets/hyena-id-2022/",
+  "license": "Source claims conflict: LILA CDLA-Permissive-1.0; COCO image license 3 = CC-BY-NC-ND-2.0. Local prototype review only.",
+  "licenseStatus": "conflicting_source_claims_unresolved",
+  "licenseClaims": {
+    "landing": "CDLA-Permissive-1.0",
+    "originalCoco": [
+      {
+        "url": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "id": 3,
+        "name": "Attribution-NonCommercial-NoDerivs License"
+      }
+    ]
+  },
+  "modelInferenceRun": false,
+  "reidentificationScores": null,
+  "photos": [
+    {
+      "id": "query",
+      "src": "assets/query.jpg",
+      "width": 2400,
+      "height": 1600,
+      "individualId": "bbbaafbc-3889-4d6f-843b-d58fb94fb07c",
+      "viewpoint": "left",
+      "imageId": 2824,
+      "annotationId": 2849,
+      "sourceFilename": "000000002824.jpg",
+      "sourceArchiveMember": "hyena.coco/images/train2022/000000002824.jpg",
+      "bbox": [
+        478.0821917808219,
+        536.986301369863,
+        1395.2054794520548,
+        865.7534246575342
+      ],
+      "detailCrop": [
+        1050,
+        650,
+        600,
+        380
+      ],
+      "capturedAt": null,
+      "encounterId": null,
+      "sha256": "30f3e45120dfa687689688df9c1d196123a55e093db551c3afe0813cce9a4a06",
+      "originalBytesPreserved": true,
+      "bboxSource": "original COCO annotation.bbox",
+      "detailCropSource": "editorial display rectangle, not model output",
+      "targetNote": "原始標註所指的左側身斑鬣狗。"
+    },
+    {
+      "id": "match",
+      "src": "assets/match.jpg",
+      "width": 2400,
+      "height": 1600,
+      "individualId": "bbbaafbc-3889-4d6f-843b-d58fb94fb07c",
+      "viewpoint": "left",
+      "imageId": 612,
+      "annotationId": 621,
+      "sourceFilename": "000000000612.jpg",
+      "sourceArchiveMember": "hyena.coco/images/train2022/000000000612.jpg",
+      "bbox": [
+        239.72602739726025,
+        478.0821917808219,
+        1625.3424657534247,
+        1001.3698630136986
+      ],
+      "detailCrop": [
+        950,
+        630,
+        700,
+        440
+      ],
+      "capturedAt": null,
+      "encounterId": null,
+      "sha256": "cd7ae0c5fd7145eb0c85a2fcd237c0fc037aba4a4d42d67b91c29fd5dbe068a4",
+      "originalBytesPreserved": true,
+      "bboxSource": "original COCO annotation.bbox",
+      "detailCropSource": "editorial display rectangle, not model output",
+      "targetNote": "原始標註所指的左側身斑鬣狗。"
+    },
+    {
+      "id": "other",
+      "src": "assets/other.jpg",
+      "width": 2400,
+      "height": 1600,
+      "individualId": "34365bcc-5b2d-4f80-b721-ef7039e64fe8",
+      "viewpoint": "left",
+      "imageId": 2011,
+      "annotationId": 2035,
+      "sourceFilename": "000000002011.jpg",
+      "sourceArchiveMember": "hyena.coco/images/train2022/000000002011.jpg",
+      "bbox": [
+        441.78082191780817,
+        449.31506849315065,
+        1493.1506849315067,
+        1038.3561643835617
+      ],
+      "detailCrop": [
+        1000,
+        580,
+        720,
+        450
+      ],
+      "capturedAt": null,
+      "encounterId": null,
+      "sha256": "d5c2ccaf0030c5548fc6fe202508da7645513ce85b89bd5f5d66a7d177a9529d",
+      "originalBytesPreserved": true,
+      "bboxSource": "original COCO annotation.bbox",
+      "detailCropSource": "editorial display rectangle, not model output",
+      "targetNote": "背景中的側身斑鬣狗；前景另一隻的頭部不是本筆標註目標。"
+    }
+  ],
+  "identityBasis": "Original COCO annotation.name; not a new model inference or independent biological re-identification.",
+  "viewpointConvention": "left means the animal left flank, copied from original annotation.viewpoint",
+  "capturedAtStatus": "All selected date_captured values are null; no EXIF capture timestamps found.",
+  "encounterStatus": "Not provided; distinct image IDs do not establish distinct encounters.",
+  "detailCropMeaning": "Editorial anatomical detail for viewing only; original JPEGs are never cropped or transformed.",
+  "comparisonScope": "query and match have the same source individual ID and left viewpoint; other has a different source individual ID and the same left viewpoint.",
+  "sourceRecords": "sources/selected-records.json",
+  "sourceNotes": "SOURCE.md"
+}

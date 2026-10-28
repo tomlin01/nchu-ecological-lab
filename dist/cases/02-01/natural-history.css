@@ -1,0 +1,65 @@
+/* Catalogue layout with shared light/dark tokens. Parent page only; original media remain unchanged. */
+@media screen {
+  :root {
+    --ground: var(--theme-ground);
+    --surface: var(--theme-surface);
+    --ink: var(--theme-ink);
+    --muted: var(--theme-muted);
+    --line: var(--theme-border);
+    --accent: var(--theme-accent);
+    --link: var(--theme-accent);
+    scrollbar-color: var(--theme-scroll) var(--ground);
+  }
+  :root[data-theme="light"] { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  body { background: var(--ground); color: var(--ink); }
+  :is(a, button, summary, iframe, .chapter):focus-visible { outline-color: var(--theme-focus); }
+  #method-frame, .media-expand-stage { background: var(--theme-media); }
+  .topic-scene { display: none; }
+  .site-header, .section-nav, .reading-controls { background: var(--ground); }
+  .site-header { border-bottom: 1px solid var(--line); }
+  .section-nav { border-bottom: 1px solid var(--line); }
+  .reading-controls { border-top: 1px solid var(--line); }
+  .nav-pages a[aria-current="page"] { color: var(--ink); border-color: var(--ink); }
+  .reading-surface { background: var(--surface); }
+  .opening-hero {
+    grid-template-columns: minmax(0,.40fr) minmax(0,.60fr);
+    align-items: center;
+    gap: clamp(30px,4vw,64px);
+    padding: 14px 0 40px;
+  }
+  .opening-question { color: var(--muted); }
+  .primary-action { background: var(--theme-button-bg); color: var(--theme-button-ink); }
+  .primary-action:hover { background: var(--theme-accent); color: var(--theme-on-accent); }
+  .hero-photo { margin: 0; }
+  .hero-photo img { aspect-ratio: 3/2; object-fit: contain; background: var(--surface); }
+  .hero-photo figcaption { margin-top: 14px; color: var(--muted); }
+  .opening-reading { padding-top: 30px; border-top: 1px solid var(--line); }
+  .field-context { border-top: 1px solid var(--line); }
+  .roles-table thead { border-bottom: 1px solid var(--line); }
+  .roles-table tbody tr + tr { border-top:0; }
+  .roles-table td { color: var(--ink); }
+  .contact-sheet img { background: var(--surface); }
+  .photo-note, .method-note, .sources, .original-notes { border-top: 1px solid var(--line); }
+  .standalone-link { background: var(--theme-button-bg); color: var(--theme-button-ink); }
+  .standalone-link:hover { background: var(--theme-accent); color: var(--theme-on-accent); }
+  .player-hint { color: var(--muted); }
+  ::-webkit-scrollbar-thumb { background: var(--theme-scroll); }
+  ::selection { background: var(--theme-accent); color: var(--theme-on-accent); }
+  .skip-link { background: var(--theme-button-bg); color: var(--theme-button-ink); }
+}
+
+@media screen and (max-width: 1100px) {
+  .opening-hero { grid-template-columns: minmax(0,.43fr) minmax(0,.57fr); gap: 30px; }
+}
+@media screen and (max-width: 850px) {
+  .opening-hero { grid-template-columns: 1fr; gap: 30px; }
+  .opening-intro { max-width: 640px; }
+  .hero-photo { max-width: none; }
+}
+@media screen and (max-width: 740px) {
+  .opening-hero { display: flex; flex-direction: column; align-items: stretch; padding: 3px 0 30px; gap: 28px; }
+  .hero-photo { margin: 0; }
+  .hero-photo figcaption { margin-top: 11px; }
+  .opening-reading { padding-top: 25px; }
+}

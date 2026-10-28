@@ -1,0 +1,416 @@
+{
+  "entry": "02-01.html",
+  "files": {
+    "02-01.html": {
+      "bytes": 26941,
+      "sha256": "4ef7fb85ec6f7e529152df77afc4817f74cb1d6490092dd3a034ac00201b5469"
+    },
+    "README.md": {
+      "bytes": 604,
+      "sha256": "4bce3ec3c27368495746c1cb49b7047dd6b2753da8348bd6ecefe68073d830e0"
+    },
+    "animation/LICENSES.txt": {
+      "bytes": 433,
+      "sha256": "88c81b89c99f618d1135b5bde440c5f06024b1e396a5b7b252322eda2ae645b8"
+    },
+    "animation/PHOTO_PROMPTS.md": {
+      "bytes": 6861,
+      "sha256": "96b9679c2b7ee60c59858e87608a4696888a5c1f9ddd8fad447f35ba6cff8bb4"
+    },
+    "animation/README.md": {
+      "bytes": 2033,
+      "sha256": "233d8e2db7521dc7df3dd346a23c9a9fdeee18feb7289499840c34141a9ed85c"
+    },
+    "animation/app.js": {
+      "bytes": 19074,
+      "sha256": "b568e44f7a4c3060bbbd0330203f3fd5617c6ae043aec4e78e6c9c43e31c4d8e"
+    },
+    "animation/assets/generation-provenance.json": {
+      "bytes": 2418,
+      "sha256": "73788bceb733b0284ac2eeb79f90815e62a049a4746f6d7effcfde5c8e5ab465"
+    },
+    "animation/assets/geometry.json": {
+      "bytes": 2975,
+      "sha256": "a7759895e1552761834ff5f8c0c13da1a221f1445d652dec745d7af4c75acde9"
+    },
+    "animation/data.js": {
+      "bytes": 3014,
+      "sha256": "4343c89aea19ef91fd377e90e879dd74e533ae7176fd89ff7dbb918a6ab49169"
+    },
+    "animation/embed.css": {
+      "bytes": 735,
+      "sha256": "71df58f228f514b1454c35e22a3849de8fcfbff247d5b05d05dcc4af971fd308"
+    },
+    "animation/embed.html": {
+      "bytes": 9184,
+      "sha256": "cfb160b4a64a3e8f3aa0736f2586074446a6e5221e4df8e9fddf2da8632a0a1f"
+    },
+    "animation/embed.js": {
+      "bytes": 2608,
+      "sha256": "e2018e976a98239a50b6cb69a6ef7c29a4a713c0ee4b9475e712f2bc5e48cd33"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/case-sans.woff2": {
+      "bytes": 157564,
+      "sha256": "6e9f83c79c74b8eea39c2b4a34f89de884b662650e5deaa593fab37784869431"
+    },
+    "animation/fonts/case-serif.woff2": {
+      "bytes": 214432,
+      "sha256": "6a1edf832bcf29eaf0ca2ae896b22bf4901c4a7000beeefff1fbc48426c85325"
+    },
+    "animation/index.html": {
+      "bytes": 9106,
+      "sha256": "da3eb9caec9e16ff8bd123ebd1538e1413cc258a84c0e84fd51e7dc826037a79"
+    },
+    "animation/manifest.json": {
+      "bytes": 2363,
+      "sha256": "4fd03d58a1a2b20914e6d4500737c02d94ed5a39512fb36b0756ae05c980b593"
+    },
+    "animation/provenance.json": {
+      "bytes": 1796,
+      "sha256": "0cb7ba4b016a531ab6c7f530cd0017b5db1cabca61def923216d6c219d166bab"
+    },
+    "animation/style.css": {
+      "bytes": 13462,
+      "sha256": "5784f5ae7a07b92eae464e47af28035e257be92d7460dece067f8655935a6a71"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "animation-hybrid/LICENSES.txt": {
+      "bytes": 449,
+      "sha256": "94764b7571f7202253c84084e7ac418251be171e15e03b1752deea4c84b2013f"
+    },
+    "animation-hybrid/README.md": {
+      "bytes": 1178,
+      "sha256": "35de2a713ae39fd4ab3b100817c091b5b60ed7ee037c698c0d3d5d3e5340c7d3"
+    },
+    "animation-hybrid/SOURCE.md": {
+      "bytes": 4156,
+      "sha256": "d80b826d1439a3655d64999af8472f91e752c1bbe0d1c8cd22a61874493fbf2f"
+    },
+    "animation-hybrid/app.bundle.js": {
+      "bytes": 25484,
+      "sha256": "1814908a8fc7e7ea1d8691564cac09451e08694673074f67851744a0f81d0f07"
+    },
+    "animation-hybrid/assets/african_elephants.jpg": {
+      "bytes": 647940,
+      "sha256": "19cd899b473d99fc855bc34369a55860d3b15780c65d42b7b57585fd24d81402"
+    },
+    "animation-hybrid/assets/american_black_bear.jpg": {
+      "bytes": 400725,
+      "sha256": "49cae6c6be95198c6d1c0ae50f4589372dc01a606951a22841a6939ff9d0cd17"
+    },
+    "animation-hybrid/assets/blank.jpg": {
+      "bytes": 409295,
+      "sha256": "77a1bd147f6dee4ba596d3711b726a2b2cb244043587cb876bf85f3e6e8849d1"
+    },
+    "animation-hybrid/assets/cdla-permissive-1.0.html": {
+      "bytes": 155148,
+      "sha256": "7aa95c1c9582f9b0c1696ca80db11ed3329d30bc580147d41aa68c9c681ccd83"
+    },
+    "animation-hybrid/assets/display-data.json": {
+      "bytes": 12107,
+      "sha256": "dab9666b34b85eaff3b5944bdf39c64fd72500a22d1290667ab8417bf5f74f2a"
+    },
+    "animation-hybrid/assets/inference-provenance.json": {
+      "bytes": 7268,
+      "sha256": "eb9230c9f61439e10ee69e5f32f68584ae6b2222c321ec0c64cabe46a0a0636c"
+    },
+    "animation-hybrid/assets/ocelot.jpg": {
+      "bytes": 538720,
+      "sha256": "6facb7a54a739767ba639a37097737ce2f903e8504a516255ffe1f9a82e32e6e"
+    },
+    "animation-hybrid/assets/official-image-credits.md": {
+      "bytes": 3146,
+      "sha256": "f76472d356814c752370ae09340af728a8d00346f9ba204a79b321042b9091ef"
+    },
+    "animation-hybrid/assets/predictions.json": {
+      "bytes": 11238,
+      "sha256": "2aa734af2f2773e44adf4a0ed629f1fb52bb19114a302c2c377aeeee0604c99e"
+    },
+    "animation-hybrid/build-runtime.json": {
+      "bytes": 1659,
+      "sha256": "edf2c2657e971e80ca9ae6ecb3e846885f734c502a8e270afa6838ca51f887a7"
+    },
+    "animation-hybrid/embed.css": {
+      "bytes": 1475,
+      "sha256": "7d8b431b09ffea5a99065a256ec12adb7560391252a034891fd8ad9c139e9fb3"
+    },
+    "animation-hybrid/embed.html": {
+      "bytes": 11759,
+      "sha256": "32c468f9de3d4d57a45277cb74893dd70d731dad6e24ae6fc15f71c5cace6f5f"
+    },
+    "animation-hybrid/embed.js": {
+      "bytes": 3486,
+      "sha256": "2c6fae61a479aa9f3a6c0c001f08fede3760ce32ec7cf3aa878b7beaaae49442"
+    },
+    "animation-hybrid/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation-hybrid/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation-hybrid/fonts/case-sans.woff2": {
+      "bytes": 119724,
+      "sha256": "97efee598cbb1293aacc82a8ecde20cd04aadfbb8fa0771f519efeb0a2e4f9f9"
+    },
+    "animation-hybrid/fonts/case-serif.woff2": {
+      "bytes": 159016,
+      "sha256": "cf46c4481500c3c6ea7303c7b931ae3e66b47dc2fcd4fee73ae99aaf4a233489"
+    },
+    "animation-hybrid/index.html": {
+      "bytes": 11454,
+      "sha256": "98dd83a809b0e1fbfda6baea54c26d9aaae240468843c0dbf87fce511b31799e"
+    },
+    "animation-hybrid/manifest.json": {
+      "bytes": 6998,
+      "sha256": "e77c2862c5425186cf9b4e594ccbb593b22fd107d2890e5d1db66aaa1a01562f"
+    },
+    "animation-hybrid/provenance.json": {
+      "bytes": 10284,
+      "sha256": "09dfdf017307bb802af62e7c4d88a7b359cfc1e9f9c60b4f2bfb2bd2020452f0"
+    },
+    "animation-hybrid/style.css": {
+      "bytes": 14633,
+      "sha256": "1b0e10f8b8224c48e0a5b8f17a31d85e7d6141555721dfd7ce758ca459d6062e"
+    },
+    "animation-hybrid/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "assets/02-01-forest-bg.webp": {
+      "bytes": 603940,
+      "sha256": "4512a43e8b0708baccc7312bc11b584ad2131e0851028ea26b4315ba6a610420"
+    },
+    "assets/02-01-jaguar-main.webp": {
+      "bytes": 620120,
+      "sha256": "8063dae610eaf9d03e7f5dfe9506bb4da973de06de36094272da67a7fcad1291"
+    },
+    "assets/night-tapir.webp": {
+      "bytes": 336480,
+      "sha256": "d73b9446e6552997bddcc6a5548acee636027be2b6b93db0df4c8a9a8efd6e02"
+    },
+    "assets/occluded-cat.webp": {
+      "bytes": 607392,
+      "sha256": "ea63ecdfb7c16a6d668a5e8a9ca341e2a2a324ef62ff2568aca63410d3e3bc11"
+    },
+    "case.css": {
+      "bytes": 15827,
+      "sha256": "0524685543ed10a0be3bf8b88f475eaebd25c5d6817b07ac38c8c26d1af26415"
+    },
+    "case.js": {
+      "bytes": 7406,
+      "sha256": "747ecd6794b45c1ae854769ef141daa3891338e0a38e9c3f8057d4abd5f1f193"
+    },
+    "copy-deck-v02.md": {
+      "bytes": 12350,
+      "sha256": "67f2728f6d5eefc07371b674bd0f79b8fa3a536bec9bb1fadf87d76dde9bb3b5"
+    },
+    "copy-deck.md": {
+      "bytes": 11830,
+      "sha256": "f1480fcc7f3482df250d6eb564373bae0c2870973ca4bd2d841b759257dece4f"
+    },
+    "copy-edit-notes.md": {
+      "bytes": 5481,
+      "sha256": "e356f09da781acc9275b36e7dd8650a6b23e9fda1cfdca2280efa2afe53a5604"
+    },
+    "copy-fonts.css": {
+      "bytes": 298,
+      "sha256": "1b712135536446fa135ec91ba04ab77b0d4c14b708368bfa437e6d80edaf8514"
+    },
+    "copy-v02-fonts.css": {
+      "bytes": 292,
+      "sha256": "358eebda3f957b592addcf0842a3a8b08d8e64d161f20bf14dd258133b2fec5b"
+    },
+    "copy-verification.json": {
+      "bytes": 599,
+      "sha256": "69c5b309ece4e0a1434c9ae27a31a4dd0fd3081e667d19123fb1c4335ead25f2"
+    },
+    "font-supplement.css": {
+      "bytes": 302,
+      "sha256": "f72727b2860b0a904613c2709ece48af85390b46035a798b636b9dd673aa5388"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/case-sans.woff2": {
+      "bytes": 198804,
+      "sha256": "45b00e652ca2961887fbecfb13d1c329f02be34303119cbcbe4d7b54f4d6124e"
+    },
+    "fonts/case-serif.woff2": {
+      "bytes": 268096,
+      "sha256": "f7b878fdd23b786328485016d31ded50d09d194853c5f146b2aa2cfdbe62760a"
+    },
+    "fonts/copy-parent-sans.woff2": {
+      "bytes": 217104,
+      "sha256": "5a31262f7f5ba108b4033cbc7684bb6b9138686987793b0c877e8cf67fce680f"
+    },
+    "fonts/copy-parent-serif.woff2": {
+      "bytes": 291652,
+      "sha256": "575384f7406cee9b058fef4239a57c66febaddb73a902f4d6490e2b78d894501"
+    },
+    "fonts/copy-v02-sans.woff2": {
+      "bytes": 184232,
+      "sha256": "7c5a13084a169470284d371bcd1a95c3f8c2ffaa5cc9c9e2d56cee85faac4778"
+    },
+    "fonts/copy-v02-serif.woff2": {
+      "bytes": 244088,
+      "sha256": "fbc442dfd7006c3288df56208958bf62927a0ae44b5e00ece2d6fb9e88ed0b4c"
+    },
+    "fonts/hybrid-parent-sans.woff2": {
+      "bytes": 200072,
+      "sha256": "1b62c6ee5ada6b326ed7b90c32e2c5387e5780ed00ea48c6dfb73842ba8d0d72"
+    },
+    "fonts/hybrid-parent-serif.woff2": {
+      "bytes": 270332,
+      "sha256": "5066d5e6713e2cd00ae2491f967dfdd4cd4cb24ef2e5c6bd6344abc86fd9bd94"
+    },
+    "hybrid.css": {
+      "bytes": 1194,
+      "sha256": "2a3db883c92e1cf9674af692a6bf7f775d25e34e08d94e077a8231f9ad3e6ed6"
+    },
+    "index.html": {
+      "bytes": 463,
+      "sha256": "b431e9f6054099d03ff0aaa61eb970ae24279ec0fb5b2b17aaf4a73789d8a6ac"
+    },
+    "integration-static.json": {
+      "bytes": 6841,
+      "sha256": "06ab0caa9cd39a67f1551e0cdd860f1e1b31a5a819e9687bc31c521644481b11"
+    },
+    "narrative-implementation.md": {
+      "bytes": 5370,
+      "sha256": "bf06d848ad4f6744e3bb5d0ebdc166f08b79235f3f54fd5a50e6cfbf96fc95ef"
+    },
+    "narrative-verification.json": {
+      "bytes": 1212,
+      "sha256": "915c86e40f53209203f9b1f87159c8460a04eb702fb67372cb0a16fdeb9b27f9"
+    },
+    "natural-history.css": {
+      "bytes": 3222,
+      "sha256": "85394abdcfa0803e3607ad86ef7f1403298e844593f46df935d1fda8ead5ce30"
+    },
+    "provenance.json": {
+      "bytes": 13209,
+      "sha256": "e47280a1d994b8086e5c2589e17e1f94017d38f270823e6f91a08b86e2de13d2"
+    },
+    "topic-entry-verification.json": {
+      "bytes": 1642,
+      "sha256": "f7ae8bb71f2e3eea02fd1732db2b9e9003aa45a9b3e3de78b9868bc034ae3322"
+    },
+    "ui-provenance.json": {
+      "bytes": 3064,
+      "sha256": "0c007c55aaba9282218e972e3d32e4ef4736ec1fca4bd5b9e34581adb0a165f3"
+    },
+    "ui-verification.json": {
+      "bytes": 3498,
+      "sha256": "138db76f8c041712fb8bec080f4e56c9cc4c838d38b455afd5f24e7af6d973f9"
+    }
+  },
+  "case_id": "02-01",
+  "version": "copy-edit-v02",
+  "copy_edit_revision": {
+    "revision": "copy-review-02-v01",
+    "scope": "Website editorial text and parent-page animation transcript only",
+    "skill": "humanizer, adapted to Traditional Chinese science communication",
+    "before_html_sha256": "3377389837c2030b42089d0355a19a8e9b09fe4872f0a81b31155eb643765ab3",
+    "animation_runtime_and_media_unchanged": true,
+    "original_notes_and_research_json_unchanged": true,
+    "layout_and_controllers_unchanged": true,
+    "new_font_files_only": true,
+    "scientific_review_status_unchanged": true,
+    "verification_record": "work/ecology-ai-rollout/copy-review-02-v01/verification.json"
+  },
+  "narrative_revision": "copy-review-02-v02",
+  "ui_revision": "navigation-media-v01",
+  "ui_entry": "02-01.html",
+  "topic_entry": "index.html#topic-02",
+  "theme_system": {
+    "revision": "theme-system-v01",
+    "default": "light",
+    "dark": "charcoal",
+    "browser_checked": true,
+    "static_only": false,
+    "content_and_animation_unchanged": true
+  },
+  "typography_revision": {
+    "id": "typography-site-v01",
+    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
+    "local_only": true,
+    "entry_count": 18,
+    "case_count": 17,
+    "static_only_case": "01-02",
+    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json",
+    "stylesheet": "../../ui/reading-typography.css"
+  },
+  "animation_theme_revision": {
+    "id": "animation-theme-v01",
+    "updated": "2026-10-25T02:13:23.027691+00:00",
+    "scope": "Web presentation background, diagram labels and controls only",
+    "user_request": "前三個主題中，動畫背景顏色沒有對齊淺色或深色主題",
+    "clarification": "點進案例後的研究動畫",
+    "modified_cases": [
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "03-01"
+    ],
+    "verified_unchanged_cases": [
+      "03-02",
+      "03-03",
+      "03-04"
+    ],
+    "static_only_case": "01-02",
+    "fixed_mp4_picture_colors_retained": [
+      "01-02",
+      "02-02"
+    ],
+    "shared_files": {
+      "ui/animation-theme.js": {
+        "bytes": 2068,
+        "sha256": "e8430f52fd55934efee03d593af40b9a09ce14703a04d2c29c353bce3b21a63e"
+      },
+      "ui/animation-theme.css": {
+        "bytes": 23679,
+        "sha256": "e325e2e9bdd0cb3f238e11baa365f19537b9d2075bd98e78f195974dcc00fb57"
+      },
+      "ui/theme-tokens.css": {
+        "bytes": 1595,
+        "sha256": "0b5771a89eb4a3d0edb3de8410eb68aa83b26e4fee4a857832bd45dd2ee8cdab"
+      }
+    },
+    "source_media_model_data_and_player_core_preserved": true,
+    "parent_navigation_fix": "02-02 ignores background scroll chapter inference while its player is expanded.",
+    "local_only": true,
+    "deployed": false,
+    "verification": "work/ecology-ai-rollout/animation-theme-v01/verification.json"
+  },
+  "animation_preservation_scope": "Original source media, scores, model data, rendering geometry and player clocks retained. Website entry HTML and presentation theme changed with user authorization; standalone accepted source packages remain historical.",
+  "language_revision": {
+    "id": "tw-copy-v01",
+    "locale": "zh-TW",
+    "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
+    "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
+  },
+  "updated": "2026-10-25T17:53:02.193588+00:00"
+}

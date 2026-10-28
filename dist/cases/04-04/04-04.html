@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+  <script src="../../ui/theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>沒量過的地方，植物特徵怎麼估？｜AI × 生態研究</title>
+  <meta name="description" content="先看葉片大小和植物組成，再看研究如何用植物紀錄、既有性狀與環境資料，推估一地植物的平均特徵。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../../ui/theme-tokens.css">
+  <link rel="stylesheet" href="../../ui/sidebar.css">
+  <link rel="stylesheet" href="../../ui/media-expand.css">
+  <link rel="stylesheet" href="../../ui/catalog-theme.css">
+  <link rel="stylesheet" href="case.css">
+  <link rel="stylesheet" href="../../ui/theme-controls.css">
+  <script src="case.js" defer></script>
+  <script src="scene.js" defer></script>
+<link rel="stylesheet" href="typography.css">
+</head>
+<body data-page="question">
+  <a class="skip-link" href="#main-content">跳至內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-04">返回主題清單</a><span class="case-name">AI × 生態研究 · 植物特徵地圖</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">看葉子</a><a href="#roles" data-page="roles">怎麼推估</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">估得準嗎</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" hidden aria-pressed="false">連續閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="main-content">
+    <section id="question" class="chapter" data-active="true" tabindex="-1" aria-labelledby="question-title">
+      <div id="trait-study" class="trait-study" data-view="plants">
+        <div class="hero-copy">
+          <header class="opening-heading"><h1 id="question-title">沒量過的地方，<br>植物特徵怎麼估？</h1></header>
+          <p class="opening-lead">同樣是葉子，大小可以差很多。這項研究想知道的，是一個地方常見植物的平均特徵。先看看葉片，再換一種植物組成，最後讀作者的預測地圖。</p>
+          <div id="trait-tools" class="trait-tools" role="group" aria-label="從葉片大小、組成示意到作者預測" hidden><button type="button" data-trait-view="plants" aria-pressed="true" aria-controls="heroVisual" disabled>葉片大小</button><button type="button" data-trait-view="community" aria-pressed="false" aria-controls="heroVisual" disabled>組成示意</button><button type="button" data-trait-view="map" aria-pressed="false" aria-controls="heroVisual" disabled>作者預測</button></div>
+          <p id="trait-status" class="trait-status" role="status" aria-live="polite">先看葉片大小。圖中的植物用來解釋概念，不是研究樣區。</p>
+          <button id="trait-retry" class="text-action" type="button" hidden>重新載入畫面</button>
+          <p class="scope-note">地圖估的是地方平均特徵，不是從這張圖片量出每片葉子的面積。</p>
+          <a class="method-link" href="#roles">植物紀錄怎麼變成這張地圖？</a>
+        </div>
+        <div id="heroVisual" class="hero-visual" role="group" aria-label="植物情境、組成示意與作者預測圖">
+          <div class="hero-scenes">
+            <section data-hero-scene="plants" class="plants-panel" aria-label="生成的植物情境">
+              <svg id="trait-context-camera" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="context-title context-description"><title id="context-title">大葉型與小葉型植物</title><desc id="context-description">生成情境示意，用來認識葉片大小差異，並非研究樣區或單葉量測照片。</desc><image data-context-image href="animation/assets/leaf-context.png" x="0" y="0" width="1672" height="941"/></svg>
+              <p class="visual-note">生成情境示意</p>
+            </section>
+            <section data-hero-scene="community" class="community-panel" aria-label="改變植物組成的教學示意" hidden>
+              <div class="community-pair"><figure><svg viewBox="0 0 930 941" preserveAspectRatio="xMidYMid meet" role="img" aria-label="同張生成情境中的大葉型植物"><image data-context-image href="animation/assets/leaf-context.png" x="0" y="0" width="1672" height="941"/></svg><figcaption>大葉型<span>示意</span></figcaption><div class="weight-track" aria-hidden="true"><div id="web-weight-large" class="weight-fill"></div></div></figure><figure><svg viewBox="875 0 797 941" preserveAspectRatio="xMidYMid meet" role="img" aria-label="同張生成情境中的小葉型植物"><image data-context-image href="animation/assets/leaf-context.png" x="0" y="0" width="1672" height="941"/></svg><figcaption>小葉型<span>示意</span></figcaption><div class="weight-track" aria-hidden="true"><div id="web-weight-small" class="weight-fill"></div></div></figure></div>
+              <p class="weight-label">樣區內的相對覆蓋度</p>
+              <button id="trait-swap" class="swap-action" type="button" aria-controls="web-weight-large web-weight-small trait-community-meaning">換一種組成</button>
+              <p id="trait-community-meaning" role="status" aria-live="polite" class="community-meaning">植物所占的比例不同，對當地平均特徵的影響也不同。</p>
+              <p class="visual-note">植物與比例都是教學示意；這裡的比例不代表株數，也不會改變作者的地圖。</p>
+            </section>
+            <section data-hero-scene="map" class="map-panel" aria-label="作者的群聚平均葉面積預測圖" hidden>
+              <div class="map-layout"><svg id="trait-map-camera" preserveAspectRatio="xMidYMid meet" role="img" aria-label="作者葉面積預測圖的美洲局部"></svg><aside class="map-key" aria-label="地圖定位與原色階"><div class="map-name"><h2>葉片面積</h2><p>群聚平均 · mm²</p><p class="map-provenance">作者預測</p></div><svg id="trait-map-locator" preserveAspectRatio="xMidYMid meet" role="img" aria-label="原圖中的美洲切片位置"></svg><svg id="trait-map-legend" preserveAspectRatio="xMidYMid meet" role="img" aria-label="美洲切片的原始色條、刻度與平方毫米單位"></svg></aside></div>
+              <p class="visual-note">美洲局部 · 保留這個區域的原色條</p>
+            </section>
+          </div>
+          <p class="hero-caption"><span id="trait-caption">葉片大小，是認識植物的一種方式。</span><span class="source-credit">植物圖為生成情境；預測圖：Lusk 等（2026），作者程式庫，CC BY 4.0。<a href="#sources">來源與呈現說明</a></span></p>
+        </div>
+      </div>
+      <noscript><p class="quiet-note">畫面切換需要 JavaScript。完整植物情境、下方解說及來源仍可閱讀。</p></noscript>
+    </section>
+
+    <section id="roles" class="chapter" data-active="false" tabindex="-1" aria-labelledby="roles-title">
+      <header class="chapter-heading"><h2 id="roles-title">先知道有哪些植物，再估它們的特徵。</h2><p>某個地方若以大葉型植物為主，平均葉片大小可能和小葉型植物占優勢的地方不同。研究把物種的平均葉面積，依當地組成加權，得到「群聚加權平均」（CWM）。</p></header>
+      <div class="data-explanation"><h3>這個平均值，要接上三種資料。</h3><dl class="source-definitions"><div><dt>各物種的平均特徵 · TRY</dt><dd>整理已有的植物性狀資料，例如每個物種的平均葉面積。它提供的是物種平均值，不能當作當地每一株植物的實測值。</dd></div><div><dt>樣區裡各占多少 · sPlot</dt><dd>植被調查記下樣區裡的物種與覆蓋度。相對覆蓋度較高的物種，在計算地方平均特徵時也占較大的比重。</dd></div><div><dt>更多地方的出現紀錄 · GBIF</dt><dd>公民觀察及其他來源補上植物出現的地方。研究以物種被記錄的頻率近似組成；被記錄幾次，不等於有幾株植物。</dd></div></dl></div>
+      <figure class="density-figure"><img src="animation/assets/observation-density.png" width="4710" height="1615" loading="lazy" alt="Lusk等人的完整觀測分布圖，左側呈現物種出現紀錄，右側呈現植被調查的分布，各有自己的色條。"><figcaption>兩圖的色條範圍不同，不能直接用同一種顏色比密度。紀錄少也不等於植物少。<span class="source-credit">Lusk 等（2026）· 作者公開圖版 · CC BY 4.0 · <a href="animation/assets/observation-density.png" target="_blank" rel="noopener">開啟完整原圖</a></span></figcaption></figure>
+      <section class="reading-row"><h3>有資料的地方，幫忙推估其他地方。</h3><div><p>LightGBM 學習氣候、土壤與遙測訊號，和植物平均特徵之間的關係，再用其他地方的環境資料作預測。它不是讀取開場圖片，再逐片量葉面積。</p><p>因此，地圖顏色表示的是模型推估的地方平均值。圖上的一格，也不表示研究者已走遍其中每個角落。</p><details class="technical-note"><summary>兩種來源重疊時，怎麼處理？</summary><p>合併模型（COMB）在同一網格優先採用 sPlot 資料，並降低 GBIF 資料的權重。兩種來源的記錄方式不同，作者沒有把觀測次數直接當成樣區覆蓋度。</p></details></div></section>
+    </section>
+
+    <section id="method" class="chapter" data-active="false" tabindex="-1" aria-labelledby="method-title">
+      <header class="method-heading"><div><h2 id="method-title">從葉片，一路看到地圖。</h2><p>先認識一個地方的植物平均特徵，再看怎麼推估、哪些地方要小心。這支動畫沒有聲音。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface"><p class="player-hint">96 秒，可暫停、選擇段落，或在原頁面放大。</p><div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="沒量過的地方，植物特徵怎麼估？方法動畫"><iframe id="method-frame" data-player-src="animation/embed.html?v=web-v01&release=20261027-media" title="96秒植物性狀地圖動畫：葉片、群聚平均、觀測分布、預測與驗證" height="900" scrolling="no" loading="eager"></iframe></div></div><p id="frame-status" class="frame-status" role="status" aria-live="polite">開啟「看動畫」後載入播放器，下方保留完整解說。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入動畫</button><p class="download-note"><a href="animation/film/04-04-plant-traits-v01.mp4?release=20261027-media" download>下載 96 秒影片（MP4）</a></p></div>
+      <details id="method-text" class="method-text" open><summary>閱讀六段解說</summary><ol class="transcript"><li><h3>同樣是葉子，大小差很多。</h3><p>做植物調查，不只認物種，也會量葉片大小。這個研究想知道：一個地方常見植物的葉子，平均大約有多大？</p><p>開場為生成情境示意，不是研究樣區，也沒有量出圖中葉片的面積。</p></li><li><h3>植物的比例改變，平均值也會變。</h3><p>研究先整理各物種的平均葉面積，再依它們在樣區內的相對覆蓋度加權。覆蓋比例較高的植物，對這個地方的平均特徵影響較大。</p><p>這叫群聚加權平均（CWM）。畫面的比例只是教學示意；平均葉片大小也不等於整片地面的葉面積總和。</p></li><li><h3>哪些地方，還缺調查資料？</h3><p>調查樣區提供植物組成與覆蓋度；GBIF彙整的公民觀察及其他出現紀錄，則補到更多地方。觀察紀錄的頻率只能近似植物組成，不能當作實際株數。</p><p>兩張作者原圖的色條範圍不同，顏色不能直接比密度。紀錄少，也不代表當地植物少。</p></li><li><h3>沒調查的地方，怎麼估？</h3><p>LightGBM從已有資料的地點，學習氣候、土壤與遙測訊號和植物特徵的關係，再推估其他地區。這張作者地圖裡，顏色越亮，預測的群聚平均葉面積越大。</p><p>這裡只放大美洲局部，保留該區原本的色階圖例與 mm² 單位。這是作者的預測，不是逐片葉子的實測。</p></li><li><h3>環境差太多，就要小心。</h3><p>模型遇到和訓練資料差很多的環境，推估結果可能不穩定。作者用適用範圍（AOA）描述這種差異。加入植物出現紀錄後，整體可適用的範圍更廣。</p><p>這是多種性狀的彙總比較，不是葉面積專屬圖。範圍外不等於沒有植物；範圍內也不保證每個預測都準。</p></li><li><h3>換一批地區，還估得準嗎？</h3><p>研究把一部分地區的樣區留著，不拿來訓練，再用它們檢查預測。在原文標示的1 km²尺度，31項性狀有15項的相關係數達0.5以上，表現因性狀而異。</p><p>這是五折空間交叉驗證，參考值也是樣區的群聚平均。相關係數不是量對幾成；使用前仍要看該性狀的驗證結果與適用範圍。</p></li></ol></details>
+    </section>
+
+    <section id="evidence" class="chapter" data-active="false" tabindex="-1" aria-labelledby="evidence-title">
+      <header class="chapter-heading"><h2 id="evidence-title">換一批地區，還估得準嗎？</h2><p>研究把部分地區的樣區留著，不讓模型在當次訓練中看見，再用這些地區的參考值檢查預測。</p></header>
+      <div class="validation-reading"><div class="validation-result"><p class="study-scope">原文 1 km² 尺度 · 合併模型（COMB）</p><p class="study-value">15 <span>/ 31 項性狀</span></p><h3>Pearson 相關係數 r ≥ 0.5</h3><a class="source-link" href="https://www.nature.com/articles/s41467-026-68996-y#Sec5" target="_blank" rel="noopener">Lusk 等（2026）· 原研究結果</a></div><div class="validation-copy"><p>這個數字說的是：31 項性狀中，有 15 項達到這個相關程度。它不是量對了 50%，也不是每個地方都估得準。</p><p>作者採五折空間交叉驗證，參考值來自留作驗證地區的 sPlot 群聚平均值，並非另做一套外部野外實驗。讀地圖時，仍要分別看每項性狀的表現。</p></div></div>
+      <section class="reading-row"><h3>環境差太多，就要更小心。</h3><div><p>適用範圍（AOA）比較的是預測地點與訓練資料的環境。超出範圍，表示推估要更謹慎；不代表那裡沒有植物。落在範圍內，也不保證每個預測都準。</p><details class="research-figure-detail"><summary>看作者的適用範圍比較圖</summary><figure class="transfer-figure"><img src="animation/assets/spatial-transfer.png" width="2757" height="2553" loading="lazy" alt="Lusk等人的完整空間適用性比較圖版；右下e圖比較多種性狀的適用範圍，其他面板包含模型預測差異和範圍比例。"><figcaption>右下 e 圖是多種性狀的彙總比較，不是葉面積專屬圖層；也不能把它的性狀範圍和上方 15 / 31 的驗證統計混在一起。<span class="source-credit">Lusk 等（2026）· 作者公開圖版 · CC BY 4.0 · <a href="animation/assets/spatial-transfer.png" target="_blank" rel="noopener">開啟完整原圖</a></span></figcaption></figure><p class="detail-copy">圖版中的 COV 描述不同訓練分組所得預測之間的差異，不是預測正確的機率。這個量、AOA 和驗證相關係數，各自回答不同問題。</p></details></div></section>
+      <section class="reading-row"><h3>平均值，有它看不到的細節。</h3><div><p>同一物種的葉片，也會隨環境和個體而不同。使用物種平均性狀，會省略這些種內差異；一張地方平均地圖更無法描述每一片葉子。</p><p>調查與觀察的地點並不均勻。增加出現紀錄能補充涵蓋範圍，卻不表示所有性狀、所有地方都變得更準。</p></div></section>
+      <div id="sources" class="source-layout"><article class="source-reading"><h3>植物圖與地圖，來源不同。</h3><p>開場與組成示意沿用專案生成的植物情境，用來解釋葉片大小與權重，不是研究樣區或模型訓練照片。「換一種組成」只改教學示意，沒有計算新的葉面積，也不會改動作者預測圖。</p><p>觀測分布、性狀預測與適用範圍圖，來自 <a href="https://github.com/dluks/cit-sci-trait-maps/tree/001df3006f81335c4489553b9900741e0bb611be" target="_blank" rel="noopener">Daniel Lusk 等人的公開程式庫，固定版本 001df300</a>，採 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。以原圖局部視窗配中文導讀，保留原色階，並提供完整圖檔。</p><p><a href="animation/assets/leaf-context.png" target="_blank" rel="noopener">生成植物情境</a> · <a href="animation/assets/trait-maps.png" target="_blank" rel="noopener">完整性狀預測圖</a> · <a href="animation/assets/observation-density.png" target="_blank" rel="noopener">完整觀測分布圖</a></p></article><article class="source-reading"><h3>研究與地圖怎麼讀</h3><p>研究為 Lusk 等（2026）的 <a href="https://www.nature.com/articles/s41467-026-68996-y" target="_blank" rel="noopener">Crowdsourced biodiversity monitoring fills gaps in global plant trait mapping</a>，刊於 Nature Communications。這裡展示的是作者既有結果。</p><details class="technical-note"><summary>葉面積單位、色階與影像解析度</summary><p>葉面積採 TRY 3113，單位 mm²；複葉以小葉計，是否包含葉柄未統一。它不是葉面積指數、樹冠面積或一整個網格內葉子的總面積。</p><p>主視覺聚焦原圖的美洲局部，保留該區色條。原圖上下兩個區域各自設定色階，不能直接把相同顏色當作相同數值。PNG 經過繪圖與重取樣，一個顯示畫素也不等於地面 1 km²。</p></details><p><a href="animation/SOURCE.md" target="_blank" rel="noopener">完整來源與呈現說明</a> · <a href="animation/assets/spatial-transfer.png" target="_blank" rel="noopener">完整適用範圍圖版</a></p></article></div>
+      <p class="colophon">地圖讓大範圍的植物差異更容易看見；使用前，還要看它是怎麼估出來的。</p>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看葉子</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script>
+  <script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="04-04"></script>
+  <script src="../../ui/media-expand.js" defer></script>
+</body>
+</html>

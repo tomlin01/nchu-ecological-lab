@@ -1,0 +1,223 @@
+{
+  "case_id": "01-03",
+  "version": "hybrid-v01",
+  "status": "candidate_ready_for_user_review",
+  "duration_seconds": 103,
+  "original_duration_seconds": 82,
+  "runtime": "Three.js + GSAP single clock + SVG photograph viewports",
+  "data": "Synthetic teaching log-GP and waypoint example; not field replay or paper performance reproduction",
+  "group_marker": {
+    "initial_scattered_view_seconds": [
+      0,
+      1
+    ],
+    "cell_position_convergence_seconds": [
+      1,
+      3.5
+    ],
+    "starts_at_seconds": 2,
+    "fully_visible_at_seconds": 3.5,
+    "cell_fade_out_seconds": [
+      2,
+      3.5
+    ],
+    "large_marker_hold_seconds": [
+      3.5,
+      4
+    ],
+    "ruler_at_handoff_m": 2e-05,
+    "ruler_hold_seconds": [
+      0,
+      4
+    ],
+    "screen_size_fixed": false,
+    "monotonic_shrink_seconds": [
+      4,
+      18.4
+    ],
+    "initial_large_marker_screen_size_px": 320,
+    "final_marker_screen_size_px": 20,
+    "shrink_includes_core_and_halo": true,
+    "final_size_reached_at_seconds": 18.4,
+    "sea_location_depth_m": 25,
+    "macro_handoff_starts_at_seconds": 18.4,
+    "physical_diameter": false,
+    "scale_hud_content": "Numeric value and scale line only",
+    "intro_copy_scope": "Before 28 s: title and one narrative sentence; detailed explanation and sources remain below",
+    "interpretation": "Cells converge as visual organization, not measured biological movement; marker shrink is visual compression, not physical volume."
+  },
+  "cell_illustration": {
+    "kind": "procedural simplified motile-cell group",
+    "body_diameter_m": 5e-06,
+    "source": "https://doi.org/10.1016/j.hal.2004.12.001",
+    "scope": "representative size for teaching; not2022AUVtrial measurement"
+  },
+  "libraries": {
+    "three": "0.186.0",
+    "gsap": "3.13.0",
+    "gsap_sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "timeline": [
+    {
+      "start": 0,
+      "end": 35,
+      "core_time": "t",
+      "content": "original introduction and spatial distribution"
+    },
+    {
+      "start": 35,
+      "end": 42,
+      "core_time": 35,
+      "content": "separate-trial LAUV equipment reference"
+    },
+    {
+      "start": 42,
+      "end": 89,
+      "core_time": "t - 7",
+      "content": "original survey, model, waypoint and sampling flow"
+    },
+    {
+      "start": 89,
+      "end": 96,
+      "core_time": 82,
+      "content": "Figure 7b colony micrograph"
+    },
+    {
+      "start": 96,
+      "end": 103,
+      "core_time": 82,
+      "content": "Figure 7c community micrograph"
+    }
+  ],
+  "sources": {
+    "version": "01-03-hybrid-v01",
+    "photos": [
+      {
+        "file": "auv-figure-9.webp",
+        "width": 2500,
+        "height": 1406,
+        "bytes": 1087318,
+        "sha256": "71dd62525a46014afd5df63cf8c38325ca636f3907ff404f2759faf3c736c294",
+        "asset_url": "https://www.frontiersin.org/files/Articles/1319719/xml-images/fmars-10-1319719-g009.webp",
+        "article_url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1319719/full",
+        "credit": "Berild et al. (2024), Figure 9",
+        "license": "CC BY 4.0",
+        "subject": "LAUV Roald; equipment reference from a separate Nidelva river plume study",
+        "same_svalbard_trial": false,
+        "source_bytes_modified": false
+      },
+      {
+        "file": "figure-7.png",
+        "width": 2013,
+        "height": 673,
+        "bytes": 1480750,
+        "sha256": "7f860556abfad474daf112543990c90349935722912e1c2547e7bd77c513dee2",
+        "asset_url": "https://journals.plos.org/plosone/article/figure/image?download&size=large&id=10.1371/journal.pone.0302514.g007",
+        "article_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0302514",
+        "credit": "Mo-Bjørkelund et al. (2024), Figure 7; panel b: Ane Cecilie Kvernvik; panel c: Anette Wold",
+        "license": "CC BY 4.0",
+        "subject": "b: Phaeocystis pouchetii colony; c: phytoplankton community in the bloom",
+        "source_bytes_modified": false
+      }
+    ],
+    "display": "Local original bytes; viewport crop only. Original full figures linked separately. No generated photos or image retouch.",
+    "evidence_limits": [
+      "Reference LAUV photo does not document the Svalbard May 2022 mission.",
+      "Microscopy photos show morphology; they are not AUV fluorescence images or proof of quantitative prediction accuracy.",
+      "Photograph panels are not matched to the introductory 5 micrometre cell illustration or synthetic model.",
+      "No cell size, count, classification or new field observations are inferred from these crops."
+    ]
+  },
+  "display_panels": {
+    "coordinates": "source-image pixels, crop=[left,top,right,bottom]; display-only crop, source bytes intact",
+    "panels": {
+      "auv": {
+        "asset": "auv-figure-9.webp",
+        "width": 2500,
+        "height": 1406,
+        "crop": [
+          850,
+          730,
+          1800,
+          1350
+        ],
+        "source_type": "equipment reference photograph from another field trial",
+        "scale_calibrated": false
+      },
+      "colony": {
+        "asset": "figure-7.png",
+        "width": 2013,
+        "height": 673,
+        "crop": [
+          690,
+          100,
+          1326,
+          615
+        ],
+        "source_type": "paper Figure 7b microscopy photo detail",
+        "credit": "Ane Cecilie Kvernvik; Mo-Bjørkelund et al. (2024)",
+        "scale_calibrated": false
+      },
+      "community": {
+        "asset": "figure-7.png",
+        "width": 2013,
+        "height": 673,
+        "crop": [
+          1329,
+          100,
+          2013,
+          615
+        ],
+        "source_type": "paper Figure 7c microscopy photo detail",
+        "credit": "Anette Wold; Mo-Bjørkelund et al. (2024)",
+        "scale_calibrated": false
+      }
+    }
+  },
+  "unchanged_core_sha256": {
+    "scene.mjs": "2ee67514f3b20b1c82b13087e16eed3d9c159906c2c1e3fdf7fa72016f437c03",
+    "model.mjs": "eaa234f8d0ef98db7a474b2e7bf5e5691c932c14a925160ff32fd7e2b1b01b2d",
+    "micro-scene.mjs": "e945c30aa241c381e08df92bba4e2fadda19dfcce5d60a14784325d4131a6734",
+    "scale.mjs": "afef82a700e58dedad65d565d9be8d54cb4314ea1a8152588f8a912387404ab9"
+  },
+  "source_files": {
+    "template.html": "db53b24b9f67d6cc4a28a040440c148efbbb06f13c5ecbb65b002e830d903e7d",
+    "style.css": "87466e4fefd2ca10db0829b7fd855a87fb6f307e9e4cddd5ebf6655c90d46740",
+    "build.py": "9f9a0f334da1900b26d93c021f438e633ad8359beb279c78b1164e11e46a9e33",
+    "app.mjs": "52353333897ee1a59c1b1340d544f8a005f66b216c18590db03320126ecafc21",
+    "micro-scene.mjs": "e945c30aa241c381e08df92bba4e2fadda19dfcce5d60a14784325d4131a6734",
+    "model.mjs": "eaa234f8d0ef98db7a474b2e7bf5e5691c932c14a925160ff32fd7e2b1b01b2d",
+    "scale.mjs": "afef82a700e58dedad65d565d9be8d54cb4314ea1a8152588f8a912387404ab9",
+    "scene.mjs": "2ee67514f3b20b1c82b13087e16eed3d9c159906c2c1e3fdf7fa72016f437c03",
+    "test-mapping.mjs": "eabb5a5588bca7da077a748796bfcfbff5c1c759d9c3d70caa7b30e66862a833",
+    "timeline.mjs": "2ac76c977b0064d79afcb84eed1e1f22d28269da7b1e525a52b06a00594f92c8"
+  },
+  "fonts": {
+    "sans": {
+      "characters": 624,
+      "missing": [],
+      "sha256": "595377ad8a94a00b81d06296674c1dbcc947c045a04eec05a8afdbd98e2b7042"
+    },
+    "serif": {
+      "characters": 624,
+      "missing": [],
+      "sha256": "3335858f47aa2f6aeeebb5e67b17848463aa30e3a6eed7b4f0f89adfc7af8f88"
+    }
+  },
+  "no_generated_photos": true,
+  "no_new_cell_identification_or_field_inference": true,
+  "original_main_01_03_unchanged": true,
+  "source_document": "SOURCE.md",
+  "browser_report": "work/ecology-ai-rollout/cases/01-03/hybrid-v01/browser-verification.json",
+  "external_publication": false,
+  "verification": {
+    "browser_checks": 35,
+    "static_checks": 9,
+    "original_core_runtime_states_matched": 36,
+    "core_time_samples": 8201,
+    "master_time_samples": 10301,
+    "full_normal_speed_playback_seconds": 103,
+    "ended_paused": true,
+    "record": "work/ecology-ai-rollout/cases/01-03/hybrid-v01/verification.json"
+  }
+}

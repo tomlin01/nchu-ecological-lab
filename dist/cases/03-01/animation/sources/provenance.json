@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "caseId": "03-01",
+  "dataset": "Hyena ID 2022",
+  "retrievedAt": "2026-10-21T16:40:54.347399+00:00",
+  "sourceUrl": "https://lila.science/datasets/hyena-id-2022/",
+  "sourceArchive": "https://storage.googleapis.com/public-datasets-lila/wild-me/hyena.coco.tar.gz",
+  "archiveFullBytes": 3441352255,
+  "acquisition": {
+    "sourceUrl": "https://storage.googleapis.com/public-datasets-lila/wild-me/hyena.coco.tar.gz",
+    "requestedRange": "bytes=0-134217727",
+    "httpHeaders": {
+      "Content-Range": "bytes 0-134217727/3441352255",
+      "Content-Length": "134217728",
+      "ETag": "\"c971de5f1da9ddf0b3d1f61e6cb32fc3\"",
+      "Last-Modified": "Sun, 02 Apr 2023 22:16:00 GMT",
+      "x-goog-hash": "crc32c=H320Mg=="
+    },
+    "compressedPrefixReadBytes": 113704960,
+    "compressedPrefixSha256": "25c227f82ad5954f3380121d08f8d2c2ac9114fb2813ad15e43a4ad2499f2f6a",
+    "reproducibleExactPrefixRange": "bytes=0-113704959",
+    "fullArchiveDownloaded": false,
+    "selectedOriginalMembers": [
+      {
+        "id": "match",
+        "member": "hyena.coco/images/train2022/000000000612.jpg",
+        "bytes": 940120,
+        "sha256": "cd7ae0c5fd7145eb0c85a2fcd237c0fc037aba4a4d42d67b91c29fd5dbe068a4",
+        "uncompressedTarOffset": 7729664
+      },
+      {
+        "id": "other",
+        "member": "hyena.coco/images/train2022/000000002011.jpg",
+        "bytes": 1500485,
+        "sha256": "d5c2ccaf0030c5548fc6fe202508da7645513ce85b89bd5f5d66a7d177a9529d",
+        "uncompressedTarOffset": 15630848
+      },
+      {
+        "id": "query",
+        "member": "hyena.coco/images/train2022/000000002824.jpg",
+        "bytes": 1426728,
+        "sha256": "30f3e45120dfa687689688df9c1d196123a55e093db551c3afe0813cce9a4a06",
+        "uncompressedTarOffset": 118275584
+      }
+    ],
+    "metadataMember": "hyena.coco/annotations/instances_train2022.json",
+    "metadataSha256": "f2a16c135d77f3705811b1c378d26905400071daf8aef2ef1a2c7a8f4abc3245",
+    "imagesTransformed": false,
+    "modelInferenceRun": false
+  },
+  "workOnlyFullMetadata": {
+    "file": "work/ecology-ai-rollout/cases/03-01/prototype-v01/sources/instances_train2022.json",
+    "bytes": 6300378,
+    "sha256": "f2a16c135d77f3705811b1c378d26905400071daf8aef2ef1a2c7a8f4abc3245",
+    "archiveMember": "hyena.coco/annotations/instances_train2022.json",
+    "deliveredInCandidate": false
+  },
+  "reproductionScript": {
+    "file": "work/ecology-ai-rollout/cases/03-01/prototype-v01/acquire-assets.py",
+    "sha256": "a1ad45bd4f647118f15ee8b88a76db6f71cb1fd5a5b4686f365d1e584beb85ab",
+    "command": "python3 -B work/ecology-ai-rollout/cases/03-01/prototype-v01/acquire-assets.py --selected"
+  },
+  "datasetCredit": "Botswana Predator Conservation Trust; Wild Me / African Carnivore Wildbook",
+  "individualPhotographers": null,
+  "selectionAuthority": "Original COCO annotation.name and viewpoint; no new biological identity verification",
+  "comparison": {
+    "sameIndividualBySource": [
+      "query",
+      "match"
+    ],
+    "differentIndividualBySource": "other",
+    "sameViewpoint": "left",
+    "differentImageRecords": true,
+    "distinctEncountersConfirmed": false,
+    "chronologicalOrderKnown": false
+  },
+  "licenseStatus": "conflicting_source_claims_unresolved",
+  "licenseClaims": {
+    "lilaLanding": {
+      "claim": "CDLA-Permissive-1.0",
+      "url": "https://cdla.dev/permissive-1-0/"
+    },
+    "originalCoco": {
+      "licenses": [
+        {
+          "url": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+          "id": 3,
+          "name": "Attribution-NonCommercial-NoDerivs License"
+        }
+      ],
+      "selectedImageLicenseIds": [
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "citationDiscrepancy": {
+    "landingCitationTaxon": "Panthera pardus",
+    "landingOverviewTaxon": "Crocuta crocuta",
+    "originalCocoCategory": [
+      {
+        "id": 0,
+        "name": "hyena",
+        "supercategory": "animal"
+      }
+    ],
+    "silentlyCorrected": false
+  },
+  "displayCrops": {
+    "kind": "editorial anatomical viewing rectangles",
+    "modelOutput": false,
+    "pixelsModified": false,
+    "exactPatternRegistrationClaimed": false,
+    "otherTarget": "Background standing side-on hyena; foreground head is another visible animal, not the selected annotation."
+  },
+  "modelInferenceRun": false,
+  "reidentificationScores": null,
+  "generatedImages": false,
+  "jpegTransforms": false,
+  "publicReleaseAuthorizationResolved": false,
+  "externalPublication": false,
+  "files": {
+    "assets/query.jpg": {
+      "bytes": 1426728,
+      "sha256": "30f3e45120dfa687689688df9c1d196123a55e093db551c3afe0813cce9a4a06",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/assets/query.jpg"
+    },
+    "assets/match.jpg": {
+      "bytes": 940120,
+      "sha256": "cd7ae0c5fd7145eb0c85a2fcd237c0fc037aba4a4d42d67b91c29fd5dbe068a4",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/assets/match.jpg"
+    },
+    "assets/other.jpg": {
+      "bytes": 1500485,
+      "sha256": "d5c2ccaf0030c5548fc6fe202508da7645513ce85b89bd5f5d66a7d177a9529d",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/assets/other.jpg"
+    },
+    "assets/display-data.json": {
+      "bytes": 4327,
+      "sha256": "7ff245402edc48421cb79ab2bd37df760ab31ff54c0d84e4b67062a48aec31d5",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/assets/display-data.json"
+    },
+    "sources/selected-records.json": {
+      "bytes": 6884,
+      "sha256": "c2acc609a93022d4478f860d1631ac27dab5ece34648a96374e152d86e610bba",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/sources/selected-records.json"
+    },
+    "SOURCE.md": {
+      "bytes": 6462,
+      "sha256": "4a84a9e0f70de04882fb146cb97569cd26ed673fa28513490fe7beb64e3a6bd3",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/sources/SOURCE.md"
+    },
+    "LICENSES.txt": {
+      "bytes": 24854,
+      "sha256": "8149c3fd2c7a0d3de8f378a4e2d29ef19aef66b832b40fb79b73ad89471d87c4",
+      "workFile": "work/ecology-ai-rollout/cases/03-01/prototype-v01/sources/LICENSES.txt"
+    }
+  },
+  "verification": {
+    "status": "PASS",
+    "photos": [
+      {
+        "id": "query",
+        "imageId": 2824,
+        "annotationId": 2849,
+        "individualId": "bbbaafbc-3889-4d6f-843b-d58fb94fb07c",
+        "viewpoint": "left",
+        "bytes": 1426728,
+        "sha256": "30f3e45120dfa687689688df9c1d196123a55e093db551c3afe0813cce9a4a06",
+        "imageLicenseId": 3,
+        "originalAnnotationExact": true,
+        "originalJpegBytesVerifiedAgainstSecondArchiveExtraction": true,
+        "captureDateNull": true,
+        "encounterUnknown": true,
+        "exifEmpty": true,
+        "editorialCropWithinImageAndBbox": true
+      },
+      {
+        "id": "match",
+        "imageId": 612,
+        "annotationId": 621,
+        "individualId": "bbbaafbc-3889-4d6f-843b-d58fb94fb07c",
+        "viewpoint": "left",
+        "bytes": 940120,
+        "sha256": "cd7ae0c5fd7145eb0c85a2fcd237c0fc037aba4a4d42d67b91c29fd5dbe068a4",
+        "imageLicenseId": 3,
+        "originalAnnotationExact": true,
+        "originalJpegBytesVerifiedAgainstSecondArchiveExtraction": true,
+        "captureDateNull": true,
+        "encounterUnknown": true,
+        "exifEmpty": true,
+        "editorialCropWithinImageAndBbox": true
+      },
+      {
+        "id": "other",
+        "imageId": 2011,
+        "annotationId": 2035,
+        "individualId": "34365bcc-5b2d-4f80-b721-ef7039e64fe8",
+        "viewpoint": "left",
+        "bytes": 1500485,
+        "sha256": "d5c2ccaf0030c5548fc6fe202508da7645513ce85b89bd5f5d66a7d177a9529d",
+        "imageLicenseId": 3,
+        "originalAnnotationExact": true,
+        "originalJpegBytesVerifiedAgainstSecondArchiveExtraction": true,
+        "captureDateNull": true,
+        "encounterUnknown": true,
+        "exifEmpty": true,
+        "editorialCropWithinImageAndBbox": true
+      }
+    ],
+    "originalMetadataSubsetEqual": true,
+    "fullJpegDecodeVerified": true,
+    "selectedIdentityAndViewpointConstraintsPass": true,
+    "sourceNotesAtCandidateRoot": true,
+    "threeJpegTotalBytes": 3867333
+  }
+}

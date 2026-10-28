@@ -1,0 +1,44 @@
+{
+  "output": "outputs/ecology-ai-rollout/candidates/02-01/prototype-v01",
+  "photos": {
+    "clear-jaguar": {
+      "source": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/clear-jaguar-v01.png",
+      "sha256": "d2b364f5e47562e0328cc8b1c3818a23d98dd0555e5d888f8a5400891469d8cc",
+      "web_file": "assets/clear-jaguar.webp",
+      "web_sha256": "8063dae610eaf9d03e7f5dfe9506bb4da973de06de36094272da67a7fcad1291"
+    },
+    "occluded-cat": {
+      "source": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/occluded-cat-v01.png",
+      "sha256": "9be1b847fb5c4babe52f5e743e12bfaa85ee7a3c395443232cd551973219cf5a",
+      "web_file": "assets/occluded-cat.webp",
+      "web_sha256": "ea63ecdfb7c16a6d668a5e8a9ca341e2a2a324ef62ff2568aca63410d3e3bc11"
+    },
+    "night-tapir": {
+      "source": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/night-tapir-v01.png",
+      "sha256": "9a397639cbb24294b111ebe7ad5e3228544b249552d10d215ceb0cdd6332f38a",
+      "web_file": "assets/night-tapir.webp",
+      "web_sha256": "d73b9446e6552997bddcc6a5548acee636027be2b6b93db0df4c8a9a8efd6e02"
+    },
+    "empty-forest": {
+      "source": "outputs/ecology-ai-rollout-assets/02-01/photos-v01/empty-forest-v01.png",
+      "sha256": "1e63fcf38ccd459d7cfff88c5d7c95f782d7f851d5a04edb4b869e2f15932181",
+      "web_file": "assets/empty-forest.webp",
+      "web_sha256": "4512a43e8b0708baccc7312bc11b584ad2131e0851028ea26b4315ba6a610420"
+    }
+  },
+  "fonts": [
+    {
+      "file": "fonts/case-sans.woff2",
+      "missing": [],
+      "bytes": 157564
+    },
+    {
+      "file": "fonts/case-serif.woff2",
+      "missing": [],
+      "bytes": 214432
+    }
+  ],
+  "generation": "built-in imagegen",
+  "model_inference_executed": false,
+  "annotations": "authored teaching examples, not SpeciesNet predictions"
+}

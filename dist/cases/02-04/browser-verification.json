@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "check_count": 67,
+  "checks": [
+    {
+      "name": "Initial first chapter and no autoplay",
+      "passed": true
+    },
+    {
+      "name": "Provided original hero loaded",
+      "passed": true
+    },
+    {
+      "name": "Four chapter links",
+      "passed": true
+    },
+    {
+      "name": "Hero action opens method",
+      "passed": true
+    },
+    {
+      "name": "First seek before playback is exact",
+      "passed": true
+    },
+    {
+      "name": "Saved source scores survive embed",
+      "passed": true
+    },
+    {
+      "name": "Desktop playback controls fit above footer",
+      "passed": true,
+      "detail": {
+        "playTop": 720.265625,
+        "rangeBottom": 825.6640625,
+        "footer": 836
+      }
+    },
+    {
+      "name": "Leaving method pauses immediately",
+      "passed": true
+    },
+    {
+      "name": "Return keeps playhead without autoplay",
+      "passed": true
+    },
+    {
+      "name": "Source button opens original D20200701T002011_IFCB104_00298.png",
+      "passed": true
+    },
+    {
+      "name": "Source viewing leaves player paused at 8",
+      "passed": true
+    },
+    {
+      "name": "Source button opens original scw-deployment.png",
+      "passed": true
+    },
+    {
+      "name": "Source viewing leaves player paused at 13",
+      "passed": true
+    },
+    {
+      "name": "Source button opens original paper-figure-1.png",
+      "passed": true
+    },
+    {
+      "name": "Source viewing leaves player paused at 59",
+      "passed": true
+    },
+    {
+      "name": "Source button opens original paper-figure-3.png",
+      "passed": true
+    },
+    {
+      "name": "Source viewing leaves player paused at 70",
+      "passed": true
+    },
+    {
+      "name": "Mechanism has no false source-image button",
+      "passed": true
+    },
+    {
+      "name": "Teaching count remains separate",
+      "passed": true
+    },
+    {
+      "name": "Embedded timeline keyboard step",
+      "passed": true
+    },
+    {
+      "name": "Full reading pauses and retains four chapters",
+      "passed": true
+    },
+    {
+      "name": "Full reading contains four unique illustration or source images",
+      "passed": true
+    },
+    {
+      "name": "Returning to paged reading keeps same iframe",
+      "passed": true
+    },
+    {
+      "name": "Previous page control",
+      "passed": true
+    },
+    {
+      "name": "Next page control",
+      "passed": true
+    },
+    {
+      "name": "Keyboard chapter control",
+      "passed": true
+    },
+    {
+      "name": "1280px question: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1280px hero title at most two lines",
+      "passed": true,
+      "detail": {
+        "lines": 1.9999519723360657
+      }
+    },
+    {
+      "name": "1280px method: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1280px desktop playback controls fit above footer",
+      "passed": true,
+      "detail": {
+        "rangeBottom": 719.3984375,
+        "footer": 736
+      }
+    },
+    {
+      "name": "1280px classification uses correct tall layout",
+      "passed": true
+    },
+    {
+      "name": "1280px iframe grows to fit content",
+      "passed": true,
+      "detail": {
+        "height": 820,
+        "content": 647.890625
+      }
+    },
+    {
+      "name": "1280px evidence: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1280px sources: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px question: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px hero title at most two lines",
+      "passed": true,
+      "detail": {
+        "lines": 1.9999883569299552
+      }
+    },
+    {
+      "name": "768px method: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px classification uses correct tall layout",
+      "passed": true
+    },
+    {
+      "name": "768px iframe grows to fit content",
+      "passed": true,
+      "detail": {
+        "height": 1463,
+        "content": 1462.28125
+      }
+    },
+    {
+      "name": "768px evidence: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "768px sources: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px question: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px hero title at most two lines",
+      "passed": true,
+      "detail": {
+        "lines": 1.9999310725117176
+      }
+    },
+    {
+      "name": "390px method: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px classification uses correct tall layout",
+      "passed": true
+    },
+    {
+      "name": "390px iframe grows to fit content",
+      "passed": true,
+      "detail": {
+        "height": 1405,
+        "content": 1404.203125
+      }
+    },
+    {
+      "name": "390px evidence: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390px sources: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px question: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px hero title at most two lines",
+      "passed": true,
+      "detail": {
+        "lines": 2
+      }
+    },
+    {
+      "name": "320px method: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px classification uses correct tall layout",
+      "passed": true
+    },
+    {
+      "name": "320px iframe grows to fit content",
+      "passed": true,
+      "detail": {
+        "height": 1579,
+        "content": 1578.6484375
+      }
+    },
+    {
+      "name": "320px evidence: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "320px sources: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Print shows all chapters and full seven-phase text",
+      "passed": true
+    },
+    {
+      "name": "Print hides iframe and retains concept attribution",
+      "passed": true
+    },
+    {
+      "name": "Print restores method time paused",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion starts continuous and paused",
+      "passed": true
+    },
+    {
+      "name": "No-JS retains four chapters and full transcript",
+      "passed": true
+    },
+    {
+      "name": "No-JS hides inactive player but retains source image",
+      "passed": true
+    },
+    {
+      "name": "No-JS has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Direct source chapter hash opens correct page",
+      "passed": true
+    },
+    {
+      "name": "Return link reaches existing topic two",
+      "passed": true
+    },
+    {
+      "name": "No audio elements",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No failed requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "failed_requests": []
+}

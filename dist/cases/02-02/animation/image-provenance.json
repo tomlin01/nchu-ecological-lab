@@ -1,0 +1,80 @@
+{
+  "tool": "built-in imagegen edit",
+  "reference": "../v03/forest-mosaic-v01.png",
+  "records": {
+    "forest-intact-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v04/forest-intact-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-c58e27b0-be01-49da-8f06-09f1b73a5d60.png",
+      "sha256": "cae0d4924792fbfd71f61ce6251e0e0e38f442fdc6521cdc7166a36c1656e7f0",
+      "webp_sha256": "5c028a51afc471ec6855f956a9f6976e961a0c20e6a7a4f0bee5c1dac67e6caf",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/forest-intact-v01.webp"
+    },
+    "forest-canopy-retained-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v04/forest-canopy-retained-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-5a1a9fe6-ccdf-410f-9e3e-1b72eb6b0b47.png",
+      "sha256": "47a7444e864a4004269e9b26eeaacea1809aec6478128bfc85190144181b5bb5",
+      "webp_sha256": "e23e244bd75dd5a6a3aeb6c1f5f4d0a8f57c1555624d523e713ba4559a43ffdc",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/forest-canopy-retained-v01.webp"
+    },
+    "forest-canopy-lost-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v04/forest-canopy-lost-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-dea19fad-1b47-43aa-8b88-2bf6099a4649.png",
+      "sha256": "43d8d2b8002867bb04aebe77bed1e65fdb7bb4a0720768e9552e1a5984d907fc",
+      "webp_sha256": "94a7601ed96a3b75c9751f27047776ede5880438b85c9392cd90bbe4057cb921",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/forest-canopy-lost-v01.webp"
+    },
+    "spotted-owl-forest-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v03/spotted-owl-forest-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-fc173d2f-f70d-4d42-a88f-a88bcd472df0.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "3f3c60ef058e1a1515b66646e8c569b3fd6718520022c54a91915098572c133f",
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/spotted-owl-forest-v01.webp",
+      "webp_sha256": "af4f36b4847242a7f9091d5ced5b8d9c4a4bbc09f746dc7c1aaa7509c766a185",
+      "type": "AI-generated natural-history teaching scene; not field data"
+    },
+    "black-backed-woodpecker-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v03/black-backed-woodpecker-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-c8ec2ff1-0323-4188-8537-ec5df0ec3b8b.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "e0229d694446d2b0aa1c93561c593c2ff131c537002a4c2700bf10799fc763b4",
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/black-backed-woodpecker-v01.webp",
+      "webp_sha256": "ed368aee92569173d9025e77c3b552a93e2357b0c5e5226629e81b11e1645b3c",
+      "type": "AI-generated natural-history teaching scene; not field data"
+    },
+    "wood-borer-larva-v01": {
+      "original": "outputs/ecology-ai-rollout-assets/02-02/v03/wood-borer-larva-v01.png",
+      "generated_source": "/Users/tom/.codex/generated_images/01a14eb3-724c-7cf1-bbf8-1792efb4a702/exec-1120f02e-20cb-4a6c-9a96-aad49f66bde1.png",
+      "size": [
+        1672,
+        940
+      ],
+      "sha256": "c8ea89e3144951a8765f9f47a7fdb3e49a39c007b399c034218660c0300836f8",
+      "webp": "outputs/ecology-ai-rollout/candidates/02-02/prototype-v04/assets/wood-borer-larva-v01.webp",
+      "webp_sha256": "270725c1e148dfae043527a11046a33dee1917ae8f193ff3c1e1cc82ebf647f4",
+      "type": "AI-generated macro teaching scene; no measured size"
+    }
+  },
+  "meaning": "generated matched-view teaching comparison; not measured before/after imagery",
+  "prompts": {
+    "forest": "PHOTO_PROMPTS.md",
+    "reused_birds": "REUSED_PHOTO_PROMPTS.md"
+  }
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html data-reading-type="03-01" lang="zh-Hant" data-theme="light">
+<head><script src="../../ui/theme.js"></script><link rel="stylesheet" href="../../ui/theme-tokens.css"/>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+  <meta name="description" content="用真實斑鬣狗照片，看 MiewID 如何從圖錄中找出相似照片，以及研究人員怎麼核對是否為同一隻。">
+  <title>兩張照片，怎麼認出同一隻？｜AI × 生態研究</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="case.css?v=topic-03-visual-v01"><link rel="stylesheet" href="../../ui/sidebar.css"><link rel="stylesheet" href="../../ui/media-expand.css"><script src="case.js" defer></script>
+<link rel="stylesheet" href="../../ui/catalog-theme.css"/><link rel="stylesheet" href="natural-history.css?v=topic-03-visual-v01"/><link rel="stylesheet" href="../../ui/theme-controls.css"/><link rel="stylesheet" href="../../ui/reading-typography.css">
+</head>
+<body data-page="question">
+
+  <a class="skip-link" href="#question">跳至案例內容</a>
+  <header class="site-header"><a class="brand" href="../../index.html#topic-03">返回主題清單</a><span class="case-name">AI × 生態研究 · MiewID／Wildbook</span></header>
+  <nav class="section-nav" aria-label="案例章節"><div class="nav-pages"><a href="#question" data-page="question">看照片</a><a href="#roles" data-page="roles">電腦怎麼比</a><a href="#method" data-page="method">看動畫</a><a href="#evidence" data-page="evidence">辨認得準嗎</a></div><div class="reading-actions"><button id="full-reading" class="js-only" type="button" aria-pressed="false" hidden>完整閱讀</button><button id="print-page" class="js-only" type="button" hidden>列印</button></div></nav>
+  <main id="case-content">
+    <section id="question" class="chapter opening" aria-labelledby="question-title" tabindex="-1">
+      <div class="comparison-plate" id="photo-comparison">
+        <header class="comparison-heading"><h1 id="question-title">兩張照片，<br>怎麼認出同一隻？</h1><div><p>光線、姿勢都變了。這兩張真實照片，還能從同一側身體的斑紋看出線索嗎？</p><a class="method-link" href="#method">看模型怎麼找相似照片</a></div></header>
+        <div class="source-photo-pair" aria-label="兩張完整斑鬣狗來源照片">
+          <figure><a class="source-photo-frame" href="animation/assets/query.jpg" target="_blank" rel="noopener" aria-label="查看照片一完整原檔"><img src="animation/assets/query.jpg" width="2400" height="1600" fetchpriority="high" alt="照片一：明亮場景中的斑鬣狗，抬起頭，完整左側身與周圍環境可見。"><svg class="roi-overlay" viewBox="0 0 2400 1600" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect class="roi-underlay" x="1050" y="650" width="600" height="380"/><rect class="roi-line" x="1050" y="650" width="600" height="380"/></svg></a><figcaption><strong>照片一</strong><span>明亮場景 · 左側身</span></figcaption></figure>
+          <figure><a class="source-photo-frame" href="animation/assets/match.jpg" target="_blank" rel="noopener" aria-label="查看照片二完整原檔"><img src="animation/assets/match.jpg" width="2400" height="1600" fetchpriority="high" alt="照片二：較暗場景中的斑鬣狗，低著頭，光線和姿勢不同，仍保留完整左側身與環境。"><svg class="roi-overlay" viewBox="0 0 2400 1600" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect class="roi-underlay" x="950" y="630" width="700" height="440"/><rect class="roi-line" x="950" y="630" width="700" height="440"/></svg></a><figcaption><strong>照片二</strong><span>較暗場景 · 左側身</span></figcaption></figure>
+        </div>
+        <details id="detail-comparison" class="detail-comparison"><summary><span class="detail-closed">查看同一側身體的局部</span><span class="detail-open">收起局部，回看完整照片</span></summary><div class="detail-pair">
+          <figure><svg class="detail-view" viewBox="1050 650 600 380" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="query-detail-title"><title id="query-detail-title">照片一左側身的局部，取自上方矩形範圍。</title><image href="animation/assets/query.jpg" x="0" y="0" width="2400" height="1600"/></svg><figcaption>照片一的局部放大</figcaption></figure>
+          <figure><svg class="detail-view" viewBox="950 630 700 440" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="match-detail-title"><title id="match-detail-title">照片二左側身的局部，取自上方矩形範圍。</title><image href="animation/assets/match.jpg" x="0" y="0" width="2400" height="1600"/></svg><figcaption>照片二的局部放大</figcaption></figure>
+        </div><p class="detail-note">框線標出這裡選來放大的範圍，並非模型偵測結果。兩張照片都保留原本的形狀與斑點；放大只能看已有的細節，模糊處仍然模糊。</p></details>
+        <p class="image-credit">照片：Botswana Predator Conservation Trust／Wild Me，Hyena ID 2022。點照片可看完整原檔。<a href="#photo-rights">素材說明</a></p>
+      </div>
+      <section class="animal-context" aria-labelledby="animal-context-title"><figure><img src="assets/03-01-hyena-main-v01.webp" width="1672" height="941" loading="lazy" alt="AI生成的斑鬣狗與草原情境，不是上方來源照片中的個體。"><figcaption>AI 生成情境圖 · 不作個體配對依據</figcaption></figure><div><h2 id="animal-context-title">同樣是斑鬣狗，<br>不一定就是同一隻</h2><p>斑鬣狗身上都有斑點，但要知道是不是同一隻，還得比對照片中同一側身體的斑紋。旁邊的情境圖只介紹動物，不用來判定身分。</p><p>圖錄裡的照片愈多，逐張翻找就愈花時間。MiewID 先找出相似的候選照片，研究人員再對照原圖和既有紀錄。光是看起來相似，還不能確認身分；線索不足時，也可以暫不配對。</p></div></section>
+    </section>
+
+    <section id="roles" class="chapter roles-page" aria-labelledby="roles-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="roles-title">一起訓練，在相同物種的照片間比對</h2><p>模型用多個物種的照片一起訓練。查找斑鬣狗時，則只在斑鬣狗的圖錄中找相似照片。</p></header>
+      <div class="model-scope" aria-label="共同訓練與相同物種照片檢索的分工">
+        <section class="scope-row"><h3>訓練時</h3><div class="scope-flow"><span>不同物種的<br>已標註照片</span><svg viewBox="0 0 60 24" aria-hidden="true"><path d="M2 12h53m-9-8 9 8-9 8"/></svg><strong>一個共用模型</strong></div><p>從多個物種的照片學習怎麼區分個體。</p></section>
+        <section class="scope-row"><h3>比對時</h3><div class="scope-flow scope-search"><span>新的斑鬣狗照片</span><svg viewBox="0 0 60 24" aria-hidden="true"><path d="M2 12h53m-9-8 9 8-9 8"/></svg><strong>斑鬣狗圖錄</strong><svg viewBox="0 0 60 24" aria-hidden="true"><path d="M2 12h53m-9-8 9 8-9 8"/></svg><span>相似的候選照片</span></div><p>候選照片限於同一物種。</p></section>
+      </div>
+      <article class="reading-surface">
+        <div class="editorial-row"><h3>同一個模型，處理兩邊的照片</h3><div><p>先裁出照片中的動物，再把新照片與圖錄照片交給同一個模型。模型將外觀轉成一組數字，用這些數字比較照片，找出相似的候選。</p><p>這組數字代表模型學到的外觀特徵，不能逐項解讀成耳朵、眼睛或鼻子的量測值。動畫中的符號只示意這個步驟，並未計算這兩張照片的特徵。</p><details class="technical-note"><summary>2024 年方法怎麼比較外觀？</summary><p>原文把外觀特徵存成 2,048 維的向量，再用餘弦距離比較同一物種的照片。多個物種可以一起訓練，查找時仍分物種進行。部分動物左右側花紋不同，研究也分開處理這些視角。</p></details></div></div>
+        <div class="editorial-row"><h3>相似的照片，還要仔細核對</h3><div><p>候選照片讓研究人員少翻一些圖，但仍要核對同一側身體的斑紋和看得見的部位。光線不好、身體被遮住，或姿勢差太多時，都可能無法判斷。</p><p>無法判定時，可以先不把照片歸到任何已知個體。本頁動畫用事先選好的照片示範候選，沒有實際模型分數或排名。</p></div></div>
+        <table class="roles-table"><caption>誰處理哪個問題？</caption><thead><tr><th scope="col">人員或工具</th><th scope="col">工作</th></tr></thead><tbody><tr><th scope="row">資料提供者</th><td>保存照片與既有標註，包括原有個體 ID，以及照片拍到的是身體哪一側。</td></tr><tr><th scope="row">MiewID 模型</th><td>把動物外觀轉成可比較的數字，從同一物種的圖錄找出相似照片。</td></tr><tr><th scope="row">研究人員</th><td>核對原圖與紀錄，決定是否歸為同一隻；線索不足就保留待確認。</td></tr></tbody></table>
+      </article>
+      <article class="comparison-reference reading-surface"><div><h3>第三張照片，比的是後方那一隻</h3><p>第三張照片同時拍到前景頭部與後方側身。這裡比較的是原資料標註的後方個體，不包括前景另一隻。</p><p>三張照片的原始視角標註都是 <span lang="en">left</span>，表示動物左側身。動畫保留原標註框，並放大照片局部，沒有補畫斑點或改變動物姿勢。</p></div><figure><a href="animation/assets/other.jpg" target="_blank" rel="noopener"><img src="animation/assets/other.jpg" width="2400" height="1600" loading="lazy" alt="第三張完整來源照片；前景有另一隻斑鬣狗的頭部，本次比較後方側身個體。"></a><figcaption>第三張完整原圖。比較後方露出側身的個體；動畫中先保留待確認。</figcaption></figure></article>
+    </section>
+
+    <section id="method" class="chapter method-page" aria-labelledby="method-title" tabindex="-1">
+      <header class="method-heading"><div><h2 id="method-title">模型找候選，人員核對照片</h2><p>看完整照片與同一側身體的細節，了解候選照片怎麼來、人員怎麼核對，最後查看資料集的身分標註。</p></div><button type="button" class="expand-action" data-media-expand="media-expand-stage" hidden>放大觀看</button></header>
+      <div class="method-surface">
+        <p class="player-hint">80 秒，沒有聲音。按下播放後，可以暫停、切換段落，或在原頁面放大。</p>
+        <div class="media-expand-shell"><div id="media-expand-stage" class="media-expand-stage" data-media-expand-stage data-media-expand-label="兩張照片，怎麼認出同一隻？方法動畫"><iframe id="method-frame" data-player-src="animation/player.html" title="80秒真實斑鬣狗照片比較：外觀特徵、候選照片與來源個體標籤" height="820" scrolling="no" loading="eager"></iframe></div></div>
+        <p id="frame-status" class="frame-status" role="status">進入方法頁後載入照片動畫；下方保留完整文字與原圖連結。</p><button id="retry-frame" class="retry-action" type="button" hidden>重試載入照片</button>
+        <p class="teaching-note">動畫用資料集原有標籤解說配對，沒有另外執行模型或請人員重新鑑定。第三張在動畫中仍待確認。</p>
+        <noscript><p class="nojs-note">互動動畫需要 JavaScript。下方可讀完整六段文字；首頁照片與第三張原圖也能直接開啟。</p></noscript>
+        <aside class="research-bridge"><h3>多個物種一起訓練，有幫助嗎？</h3><p>論文的斑鬣狗測試中，第一名檢索正確率由單物種模型的 49.7%，提升為多物種模型的 71.0%。這是論文測試的成績，並非用上方三張照片算出的結果。</p><a href="#evidence">看研究結果</a></aside>
+        <details id="method-text" class="method-text" open><summary>逐段閱讀動畫解說</summary><ol class="transcript">
+<li><h2>姿勢變了，還是同一隻嗎？</h2><p>光線、背景和姿勢會改變。先看兩張斑鬣狗照片，留意身體外觀有什麼相似、又有什麼不同。資料集原有個體標籤留到最後一段才揭露。</p></li>
+<li><h2>放大同一側身體的斑紋，保留完整照片</h2><p>局部放大讓同一側身體的斑紋更容易比較。看不清楚或被遮住的地方，放大也不會補出新的細節。框線標出為解說而選的範圍，放大內容全部取自原照片，並非模型偵測結果或注意力圖。</p></li>
+<li><h2>把照片轉成可比較的數字</h2><p>2024 年的方法先裁出動物，再由同一個模型把外觀轉成 2,048 維的特徵向量，用餘弦距離找候選。新照片與圖錄照片都這樣處理。畫面中的符號只作示意，並非這些照片實際算出的特徵，也不能逐項當成耳、眼、鼻的量測值。</p></li>
+<li><h2>先縮小需要比對的範圍</h2><p>模型從同一物種的圖錄找出相似照片，交給研究人員仔細核對。這裡用事先選好的照片示範候選，照片大小相同，沒有實際模型分數或排名。第三張只比較後方露出完整側身的個體，不包括前景另一隻。</p></li>
+<li><h2>可以比較，也可以先不決定</h2><p>研究人員要對照完整照片，確認同一側身體的斑紋與看得見的部位。動畫拿一對照片示範核對，另一張先保留待確認。這是核對方法的示範，沒有請專家重新鑑定，也不會把每張照片都歸為同一隻。</p></li>
+<li><h2>資料集把這兩張照片標為同一隻</h2><p>資料集把這兩張照片標為同一隻。最後揭露的是原有標註，並非這段動畫中模型或人員新做的判定。照片沒有可核對的日期或遭遇編號，因此只能稱為兩筆影像記錄，也無法還原完整移動路線。第三張在動畫中仍待確認。</p></li>
+</ol></details>
+      </div>
+    </section>
+
+    <section id="evidence" class="chapter evidence-page" aria-labelledby="evidence-title" tabindex="-1">
+      <header class="chapter-heading"><h2 id="evidence-title">一起訓練，比對更準</h2><p>論文比較了相同設定下的斑鬣狗檢索表現。這不是本頁三張示範照片的正確率。</p></header>
+      <section class="research-result" aria-labelledby="research-result-title"><figure class="result-chart"><figcaption>斑鬣狗 · 第一名檢索正確率（Top-1）</figcaption><div class="result-row"><p><span>只用單一物種訓練</span><strong>49.7%</strong></p><div class="result-track"><span style="width:49.7%" aria-hidden="true"></span></div></div><div class="result-row"><p><span>多物種共同訓練</span><strong>71.0%</strong></p><div class="result-track"><span class="joint-result" style="width:71%" aria-hidden="true"></span></div></div><div class="result-axis" aria-hidden="true"><span>0%</span><span>50%</span><span>100%</span></div><p class="result-definition">輪流拿每筆測試影像標註去查找，從其餘屬於相同物種的測試標註中選出最相似的一筆，排除查詢本身，再計算第一名配對正確的比例。</p></figure><div><h3 id="research-result-title">多物種資料，幫助個體比對</h3><p>兩種模型使用相同架構與設定，差別是只用斑鬣狗資料訓練，或和其他物種一起訓練。</p><p>Top-1 問的是：排在第一位的參考影像，是否屬於同一個體？它不是某張照片身分正確的機率。</p><a href="https://arxiv.org/html/2412.05602v1#S5.T2" target="_blank" rel="noopener">2024 預印本 §3.4、§5.1 與 Table 2</a></div></section>
+      <article class="reading-surface">
+        <div class="editorial-row"><h3>這一對的答案，來自資料集</h3><div><p>照片一與照片二有不同的影像編號，但資料集原有個體 ID 相同。這個關係來自提供者的標註，不是本頁執行 MiewID 或新做人工個體鑑定的結果。</p><p>第三張在資料集中的個體 ID 不同。動畫中仍先保留待確認，示範人員在線索不足時可以暫不配對。完整標籤可在動畫最後一段的原圖視窗，或<a href="animation/sources/selected-records.json" target="_blank" rel="noopener">原始紀錄</a>核對。</p></div></div>
+        <div class="editorial-row"><h3>兩張照片，還不能當成兩次遭遇</h3><div><p>這三張照片沒有可核對的拍攝日期或遭遇編號。明暗場景與不同檔名都不足以證明拍攝先後或遭遇次數，因此本頁稱為兩筆影像記錄。</p><p>要進一步研究移動、存活率或族群量，還需要日期、地點、取樣設計與其他分析。兩張照片本身也無法還原其間的完整移動路線。</p></div></div>
+        <div class="editorial-row"><h3>這組照片能說明什麼？</h3><div><p>2024 年預印本研究如何用多個物種一起訓練模型，學習區分個體的外觀特徵。本頁三張照片只用來說明方法，不能用來估計模型準確率，也尚未確認它們屬於論文哪一組實驗資料。</p><details class="technical-note"><summary>研究資料與版本補充</summary><p>原研究資料表使用 225,374 筆影像標註，不直接等同不同原始照片數。官方後續版本另有重新排序及解釋功能；本頁以 2024 年預印本的方法為準，不把後續平台功能或使用數量混入當年的研究結果。</p></details></div></div>
+      </article>
+      <div class="source-layout">
+        <article id="sources" class="source-reading"><h3>研究與資料來源</h3><ol class="source-list"><li><a href="https://arxiv.org/html/2412.05602v1" target="_blank" rel="noopener">2024 預印本 · Multispecies Animal Re-ID Using a Large Community-Curated Dataset</a><p>外觀特徵的學習方式、查找相同物種照片的方法與資料統計，均依這篇論文整理。</p></li><li><a href="https://www.wildme.org/miewid.html" target="_blank" rel="noopener">Wild Me · MiewID 官方介紹</a><p>平台與後續功能的說明，和 2024 年方法分開閱讀。</p></li><li><a href="https://lila.science/datasets/hyena-id-2022/" target="_blank" rel="noopener">Hyena ID 2022 · 原資料集</a><p>照片由 Botswana Predator Conservation Trust 提供，經 Wild Me／African Carnivore Wildbook 整理。</p></li></ol></article>
+        <article id="photo-rights" class="source-reading"><h3>照片、標籤與使用範圍</h3><p id="visual-source">第一頁的兩張照片及動畫使用的三張照片，皆為原始研究素材。物種介紹旁的草原情境圖由 AI 生成，只用來呈現斑鬣狗與環境，不代表資料集中的某個個體。<a href="assets/03-01-hyena-main-v01.webp" target="_blank" rel="noopener">查看情境圖</a> · <a href="assets/hero-provenance.json" target="_blank" rel="noopener">生成紀錄</a></p><p>三張照片皆保留資料集提供的 JPEG 原檔。局部視窗只放大原本的畫素，沒有補畫、鏡像翻轉或改造外觀。</p><p>LILA 下載頁列 CDLA-Permissive-1.0，原 COCO metadata 卻列 CC BY-NC-ND 2.0；兩項標示的衝突尚未釐清。目前供本機檢視，尚未公開部署；現有紀錄也不足以確認可無條件公開再利用。</p><p><a href="animation/SOURCE.md" target="_blank" rel="noopener">完整素材說明</a> · <a href="animation/LICENSES.txt" target="_blank" rel="noopener">原授權標示</a> · <a href="animation/assets/display-data.json" target="_blank" rel="noopener">照片與裁切紀錄</a> · <a href="animation/sources/provenance.json" target="_blank" rel="noopener">來源與檔案紀錄</a></p></article>
+      </div>
+      <details id="original-notes" class="original-notes"><summary>研究資料與版本紀錄</summary><p>依 2024 年 12 月 7 日預印本整理，文字核對日期為 2026 年 10 月 23 日。以下是該研究版本的資料摘要，不代表官方平台的即時使用統計。</p><dl class="version-notes"><dt>研究範圍</dt><dd>49 個物種、37,138 個體、225,374 筆影像標註。一張原始照片可能包含多筆動物標註，不能直接改寫成相同數量的照片。</dd><dt>方法與產出</dt><dd>模型用多個物種的照片學習外觀特徵，比對時從同一物種的圖錄找出相似候選。研究人員仍須核對原圖與紀錄。</dd><dt>研究與平台版本</dt><dd>2024 預印本已報告 Wildbook 的實際使用。官方後續版本與功能另見來源連結，不混入本頁的 2024 年實驗比較。</dd><dt>還需要哪些資料</dt><dd>檢索表現不是族群量、存活率或完整移動路線。這些生態問題仍需要日期、地點、取樣設計與後續分析。</dd></dl></details>
+      <p class="colophon">三張照片只用來解說方法，沒有用它們測試模型表現，也沒有另外進行身分評分、人工鑑定或族群估計。</p>
+    </section>
+  </main>
+  <footer class="reading-controls" aria-label="閱讀頁面控制"><button id="previous-page" class="js-only" type="button" hidden>上一頁</button><p id="page-position" aria-live="polite">看照片</p><button id="next-page" class="js-only" type="button" hidden>下一頁</button></footer>
+  <script src="../../ui/site-map.js" defer></script><script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="03-01"></script><script src="../../ui/media-expand.js" defer></script>
+</body></html>

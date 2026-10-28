@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "check_count": 41,
+  "checks": [
+    {
+      "name": "First seek before any playback is exact",
+      "passed": true
+    },
+    {
+      "name": "Forward targets are exact",
+      "passed": true
+    },
+    {
+      "name": "Reverse seeks match forward states",
+      "passed": true
+    },
+    {
+      "name": "Displayed source candidates and scores",
+      "passed": true
+    },
+    {
+      "name": "Top candidate is highlighted",
+      "passed": true
+    },
+    {
+      "name": "Real source ROI has no imposed cell count",
+      "passed": true
+    },
+    {
+      "name": "Four-cell diagram is separate from real ROI",
+      "passed": true
+    },
+    {
+      "name": "Original-source button is disabled for teaching figure",
+      "passed": true
+    },
+    {
+      "name": "Source dialog shows complete figure",
+      "passed": true
+    },
+    {
+      "name": "Escape closes dialog and keeps paused",
+      "passed": true
+    },
+    {
+      "name": "Chapter 1 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 2 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 3 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 4 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 5 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 6 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Chapter 7 seeks and pauses",
+      "passed": true
+    },
+    {
+      "name": "Timeline keyboard step works",
+      "passed": true
+    },
+    {
+      "name": "Play then pause advances and holds",
+      "passed": true
+    },
+    {
+      "name": "Replay restarts from beginning",
+      "passed": true
+    },
+    {
+      "name": "Desktop has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 390px, 0s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 390px, 24s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 390px, 38s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 390px, 51s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 390px, 70s",
+      "passed": true
+    },
+    {
+      "name": "Source dialog fits 390px",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320px, 0s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320px, 24s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320px, 38s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320px, 51s",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow at 320px, 70s",
+      "passed": true
+    },
+    {
+      "name": "Source dialog fits 320px",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion preference starts paused",
+      "passed": true
+    },
+    {
+      "name": "Print uses static image and full transcript",
+      "passed": true
+    },
+    {
+      "name": "Print caption identifies its static image",
+      "passed": true
+    },
+    {
+      "name": "Print restores playhead and stays paused",
+      "passed": true
+    },
+    {
+      "name": "No-JS fallback retains image and transcript",
+      "passed": true
+    },
+    {
+      "name": "No-JS page has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true
+    },
+    {
+      "name": "No failed asset requests",
+      "passed": true
+    }
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "evidence": "Persisted from successful browser-check.js result on final runtime."
+}

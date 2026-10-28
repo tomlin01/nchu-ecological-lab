@@ -1,0 +1,33 @@
+/* Theme colors only. The approved home-coherence.css owns layout and motion. */
+@media screen{
+ :root,#home-story,#home-story .topic-home{
+  --ground:var(--theme-ground);--ink:var(--theme-ink);--muted:var(--theme-muted);
+  --accent:var(--theme-accent);--link-ink:var(--theme-ink);--surface:var(--theme-surface);
+ }
+ :root{scrollbar-color:var(--theme-scroll) var(--theme-ground);accent-color:var(--theme-accent)}
+ body{background-color:var(--theme-ground);color:var(--theme-ink);caret-color:var(--theme-accent)}
+ ::selection{background-color:var(--theme-selection);color:var(--theme-selection-ink)}
+ #home-story,#home-story .topic-home,.home-masthead-wrap,.hero-art{background-color:var(--theme-ground)}
+ #home-story .case-navigation{background-color:var(--theme-surface)}
+ .plate-surface img[data-case-image="02-04"]{background-color:var(--theme-media)}
+ .brand,.directory-link,.next-topic,.back-to-top,.topic-page-link,.topic-overview-link,.preview-name,#home-image-sources summary{color:var(--theme-ink)}
+ .topic-label,.art-credit,.topic-number,.topic-pending,.directory-intro,.preview-copy,.case-project,.identification-footer,.plate-surface figcaption{color:var(--theme-muted)}
+ .case-link{color:var(--theme-ink)}
+ .case-link:hover,.case-link:focus-visible{background-color:var(--theme-surface-hover)}
+ .case-link:hover .case-title,.case-link:focus-visible .case-title,.case-link.is-previewed .case-title,
+ .plate-position.is-selected figcaption,.brand:hover,.directory-link:hover,.next-topic:hover,.back-to-top:hover,
+ .topic-page-link:hover,.topic-overview-link:hover,.identification-footer a:hover,
+ #home-image-sources summary:hover,#home-image-sources a:hover{color:var(--theme-accent)}
+ :is(a,button,summary):focus-visible{outline-color:var(--theme-focus)}
+ .skip-link{background-color:var(--theme-button-bg);color:var(--theme-button-ink)}
+}
+@media screen and (max-width:920px){
+ .case-link.is-previewed .case-title{color:var(--theme-ink)}
+ .case-link:hover .case-title,.case-link:focus-visible .case-title{color:var(--theme-accent)}
+}
+@media print{
+ :root,#home-story,#home-story .topic-home{--ground:#fff;--ink:#242829;--muted:#505455;--accent:#465f70;--link-ink:#242829;color-scheme:light}
+ body,#home-story,.home-masthead-wrap{background-color:#fff;color:var(--ink)}
+ #home-story .topic-home,#home-story .case-navigation{background-color:transparent}
+ .art-credit,.identification-footer{color:var(--muted)}
+}
