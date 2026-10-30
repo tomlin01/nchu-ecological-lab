@@ -5649,8 +5649,8 @@
       "sha256": "4fa4904f0e5946168d6cd315d9bfb90c1215af662ab9723625de6939c124e065"
     },
     "home-atlas/app.js": {
-      "bytes": 36121,
-      "sha256": "a0723a1b206b4fbb69070a2170c137a86150f44f20f43f786cbd70270a3ec1b8"
+      "bytes": 38359,
+      "sha256": "4a6b803b0d889276df06f3ee5c3e18a54ea49de7d6c8d3dcaad1aff7f5912c94"
     },
     "home-atlas/assets/environments/01-01-grassland-wide-v01.png": {
       "bytes": 3652910,
@@ -5981,8 +5981,8 @@
       "sha256": "b6dd81f3d87615048e31e2e5b899b3f6d832b685105efe9b5b9a4546d251e6c9"
     },
     "home-atlas/page-turn.js": {
-      "bytes": 10624,
-      "sha256": "9ccdf69098732a4b1fbdbfbf3e7a92408cd9b669d3c92628f7c6bdc26d028f76"
+      "bytes": 10626,
+      "sha256": "35e1c46099613dd6432d34ff45a4bf4aabf12b294030f5350aaef6722a5986c1"
     },
     "home-atlas/style.css": {
       "bytes": 19707,
@@ -6077,8 +6077,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 50983,
-      "sha256": "21f4cef0efd22a97feb9f83bc9415ca27613028dace4272c2a543e07a587b1fe"
+      "bytes": 51798,
+      "sha256": "9fb4afc0050aa3fb83a42956fd7086ced99b9203e8726b1a0a546629fe698242"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -6617,5 +6617,12 @@
     "source_base_commit": "123100a848cee56872b285fb0eaf5a7cc46cafcc",
     "includes_full_snapshot": true,
     "media_bytes_unchanged": true
+  },
+  "homepage_loading_revision": {
+    "version": "home-loading-v01",
+    "eager_gallery_images": 4,
+    "decorative_environments": "loaded on selection",
+    "next_topic": "prefetched after current images/fonts ready at idle",
+    "media_files_unchanged": true
   }
 }

@@ -22,8 +22,9 @@
   let configuredReduced=reduced.matches,configuredWidth=innerWidth,configuredHeight=innerHeight;
   let traitEntrancePlayed=false,traitEntranceDismissed=false,traitEntrance=null,traitGeometry=null;
   const failedImages=new Set();
-  const imageList=[...document.querySelectorAll('img')].filter(image=>!image.closest('.topic-extension'));
-  const initialImageSources=new Map(imageList.map(image=>[image,image.getAttribute('src')]));
+  const imageList=[...document.querySelectorAll('img')];
+  const initialImageSources=new Map(imageList.map(image=>[image,image.getAttribute('data-src')||image.getAttribute('src')]));
+  const imagePromises=new Map();
   const guidePaths=new Map(sections.filter(section=>section.dataset.topic!=='01').map(section=>[section.dataset.topic,section.querySelector('.selection-guide path')])); // taste-skill-ignore: internal chapter route key
   const $=selector=>document.querySelector(selector);
   const topicId=value=>{const match=String(value).match(/^(?:#?topic-)?(\d{1,2})$/);const id=match?match[1].padStart(2,'0'):null;return navigationTopicIds.includes(id)?id:null;};
@@ -291,6 +292,7 @@
     navigationSections.forEach(section=>{if(section.getBoundingClientRect().top<=scan)current=section.dataset.topic;});
     if(document.getElementById('topics').getBoundingClientRect().top<=scan)current='topics';
     activeTopic=current;
+    if(initialized){prepareTopicImages(current);checkAssetStatus();}
     document.querySelectorAll('.site-header nav a').forEach(link=>link.getAttribute('href')===(current==='topics'?'#topics':`#topic-${current}`)?link.setAttribute('aria-current','location'):link.removeAttribute('aria-current'));
     habitatMotion?.sync({animate});
   }
@@ -301,6 +303,7 @@
     if(url){cancelAnimationFrame(hashFrame);hashFrame=0;pendingHash=null;}
     if(innerWidth!==configuredWidth)refreshGeometry();
     document.dispatchEvent(new Event('atlas-hover-reset'));selectedCases[id]=value;syncControls(id);
+    if(id==='01'&&value)prepareEnvironment(value,animate);
     if(id==='01')renderField(animate); // taste-skill-ignore: internal chapter route key
     else layoutSelection(id,animate);
     if(url)replaceHash(value?`#case-${value}`:`#topic-${id}`);
@@ -342,25 +345,60 @@
   }
   function scheduleLayout(){cancelAnimationFrame(layoutFrame);layoutFrame=requestAnimationFrame(()=>{layoutFrame=0;layoutAll();});}
   function checkAssetStatus(){
-    assetsReady=imageList.every(image=>image.complete&&image.naturalWidth>0&&!failedImages.has(image))&&(!document.fonts||document.fonts.status==='loaded');
-    document.getElementById('retry-assets').hidden=failedImages.size===0;
-    status(failedImages.size?'部分插畫尚未載入，仍可選擇或閱讀案例。':assetsReady?'':'正在準備環境插畫。');
+    const required=currentImages(),failed=required.some(image=>failedImages.has(image));
+    assetsReady=required.every(image=>image.complete&&image.naturalWidth>0&&!failedImages.has(image))&&(!document.fonts||document.fonts.status==='loaded');
+    document.getElementById('retry-assets').hidden=!failed;
+    status(failed?'部分插畫尚未載入，仍可選擇或閱讀案例。':assetsReady?'':'正在準備環境插畫。');
+  }
+  function currentImages(){
+    return [...(sectionFor(activeTopic)?.querySelectorAll('img')||[])].filter(image=>{
+      const layer=image.closest('.environment-layer');
+      return !layer||(activeTopic==='01'&&layer.dataset.environment===selectedCases['01']);
+    });
+  }
+  function prepareTopicImages(id){
+    const images=[...(sectionFor(id)?.querySelectorAll('img')||[])].filter(image=>!image.closest('.environment-layer'));
+    images.forEach(image=>{image.loading='eager';});
+    return Promise.all(images.map(watchImage));
+  }
+  function prepareEnvironment(caseId,animate=false){
+    const image=fieldStage.querySelector(`[data-environment="${caseId}"] img`);
+    if(!image)return;
+    const source=image.getAttribute('data-src');
+    if(source){image.src=source;image.removeAttribute('data-src');}
+    watchImage(image).then(()=>{
+      if(activeTopic==='01'&&selectedCases['01']===caseId)renderField(animate);
+    });
+  }
+  function prefetchNextTopic(id){
+    if(!navigationTopicIds.includes(id))return;
+    Promise.all([prepareTopicImages(id),document.fonts?.ready||Promise.resolve()]).then(()=>{
+      const next=navigationTopicIds[navigationTopicIds.indexOf(id)+1];
+      if(!next)return;
+      const prefetch=()=>{if(activeTopic===id&&!printing&&!document.hidden)prepareTopicImages(next);};
+      if(window.requestIdleCallback)window.requestIdleCallback(prefetch,{timeout:1500});
+      else setTimeout(prefetch,0);
+    });
   }
   function watchImage(image){
-    return new Promise(resolve=>{
+    if(imagePromises.has(image))return imagePromises.get(image);
+    const pending=new Promise(resolve=>{
       const finish=async failed=>{
         if(failed)failedImages.add(image);
         else{failedImages.delete(image);try{await image.decode();}catch{if(!image.naturalWidth)failedImages.add(image);}}
-        checkAssetStatus();scheduleLayout();resolve();
+        checkAssetStatus();
+        if(!image.closest('.environment-layer')&&image.closest('.topic')?.dataset.topic===activeTopic)scheduleLayout();
+        resolve();
       };
       if(image.complete){finish(!image.naturalWidth);return;}
       image.addEventListener('load',()=>finish(false),{once:true});image.addEventListener('error',()=>finish(true),{once:true});
     });
+    imagePromises.set(image,pending);return pending;
   }
   async function retryImages(){
-    const pending=[...failedImages];if(!pending.length)return;
-    retryCount++;failedImages.clear();assetsReady=false;
-    for(const image of pending){image.src=`${initialImageSources.get(image)}?retry=${retryCount}`;}
+    const pending=currentImages().filter(image=>failedImages.has(image));if(!pending.length)return;
+    retryCount++;assetsReady=false;
+    for(const image of pending){failedImages.delete(image);imagePromises.delete(image);image.src=`${initialImageSources.get(image)}?retry=${retryCount}`;}
     await Promise.all(pending.map(watchImage));checkAssetStatus();scheduleLayout();
   }
   function validate(content,metadata){
@@ -396,10 +434,11 @@
       for(const asset of metadata.assets){const button=document.querySelector(`[data-asset-id="${CSS.escape(asset.id)}"]`);elements.set(asset.id,button);button.style.width=`${asset.width}px`;button.style.height=`${asset.height}px`;button.disabled=false;}
       root.classList.add('atlas-ready','atlas-book-ready');configuredReduced=reduced.matches;configuredWidth=innerWidth;configuredHeight=innerHeight;initialized=true;
       pager=createAtlasPager({ready:()=>initialized&&!printing&&!document.hidden,
-        beforeTurn:()=>{document.dispatchEvent(new Event('atlas-hover-reset'));stopTraitEntrance();habitatMotion?.suspend();},
+        beforeTurn:id=>{prepareTopicImages(id);document.dispatchEvent(new Event('atlas-hover-reset'));stopTraitEntrance();habitatMotion?.suspend();},
         afterTurn:(id,options)=>{
           if(options.keyboard)skipKeyboardEntrance(id);
           if(options.url!==false)replaceHash(id==='topics'?'#topics':`#topic-${id}`);layoutAll();
+          prefetchNextTopic(id);
         }
       });
       const habitatSection=sectionFor('05');
@@ -429,9 +468,11 @@
       applyHash();
       const fontsReady=document.fonts?.ready||Promise.resolve();
       fontsReady.then(()=>{checkAssetStatus();scheduleLayout();});
-      await Promise.all([fontsReady,...imageList.map(watchImage)]);
+      imageList.filter(image=>image.getAttribute('src')).forEach(watchImage);
+      await Promise.all([fontsReady,prepareTopicImages(activeTopic)]);
       checkAssetStatus();layoutAll();
       checkTraitEntrance();
+      prefetchNextTopic(activeTopic);
       // Asset loading never re-applies a stale hash or takes over native scrolling.
     }catch(error){initError=error.message||'互動未能啟動。';status(`${initError} 下方仍有全部案例連結。`);}
   }
@@ -470,6 +511,7 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelTopicNavigation();if(initialized&&traitSection&&!printing)layoutSelection('04',false);habitatMotion?.suspend();}else{updateActiveTopic();checkTraitEntrance();}});
   addEventListener('pagehide',()=>{cancelTopicNavigation();if(initialized&&traitSection&&!printing)layoutSelection('04',false);habitatMotion?.suspend();});
   addEventListener('beforeprint',()=>{
+    imageList.filter(image=>!image.closest('.environment-layer')).forEach(image=>{image.loading='eager';});
     if(!initialized||printing)return;cancelTopicNavigation();printSnapshot={scrollY,selectedCases:{...selectedCases},activeTopic};printing=true;
     stopTraitEntrance();habitatMotion?.suspend();renderTraitCue(false);
     root.classList.add('is-printing');

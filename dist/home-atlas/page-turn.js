@@ -50,7 +50,7 @@ window.createAtlasPager = ({ready, beforeTurn, afterTurn}) => {
       scrollTo({top:edge==='end'?r.bottom:r.top,behavior:'instant'});
       if(options.focus)target.focus({preventScroll:true});afterTurn(id,options);return true;
     }
-    beforeTurn();clearTimeout(scrollTimer);
+    beforeTurn(id);clearTimeout(scrollTimer);
     const direction=pages.indexOf(target)>pages.indexOf(source)?1:-1;
     const width=root.clientWidth,sourceRange=range(source),sourceOffset=clamp(scrollY-sourceRange.top,0,Math.max(0,sourceRange.height-innerHeight));
     const targetOffset=edge==='end'?Math.max(0,r.height-innerHeight):0;
