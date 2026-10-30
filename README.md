@@ -3,8 +3,11 @@
 AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
 [`tomlin01/nchu-ecological-lab`](https://github.com/tomlin01/nchu-ecological-lab)。
 
-本機檔案已準備，尚未上傳，也沒有啟用 GitHub Pages。
-預定網址為 `https://tomlin01.github.io/nchu-ecological-lab/`，目前不是上線結果。
+網站已於2026-10-30公開部署：
+[AI × 生態研究](https://tomlin01.github.io/nchu-ecological-lab/)。
+儲存庫已依使用者明確授權改為公開。
+本次網站來源commit為`819287dab61527aa278756aed6353c4055e0c6ec`；
+[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41002335470)已成功。
 
 ## 網站來源
 
@@ -58,15 +61,15 @@ python3 scripts/preview.py --port 8993
 後續推送`main`或手動執行workflow時，會先跑回歸測試與離線檢查，再上傳artifact及部署。
 workflow不會自動啟用儲存庫的Pages功能。
 
-上傳與上線前，仍需依使用者當次指示完成：
+之後更新時，依使用者當次指示完成：
 
 1. 確認這份凍結副本包含要發布的最新修改。
-2. 確認私有儲存庫的Pages方案資格，或經使用者明確指示調整儲存庫可見性。
-3. 在GitHub儲存庫設定中選擇Pages的GitHub Actions發布方式。
+2. 核對目前公開儲存庫與Pages設定，不擅自改變可見性。
+3. 保留GitHub Actions發布方式及`/nchu-ecological-lab/`子路徑。
 4. 推送來源並執行workflow，保存真正的部署結果。
 5. 在GitHub網址重新檢查入口、404、字型、模型、影片跳段及同iframe放大。
 
 目前本機HTTP的Range結果不代表GitHub託管端也具有相同行為。
-既有Sites正式站持續保留，尚未做網址切換、DNS修改或部署。
+既有Sites站持續保留，沒有設定舊網址轉址或修改DNS。
 
 官方參考：[自訂Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
