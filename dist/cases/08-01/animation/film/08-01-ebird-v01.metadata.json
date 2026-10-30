@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8953/index.html?theme=light",
+  "source_directory": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/08-01/prototype-v01",
+  "source_files_unchanged": true,
+  "source_file_count": 21,
+  "source_hash_exclusions": [
+    "initial-check.jpg"
+  ],
+  "source_sha256_before": "source-before.sha256.json",
+  "source_sha256_after": "source-after.sha256.json",
+  "export_api": "EBirdPlayer.renderAt(t)",
+  "export_layout": "export-layout.css",
+  "output": "08-01-ebird-v01.mp4",
+  "started_at": "2026-10-28T15:59:32.451Z",
+  "completed_at": "2026-10-28T16:05:07.041Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 2880,
+  "requested_duration_seconds": 120,
+  "first_renderAt_seconds": 0,
+  "last_renderAt_seconds": 119.95833333333333,
+  "sampling": "All 2880 frames captured separately from EBirdPlayer.renderAt(i / 24); no static-frame substitution.",
+  "frame_clock_ledger": "frame-clock-ledger.jsonl",
+  "screenshot_count": 2880,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 91,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "mp4_top_level_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "size": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "size": 34831
+    },
+    {
+      "type": "free",
+      "offset": 34863,
+      "size": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 34871,
+      "size": 39152279
+    }
+  ],
+  "ffmpeg_args": [
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-y",
+    "-f",
+    "image2pipe",
+    "-framerate",
+    "24",
+    "-c:v",
+    "mjpeg",
+    "-i",
+    "pipe:0",
+    "-an",
+    "-vf",
+    "scale=in_range=full:out_range=limited,format=yuv420p",
+    "-color_range",
+    "tv",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-r",
+    "24",
+    "-frames:v",
+    "2880",
+    "-movflags",
+    "+faststart",
+    "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/08-01/film-v01/.render-54562.mp4"
+  ],
+  "full_decode_passed": true,
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1600,
+        "height": 900,
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "duration": "120.000000",
+        "nb_frames": "2880",
+        "nb_read_frames": "2880",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "120.000000",
+      "size": "39187150"
+    }
+  },
+  "browser_page_errors": [],
+  "request_route_installed_before_newPage": true,
+  "request_policy": {
+    "allowed_origin": "http://127.0.0.1:8953",
+    "blocked_case_alias_pattern": "/(?:^|\\/)(?:case(?:s)?[\\/_-]?)?0?1[-_]0?2(?:\\/|\\.|$)/i",
+    "external_origins": "abort"
+  },
+  "blocked_request_count": 0,
+  "blocked_requests": [],
+  "failed_requests": []
+}

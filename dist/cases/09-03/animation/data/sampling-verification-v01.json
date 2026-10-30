@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "case_id": "09-03",
+  "status": "PASS",
+  "method": "Exact rational enumeration of every ordered 4-draw sequence, independently checked against single-draw variance / 4",
+  "model_rerun": false,
+  "monte_carlo_run": false,
+  "checks": {
+    "source_hashes": [
+      {
+        "filename": "KBUF_2010_detector_counts.csv",
+        "byte_length": 968,
+        "sha256": "16203f23f06acc30bce6f842fb54120e11f512c48eb2d3001c0011b8aac91ef8",
+        "git_blob_sha": "234d9c386adce628835b0fa2e9cbb74ddaac3838",
+        "row_count": 1,
+        "value_count": 92,
+        "verified": true
+      },
+      {
+        "filename": "KBUF_2010_ground_truth_counts.csv",
+        "byte_length": 856,
+        "sha256": "c66e9704703222d4952ec16c25bc05124f10e3bd148aecccc75ebfb45521ad37",
+        "git_blob_sha": "1930e9d8bb66eb523108fe3751764c3db7808695",
+        "row_count": 1,
+        "value_count": 92,
+        "verified": true
+      }
+    ],
+    "sequence_count_per_method": 256,
+    "probability_sum_fraction_each_method": "1",
+    "known_truth": 110,
+    "importance_mean": 110.0,
+    "uniform_mean": 110.0,
+    "importance_variance": 30.0,
+    "uniform_variance": 675.0,
+    "histogram_mass_each_method": "1",
+    "sample_order": [
+      "D",
+      "B",
+      "D",
+      "C"
+    ],
+    "sample_estimate": 107.5,
+    "sample_draw_count": 4,
+    "sample_unique_day_count": 3,
+    "source_day_count": 92,
+    "calendar_dates_inferred": false
+  },
+  "boundaries": [
+    "四日數字為人為設定的教學計數單位，不是實際鳥數，也不是論文資料。",
+    "列出全部256個有序四次抽樣序列，依各序列機率加權；沒有執行Monte Carlo實驗。",
+    "兩種方法均固定四次有放回抽取，未固定不同日期的人工覆核成本。",
+    "同日可重複抽中；統計估計保留每次抽取，人工參考值可重用。",
+    "無偏指所有抽樣結果的機率加權平均等於已知總量，不保證單次估計正確。",
+    "分布是重複抽樣估計值的精確分布，不是95%信賴區間或後驗分布。",
+    "此設定的變異比較只適用於這組教學值，不是DISCount的一般效能保證。"
+  ]
+}

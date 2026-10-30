@@ -1,0 +1,172 @@
+{
+  "case_id": "08-01",
+  "title": "少看到鳥，代表鳥真的變少了嗎？",
+  "version": "web-v01",
+  "entry": "08-01.html",
+  "status": "completed_local",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 120,
+  "mp4": "animation/film/08-01-ebird-v01.mp4",
+  "mp4_sha256": "462993edb816109bf82cb3f40413072312862f7523b77eddc0e63e3dae8a4fcf",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "hero_observations_are_demonstrations": true,
+  "files": {
+    "08-01.html": {
+      "bytes": 15869,
+      "sha256": "42c536018eb93fda29a7752478483971e863e16d9699690f9184e3ec53acbb5a"
+    },
+    "SOURCE.md": {
+      "bytes": 2791,
+      "sha256": "1a36fce0fb02aa241ffb121eb840dac2ee43ebc56f0a3765aeee6638816a92d8"
+    },
+    "animation/README.md": {
+      "bytes": 1205,
+      "sha256": "99508a8a4182cebd50fc65f877d66f144db2899ed14226e696a9090b08b2eaf9"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 3369,
+      "sha256": "33a58b34ea1b8c810d4dab92bfa8ab4f4c76f2689cdc18d95fcbd4c79d2ffab3"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 3971,
+      "sha256": "cc673f5655255f8489a74b834fb422f9db994cb05fb908d798f0460f2243bdff"
+    },
+    "animation/app.mjs": {
+      "bytes": 13061,
+      "sha256": "250afbc836bd1de368c0d14899c6d7217ebd6192cc6ff952cef493a9459f2a11"
+    },
+    "animation/assets/official-trends-2022.png": {
+      "bytes": 1420071,
+      "sha256": "8e6ebdd19dcd1bf96dc8ed738e91cdfa4b7e8e49bca0af33bf3d06c3bc24c3d4"
+    },
+    "animation/assets/provenance.json": {
+      "bytes": 10042,
+      "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
+    },
+    "animation/assets/sage-thrasher-alpha-browser-review-v02.png": {
+      "bytes": 924061,
+      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
+    },
+    "animation/assets/sage-thrasher-cutout-v01.png": {
+      "bytes": 1955113,
+      "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
+    },
+    "animation/assets/sage-thrasher-cutout-v02.png": {
+      "bytes": 1880943,
+      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
+    },
+    "animation/assets/sagebrush-scene-v01.png": {
+      "bytes": 3562306,
+      "sha256": "b4bfe6a58870071e77d2adf81131ed72ebed3d82abf9ddcf8a8d1e4c3bb579dd"
+    },
+    "animation/data/evidence.json": {
+      "bytes": 1642,
+      "sha256": "568cd8b5d2c685259b38acbd1ff3d9bb9915f858e9fa093bb0d00fab84b9bf90"
+    },
+    "animation/embed.css": {
+      "bytes": 1719,
+      "sha256": "86807c725fce595b8e68c4622f95b8e470618748c85b529d7865dfa265ac9301"
+    },
+    "animation/embed.js": {
+      "bytes": 8651,
+      "sha256": "bb8cd9013fbb0b8d3b1b2a5813821091e2a8ce2ac2e446b59d3ef35ffa7b40a2"
+    },
+    "animation/film/08-01-ebird-v01.metadata.json": {
+      "bytes": 3071,
+      "sha256": "7de7088c0fd9aed7b1e3fc638d6ff2e1345aadf1a3b0926f7285e24748397507"
+    },
+    "animation/film/08-01-ebird-v01.mp4": {
+      "bytes": 39187150,
+      "sha256": "462993edb816109bf82cb3f40413072312862f7523b77eddc0e63e3dae8a4fcf"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/ebird-sans.woff2": {
+      "bytes": 137136,
+      "sha256": "0d713a70a758d89a81313ba268af66c4ec98d2a338a18f615c1631ae5df578ea"
+    },
+    "animation/fonts/ebird-serif.woff2": {
+      "bytes": 182220,
+      "sha256": "4ca10669c2d4023916ab3140451660782ebdcc605f5329fa71343c7885345e4c"
+    },
+    "animation/index.html": {
+      "bytes": 6973,
+      "sha256": "45418d40118c7b64b7c804aa4d936aee9d8a23478cf9c6c18ded673e4db8557f"
+    },
+    "animation/manifest.json": {
+      "bytes": 5942,
+      "sha256": "d88b24946ab8135b02071abadbb84ef606c6ca32bd296882d9124d36db2fdfd6"
+    },
+    "animation/model.mjs": {
+      "bytes": 3923,
+      "sha256": "fb9d80fdaa6658fea7cb5c12e3099dd431fdb1f76cd18519fe4fe3185fcf035a"
+    },
+    "animation/prompts/scene-assets-v01.md": {
+      "bytes": 6617,
+      "sha256": "510cab5f1d63156651a527bfb84b66ccf8862fa26f5914639f91acd4778e4712"
+    },
+    "animation/scene.mjs": {
+      "bytes": 14883,
+      "sha256": "8600ed901e0e066379f6391588bc30f1bab15fc762831139362d189de2c9b7b7"
+    },
+    "animation/style.css": {
+      "bytes": 9458,
+      "sha256": "33339bef8115fde794f94bcee6afc03b3237bd08c70656615fb6da783d639976"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "case.css": {
+      "bytes": 14246,
+      "sha256": "30abeb6b01abe1f91f2ecabb50b604cbc226ce49e30a6d6f8160e5a2419742a1"
+    },
+    "case.js": {
+      "bytes": 12446,
+      "sha256": "d635d33fcf552c3b0fc950666292fde79745e2d1f453330fdc98932d0c7cb27a"
+    },
+    "data/validation.json": {
+      "bytes": 957,
+      "sha256": "77d0bafbe0dea369395cc6bd53432504ef5fef9a8b90dc9593369e18611f1c60"
+    },
+    "fonts/08-sans.woff2": {
+      "bytes": 157128,
+      "sha256": "44e47de1193785f1d26133ff3dd2a03ba64a63cd6dc28509d7155239ed2b775a"
+    },
+    "fonts/08-serif.woff2": {
+      "bytes": 209752,
+      "sha256": "027b41449ea6f3a3f255ab3cb06cdfbd3856fccd94e178708ba82353014a89cb"
+    },
+    "fonts/Noto-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "hero.js": {
+      "bytes": 2391,
+      "sha256": "cb87e03d764de3bf536356f400c54df404d3d8724785e9c499ae4d21f344e7f8"
+    },
+    "index.html": {
+      "bytes": 201,
+      "sha256": "50d680c3cd0566213b2aec5712de8dd0843d8f8b5894e11b3bad58c708114b55"
+    }
+  },
+  "updated": "2026-10-29T17:28:27.298282+00:00",
+  "verification": "work/ecology-ai-rollout/cases/08-01/web-review-v01/verification-current.json",
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "08-01",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  }
+}

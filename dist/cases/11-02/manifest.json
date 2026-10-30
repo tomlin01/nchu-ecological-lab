@@ -1,0 +1,184 @@
+{
+  "case_id": "11-02",
+  "title": "森林這麼大，巡護員該先去哪裡？",
+  "version": "web-v01",
+  "entry": "11-02.html",
+  "status": "completed_local",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 130,
+  "mp4": "animation/film/11-02-paws-v01.mp4",
+  "mp4_sha256": "41212477b42959f77e593f4d3d6e61c426811c9757756a51d3fbd80496ffdd03",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "hero_route_scores_are_teaching_examples": true,
+  "files": {
+    "11-02.html": {
+      "bytes": 14417,
+      "sha256": "06f9d931d0e3d955020ed3e867fdad0e61f6d666e41b55d5f4bd03dfddd0251a"
+    },
+    "SOURCE.md": {
+      "bytes": 3313,
+      "sha256": "c0cd48cf4a6d84d1111ab74b76466ff90cd643cd5f45e73e2f06bbefa63ccae3"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 4338,
+      "sha256": "06a760671395d595fca51035a6a3aaffd207ecabc6123d1334e9c7fa1b7f63ee"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 2226,
+      "sha256": "f4e80d68a15056833239a296267f1a84951f545a4c26a69e8e01e1bbcc07cf65"
+    },
+    "animation/app.mjs": {
+      "bytes": 13069,
+      "sha256": "42e58e31ed7e38ff14bd2a23d8b3474debc03c996323365048b84749e2f1b3f4"
+    },
+    "animation/asset-provenance-v01.json": {
+      "bytes": 2203,
+      "sha256": "99b5ff945c237b5d681f6f29e15853d0632ac78d8ad514f623d5fd1fd401201c"
+    },
+    "animation/asset-provenance-v02.json": {
+      "bytes": 2268,
+      "sha256": "a8155f9411b5264ab91f73162a3286fe2c41fe2dd9089e69e8da2315080f1204"
+    },
+    "animation/assets/forest-banteng-wire-v01.png": {
+      "bytes": 4276913,
+      "sha256": "62b5d55fddbca3402667973f154efc934fcfbae274ec5004b82f6237ce5bee0d"
+    },
+    "animation/assets/forest-banteng-wire-v02.png": {
+      "bytes": 3895240,
+      "sha256": "29b8262e7fdbc404c75d6f3a0bac4de102584f845992d43308ef07f1157def4c"
+    },
+    "animation/assets/original-fig11-map.jpeg": {
+      "bytes": 225241,
+      "sha256": "ab52e802163bf6fb0dc5755dbc8e97c69ee151407960377b544d50780ac5bfe9"
+    },
+    "animation/embed.css": {
+      "bytes": 1684,
+      "sha256": "988dbec84496822d28cd84acf13768323e3ef975cbe3dfaa7d3b271526a44900"
+    },
+    "animation/embed.js": {
+      "bytes": 8643,
+      "sha256": "caca581dc546d083c6758df1a668a2b5957d031da7ebe2b305f519b9ca6aa8f8"
+    },
+    "animation/film/11-02-paws-v01.metadata.json": {
+      "bytes": 3859,
+      "sha256": "68f2071830c0668f9a019d6cf5bc1462d369c774a3c91dd3d26d96c240fd1b30"
+    },
+    "animation/film/11-02-paws-v01.mp4": {
+      "bytes": 32386019,
+      "sha256": "41212477b42959f77e593f4d3d6e61c426811c9757756a51d3fbd80496ffdd03"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/font-coverage.json": {
+      "bytes": 1330,
+      "sha256": "1381b5a4bc18229bc51fcb0d0b2828c8d2ecc5db627201ad3d4a637fe22cef82"
+    },
+    "animation/fonts/paws-sans.woff2": {
+      "bytes": 172492,
+      "sha256": "d366fde5183d578b33989d8cd6fdc7665636a50fe85d266e97baac38dd5b8890"
+    },
+    "animation/fonts/paws-serif.woff2": {
+      "bytes": 234132,
+      "sha256": "1a8785903ed0801d8b2b6866b3328a419645892e3da5894992cc75a0df06e903"
+    },
+    "animation/index.html": {
+      "bytes": 7363,
+      "sha256": "80b4b7613fdef9206d712d0ddcc072cf3e7f0e9cb1db24a3868c68fd045d76b3"
+    },
+    "animation/manifest.json": {
+      "bytes": 6178,
+      "sha256": "028689b1e239f1795c67cc8c2147fce75386c69c737cc12f6239de78f4ed6c90"
+    },
+    "animation/model.mjs": {
+      "bytes": 4990,
+      "sha256": "dde43073b73637d028dc112c10cfdb7c206cc5f0312ef11840d42f7b8aa3fb46"
+    },
+    "animation/prepare-fonts.py": {
+      "bytes": 3367,
+      "sha256": "e6f5acdbedb421b99e5641db218a94deeddb9b6e8d8c9b627b11a4885aba91ae"
+    },
+    "animation/prompts/forest-banteng-wire-exact-tool-prompt-v01.md": {
+      "bytes": 3599,
+      "sha256": "57584522559bc94019e7b9bfca63b654edc8d57829badd939c7eb9e563121541"
+    },
+    "animation/prompts/forest-banteng-wire-exact-tool-prompt-v02.md": {
+      "bytes": 2436,
+      "sha256": "cbd42242a9a4cbc74486b2f2ca2c05a872efb5f7946c1c883bc2724ad9aab780"
+    },
+    "animation/prompts/forest-banteng-wire-v01.md": {
+      "bytes": 3650,
+      "sha256": "70ae23d2ed65c5d544ac0181a5baefec8db7e61f7bb57b0504d0bc78348602b2"
+    },
+    "animation/scene.mjs": {
+      "bytes": 15638,
+      "sha256": "5c8d1f9d999ec86140878b8104bb1eb788ede898b01aabf162fb9272f4580421"
+    },
+    "animation/style.css": {
+      "bytes": 10035,
+      "sha256": "b0812e41570be58d08f55c69dc9d1cbddd58599c4c2dd411d03aec96e6a850f5"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "case.css": {
+      "bytes": 17609,
+      "sha256": "16d4628bdce5248213d835410973646e816535a754fc027f04c2cc8df6af707f"
+    },
+    "case.js": {
+      "bytes": 12439,
+      "sha256": "770202931f62ea2b348483db8feb7d24ed4e83f713b9a8b5f7bcb0f932355707"
+    },
+    "fonts/11-sans.woff2": {
+      "bytes": 198036,
+      "sha256": "61eb61e6465ba5b94e66bcee98f335d646fb5123f82f9fa8b601499ad5983abe"
+    },
+    "fonts/11-serif.woff2": {
+      "bytes": 267320,
+      "sha256": "54c1e6fc35996d81b7fdb5aa4caf266aa980a3a1a92b4fe37ed9ba9f37f367dd"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "d767c9a0c17fd14095f1080ebfc7cd793e0fa3c9c0a1a6e6aaeb2cc347dda7e7"
+    },
+    "hero.js": {
+      "bytes": 2498,
+      "sha256": "7c710b0900da3541c93747bb21c22e924cd409e28e009a415bc5f7c285b13e65"
+    },
+    "index.html": {
+      "bytes": 194,
+      "sha256": "0b292dfc05d7a0133e2e975fa25c1ed2960699f00973cdb2ee8f7ddbc8bc0932"
+    },
+    "prepare-web-fonts-v01.py": {
+      "bytes": 3904,
+      "sha256": "88229d37f1fe78aaf9f49fce4339190107fff52f496ed9e4d610382133e00270"
+    }
+  },
+  "updated": "2026-10-29T17:28:27.298282+00:00",
+  "verification": "work/ecology-ai-rollout/cases/11-02/web-review-v01/verification-current.json",
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "11-02",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  }
+}

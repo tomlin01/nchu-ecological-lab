@@ -1,0 +1,27 @@
+/* Hover owns inner images; the atlas keeps the outer button geometry. */
+.topic .asset-button img { transform-origin:50% 55%;backface-visibility:hidden; }
+@media print { .topic .asset-button img { transform:none!important; } }
+.hover-accent { position:absolute;pointer-events:none;visibility:hidden;opacity:0;color:var(--accent); }
+.hover-field { z-index:0; }
+.hover-field svg { display:block;width:100%;height:100%;overflow:visible;fill:none;stroke:currentColor;stroke-width:1.15; }
+.hover-field path { vector-effect:non-scaling-stroke; }
+.hover-field .field-trace:nth-child(2) { stroke-dasharray:3 6; }
+.hover-field .field-trace:nth-child(3) { stroke-width:.8; }
+.hover-focus { z-index:7; }
+.focus-member { position:absolute;pointer-events:none; }
+.focus-corner { position:absolute;width:19px;height:19px;border-color:currentColor;border-style:solid;border-width:0; }
+.corner-tl { left:0;top:0;border-left-width:1.5px;border-top-width:1.5px; }
+.corner-tr { right:0;top:0;border-right-width:1.5px;border-top-width:1.5px; }
+.corner-bl { left:0;bottom:0;border-left-width:1.5px;border-bottom-width:1.5px; }
+.corner-br { right:0;bottom:0;border-right-width:1.5px;border-bottom-width:1.5px; }
+.focus-tick { position:absolute;left:calc(50% - 12px);width:24px;border-top:1px solid currentColor; }
+.tick-top { top:0; }.tick-bottom { bottom:0; }
+@media (prefers-reduced-motion:reduce),(hover:none) { .hover-accent { display:none!important; } }
+@media print { .hover-accent { display:none!important; } }
+.trait-hover-overlay { position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;opacity:0;transform-origin:50% 55%;transition:opacity 120ms cubic-bezier(.23,1,.32,1); }
+.trait-hover-lines { display:block;width:100%;height:100%;overflow:visible;fill:none;stroke:var(--accent);stroke-linecap:round;stroke-linejoin:round; }
+.trait-hover-clusters .trait-hover-lines { opacity:.6; }
+.is-trait-hover-visible > .trait-hover-overlay { opacity:.95; }
+.is-trait-hover-held > .trait-cue { visibility:hidden!important; }
+@media (prefers-reduced-motion:reduce),(hover:none) { .trait-hover-overlay { display:none!important;transition:none; } }
+@media print { .trait-hover-overlay { display:none!important; } }

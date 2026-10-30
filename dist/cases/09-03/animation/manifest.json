@@ -1,0 +1,144 @@
+{
+  "case_id": "09-03",
+  "revision": "accepted-prototype-v01-web-embed",
+  "accepted_from": "latest_user_instruction",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "acceptance_scope": "Previously accepted standalone animation; website integration is not yet user accepted.",
+  "duration_seconds": 130,
+  "fps": 24,
+  "frame_count": 3120,
+  "accepted_source_manifest": "accepted-source-manifest.json",
+  "accepted_source_manifest_sha256": "0d8bac349e87abd07ae9a224afb4fd870f4cef44cf1659e6674cb3f902684605",
+  "accepted_source_file_count": 20,
+  "accepted_source_sha256": {
+    "app.mjs": "4e3c05416f97e97ded52991ddf3be65e047f9c60c8bab2598459a3aec8f2601a",
+    "assets/provenance-swallow-v01.json": "67ee8246c07f6e4d652b18db2ce364a3fccc42c347f2ddbcaaf2369ebe42f2d6",
+    "assets/swallow-roost-dawn-v01.png": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7",
+    "data/author-kbuf-2010-v01.json": "5a5a4071721a007350b061f6109b22cee080a8a29699155c9a0f2aac5bbf4844",
+    "data/sampling-teaching-v01.json": "4a70697f36e6dbe23812cead0e27110b44f72abc97fba1e6c2319da420695a45",
+    "data/sampling-verification-v01.json": "f6efe74a85f552f629cf18c84a70d514ceaf145cd5b1c43f343c8be022ceee3e",
+    "fonts/09-sans.woff2": "4ea100972dfa1962f6940f7fbc4fc542ad599c704c5ef179ffe0d5f5fef881af",
+    "fonts/09-serif.woff2": "cb4bc03948e031ccba138191523ab1ff332ddfb762643408dba00edbd147b843",
+    "fonts/font-coverage.json": "277be3bc63cde20ba3e8a41d805bd8e49cae56e541dc228417a6b76174359c54",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "index.html": "1e92d7f216dec4e9739f6b56479ccf471f4672b96cdd1fc44358016ac094a4e9",
+    "model.mjs": "6c485d5f90dbd278549f5b062c52cc00b0f90a7e76f8c79fa95f7409207d4ed1",
+    "prepare-fonts.py": "23069a05265a9c0a216147dfeaca9a3c0ed5f13c740f26789776354d60fea8fd",
+    "prompts/swallow-roost-dawn-v01.md": "4cfa58344799b0924552f54e125b0a9484f94ae453964a14fcd2d72f74708e79",
+    "README.md": "02836c5605adc3f51fba04e64afea7a7fd7c277edb8af310014fa2a2eb8fbfe1",
+    "scene.mjs": "950c7490222ced49455bf6d30e99f540773b5642960146148bd9d18c71b7d990",
+    "SOURCE.md": "e32666ccd1d6d002c1d28b59e2789f7c0afd94521c94776dc6d43bddf566a2c2",
+    "style.css": "2f20ff6fc560e2a069761b0f4e9e83808562e148b0f71efa6b8058ae81cdcc2c",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "index_changes": "Only ../embed.css and ../embed.js inserted before closing head, with no extra blank line",
+  "scene_model_clock_assets_data_vendor_fonts_unchanged": true,
+  "mp4": "film/09-03-discount-v01.mp4",
+  "mp4_sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e",
+  "bridge_resources": {
+    "../embed.js": {
+      "bytes": 8715,
+      "sha256": "34f5da5b07bec0b77cd64e0cec6db8955333f0ddcb8efd9c1d5c9eea695d5c4b"
+    },
+    "../embed.css": {
+      "bytes": 1824,
+      "sha256": "1d73c07c46838f7e4e0ec4148b7fa010dde24d3977bdf102c2395c778b907779"
+    }
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1172,
+      "sha256": "02836c5605adc3f51fba04e64afea7a7fd7c277edb8af310014fa2a2eb8fbfe1"
+    },
+    "SOURCE.md": {
+      "bytes": 3880,
+      "sha256": "e32666ccd1d6d002c1d28b59e2789f7c0afd94521c94776dc6d43bddf566a2c2"
+    },
+    "accepted-source-manifest.json": {
+      "bytes": 1883,
+      "sha256": "0d8bac349e87abd07ae9a224afb4fd870f4cef44cf1659e6674cb3f902684605"
+    },
+    "app.mjs": {
+      "bytes": 13073,
+      "sha256": "4e3c05416f97e97ded52991ddf3be65e047f9c60c8bab2598459a3aec8f2601a"
+    },
+    "assets/provenance-swallow-v01.json": {
+      "bytes": 2004,
+      "sha256": "67ee8246c07f6e4d652b18db2ce364a3fccc42c347f2ddbcaaf2369ebe42f2d6"
+    },
+    "assets/swallow-roost-dawn-v01.png": {
+      "bytes": 2656167,
+      "sha256": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7"
+    },
+    "data/author-kbuf-2010-v01.json": {
+      "bytes": 9503,
+      "sha256": "5a5a4071721a007350b061f6109b22cee080a8a29699155c9a0f2aac5bbf4844"
+    },
+    "data/sampling-teaching-v01.json": {
+      "bytes": 21598,
+      "sha256": "4a70697f36e6dbe23812cead0e27110b44f72abc97fba1e6c2319da420695a45"
+    },
+    "data/sampling-verification-v01.json": {
+      "bytes": 2189,
+      "sha256": "f6efe74a85f552f629cf18c84a70d514ceaf145cd5b1c43f343c8be022ceee3e"
+    },
+    "film/09-03-discount-v01.metadata.json": {
+      "bytes": 3883,
+      "sha256": "c8a5cbcf10b83f6d346b711d7c5d823ba12f42f34ad8db0f6a8561f97127cbee"
+    },
+    "film/09-03-discount-v01.mp4": {
+      "bytes": 14330589,
+      "sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e"
+    },
+    "fonts/09-sans.woff2": {
+      "bytes": 174784,
+      "sha256": "4ea100972dfa1962f6940f7fbc4fc542ad599c704c5ef179ffe0d5f5fef881af"
+    },
+    "fonts/09-serif.woff2": {
+      "bytes": 235852,
+      "sha256": "cb4bc03948e031ccba138191523ab1ff332ddfb762643408dba00edbd147b843"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/font-coverage.json": {
+      "bytes": 1326,
+      "sha256": "277be3bc63cde20ba3e8a41d805bd8e49cae56e541dc228417a6b76174359c54"
+    },
+    "index.html": {
+      "bytes": 7872,
+      "sha256": "b4d6f1b475c20eaacfaab098574516c11a163149e8e14a45322c707707ada820"
+    },
+    "model.mjs": {
+      "bytes": 4826,
+      "sha256": "6c485d5f90dbd278549f5b062c52cc00b0f90a7e76f8c79fa95f7409207d4ed1"
+    },
+    "prepare-fonts.py": {
+      "bytes": 3363,
+      "sha256": "23069a05265a9c0a216147dfeaca9a3c0ed5f13c740f26789776354d60fea8fd"
+    },
+    "prompts/swallow-roost-dawn-v01.md": {
+      "bytes": 3896,
+      "sha256": "4cfa58344799b0924552f54e125b0a9484f94ae453964a14fcd2d72f74708e79"
+    },
+    "scene.mjs": {
+      "bytes": 15409,
+      "sha256": "950c7490222ced49455bf6d30e99f540773b5642960146148bd9d18c71b7d990"
+    },
+    "style.css": {
+      "bytes": 9635,
+      "sha256": "2f20ff6fc560e2a069761b0f4e9e83808562e148b0f71efa6b8058ae81cdcc2c"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  }
+}

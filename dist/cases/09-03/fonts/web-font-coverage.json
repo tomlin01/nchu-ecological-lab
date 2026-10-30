@@ -1,0 +1,32 @@
+{
+  "text_files": {
+    "09-03.html": "b6638e6e5b633b5efb702aa5aabca9a6b089ab81c4dd81d4aa09f1b8cb5e4183",
+    "case.css": "4b474b5c6bd8273287be32c06e6fb35c876d4d91fd665fe0736e1d577fc975ac",
+    "case.js": "f9c6bc44016735620a9a797c02c2efcf4d92053e055612f24b2172437b4663b3",
+    "hero.js": "016dac4d59c4a34d7e46d43b986a613707452385727b55d7e8ed6744d7bd9295",
+    "SOURCE.md": "5769829a89d07f5976d8d1803a110a07d5721e390dae7aca66fc5dd760e368d5"
+  },
+  "shared_ui_text_files": {
+    "site-map.js": "770e7cefb680848368d60785983f38b4c906ed6ed6fce2ae31b171d08942c720",
+    "sidebar.js": "4049a83cd2ccca53e9f4a4387968ac74c509e9f6d39581f1d5d3634cdcafca2d",
+    "theme.js": "dc7a4923fe09d6fbdcb42280a367ec3947df8db9362c9e708db226433cfc345b"
+  },
+  "unicode_count": 647,
+  "scope": "Final web case text and shared UI labels only. Accepted animation files and fonts are untouched.",
+  "fonts": {
+    "09-sans.woff2": {
+      "source": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-whale-focus/fonts/NotoSansTC-VF.ttf",
+      "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+      "bytes": 209600,
+      "sha256": "eac2eac93d25a01c852ea1e7416fcfd0aeb03bef154936c4784686b5c2cfd215",
+      "missing_unicode": []
+    },
+    "09-serif.woff2": {
+      "source": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-whale-focus/fonts/NotoSerifTC-VF.ttf",
+      "source_sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a",
+      "bytes": 283060,
+      "sha256": "1786a1cf0a35905bf63689365dd3e5f1ac2770334144ada5747979a90ed1ebd1",
+      "missing_unicode": []
+    }
+  }
+}

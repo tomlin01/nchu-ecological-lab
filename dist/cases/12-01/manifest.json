@@ -1,0 +1,176 @@
+{
+  "case_id": "12-01",
+  "title": "讀到虎頭蜂的新聞，就知道牠在哪裡嗎？",
+  "version": "web-v01",
+  "entry": "12-01.html",
+  "status": "completed_local",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 130,
+  "mp4": "animation/film/12-01-records-v01.mp4",
+  "mp4_sha256": "32dcb0d90fdc07cd1da7f83eb0eb4ec6bb2fe1e7dc860926efedfaa31f523177",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "hero_expected_fields_are_paper_examples": true,
+  "files": {
+    "12-01.html": {
+      "bytes": 13347,
+      "sha256": "ea1fd9d4a2319b3d9c9c123107208e2650be68643eeee1600f2f43bbfbf7acbd"
+    },
+    "SOURCE.md": {
+      "bytes": 3633,
+      "sha256": "e5a06d11282a8a5fd1f4301cf565a4bdf6272f9b8ab2cca51272eb64e987307c"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 4859,
+      "sha256": "fe59e77cc1ccf8144d3ff20400bd2ba715d93b88741f0297d7fc434986b346eb"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 2034,
+      "sha256": "8e3ae2204a880385279f1b68f4f9d18a038acbac7cc22505f11e3d6402f35ee0"
+    },
+    "animation/app.mjs": {
+      "bytes": 13071,
+      "sha256": "88cd218e0063d0b1eca8b24fa972d422bcde25302afaca35e565413ec6e5000a"
+    },
+    "animation/assets/hornet-habitat-v01.png": {
+      "bytes": 2156579,
+      "sha256": "043b8a7ed23c33b8124054996df6d01889ceb8c4ab38f16fecf183a2112e4007"
+    },
+    "animation/assets/provenance-hornet-v01.json": {
+      "bytes": 2123,
+      "sha256": "91c359cd72eb2fc368f3d256376bdaf4ff4ed126861aaa0a9a6fae9897bbd247"
+    },
+    "animation/data/jersey-boundary-v01.json": {
+      "bytes": 2707,
+      "sha256": "afc46cf2dfde6c88e8dfca87e41ffff843d1ef9cb344288c1cd72a9472c8f177"
+    },
+    "animation/embed.css": {
+      "bytes": 1754,
+      "sha256": "f412cbc97d5aa5b2feccda94b3cce9143f13597e8755c401f665087f08aab006"
+    },
+    "animation/embed.js": {
+      "bytes": 8659,
+      "sha256": "f2fd032804e0945c3536f61d6395b4b4b7d12bb8a82fadb8e79f890165b0cb3d"
+    },
+    "animation/film/12-01-records-v01.metadata.json": {
+      "bytes": 3876,
+      "sha256": "861209f890cef5fd62e63b68e4f0a1c5ab52660cd0ea0899bfefe5dfeab02fde"
+    },
+    "animation/film/12-01-records-v01.mp4": {
+      "bytes": 9669694,
+      "sha256": "32dcb0d90fdc07cd1da7f83eb0eb4ec6bb2fe1e7dc860926efedfaa31f523177"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/font-coverage.json": {
+      "bytes": 1334,
+      "sha256": "2869ca9d45ae814b78563df63d74ee6ea6e490315658df4afce731fd4621be72"
+    },
+    "animation/fonts/record-sans.woff2": {
+      "bytes": 171304,
+      "sha256": "a70e4aae657dc665afab4246a299f48d49a46602693bfcc517d59da5510f2e24"
+    },
+    "animation/fonts/record-serif.woff2": {
+      "bytes": 231428,
+      "sha256": "a1d25f339ab33d231ff5af33436f03e5a6eb68824213581548d030a2901d735c"
+    },
+    "animation/index.html": {
+      "bytes": 7460,
+      "sha256": "5d30464c0ced8ba1dd56fcae7619112477c7b9e1b379e6c3e0fb2572a0f08cf4"
+    },
+    "animation/manifest.json": {
+      "bytes": 5655,
+      "sha256": "04547d4ec43416614ffa7929295873572d5c18860a00ba144bbc6912e53784ab"
+    },
+    "animation/model.mjs": {
+      "bytes": 4571,
+      "sha256": "d119a6f27b6aa440046ef005490a3acc6b6ad1e777758ac8545d02602afa08d3"
+    },
+    "animation/prepare-fonts.py": {
+      "bytes": 3371,
+      "sha256": "2b42c57d7ea774769c690bccce2ccddc3c9f80477e52ef2babd7084d3c2b1edf"
+    },
+    "animation/prompts/hornet-habitat-v01.md": {
+      "bytes": 4105,
+      "sha256": "c06458d55f6281406e284dd22c86cd603b53dae75d71e220190d26f31cad61c8"
+    },
+    "animation/scene.mjs": {
+      "bytes": 13135,
+      "sha256": "6b787ea1e1002b5a14b187ae2f0bc125a18ab08dbc1b6343a11aecb21e55ea29"
+    },
+    "animation/source/jersey-boundary-provenance-v01.md": {
+      "bytes": 2443,
+      "sha256": "42b8c3708c590a75f31d5edca26c5dd552fbabf49bdaaaa49fc3ecff2a4100d2"
+    },
+    "animation/source/jersey-natural-earth-extracted-original-v01.geojson": {
+      "bytes": 4321,
+      "sha256": "5d56cae5bc45fa6b915256b8cf2caf6b74e82ecaa72f0dfa55b1e9d95b5ee248"
+    },
+    "animation/style.css": {
+      "bytes": 9647,
+      "sha256": "cded151abc3860c149ad1c96fe1d69d18dcecf6a5863afc30d70057db276febb"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "case.css": {
+      "bytes": 17379,
+      "sha256": "f86123689e1331c71eb12bddd260c3fe6c87f036a4b29a1face388920d3cb820"
+    },
+    "case.js": {
+      "bytes": 12451,
+      "sha256": "12f946c19529e0b09da7c576df7e755df8f0b14c46cf177e8ca9f48d2d80cfc0"
+    },
+    "fonts/12-sans.woff2": {
+      "bytes": 195500,
+      "sha256": "047790abe3ffec49f8d57fe6422baa5fa26e3e496cb25f650caaebdc703cefc8"
+    },
+    "fonts/12-serif.woff2": {
+      "bytes": 264460,
+      "sha256": "6703b54995260d739a99cd20453d2c7e46ca2b9483bc81a917173103908da1b1"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "927bf1c7a74f1a44c061cde593cdd870e602553ef9923fd1a23786620592addf"
+    },
+    "hero.js": {
+      "bytes": 2549,
+      "sha256": "2c283bb6b192565b3d300293f872aa8aef6b3bbfb07c1e95653961359656032f"
+    },
+    "index.html": {
+      "bytes": 199,
+      "sha256": "d66e2ce6cc6c335e9aa0f80c162f5dfd5df039dac3deb4f36523d45598224dde"
+    },
+    "prepare-web-fonts-v01.py": {
+      "bytes": 3904,
+      "sha256": "d8fb267a58336f1332844064a3716ab14bb19894ed91bcbbb68a80dfcfa7ae4f"
+    }
+  },
+  "updated": "2026-10-29T17:28:27.298282+00:00",
+  "verification": "work/ecology-ai-rollout/cases/12-01/web-review-v01/verification-current.json",
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "12-01",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  }
+}

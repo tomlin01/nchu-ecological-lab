@@ -1,0 +1,27 @@
+/* This is a compact subject index: each subject and its cases share one data row. */
+body.home-atlas-page #topics{height:100svh;min-height:calc(var(--header-height) + 640px);padding:calc(var(--header-height) + 12px) var(--gutter) 8px;display:flex;flex-direction:column;gap:4px;scroll-margin-top:0}
+#topics:focus{outline:none}
+#topics .directory-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:36px;flex:none}
+#topics #directory-title{font-size:28px;line-height:1.2;margin:0}
+#topics .directory-intro{margin:0;font-size:14px;line-height:1.5;white-space:nowrap;color:var(--muted)}
+#topics .topic-list{display:grid;grid-template-rows:repeat(12,minmax(44px,1fr));flex:1;min-height:528px;padding:0;margin:0}
+#topics .topic-row{display:grid;grid-template-columns:280px minmax(0,1fr);align-items:center;gap:20px;padding:0;scroll-margin-top:calc(var(--header-height) + 12px)}
+#topics .topic-row h3{font-size:17px;line-height:1.3;margin:0;min-width:0}
+#topics .topic-overview-link{display:flex;align-items:center;gap:10px;min-height:44px;padding:0;color:var(--ink)}
+#topics .topic-number{flex:none;min-width:28px;font-size:13px;font-weight:500;color:var(--muted)}
+#topics .topic-name{min-width:0}
+#topics .topic-pages{display:flex;align-items:center;flex-wrap:wrap;gap:0 12px;min-height:44px;margin:0;padding:0;list-style:none}
+#topics .topic-pages li{display:flex;align-items:center;margin:0;padding:0;min-width:0}
+#topics .topic-pages a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;font-size:15px;line-height:1.4;text-decoration:underline;text-decoration-color:var(--line);white-space:nowrap}
+#topics .directory-footer{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:start;flex:none;min-height:44px}
+#topics .directory-footer>a{display:inline-flex;align-items:center;gap:7px;min-height:44px;font-size:14px;text-decoration:underline;justify-self:start}
+#topics .directory-footer>.back-to-top{justify-self:end}
+#topics .directory-back svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5}
+#topics #home-image-sources{margin:0;max-width:70ch;font-size:14px;min-width:0}
+#topics #home-image-sources>summary{min-height:44px;display:flex;align-items:center;font-size:14px;line-height:1.5;cursor:pointer;text-decoration:underline;text-underline-offset:.25em}
+#topics #home-image-sources .source-detail{padding:14px 0 22px;font-size:14px;line-height:1.8}
+#topics:has(#home-image-sources[open]){height:auto}
+#topics:has(#home-image-sources[open]) .topic-list{flex:none}
+@media(min-width:741px) and (max-width:1100px){#topics .topic-row{grid-template-columns:220px minmax(0,1fr);gap:12px}#topics .topic-row h3{font-size:16px;line-height:1.3}#topics .topic-overview-link{gap:8px}#topics .topic-number{min-width:24px}#topics .topic-pages{gap:0 6px}#topics .topic-pages a{padding-inline:5px;font-size:14px}}
+@media(max-width:740px){body.home-atlas-page #topics{height:auto;min-height:100svh;padding-top:calc(var(--header-height) + 18px);padding-bottom:24px;gap:12px}#topics .directory-heading{gap:12px;flex-wrap:wrap}#topics #directory-title{font-size:26px}#topics .directory-intro{font-size:13px}#topics .topic-list{display:block;flex:none;min-height:0}#topics .topic-row{display:block;padding:8px 0 13px}#topics .topic-row h3{font-size:17px}#topics .topic-overview-link{gap:9px}#topics .topic-pages{gap:0 12px;padding-left:33px}#topics .topic-pages a{font-size:15px;padding-inline:0;white-space:normal}#topics .directory-footer{gap:12px;grid-template-columns:1fr auto 1fr}#topics .directory-footer>a,#topics #home-image-sources>summary{font-size:12px}#topics #home-image-sources[open]{grid-column:1/-1;grid-row:2}#topics #home-image-sources[open]>summary{justify-content:center}}
+@media print{body.home-atlas-page #topics{height:auto;min-height:0;padding:18pt 0;display:block}#topics .directory-heading{margin-bottom:15pt}#topics .topic-list{display:block;min-height:0}#topics .topic-row{grid-template-columns:180px 1fr;padding:6pt 0;break-inside:avoid}#topics .topic-pages a{font-size:10pt;min-height:20pt}#topics .topic-overview-link{min-height:20pt}#topics .directory-footer{margin-top:18pt}#topics .directory-back,#topics .back-to-top{display:none!important}}

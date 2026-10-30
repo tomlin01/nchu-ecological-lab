@@ -1,0 +1,25 @@
+{
+  "prototype": "prototype-v01/",
+  "scope": "All19 frozen product, habitat image, geographic data/provenance, prompt and font files used for video",
+  "files": {
+    "app.mjs": "88cd218e0063d0b1eca8b24fa972d422bcde25302afaca35e565413ec6e5000a",
+    "assets/hornet-habitat-v01.png": "043b8a7ed23c33b8124054996df6d01889ceb8c4ab38f16fecf183a2112e4007",
+    "assets/provenance-hornet-v01.json": "91c359cd72eb2fc368f3d256376bdaf4ff4ed126861aaa0a9a6fae9897bbd247",
+    "data/jersey-boundary-v01.json": "afc46cf2dfde6c88e8dfca87e41ffff843d1ef9cb344288c1cd72a9472c8f177",
+    "fonts/font-coverage.json": "2869ca9d45ae814b78563df63d74ee6ea6e490315658df4afce731fd4621be72",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/record-sans.woff2": "a70e4aae657dc665afab4246a299f48d49a46602693bfcc517d59da5510f2e24",
+    "fonts/record-serif.woff2": "a1d25f339ab33d231ff5af33436f03e5a6eb68824213581548d030a2901d735c",
+    "index.html": "a891b5bd28a35f655326506b9031d3d177faf026246378054dc965f1c21e3da4",
+    "model.mjs": "d119a6f27b6aa440046ef005490a3acc6b6ad1e777758ac8545d02602afa08d3",
+    "prepare-fonts.py": "2b42c57d7ea774769c690bccce2ccddc3c9f80477e52ef2babd7084d3c2b1edf",
+    "prompts/hornet-habitat-v01.md": "c06458d55f6281406e284dd22c86cd603b53dae75d71e220190d26f31cad61c8",
+    "scene.mjs": "6b787ea1e1002b5a14b187ae2f0bc125a18ab08dbc1b6343a11aecb21e55ea29",
+    "source/jersey-boundary-provenance-v01.md": "42b8c3708c590a75f31d5edca26c5dd552fbabf49bdaaaa49fc3ecff2a4100d2",
+    "source/jersey-natural-earth-extracted-original-v01.geojson": "5d56cae5bc45fa6b915256b8cf2caf6b74e82ecaa72f0dfa55b1e9d95b5ee248",
+    "SOURCE.md": "fe59e77cc1ccf8144d3ff20400bd2ba715d93b88741f0297d7fc434986b346eb",
+    "style.css": "cded151abc3860c149ad1c96fe1d69d18dcecf6a5863afc30d70057db276febb",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  }
+}

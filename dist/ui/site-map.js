@@ -165,37 +165,73 @@ window.EcologySiteMap = {
           "title": "用長時間攝影整理植物訪花網絡",
           "path": "cases/07-01/07-01.html"
         }
-      ]
+      ],
+      "path": "index.html#topic-07"
     },
     {
       "id": "topic-08",
       "number": "08",
       "title": "大尺度分布與族群變化分析",
-      "cases": []
+      "cases": [
+        {
+          "id": "08-01",
+          "title": "少看到鳥，代表鳥真的變少了嗎？",
+          "path": "cases/08-01/08-01.html"
+        }
+      ],
+      "path": "index.html#topic-08"
     },
     {
       "id": "topic-09",
       "number": "09",
       "title": "統計模型與誤差處理",
-      "cases": []
+      "cases": [
+        {
+          "id": "09-03",
+          "title": "AI數錯了，怎麼估整批總量？",
+          "path": "cases/09-03/09-03.html"
+        }
+      ],
+      "path": "index.html#topic-09"
     },
     {
       "id": "topic-10",
       "number": "10",
       "title": "生態預測與預警",
-      "cases": []
+      "cases": [
+        {
+          "id": "10-01",
+          "title": "湖裡的藍綠藻，幾週後會變多嗎？",
+          "path": "cases/10-01/10-01.html"
+        }
+      ],
+      "path": "index.html#topic-10"
     },
     {
       "id": "topic-11",
       "number": "11",
       "title": "保育與復育決策",
-      "cases": []
+      "cases": [
+        {
+          "id": "11-02",
+          "title": "森林這麼大，巡護員該先去哪裡？",
+          "path": "cases/11-02/11-02.html"
+        }
+      ],
+      "path": "index.html#topic-11"
     },
     {
       "id": "topic-12",
       "number": "12",
       "title": "文獻資料化與研究流程",
-      "cases": []
+      "cases": [
+        {
+          "id": "12-01",
+          "title": "讀到虎頭蜂的新聞，就知道牠在哪裡嗎？",
+          "path": "cases/12-01/12-01.html"
+        }
+      ],
+      "path": "index.html#topic-12"
     }
   ]
 };

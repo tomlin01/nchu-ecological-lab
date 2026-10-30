@@ -64,7 +64,15 @@ def decoded(value):
 
 def excluded_url(value):
     # Apply before normalization too: /01-02/../alias must never be requested.
-    return bool(re.search(r'(?<![\w-])01-02(?![\w-])', decoded(value)))
+    path = '/' + urlsplit(decoded(value)).path.lstrip('/')
+    return (bool(re.search(r'(?<![\w-])01-02(?![\w-])', decoded(value)))
+            or any(path.endswith('/' + name) for name in PROTECTED_HOME_IMAGES))
+
+
+PROTECTED_HOME_IMAGES = (
+    'home-atlas/assets/environments/01-02-ocean-wide-v01.png',
+    'home-atlas/assets/topic-01/01-02-sperm-whale-ocean-v01.png',
+)
 
 
 def safe_url(value):

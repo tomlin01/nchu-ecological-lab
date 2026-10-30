@@ -69,21 +69,6 @@ window.createHabitatCoverMotion = ({section,reduced,getState}) => {
     played=false;dismissed=false;return playEntrance();
   }
   function skipEntrance(){suspend();played=true;}
-  function nudge(button){
-    if(reduced.matches||!available()||entrance||button.inert)return;
-    const wrapper=button.querySelector('.habitat-vignette');if(!wrapper||effects.has(wrapper))return;
-    reset([wrapper]);wrapper.style.willChange='transform';
-    const animation=gsap.timeline({onComplete:()=>finishEffect(wrapper,animation)});
-    effects.set(wrapper,animation);
-    animation.to(wrapper,{rotation:1.5,duration:.09,ease:'power1.out'})
-      .to(wrapper,{rotation:-.65,duration:.09,ease:'power1.inOut'})
-      .to(wrapper,{rotation:0,duration:.12,ease:'power2.out'});
-  }
-  section.querySelectorAll('.asset-button,.case-choice').forEach(control=>{
-    const artwork=buttons.find(button=>button.dataset.case===control.dataset.case);
-    if(!artwork)return;
-    control.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch'&&finePointer.matches)nudge(artwork);});
-  });
   addEventListener('ecologythemechange',suspend);
   reduced.addEventListener('change',()=>{suspend();if(reduced.matches)played=true;sync();});
   return {sync,suspend,replay,skipEntrance,getState:()=>({entrancePlayed:played,entrancePlaying:Boolean(entrance),dismissed,

@@ -1,0 +1,33 @@
+{
+  "case_id": "09-03",
+  "asset_id": "swallow-roost-dawn-v01",
+  "created_at_date": "2026-10-29",
+  "project_path": "assets/swallow-roost-dawn-v01.png",
+  "source_kind": "AI-generated ecological context image",
+  "generation_mode": "built-in image_gen",
+  "original_master_path": "/Users/tom/.codex/generated_images/01a18631-0d33-78f0-987e-02ca7c82408a/exec-cb6a9a3c-7ca2-4ea0-8cb5-cf6b7195ae0d.png",
+  "exact_prompt_path": "prompts/swallow-roost-dawn-v01.md",
+  "referenced_images": [],
+  "transparent_background": false,
+  "dimensions": {"width": 1672, "height": 941},
+  "requested_dimensions": {"width": 1600, "height": 900},
+  "sha256": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7",
+  "rights_note": "Generated with the built-in image_gen tool for this project. No Creative Commons license is asserted. This image was not supplied by the study authors.",
+  "intended_context": "Conceptual Great Lakes-region wetland at dawn with a mixed swallow/martin flock beginning outbound flight.",
+  "meaning_boundary": "Context only. Not a verified study site, documented observation, measured departure, flock count, species identification, radar input, scientific output or evidence of model performance.",
+  "recommended_visible_caption_zh_TW": "AI生成情境圖；非研究原圖",
+  "review": {
+    "saved_project_image_reopened": true,
+    "reed_beds_and_low_water_foreground": true,
+    "loose_flock_concentrated_left_and_center": true,
+    "right_quieter_but_continuous_habitat": true,
+    "warm_dawn_light_and_muted_water": true,
+    "many_small_pointed_wing_bird_forms": true,
+    "some_visible_forked_or_notched_tails": true,
+    "single_species_not_authenticated_or_claimed": true,
+    "no_people_instruments_numbers_text_maps_or_ui_observed": true,
+    "main_flock_focal_region_normalized": [0.02, 0.07, 0.65, 0.50],
+    "use_note": "Retain the broad landscape; avoid close bird portraits or any scientific count from the generated flock.",
+    "generation_count": 1
+  }
+}

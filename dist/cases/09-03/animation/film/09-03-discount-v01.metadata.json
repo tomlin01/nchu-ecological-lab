@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "source_url": "http://127.0.0.1:8957/",
+  "source_directory": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/09-03/prototype-v01",
+  "source_files_unchanged": true,
+  "source_file_count": 20,
+  "source_hash_scope": {
+    "root_files": [
+      "index.html",
+      "style.css",
+      "app.mjs",
+      "scene.mjs",
+      "model.mjs",
+      "prepare-fonts.py",
+      "README.md",
+      "SOURCE.md",
+      "manifest.json",
+      "asset-provenance-v01.json",
+      "asset-provenance-v02.json"
+    ],
+    "subdirectories": [
+      "source",
+      "fonts",
+      "vendor",
+      "assets",
+      "prompts",
+      "data"
+    ],
+    "incidental_qa_artifacts": "excluded"
+  },
+  "source_sha256_before": "source-before.sha256.json",
+  "source_sha256_after": "source-after.sha256.json",
+  "export_api": "DiscountPlayer.renderAt(t)",
+  "export_layout": "export-layout.css",
+  "output": "09-03-discount-v01.mp4",
+  "output_sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e",
+  "started_at": "2026-10-29T15:20:29.654Z",
+  "completed_at": "2026-10-29T15:26:27.860Z",
+  "width": 1600,
+  "height": 900,
+  "fps": 24,
+  "frame_count": 3120,
+  "requested_duration_seconds": 130,
+  "first_renderAt_seconds": 0,
+  "last_renderAt_seconds": 129.95833333333334,
+  "sampling": "All 3120 frames captured separately from DiscountPlayer.renderAt(i / 24); no static-frame substitution.",
+  "frame_clock_ledger": "frame-clock-ledger.jsonl",
+  "screenshot_count": 3120,
+  "screenshot_format": "jpeg",
+  "screenshot_quality": 91,
+  "audio": "none",
+  "ffmpeg_faststart": true,
+  "encoded_frame_checks": [
+    {
+      "time": 0,
+      "filename": "encoded-check/t0.jpg"
+    },
+    {
+      "time": 54,
+      "filename": "encoded-check/t54.jpg"
+    },
+    {
+      "time": 94,
+      "filename": "encoded-check/t94.jpg"
+    },
+    {
+      "time": 126,
+      "filename": "encoded-check/t126.jpg"
+    }
+  ],
+  "mp4_top_level_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "size": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "size": 37615
+    },
+    {
+      "type": "free",
+      "offset": 37647,
+      "size": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 37655,
+      "size": 14292934
+    }
+  ],
+  "ffmpeg_args": [
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-y",
+    "-f",
+    "image2pipe",
+    "-framerate",
+    "24",
+    "-c:v",
+    "mjpeg",
+    "-i",
+    "pipe:0",
+    "-an",
+    "-vf",
+    "scale=in_range=full:out_range=limited,format=yuv420p",
+    "-color_range",
+    "tv",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "18",
+    "-pix_fmt",
+    "yuv420p",
+    "-r",
+    "24",
+    "-frames:v",
+    "3120",
+    "-movflags",
+    "+faststart",
+    "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-rollout/cases/09-03/film-v01/.render-59415.mp4"
+  ],
+  "full_decode_passed": true,
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1600,
+        "height": 900,
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "duration": "130.000000",
+        "nb_frames": "3120",
+        "nb_read_frames": "3120",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "130.000000",
+      "size": "14330589"
+    }
+  },
+  "browser_page_errors": [],
+  "request_route_installed_before_newPage": true,
+  "request_policy": {
+    "allowed_origin": "http://127.0.0.1:8957",
+    "blocked_case_alias_pattern": "/(?:^|\\/)(?:case(?:s)?[\\/_-]?)?0?1[-_]0?2(?:\\/|\\.|$)/i",
+    "external_origins": "abort"
+  },
+  "blocked_request_count": 0,
+  "blocked_requests": [],
+  "failed_requests": []
+}

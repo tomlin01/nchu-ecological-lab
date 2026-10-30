@@ -7,7 +7,7 @@ import sys
 import tempfile
 import unittest
 
-from site_dependencies import REQUIRED_FILES, build_plan, vendor_refs
+from site_dependencies import REQUIRED_FILES, PROTECTED_HOME_IMAGES, build_plan, vendor_refs, excluded_url
 from verify_site import BASE_PATH, verify
 from preview import excluded
 
@@ -69,6 +69,11 @@ class ProjectPathTests(unittest.TestCase):
         self.assertTrue(excluded(BASE_PATH + 'cases/01-02/01-02.html', self.root))
         self.assertTrue(excluded(BASE_PATH + 'cases/01%2D02/animation/index.html', self.root))
         self.assertFalse(excluded(BASE_PATH + 'home-atlas/assets/environments/01-02-ocean.png', self.root))
+
+    def test_protected_home_images_are_static_only(self):
+        for path in PROTECTED_HOME_IMAGES:
+            self.assertTrue(excluded_url(BASE_PATH + path))
+        self.assertFalse(excluded_url(BASE_PATH + 'home-atlas/assets/topic-01/01-01-zebra-grassland-v01.png'))
 
 
 if __name__ == '__main__':

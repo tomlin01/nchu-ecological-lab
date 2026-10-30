@@ -7,6 +7,9 @@ from urllib.parse import unquote, urlsplit
 
 from range_preview import VideoHandler
 from verify_site import BASE_PATH
+from site_dependencies import PROTECTED_HOME_IMAGES
+
+NEUTRAL_HOME_IMAGE = b'<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><rect width="1600" height="900" fill="#dddcd6"/></svg>'
 
 
 def excluded(path, root):
@@ -38,6 +41,16 @@ class ProjectHandler(VideoHandler):
         path = unquote(urlsplit(self.path).path)
         if not path.startswith(BASE_PATH):
             return self.not_found()
+        relative = path.removeprefix(BASE_PATH)
+        if relative in PROTECTED_HOME_IMAGES:
+            from io import BytesIO
+            self.send_response(200)
+            self.send_header('Content-Type', 'image/svg+xml')
+            self.send_header('Content-Length', str(len(NEUTRAL_HOME_IMAGE)))
+            self.end_headers()
+            self.log_message('PROTECTED_HOME_SUBSTITUTION %s', relative)
+            self.remaining = None
+            return BytesIO(NEUTRAL_HOME_IMAGE)
         root = Path(self.directory).resolve()
         if excluded(self.path, root):
             self.send_error(403, 'Excluded from runtime verification')

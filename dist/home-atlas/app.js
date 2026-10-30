@@ -2,8 +2,10 @@
   'use strict';
   const root=document.documentElement;
   const assetBase=new URL('./',document.currentScript.src);
-  const sections=[...document.querySelectorAll('.topic[data-topic]')];
+  const navigationSections=[...document.querySelectorAll('.topic[data-topic]')];
+  const sections=navigationSections.filter(section=>!section.classList.contains('topic-extension'));
   const topicIds=sections.map(section=>section.dataset.topic);
+  const navigationTopicIds=navigationSections.map(section=>section.dataset.topic);
   let pager=null,habitatMotion=null;
   const traitSection=sections.find(section=>section.dataset.topic==='04')||null;
   const field=document.getElementById('topic-01');
@@ -20,11 +22,11 @@
   let configuredReduced=reduced.matches,configuredWidth=innerWidth,configuredHeight=innerHeight;
   let traitEntrancePlayed=false,traitEntranceDismissed=false,traitEntrance=null,traitGeometry=null;
   const failedImages=new Set();
-  const imageList=[...document.querySelectorAll('img')];
+  const imageList=[...document.querySelectorAll('img')].filter(image=>!image.closest('.topic-extension'));
   const initialImageSources=new Map(imageList.map(image=>[image,image.getAttribute('src')]));
   const guidePaths=new Map(sections.filter(section=>section.dataset.topic!=='01').map(section=>[section.dataset.topic,section.querySelector('.selection-guide path')])); // taste-skill-ignore: internal chapter route key
   const $=selector=>document.querySelector(selector);
-  const topicId=value=>{const match=String(value).match(/^(?:#?topic-)?(\d{1,2})$/);const id=match?match[1].padStart(2,'0'):null;return topicIds.includes(id)?id:null;};
+  const topicId=value=>{const match=String(value).match(/^(?:#?topic-)?(\d{1,2})$/);const id=match?match[1].padStart(2,'0'):null;return navigationTopicIds.includes(id)?id:null;};
   const sectionFor=id=>document.getElementById(`topic-${id}`);
   const galleryFor=id=>sectionFor(id).querySelector('.asset-gallery');
   const caseButtons=id=>[...sectionFor(id).querySelectorAll('.case-choice')];
@@ -32,7 +34,7 @@
 
   function status(message){const node=document.getElementById('load-status');if(node.textContent!==message)node.textContent=message;node.parentElement.classList.toggle('is-visible',Boolean(message));}
   function getState(){
-    return {initialized,initError,activeTopic,selectedCases:{...selectedCases},fieldMode:'click',assetsReady,
+    return {initialized,initError,activeTopic,coverCount:navigationSections.length,allTopicIds:[...navigationTopicIds],interactiveTopicIds:[...topicIds],selectedCases:{...selectedCases},fieldMode:'click',assetsReady,
       assetErrors:[...failedImages].map(image=>initialImageSources.get(image)),reducedMotion:reduced.matches,compact:isCompact(),printing,
       selectedAssets:Object.fromEntries(topicIds.map(id=>[id,selectedCases[id]?[...cases.get(selectedCases[id]).assetIds]:[]])),
       mountedAssetCount:document.querySelectorAll('.asset-button img').length,
@@ -286,19 +288,19 @@
     if(printing||reduced.matches!==configuredReduced||innerWidth!==configuredWidth)return;
     const scan=Math.max(parseFloat(getComputedStyle(root).getPropertyValue('--header-height'))+35,innerHeight*.36);
     let current='01'; // taste-skill-ignore: internal chapter route key
-    sections.forEach(section=>{if(section.getBoundingClientRect().top<=scan)current=section.dataset.topic;});
+    navigationSections.forEach(section=>{if(section.getBoundingClientRect().top<=scan)current=section.dataset.topic;});
     if(document.getElementById('topics').getBoundingClientRect().top<=scan)current='topics';
     activeTopic=current;
     document.querySelectorAll('.site-header nav a').forEach(link=>link.getAttribute('href')===(current==='topics'?'#topics':`#topic-${current}`)?link.setAttribute('aria-current','location'):link.removeAttribute('aria-current'));
     habitatMotion?.sync({animate});
   }
   function selectCase(topic,value,{url=true,animate=true}={}){
-    const id=topicId(topic);if(!initialized||!id||!(value===null||(cases.has(value)&&cases.get(value).topic===id)))return false;
+    const id=topicId(topic);if(!initialized||!topicIds.includes(id)||!(value===null||(cases.has(value)&&cases.get(value).topic===id)))return false;
     cancelTopicNavigation();
     if(id==='04'&&(url||value!==null))traitEntranceDismissed=true;
     if(url){cancelAnimationFrame(hashFrame);hashFrame=0;pendingHash=null;}
     if(innerWidth!==configuredWidth)refreshGeometry();
-    selectedCases[id]=value;syncControls(id);
+    document.dispatchEvent(new Event('atlas-hover-reset'));selectedCases[id]=value;syncControls(id);
     if(id==='01')renderField(animate); // taste-skill-ignore: internal chapter route key
     else layoutSelection(id,animate);
     if(url)replaceHash(value?`#case-${value}`:`#topic-${id}`);
@@ -308,7 +310,7 @@
     const id=topic==='topics'?'topics':topicId(topic);if(!initialized||!id)return false;
     if(url){cancelAnimationFrame(hashFrame);hashFrame=0;pendingHash=null;}
     if(innerWidth!==configuredWidth)refreshGeometry();
-    pager.go(id,{url,focus,animate,keyboard});return getState();
+    document.dispatchEvent(new Event('atlas-hover-reset'));pager.go(id,{url,focus,animate,keyboard});return getState();
   }
   function applyHash(hash=pendingHash??location.hash){
     cancelAnimationFrame(hashFrame);hashFrame=0;if(!initialized||printing)return;
@@ -329,7 +331,7 @@
   function layoutAll(){
     if(pager?.isTurning())return;
     if(!initialized||printing)return;
-    renderField(false);topicIds.filter(id=>id!=='01').forEach(id=>{
+    document.dispatchEvent(new Event('atlas-hover-reset'));renderField(false);topicIds.filter(id=>id!=='01').forEach(id=>{
       if(id==='04'&&traitEntrance&&traitGeometryUnchanged())return;
       layoutSelection(id,false);
     });updateActiveTopic();checkTraitEntrance();
@@ -394,7 +396,7 @@
       for(const asset of metadata.assets){const button=document.querySelector(`[data-asset-id="${CSS.escape(asset.id)}"]`);elements.set(asset.id,button);button.style.width=`${asset.width}px`;button.style.height=`${asset.height}px`;button.disabled=false;}
       root.classList.add('atlas-ready','atlas-book-ready');configuredReduced=reduced.matches;configuredWidth=innerWidth;configuredHeight=innerHeight;initialized=true;
       pager=createAtlasPager({ready:()=>initialized&&!printing&&!document.hidden,
-        beforeTurn:()=>{stopTraitEntrance();habitatMotion?.suspend();},
+        beforeTurn:()=>{document.dispatchEvent(new Event('atlas-hover-reset'));stopTraitEntrance();habitatMotion?.suspend();},
         afterTurn:(id,options)=>{
           if(options.keyboard)skipKeyboardEntrance(id);
           if(options.url!==false)replaceHash(id==='topics'?'#topics':`#topic-${id}`);layoutAll();
@@ -445,7 +447,7 @@
   });
   addEventListener('resize',()=>{
     pager?.finish();habitatMotion?.suspend();clearTimeout(resizeTimer);
-    resizeTimer=setTimeout(()=>{const topic=activeTopic,widthChanged=innerWidth!==configuredWidth;refreshGeometry();if(widthChanged&&topicIds.includes(topic))scrollToTopic(topic,{url:false});},100);
+    resizeTimer=setTimeout(()=>{const topic=activeTopic,widthChanged=innerWidth!==configuredWidth;refreshGeometry();if(widthChanged&&navigationTopicIds.includes(topic))scrollToTopic(topic,{url:false});},100);
   });
   compact.addEventListener('change',scheduleLayout);
   shortLandscape.addEventListener('change',scheduleLayout);

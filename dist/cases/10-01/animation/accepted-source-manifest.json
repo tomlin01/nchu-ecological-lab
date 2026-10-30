@@ -1,0 +1,22 @@
+{
+  "prototype": "prototype-v01/",
+  "scope": "Frozen product files used by MP4 render and browser QA",
+  "files": {
+    "app.mjs": "16c055f8aa2001e90736c2723335c1164ebcdb7331209d7b8313c8f32ef84355",
+    "fonts/bloom-sans.woff2": "adac45643fea83c8c1758854f03310554fbed0008fb4f8e7f4af1345110ccce0",
+    "fonts/bloom-serif.woff2": "a5c15046fba95272260fbb531b97ebf67b229160cb673bd7e2be16b029db0be9",
+    "fonts/font-coverage.json": "0c6c4185caf34c7989fababf5311afc1ecee18acd846d383d80af3812f40d6dc",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "index.html": "dec184cd7191970d2da9203fdb47511f04fcc99e17f745375ac705908b7150b6",
+    "lake-three.mjs": "6c6c40e0c18652cd12f277b32172155bbd7200bf6097976258f77d032be41387",
+    "model.mjs": "bdd38a08f994ca92ea741f1fcf6bae4b57e9de6808373519685844cb6e8e351c",
+    "prepare-fonts.py": "92d70bb520d5bf4cf339796a5236ce6e035512f5d04a570802c252574877b459",
+    "scene.mjs": "1c54faa6efda231d25034b09d24641ad32a64b3638fc02c8457d2b797d347239",
+    "SOURCE.md": "271019181cae4c0de158df8d4a340c9ef62b466b8b5acab5351485d489eaed0e",
+    "style.css": "b363b559ed09baca5748911e1ec279fd477403900d90d13414c9a794b8107a5e",
+    "vendor/LICENSE-three.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "vendor/three.core.js": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+    "vendor/three.module.js": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+  }
+}

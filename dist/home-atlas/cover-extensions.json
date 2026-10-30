@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "kind": "natural-history-topic-covers",
+  "new_cover_count": 7,
+  "total_cover_count": 12,
+  "hover_effects_added": false,
+  "covers": [
+    {
+      "id": "06",
+      "name": "DNA與群聚辨識",
+      "short": "DNA與群聚",
+      "title": [
+        "從一段DNA，",
+        "能認出哪些生物？"
+      ],
+      "intro": "比較序列中的差異，整理生物分類與群聚的線索。",
+      "case": "06-01",
+      "label": "看DNA辨識案例",
+      "layout": "right",
+      "alt": "昆蟲、蕨類與落葉組成的自然史小景。",
+      "ground": "third",
+      "image": "assets/topic-06/topic-06-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/06-01/06-01.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-06/prompt.md",
+      "provenance": "assets/topic-06/provenance.json"
+    },
+    {
+      "id": "07",
+      "name": "物種互動與生態網絡",
+      "short": "物種互動",
+      "title": [
+        "生物之間，",
+        "怎麼連成一張網？"
+      ],
+      "intro": "從植物與訪花者的接觸紀錄，看看物種之間的連結。",
+      "case": "07-01",
+      "label": "看植物訪花網絡",
+      "layout": "left",
+      "alt": "蜂與蝴蝶拜訪不同花朵的草地小景，訪花不等於已確認授粉。",
+      "ground": "next",
+      "image": "assets/topic-07/topic-07-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/07-01/07-01.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-07/prompt.md",
+      "provenance": "assets/topic-07/provenance.json"
+    },
+    {
+      "id": "08",
+      "name": "大尺度分布與族群變化分析",
+      "short": "分布與族群",
+      "title": [
+        "哪裡的生物，",
+        "正在變多或變少？"
+      ],
+      "intro": "讓不同地點與年份的觀察更可比較，找出哪裡正在改變。",
+      "case": "08-01",
+      "label": "看鳥類趨勢案例",
+      "layout": "right",
+      "alt": "濕地、草地與林緣，不同鳥類出現在不同深度。",
+      "ground": "paper",
+      "image": "assets/topic-08/topic-08-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/08-01/08-01.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-08/prompt.md",
+      "provenance": "assets/topic-08/provenance.json"
+    },
+    {
+      "id": "09",
+      "name": "統計模型與誤差處理",
+      "short": "統計與誤差",
+      "title": [
+        "資料有誤差，",
+        "結果還有多可靠？"
+      ],
+      "intro": "用抽樣與人工覆核估計總量，同時看清估計的不確定性。",
+      "case": "09-03",
+      "label": "看總量估計案例",
+      "layout": "wide",
+      "alt": "清晨蘆葦水面與離棲鳥群，遠岸有一座小型氣象雷達圓頂。",
+      "ground": "next",
+      "image": "assets/topic-09/topic-09-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/09-03/09-03.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-09/prompt.md",
+      "provenance": "assets/topic-09/provenance.json"
+    },
+    {
+      "id": "10",
+      "name": "生態預測與預警",
+      "short": "預測與預警",
+      "title": [
+        "還沒發生的變化，",
+        "能提早推估嗎？"
+      ],
+      "intro": "用持續監測的訊號推估未來，再以後續量測核對。",
+      "case": "10-01",
+      "label": "看湖泊預測案例",
+      "layout": "right",
+      "alt": "湖岸、蘆葦與細微綠色水色，小型浮標連接水下探頭。",
+      "ground": "third",
+      "image": "assets/topic-10/topic-10-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/10-01/10-01.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-10/prompt.md",
+      "provenance": "assets/topic-10/provenance.json"
+    },
+    {
+      "id": "11",
+      "name": "保育與復育決策",
+      "short": "保育決策",
+      "title": [
+        "有限的保育資源，",
+        "該先用在哪裡？"
+      ],
+      "intro": "把風險、預測把握與現場條件放在一起，協助安排查找與行動。",
+      "case": "11-02",
+      "label": "看巡護選區案例",
+      "layout": "left",
+      "alt": "混合森林中的土徑與林下植被，深處有小型鹿的身影。",
+      "ground": "paper",
+      "image": "assets/topic-11/topic-11-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/11-02/11-02.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-11/prompt.md",
+      "provenance": "assets/topic-11/provenance.json"
+    },
+    {
+      "id": "12",
+      "name": "文獻資料化與研究流程",
+      "short": "文字與資料",
+      "title": [
+        "文字裡的線索，",
+        "怎麼整理成資料？"
+      ],
+      "intro": "讀懂上下文，整理物種與地區線索。",
+      "case": "12-01",
+      "label": "看文字整理案例",
+      "layout": "right",
+      "alt": "無字的野外筆記、紙頁、壓製葉片、草本枝葉與小蛾。",
+      "ground": "next",
+      "image": "assets/topic-12/topic-12-cover-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "href": "cases/12-01/12-01.html",
+      "hover_effect": false,
+      "generated_concept": true,
+      "prompt": "assets/topic-12/prompt.md",
+      "provenance": "assets/topic-12/provenance.json"
+    }
+  ]
+}

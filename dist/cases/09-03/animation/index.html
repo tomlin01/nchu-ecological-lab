@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>AI數錯了，怎麼估整批總量？｜DISCount 概念動畫</title>
+  <meta name="description" content="130秒無聲概念動畫，從燕群雷達計數、按天抽樣覆核到機率加權，理解DISCount如何估計整季累積計數，以及估計仍有哪些誤差。">
+  <link rel="icon" href="data:,">
+  <script>
+    try {
+      const queryTheme = new URLSearchParams(location.search).get('theme');
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('ecology-color-theme'); } catch {}
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(queryTheme) ? queryTheme : savedTheme === 'dark' ? 'dark' : 'light';
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js"></script>
+  <script src="app.mjs" type="module"></script>
+<link rel="stylesheet" href="../embed.css">
+<script type="module" src="../embed.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="player" class="player" aria-labelledby="pageTitle">
+    <header class="player-heading">
+      <div>
+        <p class="eyebrow">主題09・DISCount <span>130秒概念動畫；沒有聲音。</span></p>
+        <h1 id="pageTitle">AI數錯了，<br>怎麼估整批總量？</h1>
+        <p class="opening-copy">從清晨飛出的燕群開始，以「一天」為單位抽樣覆核雷達計數，再估計整季的累積總量。</p>
+      </div>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">切換深色</button>
+    </header>
+
+    <div class="transport" role="group" aria-label="動畫播放控制">
+      <div class="transport-row">
+        <button id="playButton" class="primary" type="button" aria-pressed="false" disabled>播放</button>
+        <button id="replayButton" type="button" disabled>重播</button>
+        <output id="timeReadout" aria-label="目前時間與總長度">00:00 / 02:10</output>
+        <button id="expandButton" type="button" aria-expanded="false" aria-pressed="false" aria-controls="player">放大觀看</button>
+      </div>
+      <label class="sr-only" for="seekRange">播放進度</label>
+      <input id="seekRange" type="range" min="0" max="130" step="0.0416666667" value="0" aria-valuetext="00:00">
+      <div class="frame-controls" role="group" aria-label="檢查每一幀">
+        <button type="button" data-frame="-1" disabled>上一幀</button>
+        <button type="button" data-frame="1" disabled>下一幀</button>
+        <span>24 fps <span class="keyboard-hint">・空白鍵播放／暫停・← → 前後一秒</span></span>
+      </div>
+    </div>
+
+    <p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入場景與字型。載入後，按播放開始。</p>
+    <div id="playerError" class="error-message" hidden>
+      <p id="playerErrorCopy"></p>
+      <button id="retryButton" type="button">重新載入</button>
+    </div>
+
+    <div class="viewing-area">
+      <div class="composition-wrap">
+        <div id="composition" class="composition" tabindex="0" aria-label="130秒燕群雷達計數與DISCount抽樣估計動畫。空白鍵播放或暫停，方向鍵前後一秒。"></div>
+        <p id="loadingNote" class="loading-note" aria-hidden="true">正在準備畫面</p>
+      </div>
+      <aside class="narrative" aria-labelledby="phaseTitle">
+        <p id="phaseLabel" class="phase-label">1 / 8 · 清晨的燕群</p>
+        <h2 id="phaseTitle">鳥群每天飛出，整季的紀錄怎麼估？</h2>
+        <p id="phaseCopy">美國五大湖周邊，有些燕科鳥類會聚在一起過夜。清晨，鳥群離開棲地覓食，天氣雷達也可能記錄到牠們向外散開的訊號。</p>
+        <p id="phaseNote" class="phase-note">棲地照片為AI生成情境。畫面不指定單一物種，也不是原研究現場。</p>
+      </aside>
+    </div>
+
+    <nav id="phaseNavigation" class="phase-navigation" aria-label="動畫段落"></nav>
+
+    <footer class="reading-footer">
+      <noscript><p>動畫需要 JavaScript。你仍可閱讀下方解說與<a href="SOURCE.md">來源記錄</a>。</p></noscript>
+      <details class="static-reading">
+        <summary>不播放，直接閱讀</summary>
+        <ol>
+          <li>五大湖周邊的部分燕科鳥類會集體過夜，清晨再向外飛散。棲地畫面是AI生成情境，不指定單一物種，也不是原研究現場。</li>
+          <li>鳥群向外飛散時，雷達可能留下逐漸擴張的環狀訊號。電腦先找出並追蹤訊號，再由反射率換算計數。一個亮點不等於一隻鳥；人工參考計數也來自覆核後的雷達資料。抽樣覆核以「一天」為單位。</li>
+          <li>作者公開的KBUF雷達站2010年資料包含92個日序值，自動計數與人工參考計數仍有差異。研究利用12座雷達站、約20年的資料，將每個站點與年份分開估計。目標是整季累積計數，不是逐張影像辨識都正確。</li>
+          <li>先看四天的教學例。電腦預估A、B、C、D日分別為10、20、30、40，總量為100；抽樣機率設為10%、20%、30%、40%。預估較多的日子較容易被抽到，四天仍各有非零機率，不是直接挑最大的幾天。</li>
+          <li>一次可能的抽取是D、B、D、C，人工參考計數依序為44、18、44、36。這是有放回抽樣：四次抽取只涉及三個不同日子。重抽D日可沿用已做的覆核，估計時仍保留四次抽取。</li>
+          <li>每次先算「人工參考計數÷電腦預估」。四次比值為1.1、0.9、1.1、1.2，平均1.075，再乘整批電腦總量100，得到估計值107.5。範例中四天全部覆核後的總量是110；抽樣機率與估計式必須配套，不能直接平均抽中日子的計數。</li>
+          <li>四天各抽四次，共有256種抽取順序。完整枚舉並按各自機率加權，DISCount與均勻抽樣的平均估計都是110。這組教學例中，DISCount的分布較集中，但單次仍可能偏高或偏低；這不是論文實驗或95%信賴區間，集中程度也取決於電腦計數是否有幫助。</li>
+          <li>論文鳥群實驗達平均相對誤差20%時，DISCount所需覆核抽樣日約為均勻隨機抽樣的三分之一。這是1000次試驗的平均結果，不保證每次誤差都在20%內；研究的95%信賴區間也有涵蓋不足的問題。跨天累積可能重複包含同一批鳥，不能解作整區不重複的鳥隻總數。</li>
+        </ol>
+        <p>抽樣條件、計數單位、示例資料及作者實驗的對應範圍見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <details>
+        <summary>研究與畫面從哪裡來</summary>
+        <p>研究：<a href="https://ojs.aaai.org/index.php/AAAI/article/download/30235/32198" target="_blank" rel="noopener">Perez、Maji與Sheldon，2024，AAAI-24</a>，<i>DISCount: Counting in Large Image Collections with Detector-Based Importance Sampling</i>。</p>
+        <p>本動畫聚焦雷達鳥群資料：以一天為抽樣與覆核單位，估計一個站點與年份的整季累積計數。人工參考計數仍由覆核後的雷達資料換算，不是現場逐隻清點。</p>
+        <p>作者公開日序資料、四天教學例、完整枚舉與論文實驗分開呈現，沒有重新執行偵測模型。圖像、數字與作者研究的對應範圍見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <p class="prototype-note">09-03・獨立動畫試作・130秒・無聲。尚未製作正式案例頁。</p>
+    </footer>
+  </main>
+</body>
+</html>

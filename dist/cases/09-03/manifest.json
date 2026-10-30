@@ -1,0 +1,181 @@
+{
+  "case_id": "09-03",
+  "title": "AI數錯了，怎麼估整批總量？",
+  "version": "web-v01",
+  "entry": "09-03.html",
+  "status": "integrated_local_verified",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 130,
+  "mp4": "animation/film/09-03-discount-v01.mp4",
+  "mp4_sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "hero_data_kind": "verified-teaching-count-units",
+  "hero_sampling_executed": false,
+  "author_chart_series_points": 92,
+  "files": {
+    "09-03.html": {
+      "bytes": 18735,
+      "sha256": "e3a88860daf1c00b7b735039cff3da94b83268106342743a92d7a9b80392a681"
+    },
+    "SOURCE.md": {
+      "bytes": 4325,
+      "sha256": "5769829a89d07f5976d8d1803a110a07d5721e390dae7aca66fc5dd760e368d5"
+    },
+    "animation/README.md": {
+      "bytes": 1172,
+      "sha256": "02836c5605adc3f51fba04e64afea7a7fd7c277edb8af310014fa2a2eb8fbfe1"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 3880,
+      "sha256": "e32666ccd1d6d002c1d28b59e2789f7c0afd94521c94776dc6d43bddf566a2c2"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 1883,
+      "sha256": "0d8bac349e87abd07ae9a224afb4fd870f4cef44cf1659e6674cb3f902684605"
+    },
+    "animation/app.mjs": {
+      "bytes": 13073,
+      "sha256": "4e3c05416f97e97ded52991ddf3be65e047f9c60c8bab2598459a3aec8f2601a"
+    },
+    "animation/assets/provenance-swallow-v01.json": {
+      "bytes": 2004,
+      "sha256": "67ee8246c07f6e4d652b18db2ce364a3fccc42c347f2ddbcaaf2369ebe42f2d6"
+    },
+    "animation/assets/swallow-roost-dawn-v01.png": {
+      "bytes": 2656167,
+      "sha256": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7"
+    },
+    "animation/data/author-kbuf-2010-v01.json": {
+      "bytes": 9503,
+      "sha256": "5a5a4071721a007350b061f6109b22cee080a8a29699155c9a0f2aac5bbf4844"
+    },
+    "animation/data/sampling-teaching-v01.json": {
+      "bytes": 21598,
+      "sha256": "4a70697f36e6dbe23812cead0e27110b44f72abc97fba1e6c2319da420695a45"
+    },
+    "animation/data/sampling-verification-v01.json": {
+      "bytes": 2189,
+      "sha256": "f6efe74a85f552f629cf18c84a70d514ceaf145cd5b1c43f343c8be022ceee3e"
+    },
+    "animation/film/09-03-discount-v01.metadata.json": {
+      "bytes": 3883,
+      "sha256": "c8a5cbcf10b83f6d346b711d7c5d823ba12f42f34ad8db0f6a8561f97127cbee"
+    },
+    "animation/film/09-03-discount-v01.mp4": {
+      "bytes": 14330589,
+      "sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e"
+    },
+    "animation/fonts/09-sans.woff2": {
+      "bytes": 174784,
+      "sha256": "4ea100972dfa1962f6940f7fbc4fc542ad599c704c5ef179ffe0d5f5fef881af"
+    },
+    "animation/fonts/09-serif.woff2": {
+      "bytes": 235852,
+      "sha256": "cb4bc03948e031ccba138191523ab1ff332ddfb762643408dba00edbd147b843"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/font-coverage.json": {
+      "bytes": 1326,
+      "sha256": "277be3bc63cde20ba3e8a41d805bd8e49cae56e541dc228417a6b76174359c54"
+    },
+    "animation/index.html": {
+      "bytes": 7872,
+      "sha256": "b4d6f1b475c20eaacfaab098574516c11a163149e8e14a45322c707707ada820"
+    },
+    "animation/manifest.json": {
+      "bytes": 6424,
+      "sha256": "84eaddcc87e81ca425048dfe1a07402e4514a4d2c7f93a16de4c40c0ca5579b4"
+    },
+    "animation/model.mjs": {
+      "bytes": 4826,
+      "sha256": "6c485d5f90dbd278549f5b062c52cc00b0f90a7e76f8c79fa95f7409207d4ed1"
+    },
+    "animation/prepare-fonts.py": {
+      "bytes": 3363,
+      "sha256": "23069a05265a9c0a216147dfeaca9a3c0ed5f13c740f26789776354d60fea8fd"
+    },
+    "animation/prompts/swallow-roost-dawn-v01.md": {
+      "bytes": 3896,
+      "sha256": "4cfa58344799b0924552f54e125b0a9484f94ae453964a14fcd2d72f74708e79"
+    },
+    "animation/scene.mjs": {
+      "bytes": 15409,
+      "sha256": "950c7490222ced49455bf6d30e99f540773b5642960146148bd9d18c71b7d990"
+    },
+    "animation/style.css": {
+      "bytes": 9635,
+      "sha256": "2f20ff6fc560e2a069761b0f4e9e83808562e148b0f71efa6b8058ae81cdcc2c"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "case.css": {
+      "bytes": 15823,
+      "sha256": "4b474b5c6bd8273287be32c06e6fb35c876d4d91fd665fe0736e1d577fc975ac"
+    },
+    "case.js": {
+      "bytes": 12463,
+      "sha256": "f9c6bc44016735620a9a797c02c2efcf4d92053e055612f24b2172437b4663b3"
+    },
+    "embed.css": {
+      "bytes": 1824,
+      "sha256": "1d73c07c46838f7e4e0ec4148b7fa010dde24d3977bdf102c2395c778b907779"
+    },
+    "embed.js": {
+      "bytes": 8715,
+      "sha256": "34f5da5b07bec0b77cd64e0cec6db8955333f0ddcb8efd9c1d5c9eea695d5c4b"
+    },
+    "fonts/09-sans.woff2": {
+      "bytes": 209600,
+      "sha256": "eac2eac93d25a01c852ea1e7416fcfd0aeb03bef154936c4784686b5c2cfd215"
+    },
+    "fonts/09-serif.woff2": {
+      "bytes": 283060,
+      "sha256": "1786a1cf0a35905bf63689365dd3e5f1ac2770334144ada5747979a90ed1ebd1"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/web-font-coverage.json": {
+      "bytes": 1637,
+      "sha256": "bb6f3099cb76eb585df3c69c4290ed5b3139f15da33cec93750bb0f1b5ced6cd"
+    },
+    "hero.js": {
+      "bytes": 2201,
+      "sha256": "016dac4d59c4a34d7e46d43b986a613707452385727b55d7e8ed6744d7bd9295"
+    },
+    "index.html": {
+      "bytes": 203,
+      "sha256": "4c943e64fdd66094be447b9b24b9cfe9e5ee79407c04f8eb11ef7aa7019c28fd"
+    },
+    "prepare-web-fonts-v01.py": {
+      "bytes": 3903,
+      "sha256": "d455dd633def2e27ce246e56b34bd452d3a647a60bf4d809ada01b62742ce6ef"
+    }
+  },
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "09-03",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  },
+  "updated": "2026-10-29T17:28:27.298282+00:00"
+}

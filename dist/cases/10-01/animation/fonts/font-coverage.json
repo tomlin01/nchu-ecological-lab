@@ -1,0 +1,27 @@
+{
+  "text_files": {
+    "index.html": "dec184cd7191970d2da9203fdb47511f04fcc99e17f745375ac705908b7150b6",
+    "app.mjs": "16c055f8aa2001e90736c2723335c1164ebcdb7331209d7b8313c8f32ef84355",
+    "style.css": "b363b559ed09baca5748911e1ec279fd477403900d90d13414c9a794b8107a5e",
+    "model.mjs": "bdd38a08f994ca92ea741f1fcf6bae4b57e9de6808373519685844cb6e8e351c",
+    "scene.mjs": "1c54faa6efda231d25034b09d24641ad32a64b3638fc02c8457d2b797d347239"
+  },
+  "unicode_count": 499,
+  "scope": "Only final index, app, style, model and scene. No lake-three or vendor scan.",
+  "fonts": {
+    "bloom-sans.woff2": {
+      "source": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-whale-focus/fonts/NotoSansTC-VF.ttf",
+      "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+      "bytes": 164664,
+      "sha256": "adac45643fea83c8c1758854f03310554fbed0008fb4f8e7f4af1345110ccce0",
+      "missing_unicode": []
+    },
+    "bloom-serif.woff2": {
+      "source": "/Users/tom/Documents/Codex/2026-10-14/new-chat/work/ecology-ai-whale-focus/fonts/NotoSerifTC-VF.ttf",
+      "source_sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a",
+      "bytes": 224940,
+      "sha256": "a5c15046fba95272260fbb531b97ebf67b229160cb673bd7e2be16b029db0be9",
+      "missing_unicode": []
+    }
+  }
+}

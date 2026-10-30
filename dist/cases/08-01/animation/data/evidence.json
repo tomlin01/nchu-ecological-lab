@@ -1,0 +1,63 @@
+{
+  "official_map": {
+    "path": "work/keynote-12/shipping-assets/case09-ebird-sage-thrasher-trends.png",
+    "sha256": "8e6ebdd19dcd1bf96dc8ed738e91cdfa4b7e8e49bca0af33bf3d06c3bc24c3d4",
+    "source_url": "https://ebird.github.io/ebirdst/articles/trends_files/figure-html/spatial-circles-map-1.png",
+    "source_page": "https://ebird.github.io/ebirdst/articles/trends.html",
+    "organism": "Sage Thrasher",
+    "scientific_name": "Oreoscoptes montanus",
+    "version_year": 2022,
+    "period": [
+      2012,
+      2022
+    ],
+    "season": "breeding",
+    "season_dates": [
+      "05-17",
+      "07-12"
+    ],
+    "grid_km": [
+      27,
+      27
+    ],
+    "color": "cumulative relative abundance change, red decrease / blue increase",
+    "circle_area": "roughly proportional to relative abundance at midperiod",
+    "contains_cellwise_confidence_intervals": false,
+    "uncertainty_warning": "官方示範R碼直接依abd_trend著色，未套用信賴區間遮罩；不能把圖中的近白色當成不確定地點。",
+    "annual_frames_available_from_this_png": false
+  },
+  "validation_species": [
+    "Wood Thrush",
+    "Canada Warbler",
+    "Long-billed Curlew"
+  ],
+  "validation_species_period": [
+    2007,
+    2021
+  ],
+  "demo": {
+    "bird_pool_count": 4,
+    "bird_ids": [
+      "bird-1",
+      "bird-2",
+      "bird-3",
+      "bird-4"
+    ],
+    "observed_at_end": [
+      2,
+      4
+    ],
+    "minutes": [
+      15,
+      60
+    ],
+    "distance_km": [
+      0.5,
+      2
+    ],
+    "real_observations": false
+  },
+  "model_rerun": false,
+  "generated_assets": "assets/provenance.json",
+  "source_reading": "SOURCE.md"
+}

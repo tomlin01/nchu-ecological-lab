@@ -1,0 +1,172 @@
+{
+  "case_id": "10-01",
+  "title": "湖裡的藍綠藻，幾週後會變多嗎？",
+  "version": "web-v01",
+  "entry": "10-01.html",
+  "status": "completed_local",
+  "animation_entry": "animation/index.html",
+  "animation_duration_seconds": 120,
+  "mp4": "animation/film/10-01-bloom-v01.mp4",
+  "mp4_sha256": "8b5e4dc4a14192d10d245983a02f4185a616bdb7e1b3c0c5923ad4fd3f6f852d",
+  "animation_user_accepted": true,
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "hero_horizon_positions_are_demonstrations": true,
+  "files": {
+    "10-01.html": {
+      "bytes": 12274,
+      "sha256": "f3d366bc19e9a5cf49b86ffcb7d7521e6af376ae8f4921b0ca20c425b4247b84"
+    },
+    "SOURCE.md": {
+      "bytes": 3015,
+      "sha256": "fc43ba7cf6a3d01aadd730c6ed369247ba9f874e626f2becfaf57637f29f85c2"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 2678,
+      "sha256": "271019181cae4c0de158df8d4a340c9ef62b466b8b5acab5351485d489eaed0e"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 1601,
+      "sha256": "e56600841680f98f5d0e07d531fedcb678ac3d026864538a7336a5b61f92f6bb"
+    },
+    "animation/app.mjs": {
+      "bytes": 13070,
+      "sha256": "16c055f8aa2001e90736c2723335c1164ebcdb7331209d7b8313c8f32ef84355"
+    },
+    "animation/embed.css": {
+      "bytes": 1719,
+      "sha256": "8fae7674fc406f07a786931ecab10c3baeaa512ff4780ece13738bfbcf2bd8f9"
+    },
+    "animation/embed.js": {
+      "bytes": 8651,
+      "sha256": "d9ae750325cb033c1a74ecc1c0275e85ebdde9b1e7ff75a858cb71aa2775cfe5"
+    },
+    "animation/film/10-01-bloom-v01.metadata.json": {
+      "bytes": 3710,
+      "sha256": "b61924bcab3bf437d95adf9831b6cd727161a8197174cbc8da9590233a50ad95"
+    },
+    "animation/film/10-01-bloom-v01.mp4": {
+      "bytes": 10451995,
+      "sha256": "8b5e4dc4a14192d10d245983a02f4185a616bdb7e1b3c0c5923ad4fd3f6f852d"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/bloom-sans.woff2": {
+      "bytes": 164664,
+      "sha256": "adac45643fea83c8c1758854f03310554fbed0008fb4f8e7f4af1345110ccce0"
+    },
+    "animation/fonts/bloom-serif.woff2": {
+      "bytes": 224940,
+      "sha256": "a5c15046fba95272260fbb531b97ebf67b229160cb673bd7e2be16b029db0be9"
+    },
+    "animation/fonts/font-coverage.json": {
+      "bytes": 1337,
+      "sha256": "0c6c4185caf34c7989fababf5311afc1ecee18acd846d383d80af3812f40d6dc"
+    },
+    "animation/index.html": {
+      "bytes": 7284,
+      "sha256": "2384e652ef4a1949846660547ae94345b571b4b464cf167d7079cbfa03125406"
+    },
+    "animation/lake-three.mjs": {
+      "bytes": 25172,
+      "sha256": "6c6c40e0c18652cd12f277b32172155bbd7200bf6097976258f77d032be41387"
+    },
+    "animation/manifest.json": {
+      "bytes": 4747,
+      "sha256": "8a03f188a685510a7805574a4658554134eb1824b7705d71f9e84c5a6472be2f"
+    },
+    "animation/model.mjs": {
+      "bytes": 3923,
+      "sha256": "bdd38a08f994ca92ea741f1fcf6bae4b57e9de6808373519685844cb6e8e351c"
+    },
+    "animation/prepare-fonts.py": {
+      "bytes": 3329,
+      "sha256": "92d70bb520d5bf4cf339796a5236ce6e035512f5d04a570802c252574877b459"
+    },
+    "animation/scene.mjs": {
+      "bytes": 13531,
+      "sha256": "1c54faa6efda231d25034b09d24641ad32a64b3638fc02c8457d2b797d347239"
+    },
+    "animation/style.css": {
+      "bytes": 9706,
+      "sha256": "b363b559ed09baca5748911e1ec279fd477403900d90d13414c9a794b8107a5e"
+    },
+    "animation/vendor/LICENSE-three.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "animation/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "animation/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "assets/10-01-lake-concept-v01.jpg": {
+      "bytes": 25560,
+      "sha256": "76a57a7ac6552e9c932e6447b681d71869cd32a9e3005c0e7c166057e729d550"
+    },
+    "assets/provenance.json": {
+      "bytes": 537,
+      "sha256": "14effede66e01972f6b7a1df4b5a1ac13e59bc91186bd9be6b19afe98fc53342"
+    },
+    "case.css": {
+      "bytes": 13000,
+      "sha256": "e8ecb0b7c844859700fb5f25afcd0fca8aa714e1f91352affb1834097a94627d"
+    },
+    "case.js": {
+      "bytes": 12445,
+      "sha256": "7ed86a6bf7b9a8769f314deb5eab98432e21a9d85c4620735323ea0b8ec7b631"
+    },
+    "fonts/10-sans.woff2": {
+      "bytes": 181936,
+      "sha256": "9db75027520256598459e15316804c3dc18e6020c3ee30ef0bb0270e10128403"
+    },
+    "fonts/10-serif.woff2": {
+      "bytes": 248384,
+      "sha256": "9ba1a22ef081d6c108e7ac5a7347c0becebdf9bed02fc67952c8c431c64336dc"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "f3b13047891e8f10a03cfa4b28a0d36a625a0884dfea6dc02230d9a046f6a23a"
+    },
+    "hero.js": {
+      "bytes": 1676,
+      "sha256": "a9788c2a52d65804ea31d76f5ddfce154df7a9e58510afb26b544f2ea19f065a"
+    },
+    "index.html": {
+      "bytes": 199,
+      "sha256": "2197b93d742872a152f71f7aed7e11fd22bf0861ed35d0ac67ccc6ee52725cb1"
+    },
+    "prepare-web-fonts-v01.py": {
+      "bytes": 3859,
+      "sha256": "9756bb9c7eea81429c4f0a8fe917bd7520520b16853d6df3e6559c9243bd5676"
+    }
+  },
+  "updated": "2026-10-29T17:28:27.298282+00:00",
+  "verification": "work/ecology-ai-rollout/cases/10-01/web-review-v01/verification-current.json",
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "10-01",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  }
+}

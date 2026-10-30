@@ -1,0 +1,14 @@
+{
+  "kind": "Three.js concept render, not field photography",
+  "file": "10-01-lake-concept-v01.jpg",
+  "sha256": "76a57a7ac6552e9c932e6447b681d71869cd32a9e3005c0e7c166057e729d550",
+  "width": 800,
+  "height": 410,
+  "source": "accepted prototype-v01/lake-three.mjs",
+  "source_sha256": "6c6c40e0c18652cd12f277b32172155bbd7200bf6097976258f77d032be41387",
+  "time": 27,
+  "reducedMotion": true,
+  "view": "probe cutaway",
+  "role": "No-JS / WebGL-unavailable fallback for same static hero scene",
+  "generative_image_model_used": false
+}

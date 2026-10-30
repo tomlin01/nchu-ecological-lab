@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>讀到虎頭蜂的新聞，就知道牠在哪裡嗎？｜物種與地區線索動畫</title>
+  <meta name="description" content="130秒無聲概念動畫，從論文Table 2新聞文字示例到候選欄位與澤西島區域，理解出現紀錄分類、地區線索與回查尺度。">
+  <link rel="icon" href="data:,">
+  <script>
+    try {
+      const queryTheme = new URLSearchParams(location.search).get('theme');
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('ecology-color-theme'); } catch {}
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(queryTheme) ? queryTheme : savedTheme === 'dark' ? 'dark' : 'light';
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js"></script>
+  <script src="app.mjs" type="module"></script>
+<link rel="stylesheet" href="embed.css">
+<script type="module" src="embed.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="player" class="player" aria-labelledby="pageTitle">
+    <header class="player-heading">
+      <div>
+        <p class="eyebrow">文字整理與地區尺度 <span>130秒概念動畫；沒有聲音。</span></p>
+        <h1 id="pageTitle">讀到虎頭蜂的新聞，<br>就知道牠在哪裡嗎？</h1>
+        <p class="opening-copy">從報導原句，整理可回查的物種與地區線索。</p>
+      </div>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">切換深色</button>
+    </header>
+
+    <div class="transport" role="group" aria-label="動畫播放控制">
+      <div class="transport-row">
+        <button id="playButton" class="primary" type="button" aria-pressed="false" disabled>播放</button>
+        <button id="replayButton" type="button" disabled>重播</button>
+        <output id="timeReadout" aria-label="目前時間與總長度">00:00 / 02:10</output>
+        <button id="expandButton" type="button" aria-expanded="false" aria-pressed="false" aria-controls="player">放大觀看</button>
+      </div>
+      <label class="sr-only" for="seekRange">播放進度</label>
+      <input id="seekRange" type="range" min="0" max="130" step="0.0416666667" value="0" aria-valuetext="00:00">
+      <div class="frame-controls" role="group" aria-label="檢查每一幀">
+        <button type="button" data-frame="-1" disabled>上一幀</button>
+        <button type="button" data-frame="1" disabled>下一幀</button>
+        <span>24 fps <span class="keyboard-hint">・空白鍵播放／暫停・← → 前後一秒</span></span>
+      </div>
+    </div>
+
+    <p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入場景與字型。載入後，按播放開始。</p>
+    <div id="playerError" class="error-message" hidden>
+      <p id="playerErrorCopy"></p>
+      <button id="retryButton" type="button">重新載入</button>
+    </div>
+
+    <div class="viewing-area">
+      <div class="composition-wrap">
+        <div id="composition" class="composition" tabindex="0" aria-label="130秒物種與地區線索概念動畫。空白鍵播放或暫停，方向鍵前後一秒。"></div>
+        <p id="loadingNote" class="loading-note" aria-hidden="true">正在準備畫面</p>
+      </div>
+      <aside class="narrative" aria-labelledby="phaseTitle">
+        <p id="phaseLabel" class="phase-label">1 / 6 · 從文字線索開始</p>
+        <h2 id="phaseTitle">讀到虎頭蜂的新聞，就知道牠在哪裡嗎？</h2>
+        <p id="phaseCopy">看到物種名字，還要讀報導內容，才能判斷是否有出現紀錄與地區線索。</p>
+        <p id="phaseNote" class="phase-note">目標物種已指定。昆蟲情境只介紹研究對象，不作影像鑑定。</p>
+      </aside>
+    </div>
+
+    <nav id="phaseNavigation" class="phase-navigation" aria-label="動畫段落"></nav>
+
+    <footer class="reading-footer">
+      <noscript><p>動畫需要 JavaScript。你仍可閱讀下方解說與<a href="SOURCE.md">來源記錄</a>。</p></noscript>
+      <details class="static-reading">
+        <summary>不播放，直接閱讀</summary>
+        <ol>
+          <li>研究追蹤散在文字裡的外來物種出現線索。任務事先指定黃腳虎頭蜂 <i>Vespa velutina</i>；動畫中的昆蟲圖只介紹研究對象，沒有透過照片辨識物種。</li>
+          <li>論文 Table 2 的新聞文字示例，忠實中文轉述為「外來虎頭蜂首次在澤西島被發現」。讀者可以從同一段文字找到出現陳述與地名。示例的預期輸出屬於論文說明，不是本次模型回覆。</li>
+          <li>同樣提到物種，「未來可能適合生存」描述的是潛在分布，不能當作已出現。動畫中的這句對照是教學改寫。判斷仍需讀上下文，間接描述也可能支持出現紀錄。</li>
+          <li>論文的預期輸出包括分類 YES 與地區 Jersey Island。本頁另將文字來源記為「論文 Table 2 新聞示例」，讓欄位能指回原句。這是候選報導紀錄，並非新的野外觀察。</li>
+          <li>地圖突出整個澤西島。論文預期的地理編碼表示報導區域，不是精確的發現地點。座標有多位小數，也不能取代原文提供的地理尺度。</li>
+          <li>當時的 GPT-4 在150筆黃腳虎頭蜂新聞標題／簡短說明的出現紀錄分類上，正確率為92.7%。測試期是2023年12月11日至2024年1月3日。這項分類正確率不代表所有欄位皆正確，也不代表目前模型的效能。候選紀錄仍需核對內容與地點尺度。</li>
+        </ol>
+        <p>研究共測試600筆短文，由兩物種、兩種來源、每組150筆構成。來源為新聞標題／簡短說明與論文標題／摘要，部分只有標題，並非600篇新聞全文。</p>
+        <p>完整來源、Table 2 預期輸出與評估條件見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <details>
+        <summary>研究與畫面從哪裡來</summary>
+        <p>研究：<a href="https://doi.org/10.1016/j.ecoinf.2024.102742" target="_blank" rel="noopener">Castro 等人，2024，Ecological Informatics 82，102742</a>，<i>Large language models overcome the challenges of unstructured text data in ecology</i>。本案採用正式出版研究的 Table 2 示例與分類評估。</p>
+        <p>正式研究採 CC BY 4.0，授權資訊見<a href="https://repositorio.ulisboa.pt/entities/publication/d7f02fe4-00dd-4d8b-9e98-3dc34e6f6711" target="_blank" rel="noopener">機構典藏紀錄</a>。本頁翻譯、重排 Table 2 的新聞文字示例，並保留 Expected result「預期輸出」的身分。</p>
+        <p>原新聞的品牌、發布日期與網址尚未取得。文字來源以論文 Table 2 標示，沒有加入未核實的媒體資訊。目標物種由任務提供；地區地理編碼不作精確發現點。</p>
+        <p>動畫未呼叫模型，也沒有確認新的物種出現紀錄。概念視覺、澤西島邊界資料、翻譯與數字的完整出處見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <p class="prototype-note">12-01・130秒概念動畫・無聲</p>
+    </footer>
+  </main>
+</body>
+</html>

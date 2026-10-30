@@ -1,0 +1,22 @@
+{
+  "app.mjs": "4e3c05416f97e97ded52991ddf3be65e047f9c60c8bab2598459a3aec8f2601a",
+  "assets/provenance-swallow-v01.json": "67ee8246c07f6e4d652b18db2ce364a3fccc42c347f2ddbcaaf2369ebe42f2d6",
+  "assets/swallow-roost-dawn-v01.png": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7",
+  "data/author-kbuf-2010-v01.json": "5a5a4071721a007350b061f6109b22cee080a8a29699155c9a0f2aac5bbf4844",
+  "data/sampling-teaching-v01.json": "4a70697f36e6dbe23812cead0e27110b44f72abc97fba1e6c2319da420695a45",
+  "data/sampling-verification-v01.json": "f6efe74a85f552f629cf18c84a70d514ceaf145cd5b1c43f343c8be022ceee3e",
+  "fonts/09-sans.woff2": "4ea100972dfa1962f6940f7fbc4fc542ad599c704c5ef179ffe0d5f5fef881af",
+  "fonts/09-serif.woff2": "cb4bc03948e031ccba138191523ab1ff332ddfb762643408dba00edbd147b843",
+  "fonts/font-coverage.json": "277be3bc63cde20ba3e8a41d805bd8e49cae56e541dc228417a6b76174359c54",
+  "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+  "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+  "index.html": "1e92d7f216dec4e9739f6b56479ccf471f4672b96cdd1fc44358016ac094a4e9",
+  "model.mjs": "6c485d5f90dbd278549f5b062c52cc00b0f90a7e76f8c79fa95f7409207d4ed1",
+  "prepare-fonts.py": "23069a05265a9c0a216147dfeaca9a3c0ed5f13c740f26789776354d60fea8fd",
+  "prompts/swallow-roost-dawn-v01.md": "4cfa58344799b0924552f54e125b0a9484f94ae453964a14fcd2d72f74708e79",
+  "README.md": "02836c5605adc3f51fba04e64afea7a7fd7c277edb8af310014fa2a2eb8fbfe1",
+  "scene.mjs": "950c7490222ced49455bf6d30e99f540773b5642960146148bd9d18c71b7d990",
+  "SOURCE.md": "e32666ccd1d6d002c1d28b59e2789f7c0afd94521c94776dc6d43bddf566a2c2",
+  "style.css": "2f20ff6fc560e2a069761b0f4e9e83808562e148b0f71efa6b8058ae81cdcc2c",
+  "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+}

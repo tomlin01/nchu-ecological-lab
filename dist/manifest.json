@@ -5,7 +5,7 @@
   "entry": "index.html",
   "directory": {
     "topic_count": 12,
-    "available_case_count": 22,
+    "available_case_count": 27,
     "topics": [
       {
         "id": 1,
@@ -74,43 +74,66 @@
         "case_ids": [
           "06-01"
         ],
-        "landing_entry": "index.html#topic-06"
+        "landing_entry": "index.html#topic-06",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 7,
         "title": "物種互動與生態網絡",
         "case_ids": [
           "07-01"
-        ]
+        ],
+        "landing_entry": "index.html#topic-07",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 8,
         "title": "大尺度分布與族群變化分析",
-        "case_ids": []
+        "case_ids": [
+          "08-01"
+        ],
+        "landing_entry": "index.html#topic-08",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 9,
         "title": "統計模型與誤差處理",
-        "case_ids": []
+        "case_ids": [
+          "09-03"
+        ],
+        "landing_entry": "index.html#topic-09",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 10,
         "title": "生態預測與預警",
-        "case_ids": []
+        "case_ids": [
+          "10-01"
+        ],
+        "landing_entry": "index.html#topic-10",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 11,
         "title": "保育與復育決策",
-        "case_ids": []
+        "case_ids": [
+          "11-02"
+        ],
+        "landing_entry": "index.html#topic-11",
+        "homepage_review_status": "implemented_local_ready_for_review"
       },
       {
         "id": 12,
         "title": "文獻資料化與研究流程",
-        "case_ids": []
+        "case_ids": [
+          "12-01"
+        ],
+        "landing_entry": "index.html#topic-12",
+        "homepage_review_status": "implemented_local_ready_for_review"
       }
     ],
     "accepted_case_count": 17,
-    "candidate_case_count": 4,
+    "candidate_case_count": 9,
     "review_waived_case_count": 1,
     "review_waived_case_ids": [
       "05-04"
@@ -149,7 +172,12 @@
     "05-02": "web-v01 / full-story-v02 118s: user accepted current integrated local version; next case05-03",
     "05-03": "web-v01; all25 accepted prototype-v01 files retained,116s complete; temporal-mark comparison hero; local case awaiting review",
     "05-04": "web-v01; complete120second source-data animation and MP4; interactive same-label/different-probability hero; local completion under explicit user review waiver",
-    "06-01": "web-v01; user-accepted128second Three.js prototype-v02 preserved; interactive source-sequence main visual; complete MP4; local only"
+    "06-01": "web-v01; user-accepted128second Three.js prototype-v02 preserved; interactive source-sequence main visual; complete MP4; local only",
+    "08-01": "web-v01 completed_local; accepted120second prototype+MP4; fixed4bird observation demo; official2022 trend map and Table2 source-bound results; website not yet user-reviewed",
+    "10-01": "web-v01 completed_local; accepted120second animation+MP4; fixed lake/probe concept and selectable16/20/24/28day horizon timeline; source-bound embedded research prototype; website not yet user-reviewed",
+    "11-02": "web-v01 completed_local; accepted130second animation+MP4; forest context and equal-resource teaching route comparison; full Figure11 and Srepok TableIII; website not yet user-reviewed",
+    "12-01": "web-v01 completed_local; accepted130second animation+MP4; hornet context and Table2 paraphrase/expected fields linked to Jersey Polygon without sighting marker; historical document classification; website not yet user-reviewed",
+    "09-03": "web-v01; accepted130second animation; generated swallow habitat, verified four-day sampling probabilities and replacement-draw teaching, author92day count plot; actual error-conditioned review-day result and CI undercoverage; local website review pending"
   },
   "verification": {
     "static_checks": 38,
@@ -433,8 +461,8 @@
       "sha256": "31d75cecafc5f34cb686743574232dd589289bdeefa3bc7064a2bd376372670b"
     },
     "README.md": {
-      "bytes": 7297,
-      "sha256": "5470bdbdb041c3e530ce68e863b3de6df760154d4c63a2aea125698aa7b060f4"
+      "bytes": 9828,
+      "sha256": "005905d90d59e217b2c8886cdfa9cc9bcdd913105a8786cfb4cac429e41c4e35"
     },
     "assets/main-visual-prompt-v01.md": {
       "bytes": 4539,
@@ -4525,8 +4553,8 @@
       "sha256": "3a5e750687c9e1d0bc8388575dfb9a241614cd6cbcecc42ca4c0358c4cbef57c"
     },
     "cases/06-01/06-01.html": {
-      "bytes": 18559,
-      "sha256": "df016eab07ee5013b75d50c4dac4e4301c0c1f00aea599546d39ef4817f155ad"
+      "bytes": 18648,
+      "sha256": "3b6f4471076f5d5c23be2df9ca246e855fd3ea8246228715d75a961708985ca9"
     },
     "cases/06-01/README.md": {
       "bytes": 2209,
@@ -4653,8 +4681,8 @@
       "sha256": "e1eae0277d76e9e93f9ca52cef56636a21ab6376f97e7323b5ad8267a63eba2a"
     },
     "cases/06-01/manifest.json": {
-      "bytes": 5515,
-      "sha256": "5fa33e0742e5daa952d4c29bae4f4077f50894ed03fe96c630651f472254c317"
+      "bytes": 5851,
+      "sha256": "53031e9201744d6f0905e408025d47e96c0aeb196f73fe041c16aa86e8569c96"
     },
     "cases/06-01/research-notes.md": {
       "bytes": 14461,
@@ -4816,6 +4844,770 @@
       "bytes": 3502,
       "sha256": "c78af95110dc876091bf424dca22c773773b1d7ac66091c3bef392fa661fb3cb"
     },
+    "cases/08-01/08-01.html": {
+      "bytes": 15869,
+      "sha256": "42c536018eb93fda29a7752478483971e863e16d9699690f9184e3ec53acbb5a"
+    },
+    "cases/08-01/SOURCE.md": {
+      "bytes": 2791,
+      "sha256": "1a36fce0fb02aa241ffb121eb840dac2ee43ebc56f0a3765aeee6638816a92d8"
+    },
+    "cases/08-01/animation/README.md": {
+      "bytes": 1205,
+      "sha256": "99508a8a4182cebd50fc65f877d66f144db2899ed14226e696a9090b08b2eaf9"
+    },
+    "cases/08-01/animation/SOURCE.md": {
+      "bytes": 3369,
+      "sha256": "33a58b34ea1b8c810d4dab92bfa8ab4f4c76f2689cdc18d95fcbd4c79d2ffab3"
+    },
+    "cases/08-01/animation/accepted-source-manifest.json": {
+      "bytes": 3971,
+      "sha256": "cc673f5655255f8489a74b834fb422f9db994cb05fb908d798f0460f2243bdff"
+    },
+    "cases/08-01/animation/app.mjs": {
+      "bytes": 13061,
+      "sha256": "250afbc836bd1de368c0d14899c6d7217ebd6192cc6ff952cef493a9459f2a11"
+    },
+    "cases/08-01/animation/assets/official-trends-2022.png": {
+      "bytes": 1420071,
+      "sha256": "8e6ebdd19dcd1bf96dc8ed738e91cdfa4b7e8e49bca0af33bf3d06c3bc24c3d4"
+    },
+    "cases/08-01/animation/assets/provenance.json": {
+      "bytes": 10042,
+      "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
+    },
+    "cases/08-01/animation/assets/sage-thrasher-alpha-browser-review-v02.png": {
+      "bytes": 924061,
+      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
+    },
+    "cases/08-01/animation/assets/sage-thrasher-cutout-v01.png": {
+      "bytes": 1955113,
+      "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
+    },
+    "cases/08-01/animation/assets/sage-thrasher-cutout-v02.png": {
+      "bytes": 1880943,
+      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
+    },
+    "cases/08-01/animation/assets/sagebrush-scene-v01.png": {
+      "bytes": 3562306,
+      "sha256": "b4bfe6a58870071e77d2adf81131ed72ebed3d82abf9ddcf8a8d1e4c3bb579dd"
+    },
+    "cases/08-01/animation/data/evidence.json": {
+      "bytes": 1642,
+      "sha256": "568cd8b5d2c685259b38acbd1ff3d9bb9915f858e9fa093bb0d00fab84b9bf90"
+    },
+    "cases/08-01/animation/embed.css": {
+      "bytes": 1719,
+      "sha256": "86807c725fce595b8e68c4622f95b8e470618748c85b529d7865dfa265ac9301"
+    },
+    "cases/08-01/animation/embed.js": {
+      "bytes": 8651,
+      "sha256": "bb8cd9013fbb0b8d3b1b2a5813821091e2a8ce2ac2e446b59d3ef35ffa7b40a2"
+    },
+    "cases/08-01/animation/film/08-01-ebird-v01.metadata.json": {
+      "bytes": 3071,
+      "sha256": "7de7088c0fd9aed7b1e3fc638d6ff2e1345aadf1a3b0926f7285e24748397507"
+    },
+    "cases/08-01/animation/film/08-01-ebird-v01.mp4": {
+      "bytes": 39187150,
+      "sha256": "462993edb816109bf82cb3f40413072312862f7523b77eddc0e63e3dae8a4fcf"
+    },
+    "cases/08-01/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/08-01/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/08-01/animation/fonts/ebird-sans.woff2": {
+      "bytes": 137136,
+      "sha256": "0d713a70a758d89a81313ba268af66c4ec98d2a338a18f615c1631ae5df578ea"
+    },
+    "cases/08-01/animation/fonts/ebird-serif.woff2": {
+      "bytes": 182220,
+      "sha256": "4ca10669c2d4023916ab3140451660782ebdcc605f5329fa71343c7885345e4c"
+    },
+    "cases/08-01/animation/index.html": {
+      "bytes": 6973,
+      "sha256": "45418d40118c7b64b7c804aa4d936aee9d8a23478cf9c6c18ded673e4db8557f"
+    },
+    "cases/08-01/animation/manifest.json": {
+      "bytes": 5942,
+      "sha256": "d88b24946ab8135b02071abadbb84ef606c6ca32bd296882d9124d36db2fdfd6"
+    },
+    "cases/08-01/animation/model.mjs": {
+      "bytes": 3923,
+      "sha256": "fb9d80fdaa6658fea7cb5c12e3099dd431fdb1f76cd18519fe4fe3185fcf035a"
+    },
+    "cases/08-01/animation/prompts/scene-assets-v01.md": {
+      "bytes": 6617,
+      "sha256": "510cab5f1d63156651a527bfb84b66ccf8862fa26f5914639f91acd4778e4712"
+    },
+    "cases/08-01/animation/scene.mjs": {
+      "bytes": 14883,
+      "sha256": "8600ed901e0e066379f6391588bc30f1bab15fc762831139362d189de2c9b7b7"
+    },
+    "cases/08-01/animation/style.css": {
+      "bytes": 9458,
+      "sha256": "33339bef8115fde794f94bcee6afc03b3237bd08c70656615fb6da783d639976"
+    },
+    "cases/08-01/animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "cases/08-01/case.css": {
+      "bytes": 14246,
+      "sha256": "30abeb6b01abe1f91f2ecabb50b604cbc226ce49e30a6d6f8160e5a2419742a1"
+    },
+    "cases/08-01/case.js": {
+      "bytes": 12446,
+      "sha256": "d635d33fcf552c3b0fc950666292fde79745e2d1f453330fdc98932d0c7cb27a"
+    },
+    "cases/08-01/data/validation.json": {
+      "bytes": 957,
+      "sha256": "77d0bafbe0dea369395cc6bd53432504ef5fef9a8b90dc9593369e18611f1c60"
+    },
+    "cases/08-01/fonts/08-sans.woff2": {
+      "bytes": 157128,
+      "sha256": "44e47de1193785f1d26133ff3dd2a03ba64a63cd6dc28509d7155239ed2b775a"
+    },
+    "cases/08-01/fonts/08-serif.woff2": {
+      "bytes": 209752,
+      "sha256": "027b41449ea6f3a3f255ab3cb06cdfbd3856fccd94e178708ba82353014a89cb"
+    },
+    "cases/08-01/fonts/Noto-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/08-01/hero.js": {
+      "bytes": 2391,
+      "sha256": "cb87e03d764de3bf536356f400c54df404d3d8724785e9c499ae4d21f344e7f8"
+    },
+    "cases/08-01/index.html": {
+      "bytes": 201,
+      "sha256": "50d680c3cd0566213b2aec5712de8dd0843d8f8b5894e11b3bad58c708114b55"
+    },
+    "cases/08-01/manifest.json": {
+      "bytes": 6379,
+      "sha256": "540ab0d6b38da125a8c6b2965f1bcc84049d077a0ce87e1f25f2cb9b73c4c765"
+    },
+    "cases/09-03/09-03.html": {
+      "bytes": 18735,
+      "sha256": "e3a88860daf1c00b7b735039cff3da94b83268106342743a92d7a9b80392a681"
+    },
+    "cases/09-03/SOURCE.md": {
+      "bytes": 4325,
+      "sha256": "5769829a89d07f5976d8d1803a110a07d5721e390dae7aca66fc5dd760e368d5"
+    },
+    "cases/09-03/animation/README.md": {
+      "bytes": 1172,
+      "sha256": "02836c5605adc3f51fba04e64afea7a7fd7c277edb8af310014fa2a2eb8fbfe1"
+    },
+    "cases/09-03/animation/SOURCE.md": {
+      "bytes": 3880,
+      "sha256": "e32666ccd1d6d002c1d28b59e2789f7c0afd94521c94776dc6d43bddf566a2c2"
+    },
+    "cases/09-03/animation/accepted-source-manifest.json": {
+      "bytes": 1883,
+      "sha256": "0d8bac349e87abd07ae9a224afb4fd870f4cef44cf1659e6674cb3f902684605"
+    },
+    "cases/09-03/animation/app.mjs": {
+      "bytes": 13073,
+      "sha256": "4e3c05416f97e97ded52991ddf3be65e047f9c60c8bab2598459a3aec8f2601a"
+    },
+    "cases/09-03/animation/assets/provenance-swallow-v01.json": {
+      "bytes": 2004,
+      "sha256": "67ee8246c07f6e4d652b18db2ce364a3fccc42c347f2ddbcaaf2369ebe42f2d6"
+    },
+    "cases/09-03/animation/assets/swallow-roost-dawn-v01.png": {
+      "bytes": 2656167,
+      "sha256": "77067d1a9b024375c08fc23c8d4d29a7ac6bda60391e2529a0d1ed7f90fe66e7"
+    },
+    "cases/09-03/animation/data/author-kbuf-2010-v01.json": {
+      "bytes": 9503,
+      "sha256": "5a5a4071721a007350b061f6109b22cee080a8a29699155c9a0f2aac5bbf4844"
+    },
+    "cases/09-03/animation/data/sampling-teaching-v01.json": {
+      "bytes": 21598,
+      "sha256": "4a70697f36e6dbe23812cead0e27110b44f72abc97fba1e6c2319da420695a45"
+    },
+    "cases/09-03/animation/data/sampling-verification-v01.json": {
+      "bytes": 2189,
+      "sha256": "f6efe74a85f552f629cf18c84a70d514ceaf145cd5b1c43f343c8be022ceee3e"
+    },
+    "cases/09-03/animation/film/09-03-discount-v01.metadata.json": {
+      "bytes": 3883,
+      "sha256": "c8a5cbcf10b83f6d346b711d7c5d823ba12f42f34ad8db0f6a8561f97127cbee"
+    },
+    "cases/09-03/animation/film/09-03-discount-v01.mp4": {
+      "bytes": 14330589,
+      "sha256": "7f02aac974a17e037f5014a58a230b287be7ccbbb09d8108659277061e48773e"
+    },
+    "cases/09-03/animation/fonts/09-sans.woff2": {
+      "bytes": 174784,
+      "sha256": "4ea100972dfa1962f6940f7fbc4fc542ad599c704c5ef179ffe0d5f5fef881af"
+    },
+    "cases/09-03/animation/fonts/09-serif.woff2": {
+      "bytes": 235852,
+      "sha256": "cb4bc03948e031ccba138191523ab1ff332ddfb762643408dba00edbd147b843"
+    },
+    "cases/09-03/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/09-03/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/09-03/animation/fonts/font-coverage.json": {
+      "bytes": 1326,
+      "sha256": "277be3bc63cde20ba3e8a41d805bd8e49cae56e541dc228417a6b76174359c54"
+    },
+    "cases/09-03/animation/index.html": {
+      "bytes": 7872,
+      "sha256": "b4d6f1b475c20eaacfaab098574516c11a163149e8e14a45322c707707ada820"
+    },
+    "cases/09-03/animation/manifest.json": {
+      "bytes": 6424,
+      "sha256": "84eaddcc87e81ca425048dfe1a07402e4514a4d2c7f93a16de4c40c0ca5579b4"
+    },
+    "cases/09-03/animation/model.mjs": {
+      "bytes": 4826,
+      "sha256": "6c485d5f90dbd278549f5b062c52cc00b0f90a7e76f8c79fa95f7409207d4ed1"
+    },
+    "cases/09-03/animation/prepare-fonts.py": {
+      "bytes": 3363,
+      "sha256": "23069a05265a9c0a216147dfeaca9a3c0ed5f13c740f26789776354d60fea8fd"
+    },
+    "cases/09-03/animation/prompts/swallow-roost-dawn-v01.md": {
+      "bytes": 3896,
+      "sha256": "4cfa58344799b0924552f54e125b0a9484f94ae453964a14fcd2d72f74708e79"
+    },
+    "cases/09-03/animation/scene.mjs": {
+      "bytes": 15409,
+      "sha256": "950c7490222ced49455bf6d30e99f540773b5642960146148bd9d18c71b7d990"
+    },
+    "cases/09-03/animation/style.css": {
+      "bytes": 9635,
+      "sha256": "2f20ff6fc560e2a069761b0f4e9e83808562e148b0f71efa6b8058ae81cdcc2c"
+    },
+    "cases/09-03/animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "cases/09-03/case.css": {
+      "bytes": 15823,
+      "sha256": "4b474b5c6bd8273287be32c06e6fb35c876d4d91fd665fe0736e1d577fc975ac"
+    },
+    "cases/09-03/case.js": {
+      "bytes": 12463,
+      "sha256": "f9c6bc44016735620a9a797c02c2efcf4d92053e055612f24b2172437b4663b3"
+    },
+    "cases/09-03/embed.css": {
+      "bytes": 1824,
+      "sha256": "1d73c07c46838f7e4e0ec4148b7fa010dde24d3977bdf102c2395c778b907779"
+    },
+    "cases/09-03/embed.js": {
+      "bytes": 8715,
+      "sha256": "34f5da5b07bec0b77cd64e0cec6db8955333f0ddcb8efd9c1d5c9eea695d5c4b"
+    },
+    "cases/09-03/fonts/09-sans.woff2": {
+      "bytes": 209600,
+      "sha256": "eac2eac93d25a01c852ea1e7416fcfd0aeb03bef154936c4784686b5c2cfd215"
+    },
+    "cases/09-03/fonts/09-serif.woff2": {
+      "bytes": 283060,
+      "sha256": "1786a1cf0a35905bf63689365dd3e5f1ac2770334144ada5747979a90ed1ebd1"
+    },
+    "cases/09-03/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/09-03/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/09-03/fonts/web-font-coverage.json": {
+      "bytes": 1637,
+      "sha256": "bb6f3099cb76eb585df3c69c4290ed5b3139f15da33cec93750bb0f1b5ced6cd"
+    },
+    "cases/09-03/hero.js": {
+      "bytes": 2201,
+      "sha256": "016dac4d59c4a34d7e46d43b986a613707452385727b55d7e8ed6744d7bd9295"
+    },
+    "cases/09-03/index.html": {
+      "bytes": 203,
+      "sha256": "4c943e64fdd66094be447b9b24b9cfe9e5ee79407c04f8eb11ef7aa7019c28fd"
+    },
+    "cases/09-03/manifest.json": {
+      "bytes": 6623,
+      "sha256": "844c9426aa3be8b322b40ff102fdd1f5d1ea761121de8b70e98783d9d4574114"
+    },
+    "cases/09-03/prepare-web-fonts-v01.py": {
+      "bytes": 3903,
+      "sha256": "d455dd633def2e27ce246e56b34bd452d3a647a60bf4d809ada01b62742ce6ef"
+    },
+    "cases/10-01/10-01.html": {
+      "bytes": 12274,
+      "sha256": "f3d366bc19e9a5cf49b86ffcb7d7521e6af376ae8f4921b0ca20c425b4247b84"
+    },
+    "cases/10-01/SOURCE.md": {
+      "bytes": 3015,
+      "sha256": "fc43ba7cf6a3d01aadd730c6ed369247ba9f874e626f2becfaf57637f29f85c2"
+    },
+    "cases/10-01/animation/SOURCE.md": {
+      "bytes": 2678,
+      "sha256": "271019181cae4c0de158df8d4a340c9ef62b466b8b5acab5351485d489eaed0e"
+    },
+    "cases/10-01/animation/accepted-source-manifest.json": {
+      "bytes": 1601,
+      "sha256": "e56600841680f98f5d0e07d531fedcb678ac3d026864538a7336a5b61f92f6bb"
+    },
+    "cases/10-01/animation/app.mjs": {
+      "bytes": 13070,
+      "sha256": "16c055f8aa2001e90736c2723335c1164ebcdb7331209d7b8313c8f32ef84355"
+    },
+    "cases/10-01/animation/embed.css": {
+      "bytes": 1719,
+      "sha256": "8fae7674fc406f07a786931ecab10c3baeaa512ff4780ece13738bfbcf2bd8f9"
+    },
+    "cases/10-01/animation/embed.js": {
+      "bytes": 8651,
+      "sha256": "d9ae750325cb033c1a74ecc1c0275e85ebdde9b1e7ff75a858cb71aa2775cfe5"
+    },
+    "cases/10-01/animation/film/10-01-bloom-v01.metadata.json": {
+      "bytes": 3710,
+      "sha256": "b61924bcab3bf437d95adf9831b6cd727161a8197174cbc8da9590233a50ad95"
+    },
+    "cases/10-01/animation/film/10-01-bloom-v01.mp4": {
+      "bytes": 10451995,
+      "sha256": "8b5e4dc4a14192d10d245983a02f4185a616bdb7e1b3c0c5923ad4fd3f6f852d"
+    },
+    "cases/10-01/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/10-01/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/10-01/animation/fonts/bloom-sans.woff2": {
+      "bytes": 164664,
+      "sha256": "adac45643fea83c8c1758854f03310554fbed0008fb4f8e7f4af1345110ccce0"
+    },
+    "cases/10-01/animation/fonts/bloom-serif.woff2": {
+      "bytes": 224940,
+      "sha256": "a5c15046fba95272260fbb531b97ebf67b229160cb673bd7e2be16b029db0be9"
+    },
+    "cases/10-01/animation/fonts/font-coverage.json": {
+      "bytes": 1337,
+      "sha256": "0c6c4185caf34c7989fababf5311afc1ecee18acd846d383d80af3812f40d6dc"
+    },
+    "cases/10-01/animation/index.html": {
+      "bytes": 7284,
+      "sha256": "2384e652ef4a1949846660547ae94345b571b4b464cf167d7079cbfa03125406"
+    },
+    "cases/10-01/animation/lake-three.mjs": {
+      "bytes": 25172,
+      "sha256": "6c6c40e0c18652cd12f277b32172155bbd7200bf6097976258f77d032be41387"
+    },
+    "cases/10-01/animation/manifest.json": {
+      "bytes": 4747,
+      "sha256": "8a03f188a685510a7805574a4658554134eb1824b7705d71f9e84c5a6472be2f"
+    },
+    "cases/10-01/animation/model.mjs": {
+      "bytes": 3923,
+      "sha256": "bdd38a08f994ca92ea741f1fcf6bae4b57e9de6808373519685844cb6e8e351c"
+    },
+    "cases/10-01/animation/prepare-fonts.py": {
+      "bytes": 3329,
+      "sha256": "92d70bb520d5bf4cf339796a5236ce6e035512f5d04a570802c252574877b459"
+    },
+    "cases/10-01/animation/scene.mjs": {
+      "bytes": 13531,
+      "sha256": "1c54faa6efda231d25034b09d24641ad32a64b3638fc02c8457d2b797d347239"
+    },
+    "cases/10-01/animation/style.css": {
+      "bytes": 9706,
+      "sha256": "b363b559ed09baca5748911e1ec279fd477403900d90d13414c9a794b8107a5e"
+    },
+    "cases/10-01/animation/vendor/LICENSE-three.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "cases/10-01/animation/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "cases/10-01/animation/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "cases/10-01/assets/10-01-lake-concept-v01.jpg": {
+      "bytes": 25560,
+      "sha256": "76a57a7ac6552e9c932e6447b681d71869cd32a9e3005c0e7c166057e729d550"
+    },
+    "cases/10-01/assets/provenance.json": {
+      "bytes": 537,
+      "sha256": "14effede66e01972f6b7a1df4b5a1ac13e59bc91186bd9be6b19afe98fc53342"
+    },
+    "cases/10-01/case.css": {
+      "bytes": 13000,
+      "sha256": "e8ecb0b7c844859700fb5f25afcd0fca8aa714e1f91352affb1834097a94627d"
+    },
+    "cases/10-01/case.js": {
+      "bytes": 12445,
+      "sha256": "7ed86a6bf7b9a8769f314deb5eab98432e21a9d85c4620735323ea0b8ec7b631"
+    },
+    "cases/10-01/fonts/10-sans.woff2": {
+      "bytes": 181936,
+      "sha256": "9db75027520256598459e15316804c3dc18e6020c3ee30ef0bb0270e10128403"
+    },
+    "cases/10-01/fonts/10-serif.woff2": {
+      "bytes": 248384,
+      "sha256": "9ba1a22ef081d6c108e7ac5a7347c0becebdf9bed02fc67952c8c431c64336dc"
+    },
+    "cases/10-01/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/10-01/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/10-01/fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "f3b13047891e8f10a03cfa4b28a0d36a625a0884dfea6dc02230d9a046f6a23a"
+    },
+    "cases/10-01/hero.js": {
+      "bytes": 1676,
+      "sha256": "a9788c2a52d65804ea31d76f5ddfce154df7a9e58510afb26b544f2ea19f065a"
+    },
+    "cases/10-01/index.html": {
+      "bytes": 199,
+      "sha256": "2197b93d742872a152f71f7aed7e11fd22bf0861ed35d0ac67ccc6ee52725cb1"
+    },
+    "cases/10-01/manifest.json": {
+      "bytes": 6295,
+      "sha256": "abbb12b9036a20a8f66ca6585fb4435623375e666a46941a146ebda492eb99c4"
+    },
+    "cases/10-01/prepare-web-fonts-v01.py": {
+      "bytes": 3859,
+      "sha256": "9756bb9c7eea81429c4f0a8fe917bd7520520b16853d6df3e6559c9243bd5676"
+    },
+    "cases/11-02/11-02.html": {
+      "bytes": 14417,
+      "sha256": "06f9d931d0e3d955020ed3e867fdad0e61f6d666e41b55d5f4bd03dfddd0251a"
+    },
+    "cases/11-02/SOURCE.md": {
+      "bytes": 3313,
+      "sha256": "c0cd48cf4a6d84d1111ab74b76466ff90cd643cd5f45e73e2f06bbefa63ccae3"
+    },
+    "cases/11-02/animation/SOURCE.md": {
+      "bytes": 4338,
+      "sha256": "06a760671395d595fca51035a6a3aaffd207ecabc6123d1334e9c7fa1b7f63ee"
+    },
+    "cases/11-02/animation/accepted-source-manifest.json": {
+      "bytes": 2226,
+      "sha256": "f4e80d68a15056833239a296267f1a84951f545a4c26a69e8e01e1bbcc07cf65"
+    },
+    "cases/11-02/animation/app.mjs": {
+      "bytes": 13069,
+      "sha256": "42e58e31ed7e38ff14bd2a23d8b3474debc03c996323365048b84749e2f1b3f4"
+    },
+    "cases/11-02/animation/asset-provenance-v01.json": {
+      "bytes": 2203,
+      "sha256": "99b5ff945c237b5d681f6f29e15853d0632ac78d8ad514f623d5fd1fd401201c"
+    },
+    "cases/11-02/animation/asset-provenance-v02.json": {
+      "bytes": 2268,
+      "sha256": "a8155f9411b5264ab91f73162a3286fe2c41fe2dd9089e69e8da2315080f1204"
+    },
+    "cases/11-02/animation/assets/forest-banteng-wire-v01.png": {
+      "bytes": 4276913,
+      "sha256": "62b5d55fddbca3402667973f154efc934fcfbae274ec5004b82f6237ce5bee0d"
+    },
+    "cases/11-02/animation/assets/forest-banteng-wire-v02.png": {
+      "bytes": 3895240,
+      "sha256": "29b8262e7fdbc404c75d6f3a0bac4de102584f845992d43308ef07f1157def4c"
+    },
+    "cases/11-02/animation/assets/original-fig11-map.jpeg": {
+      "bytes": 225241,
+      "sha256": "ab52e802163bf6fb0dc5755dbc8e97c69ee151407960377b544d50780ac5bfe9"
+    },
+    "cases/11-02/animation/embed.css": {
+      "bytes": 1684,
+      "sha256": "988dbec84496822d28cd84acf13768323e3ef975cbe3dfaa7d3b271526a44900"
+    },
+    "cases/11-02/animation/embed.js": {
+      "bytes": 8643,
+      "sha256": "caca581dc546d083c6758df1a668a2b5957d031da7ebe2b305f519b9ca6aa8f8"
+    },
+    "cases/11-02/animation/film/11-02-paws-v01.metadata.json": {
+      "bytes": 3859,
+      "sha256": "68f2071830c0668f9a019d6cf5bc1462d369c774a3c91dd3d26d96c240fd1b30"
+    },
+    "cases/11-02/animation/film/11-02-paws-v01.mp4": {
+      "bytes": 32386019,
+      "sha256": "41212477b42959f77e593f4d3d6e61c426811c9757756a51d3fbd80496ffdd03"
+    },
+    "cases/11-02/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/11-02/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/11-02/animation/fonts/font-coverage.json": {
+      "bytes": 1330,
+      "sha256": "1381b5a4bc18229bc51fcb0d0b2828c8d2ecc5db627201ad3d4a637fe22cef82"
+    },
+    "cases/11-02/animation/fonts/paws-sans.woff2": {
+      "bytes": 172492,
+      "sha256": "d366fde5183d578b33989d8cd6fdc7665636a50fe85d266e97baac38dd5b8890"
+    },
+    "cases/11-02/animation/fonts/paws-serif.woff2": {
+      "bytes": 234132,
+      "sha256": "1a8785903ed0801d8b2b6866b3328a419645892e3da5894992cc75a0df06e903"
+    },
+    "cases/11-02/animation/index.html": {
+      "bytes": 7363,
+      "sha256": "80b4b7613fdef9206d712d0ddcc072cf3e7f0e9cb1db24a3868c68fd045d76b3"
+    },
+    "cases/11-02/animation/manifest.json": {
+      "bytes": 6178,
+      "sha256": "028689b1e239f1795c67cc8c2147fce75386c69c737cc12f6239de78f4ed6c90"
+    },
+    "cases/11-02/animation/model.mjs": {
+      "bytes": 4990,
+      "sha256": "dde43073b73637d028dc112c10cfdb7c206cc5f0312ef11840d42f7b8aa3fb46"
+    },
+    "cases/11-02/animation/prepare-fonts.py": {
+      "bytes": 3367,
+      "sha256": "e6f5acdbedb421b99e5641db218a94deeddb9b6e8d8c9b627b11a4885aba91ae"
+    },
+    "cases/11-02/animation/prompts/forest-banteng-wire-exact-tool-prompt-v01.md": {
+      "bytes": 3599,
+      "sha256": "57584522559bc94019e7b9bfca63b654edc8d57829badd939c7eb9e563121541"
+    },
+    "cases/11-02/animation/prompts/forest-banteng-wire-exact-tool-prompt-v02.md": {
+      "bytes": 2436,
+      "sha256": "cbd42242a9a4cbc74486b2f2ca2c05a872efb5f7946c1c883bc2724ad9aab780"
+    },
+    "cases/11-02/animation/prompts/forest-banteng-wire-v01.md": {
+      "bytes": 3650,
+      "sha256": "70ae23d2ed65c5d544ac0181a5baefec8db7e61f7bb57b0504d0bc78348602b2"
+    },
+    "cases/11-02/animation/scene.mjs": {
+      "bytes": 15638,
+      "sha256": "5c8d1f9d999ec86140878b8104bb1eb788ede898b01aabf162fb9272f4580421"
+    },
+    "cases/11-02/animation/style.css": {
+      "bytes": 10035,
+      "sha256": "b0812e41570be58d08f55c69dc9d1cbddd58599c4c2dd411d03aec96e6a850f5"
+    },
+    "cases/11-02/animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "cases/11-02/case.css": {
+      "bytes": 17609,
+      "sha256": "16d4628bdce5248213d835410973646e816535a754fc027f04c2cc8df6af707f"
+    },
+    "cases/11-02/case.js": {
+      "bytes": 12439,
+      "sha256": "770202931f62ea2b348483db8feb7d24ed4e83f713b9a8b5f7bcb0f932355707"
+    },
+    "cases/11-02/fonts/11-sans.woff2": {
+      "bytes": 198036,
+      "sha256": "61eb61e6465ba5b94e66bcee98f335d646fb5123f82f9fa8b601499ad5983abe"
+    },
+    "cases/11-02/fonts/11-serif.woff2": {
+      "bytes": 267320,
+      "sha256": "54c1e6fc35996d81b7fdb5aa4caf266aa980a3a1a92b4fe37ed9ba9f37f367dd"
+    },
+    "cases/11-02/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/11-02/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/11-02/fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "d767c9a0c17fd14095f1080ebfc7cd793e0fa3c9c0a1a6e6aaeb2cc347dda7e7"
+    },
+    "cases/11-02/hero.js": {
+      "bytes": 2498,
+      "sha256": "7c710b0900da3541c93747bb21c22e924cd409e28e009a415bc5f7c285b13e65"
+    },
+    "cases/11-02/index.html": {
+      "bytes": 194,
+      "sha256": "0b292dfc05d7a0133e2e975fa25c1ed2960699f00973cdb2ee8f7ddbc8bc0932"
+    },
+    "cases/11-02/manifest.json": {
+      "bytes": 6874,
+      "sha256": "bbfd5e65de641d217fe270f834af610361df291cfd63701d359be76cb64781b8"
+    },
+    "cases/11-02/prepare-web-fonts-v01.py": {
+      "bytes": 3904,
+      "sha256": "88229d37f1fe78aaf9f49fce4339190107fff52f496ed9e4d610382133e00270"
+    },
+    "cases/12-01/12-01.html": {
+      "bytes": 13347,
+      "sha256": "ea1fd9d4a2319b3d9c9c123107208e2650be68643eeee1600f2f43bbfbf7acbd"
+    },
+    "cases/12-01/SOURCE.md": {
+      "bytes": 3633,
+      "sha256": "e5a06d11282a8a5fd1f4301cf565a4bdf6272f9b8ab2cca51272eb64e987307c"
+    },
+    "cases/12-01/animation/SOURCE.md": {
+      "bytes": 4859,
+      "sha256": "fe59e77cc1ccf8144d3ff20400bd2ba715d93b88741f0297d7fc434986b346eb"
+    },
+    "cases/12-01/animation/accepted-source-manifest.json": {
+      "bytes": 2034,
+      "sha256": "8e3ae2204a880385279f1b68f4f9d18a038acbac7cc22505f11e3d6402f35ee0"
+    },
+    "cases/12-01/animation/app.mjs": {
+      "bytes": 13071,
+      "sha256": "88cd218e0063d0b1eca8b24fa972d422bcde25302afaca35e565413ec6e5000a"
+    },
+    "cases/12-01/animation/assets/hornet-habitat-v01.png": {
+      "bytes": 2156579,
+      "sha256": "043b8a7ed23c33b8124054996df6d01889ceb8c4ab38f16fecf183a2112e4007"
+    },
+    "cases/12-01/animation/assets/provenance-hornet-v01.json": {
+      "bytes": 2123,
+      "sha256": "91c359cd72eb2fc368f3d256376bdaf4ff4ed126861aaa0a9a6fae9897bbd247"
+    },
+    "cases/12-01/animation/data/jersey-boundary-v01.json": {
+      "bytes": 2707,
+      "sha256": "afc46cf2dfde6c88e8dfca87e41ffff843d1ef9cb344288c1cd72a9472c8f177"
+    },
+    "cases/12-01/animation/embed.css": {
+      "bytes": 1754,
+      "sha256": "f412cbc97d5aa5b2feccda94b3cce9143f13597e8755c401f665087f08aab006"
+    },
+    "cases/12-01/animation/embed.js": {
+      "bytes": 8659,
+      "sha256": "f2fd032804e0945c3536f61d6395b4b4b7d12bb8a82fadb8e79f890165b0cb3d"
+    },
+    "cases/12-01/animation/film/12-01-records-v01.metadata.json": {
+      "bytes": 3876,
+      "sha256": "861209f890cef5fd62e63b68e4f0a1c5ab52660cd0ea0899bfefe5dfeab02fde"
+    },
+    "cases/12-01/animation/film/12-01-records-v01.mp4": {
+      "bytes": 9669694,
+      "sha256": "32dcb0d90fdc07cd1da7f83eb0eb4ec6bb2fe1e7dc860926efedfaa31f523177"
+    },
+    "cases/12-01/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/12-01/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/12-01/animation/fonts/font-coverage.json": {
+      "bytes": 1334,
+      "sha256": "2869ca9d45ae814b78563df63d74ee6ea6e490315658df4afce731fd4621be72"
+    },
+    "cases/12-01/animation/fonts/record-sans.woff2": {
+      "bytes": 171304,
+      "sha256": "a70e4aae657dc665afab4246a299f48d49a46602693bfcc517d59da5510f2e24"
+    },
+    "cases/12-01/animation/fonts/record-serif.woff2": {
+      "bytes": 231428,
+      "sha256": "a1d25f339ab33d231ff5af33436f03e5a6eb68824213581548d030a2901d735c"
+    },
+    "cases/12-01/animation/index.html": {
+      "bytes": 7460,
+      "sha256": "5d30464c0ced8ba1dd56fcae7619112477c7b9e1b379e6c3e0fb2572a0f08cf4"
+    },
+    "cases/12-01/animation/manifest.json": {
+      "bytes": 5655,
+      "sha256": "04547d4ec43416614ffa7929295873572d5c18860a00ba144bbc6912e53784ab"
+    },
+    "cases/12-01/animation/model.mjs": {
+      "bytes": 4571,
+      "sha256": "d119a6f27b6aa440046ef005490a3acc6b6ad1e777758ac8545d02602afa08d3"
+    },
+    "cases/12-01/animation/prepare-fonts.py": {
+      "bytes": 3371,
+      "sha256": "2b42c57d7ea774769c690bccce2ccddc3c9f80477e52ef2babd7084d3c2b1edf"
+    },
+    "cases/12-01/animation/prompts/hornet-habitat-v01.md": {
+      "bytes": 4105,
+      "sha256": "c06458d55f6281406e284dd22c86cd603b53dae75d71e220190d26f31cad61c8"
+    },
+    "cases/12-01/animation/scene.mjs": {
+      "bytes": 13135,
+      "sha256": "6b787ea1e1002b5a14b187ae2f0bc125a18ab08dbc1b6343a11aecb21e55ea29"
+    },
+    "cases/12-01/animation/source/jersey-boundary-provenance-v01.md": {
+      "bytes": 2443,
+      "sha256": "42b8c3708c590a75f31d5edca26c5dd552fbabf49bdaaaa49fc3ecff2a4100d2"
+    },
+    "cases/12-01/animation/source/jersey-natural-earth-extracted-original-v01.geojson": {
+      "bytes": 4321,
+      "sha256": "5d56cae5bc45fa6b915256b8cf2caf6b74e82ecaa72f0dfa55b1e9d95b5ee248"
+    },
+    "cases/12-01/animation/style.css": {
+      "bytes": 9647,
+      "sha256": "cded151abc3860c149ad1c96fe1d69d18dcecf6a5863afc30d70057db276febb"
+    },
+    "cases/12-01/animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "cases/12-01/case.css": {
+      "bytes": 17379,
+      "sha256": "f86123689e1331c71eb12bddd260c3fe6c87f036a4b29a1face388920d3cb820"
+    },
+    "cases/12-01/case.js": {
+      "bytes": 12451,
+      "sha256": "12f946c19529e0b09da7c576df7e755df8f0b14c46cf177e8ca9f48d2d80cfc0"
+    },
+    "cases/12-01/fonts/12-sans.woff2": {
+      "bytes": 195500,
+      "sha256": "047790abe3ffec49f8d57fe6422baa5fa26e3e496cb25f650caaebdc703cefc8"
+    },
+    "cases/12-01/fonts/12-serif.woff2": {
+      "bytes": 264460,
+      "sha256": "6703b54995260d739a99cd20453d2c7e46ca2b9483bc81a917173103908da1b1"
+    },
+    "cases/12-01/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/12-01/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/12-01/fonts/web-font-coverage.json": {
+      "bytes": 1638,
+      "sha256": "927bf1c7a74f1a44c061cde593cdd870e602553ef9923fd1a23786620592addf"
+    },
+    "cases/12-01/hero.js": {
+      "bytes": 2549,
+      "sha256": "2c283bb6b192565b3d300293f872aa8aef6b3bbfb07c1e95653961359656032f"
+    },
+    "cases/12-01/index.html": {
+      "bytes": 199,
+      "sha256": "d66e2ce6cc6c335e9aa0f80c162f5dfd5df039dac3deb4f36523d45598224dde"
+    },
+    "cases/12-01/manifest.json": {
+      "bytes": 6559,
+      "sha256": "c01e55a521dfd8d362f338692c9840d462cfdf9488fc2ea5451dd07f65835f0f"
+    },
+    "cases/12-01/prepare-web-fonts-v01.py": {
+      "bytes": 3904,
+      "sha256": "d8fb267a58336f1332844064a3716ab14bb19894ed91bcbbb68a80dfcfa7ae4f"
+    },
     "fonts/NotoSans-OFL.txt": {
       "bytes": 4301,
       "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
@@ -4857,8 +5649,8 @@
       "sha256": "4fa4904f0e5946168d6cd315d9bfb90c1215af662ab9723625de6939c124e065"
     },
     "home-atlas/app.js": {
-      "bytes": 35501,
-      "sha256": "1841e018ef572c0ee2b6071107d50446fa22a4ec23ee88426ee7501d448a8abd"
+      "bytes": 36121,
+      "sha256": "a0723a1b206b4fbb69070a2170c137a86150f44f20f43f786cbd70270a3ec1b8"
     },
     "home-atlas/assets/environments/01-01-grassland-wide-v01.png": {
       "bytes": 3652910,
@@ -5024,6 +5816,90 @@
       "bytes": 1701,
       "sha256": "56acfbc3bff9b8aa44bde8293a88f7f0613d4644bc0efa04bde2135974f8acdf"
     },
+    "home-atlas/assets/topic-06/prompt.md": {
+      "bytes": 4899,
+      "sha256": "098189b7187a804ae8c258f43d4b77b79ead992708d61ddf191bb491e63fbe3f"
+    },
+    "home-atlas/assets/topic-06/provenance.json": {
+      "bytes": 320,
+      "sha256": "4712f0435bb8f1446c0ecdbfdac00c2d26ec6c2acf94208e34c1ef9ed233d18e"
+    },
+    "home-atlas/assets/topic-06/topic-06-cover-v01.png": {
+      "bytes": 3655789,
+      "sha256": "7f343c18bd10c2d5300a6cb816e6310958d9725ef44390d7a62934819069d287"
+    },
+    "home-atlas/assets/topic-07/prompt.md": {
+      "bytes": 5222,
+      "sha256": "91c1bbc2cc52cdb65f99ccfdf52820f9bd3abe464b76e4ee48fce71fd737603d"
+    },
+    "home-atlas/assets/topic-07/provenance.json": {
+      "bytes": 320,
+      "sha256": "e2ecec4f83885a0f870662aac5dd63275dfef210b88bc2ae7801fe713d76b7e6"
+    },
+    "home-atlas/assets/topic-07/topic-07-cover-v01.png": {
+      "bytes": 3473247,
+      "sha256": "65e3fb6a6cd434085497f6f55b6a1e7369b9a80af36ab7043c84c534aa8c6657"
+    },
+    "home-atlas/assets/topic-08/prompt.md": {
+      "bytes": 2443,
+      "sha256": "afe7e2017fb5dd19ed95ed18e927229fec3191107655a4cd74aa3ce6cffb01fe"
+    },
+    "home-atlas/assets/topic-08/provenance.json": {
+      "bytes": 320,
+      "sha256": "b3e609c1978a6b34216856362d902130f91e37d9ff6b94bd75336e78591071c9"
+    },
+    "home-atlas/assets/topic-08/topic-08-cover-v01.png": {
+      "bytes": 3649938,
+      "sha256": "f6a692de29c8e3227982dfe429974a77bbc808a175e5704668a3568a7a1add43"
+    },
+    "home-atlas/assets/topic-09/prompt.md": {
+      "bytes": 2828,
+      "sha256": "2fd9cd5f188bd4a1e294773b945f88f255521f6622190955eef4f5ecb7a3744b"
+    },
+    "home-atlas/assets/topic-09/provenance.json": {
+      "bytes": 320,
+      "sha256": "bdaad8eaa6819dafa81a278d40d7eeaa8da8f1a62cf91ecc8a0555303fd6c361"
+    },
+    "home-atlas/assets/topic-09/topic-09-cover-v01.png": {
+      "bytes": 2932655,
+      "sha256": "93d8f3433b852b661c531431b1aba0a0f1b0aad91ea911286918460aa20f7963"
+    },
+    "home-atlas/assets/topic-10/prompt.md": {
+      "bytes": 2749,
+      "sha256": "7f881fa24e2111624fd4692c3c2252dc2bce0c1537ed2f4f0f6402562d2a55be"
+    },
+    "home-atlas/assets/topic-10/provenance.json": {
+      "bytes": 320,
+      "sha256": "64cefbff8b1bba67a3bdf58c971b462b6351356f38486ffd747095b4676a93c7"
+    },
+    "home-atlas/assets/topic-10/topic-10-cover-v01.png": {
+      "bytes": 3487566,
+      "sha256": "cc5c003b9a3f78846c0eb250a232fcf77b4435552d6783597ff8a908cec4ed4b"
+    },
+    "home-atlas/assets/topic-11/prompt.md": {
+      "bytes": 2647,
+      "sha256": "0101e40a2813507849ebe4015465ba62543d7dedc3c91d4334204b843ef842b2"
+    },
+    "home-atlas/assets/topic-11/provenance.json": {
+      "bytes": 320,
+      "sha256": "acd12304464fa70c7463bc12ed4117cac0e384c7867cc70e64fefd44ab305c7c"
+    },
+    "home-atlas/assets/topic-11/topic-11-cover-v01.png": {
+      "bytes": 3754701,
+      "sha256": "8889420e98d3338b27d1aa8e07f27d24ee0ca073c03f436192619d76cec6b3b1"
+    },
+    "home-atlas/assets/topic-12/prompt.md": {
+      "bytes": 2784,
+      "sha256": "2b8def6a50fe33670de98e5a2d8197f5953cacca9c0f5d1d00f983a8055f96a4"
+    },
+    "home-atlas/assets/topic-12/provenance.json": {
+      "bytes": 320,
+      "sha256": "8cafc950347b3553fc2ca7f68e8c58afbcec24ea8bbf16f73db31c6952727b72"
+    },
+    "home-atlas/assets/topic-12/topic-12-cover-v01.png": {
+      "bytes": 3132530,
+      "sha256": "9afca9e80289b8ed2b10eb049b983fc1563655382bb6fb7f5d38f7d54fb88835"
+    },
     "home-atlas/assets.json": {
       "bytes": 17754,
       "sha256": "0cacfc6475a30efa4efb823c31f5be85a1289be2b3267f710dd1f6e50328f160"
@@ -5039,6 +5915,22 @@
     "home-atlas/content.json": {
       "bytes": 8424,
       "sha256": "a61bbf72d185ed0921f7d9bc48c016ec05eba5c3483b43655bcf131022ae08a6"
+    },
+    "home-atlas/cover-extensions-fonts.css": {
+      "bytes": 1353,
+      "sha256": "25c6dedbe4aac389c90ad22f5040294da8d4d39d0b501b4b9010590d5b1ee385"
+    },
+    "home-atlas/cover-extensions.css": {
+      "bytes": 7078,
+      "sha256": "321f6c820cdbf864760ba7107fdca1e3bc998f668c882f8c0fdc9900dff0e2f2"
+    },
+    "home-atlas/cover-extensions.json": {
+      "bytes": 5667,
+      "sha256": "8ae9206b02d4bd69da65b4224997bbeb9cc7492981809ffa2efa9a82dfcb2f21"
+    },
+    "home-atlas/directory-rows.css": {
+      "bytes": 4255,
+      "sha256": "df5bdde0c538060b8fa16a85e6c50f16f711b2c096ba5f4af3e70ab930d8525a"
     },
     "home-atlas/environment-prompts.md": {
       "bytes": 9906,
@@ -5063,6 +5955,22 @@
     "home-atlas/fonts/directory-sans.woff2": {
       "bytes": 190532,
       "sha256": "3051eee22c5af25016085c66eea1f9a13b7d8c2128859ce9d3f83bf8319b9d46"
+    },
+    "home-atlas/fonts/extensions-sans-v01.woff2": {
+      "bytes": 22636,
+      "sha256": "bd8ffc95de48c39d6cc2710b515ffa86f49e7c34524b65a47412033dec747508"
+    },
+    "home-atlas/fonts/extensions-serif-v01.woff2": {
+      "bytes": 33472,
+      "sha256": "61c50b212e18f82446ca7259337d5413787a7629b2ad907cfba5809c4b4c3c40"
+    },
+    "home-atlas/hover-feedback.css": {
+      "bytes": 2219,
+      "sha256": "4347d10e6ee0326d8362421b87cd10af9babd6575f1f9435f134764438754faf"
+    },
+    "home-atlas/hover-feedback.js": {
+      "bytes": 4963,
+      "sha256": "9f1f5e7904cca69a88a2edd02541c35b49ac0749557404dee223f098d6b73a96"
     },
     "home-atlas/integration.css": {
       "bytes": 4159,
@@ -5089,8 +5997,16 @@
       "sha256": "666225d9ef8f96cbe585cb3447ef792c841e251f0d88ec956b429484dfe9c964"
     },
     "home-atlas/topic-05.js": {
-      "bytes": 4952,
-      "sha256": "91d7c493c700676621bfa486b157c83bf0786799a1535478e42b102e91bfe071"
+      "bytes": 4054,
+      "sha256": "65423c6507f1d974ddf47fa1b5de1081d22aa48398be8e46eadb025845cec02f"
+    },
+    "home-atlas/topic04-hover.js": {
+      "bytes": 2553,
+      "sha256": "b9ca780f0e8187704f2e485e52e7b2fac846fc373eed7c3a8830b3f125ee78af"
+    },
+    "home-atlas/topic12-hover.js": {
+      "bytes": 4171,
+      "sha256": "68d54e996b043efbbb59709801ba6b16af071f9a0cae6f3504f932e2ccb55e29"
     },
     "home-atlas/vendor/grabfold-LICENSE.txt": {
       "bytes": 1066,
@@ -5161,8 +6077,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 35745,
-      "sha256": "a292eb896ac1cc9e4c0f8ee9c2f71f41205f1d2a99d1b2bcff323caf079d61f7"
+      "bytes": 50983,
+      "sha256": "21f4cef0efd22a97feb9f83bc9415ca27613028dace4272c2a543e07a587b1fe"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -5261,8 +6177,8 @@
       "sha256": "1d51f195b7c770fddf5af0d67697aca59dad66d6393e1bcb122d753dc2f76226"
     },
     "ui/reading-typography.css": {
-      "bytes": 4954,
-      "sha256": "97283623fe88c29c42772f8ca7246658a9acc86127cb736f8f9f3b5d022ce7ec"
+      "bytes": 5671,
+      "sha256": "7cf7d10a5916e9245cabe817313ad5d41d69d0f691e1d92c4e7b9ab6aeb6c12c"
     },
     "ui/sidebar.css": {
       "bytes": 8522,
@@ -5273,8 +6189,8 @@
       "sha256": "4049a83cd2ccca53e9f4a4387968ac74c509e9f6d39581f1d5d3634cdcafca2d"
     },
     "ui/site-map.js": {
-      "bytes": 5157,
-      "sha256": "023e981e81a3df44cf3aee0bf784a8db448885549ba44f5ce69b072ac3a67e5c"
+      "bytes": 6196,
+      "sha256": "b02e44f8c53df7eb9c2587454fdb9db6b3c9beb3a4c3f7440f646c2ceeafd88e"
     },
     "ui/theme-controls.css": {
       "bytes": 2501,
@@ -5305,7 +6221,7 @@
       "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
     }
   },
-  "updated": "2026-10-28T02:38:36.523026+00:00",
+  "updated": "2026-10-29T18:25:34.345497+00:00",
   "terminology_amendment": {
     "date": "2026-10-21",
     "scope": "Chinese wording and required font glyphs only",
@@ -5352,8 +6268,8 @@
     "default": "light",
     "dark": "charcoal",
     "storage_key": "ecology-color-theme",
-    "non_animation_entries": 46,
-    "case_count": 22,
+    "non_animation_entries": 56,
+    "case_count": 27,
     "browser_checks": 248,
     "static_only_cases": [
       "01-02"
@@ -5375,15 +6291,14 @@
     "media_changed": false
   },
   "local_case_revision": {
-    "id": "06-01-web-v01",
-    "case": "06-01",
+    "id": "09-03-web-v01",
+    "case": "09-03",
     "local_only": true,
-    "status": "completed_local",
     "animation_user_accepted": true,
     "website_user_accepted": false,
-    "user_review_waived": false,
+    "status": "integrated_local_verified",
     "deployed": false,
-    "verification": "work/ecology-ai-rollout/cases/06-01/web-review-v01/verification.json"
+    "verification": "work/ecology-ai-rollout/cases/09-03/web-review-v01/verification-current.json"
   },
   "local_visual_revision": {
     "revision": "topic-03-visual-v01",
@@ -5394,32 +6309,49 @@
     "record": "work/ecology-ai-rollout/topic-03-revision-v01/README.md",
     "deployed": false
   },
-  "topic_scene_count": 5,
-  "homepage_scene_revision": "home-atlas-integration-v01+topic-04-cover-v01+atlas-book-v04+topic-05-cover-v01",
+  "topic_scene_count": 12,
+  "homepage_scene_revision": {
+    "id": "topics-06-12-cover-v01",
+    "cover_count": 12,
+    "new_covers": [
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12"
+    ],
+    "new_hover_effects": false,
+    "calendar_renderer_unchanged": true,
+    "generated_concept_images": 7,
+    "deployed": false
+  },
   "homepage_scene_order": [
     "topic-01",
     "topic-02",
     "topic-03",
     "topic-04",
-    "topic-05"
+    "topic-05",
+    "topic-06",
+    "topic-07",
+    "topic-08",
+    "topic-09",
+    "topic-10",
+    "topic-11",
+    "topic-12",
+    "topics"
   ],
   "local_home_revision": {
-    "id": "topic-05-cover-v01",
-    "entry": "index.html#topic-05",
-    "status": "implemented_local_ready_for_review",
-    "local_only": true,
-    "implementation_authorized": true,
-    "visual_user_accepted": false,
-    "user_request": "接著設計這個主題的封面頁跟轉場動畫，最好可以像04一樣加入一些抖動或其他特效增加互動性，記得多用skill",
-    "base_revision": "atlas-book-v04",
-    "selection_mode": "click",
-    "case_files_unchanged": true,
-    "existing_image_pixels_unchanged": true,
-    "topic_scene_count": 5,
-    "independent_assets": 26,
-    "new_concept_assets": 4,
-    "hover_text_image_linked": true,
-    "verification": "work/ecology-ai-rollout/topic-05-cover-v01/verification.json"
+    "id": "home-directory-rows-v01",
+    "parent": "topics-06-12-cover-v01",
+    "status": "integrated_local_verified",
+    "image_case_links": 7,
+    "directory_layout": "one horizontal row per topic; cases inline",
+    "desktop_single_viewport": true,
+    "user_accepted": false,
+    "verification": "work/ecology-ai-rollout/home-directory-rows-v01/verification.json",
+    "deployed": false
   },
   "copy_revision": {
     "id": "topic-03-copy-v03",
@@ -5433,13 +6365,24 @@
     "review": "work/ecology-ai-rollout/topic-03-copy-v03/verification.json"
   },
   "typography_revision": {
-    "id": "typography-site-v01",
-    "scope": "Reader typography only; original font sizes, layout, palette, scripts and media retained.",
-    "local_only": true,
-    "entry_count": 18,
-    "case_count": 17,
-    "static_only_case": "01-02",
-    "verification": "work/ecology-ai-rollout/typography-site-v01/verification.json"
+    "id": "typography-correction-v01",
+    "extends": "typography-site-v01",
+    "corrected_cases": [
+      "06-01",
+      "08-01",
+      "09-03",
+      "10-01",
+      "11-02",
+      "12-01"
+    ],
+    "case_count": 27,
+    "heading_weights": [
+      750,
+      700,
+      650
+    ],
+    "cover_type_preserved": true,
+    "verification": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
   },
   "cover_typography_revision": {
     "id": "cover-type-v01",
@@ -5639,11 +6582,40 @@
     "case_pages_media_images_fonts_unchanged": true,
     "verification": "work/ecology-ai-rollout/cover-emil-optimize-v01/verification.json"
   },
+  "cover_hover_revision": {
+    "id": "cover-hover-v01",
+    "updated": "2026-10-28T13:01:12.965342+00:00",
+    "user_accepted": true,
+    "local_only": true,
+    "deployed": false,
+    "accepted_source": "work/ecology-ai-rollout/cover-click-feedback-v01/site/",
+    "accepted_revision": "topic04-hover-v06",
+    "integration_mode": "Add modules and reset hooks to canonical homepage; preserve original body and image sources",
+    "artwork_count": 26,
+    "environment_count": 4,
+    "topic1_artwork_count": 4,
+    "topic1_environment_count": 4,
+    "group_key": "topic + caseId",
+    "focus_frames": "One per member image; same-case motion synchronized",
+    "topics": {
+      "01": "field lines",
+      "02": "synchronized member frames",
+      "03": "paired lift and tilt",
+      "04": "image-coupled observation guides",
+      "05": "grouped lift and tilt"
+    },
+    "calendar_renderer_retained": true,
+    "keyboard_and_touch_retained": true,
+    "case_pages_media_assets_fonts_unchanged": true,
+    "verification": "work/ecology-ai-rollout/cover-hover-integration-v01/integration-verification.json"
+  },
   "github_pages_preparation": {
     "repository": "tomlin01/nchu-ecological-lab",
     "base_path": "/nchu-ecological-lab/",
-    "local_only": true,
+    "source_archive": "ecology-ai-12topics-27cases-20261030.zip",
+    "source_archive_sha256": "5fb542d214fcc0ad046fdbdf3421a01a36e1a51c326d6d96999dc1d463c600f1",
     "source_base_commit": "123100a848cee56872b285fb0eaf5a7cc46cafcc",
-    "includes_current_worktree": true
+    "includes_full_snapshot": true,
+    "media_bytes_unchanged": true
   }
 }

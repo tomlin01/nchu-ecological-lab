@@ -1,0 +1,37 @@
+{
+  "case_id": "11-02",
+  "version": "v01",
+  "generated_at_date": "2026-10-29",
+  "scope": "Conceptual habitat asset only. Root agent manages author Figure11 separately.",
+  "assets": [
+    {
+      "id": "forest-banteng-wire-v01",
+      "project_path": "assets/forest-banteng-wire-v01.png",
+      "source_kind": "AI-generated conceptual image",
+      "generation_mode": "built-in image_gen",
+      "original_master_path": "/Users/tom/.codex/generated_images/01a18631-0d33-78f0-987e-02ca7c82408a/exec-a57292ad-9093-4add-a456-d34f0fb82ed7.png",
+      "exact_prompt_path": "prompts/forest-banteng-wire-exact-tool-prompt-v01.md",
+      "structured_prompt_path": "prompts/forest-banteng-wire-v01.md",
+      "referenced_images": [],
+      "transparent_background": false,
+      "dimensions": {"width": 1672, "height": 941},
+      "requested_dimensions": {"width": 1600, "height": 900},
+      "sha256": "62b5d55fddbca3402667973f154efc934fcfbae274ec5004b82f6237ce5bee0d",
+      "rights_note": "Generated with the built-in image_gen tool for this project. No Creative Commons license is asserted. This is not an author-supplied research photograph.",
+      "meaning_boundary": "Habitat, animal, path and wire are conceptual. They are not verified field observations, measured patrol routes, an identified individual, a documented snare location, or an animal rescue result.",
+      "recommended_visible_caption_zh_TW": "AI生成概念圖；非研究現場照片",
+      "review": {
+        "single_healthy_banteng": true,
+        "dry_woodland_leaf_litter": true,
+        "curving_path_right": true,
+        "wire_recognizable_on_close_view": true,
+        "wire_visibility_caveat": "Wire is larger and more exposed than requested; the loop can already be recognized in the wide image.",
+        "no_people_injury_text_or_ui": true,
+        "banteng_bbox_normalized": [0.221, 0.164, 0.419, 0.454],
+        "wire_center_normalized": [0.687, 0.814],
+        "wire_loop_bbox_normalized": [0.545, 0.688, 0.826, 0.944],
+        "crop_note": "Keep the lower-right foreground when composing. Wire extends near the lower image edge; use object-position or scene transforms that retain this region."
+      }
+    }
+  ]
+}

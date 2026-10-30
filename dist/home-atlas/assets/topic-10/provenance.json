@@ -1,0 +1,12 @@
+{
+  "kind": "ai-generated-concept-cover",
+  "topic": "10",
+  "tool": "builtin-imagegen",
+  "prompt": "prompt.md",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "cc5c003b9a3f78846c0eb250a232fcf77b4435552d6783597ff8a908cec4ed4b",
+  "source_image_unchanged": true,
+  "not_field_record": true,
+  "not_model_output": true
+}

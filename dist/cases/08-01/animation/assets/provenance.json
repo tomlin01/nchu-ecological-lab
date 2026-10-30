@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "case_id": "08-01",
+  "prototype": "prototype-v01",
+  "created_at_utc": "2026-10-28T15:38:22.415981+00:00",
+  "generation_method": "Built-in image_gen.imagegen; one brand-new generation call for each v01 asset and one targeted built-in edit for the bird v02 sibling; no CLI or external API fallback",
+  "evidence_class": "AI-generated concept assets",
+  "source_observation": false,
+  "real_photographs": false,
+  "official_ebird_data": false,
+  "intended_use": "Illustrative environment and bird sprite for a 120-second educational eBird animation prototype.",
+  "source_images": [],
+  "prompt_record": "../prompts/scene-assets-v01.md",
+  "preservation": "Each generated PNG copied unchanged into the workspace. Generated originals remain at their default location. No post-generation resizing, retouching, or alpha alteration.",
+  "scientific_limit": "Illustrative concepts are not species occurrence evidence, field observations, or independently verified taxonomic reference images.",
+  "assets": [
+    {
+      "file": "sagebrush-scene-v01.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 3562306,
+      "sha256": "b4bfe6a58870071e77d2adf81131ed72ebed3d82abf9ddcf8a8d1e4c3bb579dd",
+      "workspace_relative_path": "assets/sagebrush-scene-v01.png",
+      "generated_original": "/Users/tom/.codex/generated_images/01a18327-8ccd-7820-9552-479aa61378ce/exec-1daa3fab-ad03-443c-bb08-170903d2fcbe.png",
+      "transparent_background_requested": false,
+      "use_case": "photorealistic-natural",
+      "role": "Sagebrush steppe background environment",
+      "prompt": "Use case: photorealistic-natural\nAsset type: 16:9 landscape background plate for an educational eBird animation; an AI-generated concept environment.\nPrimary request: a wide North American sagebrush steppe landscape in soft morning light.\nScene/backdrop: silver-green sagebrush mixed with dry golden grasses on open arid land, with low rolling mountains in the distance and a pale natural morning sky.\nComposition/framing: wide 16:9 landscape, plausible slightly elevated field viewpoint, horizon in the upper third. A narrow natural dirt walking path enters the lower-left corner, winds across the middle of the image and recedes toward the far-right distance. Distinct, naturally irregular foreground and midground sagebrush bushes provide useful occlusion edges. Preserve visible pockets of bare ground between bushes so separately animated small birds can later move through the scene.\nStyle/medium: photorealistic field-landscape image, natural botanical texture and restrained realistic color.\nLighting/mood: soft morning light, gentle shadows, calm clear conditions.\nConstraints: no birds or other animals; no people; no buildings, fences, utility poles, vehicles, signs or structures; no text, labels, map graphics, logo or watermark. No exaggerated fantasy terrain. The path must be narrow and plausible. Generate a new original image with an opaque background.",
+      "verification": {
+        "visual_inspection": "Opened saved workspace PNG using view_image. Morning sagebrush steppe, low distant mountains, winding path, no visible birds, people, text, or structures.",
+        "aspect_ratio": "Approximately 16:9 as returned by the built-in tool (1672 × 941)."
+      }
+    },
+    {
+      "file": "sage-thrasher-cutout-v01.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 1955113,
+      "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb",
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fully_transparent_pixels": 1165462,
+        "partially_opaque_pixels": 407402,
+        "fully_opaque_pixels": 0,
+        "nonzero_bbox": [
+          45,
+          17,
+          1516,
+          1004
+        ],
+        "unmodified_generated_alpha": true
+      },
+      "workspace_relative_path": "assets/sage-thrasher-cutout-v01.png",
+      "generated_original": "/Users/tom/.codex/generated_images/01a18327-8ccd-7820-9552-479aa61378ce/exec-33bf2b3d-5192-4713-803d-f468c0034413.png",
+      "transparent_background_requested": true,
+      "use_case": "scientific-educational",
+      "role": "Sage Thrasher (Oreoscoptes montanus) isolated bird sprite",
+      "prompt": "Use case: scientific-educational\nAsset type: isolated photorealistic bird cutout sprite for an educational ecology animation; AI-generated concept, not a field observation.\nPrimary request: exactly one Sage Thrasher (Oreoscoptes montanus), scientifically plausible adult, full body, both feet and entire tail visible, facing right in a natural side or slight three-quarter view.\nSubject details: soft brown-grey upperparts; pale cream underparts with strong dark streaks on the breast and sides; pale yellowish eye; a slender, short, STRAIGHT dark bill characteristic of Sage Thrasher, with no downward curve; a relatively long grey-brown tail and natural folded wings. Realistic plumage detail, correct bird anatomy, natural compact proportions. Standing pose with toes clearly visible.\nComposition/framing: single large bird centered with clean silhouette and a safe transparent margin around all extremities; no cropped feet or tail. Bird looks toward the right.\nStyle/medium: photorealistic natural bird, softly lit with fine detailed feather edges suitable for compositing over a morning sagebrush landscape.\nBackground: genuinely transparent RGBA background with actual alpha transparency everywhere outside the bird; do not render a white, grey, checkerboard or colored background.\nConstraints: no branch, rock, ground, base, perch, vegetation, cast ground shadow or other object; no other birds; no text, labels, logo or watermark. Do not create a curved-billed thrasher. Preserve feet, tail and slender straight bill as an intact clean cutout.",
+      "verification": {
+        "visual_inspection": "Opened saved workspace PNG using view_image. Single right-facing bird, straight bill, pale eye, streaked cream breast, folded wings, full tail, and both feet.",
+        "alpha_check": "RGBA channel includes genuine fully transparent pixels outside the bird. Generated alpha is preserved unchanged.",
+        "species_identity": "AI-generated Sage Thrasher concept; human scientific review remains the acceptance authority."
+      }
+    },
+    {
+      "file": "sage-thrasher-cutout-v02.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 1880943,
+      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9",
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "fully_transparent_pixels": 1184727,
+        "partially_opaque_pixels": 388137,
+        "fully_opaque_pixels": 0,
+        "nonzero_bbox": [
+          65,
+          22,
+          1456,
+          1004
+        ],
+        "unmodified_generated_alpha": true
+      },
+      "workspace_relative_path": "assets/sage-thrasher-cutout-v02.png",
+      "generated_original": "/Users/tom/.codex/generated_images/01a18327-8ccd-7820-9552-479aa61378ce/exec-81a26cab-157d-481f-89df-36780c6cc080.png",
+      "transparent_background_requested": true,
+      "use_case": "background-extraction",
+      "role": "Targeted built-in alpha-cleanup edit candidate of the Sage Thrasher sprite",
+      "source_images": [
+        "assets/sage-thrasher-cutout-v01.png"
+      ],
+      "prompt": "Use case: background-extraction\nAsset type: clean transparent Sage Thrasher sprite for compositing.\nInput image: the supplied PNG is the edit target. Preserve the bird itself exactly.\nPrimary request: clean only the alpha/background outside the bird's feather and foot silhouette. Remove all tan/brown matte, cloud, haze, glow, shadow and background outside the bird. The entire area outside the true bird silhouette must be genuinely fully transparent with alpha 0. Make the bird's body and feather interior fully opaque (alpha 255), with only a thin natural antialias boundary around fine feathers and toes.\nInvariants: keep the exact same bird morphology, pose, facing direction, placement, scale, full tail, full feet, feather pattern, colors, straight slender bill and pale eye. Do not redraw, restyle, reposition or crop the bird. Do not add anything. Preserve the original canvas dimensions and transparent margins.\nBackground: actual transparent RGBA. No solid color, checkerboard, background object, ground, shadow, brown halo, glow, soft background residue or floating cloud. This is a targeted clean cutout edit only.",
+      "verification": {
+        "visual_inspection": "Opened saved PNG with view_image, then inspected actual browser alpha compositing over black and the generated landscape. No broad brown halo is visible in either v01 or v02 when alpha is composited correctly.",
+        "alpha_check": "RGBA alpha min 0, max 254. The built-in edit did not deliver literal alpha 255 interior despite that prompt constraint. Generated alpha was not modified after generation.",
+        "edit_fidelity": "Bird pose and silhouette retained; edit warmed plumage colors and increased contrast. Retain v01 as original appearance.",
+        "species_identity": "AI-generated Sage Thrasher concept; human scientific review remains the acceptance authority."
+      }
+    }
+  ],
+  "compositing_review": {
+    "verified_at_utc": "2026-10-28T15:43:48.708793+00:00",
+    "screenshot": "assets/sage-thrasher-alpha-browser-review-v02.png",
+    "method": "Actual browser screenshot of untouched v01 and v02 PNGs over black and the sagebrush landscape, in an isolated page.",
+    "finding": "Both files composite without the broad tan/brown cloud visible in raw generation/view_image previews. Sampled haze-area pixels have alpha 0. The preview cloud is hidden RGB display, not an actual opaque background.",
+    "recommended_animation_source": "assets/sage-thrasher-cutout-v01.png",
+    "recommendation_reason": "v01 already composites cleanly and retains the original neutral plumage color. v02 remains available as a sibling candidate."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "11-02",
+  "version": "v02",
+  "generated_at_date": "2026-10-29",
+  "selection": "Preferred habitat image after reducing foreground wire visibility. v01 remains preserved.",
+  "assets": [
+    {
+      "id": "forest-banteng-wire-v02",
+      "project_path": "assets/forest-banteng-wire-v02.png",
+      "source_kind": "AI-generated conceptual image, localized edit of v01",
+      "generation_mode": "built-in image_gen edit",
+      "original_master_path": "/Users/tom/.codex/generated_images/01a18631-0d33-78f0-987e-02ca7c82408a/exec-26f6fb2d-e314-465d-bab3-fb964606e78d.png",
+      "exact_prompt_path": "prompts/forest-banteng-wire-exact-tool-prompt-v02.md",
+      "referenced_images": ["assets/forest-banteng-wire-v01.png"],
+      "transparent_background": false,
+      "dimensions": {"width": 1672, "height": 941},
+      "sha256": "29b8262e7fdbc404c75d6f3a0bac4de102584f845992d43308ef07f1157def4c",
+      "rights_note": "Generated and edited with the built-in image_gen tool for this project. No Creative Commons license is asserted. This is not an author-supplied research photograph.",
+      "meaning_boundary": "Habitat, animal, path and wire are conceptual. They are not verified field observations, measured patrol routes, an identified individual, a documented snare location, or an animal rescue result.",
+      "recommended_visible_caption_zh_TW": "AI生成概念圖；非研究現場照片",
+      "review": {
+        "single_healthy_banteng_preserved": true,
+        "forest_path_light_and_camera_substantially_preserved": true,
+        "wire_less_conspicuous_than_v01": true,
+        "wire_recognizable_on_close_view": true,
+        "concealment_note": "The prompt asked for60-70percent concealment. Visual review confirms substantially more cover, but no measured concealment percentage is asserted.",
+        "no_people_injury_text_or_ui": true,
+        "banteng_bbox_normalized": [0.221, 0.164, 0.419, 0.454],
+        "wire_center_normalized": [0.687, 0.814],
+        "wire_region_normalized": [0.545, 0.688, 0.826, 0.944],
+        "crop_note": "Keep the lower-right foreground when composing. Fine curved wire segments remain among the leaves near the zoom anchor."
+      }
+    }
+  ],
+  "prior_asset_record": "asset-provenance-v01.json"
+}

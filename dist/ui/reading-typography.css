@@ -18,6 +18,13 @@
   html[data-reading-type="04-03"] { --reading-sans: "FishWeb Sans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
   html[data-reading-type="07-01"] { --reading-sans: "HybridParentSans", "HabitatSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
 
+  html[data-reading-type="06-01"] { --reading-sans: "COIWeb", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="08-01"] { --reading-sans: "EBirdCaseSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="09-03"] { --reading-sans: "DiscountCaseSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="10-01"] { --reading-sans: "BloomCaseSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="11-02"] { --reading-sans: "PawsCaseSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+  html[data-reading-type="12-01"] { --reading-sans: "RecordCaseSans", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+
   :where(html[data-reading-type]) body { line-height: 1.85; }
   /* Heading-only priority handles older ID-scoped font shorthands without changing sizes. */
   :where(html[data-reading-type]) :is(h1, h2, h3, summary) { font-family: var(--reading-sans) !important; }

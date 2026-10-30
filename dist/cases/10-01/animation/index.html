@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>湖裡的藍綠藻，幾週後會變多嗎？｜湖泊監測概念動畫</title>
+  <meta name="description" content="120秒無聲概念動畫，從湖面浮標、水下探頭到裝置內的模型，理解量測、數週預測與研究原型的使用界線。">
+  <link rel="icon" href="data:,">
+  <script>
+    try {
+      const queryTheme = new URLSearchParams(location.search).get('theme');
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('ecology-color-theme'); } catch {}
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(queryTheme) ? queryTheme : savedTheme === 'dark' ? 'dark' : 'light';
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.mjs" type="module"></script>
+<link rel="stylesheet" href="embed.css">
+<script type="module" src="embed.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="player" class="player" aria-labelledby="pageTitle">
+    <header class="player-heading">
+      <div>
+        <p class="eyebrow">湖泊監測與裝置內預測 <span>120秒概念動畫；沒有聲音。</span></p>
+        <h1 id="pageTitle">湖裡的藍綠藻，<br>幾週後會變多嗎？</h1>
+        <p class="opening-copy">湖面上的浮標，能不能先估幾週後的藍綠藻變化？</p>
+      </div>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">切換深色</button>
+    </header>
+
+    <div class="transport" role="group" aria-label="動畫播放控制">
+      <div class="transport-row">
+        <button id="playButton" class="primary" type="button" aria-pressed="false" disabled>播放</button>
+        <button id="replayButton" type="button" disabled>重播</button>
+        <output id="timeReadout" aria-label="目前時間與總長度">00:00 / 02:00</output>
+        <button id="expandButton" type="button" aria-expanded="false" aria-pressed="false" aria-controls="player">放大觀看</button>
+      </div>
+      <label class="sr-only" for="seekRange">播放進度</label>
+      <input id="seekRange" type="range" min="0" max="120" step="0.0416666667" value="0" aria-valuetext="00:00">
+      <div class="frame-controls" role="group" aria-label="檢查每一幀">
+        <button type="button" data-frame="-1" disabled>上一幀</button>
+        <button type="button" data-frame="1" disabled>下一幀</button>
+        <span>24 fps <span class="keyboard-hint">・空白鍵播放／暫停・← → 前後一秒</span></span>
+      </div>
+    </div>
+
+    <p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入場景與字型。載入後，按播放開始。</p>
+    <div id="playerError" class="error-message" hidden>
+      <p id="playerErrorCopy"></p>
+      <button id="retryButton" type="button">重新載入</button>
+    </div>
+
+    <div class="viewing-area">
+      <div class="composition-wrap">
+        <div id="composition" class="composition" tabindex="0" aria-label="120秒湖泊監測概念動畫。空白鍵播放或暫停，方向鍵前後一秒。"></div>
+        <p id="loadingNote" class="loading-note" aria-hidden="true">正在準備畫面</p>
+      </div>
+      <aside class="narrative" aria-labelledby="phaseTitle">
+        <p id="phaseLabel" class="phase-label">1 / 6 · 湖面與水下</p>
+        <h2 id="phaseTitle">從湖面，看到水下探頭。</h2>
+        <p id="phaseCopy">浮標上的裝置取得量測，再用模型推估未來變化。</p>
+        <p id="phaseNote" class="phase-note">湖泊、浮標與探頭的位置和比例為概念示意。</p>
+      </aside>
+    </div>
+
+    <nav id="phaseNavigation" class="phase-navigation" aria-label="動畫段落">
+      <button type="button" data-seek="0"><span>00:00</span>湖面與水下</button>
+      <button type="button" data-seek="18"><span>00:18</span>今天量到什麼</button>
+      <button type="button" data-seek="38"><span>00:38</span>模型放進裝置</button>
+      <button type="button" data-seek="65"><span>01:05</span>未來四個時距</button>
+      <button type="button" data-seek="92"><span>01:32</span>預測怎麼檢查</button>
+      <button type="button" data-seek="106"><span>01:46</span>回到湖邊</button>
+    </nav>
+
+    <footer class="reading-footer">
+      <noscript><p>動畫需要 JavaScript。你仍可閱讀下方解說與<a href="SOURCE.md">來源記錄</a>。</p></noscript>
+      <details class="static-reading">
+        <summary>不播放，直接閱讀</summary>
+        <ol>
+          <li>湖面上的浮標連接水下探頭。水溫與藻藍蛋白螢光等訊號，可以提供藍綠藻監測的線索。這裡的湖泊與裝置是概念視覺。</li>
+          <li>藻藍蛋白是藍綠藻相關的色素。色素訊號、藍綠藻細胞數與毒素濃度是不同的量，不能直接互換。</li>
+          <li>研究者先在外部訓練淺層 LSTM，再量化模型並放進微控制器。量化使用較省空間的數值表示；裝置使用已訓練的模型。</li>
+          <li>研究比較 16、20、24、28 天四個預測期。時間線上的未來估計與已量到的過去分開顯示。動畫中的點位與曲線為解說示意。</li>
+          <li>預測需要和後續實測比較。作者使用 MAPE 評估預測誤差；本版未取得可追溯的原始序列與預測值，因此不呈現虛構的績效分數。</li>
+          <li>這項工作提出裝置內預測的研究原型。它可以讓監測端先提供估計，但長期現場表現與警報可靠性仍需另外核對。</li>
+        </ol>
+        <p>完整來源、已核對範圍與概念視覺記錄見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <details>
+        <summary>研究與畫面從哪裡來</summary>
+        <p>研究：<a href="https://doi.org/10.1016/j.watres.2025.124283" target="_blank" rel="noopener">Sandubete-López 等人，2025，Water Research 287，124283</a>，<i>Shallow learning model for long-term cyanobacterial bloom forecasting in real-time monitoring system</i>。</p>
+        <p>裝置、輸入訊號與研究背景參考<a href="https://www.ucm.es/dispositivo-prediccion-cianobacerias-agua" target="_blank" rel="noopener">UCM 原始研究報導</a>及<a href="https://produccioncientifica.ucm.es/documentos/68a0ccd7ea77332c37537c19?lang=en" target="_blank" rel="noopener">UCM 研究紀錄</a>。全文另有<a href="https://hdl.handle.net/20.500.14352/133644" target="_blank" rel="noopener">機構典藏入口</a>。</p>
+        <p>本版以已核對的摘要與 UCM 原始說明為依據。完整方法與結果表尚未核對，因此不呈現績效百分比，也不將色素預測稱為警報命中率。</p>
+        <p>湖泊、浮標、探頭、電路板與時間線為概念視覺，沒有實測尺度。動畫未重新訓練或執行模型。來源範圍與素材記錄見<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <p class="prototype-note">10-01・120秒概念動畫・無聲</p>
+    </footer>
+  </main>
+</body>
+</html>

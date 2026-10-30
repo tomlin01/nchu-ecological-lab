@@ -1,0 +1,15 @@
+/* Website layout only. The accepted player, scene and playback clock stay unchanged. */
+.bloom-embedded .player{max-width:none;padding:12px 16px 20px}
+.bloom-embedded .player-heading{justify-content:flex-end;gap:0;margin:0 0 10px}
+.bloom-embedded .player-heading>div,.bloom-embedded .reading-footer,.bloom-embedded .skip-link{display:none}
+.bloom-embedded .theme-button{font-size:12px;min-height:34px;padding:5px 10px}
+.bloom-embedded .player-heading,.bloom-embedded .player-status{display:none}
+.bloom-embedded:not(.bloom-parent-expanded) .narrative,.bloom-embedded:not(.bloom-parent-expanded) .phase-navigation{display:none}
+.bloom-embedded:not(.bloom-parent-expanded) .viewing-area{display:block}
+.bloom-embedded:not(.bloom-parent-expanded) .composition-wrap{width:100%;max-width:min(100%,calc(max(190px,var(--bloom-host-height,850px) - 470px)*16/9));margin-inline:auto}
+.bloom-embedded .composition{border:0}
+.bloom-embedded.bloom-parent-expanded .player{padding:10px 18px 18px}
+.bloom-embedded.bloom-parent-expanded .viewing-area{grid-template-columns:minmax(0,1fr) 285px;gap:28px}
+.bloom-embedded.bloom-parent-expanded .composition-wrap{width:100%;max-width:min(100%,calc(max(200px,var(--bloom-host-height,100vh) - 320px)*16/9));justify-self:center}
+@media(max-width:920px){.bloom-embedded.bloom-parent-expanded .viewing-area{grid-template-columns:1fr;gap:22px}.bloom-embedded.bloom-parent-expanded .composition-wrap{max-width:none}}
+@media(max-width:600px){.bloom-embedded .player,.bloom-embedded.bloom-parent-expanded .player{padding:8px 5px 14px}.bloom-embedded .player-heading{margin-bottom:8px}.bloom-embedded .theme-button{font-size:11px;min-height:32px}.bloom-embedded .player-status{margin-bottom:12px}}

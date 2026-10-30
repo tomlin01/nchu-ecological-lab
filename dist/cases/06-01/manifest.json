@@ -12,11 +12,11 @@
   "model_inference_run": false,
   "integrated": true,
   "deployed": false,
-  "updated": "2026-10-28T01:44:04.055252+00:00",
+  "updated": "2026-10-29T17:28:27.298282+00:00",
   "files": {
     "06-01.html": {
-      "bytes": 18559,
-      "sha256": "df016eab07ee5013b75d50c4dac4e4301c0c1f00aea599546d39ef4817f155ad"
+      "bytes": 18648,
+      "sha256": "3b6f4471076f5d5c23be2df9ca246e855fd3ea8246228715d75a961708985ca9"
     },
     "README.md": {
       "bytes": 2209,
@@ -153,5 +153,12 @@
   "human_visual_review_completed": false,
   "verification": "work/ecology-ai-rollout/cases/06-01/web-review-v01/verification.json",
   "mp4_frame_count": 3072,
-  "mp4_duration_seconds": 128
+  "mp4_duration_seconds": 128,
+  "typography_revision": {
+    "id": "typography-correction-v01",
+    "scope": "reader heading family and hierarchy; existing font-size, layout and media preserved",
+    "shared_css": "../../ui/reading-typography.css",
+    "reading_type": "06-01",
+    "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  }
 }

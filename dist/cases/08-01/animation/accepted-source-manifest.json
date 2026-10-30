@@ -1,0 +1,134 @@
+{
+  "case_id": "08-01",
+  "revision": "prototype-v01",
+  "duration_seconds": 120,
+  "video_target": {
+    "width": 1600,
+    "height": 900,
+    "fps": 24,
+    "frames": 2880,
+    "audio": false
+  },
+  "phases": [
+    {
+      "id": "habitat",
+      "start": 0
+    },
+    {
+      "id": "observation",
+      "start": 20
+    },
+    {
+      "id": "model",
+      "start": 40
+    },
+    {
+      "id": "map",
+      "start": 68
+    },
+    {
+      "id": "validation",
+      "start": 94
+    },
+    {
+      "id": "ending",
+      "start": 108
+    }
+  ],
+  "api": "window.EBirdPlayer",
+  "source_reading": "SOURCE.md",
+  "method_evidence": "data/evidence.json",
+  "image_provenance": "assets/provenance.json",
+  "prompt_record": "prompts/scene-assets-v01.md",
+  "clock": "Single app clock; paused GSAP scene timeline sampled at exact time",
+  "demo_observations": true,
+  "raw_model_inference_run": false,
+  "official_map_version": 2022,
+  "official_map_period": [
+    2012,
+    2022
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 1205,
+      "sha256": "99508a8a4182cebd50fc65f877d66f144db2899ed14226e696a9090b08b2eaf9"
+    },
+    "SOURCE.md": {
+      "bytes": 3369,
+      "sha256": "33a58b34ea1b8c810d4dab92bfa8ab4f4c76f2689cdc18d95fcbd4c79d2ffab3"
+    },
+    "app.mjs": {
+      "bytes": 13061,
+      "sha256": "250afbc836bd1de368c0d14899c6d7217ebd6192cc6ff952cef493a9459f2a11"
+    },
+    "assets/official-trends-2022.png": {
+      "bytes": 1420071,
+      "sha256": "8e6ebdd19dcd1bf96dc8ed738e91cdfa4b7e8e49bca0af33bf3d06c3bc24c3d4"
+    },
+    "assets/provenance.json": {
+      "bytes": 10042,
+      "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
+    },
+    "assets/sage-thrasher-alpha-browser-review-v02.png": {
+      "bytes": 924061,
+      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
+    },
+    "assets/sage-thrasher-cutout-v01.png": {
+      "bytes": 1955113,
+      "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
+    },
+    "assets/sage-thrasher-cutout-v02.png": {
+      "bytes": 1880943,
+      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
+    },
+    "assets/sagebrush-scene-v01.png": {
+      "bytes": 3562306,
+      "sha256": "b4bfe6a58870071e77d2adf81131ed72ebed3d82abf9ddcf8a8d1e4c3bb579dd"
+    },
+    "data/evidence.json": {
+      "bytes": 1642,
+      "sha256": "568cd8b5d2c685259b38acbd1ff3d9bb9915f858e9fa093bb0d00fab84b9bf90"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/ebird-sans.woff2": {
+      "bytes": 137136,
+      "sha256": "0d713a70a758d89a81313ba268af66c4ec98d2a338a18f615c1631ae5df578ea"
+    },
+    "fonts/ebird-serif.woff2": {
+      "bytes": 182220,
+      "sha256": "4ca10669c2d4023916ab3140451660782ebdcc605f5329fa71343c7885345e4c"
+    },
+    "index.html": {
+      "bytes": 6884,
+      "sha256": "b9eb0766be837c66c0f7ac6e9d713106a50efaa8515fc9bfd1f4a9cf7f51d863"
+    },
+    "model.mjs": {
+      "bytes": 3923,
+      "sha256": "fb9d80fdaa6658fea7cb5c12e3099dd431fdb1f76cd18519fe4fe3185fcf035a"
+    },
+    "prompts/scene-assets-v01.md": {
+      "bytes": 6617,
+      "sha256": "510cab5f1d63156651a527bfb84b66ccf8862fa26f5914639f91acd4778e4712"
+    },
+    "scene.mjs": {
+      "bytes": 14883,
+      "sha256": "8600ed901e0e066379f6391588bc30f1bab15fc762831139362d189de2c9b7b7"
+    },
+    "style.css": {
+      "bytes": 9458,
+      "sha256": "33339bef8115fde794f94bcee6afc03b3237bd08c70656615fb6da783d639976"
+    },
+    "vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    }
+  },
+  "ui_palette": "Natural-history light / charcoal dark; aligned after video export with identical composition pixels"
+}

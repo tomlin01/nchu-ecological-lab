@@ -1,0 +1,15 @@
+/* Website layout only. The accepted player, scene and playback clock stay unchanged. */
+.record-embedded .player{max-width:none;padding:12px 16px 20px}
+.record-embedded .player-heading{justify-content:flex-end;gap:0;margin:0 0 10px}
+.record-embedded .player-heading>div,.record-embedded .reading-footer,.record-embedded .skip-link{display:none}
+.record-embedded .theme-button{font-size:12px;min-height:34px;padding:5px 10px}
+.record-embedded .player-heading,.record-embedded .player-status{display:none}
+.record-embedded:not(.record-parent-expanded) .narrative,.record-embedded:not(.record-parent-expanded) .phase-navigation{display:none}
+.record-embedded:not(.record-parent-expanded) .viewing-area{display:block}
+.record-embedded:not(.record-parent-expanded) .composition-wrap{width:100%;max-width:min(100%,calc(max(190px,var(--record-host-height,850px) - 470px)*16/9));margin-inline:auto}
+.record-embedded .composition{border:0}
+.record-embedded.record-parent-expanded .player{padding:10px 18px 18px}
+.record-embedded.record-parent-expanded .viewing-area{grid-template-columns:minmax(0,1fr) 285px;gap:28px}
+.record-embedded.record-parent-expanded .composition-wrap{width:100%;max-width:min(100%,calc(max(200px,var(--record-host-height,100vh) - 320px)*16/9));justify-self:center}
+@media(max-width:920px){.record-embedded.record-parent-expanded .viewing-area{grid-template-columns:1fr;gap:22px}.record-embedded.record-parent-expanded .composition-wrap{max-width:none}}
+@media(max-width:600px){.record-embedded .player,.record-embedded.record-parent-expanded .player{padding:8px 5px 14px}.record-embedded .player-heading{margin-bottom:8px}.record-embedded .theme-button{font-size:11px;min-height:32px}.record-embedded .player-status{margin-bottom:12px}}

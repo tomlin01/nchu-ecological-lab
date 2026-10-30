@@ -1,0 +1,32 @@
+{
+  "source": "https://doi.org/10.1111/2041-210X.14186",
+  "version": "Published2023article,Table2,All rows",
+  "study_period": [
+    2007,
+    2021
+  ],
+  "assessment": "independent simulation test data",
+  "records": [
+    {
+      "species": "Wood Thrush",
+      "mean_directional_error_percent": 2.4,
+      "nominal_ci_percent": 80,
+      "empirical_ci_coverage_percent": 47
+    },
+    {
+      "species": "Canada Warbler",
+      "mean_directional_error_percent": 6.8,
+      "nominal_ci_percent": 80,
+      "empirical_ci_coverage_percent": 49
+    },
+    {
+      "species": "Long-billed Curlew",
+      "mean_directional_error_percent": 3.4,
+      "nominal_ci_percent": 80,
+      "empirical_ci_coverage_percent": 61
+    }
+  ],
+  "directional_error": "Nonzeroestimatedtrend(oppositeknownsimulatedsign);80%CIexcludeszero;meanerrorbinnedbytrendmagnitudeandsummarizedacrossscenarios",
+  "not_sage_thrasher_validation": true,
+  "model_run_this_session": false
+}

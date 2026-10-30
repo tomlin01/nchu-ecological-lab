@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>少看到鳥，代表鳥真的變少了嗎？｜eBird 趨勢動畫</title>
+  <meta name="description" content="120秒無聲動畫，從賞鳥觀察到eBird趨勢圖，理解觀察條件、模型估計與證據的界線。">
+  <link rel="icon" href="data:,">
+  <script>
+    try {
+      const queryTheme = new URLSearchParams(location.search).get('theme');
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('ecology-color-theme'); } catch {}
+      document.documentElement.dataset.theme = ['light', 'dark'].includes(queryTheme) ? queryTheme : savedTheme === 'dark' ? 'dark' : 'light';
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/gsap.min.js"></script>
+  <script src="app.mjs" type="module"></script>
+
+<link rel="stylesheet" href="embed.css">
+<script type="module" src="embed.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#playButton">跳至播放控制</a>
+  <main id="player" class="player" aria-labelledby="pageTitle">
+    <header class="player-heading">
+      <div>
+        <p class="eyebrow">eBird Status and Trends <span>120秒・無聲動畫</span></p>
+        <h1 id="pageTitle">少看到鳥，<br>代表鳥真的變少了嗎？</h1>
+      </div>
+      <button id="themeButton" class="theme-button" type="button" aria-pressed="false">切換深色</button>
+    </header>
+
+    <div class="transport" role="group" aria-label="動畫播放控制">
+      <div class="transport-row">
+        <button id="playButton" class="primary" type="button" aria-pressed="false" disabled>播放</button>
+        <button id="replayButton" type="button" disabled>重播</button>
+        <output id="timeReadout" aria-label="目前時間與總長度">00:00 / 02:00</output>
+        <button id="expandButton" type="button" aria-expanded="false" aria-pressed="false" aria-controls="player">放大觀看</button>
+      </div>
+      <label class="sr-only" for="seekRange">播放進度</label>
+      <input id="seekRange" type="range" min="0" max="120" step="0.0416666667" value="0" aria-valuetext="00:00">
+      <div class="frame-controls" role="group" aria-label="檢查每一幀">
+        <button type="button" data-frame="-1" disabled>上一幀</button>
+        <button type="button" data-frame="1" disabled>下一幀</button>
+        <span>24 fps <span class="keyboard-hint">・空白鍵播放／暫停・← → 前後一秒</span></span>
+      </div>
+    </div>
+
+    <p id="playerStatus" class="player-status" role="status" aria-live="polite">正在載入影像與字型。載入後，按播放開始。</p>
+    <div id="playerError" class="error-message" hidden>
+      <p id="playerErrorCopy"></p>
+      <button id="retryButton" type="button">重新載入</button>
+    </div>
+
+    <div class="viewing-area">
+      <div class="composition-wrap">
+        <div id="composition" class="composition" tabindex="0" aria-label="120秒eBird趨勢動畫。空白鍵播放或暫停，方向鍵前後一秒。"></div>
+        <p id="loadingNote" class="loading-note" aria-hidden="true">正在準備畫面</p>
+      </div>
+      <aside class="narrative" aria-labelledby="phaseTitle">
+        <p id="phaseLabel" class="phase-label">1 / 6 · 先看觀察</p>
+        <h2 id="phaseTitle">今天少看到，代表鳥真的變少了嗎？</h2>
+        <p id="phaseCopy">一次觀察看見多少鳥，也會受到時間、地點與觀察方式影響。</p>
+        <p id="phaseNote" class="phase-note">從觀察記錄到族群趨勢，中間還需要比較與估計。</p>
+      </aside>
+    </div>
+
+    <nav id="phaseNavigation" class="phase-navigation" aria-label="動畫段落">
+      <button type="button" data-seek="0"><span>00:00</span>先看觀察</button>
+      <button type="button" data-seek="20"><span>00:20</span>觀察的條件</button>
+      <button type="button" data-seek="40"><span>00:40</span>在相同條件下比較</button>
+      <button type="button" data-seek="68"><span>01:08</span>看長期趨勢</button>
+      <button type="button" data-seek="94"><span>01:34</span>讀圖的界線</button>
+      <button type="button" data-seek="108"><span>01:48</span>回到證據</button>
+    </nav>
+
+    <footer class="reading-footer">
+      <noscript><p>動畫需要 JavaScript。你仍可閱讀下方解說與<a href="SOURCE.md">來源記錄</a>。</p></noscript>
+      <details class="static-reading">
+        <summary>不播放，直接閱讀</summary>
+        <ol>
+          <li>今天少看到鳥，可能與鳥的數量有關，也可能與觀察的時間、地點、天氣或方式有關。單次目擊數不能直接當作族群趨勢。</li>
+          <li>eBird 收集賞鳥者提交的觀察記錄。研究者使用觀察條件與環境資料，估計在可比較條件下的鳥類相對豐度。</li>
+          <li>趨勢圖呈現一段期間內的估計變化。動畫採用 2022 年版 Sage Thrasher 繁殖季趨勢圖，期間為 2012–2022 年，顯示累積變化。</li>
+          <li>地圖約以 27 公里網格呈現。某個網格的估計不能直接當作附近每一處的變化，也不能單靠地圖判定變化原因。</li>
+          <li>模型整理大量觀察，讓人檢視長期變化。解讀結果仍需核對資料涵蓋、估計的不確定性與其他證據。</li>
+        </ol>
+        <p>完整資料、圖像來源與使用界線記錄於<a href="SOURCE.md">本案來源記錄</a>。</p>
+      </details>
+      <details>
+        <summary>資料與圖片從哪裡來</summary>
+        <p>資料與方法說明：<a href="https://science.ebird.org/en/status-and-trends/faq" target="_blank" rel="noopener">eBird Status and Trends 官方 FAQ</a>。趨勢圖參考<a href="https://ebird.github.io/ebirdst/articles/trends.html" target="_blank" rel="noopener">ebirdst 官方趨勢圖教學</a>。</p>
+        <p>地圖使用 2022 年版 Sage Thrasher 繁殖季趨勢，涵蓋 2012–2022 年的累積變化，約 27 公里網格。圖中的物種是 Sage Thrasher，可參考<a href="https://www.allaboutbirds.org/guide/Sage_Thrasher/overview" target="_blank" rel="noopener">Cornell Lab 的物種介紹</a>。</p>
+        <p>方法研究：<a href="https://doi.org/10.1111/2041-210X.14186" target="_blank" rel="noopener">Fink 等人，2023，Methods in Ecology and Evolution</a>。Sage Thrasher 是本動畫的圖例物種，並非該論文的應用驗證物種。</p>
+        <p>開場鳥景與去背鳥圖為 AI 生成的概念畫面，並非野外採樣照片。動畫中的觀察記錄與模型流程為解說示意，沒有執行模型推論。可查看<a href="SOURCE.md">來源、授權與圖像使用記錄</a>。</p>
+      </details>
+      <p class="prototype-note">08-01・120秒動畫試作・無聲</p>
+    </footer>
+  </main>
+</body>
+</html>

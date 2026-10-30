@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "case_id": "09-03",
+  "evidence_type": "constructed_teaching_example",
+  "unit": "教學計數單位，非實際鳥隻數",
+  "sampling_unit": "教學日",
+  "sampling": {
+    "with_replacement": true,
+    "draw_count": 4,
+    "proposal": "q_i = g_i / sum(g)",
+    "estimator": "mean(f_i / q_i) over sampled draws",
+    "equivalent_estimator": "sum(g) * mean(f_i / g_i) over sampled draws",
+    "uniform_estimator": "4 * mean(f_i) over sampled draws"
+  },
+  "days": [
+    {
+      "id": "A",
+      "g": 10.0,
+      "f": 12.0,
+      "q": 0.1,
+      "q_fraction": "1/10",
+      "correction_ratio": 1.2
+    },
+    {
+      "id": "B",
+      "g": 20.0,
+      "f": 18.0,
+      "q": 0.2,
+      "q_fraction": "1/5",
+      "correction_ratio": 0.9
+    },
+    {
+      "id": "C",
+      "g": 30.0,
+      "f": 36.0,
+      "q": 0.3,
+      "q_fraction": "3/10",
+      "correction_ratio": 1.2
+    },
+    {
+      "id": "D",
+      "g": 40.0,
+      "f": 44.0,
+      "q": 0.4,
+      "q_fraction": "2/5",
+      "correction_ratio": 1.1
+    }
+  ],
+  "totals": {
+    "detector": 100.0,
+    "known_truth": 110.0
+  },
+  "sample": {
+    "order": [
+      "D",
+      "B",
+      "D",
+      "C"
+    ],
+    "draw_count": 4,
+    "unique_day_count": 3,
+    "steps": [
+      {
+        "draw": 1,
+        "day": "D",
+        "g": 40.0,
+        "f": 44.0,
+        "q": 0.4,
+        "correction_ratio": 1.1,
+        "weighted_total_contribution": 110.0,
+        "cumulative_estimate": 110.0,
+        "cumulative_estimate_fraction": "110",
+        "first_screening_of_day": true
+      },
+      {
+        "draw": 2,
+        "day": "B",
+        "g": 20.0,
+        "f": 18.0,
+        "q": 0.2,
+        "correction_ratio": 0.9,
+        "weighted_total_contribution": 90.0,
+        "cumulative_estimate": 100.0,
+        "cumulative_estimate_fraction": "100",
+        "first_screening_of_day": true
+      },
+      {
+        "draw": 3,
+        "day": "D",
+        "g": 40.0,
+        "f": 44.0,
+        "q": 0.4,
+        "correction_ratio": 1.1,
+        "weighted_total_contribution": 110.0,
+        "cumulative_estimate": 103.33333333333333,
+        "cumulative_estimate_fraction": "310/3",
+        "first_screening_of_day": false
+      },
+      {
+        "draw": 4,
+        "day": "C",
+        "g": 30.0,
+        "f": 36.0,
+        "q": 0.3,
+        "correction_ratio": 1.2,
+        "weighted_total_contribution": 120.0,
+        "cumulative_estimate": 107.5,
+        "cumulative_estimate_fraction": "215/2",
+        "first_screening_of_day": true
+      }
+    ],
+    "estimate": 107.5,
+    "estimate_fraction": "215/2",
+    "mean_correction_ratio": 1.075,
+    "sample_probability": 0.0096
+  },
+  "distributions": {
+    "importance": {
+      "bars": [
+        {
+          "estimate": 90.0,
+          "estimate_fraction": "90",
+          "probability": 0.0016,
+          "probability_fraction": "1/625",
+          "sequence_count": 1
+        },
+        {
+          "estimate": 95.0,
+          "estimate_fraction": "95",
+          "probability": 0.0128,
+          "probability_fraction": "8/625",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 97.5,
+          "estimate_fraction": "195/2",
+          "probability": 0.0128,
+          "probability_fraction": "8/625",
+          "sequence_count": 8
+        },
+        {
+          "estimate": 100.0,
+          "estimate_fraction": "100",
+          "probability": 0.0384,
+          "probability_fraction": "24/625",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 102.5,
+          "estimate_fraction": "205/2",
+          "probability": 0.0768,
+          "probability_fraction": "48/625",
+          "sequence_count": 24
+        },
+        {
+          "estimate": 105.0,
+          "estimate_fraction": "105",
+          "probability": 0.0896,
+          "probability_fraction": "56/625",
+          "sequence_count": 28
+        },
+        {
+          "estimate": 107.5,
+          "estimate_fraction": "215/2",
+          "probability": 0.1536,
+          "probability_fraction": "96/625",
+          "sequence_count": 24
+        },
+        {
+          "estimate": 110.0,
+          "estimate_fraction": "110",
+          "probability": 0.1792,
+          "probability_fraction": "112/625",
+          "sequence_count": 49
+        },
+        {
+          "estimate": 112.5,
+          "estimate_fraction": "225/2",
+          "probability": 0.1536,
+          "probability_fraction": "96/625",
+          "sequence_count": 40
+        },
+        {
+          "estimate": 115.0,
+          "estimate_fraction": "115",
+          "probability": 0.1536,
+          "probability_fraction": "96/625",
+          "sequence_count": 24
+        },
+        {
+          "estimate": 117.5,
+          "estimate_fraction": "235/2",
+          "probability": 0.1024,
+          "probability_fraction": "64/625",
+          "sequence_count": 32
+        },
+        {
+          "estimate": 120.0,
+          "estimate_fraction": "120",
+          "probability": 0.0256,
+          "probability_fraction": "16/625",
+          "sequence_count": 16
+        }
+      ],
+      "statistics": {
+        "mean": 110.0,
+        "mean_fraction": "110",
+        "variance": 30.0,
+        "variance_fraction": "30",
+        "standard_deviation": 5.477225575051661,
+        "sequence_count": 256,
+        "probability_sum_fraction": "1"
+      }
+    },
+    "uniform": {
+      "bars": [
+        {
+          "estimate": 48.0,
+          "estimate_fraction": "48",
+          "probability": 0.00390625,
+          "probability_fraction": "1/256",
+          "sequence_count": 1
+        },
+        {
+          "estimate": 54.0,
+          "estimate_fraction": "54",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 60.0,
+          "estimate_fraction": "60",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 66.0,
+          "estimate_fraction": "66",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 72.0,
+          "estimate_fraction": "72",
+          "probability": 0.01953125,
+          "probability_fraction": "5/256",
+          "sequence_count": 5
+        },
+        {
+          "estimate": 78.0,
+          "estimate_fraction": "78",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 80.0,
+          "estimate_fraction": "80",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 84.0,
+          "estimate_fraction": "84",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 86.0,
+          "estimate_fraction": "86",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 90.0,
+          "estimate_fraction": "90",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 92.0,
+          "estimate_fraction": "92",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 96.0,
+          "estimate_fraction": "96",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 98.0,
+          "estimate_fraction": "98",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 102.0,
+          "estimate_fraction": "102",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 104.0,
+          "estimate_fraction": "104",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 108.0,
+          "estimate_fraction": "108",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 110.0,
+          "estimate_fraction": "110",
+          "probability": 0.09375,
+          "probability_fraction": "3/32",
+          "sequence_count": 24
+        },
+        {
+          "estimate": 112.0,
+          "estimate_fraction": "112",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 116.0,
+          "estimate_fraction": "116",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 118.0,
+          "estimate_fraction": "118",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 120.0,
+          "estimate_fraction": "120",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 124.0,
+          "estimate_fraction": "124",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 126.0,
+          "estimate_fraction": "126",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 128.0,
+          "estimate_fraction": "128",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 134.0,
+          "estimate_fraction": "134",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 136.0,
+          "estimate_fraction": "136",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 142.0,
+          "estimate_fraction": "142",
+          "probability": 0.046875,
+          "probability_fraction": "3/64",
+          "sequence_count": 12
+        },
+        {
+          "estimate": 144.0,
+          "estimate_fraction": "144",
+          "probability": 0.01953125,
+          "probability_fraction": "5/256",
+          "sequence_count": 5
+        },
+        {
+          "estimate": 150.0,
+          "estimate_fraction": "150",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 152.0,
+          "estimate_fraction": "152",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 160.0,
+          "estimate_fraction": "160",
+          "probability": 0.0234375,
+          "probability_fraction": "3/128",
+          "sequence_count": 6
+        },
+        {
+          "estimate": 168.0,
+          "estimate_fraction": "168",
+          "probability": 0.015625,
+          "probability_fraction": "1/64",
+          "sequence_count": 4
+        },
+        {
+          "estimate": 176.0,
+          "estimate_fraction": "176",
+          "probability": 0.00390625,
+          "probability_fraction": "1/256",
+          "sequence_count": 1
+        }
+      ],
+      "statistics": {
+        "mean": 110.0,
+        "mean_fraction": "110",
+        "variance": 675.0,
+        "variance_fraction": "675",
+        "standard_deviation": 25.98076211353316,
+        "sequence_count": 256,
+        "probability_sum_fraction": "1"
+      }
+    }
+  },
+  "histograms": {
+    "bin_width": 5,
+    "interval_convention": "lower inclusive, upper exclusive",
+    "importance": [
+      {
+        "lower": 40,
+        "upper": 45,
+        "center": 42.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 45,
+        "upper": 50,
+        "center": 47.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 50,
+        "upper": 55,
+        "center": 52.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 55,
+        "upper": 60,
+        "center": 57.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 60,
+        "upper": 65,
+        "center": 62.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 65,
+        "upper": 70,
+        "center": 67.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 70,
+        "upper": 75,
+        "center": 72.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 75,
+        "upper": 80,
+        "center": 77.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 80,
+        "upper": 85,
+        "center": 82.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 85,
+        "upper": 90,
+        "center": 87.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 90,
+        "upper": 95,
+        "center": 92.5,
+        "probability": 0.0016,
+        "probability_fraction": "1/625"
+      },
+      {
+        "lower": 95,
+        "upper": 100,
+        "center": 97.5,
+        "probability": 0.0256,
+        "probability_fraction": "16/625"
+      },
+      {
+        "lower": 100,
+        "upper": 105,
+        "center": 102.5,
+        "probability": 0.1152,
+        "probability_fraction": "72/625"
+      },
+      {
+        "lower": 105,
+        "upper": 110,
+        "center": 107.5,
+        "probability": 0.2432,
+        "probability_fraction": "152/625"
+      },
+      {
+        "lower": 110,
+        "upper": 115,
+        "center": 112.5,
+        "probability": 0.3328,
+        "probability_fraction": "208/625"
+      },
+      {
+        "lower": 115,
+        "upper": 120,
+        "center": 117.5,
+        "probability": 0.256,
+        "probability_fraction": "32/125"
+      },
+      {
+        "lower": 120,
+        "upper": 125,
+        "center": 122.5,
+        "probability": 0.0256,
+        "probability_fraction": "16/625"
+      },
+      {
+        "lower": 125,
+        "upper": 130,
+        "center": 127.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 130,
+        "upper": 135,
+        "center": 132.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 135,
+        "upper": 140,
+        "center": 137.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 140,
+        "upper": 145,
+        "center": 142.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 145,
+        "upper": 150,
+        "center": 147.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 150,
+        "upper": 155,
+        "center": 152.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 155,
+        "upper": 160,
+        "center": 157.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 160,
+        "upper": 165,
+        "center": 162.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 165,
+        "upper": 170,
+        "center": 167.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 170,
+        "upper": 175,
+        "center": 172.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 175,
+        "upper": 180,
+        "center": 177.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      }
+    ],
+    "uniform": [
+      {
+        "lower": 40,
+        "upper": 45,
+        "center": 42.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 45,
+        "upper": 50,
+        "center": 47.5,
+        "probability": 0.00390625,
+        "probability_fraction": "1/256"
+      },
+      {
+        "lower": 50,
+        "upper": 55,
+        "center": 52.5,
+        "probability": 0.015625,
+        "probability_fraction": "1/64"
+      },
+      {
+        "lower": 55,
+        "upper": 60,
+        "center": 57.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 60,
+        "upper": 65,
+        "center": 62.5,
+        "probability": 0.0234375,
+        "probability_fraction": "3/128"
+      },
+      {
+        "lower": 65,
+        "upper": 70,
+        "center": 67.5,
+        "probability": 0.015625,
+        "probability_fraction": "1/64"
+      },
+      {
+        "lower": 70,
+        "upper": 75,
+        "center": 72.5,
+        "probability": 0.01953125,
+        "probability_fraction": "5/256"
+      },
+      {
+        "lower": 75,
+        "upper": 80,
+        "center": 77.5,
+        "probability": 0.046875,
+        "probability_fraction": "3/64"
+      },
+      {
+        "lower": 80,
+        "upper": 85,
+        "center": 82.5,
+        "probability": 0.0625,
+        "probability_fraction": "1/16"
+      },
+      {
+        "lower": 85,
+        "upper": 90,
+        "center": 87.5,
+        "probability": 0.046875,
+        "probability_fraction": "3/64"
+      },
+      {
+        "lower": 90,
+        "upper": 95,
+        "center": 92.5,
+        "probability": 0.0625,
+        "probability_fraction": "1/16"
+      },
+      {
+        "lower": 95,
+        "upper": 100,
+        "center": 97.5,
+        "probability": 0.0390625,
+        "probability_fraction": "5/128"
+      },
+      {
+        "lower": 100,
+        "upper": 105,
+        "center": 102.5,
+        "probability": 0.09375,
+        "probability_fraction": "3/32"
+      },
+      {
+        "lower": 105,
+        "upper": 110,
+        "center": 107.5,
+        "probability": 0.0234375,
+        "probability_fraction": "3/128"
+      },
+      {
+        "lower": 110,
+        "upper": 115,
+        "center": 112.5,
+        "probability": 0.1171875,
+        "probability_fraction": "15/128"
+      },
+      {
+        "lower": 115,
+        "upper": 120,
+        "center": 117.5,
+        "probability": 0.09375,
+        "probability_fraction": "3/32"
+      },
+      {
+        "lower": 120,
+        "upper": 125,
+        "center": 122.5,
+        "probability": 0.0390625,
+        "probability_fraction": "5/128"
+      },
+      {
+        "lower": 125,
+        "upper": 130,
+        "center": 127.5,
+        "probability": 0.0625,
+        "probability_fraction": "1/16"
+      },
+      {
+        "lower": 130,
+        "upper": 135,
+        "center": 132.5,
+        "probability": 0.046875,
+        "probability_fraction": "3/64"
+      },
+      {
+        "lower": 135,
+        "upper": 140,
+        "center": 137.5,
+        "probability": 0.046875,
+        "probability_fraction": "3/64"
+      },
+      {
+        "lower": 140,
+        "upper": 145,
+        "center": 142.5,
+        "probability": 0.06640625,
+        "probability_fraction": "17/256"
+      },
+      {
+        "lower": 145,
+        "upper": 150,
+        "center": 147.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 150,
+        "upper": 155,
+        "center": 152.5,
+        "probability": 0.03125,
+        "probability_fraction": "1/32"
+      },
+      {
+        "lower": 155,
+        "upper": 160,
+        "center": 157.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 160,
+        "upper": 165,
+        "center": 162.5,
+        "probability": 0.0234375,
+        "probability_fraction": "3/128"
+      },
+      {
+        "lower": 165,
+        "upper": 170,
+        "center": 167.5,
+        "probability": 0.015625,
+        "probability_fraction": "1/64"
+      },
+      {
+        "lower": 170,
+        "upper": 175,
+        "center": 172.5,
+        "probability": 0.0,
+        "probability_fraction": "0"
+      },
+      {
+        "lower": 175,
+        "upper": 180,
+        "center": 177.5,
+        "probability": 0.00390625,
+        "probability_fraction": "1/256"
+      }
+    ]
+  },
+  "boundaries": [
+    "四日數字為人為設定的教學計數單位，不是實際鳥數，也不是論文資料。",
+    "列出全部256個有序四次抽樣序列，依各序列機率加權；沒有執行Monte Carlo實驗。",
+    "兩種方法均固定四次有放回抽取，未固定不同日期的人工覆核成本。",
+    "同日可重複抽中；統計估計保留每次抽取，人工參考值可重用。",
+    "無偏指所有抽樣結果的機率加權平均等於已知總量，不保證單次估計正確。",
+    "分布是重複抽樣估計值的精確分布，不是95%信賴區間或後驗分布。",
+    "此設定的變異比較只適用於這組教學值，不是DISCount的一般效能保證。"
+  ]
+}

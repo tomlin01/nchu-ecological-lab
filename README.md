@@ -8,9 +8,11 @@ AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
 
 ## 網站來源
 
-`dist/` 取自既有正式編輯目錄的最新工作樹，包含22個案例、DeepCOI和
-`emil-motion-v01`封面修訂。來源Git基線是
-`123100a848cee56872b285fb0eaf5a7cc46cafcc`；複製時也完整帶入本機未提交內容。
+`dist/` 取自2026-10-30核對完成的完整離線包，包含12個主題封面、27個案例、
+六案閱讀字體校正、七張新封面圖片連結與十二橫列目錄。
+來源Git基線仍是`123100a848cee56872b285fb0eaf5a7cc46cafcc`，內容以完整快照為準，
+沒有只取舊HEAD或tracked diff。原始ZIP SHA-256為
+`5fb542d214fcc0ad046fdbdf3421a01a36e1a51c326d6d96999dc1d463c600f1`。
 
 首頁、月曆、案例播放器、圖片、字型、影片與來源文件沿用原檔。
 沒有重新壓縮媒體。只排除兩個本機預覽服務檔：
@@ -41,7 +43,14 @@ python3 scripts/preview.py --port 8993
 
 01-02維持只做靜態內容及雜湊核對，禁止案例、影片、HTTP、瀏覽器、原生播放及
 替代host驗證。預覽服務拒絕提供該案例；不能以其他副本或網址繞過。
-若日後建立Playwright測試context，必須在導航前封鎖`**/cases/01-02/**`並記錄零請求。
+兩張受保護的首頁圖片僅在測試預覽中，以中性SVG代換，不讀取原圖：
+
+- `home-atlas/assets/environments/01-02-ocean-wide-v01.png`
+- `home-atlas/assets/topic-01/01-02-sperm-whale-ocean-v01.png`
+
+完整素材仍保存在發布目錄。這不是原圖視覺驗收。
+若日後建立Playwright測試context，必須在任何頁面請求前安裝同樣的精確代換與
+`**/cases/01-02/**`封鎖，記錄原始存取零次及代換次數。
 
 ## 發布流程設定
 

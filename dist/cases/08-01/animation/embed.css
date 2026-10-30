@@ -1,0 +1,15 @@
+/* Website layout only. The accepted player, scene and playback clock stay unchanged. */
+.ebird-embedded .player{max-width:none;padding:12px 16px 20px}
+.ebird-embedded .player-heading{justify-content:flex-end;gap:0;margin:0 0 10px}
+.ebird-embedded .player-heading>div,.ebird-embedded .reading-footer,.ebird-embedded .skip-link{display:none}
+.ebird-embedded .theme-button{font-size:12px;min-height:34px;padding:5px 10px}
+.ebird-embedded .player-heading,.ebird-embedded .player-status{display:none}
+.ebird-embedded:not(.ebird-parent-expanded) .narrative,.ebird-embedded:not(.ebird-parent-expanded) .phase-navigation{display:none}
+.ebird-embedded:not(.ebird-parent-expanded) .viewing-area{display:block}
+.ebird-embedded:not(.ebird-parent-expanded) .composition-wrap{width:100%;max-width:min(100%,calc(max(190px,var(--ebird-host-height,850px) - 470px)*16/9));margin-inline:auto}
+.ebird-embedded .composition{border:0}
+.ebird-embedded.ebird-parent-expanded .player{padding:10px 18px 18px}
+.ebird-embedded.ebird-parent-expanded .viewing-area{grid-template-columns:minmax(0,1fr) 285px;gap:28px}
+.ebird-embedded.ebird-parent-expanded .composition-wrap{width:100%;max-width:min(100%,calc(max(200px,var(--ebird-host-height,100vh) - 320px)*16/9));justify-self:center}
+@media(max-width:920px){.ebird-embedded.ebird-parent-expanded .viewing-area{grid-template-columns:1fr;gap:22px}.ebird-embedded.ebird-parent-expanded .composition-wrap{max-width:none}}
+@media(max-width:600px){.ebird-embedded .player,.ebird-embedded.ebird-parent-expanded .player{padding:8px 5px 14px}.ebird-embedded .player-heading{margin-bottom:8px}.ebird-embedded .theme-button{font-size:11px;min-height:32px}.ebird-embedded .player-status{margin-bottom:12px}}
