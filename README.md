@@ -6,8 +6,8 @@ AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
 網站已於2026-10-30公開部署：
 [AI × 生態研究](https://tomlin01.github.io/nchu-ecological-lab/)。
 儲存庫已依使用者明確授權改為公開。
-本次網站來源commit為`819287dab61527aa278756aed6353c4055e0c6ec`；
-[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41002335470)已成功。
+最新首頁載入優化commit為`a1444e250f88686ac34339b1e4ed9d9ace44827f`；
+[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41006246514)已成功。
 
 ## 網站來源
 
@@ -17,8 +17,8 @@ AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
 沒有只取舊HEAD或tracked diff。原始ZIP SHA-256為
 `5fb542d214fcc0ad046fdbdf3421a01a36e1a51c326d6d96999dc1d463c600f1`。
 
-首頁、月曆、案例播放器、圖片、字型、影片與來源文件沿用原檔。
-沒有重新壓縮媒體。只排除兩個本機預覽服務檔：
+排版CSS、日曆renderer、案例播放器、圖片、字型、影片與來源文件沿用原檔。
+首頁後續調整了圖片載入時機，沒有重新壓縮媒體。只排除兩個本機預覽服務檔：
 
 - `serve_preview.py`
 - `cases/05-03/animation/serve-preview.py`
@@ -26,12 +26,23 @@ AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
 另新增`dist/404.html`並更新根manifest。原本的`scene.py`等研究或製作來源檔保留。
 工作區中的舊ZIP、部署archive、憑證、Sites設定及Git歷史沒有複製進網站。
 
+## 首次載入
+
+第一屏四張插畫保持立即載入；其他封面使用瀏覽器原生延遲載入。
+當前主題的圖片與字型準備完成後，才在閒置時預載下一主題。
+四張原本隱藏的環境大圖改為選案後下載，載入期間仍保留插畫與閱讀入口。
+等待／重試狀態以當前主題為準，列印前將有實際src的插畫切為立即載入。
+
+HTML立即載入圖片量由26,452,825 bytes降至2,784,248 bytes，約減少89.5%。
+這是原始檔案的載入優先量，不是實測LCP或整頁速度倍率；瀏覽器也可能提前載入鄰近圖片。
+
 ## 本機檢查
 
 需要Python 3.10以上版本，不需要額外Python套件。
 
 ```sh
 python3 -m unittest discover -s scripts -p 'test_*.py'
+node --test scripts/test_home_image_loading.cjs
 python3 scripts/verify_site.py
 python3 scripts/preview.py --port 8993
 ```
