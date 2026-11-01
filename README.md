@@ -1,28 +1,23 @@
-> 2026-11-02：使用者已確認取得 05-01 照片及衍生圖的公開使用授權，這次將發布完整 28 案與主題五新版。以下本機製作紀錄中的權利狀態為當時狀態。
-
-> 2026-11-01本機採用：主題五四案已換成使用者選定的八張深淺色 Three.js 示意，05-05 與 28 案內容不變。舊封面及未採用試作已清理，正式站維持1,467檔。84項瀏覽器及既有離線檢查通過，尚未推送或部署。05-01照片及衍生圖的公開重用授權仍未確認，目前僅本機展示。
-
-> 2026-11-01本機成案：05-05 ForTy已加入，現在12主題／28案／1463網站檔。原接受影片、舊27案及封面素材保留；官方公布日2026.10.22與2020基線分開呈現。尚未commit、push或部署。
-
-> 2026-10-30本機清理：本儲存庫現在是唯一編輯與發布來源，1,426網站檔／27案例。原Sites checkout已移除；清理尚未commit、push或部署。16張未採用圖片已移除並更新manifest，現用頁面、程式、影片、圖片及字型保留。
-
 # NCHU Ecological Lab website
 
-AI × 生態研究的 GitHub Pages 搬站準備副本。目標儲存庫為
+AI × 生態研究的唯一編輯與發布儲存庫。遠端為
 [`tomlin01/nchu-ecological-lab`](https://github.com/tomlin01/nchu-ecological-lab)。
 
 網站已於2026-10-30公開部署：
 [AI × 生態研究](https://tomlin01.github.io/nchu-ecological-lab/)。
 儲存庫已依使用者明確授權改為公開。
-最新首頁載入優化commit為`a1444e250f88686ac34339b1e4ed9d9ace44827f`；
-[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41006246514)已成功。
+最新完整網站commit為`e805891f560efd7a56f00cb00fdde6cb5b22aa45`；
+[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41326221120)已成功。
 
 ## 網站來源
 
-`dist/` 取自2026-10-30核對完成的完整離線包，包含12個主題封面、27個案例、
+目前`dist/`包含12個主題封面、28個案例，新增05-05 ForTy與主題五選定八張深淺色圖。
+使用者於2026-11-02確認取得05-01照片及衍生圖的公開使用授權；來源署名保留，不宣稱開放授權。
+
+最初2026-10-30搬站輸入包含27案、
 六案閱讀字體校正、七張新封面圖片連結與十二橫列目錄。
-來源Git基線仍是`123100a848cee56872b285fb0eaf5a7cc46cafcc`，內容以完整快照為準，
-沒有只取舊HEAD或tracked diff。原始ZIP SHA-256為
+最初來源Git基線是`123100a848cee56872b285fb0eaf5a7cc46cafcc`，內容以完整快照為準，
+沒有只取舊HEAD或tracked diff。歷史輸入ZIP SHA-256為
 `5fb542d214fcc0ad046fdbdf3421a01a36e1a51c326d6d96999dc1d463c600f1`。
 
 排版CSS、日曆renderer、案例播放器、圖片、字型、影片與來源文件沿用原檔。
