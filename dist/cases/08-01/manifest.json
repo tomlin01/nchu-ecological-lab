@@ -47,17 +47,9 @@
       "bytes": 10042,
       "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
     },
-    "animation/assets/sage-thrasher-alpha-browser-review-v02.png": {
-      "bytes": 924061,
-      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
-    },
     "animation/assets/sage-thrasher-cutout-v01.png": {
       "bytes": 1955113,
       "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
-    },
-    "animation/assets/sage-thrasher-cutout-v02.png": {
-      "bytes": 1880943,
-      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
     },
     "animation/assets/sagebrush-scene-v01.png": {
       "bytes": 3562306,
@@ -104,8 +96,8 @@
       "sha256": "45418d40118c7b64b7c804aa4d936aee9d8a23478cf9c6c18ded673e4db8557f"
     },
     "animation/manifest.json": {
-      "bytes": 5942,
-      "sha256": "d88b24946ab8135b02071abadbb84ef606c6ca32bd296882d9124d36db2fdfd6"
+      "bytes": 5889,
+      "sha256": "1ce0480096a5d137dd8cbf8d688f82a1c6416ff4bc72388e122adb47e8f4cc88"
     },
     "animation/model.mjs": {
       "bytes": 3923,
@@ -168,5 +160,14 @@
     "shared_css": "../../ui/reading-typography.css",
     "reading_type": "08-01",
     "verified": "work/ecology-ai-rollout/typography-correction-v01/qa/report.json"
+  },
+  "cleanup_revision": {
+    "id": "folder-cleanup-v02",
+    "removed_unused_images": [
+      "animation/assets/sage-thrasher-alpha-browser-review-v02.png",
+      "animation/assets/sage-thrasher-cutout-v02.png"
+    ],
+    "runtime_media_and_source_files_unchanged": true,
+    "deployed": false
   }
 }

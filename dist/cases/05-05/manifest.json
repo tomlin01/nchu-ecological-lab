@@ -1,0 +1,180 @@
+{
+  "case_id": "05-05",
+  "title": "同樣一片綠，AI 怎麼分辨不同森林？",
+  "version": "web-v01",
+  "entry": "05-05.html",
+  "topic": 5,
+  "status": "completed_local_awaiting_user_visual_review",
+  "official_announcement_date": "2026-10-22",
+  "paper_publication_date": "2026-10-21",
+  "baseline_year": 2020,
+  "publication_date_primary_on_first_screen": true,
+  "hero": "assets/forty-official-hero.webp",
+  "global_map": "assets/forty-global-map.webp",
+  "global_map_display_aggregation": "Most common forest/land type per1squarekilometer; not native10meter raster",
+  "animation_entry": "animation/embed.html",
+  "animation_duration_seconds": 120,
+  "mp4": "animation/film/05-05-forty-v01.mp4",
+  "mp4_sha256": "7479926441c3931f1ebfc94835026c569167ad650d8145cd46eda8ec2644a4f0",
+  "accepted_animation_source_files_preserved": 17,
+  "animation_user_accepted": true,
+  "animation_acceptance_quote": "可以成案",
+  "website_user_accepted": false,
+  "integrated": true,
+  "deployed": false,
+  "model_inference_run": false,
+  "pixel_scores_or_areas_derived_from_display_image": false,
+  "reading_typography": {
+    "family": "FortyCaseSans / Noto Sans TC",
+    "h1_weight": 750,
+    "h2_weight": 700,
+    "h3_weight": 650
+  },
+  "updated": "2026-11-01T12:00:08.184221+08:00",
+  "files": {
+    "05-05.html": {
+      "bytes": 13950,
+      "sha256": "1983f0e460504adaba38b45a5be0694c43880586a5d6e1173f358eca3c10c904"
+    },
+    "SOURCE-CHECK.md": {
+      "bytes": 3052,
+      "sha256": "12b27e8c1dc347c97156a233c6516a4b87e5eb40f5fe5a74e9ad671a02a8516a"
+    },
+    "SOURCE.md": {
+      "bytes": 4443,
+      "sha256": "7c722e437191f6b0c865500c0a85635cce38662c6126384fc8228b516c99e5a5"
+    },
+    "animation/SOURCE.md": {
+      "bytes": 3441,
+      "sha256": "663df0b33c3ecd2c40ffef341b27a05bb44f8be6cc66e68c370530e991f7816b"
+    },
+    "animation/accepted-source-manifest.json": {
+      "bytes": 1914,
+      "sha256": "21c2f5dedd35309d36efa124c033c4995201a04bdc7e35cb7207eceb6037d96a"
+    },
+    "animation/app.mjs": {
+      "bytes": 14122,
+      "sha256": "c14be5e5a365b143469af990932b2e30021c7c94be0f6c1fdaf5afc504e8f8cb"
+    },
+    "animation/assets/figure3.png": {
+      "bytes": 1004586,
+      "sha256": "35c4b6d548eb58757b53455e3f8f2447936058f581ca585130c79d5fe12e40a6"
+    },
+    "animation/assets/figure5.webp": {
+      "bytes": 421824,
+      "sha256": "1fd26ff1a854ef86fddfdf779fcd1663adf20dab481c0a711d8ca955b720c852"
+    },
+    "animation/bridge.mjs": {
+      "bytes": 8084,
+      "sha256": "8afe8a8a324b7c5ee6a450341ad5b8ee911bf78403c64d21d572e7dc82967244"
+    },
+    "animation/embed.css": {
+      "bytes": 2559,
+      "sha256": "60449eddc838774ae1a6b96ec885b7e6d8291449f0baa92304aa31f9cf570462"
+    },
+    "animation/embed.html": {
+      "bytes": 5915,
+      "sha256": "ba44d71240513950125537670ff0e5911d326a0ceebaf3e5f841b927f2574892"
+    },
+    "animation/film/05-05-forty-v01.mp4": {
+      "bytes": 5954881,
+      "sha256": "7479926441c3931f1ebfc94835026c569167ad650d8145cd46eda8ec2644a4f0"
+    },
+    "animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "animation/fonts/font-coverage.json": {
+      "bytes": 2607,
+      "sha256": "4a30511252e90a51b5976be6ba267b26f95fd9261ab551ddec6fdf801f2841d1"
+    },
+    "animation/fonts/fonts.css": {
+      "bytes": 282,
+      "sha256": "81985bc80992dc8580a85e08dbe64556324ddc8cafc9052a2cf4304a9ad43c79"
+    },
+    "animation/fonts/forty-sans.woff2": {
+      "bytes": 242812,
+      "sha256": "cba28b56c5f00d8e1fb20e94cd8fb4292cc0e1766c825233697468dc3524494f"
+    },
+    "animation/fonts/forty-serif.woff2": {
+      "bytes": 326568,
+      "sha256": "ec3c2f91d2f6a6b080cfe1e66430f13d5f65936d78a78059071b6a5c153babdb"
+    },
+    "animation/index.html": {
+      "bytes": 5737,
+      "sha256": "e00532b03f0364edc3e43e9634ed86d98c3de53018fc692243f70ffb387d7c94"
+    },
+    "animation/model.mjs": {
+      "bytes": 8473,
+      "sha256": "6aaff665c65effcd34ea5302fc80a3dac6c291ea583835c795c6ecde035a064f"
+    },
+    "animation/prepare-fonts.py": {
+      "bytes": 4165,
+      "sha256": "44f8f5bf6de680075ff8d8ec16c9689d84d5d35dc80223c0e515157d60978f03"
+    },
+    "animation/scene.mjs": {
+      "bytes": 20218,
+      "sha256": "9d5d95b64110c1aa170764dd6d1cdc7da50b58029e12907f1acc3ca5d7b97a56"
+    },
+    "animation/source-data.json": {
+      "bytes": 2561,
+      "sha256": "13810610d25dbf21a11264a939cd1e874fd80aad55d9d225d069a05f9c9dd362"
+    },
+    "animation/style.css": {
+      "bytes": 12856,
+      "sha256": "4e89928006c24e96fe2a96d2b7508111fcc5a1073fce1eb289f2fe92b2bb37e1"
+    },
+    "animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "asset-provenance.json": {
+      "bytes": 4057,
+      "sha256": "fbd3e2d02532339560e1bdc6b6001bc994c440526740f22e25217ca6d6be3c57"
+    },
+    "assets/forty-global-map.webp": {
+      "bytes": 134880,
+      "sha256": "ae7c38afd637ffacdc3c5faf088c6a02ad0045730b82dff904ff42ce13e2f40c"
+    },
+    "assets/forty-official-hero.webp": {
+      "bytes": 106634,
+      "sha256": "c6ae17b6841bb7ae3567e6e04ac6d8dccd1953ba343eeccb5926aeac0e87eb4b"
+    },
+    "case.css": {
+      "bytes": 20111,
+      "sha256": "0872d6a10541de351afd2a776b005c3bd10476be47a39e56e897cd7eb58afe15"
+    },
+    "case.js": {
+      "bytes": 17274,
+      "sha256": "c5287313887a92fdc333fbaef97567c215e6e3430e3711bb679cb289367c0baf"
+    },
+    "fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "fonts/coverage.json": {
+      "bytes": 1237,
+      "sha256": "d2a861a06a5346c8cbedb396446dcca2f49f63e08c8e97cfb17cf1bfe7dcfdc8"
+    },
+    "fonts/forty-web-sans.woff2": {
+      "bytes": 222360,
+      "sha256": "0cc220928924beb5316bf7de96153ff00ba7218cf3d6b9e7a0875eb3570dd07d"
+    },
+    "index.html": {
+      "bytes": 299,
+      "sha256": "2ef4b83a782b344756794c31dea5cc2521235477cbc98d365864c7e9254e8a10"
+    },
+    "prepare-fonts.py": {
+      "bytes": 2389,
+      "sha256": "d8a8df77dcc7bd79dd950fa23bbbbe140cff8d4cda702bdc036b2f981a3f4b08"
+    },
+    "source-dates.json": {
+      "bytes": 1553,
+      "sha256": "63d7a4fbf1eecf587a40ee5b306734cf44437f9a3a92d7f6dddfeaa620e723f3"
+    }
+  }
+}

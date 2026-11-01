@@ -1,0 +1,25 @@
+{
+  "file": "outputs/ecology-ai-rollout-assets/topic-05/cover-v02/05-05-forty-center-v01.png",
+  "mode": "RGBA",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 1834170,
+  "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283",
+  "alpha_extrema": [
+    0,
+    254
+  ],
+  "alpha_bounds": [
+    0,
+    0,
+    1498,
+    1024
+  ],
+  "fully_transparent_pixels": 968838,
+  "tool": "built-in imagegen",
+  "source": "work/nchu-ecological-lab/dist/cases/05-05/assets/forty-official-hero.webp",
+  "source_sha256": "c6ae17b6841bb7ae3567e6e04ac6d8dccd1953ba343eeccb5926aeac0e87eb4b",
+  "role": "AI-assisted background-removal display derivative of official promotional visual; not measured terrain or classification data",
+  "prompt": "05-05-forty-center-prompt.md",
+  "original_case_image_unchanged": true
+}

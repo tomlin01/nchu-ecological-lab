@@ -138,6 +138,11 @@ window.EcologySiteMap = {
           "id": "05-04",
           "title": "地圖上的顏色，有多確定？",
           "path": "cases/05-04/05-04.html"
+        },
+        {
+          "id": "05-05",
+          "title": "同樣一片綠，AI 怎麼分辨不同森林？",
+          "path": "cases/05-05/05-05.html"
         }
       ],
       "path": "index.html#topic-05"

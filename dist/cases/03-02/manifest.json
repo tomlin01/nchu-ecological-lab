@@ -122,10 +122,6 @@
       "bytes": 310194,
       "sha256": "3cbecfb55070fbf83c32954cd93952a35a2ea89e52c9585e6463a60c951c6493"
     },
-    "assets/jay-hero.webp": {
-      "bytes": 324780,
-      "sha256": "25fc8cd4321a705118cb1e196d5d0acec44192ce9651a9ce473ebfa5fa5225a3"
-    },
     "assets/provenance.json": {
       "bytes": 1256,
       "sha256": "ecd022b445a145584bd8d0fd94de7f010520040493605f28cf8acf357891202f"
@@ -199,5 +195,13 @@
     "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
     "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
   },
-  "updated": "2026-10-25T17:53:02.193588+00:00"
+  "updated": "2026-10-25T17:53:02.193588+00:00",
+  "cleanup_revision": {
+    "id": "folder-cleanup-v02",
+    "removed_unused_images": [
+      "assets/jay-hero.webp"
+    ],
+    "runtime_media_and_source_files_unchanged": true,
+    "deployed": false
+  }
 }

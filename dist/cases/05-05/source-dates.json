@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-11-01T11:17:27.056859+08:00",
+  "official_announcement": {
+    "date": "2026-10-22",
+    "published_timestamp": "2026-10-22T14:30:00+00:00",
+    "modified_timestamp": "2026-10-22T14:42:58.352750+00:00",
+    "visible_date": "October 22, 2026",
+    "source": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+    "evidence": "Visible cover date, article:published_time/article:modified_time, and embedded JSON-LD datePublished/dateModified agree.",
+    "taiwan_time": "2026-10-22T22:30:00+08:00"
+  },
+  "paper_publication": {
+    "date": "2026-10-21",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13686961/",
+    "doi": "https://doi.org/10.1038/s41597-026-08299-5",
+    "evidence": "Journal citation line: Sci Data. 2026 Oct 21;13:1434. Publisher redirect prevented direct page retrieval; journal record checked via PMC full-text copy."
+  },
+  "data_baseline": {
+    "year": 2020,
+    "meaning": "Target map year, not publication or satellite capture date"
+  },
+  "early_time_series": {
+    "years": "2017–2025",
+    "status": "Early release described in official2026-10-22 announcement; not assigned2020 validation accuracy in this case"
+  },
+  "recommended_display": {
+    "hero_primary": "2026.10.22 官方公布",
+    "supporting": "2026.10.21 論文發表 · 2020 地圖基線",
+    "avoid": [
+      "2020年發布",
+      "2026年衛星影像",
+      "把頁面更新時間當原發布時間",
+      "把2017–2025早期時間序列當作已套用2020精度驗證"
+    ]
+  }
+}

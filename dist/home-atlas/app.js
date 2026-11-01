@@ -62,7 +62,7 @@
     else{read.removeAttribute('href');read.textContent='閱讀案例';read.tabIndex=-1;}
     const message=id==='01'?(current?'點選其他案例，切換環境。':'點選案例名稱或插畫，走進環境。'): // taste-skill-ignore: internal chapter route key
       id==='03'?(current?'研究使用的照片、影片與錄音，都在案例裡。':'選一個問題，看看兩張圖的差別。'): // taste-skill-ignore: internal chapter route key
-      id==='05'?(current?(current.hint||'研究中的製圖方法與來源，都在案例裡。'):'點選案例名稱或插畫，看看研究怎麼描繪棲地。'):
+      id==='05'?(current?(current.hint||'研究中的製圖方法與來源，都在案例裡。'):'點選案例名稱或圖片，看看研究怎麼描繪棲地。'):
       id==='04'?(current?.id==='04-04'?'群聚平均是推估，圖中植物不是研究樣區':current?(current.hint||'研究中的量測方法與來源，都在案例裡。'):'點選案例名稱或插畫，放大查看。'):
       current?'對應的圖片已標示出來，也可以直接選擇其他案例。':'點選案例名稱或插畫，查看對應的圖片。';
     const hint=current?message+' 點空白處可回到總覽。':message;
@@ -408,7 +408,9 @@
     const map=new Map(metadata.assets.map(asset=>[asset.id,asset]));
     if(map.size!==metadata.assets.length)throw new Error('插畫資料重複。');
     for(const chapter of content.chapters){
-      if(!topicIds.includes(chapter.id)||chapter.cases.length!==4||!Array.isArray(chapter.title))throw new Error('主題資料不符。');
+      if(!topicIds.includes(chapter.id)||!Array.isArray(chapter.cases)||!Array.isArray(chapter.title))throw new Error('主題資料不符。');
+      const ids=chapter.cases.map(item=>item.id),controls=caseButtons(chapter.id).map(button=>button.dataset.case);
+      if(ids.length!==controls.length||new Set(ids).size!==ids.length||new Set(controls).size!==controls.length||ids.some(id=>!controls.includes(id)))throw new Error('主題與選案按鈕不符。');
       for(const item of chapter.cases){
         if(!item.id.startsWith(`${chapter.id}-`)||!Array.isArray(item.assetIds)||!item.assetIds.length||item.href!==`cases/${item.id}/${item.id}.html`)throw new Error('案例資料不符。');
         if(item.assetIds.some(id=>!map.has(id)||map.get(id).caseId!==item.id))throw new Error('案例與圖組對應不符。');
@@ -468,6 +470,7 @@
       applyHash();
       const fontsReady=document.fonts?.ready||Promise.resolve();
       fontsReady.then(()=>{checkAssetStatus();scheduleLayout();});
+      document.fonts?.addEventListener('loadingdone',()=>{checkAssetStatus();scheduleLayout();});
       imageList.filter(image=>image.getAttribute('src')).forEach(watchImage);
       await Promise.all([fontsReady,prepareTopicImages(activeTopic)]);
       checkAssetStatus();layoutAll();

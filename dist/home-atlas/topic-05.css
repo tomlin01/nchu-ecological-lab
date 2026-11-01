@@ -45,3 +45,23 @@ body.home-atlas-page #topic-05 .topic-panel { background:var(--paper-next); }
 @media screen and (max-width:900px) {
   .home-atlas-page .site-header nav a { min-width:40px;display:inline-flex;align-items:center;justify-content:center;font-size:13px; }
 }
+
+/* The new central map uses its own alpha; the original four habitats stay around it. */
+@media screen {
+  body.home-atlas-page #topic-05[data-selected-case=""] .asset-button[data-case="05-05"] { z-index:3!important; }
+}
+
+/* Accepted photo-derived source credits. */
+.habitat-photo-credits { margin-top:6px;font-size:13px;line-height:1.5;color:var(--muted); }
+.habitat-photo-credits[hidden] { display:none; }
+.habitat-photo-credits p { margin:1px 0; }
+.habitat-photo-credits a { color:inherit;text-decoration:underline;text-underline-offset:.2em;overflow-wrap:anywhere; }
+.habitat-photo-credits a[href^="https://creativecommons.org/"] { white-space:nowrap; }
+.habitat-source-list ul { margin:.5em 0 0;padding-left:1.4em; }
+.habitat-source-list a { text-decoration:underline;overflow-wrap:anywhere; }
+
+@media (min-width:901px){body.home-atlas-page #topic-05 .topic-panel{top:clamp(156px,calc(27svh - 24px),276px)}}
+@media (min-width:901px) and (max-height:760px){body.home-atlas-page #topic-05 .topic-panel{top:112px}}
+@media (max-width:900px) and (max-height:560px) and (orientation:landscape){body.home-atlas-page #topic-05 .topic-stage{height:max(650px,100svh)}}
+
+@font-face{font-family:"Atlas Sans";src:url("fonts/topic05-relief-sans-v01.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+4E18,U+4EA4,U+4FEF,U+5143,U+516C,U+5247,U+52A0,U+53E2,U+5BC6,U+5C40,U+5C64,U+5EFA,U+659C,U+6CBF,U+758F,U+76E4,U+7A00,U+822C,U+884D,U+88F8,U+898F,U+8996,U+8F14,U+96D5;}

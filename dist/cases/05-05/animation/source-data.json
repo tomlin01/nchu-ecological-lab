@@ -1,0 +1,72 @@
+{
+  "case_id": "05-05",
+  "study": "ForTy 2020 v1",
+  "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13686961/",
+  "doi": "10.1038/s41597-026-08299-5",
+  "source_files": [
+    {
+      "source": "work/keynote-12/forty-single-20261101/assets/forty-figure3.png",
+      "target": "assets/figure3.png",
+      "bytes": 1004586,
+      "sha256": "35c4b6d548eb58757b53455e3f8f2447936058f581ca585130c79d5fe12e40a6",
+      "source_bytes_unchanged": true
+    },
+    {
+      "source": "work/keynote-12/forty-single-20261101/assets/forty-figure5.webp",
+      "target": "assets/figure5.webp",
+      "bytes": 421824,
+      "sha256": "1fd26ff1a854ef86fddfdf779fcd1663adf20dab481c0a711d8ca955b720c852",
+      "source_bytes_unchanged": true
+    },
+    {
+      "source": "work/nchu-ecological-lab/dist/home-atlas/vendor/gsap.min.js",
+      "target": "vendor/gsap.min.js",
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6",
+      "source_bytes_unchanged": true
+    }
+  ],
+  "data_scope": {
+    "classification_year": 2020,
+    "final_training_context_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "output_grid_m": 10,
+    "number_of_classes": 6,
+    "validation": {
+      "total_sites": 9100,
+      "consensus_sites": 8190,
+      "unresolved_sites": 738,
+      "uncertain_sites": 172,
+      "overall_accuracy_percent": 90.22,
+      "overall_accuracy_standard_error_percent": 0.34
+    },
+    "f1_percent": {
+      "PrimaryForest": 82.9,
+      "NaturallyRegeneratingForest": 72.6,
+      "PlantedForest": 58.2,
+      "PlantationForest": 66.7,
+      "TreeCropsAndAgroforestry": 62.1,
+      "OtherLand": 96.4
+    }
+  },
+  "facts_source": "Paper Methods, Figure3/5, Table4/5/7; accompanying slide SOURCE.md and notes.txt.",
+  "limits": [
+    "No inference rerun",
+    "No confidence fabricated",
+    "No values extracted from image pixels",
+    "Figure3: same area, different layers; not before/after or prediction-versus-ground-truth",
+    "Figure5: different locations and different scales; not same-site temporal evidence",
+    "0.9 is not calibrated probability of correctness",
+    "Global OA includes Other Land; not an Australian-example accuracy",
+    "F1 is distinct from OA",
+    "10m output grid is not an error guarantee"
+  ],
+  "asset_policy": "Original research image files copied once, no raster crop/edit/recolor. Display crops use SVG viewBox.",
+  "image_credit": "Neumann et al. (2026), Figure3/5, CC BY 4.0; imagery © Google Earth, Maxar Technologies, Airbus."
+}

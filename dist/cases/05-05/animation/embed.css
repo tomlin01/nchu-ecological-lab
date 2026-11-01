@@ -1,0 +1,34 @@
+/* Presentation wrapper only: accepted scene, clock, files and controls are unchanged. */
+html[data-forty-embedded=true],html[data-forty-embedded=true] body{margin:0;min-height:0;overflow-x:hidden;background:var(--ground)}
+html[data-forty-embedded=true] .player{box-sizing:border-box;width:100%;max-width:none;margin:0;padding:10px 14px 12px}
+html[data-forty-embedded=true] .player-heading,
+html[data-forty-embedded=true] .narrative,
+html[data-forty-embedded=true] .phase-navigation,
+html[data-forty-embedded=true] .reading-footer,
+html[data-forty-embedded=true] .skip-link{display:none!important}
+html[data-forty-embedded=true] .transport{max-width:1600px;margin:0 auto}
+html[data-forty-embedded=true] .transport-row{gap:8px}
+html[data-forty-embedded=true] .player-status{font-size:12px;line-height:1.7;min-height:20px;max-width:1600px;margin:6px auto 9px}
+html[data-forty-embedded=true] .viewing-area{display:block;width:100%;max-width:var(--forty-composition-width,1600px);margin:0 auto}
+html[data-forty-embedded=true] .composition{width:100%;aspect-ratio:16/9;border:0;background:var(--paper)}
+html[data-forty-embedded=true] .frame-controls{margin-top:2px}
+html[data-forty-embedded=true] .frame-controls>span{font-size:11px}
+html[data-forty-embedded=true] #seekRange{margin:9px 0 5px;height:24px}
+html[data-forty-embedded=true] .error-message{max-width:1100px;margin:8px auto 12px}
+/* The reader already supplies an expand action and a loading/error status.
+   Inline mode keeps a single compact transport; expansion restores the full controls. */
+html[data-forty-embedded=true]:not([data-forty-expanded=true]) #expandButton,
+html[data-forty-embedded=true]:not([data-forty-expanded=true]) .frame-controls,
+html[data-forty-embedded=true]:not([data-forty-expanded=true]) .player-status{display:none!important}
+@media(max-width:600px){
+ html[data-forty-embedded=true] .player{padding:8px 8px 10px}
+ html[data-forty-embedded=true] button{min-height:44px;font-size:13px;padding:8px 10px}
+ html[data-forty-embedded=true] #timeReadout{font-size:12px}
+ html[data-forty-embedded=true] .frame-controls>span{display:none}
+ html[data-forty-embedded=true] .transport-row{gap:6px;flex-wrap:wrap}
+ html[data-forty-embedded=true] .player-status{font-size:12px}
+}
+@media(max-height:500px) and (orientation:landscape){
+ html[data-forty-embedded=true][data-forty-expanded=true] .player{padding:5px 9px 6px}
+}
+@media print{html[data-forty-embedded=true] .player{padding:0}html[data-forty-embedded=true] .transport,html[data-forty-embedded=true] .player-status{display:none}}

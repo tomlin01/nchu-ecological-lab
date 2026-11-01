@@ -1,0 +1,31 @@
+{
+  "source_case": "05-05",
+  "accepted_proto_hashes": {
+    "app.mjs": "c14be5e5a365b143469af990932b2e30021c7c94be0f6c1fdaf5afc504e8f8cb",
+    "assets/figure3.png": "35c4b6d548eb58757b53455e3f8f2447936058f581ca585130c79d5fe12e40a6",
+    "assets/figure5.webp": "1fd26ff1a854ef86fddfdf779fcd1663adf20dab481c0a711d8ca955b720c852",
+    "fonts/font-coverage.json": "4a30511252e90a51b5976be6ba267b26f95fd9261ab551ddec6fdf801f2841d1",
+    "fonts/fonts.css": "81985bc80992dc8580a85e08dbe64556324ddc8cafc9052a2cf4304a9ad43c79",
+    "fonts/forty-sans.woff2": "cba28b56c5f00d8e1fb20e94cd8fb4292cc0e1766c825233697468dc3524494f",
+    "fonts/forty-serif.woff2": "ec3c2f91d2f6a6b080cfe1e66430f13d5f65936d78a78059071b6a5c153babdb",
+    "fonts/NotoSans-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "fonts/NotoSerif-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "index.html": "e00532b03f0364edc3e43e9634ed86d98c3de53018fc692243f70ffb387d7c94",
+    "model.mjs": "6aaff665c65effcd34ea5302fc80a3dac6c291ea583835c795c6ecde035a064f",
+    "prepare-fonts.py": "44f8f5bf6de680075ff8d8ec16c9689d84d5d35dc80223c0e515157d60978f03",
+    "scene.mjs": "9d5d95b64110c1aa170764dd6d1cdc7da50b58029e12907f1acc3ca5d7b97a56",
+    "source-data.json": "13810610d25dbf21a11264a939cd1e874fd80aad55d9d225d069a05f9c9dd362",
+    "SOURCE.md": "663df0b33c3ecd2c40ffef341b27a05bb44f8be6cc66e68c370530e991f7816b",
+    "style.css": "4e89928006c24e96fe2a96d2b7508111fcc5a1073fce1eb289f2fe92b2bb37e1",
+    "vendor/gsap.min.js": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+  },
+  "accepted_mp4_sha256": "7479926441c3931f1ebfc94835026c569167ad650d8145cd46eda8ec2644a4f0",
+  "derived_wrapper": [
+    "embed.html",
+    "bridge.mjs",
+    "embed.css"
+  ],
+  "original_accepted_files_preserved": true,
+  "user_acceptance_quote": "可以成案",
+  "web_user_accepted": false
+}

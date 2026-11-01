@@ -1,0 +1,39 @@
+{
+  "source_files": {
+    "work/ecology-ai-rollout/cases/05-05/SOURCE.md": "663df0b33c3ecd2c40ffef341b27a05bb44f8be6cc66e68c370530e991f7816b",
+    "work/ecology-ai-rollout/cases/05-05/STATE.json": "7fd048a960c174c8876e0f9182374c37b6c647504717a84a46a7bfd1b09b19aa",
+    "work/ecology-ai-rollout/cases/05-05/assets-preparation.json": "2622ec6fa2632d9c42910cf11ed545083b775c63edc0d4bf4e82118339600e32",
+    "work/ecology-ai-rollout/cases/05-05/brief-v01.md": "525e967bbfbb190e2fa0a2a74e1286cfe8424d265d4bff536421cf4ddac040fb",
+    "work/ecology-ai-rollout/cases/05-05/brief-verification.json": "3f82d3beef2af5312130be47a70d6f26c4c1815e723aeb60259878fc5dfb8c26",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/SOURCE.md": "663df0b33c3ecd2c40ffef341b27a05bb44f8be6cc66e68c370530e991f7816b",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/app.mjs": "c14be5e5a365b143469af990932b2e30021c7c94be0f6c1fdaf5afc504e8f8cb",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/index.html": "e00532b03f0364edc3e43e9634ed86d98c3de53018fc692243f70ffb387d7c94",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/model.mjs": "6aaff665c65effcd34ea5302fc80a3dac6c291ea583835c795c6ecde035a064f",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/scene-design.md": "2de11796103b15356b17c8cbd40fa310b3226f20352efd05f31d9e9f621fc4ea",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/scene.mjs": "9d5d95b64110c1aa170764dd6d1cdc7da50b58029e12907f1acc3ca5d7b97a56",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/source-data.json": "13810610d25dbf21a11264a939cd1e874fd80aad55d9d225d069a05f9c9dd362",
+    "work/ecology-ai-rollout/cases/05-05/prototype-v01/style.css": "4e89928006c24e96fe2a96d2b7508111fcc5a1073fce1eb289f2fe92b2bb37e1",
+    "work/keynote-12/forty-single-20261101/notes.txt": "fc257ca6be78b559e6d3a780b8e96b8a603cc4287588a679aaadbb4caf40ae4a"
+  },
+  "unicode_count": 766,
+  "fonts": {
+    "forty-sans.woff2": {
+      "family": "Forty Sans",
+      "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+      "bytes": 242812,
+      "sha256": "cba28b56c5f00d8e1fb20e94cd8fb4292cc0e1766c825233697468dc3524494f",
+      "missing_tc": [],
+      "unsupported_symbols": []
+    },
+    "forty-serif.woff2": {
+      "family": "Forty Serif",
+      "source_sha256": "c2f466b741797d917aff27089f1c2eba2fe42c46ca410e2dbd39a8e95d0e5e3a",
+      "bytes": 326568,
+      "sha256": "ec3c2f91d2f6a6b080cfe1e66430f13d5f65936d78a78059071b6a5c153babdb",
+      "missing_tc": [],
+      "unsupported_symbols": []
+    }
+  },
+  "has_ascii": true,
+  "fonts_are_variable": true
+}

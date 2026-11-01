@@ -5,7 +5,7 @@
   "entry": "index.html",
   "directory": {
     "topic_count": 12,
-    "available_case_count": 27,
+    "available_case_count": 28,
     "topics": [
       {
         "id": 1,
@@ -63,7 +63,8 @@
           "05-01",
           "05-02",
           "05-03",
-          "05-04"
+          "05-04",
+          "05-05"
         ],
         "landing_entry": "index.html#topic-05",
         "homepage_review_status": "implemented_local_ready_for_review"
@@ -133,20 +134,23 @@
       }
     ],
     "accepted_case_count": 17,
-    "candidate_case_count": 9,
+    "candidate_case_count": 10,
     "review_waived_case_count": 1,
     "review_waived_case_ids": [
       "05-04"
     ]
   },
   "main_visual": {
-    "kind": "independent_contextual_illustrations",
+    "kind": "independent_contextual_illustrations_and_official_visual_derivative",
     "assets": "home-atlas/assets.json",
     "content": "home-atlas/content.json",
     "environment_provenance": "home-atlas/assets/environments/provenance.json",
-    "transparent_asset_count": 18,
+    "transparent_asset_count": 27,
     "environment_count": 4,
-    "generated_concepts_not_study_observations": true
+    "generated_concepts_not_study_observations": true,
+    "official_visual_derivatives": [
+      "home-atlas/assets/topic-05/05-05-forty-center-v01.png"
+    ]
   },
   "created": "2026-10-19T15:08:35.925028+00:00",
   "status": "local_integrated_pending_publish",
@@ -476,61 +480,13 @@
       "bytes": 939,
       "sha256": "7291d1805efbb76db7933b5478cfe493c9ad8b2190252d43892ba5048e59affb"
     },
-    "assets/topic-01-charcoal-v01.webp": {
-      "bytes": 248660,
-      "sha256": "36c0ecc38dc6e521c59bd037b8f8908d3b8ecea2831ab5fd98fa81affffbe1c6"
-    },
-    "assets/topic-01-main-v01.webp": {
-      "bytes": 225892,
-      "sha256": "0731053ba343d55677f1a475c6e95be8937f4cb6f8304f1647a0b959e93ed26d"
-    },
-    "assets/topic-01-main-v02.webp": {
-      "bytes": 209906,
-      "sha256": "ca6cda02f0325b4d9d6d503facc2dc7c1fc40c01a26b35000cae329a249fb40b"
-    },
     "assets/topic-01-paper-v01-source.json": {
       "bytes": 840,
       "sha256": "20422efc93b1091b2988cf2590cabe09671cc21ef0e2b3f043be0c831deeca6e"
     },
-    "assets/topic-01-paper-v01.webp": {
-      "bytes": 286998,
-      "sha256": "2d2ef71d4ec8121967c40f71738c184b8afa279cb4352de41b5dda528be7026e"
-    },
     "assets/topic-01-provenance.json": {
       "bytes": 1511,
       "sha256": "d94603e41c7cb4b03aba867d704ce445fe1c93f985de4552ed7bb71376aebb5c"
-    },
-    "assets/topic-03-v01/call-a.png": {
-      "bytes": 73137,
-      "sha256": "cab3e45f57281e7caba51059cf2dd504c71638412d42c128361002a478335ce8"
-    },
-    "assets/topic-03-v01/call-q.png": {
-      "bytes": 79740,
-      "sha256": "b14b18b6df67c740998a144cfc415888db832b425518e6cef51a137912c1af33"
-    },
-    "assets/topic-03-v01/hyena-match.jpg": {
-      "bytes": 27578,
-      "sha256": "15526b3b94d3c6314597f517f0b8c693c76cbb01d4aa39d0af14e7956c334c78"
-    },
-    "assets/topic-03-v01/hyena-query.jpg": {
-      "bytes": 72284,
-      "sha256": "5a4f38a12333e87bffe5cfce3340e242db8d6264b34c777f56bc184488284a41"
-    },
-    "assets/topic-03-v01/jay-down.jpg": {
-      "bytes": 55741,
-      "sha256": "5e02e4aa6cb5cb8efc6f302d83064d936af9b95f7388e090f8ba9b84f5876ba0"
-    },
-    "assets/topic-03-v01/jay-up.jpg": {
-      "bytes": 56544,
-      "sha256": "da4d0eb273c5f67cebb2ab641bef8a5c631b1939863e345b78ae56888ae470c3"
-    },
-    "assets/topic-03-v01/lizard.jpg": {
-      "bytes": 197728,
-      "sha256": "befa9d4b5f5c6a46f207fb56137b542bc564519b7f11faa05285194cea3fe9aa"
-    },
-    "assets/topic-03-v01/owl.jpg": {
-      "bytes": 103550,
-      "sha256": "d533c29ec587f9e7e65f469d0239634ee7b3c0c92a9021c9f2cdf1cfc19e72a4"
     },
     "assets/topic-03-v01/provenance.json": {
       "bytes": 3994,
@@ -1068,10 +1024,6 @@
       "bytes": 72435,
       "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
     },
-    "cases/01-03/assets/01-03-plankton-main.svg": {
-      "bytes": 2547,
-      "sha256": "104f328a7fb949d51c7d2c363fdadba0e8b0732459a548857ce259db541ce5b3"
-    },
     "cases/01-03/assets/01-03-plankton-main.webp": {
       "bytes": 150886,
       "sha256": "193acb47a92b4984ab6c2e326fa8389964241e75592baa0a8d5c08862f0ed3d9"
@@ -1137,8 +1089,8 @@
       "sha256": "3f8ea139cc4b378aa2e188eece5f091fc005cd883f9b1989beba9bc395256358"
     },
     "cases/01-03/manifest.json": {
-      "bytes": 10119,
-      "sha256": "b4b223cfbce6f003b95c72b65b34437c93e353e72d1ca0f1c0123dc3dd379196"
+      "bytes": 10182,
+      "sha256": "38061ff41ea2cc0d95c559c4c5267370acbdb1af83c296cbfbed1bb2fd69a0a8"
     },
     "cases/01-03/narrative-implementation.md": {
       "bytes": 5348,
@@ -2828,10 +2780,6 @@
       "bytes": 310194,
       "sha256": "3cbecfb55070fbf83c32954cd93952a35a2ea89e52c9585e6463a60c951c6493"
     },
-    "cases/03-02/assets/jay-hero.webp": {
-      "bytes": 324780,
-      "sha256": "25fc8cd4321a705118cb1e196d5d0acec44192ce9651a9ce473ebfa5fa5225a3"
-    },
     "cases/03-02/assets/provenance.json": {
       "bytes": 1256,
       "sha256": "ecd022b445a145584bd8d0fd94de7f010520040493605f28cf8acf357891202f"
@@ -2865,8 +2813,8 @@
       "sha256": "0baa47ce8d5c956385d9224858b6b7f22631c4b34a71befe784cb88abf6b9522"
     },
     "cases/03-02/manifest.json": {
-      "bytes": 7688,
-      "sha256": "5b320d232642d1a47c680dcdafb408220e90986e23175a4865f4dbdb3253438d"
+      "bytes": 7749,
+      "sha256": "42159d8307c6793ea48b9e79376f23ee8d46125f03765247684b6ff05e4e59d2"
     },
     "cases/03-02/natural-history.css": {
       "bytes": 1091,
@@ -4552,6 +4500,154 @@
       "bytes": 1083,
       "sha256": "3a5e750687c9e1d0bc8388575dfb9a241614cd6cbcecc42ca4c0358c4cbef57c"
     },
+    "cases/05-05/05-05.html": {
+      "bytes": 13950,
+      "sha256": "1983f0e460504adaba38b45a5be0694c43880586a5d6e1173f358eca3c10c904"
+    },
+    "cases/05-05/SOURCE-CHECK.md": {
+      "bytes": 3052,
+      "sha256": "12b27e8c1dc347c97156a233c6516a4b87e5eb40f5fe5a74e9ad671a02a8516a"
+    },
+    "cases/05-05/SOURCE.md": {
+      "bytes": 4443,
+      "sha256": "7c722e437191f6b0c865500c0a85635cce38662c6126384fc8228b516c99e5a5"
+    },
+    "cases/05-05/animation/SOURCE.md": {
+      "bytes": 3441,
+      "sha256": "663df0b33c3ecd2c40ffef341b27a05bb44f8be6cc66e68c370530e991f7816b"
+    },
+    "cases/05-05/animation/accepted-source-manifest.json": {
+      "bytes": 1914,
+      "sha256": "21c2f5dedd35309d36efa124c033c4995201a04bdc7e35cb7207eceb6037d96a"
+    },
+    "cases/05-05/animation/app.mjs": {
+      "bytes": 14122,
+      "sha256": "c14be5e5a365b143469af990932b2e30021c7c94be0f6c1fdaf5afc504e8f8cb"
+    },
+    "cases/05-05/animation/assets/figure3.png": {
+      "bytes": 1004586,
+      "sha256": "35c4b6d548eb58757b53455e3f8f2447936058f581ca585130c79d5fe12e40a6"
+    },
+    "cases/05-05/animation/assets/figure5.webp": {
+      "bytes": 421824,
+      "sha256": "1fd26ff1a854ef86fddfdf779fcd1663adf20dab481c0a711d8ca955b720c852"
+    },
+    "cases/05-05/animation/bridge.mjs": {
+      "bytes": 8084,
+      "sha256": "8afe8a8a324b7c5ee6a450341ad5b8ee911bf78403c64d21d572e7dc82967244"
+    },
+    "cases/05-05/animation/embed.css": {
+      "bytes": 2559,
+      "sha256": "60449eddc838774ae1a6b96ec885b7e6d8291449f0baa92304aa31f9cf570462"
+    },
+    "cases/05-05/animation/embed.html": {
+      "bytes": 5915,
+      "sha256": "ba44d71240513950125537670ff0e5911d326a0ceebaf3e5f841b927f2574892"
+    },
+    "cases/05-05/animation/film/05-05-forty-v01.mp4": {
+      "bytes": 5954881,
+      "sha256": "7479926441c3931f1ebfc94835026c569167ad650d8145cd46eda8ec2644a4f0"
+    },
+    "cases/05-05/animation/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/05-05/animation/fonts/NotoSerif-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/05-05/animation/fonts/font-coverage.json": {
+      "bytes": 2607,
+      "sha256": "4a30511252e90a51b5976be6ba267b26f95fd9261ab551ddec6fdf801f2841d1"
+    },
+    "cases/05-05/animation/fonts/fonts.css": {
+      "bytes": 282,
+      "sha256": "81985bc80992dc8580a85e08dbe64556324ddc8cafc9052a2cf4304a9ad43c79"
+    },
+    "cases/05-05/animation/fonts/forty-sans.woff2": {
+      "bytes": 242812,
+      "sha256": "cba28b56c5f00d8e1fb20e94cd8fb4292cc0e1766c825233697468dc3524494f"
+    },
+    "cases/05-05/animation/fonts/forty-serif.woff2": {
+      "bytes": 326568,
+      "sha256": "ec3c2f91d2f6a6b080cfe1e66430f13d5f65936d78a78059071b6a5c153babdb"
+    },
+    "cases/05-05/animation/index.html": {
+      "bytes": 5737,
+      "sha256": "e00532b03f0364edc3e43e9634ed86d98c3de53018fc692243f70ffb387d7c94"
+    },
+    "cases/05-05/animation/model.mjs": {
+      "bytes": 8473,
+      "sha256": "6aaff665c65effcd34ea5302fc80a3dac6c291ea583835c795c6ecde035a064f"
+    },
+    "cases/05-05/animation/prepare-fonts.py": {
+      "bytes": 4165,
+      "sha256": "44f8f5bf6de680075ff8d8ec16c9689d84d5d35dc80223c0e515157d60978f03"
+    },
+    "cases/05-05/animation/scene.mjs": {
+      "bytes": 20218,
+      "sha256": "9d5d95b64110c1aa170764dd6d1cdc7da50b58029e12907f1acc3ca5d7b97a56"
+    },
+    "cases/05-05/animation/source-data.json": {
+      "bytes": 2561,
+      "sha256": "13810610d25dbf21a11264a939cd1e874fd80aad55d9d225d069a05f9c9dd362"
+    },
+    "cases/05-05/animation/style.css": {
+      "bytes": 12856,
+      "sha256": "4e89928006c24e96fe2a96d2b7508111fcc5a1073fce1eb289f2fe92b2bb37e1"
+    },
+    "cases/05-05/animation/vendor/gsap.min.js": {
+      "bytes": 72435,
+      "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
+    },
+    "cases/05-05/asset-provenance.json": {
+      "bytes": 4057,
+      "sha256": "fbd3e2d02532339560e1bdc6b6001bc994c440526740f22e25217ca6d6be3c57"
+    },
+    "cases/05-05/assets/forty-global-map.webp": {
+      "bytes": 134880,
+      "sha256": "ae7c38afd637ffacdc3c5faf088c6a02ad0045730b82dff904ff42ce13e2f40c"
+    },
+    "cases/05-05/assets/forty-official-hero.webp": {
+      "bytes": 106634,
+      "sha256": "c6ae17b6841bb7ae3567e6e04ac6d8dccd1953ba343eeccb5926aeac0e87eb4b"
+    },
+    "cases/05-05/case.css": {
+      "bytes": 20111,
+      "sha256": "0872d6a10541de351afd2a776b005c3bd10476be47a39e56e897cd7eb58afe15"
+    },
+    "cases/05-05/case.js": {
+      "bytes": 17274,
+      "sha256": "c5287313887a92fdc333fbaef97567c215e6e3430e3711bb679cb289367c0baf"
+    },
+    "cases/05-05/fonts/NotoSans-OFL.txt": {
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    "cases/05-05/fonts/coverage.json": {
+      "bytes": 1237,
+      "sha256": "d2a861a06a5346c8cbedb396446dcca2f49f63e08c8e97cfb17cf1bfe7dcfdc8"
+    },
+    "cases/05-05/fonts/forty-web-sans.woff2": {
+      "bytes": 222360,
+      "sha256": "0cc220928924beb5316bf7de96153ff00ba7218cf3d6b9e7a0875eb3570dd07d"
+    },
+    "cases/05-05/index.html": {
+      "bytes": 299,
+      "sha256": "2ef4b83a782b344756794c31dea5cc2521235477cbc98d365864c7e9254e8a10"
+    },
+    "cases/05-05/manifest.json": {
+      "bytes": 6496,
+      "sha256": "117d2e49573efd760266c93478de3242313472058485685d4df74d65a0acc9c1"
+    },
+    "cases/05-05/prepare-fonts.py": {
+      "bytes": 2389,
+      "sha256": "d8a8df77dcc7bd79dd950fa23bbbbe140cff8d4cda702bdc036b2f981a3f4b08"
+    },
+    "cases/05-05/source-dates.json": {
+      "bytes": 1553,
+      "sha256": "63d7a4fbf1eecf587a40ee5b306734cf44437f9a3a92d7f6dddfeaa620e723f3"
+    },
     "cases/06-01/06-01.html": {
       "bytes": 18648,
       "sha256": "3b6f4471076f5d5c23be2df9ca246e855fd3ea8246228715d75a961708985ca9"
@@ -4876,17 +4972,9 @@
       "bytes": 10042,
       "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
     },
-    "cases/08-01/animation/assets/sage-thrasher-alpha-browser-review-v02.png": {
-      "bytes": 924061,
-      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
-    },
     "cases/08-01/animation/assets/sage-thrasher-cutout-v01.png": {
       "bytes": 1955113,
       "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
-    },
-    "cases/08-01/animation/assets/sage-thrasher-cutout-v02.png": {
-      "bytes": 1880943,
-      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
     },
     "cases/08-01/animation/assets/sagebrush-scene-v01.png": {
       "bytes": 3562306,
@@ -4933,8 +5021,8 @@
       "sha256": "45418d40118c7b64b7c804aa4d936aee9d8a23478cf9c6c18ded673e4db8557f"
     },
     "cases/08-01/animation/manifest.json": {
-      "bytes": 5942,
-      "sha256": "d88b24946ab8135b02071abadbb84ef606c6ca32bd296882d9124d36db2fdfd6"
+      "bytes": 5889,
+      "sha256": "1ce0480096a5d137dd8cbf8d688f82a1c6416ff4bc72388e122adb47e8f4cc88"
     },
     "cases/08-01/animation/model.mjs": {
       "bytes": 3923,
@@ -4989,8 +5077,8 @@
       "sha256": "50d680c3cd0566213b2aec5712de8dd0843d8f8b5894e11b3bad58c708114b55"
     },
     "cases/08-01/manifest.json": {
-      "bytes": 6379,
-      "sha256": "540ab0d6b38da125a8c6b2965f1bcc84049d077a0ce87e1f25f2cb9b73c4c765"
+      "bytes": 6326,
+      "sha256": "4897ef2ea0b6a82022ccf8eee202539fd0ac2e44b4cb0cd12edc0c5c14e5e26f"
     },
     "cases/09-03/09-03.html": {
       "bytes": 18735,
@@ -5649,8 +5737,8 @@
       "sha256": "4fa4904f0e5946168d6cd315d9bfb90c1215af662ab9723625de6939c124e065"
     },
     "home-atlas/app.js": {
-      "bytes": 38359,
-      "sha256": "4a6b803b0d889276df06f3ee5c3e18a54ea49de7d6c8d3dcaad1aff7f5912c94"
+      "bytes": 38779,
+      "sha256": "35f1624f4d1fe66e227e1f25c1b9101335d3b73e54f358a0271d04858389cb30"
     },
     "home-atlas/assets/environments/01-01-grassland-wide-v01.png": {
       "bytes": 3652910,
@@ -5784,37 +5872,49 @@
       "bytes": 5468,
       "sha256": "e61487d1645ff351b0ec28266898f5aeb38555ed72212b0e629b09568f3bcc4b"
     },
-    "home-atlas/assets/topic-05/05-01-forest-canopy-v01.webp": {
-      "bytes": 896990,
-      "sha256": "30578e7c710a542e9a93d05cd7259a79d1743ef72639bee4c16a9f043c36cb8b"
+    "home-atlas/assets/topic-05/05-01-relief-dark-v02.webp": {
+      "bytes": 583746,
+      "sha256": "8ddaba66d06117465ed20a60f26d313622738728e1c5d77a5768e177fefa27fd"
     },
-    "home-atlas/assets/topic-05/05-01-forest-canopy-v01.webp.json": {
-      "bytes": 1610,
-      "sha256": "67de122ee15e008bba40a848c0af6d194b21de807c0e8150ff5af3cfd0ecaabe"
+    "home-atlas/assets/topic-05/05-01-relief-light-v02.webp": {
+      "bytes": 572788,
+      "sha256": "e4eb342179621709df2d457c1bcba0ec4f5e9370c6a6fe9ea28b83caa9f80b38"
     },
-    "home-atlas/assets/topic-05/05-02-coral-reef-v01.webp": {
-      "bytes": 658766,
-      "sha256": "b6f967065ad0b9058c08dd3a00c1e1b38a29b1d00fb63681609af6cecb786811"
+    "home-atlas/assets/topic-05/05-02-relief-dark-v02.webp": {
+      "bytes": 323066,
+      "sha256": "9e1d9de9dd38f789b8b1f21ab3630a001a60eb38fe48a8ddea7a6018e911ab97"
     },
-    "home-atlas/assets/topic-05/05-02-coral-reef-v01.webp.json": {
-      "bytes": 1649,
-      "sha256": "64c781c37a4b10affae9051d862f92d4791eb1c0d06972593e6b226edc20f6b7"
+    "home-atlas/assets/topic-05/05-02-relief-light-v02.webp": {
+      "bytes": 318886,
+      "sha256": "bd00b7f96d5fcf95b4c82563eeb947645e58587228e6f02341bc35ce3d2b34cf"
     },
-    "home-atlas/assets/topic-05/05-03-seagrass-meadow-v01.webp": {
-      "bytes": 622898,
-      "sha256": "a0fe5eda6552cefc3f0108eafbd29f2dcfe59036ac5ce0a50a96556d75d24dd0"
+    "home-atlas/assets/topic-05/05-03-relief-dark-v02.webp": {
+      "bytes": 269858,
+      "sha256": "2255587f05152744fc0a0e37bc33128c8cdceefefa864565c23549ca7b23a328"
     },
-    "home-atlas/assets/topic-05/05-03-seagrass-meadow-v01.webp.json": {
-      "bytes": 1619,
-      "sha256": "ffae9b04516d967a7417897c1ff0cd0e8676cae583f2bf2293bfca3af3d53659"
+    "home-atlas/assets/topic-05/05-03-relief-light-v02.webp": {
+      "bytes": 272792,
+      "sha256": "f39827aeaf57ca2c6ddff3d8f6441cc3c75d9d35395dc13f4b89ad9a908d24dc"
     },
-    "home-atlas/assets/topic-05/05-04-landscape-mosaic-v01.webp": {
-      "bytes": 705800,
-      "sha256": "8ab4a6c4184a39c38260004fe8a38b8f67460f6463943634ecd090966fcd0093"
+    "home-atlas/assets/topic-05/05-04-relief-dark-v02.webp": {
+      "bytes": 415980,
+      "sha256": "3a224a11b9498e25e6cf749d9913fa6cd2fa0a9a1ec17dd6d48250101d8dcae2"
     },
-    "home-atlas/assets/topic-05/05-04-landscape-mosaic-v01.webp.json": {
-      "bytes": 1701,
-      "sha256": "56acfbc3bff9b8aa44bde8293a88f7f0613d4644bc0efa04bde2135974f8acdf"
+    "home-atlas/assets/topic-05/05-04-relief-light-v02.webp": {
+      "bytes": 407294,
+      "sha256": "550bbb3820b87fe7d01616167e11f33c1a431f2a660b3ff7343986fc18c9a375"
+    },
+    "home-atlas/assets/topic-05/05-05-forty-center-prompt.md": {
+      "bytes": 1732,
+      "sha256": "b2dbac7b9d891d1900de2310bf4183f9e4d6bb4e2828ef267551c4e140834580"
+    },
+    "home-atlas/assets/topic-05/05-05-forty-center-provenance.json": {
+      "bytes": 817,
+      "sha256": "9a206bf9a1d3c156d14cc90a5e0f90bade61498568aecaecab0e37a05cba7fad"
+    },
+    "home-atlas/assets/topic-05/05-05-forty-center-v01.png": {
+      "bytes": 1834170,
+      "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283"
     },
     "home-atlas/assets/topic-06/prompt.md": {
       "bytes": 4899,
@@ -5901,8 +6001,8 @@
       "sha256": "9afca9e80289b8ed2b10eb049b983fc1563655382bb6fb7f5d38f7d54fb88835"
     },
     "home-atlas/assets.json": {
-      "bytes": 17754,
-      "sha256": "0cacfc6475a30efa4efb823c31f5be85a1289be2b3267f710dd1f6e50328f160"
+      "bytes": 30878,
+      "sha256": "577dc5f98bf488643b7c5c2629f27409afa23e1f919981edcf037e1af13bc138"
     },
     "home-atlas/atlas-theme.css": {
       "bytes": 6629,
@@ -5913,8 +6013,8 @@
       "sha256": "f97f1cf7e3dd68a014cc9a9b101deb3cc2a7de348fb2e17569606e1935e61363"
     },
     "home-atlas/content.json": {
-      "bytes": 8424,
-      "sha256": "a61bbf72d185ed0921f7d9bc48c016ec05eba5c3483b43655bcf131022ae08a6"
+      "bytes": 8717,
+      "sha256": "fb2e4e173a11e450a9f6b02bbc3665249d6943c0f639e663b24d1e4f934d17a6"
     },
     "home-atlas/cover-extensions-fonts.css": {
       "bytes": 1353,
@@ -5929,8 +6029,8 @@
       "sha256": "8ae9206b02d4bd69da65b4224997bbeb9cc7492981809ffa2efa9a82dfcb2f21"
     },
     "home-atlas/directory-rows.css": {
-      "bytes": 4255,
-      "sha256": "df5bdde0c538060b8fa16a85e6c50f16f711b2c096ba5f4af3e70ab930d8525a"
+      "bytes": 4723,
+      "sha256": "6684dca9cf7f603d219aa22ef0095591417d28642d16b644f2fc90f14efc7011"
     },
     "home-atlas/environment-prompts.md": {
       "bytes": 9906,
@@ -5964,6 +6064,10 @@
       "bytes": 33472,
       "sha256": "61c50b212e18f82446ca7259337d5413787a7629b2ad907cfba5809c4b4c3c40"
     },
+    "home-atlas/fonts/topic05-relief-sans-v01.woff2": {
+      "bytes": 9736,
+      "sha256": "efce624ca50ad10ff27b21b0c969e4b0efbd300d4e28618f18a23d289c4ae4fd"
+    },
     "home-atlas/hover-feedback.css": {
       "bytes": 2219,
       "sha256": "4347d10e6ee0326d8362421b87cd10af9babd6575f1f9435f134764438754faf"
@@ -5993,12 +6097,12 @@
       "sha256": "811bcbb31082c3d220ec9e9855133c537bd61ea27bcb4f477a474d081b1c949e"
     },
     "home-atlas/topic-05.css": {
-      "bytes": 2532,
-      "sha256": "666225d9ef8f96cbe585cb3447ef792c841e251f0d88ec956b429484dfe9c964"
+      "bytes": 4038,
+      "sha256": "d3bba8e11bce0978ca60fd55710197c676d4f151b15f8c1ddbb5d4745a652779"
     },
     "home-atlas/topic-05.js": {
-      "bytes": 4054,
-      "sha256": "65423c6507f1d974ddf47fa1b5de1081d22aa48398be8e46eadb025845cec02f"
+      "bytes": 4790,
+      "sha256": "65a546b912a7cc235ef122b84ddc81b71ac38faa348fa5bf1d4f2f34b03a3b82"
     },
     "home-atlas/topic04-hover.js": {
       "bytes": 2553,
@@ -6077,8 +6181,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 51798,
-      "sha256": "9fb4afc0050aa3fb83a42956fd7086ced99b9203e8726b1a0a546629fe698242"
+      "bytes": 56491,
+      "sha256": "a998f6ad8c5b401219ff1d512e613b7d480fb401e6490a9dc6665c336cf4c828"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -6189,8 +6293,8 @@
       "sha256": "4049a83cd2ccca53e9f4a4387968ac74c509e9f6d39581f1d5d3634cdcafca2d"
     },
     "ui/site-map.js": {
-      "bytes": 6196,
-      "sha256": "b02e44f8c53df7eb9c2587454fdb9db6b3c9beb3a4c3f7440f646c2ceeafd88e"
+      "bytes": 6356,
+      "sha256": "a9c9d2bd3ad2a43bf75502b9aa439f5399d3592c5b8b6d1c7540da823e319792"
     },
     "ui/theme-controls.css": {
       "bytes": 2501,
@@ -6221,7 +6325,7 @@
       "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
     }
   },
-  "updated": "2026-10-29T18:25:34.345497+00:00",
+  "updated": "2026-11-01T13:42:35.366937+08:00",
   "terminology_amendment": {
     "date": "2026-10-21",
     "scope": "Chinese wording and required font glyphs only",
@@ -6260,7 +6364,7 @@
     "native_preload": "none; the player fetches each original video once before using the blob URL"
   },
   "review_revision": "theme-system-v01",
-  "source_checkout": "work/ecology-ai-sites-hosting-batched/dist",
+  "source_checkout": "work/nchu-ecological-lab",
   "source_commit": "fa6803f0b8c4bf4f02e268339671f5b63ce330f0",
   "visual_revision": "theme-system-v01",
   "theme_system": {
@@ -6291,14 +6395,15 @@
     "media_changed": false
   },
   "local_case_revision": {
-    "id": "09-03-web-v01",
-    "case": "09-03",
-    "local_only": true,
-    "animation_user_accepted": true,
+    "id": "05-05-web-v01",
+    "case_id": "05-05",
+    "canonical_case_count": 28,
+    "official_announcement_date": "2026-10-22",
+    "paper_publication_date": "2026-10-21",
+    "baseline_year": 2020,
+    "accepted_animation_preserved": true,
     "website_user_accepted": false,
-    "status": "integrated_local_verified",
-    "deployed": false,
-    "verification": "work/ecology-ai-rollout/cases/09-03/web-review-v01/verification-current.json"
+    "deployed": false
   },
   "local_visual_revision": {
     "revision": "topic-03-visual-v01",
@@ -6624,5 +6729,56 @@
     "decorative_environments": "loaded on selection",
     "next_topic": "prefetched after current images/fonts ready at idle",
     "media_files_unchanged": true
+  },
+  "local_cleanup_revision": {
+    "id": "folder-cleanup-v02",
+    "removed_unused_images": [
+      "assets/topic-01-charcoal-v01.webp",
+      "assets/topic-01-main-v01.webp",
+      "assets/topic-01-main-v02.webp",
+      "assets/topic-01-paper-v01.webp",
+      "assets/topic-03-v01/call-a.png",
+      "assets/topic-03-v01/call-q.png",
+      "assets/topic-03-v01/hyena-match.jpg",
+      "assets/topic-03-v01/hyena-query.jpg",
+      "assets/topic-03-v01/jay-down.jpg",
+      "assets/topic-03-v01/jay-up.jpg",
+      "assets/topic-03-v01/lizard.jpg",
+      "assets/topic-03-v01/owl.jpg",
+      "cases/01-03/assets/01-03-plankton-main.svg",
+      "cases/03-02/assets/jay-hero.webp",
+      "cases/08-01/animation/assets/sage-thrasher-alpha-browser-review-v02.png",
+      "cases/08-01/animation/assets/sage-thrasher-cutout-v02.png"
+    ],
+    "runtime_code_media_and_fonts_unchanged": true,
+    "deployed": false
+  },
+  "homepage_center_revision": {
+    "id": "topic-05-center-v01",
+    "topic": "05",
+    "case_id": "05-05",
+    "interactive_case_count": 5,
+    "original_four_assets_preserved": true,
+    "calendar_renderer_unchanged": true,
+    "official_case_hero_and_accepted_film_unchanged": true,
+    "central_visual": "AI-assisted background-removal display derivative of official promotional visual",
+    "record": "work/ecology-ai-rollout/topic-05-center-v01/README.md",
+    "verification": "work/ecology-ai-rollout/topic-05-center-v01/review/browser-result.json",
+    "status": "integrated_local_pending_user_review",
+    "deployed": false
+  },
+  "homepage_photo_relief_revision": {
+    "source": "topic-05-photo-relief-v02",
+    "user_accepted": true,
+    "local_canonical": true,
+    "case_ids": [
+      "05-01",
+      "05-02",
+      "05-03",
+      "05-04"
+    ],
+    "preserved_case": "05-05",
+    "forest_public_reuse_license_verified": false,
+    "deployed": false
   }
 }

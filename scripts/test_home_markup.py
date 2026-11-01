@@ -41,7 +41,7 @@ class HomeImageMarkupTests(unittest.TestCase):
 
     def test_visible_no_js_artwork_keeps_real_sources_and_dimensions(self):
         gallery = [image for image in self.images if not image.get('data-src')]
-        self.assertEqual(len(gallery), 33)
+        self.assertEqual(len(gallery), 34)
         self.assertTrue(all(image.get('src') and image.get('width') and image.get('height') for image in gallery))
         self.assertTrue(all((ROOT / image['src']).is_file() for image in gallery))
         self.assertTrue(all(image.get('loading') == 'lazy' for image in gallery if image['topic'] != '01'))

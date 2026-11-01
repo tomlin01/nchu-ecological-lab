@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light" data-reading-type="05-05">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+<title>同樣一片綠，AI 怎麼分辨不同森林？｜AI × 生態研究</title>
+<meta name="description" content="2026年10月22日官方公布的ForTy，把森林類型與土地利用放進全球地圖。從2020年基線，理解AI如何判讀，以及哪些類型仍容易混淆。">
+<link rel="icon" href="data:,"><script src="../../ui/theme.js"></script>
+<link rel="stylesheet" href="../../ui/theme-tokens.css"><link rel="stylesheet" href="../../ui/sidebar.css"><link rel="stylesheet" href="../../ui/media-expand.css"><link rel="stylesheet" href="../../ui/catalog-theme.css"><link rel="stylesheet" href="../../ui/theme-controls.css">
+<link rel="stylesheet" href="case.css?v=05-05-web-v01"><link rel="stylesheet" href="../../ui/reading-typography.css"><script src="case.js?v=05-05-web-v01" defer></script>
+</head>
+<body class="forty-case">
+<a class="skip-link" href="#overview">跳至研究問題</a>
+<header class="site-header"><a class="brand" href="../../index.html#topic-05">AI × 生態研究</a><a class="back-topic" href="../../index.html#topic-05">回到主題與案例</a></header>
+<nav class="section-nav nav-pages" aria-label="案例章節"><a href="#overview" data-page="0" aria-current="page">新公布的地圖</a><a href="#roles" data-page="1">分清林地類型</a><a href="#method" data-page="2">看動畫</a><a href="#evidence" data-page="3">分得多準</a><button id="full-reading" type="button" aria-pressed="false">連續閱讀</button><button id="print-page" type="button">列印</button></nav>
+<main id="main-content">
+<section id="overview" class="chapter hero-chapter" data-active="true" tabindex="-1" aria-labelledby="overview-title">
+ <div class="hero-scene">
+  <figure class="hero-visual"><img src="assets/forty-official-hero.webp" width="1920" height="1080" alt="Google DeepMind的官方研究視覺：南美洲前景由綠、粉紅與黃色方塊構成，放在灰白色桌面上。"><figcaption>官方研究視覺，圖：Google DeepMind／Google Research。立體造型不表示實測樹高。</figcaption></figure>
+  <div class="hero-copy">
+   <h1 id="overview-title">同樣一片綠，<br>AI 怎麼分辨<br>不同森林？</h1>
+   <p class="release-line"><time datetime="2026-10-22">2026.10.22</time><span>官方公布</span></p>
+   <p class="publication-line"><time datetime="2026-10-21">2026.10.21</time> 論文發表<span class="mobile-baseline"> · 2020 地圖基線</span></p>
+   <p class="opening-lead">看見樹，還不能確定這片土地怎麼被利用。ForTy將不同森林、人工經營林地與樹作物，放進同一張全球地圖。</p>
+   <p class="baseline-line"><strong>2020</strong><span>地圖代表的土地狀態<br>不是研究公布年份</span></p>
+   <a class="text-link" href="#roles">看看一片綠裡有哪些差別 <span aria-hidden="true">→</span></a>
+  </div>
+ </div>
+</section>
+<section id="roles" class="chapter" tabindex="-1" aria-labelledby="roles-title">
+ <div class="chapter-heading map-heading"><h2 id="roles-title">同樣都有樹，<br>形成方式與用途卻不同。</h2><p>自然長回來的森林、種植木材的人工林、樹作物農地，從空中看都可能是綠色。選一種類型，對照地圖圖例並閱讀它的意思。</p></div>
+ <div class="map-composition">
+  <figure class="world-map"><div class="map-raster-frame"><img id="global-map" src="assets/forty-global-map.webp" width="1920" height="1136" loading="lazy" alt="ForTy 2020全球森林類型展示圖，保留完整世界範圍及左下英文圖例。各平方公里以最常見類型呈現，並非原生10公尺網格。"><svg class="native-legend-focus" viewBox="0 0 1920 1136" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect id="legend-focus" x="52" y="905" width="500" height="40" rx="3" fill="none" stroke="#294e49" stroke-width="3"/></svg></div><figcaption>2020年全球森林類型展示。每平方公里顯示最常見類型；資料產品的輸出網格為10公尺。原圖：Google DeepMind／Google Research。</figcaption><button id="open-map" class="map-open js-only" type="button" hidden>放大全球圖</button></figure>
+  <div class="map-reading">
+   <div class="forest-types" role="group" aria-label="選擇森林或土地利用類型">
+    <button type="button" data-forest-type="primary" aria-pressed="false"><span class="type-swatch primary"></span>原生林</button>
+    <button type="button" data-forest-type="natreg" aria-pressed="true"><span class="type-swatch natreg"></span>自然再生林</button>
+    <button type="button" data-forest-type="planted" aria-pressed="false"><span class="type-swatch planted"></span>人工栽植林</button>
+    <button type="button" data-forest-type="plantation" aria-pressed="false"><span class="type-swatch plantation"></span>集約經營人工林</button>
+    <button type="button" data-forest-type="treecrop" aria-pressed="false"><span class="type-swatch treecrop"></span>樹作物與農林混作</button>
+    <button type="button" data-forest-type="other" aria-pressed="false"><span class="type-swatch other"></span>其他土地</button>
+   </div>
+   <div id="type-detail" class="type-detail" aria-live="polite" data-type="natreg"><h3 id="type-title">自然再生林</h3><p id="type-copy">主要靠自然更新長回來的森林，包含許多不同的恢復階段。</p><p id="type-note" class="small-note">年輕再生林與成熟次生林都可能屬於這一類，結構不一定相同。</p></div>
+   <p class="map-reading-note">選擇類型，原圖左下角的圖例會同步標示。其他土地以背景呈現，沒有獨立的圖例行。</p>
+  </div>
+ </div>
+ <div class="observation-reading"><div><h3>外觀是線索，歷史也重要。</h3><p>規律間距、樹齡、季節及過往變化，都可能提供判讀線索。影像能提供線索，經營歷史仍須搭配其他資料確認。</p></div><div><h3>10公尺是網格大小。</h3><p>它說明資料如何分格，不保證每個分類都正確，也不表示定位誤差小於10公尺。</p></div></div>
+ <noscript><p class="small-note">六種名稱與完整地圖仍可閱讀。原生林偏向沒有明顯人為干擾的森林；自然再生林主要靠自然更新；兩種人工林依本研究操作定義區分；樹作物屬農業用途；其餘地表歸為其他土地。</p></noscript>
+</section>
+<section id="method" class="chapter" tabindex="-1" aria-labelledby="method-title">
+ <div class="method-heading"><div><h2 id="method-title">從一片綠，<br>看到判讀的依據。</h2><p>120秒動畫，先認識林地，再看多年衛星資訊、作者分類和獨立驗證。沒有聲音。</p></div><div class="method-actions"><button id="play-animation" class="play-action" type="button">播放動畫</button><button class="expand-action" data-media-expand="media-expand-stage" data-expand-label="放大動畫" type="button" aria-expanded="false">放大動畫</button></div></div>
+ <div class="method-surface"><div class="media-expand-shell"><div class="media-expand-stage" id="media-expand-stage" data-media-expand-stage><iframe id="method-frame" data-src="animation/embed.html" title="ForTy 2020：120秒森林類型判讀動畫" loading="lazy" allow="fullscreen" hidden></iframe></div></div><p id="frame-status" class="frame-status" aria-live="polite">開啟「看動畫」後載入播放器，按播放才會開始。</p><button id="retry-frame" class="retry-action" type="button" hidden>重新載入動畫</button><p class="download-note"><a href="animation/film/05-05-forty-v01.mp4" download>下載120秒影片</a> · <a href="#method-text">直接閱讀動畫解說</a></p></div>
+ <details id="method-text" class="method-text"><summary>不播放，直接閱讀</summary><ol class="transcript"><li><h3>先認識不同林地</h3><p>自然長回來的森林、經營木材的人工林與樹作物土地，有不同的形成過程。動畫使用的五種影像來自不同地點，各自保留比例尺。</p></li><li><h3>把多年資訊一起看</h3><p>AlphaEarth先整理多來源、多期衛星特徵。ForTy從可靠例子學習，再擴大資料，並加入多年觀測資訊。</p></li><li><h3>回到同一區域對照</h3><p>澳洲東南部的衛星影像與分類圖對照相同位置。彩色圖是作者推估，並非另一年的森林或地面真值。</p></li><li><h3>再用獨立資料核對</h3><p>專家標註參與訓練，也另有獨立樣點用來驗證。全球整體準確率與各類F1分開呈現，沒有把全球數字貼成澳洲範例的準確率。</p></li></ol></details>
+ <div class="method-summary"><div><h3>先從可靠例子學習</h3><p>專家標註與既有參考資料，提供分類起點。</p></div><div><h3>再擴大訓練資料</h3><p>結合前階段推估、輔助資料與難例修正。</p></div><div><h3>加入多年觀測</h3><p>最後階段綜合2019至2024資訊，取出2020基線。</p></div></div>
+</section>
+<section id="evidence" class="chapter" tabindex="-1" aria-labelledby="evidence-title">
+ <div class="chapter-heading"><h2 id="evidence-title">六種類型，<br>表現仍有落差。</h2><p>以8190個完成專家共識的獨立樣點估計精度，還要分別看每種類型的表現。</p></div>
+ <div class="results-layout"><div class="validation-reading"><h3>全球六類整體準確率</h3><p class="study-value">90.22<span>%</span></p><p>標準誤0.34個百分點，包含「其他土地」。大面積的其他土地，對整體值有很大影響。</p><dl class="validation-sites"><div><dt>原始抽樣</dt><dd>9100點</dd></div><div><dt>完成專家共識</dt><dd>8190點</dd></div><div><dt>尚未完成共識</dt><dd>738點</dd></div><div><dt>標為不確定</dt><dd>172點</dd></div></dl><p class="small-note">專家主要判讀高解析影像、歷史觀測與輔助資料，不全部等於現地量測。738點與172點未納入精度估計；困難與過渡類型較常被排除，可能影響估計。不能解讀成每一地區或每一類都有九成準確率。</p></div>
+ <div class="class-results"><h3>人工栽植林仍比較難分。</h3><table class="accuracy-table"><caption>六類F1，同時考慮漏分與誤分；和整體準確率不同</caption><thead><tr><th scope="col">類型</th><th scope="col">F1</th></tr></thead><tbody><tr><th scope="row">原生林</th><td>82.9%</td></tr><tr><th scope="row">自然再生林</th><td>72.6%</td></tr><tr class="difficult-class"><th scope="row">人工栽植林</th><td>58.2%</td></tr><tr><th scope="row">集約經營人工林</th><td>66.7%</td></tr><tr><th scope="row">樹作物與農林混作</th><td>62.1%</td></tr><tr><th scope="row">其他土地</th><td>96.4%</td></tr></tbody></table><p class="small-note">論文表7，全球六類、共識驗證樣點。這些不是上方全球展示圖中每個位置的分數。模型給的相對信心，也不能直接當成某處判對的機率。</p><p class="closing-line">先分清森林類型，<br>再討論如何利用與保護。</p><p>地圖提供一致的判讀起點。難分的地方仍須核對經營歷史；森林類型也不直接等於碳量或生物多樣性。</p></div></div>
+ <details id="sources" class="sources"><summary>日期、研究與圖片來源</summary><div class="source-grid"><div><h3>何時公布，代表哪一年？</h3><p><time datetime="2026-10-22">2026年10月22日</time>，<a href="https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/">Google DeepMind公布研究介紹</a>。<time datetime="2026-10-21">2026年10月21日</time>，論文發表於Scientific Data 13:1434。</p><p>ForTy 2020代表2020年基線。官方另有2017至2025早期時間序列，本頁不把2020驗證數字外推為逐年變化精度。</p></div><div><h3>正式論文與資料</h3><p>Neumann等人（2026），<a href="https://doi.org/10.1038/s41597-026-08299-5">Global forest typology at 10-meter resolution for forest and land-use monitoring</a>。</p><p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13686961/">研究全文</a> · <a href="https://developers.google.com/earth-engine/datasets/catalog/projects_nature-trace_assets_forest_typology_forest_typology_2020_v1_0_collection">官方資料目錄</a>。六類定義與限制見Methods，驗證分母與F1見表5、7。</p></div><div><h3>兩張圖，各有用途。</h3><p>首屏採用官方立體森林地圖視覺，交代研究主題；第二張是官方全球分類展示，保留全圖和原圖例。兩者均來自Google DeepMind研究介紹。</p><p>動畫使用論文Figure 3、5並保留其署名。論文圖版的CC BY 4.0標示，與官方文章視覺的來源分開記錄。<a href="SOURCE.md">完整來源說明</a> · <a href="animation/SOURCE.md">動畫來源</a>。</p></div></div></details>
+</section>
+</main>
+<footer class="reading-controls" aria-label="案例閱讀控制"><button id="previous-page" type="button" disabled>上一頁</button><p id="page-position" aria-live="polite">1 / 4 · 新公布的地圖</p><button id="next-page" type="button">下一頁</button></footer>
+<dialog id="map-dialog" class="map-dialog" aria-labelledby="map-dialog-title"><div class="map-dialog-heading"><h2 id="map-dialog-title">2020年全球森林類型展示</h2><button id="close-map" type="button">關閉</button></div><img src="assets/forty-global-map.webp" width="1920" height="1136" loading="lazy" alt="完整ForTy 2020全球展示圖及原英文圖例。"><p>每平方公里顯示最常見類型，非原生10公尺柵格。圖：Google DeepMind／Google Research。</p></dialog>
+<script src="../../ui/site-map.js" defer></script><script src="../../ui/sidebar.js" defer data-site-page="case" data-case-id="05-05"></script><script src="../../ui/media-expand.js" defer></script>
+</body></html>

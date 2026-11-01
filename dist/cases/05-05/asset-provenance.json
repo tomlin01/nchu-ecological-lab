@@ -1,0 +1,53 @@
+{
+  "retrieved_at": "2026-11-01T11:17:27.056613+08:00",
+  "user_selected_article_images": true,
+  "images": [
+    {
+      "order_in_article": 1,
+      "role": "official_hero_visual",
+      "file": "work/ecology-ai-rollout/cases/05-05/web-sources-v01/deepmind-forty-hero-v01.webp",
+      "bytes": 106634,
+      "sha256": "c6ae17b6841bb7ae3567e6e04ac6d8dccd1953ba343eeccb5926aeac0e87eb4b",
+      "width": 1920,
+      "height": 1080,
+      "format": "WEBP",
+      "mime": "image/webp",
+      "source_page": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source_img_src": "https://lh3.googleusercontent.com/WGEFKF0mS4Mon9B5jZmraPj5UVTfZ0HtW0VXaLS0Ijm67blWFirP4Opi5IX6QLWEbq9MSQituskRlxKgUpGfD8-C6kIbe7etM9bTbvLg3rmG5gTkwc4=w1440-h810-n-nu",
+      "selected_advertised_srcset": {
+        "url": "https://lh3.googleusercontent.com/WGEFKF0mS4Mon9B5jZmraPj5UVTfZ0HtW0VXaLS0Ijm67blWFirP4Opi5IX6QLWEbq9MSQituskRlxKgUpGfD8-C6kIbe7etM9bTbvLg3rmG5gTkwc4=w2880-h1620-n-nu-rw-lo",
+        "width_descriptor": 1920
+      },
+      "resolved_asset_url": "https://lh3.googleusercontent.com/WGEFKF0mS4Mon9B5jZmraPj5UVTfZ0HtW0VXaLS0Ijm67blWFirP4Opi5IX6QLWEbq9MSQituskRlxKgUpGfD8-C6kIbe7etM9bTbvLg3rmG5gTkwc4=w2880-h1620-n-nu-rw-lo",
+      "alt": "A close-up of a 3D voxel-style world map focusing on the blocky terrain of South America.",
+      "transformation": "No local image transformation or re-encoding; original downloaded response bytes saved.",
+      "credit": "Google DeepMind / Google Research; sourced from the official ForTy announcement.",
+      "license_status": "No separate image-specific reuse license found in the announcement HTML; do not label the promotional image CC BY 4.0 by inheriting the paper/data license.",
+      "interpretation": "Official promotional voxel-style forest/world-map visual; not a measured 3D forest model, not a plot of canopy height, not a quantitative 10m data display."
+    },
+    {
+      "order_in_article": 2,
+      "role": "global_baseline_map",
+      "file": "work/ecology-ai-rollout/cases/05-05/web-sources-v01/deepmind-forty-world-map-v01.webp",
+      "bytes": 134880,
+      "sha256": "ae7c38afd637ffacdc3c5faf088c6a02ad0045730b82dff904ff42ce13e2f40c",
+      "width": 1920,
+      "height": 1136,
+      "format": "WEBP",
+      "mime": "image/webp",
+      "source_page": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source_img_src": "https://lh3.googleusercontent.com/wAQ6wnzu6Lr-VMuS6ielTWpKEcpB2PkjN0XTdby80-NtefdPj9-ZKCrVPk-CSPuZ6GN8B4sScphV7sUd9dwrgprBrijy8wj3Z9fIv7eg2QAcMUMGPA=w1440-h810-n-nu",
+      "selected_advertised_srcset": {
+        "url": "https://lh3.googleusercontent.com/wAQ6wnzu6Lr-VMuS6ielTWpKEcpB2PkjN0XTdby80-NtefdPj9-ZKCrVPk-CSPuZ6GN8B4sScphV7sUd9dwrgprBrijy8wj3Z9fIv7eg2QAcMUMGPA=w2880-h1620-n-nu-rw-lo",
+        "width_descriptor": 1920
+      },
+      "resolved_asset_url": "https://lh3.googleusercontent.com/wAQ6wnzu6Lr-VMuS6ielTWpKEcpB2PkjN0XTdby80-NtefdPj9-ZKCrVPk-CSPuZ6GN8B4sScphV7sUd9dwrgprBrijy8wj3Z9fIv7eg2QAcMUMGPA=w2880-h1620-n-nu-rw-lo",
+      "alt": "World map illustrating global forest typology categorized by primary, naturally regenerating, planted, and plantation forests, and agroforestry.",
+      "transformation": "No local image transformation or re-encoding; original downloaded response bytes saved.",
+      "credit": "Google DeepMind / Google Research; sourced from the official ForTy announcement.",
+      "license_status": "No separate image-specific reuse license found in the announcement HTML; do not label the promotional image CC BY 4.0 by inheriting the paper/data license.",
+      "interpretation": "2020 forest typology world map. Official caption says each color is the most common forest/land type in each square kilometer; the display is not the native 10m raster.",
+      "official_caption": "The Forest Typology map for 2020. Each color shows the most common forest or land type in each square kilometer. Explore it at 10-meter detail in our Earth Engine app."
+    }
+  ]
+}

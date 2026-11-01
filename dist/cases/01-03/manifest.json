@@ -100,10 +100,6 @@
       "bytes": 72435,
       "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
     },
-    "assets/01-03-plankton-main.svg": {
-      "bytes": 2547,
-      "sha256": "104f328a7fb949d51c7d2c363fdadba0e8b0732459a548857ce259db541ce5b3"
-    },
     "assets/01-03-plankton-main.webp": {
       "bytes": 150886,
       "sha256": "193acb47a92b4984ab6c2e326fa8389964241e75592baa0a8d5c08862f0ed3d9"
@@ -277,5 +273,13 @@
     "scope": "Reader-facing parent webpage and interface wording; animation/media/source records unchanged",
     "verification": "work/ecology-ai-rollout/tw-copy-v01/verification.json"
   },
-  "updated": "2026-10-25T17:53:02.193588+00:00"
+  "updated": "2026-10-25T17:53:02.193588+00:00",
+  "cleanup_revision": {
+    "id": "folder-cleanup-v02",
+    "removed_unused_images": [
+      "assets/01-03-plankton-main.svg"
+    ],
+    "runtime_media_and_source_files_unchanged": true,
+    "deployed": false
+  }
 }

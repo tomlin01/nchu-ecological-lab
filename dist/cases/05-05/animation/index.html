@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-Hant-TW" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>同樣一片綠，AI 怎麼分辨不同森林？｜ForTy 2020</title>
+<meta name="description" content="120秒研究動畫：認識森林類型，理解ForTy如何用多年衛星特徵判讀林地，以及哪些地方仍需要核對。">
+<link rel="icon" href="data:,">
+<script>try{const q=new URLSearchParams(location.search).get('theme');let s;try{s=localStorage.getItem('ecology-color-theme')}catch{}document.documentElement.dataset.theme=['light','dark'].includes(q)?q:s==='dark'?'dark':'light'}catch{}</script>
+<link rel="stylesheet" href="fonts/fonts.css"><link rel="stylesheet" href="style.css">
+<script src="vendor/gsap.min.js"></script><script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#playButton">跳至播放控制</a>
+<main id="player" class="player" aria-labelledby="pageTitle">
+<header class="player-heading">
+<div><h1 id="pageTitle">同樣一片綠，<br>AI 怎麼分辨不同森林？</h1><p class="opening-copy">ForTy 2020・120秒無聲動畫<br>從林地的樣子與用途，看到同一區域的作者分類結果。</p></div>
+<button id="themeButton" class="theme-button" type="button" aria-pressed="false">切換深色</button>
+</header>
+<div class="transport" role="group" aria-label="動畫播放控制">
+<div class="transport-row"><button id="playButton" class="primary" type="button" disabled aria-pressed="false">播放</button><button id="replayButton" type="button" disabled>重播</button><output id="timeReadout" aria-label="目前時間與總長度" aria-live="off">00:00 / 02:00</output><button id="expandButton" type="button" aria-expanded="false" aria-pressed="false" aria-controls="player">放大觀看</button></div>
+<label class="sr-only" for="seekRange">播放進度</label><input id="seekRange" type="range" min="0" max="120" step="0.0416666667" value="0" aria-valuetext="00:00">
+<div class="frame-controls" role="group" aria-label="逐幀觀看"><button type="button" data-frame="-1" disabled>上一幀</button><button type="button" data-frame="1" disabled>下一幀</button><span>24 fps・空白鍵播放／暫停，方向鍵前後一秒</span></div>
+</div>
+<p id="playerStatus" class="player-status" role="status" aria-live="polite">正在準備研究圖像與字型。</p>
+<div id="playerError" class="error-message" hidden><p id="playerErrorCopy"></p><button id="retryButton" type="button">重新載入</button></div>
+<div class="viewing-area"><div class="composition-wrap"><div id="composition" class="composition" tabindex="0" aria-label="120秒森林類型與ForTy分類動畫。空白鍵播放或暫停，方向鍵前後一秒。"><div id="sceneRoot"></div></div><p id="loadingNote" class="loading-note" aria-hidden="true">正在準備畫面</p></div>
+<aside class="narrative" aria-labelledby="narrativeTitle"><div><p id="phaseLabel" class="phase-label">先認識林地</p><h2 id="narrativeTitle">同樣一片綠，裡面都是一樣的森林嗎？</h2></div><div><p id="narrativeCopy">從空中看，自然長回來的森林、經營木材的人工林與樹作物農地，都可能是一片綠。</p><p id="narrativeNote" class="phase-note">研究圖5是不同地點的類型示例。</p></div></aside></div>
+<nav id="phaseNavigation" class="phase-navigation" aria-label="動畫段落"></nav>
+<footer class="reading-footer">
+<p class="download-line"><a id="downloadMP4" href="film/05-05-forty-v01.mp4" download>下載 MP4 影片</a><span>1600 × 900・24 fps・無聲</span></p>
+<details><summary>不播放，直接閱讀</summary><ol>
+<li>同樣有樹木覆蓋，形成過程與用途仍可能不同。本研究區分原生林、自然再生林、人工栽植林、集約經營人工林、樹作物與農林混作、其他土地。</li>
+<li>樹木排列與外觀提供線索，土地用途和經營歷史仍需要其他資料。不同地點的類型示例，不是同一塊森林的前後變化。</li>
+<li>ForTy利用AlphaEarth整理的衛星特徵，配合已知例子訓練，再擴大資料並加入多年資訊。最後一階段綜合2019至2024年的觀測，取出2020年的結果。</li>
+<li>澳洲東南部的衛星影像與作者分類圖對照同一區域。彩色圖是作者推估，沒有用圖版顏色計算面積或每個像元的信心。</li>
+<li>獨立驗證以8190個完成專家共識的樣點估計精度。全球六類整體準確率90.22%包含其他土地；不同類別表現有落差，類別F1與整體準確率也不是同一指標。</li>
+<li>地圖提供林地判讀的起點，難分的地方仍須核對經營歷史。10公尺是輸出網格，不是誤差保證；林型不直接等於碳量或生物多樣性。</li>
+</ol></details>
+<details><summary>研究與畫面從哪裡來</summary><p>Neumann等人，2026，<cite>Global forest typology at 10-meter resolution for forest and land-use monitoring</cite>，Scientific Data 13:1434。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13686961/" target="_blank" rel="noopener">閱讀研究原文</a>。</p><p>畫面採用論文Figure 3、5，標示CC BY 4.0；衛星影像保留© Google Earth、Maxar Technologies、Airbus署名。年份與訓練流程為方法圖解，本輪沒有重跑模型。詳細對應見<a href="SOURCE.md">來源記錄</a>。</p></details>
+<noscript><p>動畫需要JavaScript。上方文字與<a href="film/05-05-forty-v01.mp4" download>MP4下載</a>仍可使用。</p></noscript>
+<p class="prototype-note">05-05・獨立動畫試作。這不是正式案例頁，尚未加入網站。</p>
+</footer></main>
+</body></html>

@@ -74,3 +74,21 @@ window.createHabitatCoverMotion = ({section,reduced,getState}) => {
   return {sync,suspend,replay,skipEntrance,getState:()=>({entrancePlayed:played,entrancePlaying:Boolean(entrance),dismissed,
     selectedCase,effectCount:effects.size,spatialMotionEnabled:!reduced.matches})};
 };
+
+/* Accepted photo-derived artwork: show the matching source beside the case. */
+(() => {
+  const section=document.getElementById('topic-05');
+  const credits=section?.querySelector('.habitat-photo-credits');
+  if(!credits)return;
+  let previous=null;
+  function sync(){
+    const selected=section.dataset.selectedCase||'';
+    if(selected===previous)return;
+    previous=selected;
+    credits.hidden=selected==='05-05';
+    for(const row of credits.querySelectorAll('[data-photo-case]'))row.hidden=Boolean(selected)&&row.dataset.photoCase!==selected;
+    queueMicrotask(()=>dispatchEvent(new Event('resize')));
+  }
+  new MutationObserver(sync).observe(section,{attributes:true,attributeFilter:['data-selected-case']});
+  sync();
+})();

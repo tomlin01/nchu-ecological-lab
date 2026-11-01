@@ -53,17 +53,9 @@
       "bytes": 10042,
       "sha256": "c3ae257f7abec419419fbdf08d4fab01bb6e8aac9f567eafb2bfd2027d9ea1d5"
     },
-    "assets/sage-thrasher-alpha-browser-review-v02.png": {
-      "bytes": 924061,
-      "sha256": "a99c8c8a6793a44de17b974ac222803a5699d5057f5d22d8bb2f9f5efcb2a536"
-    },
     "assets/sage-thrasher-cutout-v01.png": {
       "bytes": 1955113,
       "sha256": "326422fc06606b3f1e5d516670e67808b0b210cf68663e08a438f6ad8bec85eb"
-    },
-    "assets/sage-thrasher-cutout-v02.png": {
-      "bytes": 1880943,
-      "sha256": "961f86b9f98dba16430bf4dc5878b1694d2592a9d05518879a6be97ff52d9ba9"
     },
     "assets/sagebrush-scene-v01.png": {
       "bytes": 3562306,
@@ -129,5 +121,14 @@
       "bytes": 72435,
       "sha256": "96c01b81f44a3290e2b4532f55e2c9534b2adc43273a19f3756b2cb41f0fd0b6"
     }
+  },
+  "cleanup_revision": {
+    "id": "folder-cleanup-v02",
+    "removed_unused_images": [
+      "assets/sage-thrasher-alpha-browser-review-v02.png",
+      "assets/sage-thrasher-cutout-v02.png"
+    ],
+    "runtime_media_and_source_files_unchanged": true,
+    "deployed": false
   }
 }

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "family": "FortyCaseSans",
+  "weights": "100 900",
+  "required_codepoints": 686,
+  "missing_glyphs": [],
+  "source_sha256": "ac091cc8cd19e848202afc8fe6d3809b4526c8fdbdb4be82da20c4f785949591",
+  "output_sha256": "0cc220928924beb5316bf7de96153ff00ba7218cf3d6b9e7a0875eb3570dd07d",
+  "output_bytes": 222360,
+  "source_files": {
+    "work/ecology-ai-rollout/cases/05-05/web-v01/index.html": "2ef4b83a782b344756794c31dea5cc2521235477cbc98d365864c7e9254e8a10",
+    "work/ecology-ai-rollout/cases/05-05/web-v01/SOURCE.md": "7c722e437191f6b0c865500c0a85635cce38662c6126384fc8228b516c99e5a5",
+    "work/ecology-ai-rollout/cases/05-05/web-v01/case.css": "0872d6a10541de351afd2a776b005c3bd10476be47a39e56e897cd7eb58afe15",
+    "work/ecology-ai-rollout/cases/05-05/web-v01/05-05.html": "1983f0e460504adaba38b45a5be0694c43880586a5d6e1173f358eca3c10c904",
+    "work/ecology-ai-rollout/cases/05-05/web-v01/case.js": "ecad6f6959dd3db7282ccc3cbe6c335590f74383556618ca3b6a81334337582f",
+    "work/nchu-ecological-lab/dist/ui/site-map.js": "a9c9d2bd3ad2a43bf75502b9aa439f5399d3592c5b8b6d1c7540da823e319792",
+    "work/nchu-ecological-lab/dist/ui/sidebar.js": "4049a83cd2ccca53e9f4a4387968ac74c509e9f6d39581f1d5d3634cdcafca2d"
+  }
+}
