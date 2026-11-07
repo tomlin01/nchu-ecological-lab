@@ -6025,8 +6025,152 @@
       "sha256": "321f6c820cdbf864760ba7107fdca1e3bc998f668c882f8c0fdc9900dff0e2f2"
     },
     "home-atlas/cover-extensions.json": {
-      "bytes": 5667,
-      "sha256": "8ae9206b02d4bd69da65b4224997bbeb9cc7492981809ffa2efa9a82dfcb2f21"
+      "bytes": 6792,
+      "sha256": "714c77d8f27c7bc370496450e449e39cb3f23219bf172e0a2fc418c81db4ec5d"
+    },
+    "home-atlas/covers/06-v07/assets/06-cg-api-dark-v07.webp": {
+      "bytes": 232014,
+      "sha256": "73575230eb6a9ec992b4eab601875597be7e1121fa2cf00c91ded4b18e27d440"
+    },
+    "home-atlas/covers/06-v07/assets/06-cg-api-light-v07.webp": {
+      "bytes": 237724,
+      "sha256": "70f36660d31a1e487c15d34c1eb274703cb77b33bb7afead24e555387c432927"
+    },
+    "home-atlas/covers/06-v07/assets/06-cg-api-mobile-dark-v07.webp": {
+      "bytes": 167048,
+      "sha256": "cb99e02b46cc3f9e542aef2878d71c8bc250fe0a409578e404fb78cb535cc299"
+    },
+    "home-atlas/covers/06-v07/assets/06-cg-api-mobile-light-v07.webp": {
+      "bytes": 170202,
+      "sha256": "e523f556e0ebd431b39f2f2f25017be6766e26f8743103d084b5fdd153bcbacc"
+    },
+    "home-atlas/covers/06-v07/assets/media-sans.woff2": {
+      "bytes": 8092,
+      "sha256": "93351d2f45c83a70e23e65116f90ba3b245278fb752d8594e43659330a203f1b"
+    },
+    "home-atlas/covers/06-v07/assets/media-serif.woff2": {
+      "bytes": 9968,
+      "sha256": "78d588709c2234a1ae5392300b681813341ef7150a5a6b98de2395511dbc7f8e"
+    },
+    "home-atlas/covers/06-v07/cover.css": {
+      "bytes": 6483,
+      "sha256": "cf75ce96b273a8c1a8328841e7ec0395d03ede6782d4a8f877b42b765475e6cc"
+    },
+    "home-atlas/covers/06-v07/cover.js": {
+      "bytes": 1587,
+      "sha256": "febcecee1a893fa1d4bca2f69c5ace10e393c7f784e574759bee873b22dd0222"
+    },
+    "home-atlas/covers/07-v02/assets/base/network-sans.woff2": {
+      "bytes": 5668,
+      "sha256": "3a7cf6deae32ebb816d28e808583546e1f038bcab6c9a6891363932a9dcb7cb0"
+    },
+    "home-atlas/covers/07-v02/assets/base/plants/cistus-v01.webp": {
+      "bytes": 252164,
+      "sha256": "92df14f832087385cac84d233568121776ce1afa3ccd3b6f430571a14c54b011"
+    },
+    "home-atlas/covers/07-v02/assets/base/plants/rosemary-v01.webp": {
+      "bytes": 358134,
+      "sha256": "0808d7ae906513fdac661bdd6cf08a1878563ae8b7364b4fae6f85af355d17dc"
+    },
+    "home-atlas/covers/07-v02/assets/base/sea-rocket/sea-rocket-v01.webp": {
+      "bytes": 157260,
+      "sha256": "6be37f218f392bb7324528ac1362c18c0c8d684b74263ba11cee5e06af1ae95c"
+    },
+    "home-atlas/covers/07-v02/assets/base/visitors/hoverfly-v01.webp": {
+      "bytes": 168272,
+      "sha256": "a5c07af06e9e18d8780e5c537561d0859ca39adae090db7c0de3673406084c75"
+    },
+    "home-atlas/covers/07-v02/assets/base/visitors/sweat-bee-v01.webp": {
+      "bytes": 172958,
+      "sha256": "a4e4df87d8b1726e5078e8ba4f27a5fc5a91b3505c4be82acd34512b51f47bda"
+    },
+    "home-atlas/covers/07-v02/assets/network-sans.woff2": {
+      "bytes": 3960,
+      "sha256": "7c2e91f79b51ddfc8ce74428038ec79a4ad0742db1db959ee634b0ae91c5a190"
+    },
+    "home-atlas/covers/07-v02/assets/plants/helichrysum-v01.webp": {
+      "bytes": 339066,
+      "sha256": "db64573b699ebc3c27e2b119203799ead89e3dba739b70d7fc217fa96b40b3c2"
+    },
+    "home-atlas/covers/07-v02/assets/plants/teucrium-v01.webp": {
+      "bytes": 343896,
+      "sha256": "7bf4f1ba4db215b5fc716823c90ddf7ba5f1a1bf4d571c4cb7db75472f3fa848"
+    },
+    "home-atlas/covers/07-v02/assets/visitors/pollen-beetle-v01.webp": {
+      "bytes": 158326,
+      "sha256": "635068ba06cdab32ba61d4e252c51b86c5cf63797d4aa880bea03a895f5c0cb8"
+    },
+    "home-atlas/covers/07-v02/assets/visitors/red-admiral-v01.webp": {
+      "bytes": 244998,
+      "sha256": "9f9e8f2f76a40e52f63abe39d31e7ff2178bc42c0ee43c926dce5785b0a46c98"
+    },
+    "home-atlas/covers/07-v02/cover.css": {
+      "bytes": 5911,
+      "sha256": "de20a481db72ac2fcd3c78a6cb53618daacc2be9b46e4c6e0c471107026f0aa3"
+    },
+    "home-atlas/covers/07-v02/cover.js": {
+      "bytes": 5274,
+      "sha256": "6cfec10d32255f5526c9c61f81ad75b10985d765314b7308f2333380cfea2415"
+    },
+    "home-atlas/covers/08-v03/assets/08-flock-day-v01.webp": {
+      "bytes": 564010,
+      "sha256": "6dd32bfd64d75b3ad8d28daa72b612c9a1ebd0d99312839146d351f067302310"
+    },
+    "home-atlas/covers/08-v03/assets/08-flock-night-v01.webp": {
+      "bytes": 429876,
+      "sha256": "32eb4b9ed0f43fd9f54a3f44ec3a38b1f48edc492c8dadbb6bdb6866c08c9994"
+    },
+    "home-atlas/covers/08-v03/assets/trend-sans.woff2": {
+      "bytes": 3716,
+      "sha256": "a22b321f027411d9a9a302589cf705d4825804bd0d9015cbd6753269d42ee30b"
+    },
+    "home-atlas/covers/08-v03/cover.css": {
+      "bytes": 6307,
+      "sha256": "b8804cf01c9b4f56e00c166a209ad26ef8eda390294385600349ec39c2ce69a9"
+    },
+    "home-atlas/covers/08-v03/cover.js": {
+      "bytes": 3568,
+      "sha256": "96d05fd59f3b1b05a1c086887119a17c00768b0631787e06664afdbbb12489b1"
+    },
+    "home-atlas/covers/09-v01/assets/09-flock-display-LICENSE.md": {
+      "bytes": 420,
+      "sha256": "932296d1c23d39a6996f5b050705dae175bca454cd0ce8466d7e7e603af01b71"
+    },
+    "home-atlas/covers/09-v01/assets/09-flock-display-provenance.json": {
+      "bytes": 635,
+      "sha256": "6261b73fa5d661310f89c1875347db71e8de29cbc23b1722dda339ee963fe038"
+    },
+    "home-atlas/covers/09-v01/assets/09-flock-display-v01.webp": {
+      "bytes": 1427946,
+      "sha256": "10ecb6b29f936e624f966a8b136c91610b0d3861fb36c882c6260431cfcac7d4"
+    },
+    "home-atlas/covers/09-v01/assets/flock-sans.woff2": {
+      "bytes": 3084,
+      "sha256": "7d33265f16a91359999c482e8626b971e0eedcf572d030502fe28b14773cf96c"
+    },
+    "home-atlas/covers/09-v01/cover.css": {
+      "bytes": 3884,
+      "sha256": "94abc8288791b8fcfdbcd7e7277f126e366c14242240da5d442b729868b487a9"
+    },
+    "home-atlas/covers/12-v02/assets/hornet/hornet-cutout-v01.webp": {
+      "bytes": 239608,
+      "sha256": "105c384a55df0ca5e6111ba7359757f2a7e92bc2e7f522436373f145610e2ceb"
+    },
+    "home-atlas/covers/12-v02/assets/motion-sans.woff2": {
+      "bytes": 5640,
+      "sha256": "023b9d74f780b6149846a671303b1fb9267dee14c04f844f9fbd061f5325ee33"
+    },
+    "home-atlas/covers/12-v02/cover.css": {
+      "bytes": 5883,
+      "sha256": "58a4aa8b96d6eb427ab453cb78665366a84ac55118e9a70474d4fa9b368e849a"
+    },
+    "home-atlas/covers/12-v02/cover.js": {
+      "bytes": 10607,
+      "sha256": "4379541c0f27defc79b2a0a46e11b49cd4ee2d9a6dd4615c7599ce4069283d11"
+    },
+    "home-atlas/covers/accepted-sources.json": {
+      "bytes": 5193,
+      "sha256": "c7adda245219dc2f612d49eee00ef8ecfe3209f902b0130c7c9bb48ac9507332"
     },
     "home-atlas/directory-rows.css": {
       "bytes": 4723,
@@ -6181,8 +6325,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 56491,
-      "sha256": "a998f6ad8c5b401219ff1d512e613b7d480fb401e6490a9dc6665c336cf4c828"
+      "bytes": 298741,
+      "sha256": "ab538cba3a8ace6d53c2deae183e97d141abdc701e5e8a3235a6b8699855932a"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -6780,5 +6924,6 @@
     "preserved_case": "05-05",
     "forest_public_reuse_license_verified": false,
     "deployed": false
-  }
+  },
+  "approved_cover_update": "2026-11-07: 06-v07,07-v02,08-v03,09-v01,12-v02"
 }

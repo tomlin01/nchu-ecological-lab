@@ -1,0 +1,14 @@
+{
+  "source": "sources/09-flock-source.jpg",
+  "file": "assets/09-flock-display-v01.webp",
+  "creator": "Skander zarrad",
+  "title": "Murmuration 11-2025",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Murmuration_11-2025.jpg",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "width": 3000,
+  "height": 2000,
+  "bytes": 1427946,
+  "sha256": "10ecb6b29f936e624f966a8b136c91610b0d3861fb36c882c6260431cfcac7d4",
+  "changes": "Whole-frame resize and WebP encoding. CSS applies viewport cropping and neutral readability scrims. No birds duplicated, removed or repositioned."
+}

@@ -1,0 +1,48 @@
+@font-face{font-family:"Atlas Sans";src:url("assets/media-sans.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+50B3,U+57FA,U+5931,U+6BDB,U+7126,U+773C,U+7D05,U+7DFB,U+80A1,U+84BC,U+868A,U+8805,U+8DDD,U+9010,U+907A,U+914D,U+9E7C;}
+@font-face{font-family:"Atlas Serif";src:url("assets/media-serif.woff2") format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+50B3,U+57FA,U+5931,U+6BDB,U+7126,U+773C,U+7D05,U+7DFB,U+80A1,U+84BC,U+868A,U+8805,U+8DDD,U+9010,U+907A,U+914D,U+9E7C;}
+.media-art-host{width:100%;height:100%}
+.media-cg-picture{display:block;width:100%;height:100%}
+body[data-cover-media="cg"] #topic-06 .topic-stage{--media-cg-paper:#f2f5f7;--ink:#172c39;--atlas-ink:#172c39;--atlas-muted:#354b58;background:var(--media-cg-paper);color:var(--ink)}
+html[data-theme="dark"] body[data-cover-media="cg"] #topic-06 .topic-stage{--media-cg-paper:#191e23;--ink:#f0f3f5;--atlas-ink:#f0f3f5;--atlas-muted:#d4dce1;background:var(--media-cg-paper);color:var(--ink)}
+body[data-cover-media="cg"] #topic-06 .extension-art,body[data-cover-media="photo"] #topic-06 .extension-art{inset:0;margin:0;z-index:0}
+body[data-cover-media="cg"] #topic-06 .extension-image-link,body[data-cover-media="photo"] #topic-06 .extension-image-link{position:absolute;inset:0;width:100%;height:100%}
+body[data-cover-media="cg"] #topic-06 .extension-art img,body[data-cover-media="photo"] #topic-06 .extension-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+body[data-cover-media="cg"] #topic-06 .extension-text,body[data-cover-media="photo"] #topic-06 .extension-text{z-index:3;left:var(--gutter);top:clamp(205px,27svh,300px);width:36%;max-width:535px}
+/* This isolated cover trial deliberately overrides the site's enforced Ming display face. */
+body[data-cover-media="cg"] #topic-06 .topic-title,body[data-cover-media="photo"] #topic-06 .topic-title{font-family:"Atlas Sans","PingFang TC",sans-serif!important;font-weight:650!important;font-size:clamp(40px,3.5vw,57px);line-height:1.25;letter-spacing:-.035em;color:inherit}
+body[data-cover-media="cg"] #topic-06 .extension-intro,body[data-cover-media="photo"] #topic-06 .extension-intro{color:inherit;font-size:18px;line-height:1.8;max-width:23em;margin-top:27px;text-wrap:pretty}
+body[data-cover-media="cg"] #topic-06 .extension-entry,body[data-cover-media="photo"] #topic-06 .extension-entry{margin-top:26px;color:inherit}
+body[data-cover-media="cg"] #topic-06 .topic-footer,body[data-cover-media="photo"] #topic-06 .topic-footer{z-index:4;color:inherit}
+body[data-cover-media="cg"] #topic-06 .topic-page-count,body[data-cover-media="photo"] #topic-06 .topic-page-count{color:inherit}
+body[data-cover-media="cg"] #topic-06 .topic-footer{isolation:isolate}
+body[data-cover-media="cg"] #topic-06 .topic-footer::before{content:"";position:absolute;z-index:-1;inset:-14px calc(-1 * var(--gutter)) -22px;background:var(--media-cg-paper)}
+body[data-cover-media="cg"] #topic-06 .topic-pagination a,body[data-cover-media="photo"] #topic-06 .topic-pagination a{color:inherit}
+body[data-cover-media="cg"] #topic-06 .cover-credit,body[data-cover-media="photo"] #topic-06 .cover-credit{font-size:12px}
+body[data-cover-media="photo"] #topic-06 .topic-stage{--ink:#fff;--atlas-ink:#fff;--atlas-muted:#fff;color:#fff;background:#1c261e}
+body[data-cover-media="photo"] #topic-06 .extension-art::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(8,17,12,.78) 0%,rgba(8,17,12,.58) 31%,rgba(8,17,12,.1) 64%,rgba(8,17,12,0) 100%),linear-gradient(0deg,rgba(8,17,12,.8),rgba(8,17,12,0) 24%)}
+#topic-06 .cover-credit a{text-decoration:underline;text-underline-offset:.25em}
+body[data-cover-media="cg"] #topic-06 .extension-image-link:focus-visible,body[data-cover-media="photo"] #topic-06 .extension-image-link:focus-visible{outline-offset:-8px}
+body[data-cover-media="photo"] #topic-06 a:focus-visible{outline-color:#fff}
+@media(max-width:1100px) and (min-width:901px){body[data-cover-media="cg"] #topic-06 .topic-title,body[data-cover-media="photo"] #topic-06 .topic-title{font-size:37px}}
+@media(max-width:900px){
+ body.home-atlas-page[data-cover-media="cg"] #topic-06 .topic-stage,body.home-atlas-page[data-cover-media="photo"] #topic-06 .topic-stage{height:max(760px,100svh)}
+ body[data-cover-media="cg"] #topic-06 .extension-text,body[data-cover-media="photo"] #topic-06 .extension-text{left:var(--gutter);right:var(--gutter);top:calc(var(--header-height) + 31px);width:auto;max-width:none}
+ body[data-cover-media="cg"] #topic-06 .topic-title,body[data-cover-media="photo"] #topic-06 .topic-title{font-size:clamp(29px,6.8vw,39px);line-height:1.24;letter-spacing:-.04em}
+ body[data-cover-media="cg"] #topic-06 .extension-intro,body[data-cover-media="photo"] #topic-06 .extension-intro{font-size:16px;max-width:23em;margin-top:17px}
+ body[data-cover-media="cg"] #topic-06 .extension-entry,body[data-cover-media="photo"] #topic-06 .extension-entry{margin-top:13px;font-size:15px}
+ body[data-cover-media="cg"] #topic-06 .extension-art{top:330px;bottom:107px}
+ body[data-cover-media="cg"] #topic-06 .extension-art img{object-position:center}
+ body[data-cover-media="photo"] #topic-06 .extension-art img{object-position:80% center}
+ body[data-cover-media="photo"] #topic-06 .extension-art::after{background:linear-gradient(180deg,rgba(8,17,12,.93) 0%,rgba(8,17,12,.8) 29%,rgba(8,17,12,.08) 54%,rgba(8,17,12,.03) 70%,rgba(8,17,12,.93) 100%)}
+ body[data-cover-media="photo"] #topic-06 .topic-footer>p{max-width:100%;font-size:11px}
+ body[data-cover-media="photo"] #topic-06 .cover-credit{font-size:10px}
+}
+@media(max-width:900px) and (max-height:560px) and (orientation:landscape){
+ body.home-atlas-page #topic-06 .topic-stage{height:max(640px,100svh)}
+ body[data-cover-media="cg"] #topic-06 .extension-text,body[data-cover-media="photo"] #topic-06 .extension-text{top:calc(var(--header-height) + 25px);width:39%;right:auto}
+ body[data-cover-media="cg"] #topic-06 .topic-title,body[data-cover-media="photo"] #topic-06 .topic-title{font-size:29px}
+ body[data-cover-media="cg"] #topic-06 .extension-art{top:0;bottom:0;left:30%}
+ body[data-cover-media="photo"] #topic-06 .extension-art img{object-position:65% center}
+ body[data-cover-media="photo"] #topic-06 .extension-art::after{background:linear-gradient(90deg,rgba(8,17,12,.9),rgba(8,17,12,.65) 37%,rgba(8,17,12,.05) 70%),linear-gradient(0deg,rgba(8,17,12,.9),transparent 25%)}
+}
+@media print{}

@@ -17,16 +17,21 @@
       "case": "06-01",
       "label": "看DNA辨識案例",
       "layout": "right",
-      "alt": "昆蟲、蕨類與落葉組成的自然史小景。",
       "ground": "third",
-      "image": "assets/topic-06/topic-06-cover-v01.png",
-      "width": 1536,
-      "height": 1024,
       "href": "cases/06-01/06-01.html",
       "hover_effect": false,
       "generated_concept": true,
-      "prompt": "assets/topic-06/prompt.md",
-      "provenance": "assets/topic-06/provenance.json"
+      "previous_artwork": {
+        "image": "assets/topic-06/topic-06-cover-v01.png",
+        "width": 1536,
+        "height": 1024,
+        "prompt": "assets/topic-06/prompt.md",
+        "provenance": "assets/topic-06/provenance.json",
+        "alt": "昆蟲、蕨類與落葉組成的自然史小景。"
+      },
+      "accepted_cover_revision": "06-v07",
+      "source_record": "covers/accepted-sources.json",
+      "presentation": "accepted-picture"
     },
     {
       "id": "07",
@@ -40,16 +45,21 @@
       "case": "07-01",
       "label": "看植物訪花網絡",
       "layout": "left",
-      "alt": "蜂與蝴蝶拜訪不同花朵的草地小景，訪花不等於已確認授粉。",
       "ground": "next",
-      "image": "assets/topic-07/topic-07-cover-v01.png",
-      "width": 1536,
-      "height": 1024,
       "href": "cases/07-01/07-01.html",
       "hover_effect": false,
       "generated_concept": true,
-      "prompt": "assets/topic-07/prompt.md",
-      "provenance": "assets/topic-07/provenance.json"
+      "previous_artwork": {
+        "image": "assets/topic-07/topic-07-cover-v01.png",
+        "width": 1536,
+        "height": 1024,
+        "prompt": "assets/topic-07/prompt.md",
+        "provenance": "assets/topic-07/provenance.json",
+        "alt": "蜂與蝴蝶拜訪不同花朵的草地小景，訪花不等於已確認授粉。"
+      },
+      "accepted_cover_revision": "07-v02",
+      "source_record": "covers/accepted-sources.json",
+      "presentation": "accepted-static-cover-with-native-animation"
     },
     {
       "id": "08",
@@ -63,16 +73,21 @@
       "case": "08-01",
       "label": "看鳥類趨勢案例",
       "layout": "right",
-      "alt": "濕地、草地與林緣，不同鳥類出現在不同深度。",
       "ground": "paper",
-      "image": "assets/topic-08/topic-08-cover-v01.png",
-      "width": 1536,
-      "height": 1024,
       "href": "cases/08-01/08-01.html",
       "hover_effect": false,
       "generated_concept": true,
-      "prompt": "assets/topic-08/prompt.md",
-      "provenance": "assets/topic-08/provenance.json"
+      "previous_artwork": {
+        "image": "assets/topic-08/topic-08-cover-v01.png",
+        "width": 1536,
+        "height": 1024,
+        "prompt": "assets/topic-08/prompt.md",
+        "provenance": "assets/topic-08/provenance.json",
+        "alt": "濕地、草地與林緣，不同鳥類出現在不同深度。"
+      },
+      "accepted_cover_revision": "08-v03",
+      "source_record": "covers/accepted-sources.json",
+      "presentation": "accepted-static-cover-with-native-animation"
     },
     {
       "id": "09",
@@ -86,16 +101,23 @@
       "case": "09-03",
       "label": "看總量估計案例",
       "layout": "wide",
-      "alt": "清晨蘆葦水面與離棲鳥群，遠岸有一座小型氣象雷達圓頂。",
       "ground": "next",
-      "image": "assets/topic-09/topic-09-cover-v01.png",
-      "width": 1536,
-      "height": 1024,
       "href": "cases/09-03/09-03.html",
       "hover_effect": false,
-      "generated_concept": true,
-      "prompt": "assets/topic-09/prompt.md",
-      "provenance": "assets/topic-09/provenance.json"
+      "generated_concept": false,
+      "previous_artwork": {
+        "image": "assets/topic-09/topic-09-cover-v01.png",
+        "width": 1536,
+        "height": 1024,
+        "prompt": "assets/topic-09/prompt.md",
+        "provenance": "assets/topic-09/provenance.json",
+        "alt": "清晨蘆葦水面與離棲鳥群，遠岸有一座小型氣象雷達圓頂。"
+      },
+      "accepted_cover_revision": "09-v01",
+      "source_record": "covers/accepted-sources.json",
+      "presentation": "accepted-picture",
+      "credit": "Skander zarrad",
+      "license": "CC BY-SA 4.0"
     },
     {
       "id": "10",
@@ -155,16 +177,22 @@
       "case": "12-01",
       "label": "看文字整理案例",
       "layout": "right",
-      "alt": "無字的野外筆記、紙頁、壓製葉片、草本枝葉與小蛾。",
       "ground": "next",
-      "image": "assets/topic-12/topic-12-cover-v01.png",
-      "width": 1536,
-      "height": 1024,
       "href": "cases/12-01/12-01.html",
       "hover_effect": false,
       "generated_concept": true,
-      "prompt": "assets/topic-12/prompt.md",
-      "provenance": "assets/topic-12/provenance.json"
+      "previous_artwork": {
+        "image": "assets/topic-12/topic-12-cover-v01.png",
+        "width": 1536,
+        "height": 1024,
+        "prompt": "assets/topic-12/prompt.md",
+        "provenance": "assets/topic-12/provenance.json",
+        "alt": "無字的野外筆記、紙頁、壓製葉片、草本枝葉與小蛾。"
+      },
+      "accepted_cover_revision": "12-v02",
+      "source_record": "covers/accepted-sources.json",
+      "presentation": "accepted-static-cover-with-native-animation"
     }
-  ]
+  ],
+  "current_adoption": "2026-11-07"
 }
