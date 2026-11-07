@@ -1,13 +1,15 @@
 # NCHU Ecological Lab website
 
+2026-11-07已發布五題確認封面：06 v07、07 v02、08日夜鳥群v03、09鳥群照片v01、12文章拼圖v02。網站維持12主題／28案例，1,503個檔案。所有素材改為正式靜態路徑，移除比較UI；保留首頁lazy載入、自然播放與月曆卷邊。其餘案例及核心程式未改。
+
 AI × 生態研究的唯一編輯與發布儲存庫。遠端為
 [`tomlin01/nchu-ecological-lab`](https://github.com/tomlin01/nchu-ecological-lab)。
 
 網站已於2026-10-30公開部署：
 [AI × 生態研究](https://tomlin01.github.io/nchu-ecological-lab/)。
 儲存庫已依使用者明確授權改為公開。
-最新完整網站commit為`e805891f560efd7a56f00cb00fdde6cb5b22aa45`；
-[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/41326221120)已成功。
+最新完整網站commit為`683ee36bcbcf740ae65bdac2ed414bd9e4a1e029`；
+[GitHub Pages發布流程](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/42337373661)已成功。
 
 ## 網站來源
 
