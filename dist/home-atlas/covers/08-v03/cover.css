@@ -121,6 +121,7 @@ html[data-theme="dark"] #topic-08 .trend-scene {
 }
 
 @media(max-width:900px) {
+  #topic-08 .flock-frame img.flock-night { filter: brightness(1.18) contrast(1.08) !important; }
   #topic-08 .flock-gallery { gap: 9px; }
   #topic-08 .flock-period-caption {
     top: 10px;

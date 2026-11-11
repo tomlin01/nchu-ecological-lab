@@ -3,8 +3,10 @@
   const SVG='http://www.w3.org/2000/svg',section=document.getElementById('topic-11'),host=section.querySelector('.walk-art-host');
   const story=JSON.parse(document.getElementById('walk-story-data').textContent),DURATION=story.duration;
   const reduce=matchMedia('(prefers-reduced-motion: reduce)'),ease=gsap.parseEase('power2.inOut'),out=gsap.parseEase('power2.out'),clamp=x=>Math.max(0,Math.min(1,x));
-  const atlasURL='home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.webp',mode='walk';
+  const atlasURL='home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.display-q90.webp',mode='walk';
+  const artwork=host.closest('.extension-art'),playbackButton=host.querySelector('[data-cover-playback]'),hover=matchMedia('(hover: hover)'),imageLink=artwork.querySelector('.walk-image-link');
   let ready=false,started=false,time=reduce.matches?DURATION:0,wantedPlaying=!reduce.matches;
+  let userPaused=false;
   let frame=0,lastFrame=0,wasOnTopic=false,camera=null,replayButton=null,actors=[],pathNodes={},results=[];
   document.body.dataset.walkMode=mode;
   function element(tag,attributes={}){const node=document.createElementNS(SVG,tag);for(const [key,value]of Object.entries(attributes))node.setAttribute(key,String(value));return node;}
@@ -61,21 +63,24 @@
     const current=phase();if(section.dataset.walkPhase!==current)section.dataset.walkPhase=current;
   }
   function stop(){if(frame)cancelAnimationFrame(frame);frame=0;lastFrame=0;}
-  function tick(now){frame=0;if(!active()||!wantedPlaying||reduce.matches)return;if(lastFrame)time=Math.min(DURATION,time+(now-lastFrame)/1000);lastFrame=now;render();if(time>=DURATION){wantedPlaying=false;lastFrame=0;}else frame=requestAnimationFrame(tick);}
+  function interactionPaused(){return(hover.matches&&imageLink.matches(':hover'))||imageLink.contains(document.activeElement);}
+  function updateControl(){const hidden=!ready||reduce.matches||time>=DURATION,label=userPaused?'繼續動畫':'暫停動畫';if(playbackButton.hidden!==hidden)playbackButton.hidden=hidden;if(playbackButton.textContent!==label)playbackButton.textContent=label;if(replayButton&&replayButton.hidden!==(!ready||reduce.matches))replayButton.hidden=!ready||reduce.matches;}
+  function tick(now){frame=0;if(!active()||!wantedPlaying||interactionPaused()||reduce.matches)return;if(lastFrame)time=Math.min(DURATION,time+(now-lastFrame)/1000);lastFrame=now;render();if(time>=DURATION){wantedPlaying=false;lastFrame=0;updateControl();}else frame=requestAnimationFrame(tick);}
   function sync(){
     const state=window.AtlasHome?.getState(),onTopic=!!state?.initialized&&state.activeTopic==='11';
-    if(onTopic&&!wasOnTopic&&time>=DURATION&&!reduce.matches){time=0;wantedPlaying=true;render();}
+    if(onTopic&&!wasOnTopic&&time>=DURATION&&!userPaused&&!reduce.matches){time=0;wantedPlaying=true;render();}
     wasOnTopic=onTopic;
     if(reduce.matches&&time!==DURATION){time=DURATION;wantedPlaying=false;render();}
     if(onTopic&&!started&&!document.hidden&&!state.topicNavigationPlaying)initialize().catch(console.error);
     const isActive=active();
-    if(isActive&&wantedPlaying&&!reduce.matches&&time<DURATION){if(!frame){lastFrame=0;frame=requestAnimationFrame(tick);}}else stop();
+    if(isActive&&wantedPlaying&&!interactionPaused()&&!reduce.matches&&time<DURATION){if(!frame){lastFrame=0;frame=requestAnimationFrame(tick);}}else stop();
+    updateControl();
   }
-  function pause(){wantedPlaying=false;stop();return getState();}
-  function seek(seconds){wantedPlaying=false;stop();time=reduce.matches?DURATION:Math.max(0,Math.min(DURATION,Number(seconds)||0));render();return getState();}
-  function replay(){stop();time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches;render();sync();return getState();}
-  function play(){if(reduce.matches)return seek(DURATION);if(time>=DURATION)time=0;wantedPlaying=true;render();sync();return getState();}
-  function getState(){return{mode,ready,time,duration:DURATION,phase:phase(),cameraScale:cameraState().scale,playing:!!frame,active:active(),reducedMotion:reduce.matches,actors:actors.map(actor=>({...actor.state})),manyCount:4,fewCount:1,manyOutcome:'not-detected',fewOutcome:'snare',outcomesVisible:time>=15,illustrativeScenarios:true,modelResultsShown:false};}
+  function pause(){userPaused=true;wantedPlaying=false;stop();updateControl();return getState();}
+  function seek(seconds){userPaused=true;wantedPlaying=false;stop();time=reduce.matches?DURATION:Math.max(0,Math.min(DURATION,Number(seconds)||0));render();updateControl();return getState();}
+  function replay(){userPaused=false;stop();time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches;render();sync();return getState();}
+  function play(){if(reduce.matches)return seek(DURATION);userPaused=false;if(time>=DURATION)time=0;wantedPlaying=true;render();sync();return getState();}
+  function getState(){return{mode,ready,time,duration:DURATION,phase:phase(),cameraScale:cameraState().scale,playing:!!frame,active:active(),userPaused,interactionPaused:interactionPaused(),reducedMotion:reduce.matches,actors:actors.map(actor=>({...actor.state})),manyCount:4,fewCount:1,manyOutcome:'not-detected',fewOutcome:'snare',outcomesVisible:time>=15,illustrativeScenarios:true,modelResultsShown:false};}
   async function initialize(){
     started=true;
     const forest=host.querySelector('.walk-forest'),forestURL=forest.dataset.src;
@@ -86,10 +91,13 @@
     camera=host.querySelector('.walk-camera');results=[...host.querySelectorAll('.walk-result')];
     constructActors(host.querySelector('.walk-world'),host.querySelector('.walk-actors'));
     replayButton.addEventListener('click',replay);
-    time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches;render();ready=true;
+    time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches&&!userPaused;render();ready=true;
     host.classList.add('is-ready');replayButton.disabled=false;
     dispatchEvent(new Event('resize'));sync();return true;
   }
+  playbackButton.addEventListener('click',()=>userPaused?play():pause());
+  for(const event of ['pointerenter','pointerleave','focusin'])artwork.addEventListener(event,sync);
+  artwork.addEventListener('focusout',()=>setTimeout(sync,0));
   document.addEventListener('visibilitychange',sync);document.addEventListener('atlas-hover-reset',()=>{stop();setTimeout(sync,0);});reduce.addEventListener('change',sync);setInterval(sync,150);
   window.PatrolWalkCover={getState,seek,pause,play,replay};
   sync();

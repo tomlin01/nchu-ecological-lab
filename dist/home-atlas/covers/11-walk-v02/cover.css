@@ -235,3 +235,6 @@ body[data-walk-mode="walk"] #topic-11 .cover-credit{font-size:11px}
  body[data-walk-mode="walk"] #topic-11 .extension-intro{font-size:15px}
  body[data-walk-mode="walk"] #topic-11 .extension-art{left:41%;right:var(--gutter);top:calc(var(--header-height) + 28px);bottom:108px}
 }
+#topic-11 .walk-caption{gap:8px}
+@media(prefers-reduced-motion:reduce){#topic-11 .walk-replay{display:none}}
+@media print{#topic-11 .walk-caption{display:none}}

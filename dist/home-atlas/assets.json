@@ -49,7 +49,7 @@
       "species": "zebras",
       "state": "草地環境",
       "pair": null,
-      "file": "assets/topic-01/01-01-zebras-grassland-v01.png",
+      "file": "assets/topic-01/01-01-zebras-grassland-v01.display-q90.webp",
       "width": 708,
       "height": 679,
       "source": "topic-01-environment-v02.png",
@@ -60,7 +60,19 @@
         "height": 679
       },
       "nonzeroAlphaPixels": 299088,
-      "sha256": "f41a4f141f4a6991a36382cf687faf5a950484bc80b5f304109704bbce466a51"
+      "sha256": "de62491ec1773cacf475837fc4d87948a35b2d7d23a63fbdd81731d5e6476eda",
+      "originalImage": {
+        "file": "assets/topic-01/01-01-zebras-grassland-v01.png",
+        "sha256": "f41a4f141f4a6991a36382cf687faf5a950484bc80b5f304109704bbce466a51",
+        "bytes": 855201
+      },
+      "bytes": 210286,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained",
+      "displaySource": {
+        "path": "home-atlas/assets/topic-01/01-01-zebras-grassland-v01.lossless.webp",
+        "bytes": 563138,
+        "sha256": "4b3dd1c42907d9563d6ae8535cc4f9d6f6c5a7764d260e16a27c429ce825290d"
+      }
     },
     {
       "id": "01-02-sperm-whale-ocean",
@@ -91,7 +103,7 @@
       "species": "phytoplankton",
       "state": "放大水體片段",
       "pair": null,
-      "file": "assets/topic-01/01-03-phytoplankton-fjord-v01.png",
+      "file": "assets/topic-01/01-03-phytoplankton-fjord-v01.display-q90.webp",
       "width": 679,
       "height": 609,
       "source": "topic-01-environment-v02.png",
@@ -102,7 +114,19 @@
         "height": 609
       },
       "nonzeroAlphaPixels": 268898,
-      "sha256": "b4eae1211b36f213975daf98c0e76fa1957f7c310af4a1badc9a66434e669f35"
+      "sha256": "5a9638c4e909f01e106b11dd2d0fbede0fb9dccbb17c8c10ee7a1f81ef7c7e1c",
+      "originalImage": {
+        "file": "assets/topic-01/01-03-phytoplankton-fjord-v01.png",
+        "sha256": "b4eae1211b36f213975daf98c0e76fa1957f7c310af4a1badc9a66434e669f35",
+        "bytes": 721134
+      },
+      "bytes": 173692,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained",
+      "displaySource": {
+        "path": "home-atlas/assets/topic-01/01-03-phytoplankton-fjord-v01.lossless.webp",
+        "bytes": 478902,
+        "sha256": "9294b1d01219a4203f9566166756e44c1dbf2fb98ac42540758c7919f1b03875"
+      }
     },
     {
       "id": "01-04-moths-night",
@@ -112,7 +136,7 @@
       "species": "moths",
       "state": "夜間環境",
       "pair": null,
-      "file": "assets/topic-01/01-04-moths-night-v01.png",
+      "file": "assets/topic-01/01-04-moths-night-v01.display-q90.webp",
       "width": 586,
       "height": 595,
       "source": "topic-01-environment-v02.png",
@@ -123,7 +147,19 @@
         "height": 595
       },
       "nonzeroAlphaPixels": 249081,
-      "sha256": "f06f603419e02ec32a98cf11b12fcb15d7b15f0d417f9362f999f49849814f79"
+      "sha256": "7919db6db24e1c0c1341cc0bf62ddc1da75be4ff740c88614f5b631d6976a0df",
+      "originalImage": {
+        "file": "assets/topic-01/01-04-moths-night-v01.png",
+        "sha256": "f06f603419e02ec32a98cf11b12fcb15d7b15f0d417f9362f999f49849814f79",
+        "bytes": 627867
+      },
+      "bytes": 146358,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained",
+      "displaySource": {
+        "path": "home-atlas/assets/topic-01/01-04-moths-night-v01.lossless.webp",
+        "bytes": 428438,
+        "sha256": "b1dd1e4f2f14a96ed692d3486ea0b7377f0911245631acf09cc2d7133d14c7e0"
+      }
     },
     {
       "id": "02-01-ocelot",
@@ -133,7 +169,7 @@
       "species": "ocelot",
       "state": "物種示例",
       "pair": null,
-      "file": "assets/topic-02/02-01-ocelot-v01.png",
+      "file": "assets/topic-02/02-01-ocelot-v01.display-q90.webp",
       "width": 643,
       "height": 444,
       "source": "topic-02-diversity-v03.png",
@@ -144,7 +180,19 @@
         "height": 444
       },
       "nonzeroAlphaPixels": 217601,
-      "sha256": "03251f70f02812fd1c193cbd7ba94c3b6d423a924dbcc719772ba99f918fc941"
+      "sha256": "57c6d60eef646624e80133738babf0d5c1ae3c227a34c9086a40b9cd86ed61cc",
+      "originalImage": {
+        "file": "assets/topic-02/02-01-ocelot-v01.png",
+        "bytes": 623170,
+        "sha256": "03251f70f02812fd1c193cbd7ba94c3b6d423a924dbcc719772ba99f918fc941"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-01-ocelot-v01.png",
+        "bytes": 623170,
+        "sha256": "03251f70f02812fd1c193cbd7ba94c3b6d423a924dbcc719772ba99f918fc941"
+      },
+      "bytes": 158120,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "02-01-black-bear",
@@ -154,7 +202,7 @@
       "species": "black-bear",
       "state": "物種示例",
       "pair": null,
-      "file": "assets/topic-02/02-01-black-bear-v01.png",
+      "file": "assets/topic-02/02-01-black-bear-v01.display-q90.webp",
       "width": 611,
       "height": 438,
       "source": "topic-02-diversity-v03.png",
@@ -165,7 +213,19 @@
         "height": 438
       },
       "nonzeroAlphaPixels": 199809,
-      "sha256": "4b62320199b540eaa9c436e1a533c696f206a0d55b07a3ca765562c0d371f54c"
+      "sha256": "4895de210223e68b6a1d83ae30b3fac47ad61c462483801d0eb69b89169c1238",
+      "originalImage": {
+        "file": "assets/topic-02/02-01-black-bear-v01.png",
+        "bytes": 552887,
+        "sha256": "4b62320199b540eaa9c436e1a533c696f206a0d55b07a3ca765562c0d371f54c"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-01-black-bear-v01.png",
+        "bytes": 552887,
+        "sha256": "4b62320199b540eaa9c436e1a533c696f206a0d55b07a3ca765562c0d371f54c"
+      },
+      "bytes": 144338,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "02-01-elephant",
@@ -175,7 +235,7 @@
       "species": "elephant",
       "state": "物種示例",
       "pair": null,
-      "file": "assets/topic-02/02-01-elephant-v01.png",
+      "file": "assets/topic-02/02-01-elephant-v01.display-q90.webp",
       "width": 659,
       "height": 451,
       "source": "topic-02-diversity-v03.png",
@@ -186,7 +246,19 @@
         "height": 451
       },
       "nonzeroAlphaPixels": 231327,
-      "sha256": "31961c0287404cf629a232d45cc936283b1295a555bc3327f0b6d7926f13957f"
+      "sha256": "825eaad4de0d9008d0150d6cfc479820036dee28ecb72de899e5bcf5b74da4f9",
+      "originalImage": {
+        "file": "assets/topic-02/02-01-elephant-v01.png",
+        "bytes": 628748,
+        "sha256": "31961c0287404cf629a232d45cc936283b1295a555bc3327f0b6d7926f13957f"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-01-elephant-v01.png",
+        "bytes": 628748,
+        "sha256": "31961c0287404cf629a232d45cc936283b1295a555bc3327f0b6d7926f13957f"
+      },
+      "bytes": 164694,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "02-02-forest-birds",
@@ -196,7 +268,7 @@
       "species": "forest-birds",
       "state": "兩種森林鳥類",
       "pair": null,
-      "file": "assets/topic-02/02-02-forest-birds-v01.png",
+      "file": "assets/topic-02/02-02-forest-birds-v01.display-q90.webp",
       "width": 598,
       "height": 487,
       "source": "topic-02-diversity-v03.png",
@@ -207,7 +279,19 @@
         "height": 487
       },
       "nonzeroAlphaPixels": 217845,
-      "sha256": "4c82873e79046a5d93871d97ada9c5fe67a8d3a83437725ee8f2c8924b8dcd9e"
+      "sha256": "65e4e4759db676f9d2e3bd68c439efd9a581caaed231d92512e57b2c8e358243",
+      "originalImage": {
+        "file": "assets/topic-02/02-02-forest-birds-v01.png",
+        "bytes": 622031,
+        "sha256": "4c82873e79046a5d93871d97ada9c5fe67a8d3a83437725ee8f2c8924b8dcd9e"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-02-forest-birds-v01.png",
+        "bytes": 622031,
+        "sha256": "4c82873e79046a5d93871d97ada9c5fe67a8d3a83437725ee8f2c8924b8dcd9e"
+      },
+      "bytes": 161406,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "02-03-brydes-whale",
@@ -217,7 +301,7 @@
       "species": "brydes-whale",
       "state": "物種示例",
       "pair": null,
-      "file": "assets/topic-02/02-03-brydes-whale-v01.png",
+      "file": "assets/topic-02/02-03-brydes-whale-v01.display-q90.webp",
       "width": 670,
       "height": 416,
       "source": "topic-02-diversity-v03.png",
@@ -228,7 +312,19 @@
         "height": 416
       },
       "nonzeroAlphaPixels": 207587,
-      "sha256": "4e21e199d459ce06359d2864d9308ca704da3e54b0e2024648beab354fa77605"
+      "sha256": "83e102da042c420d0f40a123b86fc1e62a5fe5a0144030d6f0874923832131c3",
+      "originalImage": {
+        "file": "assets/topic-02/02-03-brydes-whale-v01.png",
+        "bytes": 505893,
+        "sha256": "4e21e199d459ce06359d2864d9308ca704da3e54b0e2024648beab354fa77605"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-03-brydes-whale-v01.png",
+        "bytes": 505893,
+        "sha256": "4e21e199d459ce06359d2864d9308ca704da3e54b0e2024648beab354fa77605"
+      },
+      "bytes": 123550,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "02-04-phytoplankton",
@@ -238,7 +334,7 @@
       "species": "phytoplankton",
       "state": "放大水體片段",
       "pair": null,
-      "file": "assets/topic-02/02-04-phytoplankton-v01.png",
+      "file": "assets/topic-02/02-04-phytoplankton-v01.display-q90.webp",
       "width": 600,
       "height": 391,
       "source": "topic-02-diversity-v03.png",
@@ -249,7 +345,19 @@
         "height": 391
       },
       "nonzeroAlphaPixels": 170001,
-      "sha256": "2c62e0601ac383de08c7927a18fe7b4beefa3af1cafa9144b725d26cd8827954"
+      "sha256": "f17e9217095283bcfc2c44af5877043cb68d7064d326afe43422266a7d126df5",
+      "originalImage": {
+        "file": "assets/topic-02/02-04-phytoplankton-v01.png",
+        "bytes": 444355,
+        "sha256": "2c62e0601ac383de08c7927a18fe7b4beefa3af1cafa9144b725d26cd8827954"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-02/02-04-phytoplankton-v01.png",
+        "bytes": 444355,
+        "sha256": "2c62e0601ac383de08c7927a18fe7b4beefa3af1cafa9144b725d26cd8827954"
+      },
+      "bytes": 113548,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-01-hyena-a",
@@ -259,7 +367,7 @@
       "species": "hyena",
       "state": "側身 A",
       "pair": "03-01",
-      "file": "assets/topic-03/03-01-hyena-a-v01.png",
+      "file": "assets/topic-03/03-01-hyena-a-v01.display-q90.webp",
       "width": 646,
       "height": 439,
       "source": "topic-03-comparison-v03.png",
@@ -270,7 +378,19 @@
         "height": 439
       },
       "nonzeroAlphaPixels": 185765,
-      "sha256": "6830006596bac88b876d4b26403721e47bcc95d0ca2a3d95d99cd56ed5f6673c"
+      "sha256": "b176f34a1ada07731b9da88c0761690571f604796cad07355dc5e38b37a5366a",
+      "originalImage": {
+        "file": "assets/topic-03/03-01-hyena-a-v01.png",
+        "bytes": 523869,
+        "sha256": "6830006596bac88b876d4b26403721e47bcc95d0ca2a3d95d99cd56ed5f6673c"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-a-v01.png",
+        "bytes": 523869,
+        "sha256": "6830006596bac88b876d4b26403721e47bcc95d0ca2a3d95d99cd56ed5f6673c"
+      },
+      "bytes": 149626,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-01-hyena-b",
@@ -280,7 +400,7 @@
       "species": "hyena",
       "state": "側身 B",
       "pair": "03-01",
-      "file": "assets/topic-03/03-01-hyena-b-v01.png",
+      "file": "assets/topic-03/03-01-hyena-b-v01.display-q90.webp",
       "width": 616,
       "height": 424,
       "source": "topic-03-comparison-v03.png",
@@ -291,7 +411,19 @@
         "height": 424
       },
       "nonzeroAlphaPixels": 166563,
-      "sha256": "18c9a129be91941c8af25230257499bbe7e8b4c2f6eefbcff24e9a26f0f9b631"
+      "sha256": "d2673d2a4b337ad6bbf1a071a35b96a7aefd420b380a9338fb46f931477fe724",
+      "originalImage": {
+        "file": "assets/topic-03/03-01-hyena-b-v01.png",
+        "bytes": 469178,
+        "sha256": "18c9a129be91941c8af25230257499bbe7e8b4c2f6eefbcff24e9a26f0f9b631"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-b-v01.png",
+        "bytes": 469178,
+        "sha256": "18c9a129be91941c8af25230257499bbe7e8b4c2f6eefbcff24e9a26f0f9b631"
+      },
+      "bytes": 139152,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-02-jay-head-up",
@@ -301,7 +433,7 @@
       "species": "siberian-jay",
       "state": "抬頭",
       "pair": "03-02",
-      "file": "assets/topic-03/03-02-jay-head-up-v01.png",
+      "file": "assets/topic-03/03-02-jay-head-up-v01.display-q90.webp",
       "width": 622,
       "height": 341,
       "source": "topic-03-comparison-v03.png",
@@ -312,7 +444,19 @@
         "height": 341
       },
       "nonzeroAlphaPixels": 107502,
-      "sha256": "c0739b838b1a69607c3887bf2640fa5d48f2420de7acde0e41409dcce3fbb10d"
+      "sha256": "c15b8fc50af60dd62f530969370e1b28bffd5d8fbc948c75d76ccc942151782f",
+      "originalImage": {
+        "file": "assets/topic-03/03-02-jay-head-up-v01.png",
+        "bytes": 311091,
+        "sha256": "c0739b838b1a69607c3887bf2640fa5d48f2420de7acde0e41409dcce3fbb10d"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-head-up-v01.png",
+        "bytes": 311091,
+        "sha256": "c0739b838b1a69607c3887bf2640fa5d48f2420de7acde0e41409dcce3fbb10d"
+      },
+      "bytes": 101302,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-02-jay-feeding",
@@ -322,7 +466,7 @@
       "species": "siberian-jay",
       "state": "取食姿態",
       "pair": "03-02",
-      "file": "assets/topic-03/03-02-jay-feeding-v01.png",
+      "file": "assets/topic-03/03-02-jay-feeding-v01.display-q90.webp",
       "width": 598,
       "height": 301,
       "source": "topic-03-comparison-v03.png",
@@ -333,7 +477,19 @@
         "height": 301
       },
       "nonzeroAlphaPixels": 97215,
-      "sha256": "e913730f403c3e16e61aa58e6cabdc079017d9b65839447720b3a07f5cc26db2"
+      "sha256": "9d1aec78c34ffc571e14d1910c79534976221d8672b33a0d8e759642b771bb17",
+      "originalImage": {
+        "file": "assets/topic-03/03-02-jay-feeding-v01.png",
+        "bytes": 281177,
+        "sha256": "e913730f403c3e16e61aa58e6cabdc079017d9b65839447720b3a07f5cc26db2"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-feeding-v01.png",
+        "bytes": 281177,
+        "sha256": "e913730f403c3e16e61aa58e6cabdc079017d9b65839447720b3a07f5cc26db2"
+      },
+      "bytes": 92888,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-03-owl-front",
@@ -343,7 +499,7 @@
       "species": "little-owl",
       "state": "正面",
       "pair": "03-03",
-      "file": "assets/topic-03/03-03-owl-front-v01.png",
+      "file": "assets/topic-03/03-03-owl-front-v01.display-q90.webp",
       "width": 625,
       "height": 326,
       "source": "topic-03-comparison-v03.png",
@@ -354,7 +510,19 @@
         "height": 326
       },
       "nonzeroAlphaPixels": 120117,
-      "sha256": "16ca52c966984b1e1fc0a7a85eb3ea34b034e21070421cec8299be8316aa5544"
+      "sha256": "bd827a2819922b80fa3c49470e0d9a9d96a78d661e502d64fa81bda4a5de9067",
+      "originalImage": {
+        "file": "assets/topic-03/03-03-owl-front-v01.png",
+        "bytes": 342769,
+        "sha256": "16ca52c966984b1e1fc0a7a85eb3ea34b034e21070421cec8299be8316aa5544"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-front-v01.png",
+        "bytes": 342769,
+        "sha256": "16ca52c966984b1e1fc0a7a85eb3ea34b034e21070421cec8299be8316aa5544"
+      },
+      "bytes": 110580,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-03-owl-calling",
@@ -364,7 +532,7 @@
       "species": "little-owl",
       "state": "發聲姿態",
       "pair": "03-03",
-      "file": "assets/topic-03/03-03-owl-calling-v01.png",
+      "file": "assets/topic-03/03-03-owl-calling-v01.display-q90.webp",
       "width": 616,
       "height": 321,
       "source": "topic-03-comparison-v03.png",
@@ -375,7 +543,19 @@
         "height": 321
       },
       "nonzeroAlphaPixels": 99869,
-      "sha256": "c6c05f2a1b0fdc3b89e00713d3625b54bebfb5564a2b3553ae9497fc011364e4"
+      "sha256": "3646fe8f948b4fa6ea4fd2c5668aa180bd4ef155452203addaa8eea1cbc0f932",
+      "originalImage": {
+        "file": "assets/topic-03/03-03-owl-calling-v01.png",
+        "bytes": 288507,
+        "sha256": "c6c05f2a1b0fdc3b89e00713d3625b54bebfb5564a2b3553ae9497fc011364e4"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-calling-v01.png",
+        "bytes": 288507,
+        "sha256": "c6c05f2a1b0fdc3b89e00713d3625b54bebfb5564a2b3553ae9497fc011364e4"
+      },
+      "bytes": 94658,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-04-agama-shade",
@@ -385,7 +565,7 @@
       "species": "rock-agama",
       "state": "陰影情境",
       "pair": "03-04",
-      "file": "assets/topic-03/03-04-agama-shade-v01.png",
+      "file": "assets/topic-03/03-04-agama-shade-v01.display-q90.webp",
       "width": 645,
       "height": 278,
       "source": "topic-03-comparison-v03.png",
@@ -396,7 +576,19 @@
         "height": 278
       },
       "nonzeroAlphaPixels": 121377,
-      "sha256": "b163e018ffed19ae283c965acd58af6eb2b09cd6b36b9edbd657378e9c4cba82"
+      "sha256": "b9323765a027bddc2b94ec22c7d759ddac84922f45951d2cbfc88a57cac46a95",
+      "originalImage": {
+        "file": "assets/topic-03/03-04-agama-shade-v01.png",
+        "bytes": 333878,
+        "sha256": "b163e018ffed19ae283c965acd58af6eb2b09cd6b36b9edbd657378e9c4cba82"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-shade-v01.png",
+        "bytes": 333878,
+        "sha256": "b163e018ffed19ae283c965acd58af6eb2b09cd6b36b9edbd657378e9c4cba82"
+      },
+      "bytes": 94584,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "03-04-agama-sun",
@@ -406,7 +598,7 @@
       "species": "rock-agama",
       "state": "日照情境",
       "pair": "03-04",
-      "file": "assets/topic-03/03-04-agama-sun-v01.png",
+      "file": "assets/topic-03/03-04-agama-sun-v01.display-q90.webp",
       "width": 600,
       "height": 271,
       "source": "topic-03-comparison-v03.png",
@@ -417,7 +609,19 @@
         "height": 271
       },
       "nonzeroAlphaPixels": 104750,
-      "sha256": "2201c6796e258f1d1eeae804cd4781fe1d0054dbab241e708fce25c54ce9245c"
+      "sha256": "86c63a307e71b5c73896f141e332e7bd10ce2c5b50b6bde0c197574b5fd5ebc4",
+      "originalImage": {
+        "file": "assets/topic-03/03-04-agama-sun-v01.png",
+        "bytes": 294217,
+        "sha256": "2201c6796e258f1d1eeae804cd4781fe1d0054dbab241e708fce25c54ce9245c"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-sun-v01.png",
+        "bytes": 294217,
+        "sha256": "2201c6796e258f1d1eeae804cd4781fe1d0054dbab241e708fce25c54ce9245c"
+      },
+      "bytes": 88918,
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "04-01-herbarium-leaves",
@@ -469,7 +673,7 @@
     },
     {
       "id": "05-01-forest-canopy",
-      "file": "assets/topic-05/05-01-relief-light-v02.webp",
+      "file": "assets/topic-05/05-01-relief-light-v02.display-q90.webp",
       "width": 2400,
       "height": 1600,
       "generator": "Three.js photo-referenced illustration",
@@ -487,8 +691,8 @@
       ],
       "nonzeroAlphaPixels": 1091171,
       "transparentPixels": 2787621,
-      "sha256": "e4eb342179621709df2d457c1bcba0ec4f5e9370c6a6fe9ea28b83caa9f80b38",
-      "bytes": 572788,
+      "sha256": "9b91d2559daf61f1d79f61538380e48de2414e3de360fcf5691c541eb3e5dc34",
+      "bytes": 350450,
       "title": "森林的高低",
       "topic": "05",
       "caseId": "05-01",
@@ -496,7 +700,7 @@
       "state": "照片參照3D示意",
       "pair": null,
       "darkImage": {
-        "file": "assets/topic-05/05-01-relief-dark-v02.webp",
+        "file": "assets/topic-05/05-01-relief-dark-v02.display-q90.webp",
         "width": 2400,
         "height": 1600,
         "nativeAlpha": true,
@@ -511,12 +715,23 @@
           0,
           255
         ],
-        "bytes": 583746,
-        "sha256": "8ddaba66d06117465ed20a60f26d313622738728e1c5d77a5768e177fefa27fd",
+        "bytes": 357962,
+        "sha256": "dc8add045efd672d926ebafdef5769e555d9df3abfe11d509c533ec4e3026138",
         "localOnly": false,
         "sourceSha256": "5f1b6538b3a81326d54182022c89eb08a8bccb1515d9fe7abd1b59fb2acf1da7",
         "credit": "Rhett A. Butler / Mongabay",
-        "rightsUrl": "https://worldrainforests.com/01-what-are-tropical-rainforests.html"
+        "rightsUrl": "https://worldrainforests.com/01-what-are-tropical-rainforests.html",
+        "originalImage": {
+          "file": "assets/topic-05/05-01-relief-dark-v02.webp",
+          "bytes": 583746,
+          "sha256": "8ddaba66d06117465ed20a60f26d313622738728e1c5d77a5768e177fefa27fd"
+        },
+        "displaySource": {
+          "path": "home-atlas/assets/topic-05/05-01-relief-dark-v02.webp",
+          "bytes": 583746,
+          "sha256": "8ddaba66d06117465ed20a60f26d313622738728e1c5d77a5768e177fefa27fd"
+        },
+        "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
       },
       "master": "work/ecology-ai-rollout/topic-05-photo-relief-v02/assets/05-01-relief-light.webp",
       "photoDerived": true,
@@ -536,11 +751,22 @@
         "statement": "我已取得該圖與衍生圖的公開使用授權，全部部署",
         "independent_license_document_reviewed": false,
         "open_license_claimed": false
-      }
+      },
+      "originalImage": {
+        "file": "assets/topic-05/05-01-relief-light-v02.webp",
+        "bytes": 572788,
+        "sha256": "e4eb342179621709df2d457c1bcba0ec4f5e9370c6a6fe9ea28b83caa9f80b38"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-05/05-01-relief-light-v02.webp",
+        "bytes": 572788,
+        "sha256": "e4eb342179621709df2d457c1bcba0ec4f5e9370c6a6fe9ea28b83caa9f80b38"
+      },
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "05-02-coral-reef",
-      "file": "assets/topic-05/05-02-relief-light-v02.webp",
+      "file": "assets/topic-05/05-02-relief-light-v02.display-q90.webp",
       "width": 2400,
       "height": 1600,
       "generator": "Three.js photo-referenced illustration",
@@ -558,8 +784,8 @@
       ],
       "nonzeroAlphaPixels": 1053251,
       "transparentPixels": 3052562,
-      "sha256": "bd00b7f96d5fcf95b4c82563eeb947645e58587228e6f02341bc35ce3d2b34cf",
-      "bytes": 318886,
+      "sha256": "6d1c57e2d3a97e5c1a6dc06236ddbccf52d1eeaa6c43822304369523dd560db4",
+      "bytes": 189360,
       "title": "珊瑚礁組成",
       "topic": "05",
       "caseId": "05-02",
@@ -567,7 +793,7 @@
       "state": "照片參照3D示意",
       "pair": null,
       "darkImage": {
-        "file": "assets/topic-05/05-02-relief-dark-v02.webp",
+        "file": "assets/topic-05/05-02-relief-dark-v02.display-q90.webp",
         "width": 2400,
         "height": 1600,
         "nativeAlpha": true,
@@ -582,12 +808,23 @@
           0,
           255
         ],
-        "bytes": 323066,
-        "sha256": "9e1d9de9dd38f789b8b1f21ab3630a001a60eb38fe48a8ddea7a6018e911ab97",
+        "bytes": 192536,
+        "sha256": "5ab08c183807dc128c3d38173eb899d6b62714ee0e124a77590546c2bc7f14d5",
         "localOnly": false,
         "sourceSha256": "18d141914f833b490b0822663c873061acb4aa7070f2e2f5a5756040faf4b095",
         "credit": "Toby Hudson / Wikimedia Commons / CC BY-SA 3.0",
-        "rightsUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+        "rightsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "originalImage": {
+          "file": "assets/topic-05/05-02-relief-dark-v02.webp",
+          "bytes": 323066,
+          "sha256": "9e1d9de9dd38f789b8b1f21ab3630a001a60eb38fe48a8ddea7a6018e911ab97"
+        },
+        "displaySource": {
+          "path": "home-atlas/assets/topic-05/05-02-relief-dark-v02.webp",
+          "bytes": 323066,
+          "sha256": "9e1d9de9dd38f789b8b1f21ab3630a001a60eb38fe48a8ddea7a6018e911ab97"
+        },
+        "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
       },
       "master": "work/ecology-ai-rollout/topic-05-photo-relief-v02/assets/05-02-relief-light.webp",
       "photoDerived": true,
@@ -599,11 +836,22 @@
       "rightsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "adaptationLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "localOnly": false,
-      "acceptedByUser": true
+      "acceptedByUser": true,
+      "originalImage": {
+        "file": "assets/topic-05/05-02-relief-light-v02.webp",
+        "bytes": 318886,
+        "sha256": "bd00b7f96d5fcf95b4c82563eeb947645e58587228e6f02341bc35ce3d2b34cf"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-05/05-02-relief-light-v02.webp",
+        "bytes": 318886,
+        "sha256": "bd00b7f96d5fcf95b4c82563eeb947645e58587228e6f02341bc35ce3d2b34cf"
+      },
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "05-03-seagrass-meadow",
-      "file": "assets/topic-05/05-03-relief-light-v02.webp",
+      "file": "assets/topic-05/05-03-relief-light-v02.display-q90.webp",
       "width": 2400,
       "height": 1600,
       "generator": "Three.js photo-referenced illustration",
@@ -621,8 +869,8 @@
       ],
       "nonzeroAlphaPixels": 1141154,
       "transparentPixels": 3220488,
-      "sha256": "f39827aeaf57ca2c6ddff3d8f6441cc3c75d9d35395dc13f4b89ad9a908d24dc",
-      "bytes": 272792,
+      "sha256": "3271c35bad1ccde4c8118f4206e25d4e9b863a8a9d5947ad3eb0a0d391519385",
+      "bytes": 162250,
       "title": "海草床變化",
       "topic": "05",
       "caseId": "05-03",
@@ -630,7 +878,7 @@
       "state": "照片參照3D示意",
       "pair": null,
       "darkImage": {
-        "file": "assets/topic-05/05-03-relief-dark-v02.webp",
+        "file": "assets/topic-05/05-03-relief-dark-v02.display-q90.webp",
         "width": 2400,
         "height": 1600,
         "nativeAlpha": true,
@@ -645,12 +893,23 @@
           0,
           255
         ],
-        "bytes": 269858,
-        "sha256": "2255587f05152744fc0a0e37bc33128c8cdceefefa864565c23549ca7b23a328",
+        "bytes": 160308,
+        "sha256": "5372bd395675211f1f7e5fce5ffc991441fcd2063f9ab472c9613a6de8fec7d9",
         "localOnly": false,
         "sourceSha256": "eecf338a0575fb6e1b226d4340d766547fece466da1bd2af0be4b774db3cd08f",
         "credit": "Erling Svensen / Ocean Photo / Artsdatabanken / CC BY 4.0",
-        "rightsUrl": "https://creativecommons.org/licenses/by/4.0/"
+        "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalImage": {
+          "file": "assets/topic-05/05-03-relief-dark-v02.webp",
+          "bytes": 269858,
+          "sha256": "2255587f05152744fc0a0e37bc33128c8cdceefefa864565c23549ca7b23a328"
+        },
+        "displaySource": {
+          "path": "home-atlas/assets/topic-05/05-03-relief-dark-v02.webp",
+          "bytes": 269858,
+          "sha256": "2255587f05152744fc0a0e37bc33128c8cdceefefa864565c23549ca7b23a328"
+        },
+        "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
       },
       "master": "work/ecology-ai-rollout/topic-05-photo-relief-v02/assets/05-03-relief-light.webp",
       "photoDerived": true,
@@ -662,11 +921,22 @@
       "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
       "adaptationLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "localOnly": false,
-      "acceptedByUser": true
+      "acceptedByUser": true,
+      "originalImage": {
+        "file": "assets/topic-05/05-03-relief-light-v02.webp",
+        "bytes": 272792,
+        "sha256": "f39827aeaf57ca2c6ddff3d8f6441cc3c75d9d35395dc13f4b89ad9a908d24dc"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-05/05-03-relief-light-v02.webp",
+        "bytes": 272792,
+        "sha256": "f39827aeaf57ca2c6ddff3d8f6441cc3c75d9d35395dc13f4b89ad9a908d24dc"
+      },
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "05-04-landscape-mosaic",
-      "file": "assets/topic-05/05-04-relief-light-v02.webp",
+      "file": "assets/topic-05/05-04-relief-light-v02.display-q90.webp",
       "width": 2400,
       "height": 1600,
       "generator": "Three.js photo-referenced illustration",
@@ -684,8 +954,8 @@
       ],
       "nonzeroAlphaPixels": 1151919,
       "transparentPixels": 2857361,
-      "sha256": "550bbb3820b87fe7d01616167e11f33c1a431f2a660b3ff7343986fc18c9a375",
-      "bytes": 407294,
+      "sha256": "e380ed45ecb259140e2ade37731a549322035f7b0c12dca3baa85f155a885667",
+      "bytes": 228944,
       "title": "地表的分類",
       "topic": "05",
       "caseId": "05-04",
@@ -693,7 +963,7 @@
       "state": "照片參照3D示意",
       "pair": null,
       "darkImage": {
-        "file": "assets/topic-05/05-04-relief-dark-v02.webp",
+        "file": "assets/topic-05/05-04-relief-dark-v02.display-q90.webp",
         "width": 2400,
         "height": 1600,
         "nativeAlpha": true,
@@ -708,12 +978,23 @@
           0,
           255
         ],
-        "bytes": 415980,
-        "sha256": "3a224a11b9498e25e6cf749d9913fa6cd2fa0a9a1ec17dd6d48250101d8dcae2",
+        "bytes": 234748,
+        "sha256": "bda6a3e05bdc7d91f6e05fe935a89394f60eea273131ac8a272b85b2f590b672",
         "localOnly": false,
         "sourceSha256": "917d87167b43fada549cadaaa50fc1ae59ebcf46bd07e9aa6d34c2abcca95415",
         "credit": "Photo: Jules Verne Times Two / julesvernex2.com / CC-BY-SA-4.0",
-        "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "originalImage": {
+          "file": "assets/topic-05/05-04-relief-dark-v02.webp",
+          "bytes": 415980,
+          "sha256": "3a224a11b9498e25e6cf749d9913fa6cd2fa0a9a1ec17dd6d48250101d8dcae2"
+        },
+        "displaySource": {
+          "path": "home-atlas/assets/topic-05/05-04-relief-dark-v02.webp",
+          "bytes": 415980,
+          "sha256": "3a224a11b9498e25e6cf749d9913fa6cd2fa0a9a1ec17dd6d48250101d8dcae2"
+        },
+        "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
       },
       "master": "work/ecology-ai-rollout/topic-05-photo-relief-v02/assets/05-04-relief-light.webp",
       "photoDerived": true,
@@ -725,11 +1006,22 @@
       "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "adaptationLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "localOnly": false,
-      "acceptedByUser": true
+      "acceptedByUser": true,
+      "originalImage": {
+        "file": "assets/topic-05/05-04-relief-light-v02.webp",
+        "bytes": 407294,
+        "sha256": "550bbb3820b87fe7d01616167e11f33c1a431f2a660b3ff7343986fc18c9a375"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-05/05-04-relief-light-v02.webp",
+        "bytes": 407294,
+        "sha256": "550bbb3820b87fe7d01616167e11f33c1a431f2a660b3ff7343986fc18c9a375"
+      },
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     },
     {
       "id": "05-05-forty-typology",
-      "file": "assets/topic-05/05-05-forty-center-v01.png",
+      "file": "assets/topic-05/05-05-forty-center-v01.display-q90.webp",
       "width": 1536,
       "height": 1024,
       "master": "outputs/ecology-ai-rollout-assets/topic-05/cover-v02/05-05-forty-center-v01.png",
@@ -748,8 +1040,8 @@
         254
       ],
       "transparentPixels": 968838,
-      "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283",
-      "bytes": 1834170,
+      "sha256": "1ae50c7c99b346d291a61701c6a30a45e250b885f391635f845706e143cf7d5e",
+      "bytes": 197212,
       "title": "森林類型",
       "topic": "05",
       "caseId": "05-05",
@@ -759,7 +1051,18 @@
       "source": "cases/05-05/assets/forty-official-hero.webp",
       "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
       "sourceSha256": "c6ae17b6841bb7ae3567e6e04ac6d8dccd1953ba343eeccb5926aeac0e87eb4b",
-      "provenance": "assets/topic-05/05-05-forty-center-provenance.json"
+      "provenance": "assets/topic-05/05-05-forty-center-provenance.json",
+      "originalImage": {
+        "file": "assets/topic-05/05-05-forty-center-v01.png",
+        "bytes": 1834170,
+        "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283"
+      },
+      "displaySource": {
+        "path": "home-atlas/assets/topic-05/05-05-forty-center-v01.png",
+        "bytes": 1834170,
+        "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283"
+      },
+      "encoding": "User-authorized high-quality WebP q90; same dimensions and lossless alpha; originals retained"
     }
   ],
   "sourcePackage": "atlas-assets-v01",

@@ -54,3 +54,11 @@ body[data-map-mode="motion"] #topic-12 .cover-credit{font-size:11px}
  #topic-12 .map-hornet{left:47%;width:54%;top:36%}
  #topic-12 .map-final-caption p{font-size:18px}
 }
+/* Playback stays separate from the image link and leaves the approved scene intact. */
+#topic-12 .map-playback{position:absolute;z-index:5;right:0;top:0;display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:44px;padding:8px 12px;border:1px solid currentColor;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;line-height:1.35;white-space:nowrap;touch-action:manipulation}
+#topic-12 .map-playback:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+#topic-12 .map-playback:active{background:var(--ink);color:var(--paper)}
+@media(hover:hover) and (pointer:fine){#topic-12 .map-playback:hover{background:var(--ink);color:var(--paper)}}
+@media(max-width:900px) and (min-height:561px){body[data-map-mode="motion"] #topic-12 .extension-art{z-index:5}#topic-12 .map-playback{top:-44px}}
+@media(prefers-reduced-motion:reduce){#topic-12 .map-playback{display:none}}
+@media print{#topic-12 .map-playback{display:none}}

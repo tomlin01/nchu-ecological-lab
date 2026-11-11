@@ -153,5 +153,767 @@
       "sha256": "ed8169ee94bcc8fe70455cfe99b40090600f034c8bcb75c765e733291531ddd7"
     }
   ],
-  "updated_at": "2026-11-11"
+  "updated_at": "2026-11-11",
+  "display_derivatives": [
+    {
+      "source": {
+        "path": "home-atlas/assets/environments/01-01-grassland-wide-v01.png",
+        "bytes": 3652910,
+        "sha256": "a032986168c6e4bfddaaf3c549e1b879bc2105a6f3507933ff14c774e8ec77f2"
+      },
+      "display": {
+        "path": "home-atlas/assets/environments/01-01-grassland-wide-v01.display-q90.webp",
+        "bytes": 606602,
+        "sha256": "5a98a3121382201e04dbecd075624ba6d0df9673ec1f35df3bf7563726a2ce3a"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 38.027882075751734
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/environments/01-03-fjord-wide-v01.png",
+        "bytes": 3304862,
+        "sha256": "dbf8e005fcb558a855f3b32784b411a166bb939db9f1e837a80cc34c505a08db"
+      },
+      "display": {
+        "path": "home-atlas/assets/environments/01-03-fjord-wide-v01.display-q90.webp",
+        "bytes": 544290,
+        "sha256": "a0614ef3994c82d368cc560c89215add67ab0060840a675e5a642f951f85921a"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.055859194146635
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/environments/01-04-night-woodland-wide-v01.png",
+        "bytes": 3254518,
+        "sha256": "e8165e8b4b676bd5ad65b4601552e0d5a74645cabfa30ee02200fc5d6e2f2264"
+      },
+      "display": {
+        "path": "home-atlas/assets/environments/01-04-night-woodland-wide-v01.display-q90.webp",
+        "bytes": 501232,
+        "sha256": "53bf7f8732640ec07b1457acba5ef65d7b41b4002309a42f902590c45acd6a9a"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.05090200087076
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-01/01-01-zebras-grassland-v01.lossless.webp",
+        "bytes": 563138,
+        "sha256": "4b3dd1c42907d9563d6ae8535cc4f9d6f6c5a7764d260e16a27c429ce825290d"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-01/01-01-zebras-grassland-v01.display-q90.webp",
+        "bytes": 210286,
+        "sha256": "de62491ec1773cacf475837fc4d87948a35b2d7d23a63fbdd81731d5e6476eda"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 31.100293056773328
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-01/01-03-phytoplankton-fjord-v01.lossless.webp",
+        "bytes": 478902,
+        "sha256": "9294b1d01219a4203f9566166756e44c1dbf2fb98ac42540758c7919f1b03875"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-01/01-03-phytoplankton-fjord-v01.display-q90.webp",
+        "bytes": 173692,
+        "sha256": "5a9638c4e909f01e106b11dd2d0fbede0fb9dccbb17c8c10ee7a1f81ef7c7e1c"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 32.720504277043474
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-01/01-04-moths-night-v01.lossless.webp",
+        "bytes": 428438,
+        "sha256": "b1dd1e4f2f14a96ed692d3486ea0b7377f0911245631acf09cc2d7133d14c7e0"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-01/01-04-moths-night-v01.display-q90.webp",
+        "bytes": 146358,
+        "sha256": "7919db6db24e1c0c1341cc0bf62ddc1da75be4ff740c88614f5b631d6976a0df"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 31.762293341063923
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-01-black-bear-v01.png",
+        "bytes": 552887,
+        "sha256": "4b62320199b540eaa9c436e1a533c696f206a0d55b07a3ca765562c0d371f54c"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-01-black-bear-v01.display-q90.webp",
+        "bytes": 144338,
+        "sha256": "4895de210223e68b6a1d83ae30b3fac47ad61c462483801d0eb69b89169c1238"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 28.91580386353384
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-01-elephant-v01.png",
+        "bytes": 628748,
+        "sha256": "31961c0287404cf629a232d45cc936283b1295a555bc3327f0b6d7926f13957f"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-01-elephant-v01.display-q90.webp",
+        "bytes": 164694,
+        "sha256": "825eaad4de0d9008d0150d6cfc479820036dee28ecb72de899e5bcf5b74da4f9"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 30.400936593723983
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-01-ocelot-v01.png",
+        "bytes": 623170,
+        "sha256": "03251f70f02812fd1c193cbd7ba94c3b6d423a924dbcc719772ba99f918fc941"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-01-ocelot-v01.display-q90.webp",
+        "bytes": 158120,
+        "sha256": "57c6d60eef646624e80133738babf0d5c1ae3c227a34c9086a40b9cd86ed61cc"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 29.47369474784399
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-02-forest-birds-v01.png",
+        "bytes": 622031,
+        "sha256": "4c82873e79046a5d93871d97ada9c5fe67a8d3a83437725ee8f2c8924b8dcd9e"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-02-forest-birds-v01.display-q90.webp",
+        "bytes": 161406,
+        "sha256": "65e4e4759db676f9d2e3bd68c439efd9a581caaed231d92512e57b2c8e358243"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 30.110045824901363
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-03-brydes-whale-v01.png",
+        "bytes": 505893,
+        "sha256": "4e21e199d459ce06359d2864d9308ca704da3e54b0e2024648beab354fa77605"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-03-brydes-whale-v01.display-q90.webp",
+        "bytes": 123550,
+        "sha256": "83e102da042c420d0f40a123b86fc1e62a5fe5a0144030d6f0874923832131c3"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 31.269825562800225
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-02/02-04-phytoplankton-v01.png",
+        "bytes": 444355,
+        "sha256": "2c62e0601ac383de08c7927a18fe7b4beefa3af1cafa9144b725d26cd8827954"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-02/02-04-phytoplankton-v01.display-q90.webp",
+        "bytes": 113548,
+        "sha256": "f17e9217095283bcfc2c44af5877043cb68d7064d326afe43422266a7d126df5"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 29.075191652062685
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-a-v01.png",
+        "bytes": 523869,
+        "sha256": "6830006596bac88b876d4b26403721e47bcc95d0ca2a3d95d99cd56ed5f6673c"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-a-v01.display-q90.webp",
+        "bytes": 149626,
+        "sha256": "b176f34a1ada07731b9da88c0761690571f604796cad07355dc5e38b37a5366a"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 27.311482685735413
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-b-v01.png",
+        "bytes": 469178,
+        "sha256": "18c9a129be91941c8af25230257499bbe7e8b4c2f6eefbcff24e9a26f0f9b631"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-01-hyena-b-v01.display-q90.webp",
+        "bytes": 139152,
+        "sha256": "d2673d2a4b337ad6bbf1a071a35b96a7aefd420b380a9338fb46f931477fe724"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 26.96169133592589
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-feeding-v01.png",
+        "bytes": 281177,
+        "sha256": "e913730f403c3e16e61aa58e6cabdc079017d9b65839447720b3a07f5cc26db2"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-feeding-v01.display-q90.webp",
+        "bytes": 92888,
+        "sha256": "9d1aec78c34ffc571e14d1910c79534976221d8672b33a0d8e759642b771bb17"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 26.005724396890546
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-head-up-v01.png",
+        "bytes": 311091,
+        "sha256": "c0739b838b1a69607c3887bf2640fa5d48f2420de7acde0e41409dcce3fbb10d"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-02-jay-head-up-v01.display-q90.webp",
+        "bytes": 101302,
+        "sha256": "c15b8fc50af60dd62f530969370e1b28bffd5d8fbc948c75d76ccc942151782f"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 26.602356102143887
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-calling-v01.png",
+        "bytes": 288507,
+        "sha256": "c6c05f2a1b0fdc3b89e00713d3625b54bebfb5564a2b3553ae9497fc011364e4"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-calling-v01.display-q90.webp",
+        "bytes": 94658,
+        "sha256": "3646fe8f948b4fa6ea4fd2c5668aa180bd4ef155452203addaa8eea1cbc0f932"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 26.66451112613243
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-front-v01.png",
+        "bytes": 342769,
+        "sha256": "16ca52c966984b1e1fc0a7a85eb3ea34b034e21070421cec8299be8316aa5544"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-03-owl-front-v01.display-q90.webp",
+        "bytes": 110580,
+        "sha256": "bd827a2819922b80fa3c49470e0d9a9d96a78d661e502d64fa81bda4a5de9067"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 26.742972471502465
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-shade-v01.png",
+        "bytes": 333878,
+        "sha256": "b163e018ffed19ae283c965acd58af6eb2b09cd6b36b9edbd657378e9c4cba82"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-shade-v01.display-q90.webp",
+        "bytes": 94584,
+        "sha256": "b9323765a027bddc2b94ec22c7d759ddac84922f45951d2cbfc88a57cac46a95"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 28.168007500574642
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-sun-v01.png",
+        "bytes": 294217,
+        "sha256": "2201c6796e258f1d1eeae804cd4781fe1d0054dbab241e708fce25c54ce9245c"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-03/03-04-agama-sun-v01.display-q90.webp",
+        "bytes": 88918,
+        "sha256": "86c63a307e71b5c73896f141e332e7bd10ce2c5b50b6bde0c197574b5fd5ebc4"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 28.09343447543697
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-01-relief-dark-v02.webp",
+        "bytes": 583746,
+        "sha256": "8ddaba66d06117465ed20a60f26d313622738728e1c5d77a5768e177fefa27fd"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-01-relief-dark-v02.display-q90.webp",
+        "bytes": 357962,
+        "sha256": "dc8add045efd672d926ebafdef5769e555d9df3abfe11d509c533ec4e3026138"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.31946973423194
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-01-relief-light-v02.webp",
+        "bytes": 572788,
+        "sha256": "e4eb342179621709df2d457c1bcba0ec4f5e9370c6a6fe9ea28b83caa9f80b38"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-01-relief-light-v02.display-q90.webp",
+        "bytes": 350450,
+        "sha256": "9b91d2559daf61f1d79f61538380e48de2414e3de360fcf5691c541eb3e5dc34"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.39911476583419
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-02-relief-dark-v02.webp",
+        "bytes": 323066,
+        "sha256": "9e1d9de9dd38f789b8b1f21ab3630a001a60eb38fe48a8ddea7a6018e911ab97"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-02-relief-dark-v02.display-q90.webp",
+        "bytes": 192536,
+        "sha256": "5ab08c183807dc128c3d38173eb899d6b62714ee0e124a77590546c2bc7f14d5"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 40.51381747784294
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-02-relief-light-v02.webp",
+        "bytes": 318886,
+        "sha256": "bd00b7f96d5fcf95b4c82563eeb947645e58587228e6f02341bc35ce3d2b34cf"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-02-relief-light-v02.display-q90.webp",
+        "bytes": 189360,
+        "sha256": "6d1c57e2d3a97e5c1a6dc06236ddbccf52d1eeaa6c43822304369523dd560db4"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 40.601702721840994
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-03-relief-dark-v02.webp",
+        "bytes": 269858,
+        "sha256": "2255587f05152744fc0a0e37bc33128c8cdceefefa864565c23549ca7b23a328"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-03-relief-dark-v02.display-q90.webp",
+        "bytes": 160308,
+        "sha256": "5372bd395675211f1f7e5fce5ffc991441fcd2063f9ab472c9613a6de8fec7d9"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 40.24162896782638
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-03-relief-light-v02.webp",
+        "bytes": 272792,
+        "sha256": "f39827aeaf57ca2c6ddff3d8f6441cc3c75d9d35395dc13f4b89ad9a908d24dc"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-03-relief-light-v02.display-q90.webp",
+        "bytes": 162250,
+        "sha256": "3271c35bad1ccde4c8118f4206e25d4e9b863a8a9d5947ad3eb0a0d391519385"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 40.25178021404646
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-04-relief-dark-v02.webp",
+        "bytes": 415980,
+        "sha256": "3a224a11b9498e25e6cf749d9913fa6cd2fa0a9a1ec17dd6d48250101d8dcae2"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-04-relief-dark-v02.display-q90.webp",
+        "bytes": 234748,
+        "sha256": "bda6a3e05bdc7d91f6e05fe935a89394f60eea273131ac8a272b85b2f590b672"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.98921819415225
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-04-relief-light-v02.webp",
+        "bytes": 407294,
+        "sha256": "550bbb3820b87fe7d01616167e11f33c1a431f2a660b3ff7343986fc18c9a375"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-04-relief-light-v02.display-q90.webp",
+        "bytes": 228944,
+        "sha256": "e380ed45ecb259140e2ade37731a549322035f7b0c12dca3baa85f155a885667"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 40.057769373137205
+    },
+    {
+      "source": {
+        "path": "home-atlas/assets/topic-05/05-05-forty-center-v01.png",
+        "bytes": 1834170,
+        "sha256": "22f495c04e605e2d4d232c4466e7e79bf46348fce521e6a460fee41b0e963283"
+      },
+      "display": {
+        "path": "home-atlas/assets/topic-05/05-05-forty-center-v01.display-q90.webp",
+        "bytes": 197212,
+        "sha256": "1ae50c7c99b346d291a61701c6a30a45e250b885f391635f845706e143cf7d5e"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 39.15500513761135
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-dark-v07.webp",
+        "bytes": 232014,
+        "sha256": "73575230eb6a9ec992b4eab601875597be7e1121fa2cf00c91ded4b18e27d440"
+      },
+      "display": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-dark-v07.display-q90.webp",
+        "bytes": 145934,
+        "sha256": "80770255dcfcf5edfd91287729ee4613d03f3fc2d122aa09f0e816f5ba5f9791"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 47.64536227935055
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-light-v07.webp",
+        "bytes": 237724,
+        "sha256": "70f36660d31a1e487c15d34c1eb274703cb77b33bb7afead24e555387c432927"
+      },
+      "display": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-light-v07.display-q90.webp",
+        "bytes": 149814,
+        "sha256": "18879b085d4bd69026db9c9fa0edcc2f0dc249c457f1a09bb98ea6000f939d7e"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 47.552042431573454
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-mobile-dark-v07.webp",
+        "bytes": 167048,
+        "sha256": "cb99e02b46cc3f9e542aef2878d71c8bc250fe0a409578e404fb78cb535cc299"
+      },
+      "display": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-mobile-dark-v07.display-q90.webp",
+        "bytes": 103146,
+        "sha256": "d4b6eb11dba33c466defc3388146a68667e3944cf4d9a87c0a9aae411da3d7c7"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 46.27063327957174
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-mobile-light-v07.webp",
+        "bytes": 170202,
+        "sha256": "e523f556e0ebd431b39f2f2f25017be6766e26f8743103d084b5fdd153bcbacc"
+      },
+      "display": {
+        "path": "home-atlas/covers/06-v07/assets/06-cg-api-mobile-light-v07.display-q90.webp",
+        "bytes": 105306,
+        "sha256": "e0899767632f38e472688108569719ca62a5649937ade820919ad3934415d0b1"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true,
+      "visible_RGB_PSNR_dB": 46.200503572396094
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/base/plants/cistus-v01.webp",
+        "bytes": 252164,
+        "sha256": "92df14f832087385cac84d233568121776ce1afa3ccd3b6f430571a14c54b011"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/base/plants/cistus-v01.display-640-q90.webp",
+        "bytes": 90332,
+        "sha256": "6e0d83e13237b3f512f1335e3ed8575df87603a36c0ef5a8d3e32c23495174b1"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        1000,
+        800
+      ],
+      "display_size": [
+        640,
+        512
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/base/plants/rosemary-v01.webp",
+        "bytes": 358134,
+        "sha256": "0808d7ae906513fdac661bdd6cf08a1878563ae8b7364b4fae6f85af355d17dc"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/base/plants/rosemary-v01.display-640-q90.webp",
+        "bytes": 143876,
+        "sha256": "d127ea1c496d825bc43bac3cb3a824cb862e1a126600783147c594594d1fbdc3"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        972,
+        1000
+      ],
+      "display_size": [
+        623,
+        640
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/base/sea-rocket/sea-rocket-v01.webp",
+        "bytes": 157260,
+        "sha256": "6be37f218f392bb7324528ac1362c18c0c8d684b74263ba11cee5e06af1ae95c"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/base/sea-rocket/sea-rocket-v01.display-640-q90.webp",
+        "bytes": 69084,
+        "sha256": "1c9eb168ed4145692570f298773ad9a63087e6dee9d648f278f0000eb329b764"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        914,
+        1000
+      ],
+      "display_size": [
+        585,
+        640
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/base/visitors/hoverfly-v01.webp",
+        "bytes": 168272,
+        "sha256": "a5c07af06e9e18d8780e5c537561d0859ca39adae090db7c0de3673406084c75"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/base/visitors/hoverfly-v01.display-640-q90.webp",
+        "bytes": 72284,
+        "sha256": "373be984a58744ef44afc2b0efb09c2975f4d6b56e5279bb39efcec0d33ff6e4"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        960,
+        640
+      ],
+      "display_size": [
+        640,
+        427
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/base/visitors/sweat-bee-v01.webp",
+        "bytes": 172958,
+        "sha256": "a4e4df87d8b1726e5078e8ba4f27a5fc5a91b3505c4be82acd34512b51f47bda"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/base/visitors/sweat-bee-v01.display-640-q90.webp",
+        "bytes": 76446,
+        "sha256": "424597adde1e72d3d591e85ba68098ad40f8feb35117826fc65ba1b21d4a89e7"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        960,
+        640
+      ],
+      "display_size": [
+        640,
+        427
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/plants/helichrysum-v01.webp",
+        "bytes": 339066,
+        "sha256": "db64573b699ebc3c27e2b119203799ead89e3dba739b70d7fc217fa96b40b3c2"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/plants/helichrysum-v01.display-640-q90.webp",
+        "bytes": 134728,
+        "sha256": "ebd81a143a7ad3281cf707d1864f66932e1672b6ac019d373ec70b321e217060"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        1000,
+        914
+      ],
+      "display_size": [
+        640,
+        585
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/plants/teucrium-v01.webp",
+        "bytes": 343896,
+        "sha256": "7bf4f1ba4db215b5fc716823c90ddf7ba5f1a1bf4d571c4cb7db75472f3fa848"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/plants/teucrium-v01.display-640-q90.webp",
+        "bytes": 140362,
+        "sha256": "2abe9fb74c8ec1533114fc946b482b3b77de987088d6229898bbaabb040a93fd"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        1000,
+        914
+      ],
+      "display_size": [
+        640,
+        585
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/visitors/pollen-beetle-v01.webp",
+        "bytes": 158326,
+        "sha256": "635068ba06cdab32ba61d4e252c51b86c5cf63797d4aa880bea03a895f5c0cb8"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/visitors/pollen-beetle-v01.display-640-q90.webp",
+        "bytes": 66550,
+        "sha256": "d20769447fba871f43337aad68fbb57b8cae53f5971cc65be944b56aa0d219e1"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        960,
+        720
+      ],
+      "display_size": [
+        640,
+        480
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/07-v02/assets/visitors/red-admiral-v01.webp",
+        "bytes": 244998,
+        "sha256": "9f9e8f2f76a40e52f63abe39d31e7ff2178bc42c0ee43c926dce5785b0a46c98"
+      },
+      "display": {
+        "path": "home-atlas/covers/07-v02/assets/visitors/red-admiral-v01.display-640-q90.webp",
+        "bytes": 97904,
+        "sha256": "27503128cf4fef58325f881add1d8ce7e3c18a2329d7e432c77836041d7d8e18"
+      },
+      "quality": 90,
+      "dimensions_preserved": false,
+      "original_size": [
+        960,
+        877
+      ],
+      "display_size": [
+        640,
+        585
+      ],
+      "responsive_original_retained": true,
+      "alpha_encoding": "lossless at display resolution"
+    },
+    {
+      "source": {
+        "path": "home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.webp",
+        "bytes": 552050,
+        "sha256": "10944dc7ad718bc0d0bea851f437f05e892a1faf539300e5716f02f3340c86d7"
+      },
+      "display": {
+        "path": "home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.display-q90.webp",
+        "bytes": 458534,
+        "sha256": "72986801c8b68bf39969b2f8f077aa335398229458ac6be352cf041493e89b06"
+      },
+      "quality": 90,
+      "dimensions_preserved": true,
+      "alpha_identical": true
+    }
+  ],
+  "display_derivative_authorization": "User approved cwebp high-quality display files, originals retained, 2026-11-11"
 }

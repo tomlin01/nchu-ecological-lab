@@ -46,3 +46,11 @@ body[data-network-mode="network"] #topic-07 .cover-credit{font-size:11px}
  body[data-network-mode="network"] #topic-07 .topic-title{font-size:29px}
  body[data-network-mode="network"] #topic-07 .extension-art{left:39%;right:8px;top:calc(var(--header-height) + 28px);bottom:108px}
 }
+/* Playback stays separate from the image link and leaves the approved scene intact. */
+#topic-07 .network-playback{position:absolute;z-index:5;left:0;right:auto;top:0;display:inline-flex;align-items:center;justify-content:center;min-width:90px;min-height:44px;padding:8px 12px;border:1px solid currentColor;background:var(--network-paper);color:var(--ink);font:inherit;font-size:13px;line-height:1.35;white-space:nowrap;touch-action:manipulation}
+#topic-07 .network-playback:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+#topic-07 .network-playback:active{background:var(--ink);color:var(--network-paper)}
+@media(hover:hover) and (pointer:fine){#topic-07 .network-playback:hover{background:var(--ink);color:var(--network-paper)}}
+@media(max-width:900px) and (min-height:561px){body[data-network-mode="network"] #topic-07 .extension-art{z-index:5}#topic-07 .network-playback{left:auto;right:0;top:-44px}}
+@media(prefers-reduced-motion:reduce){#topic-07 .network-playback{display:none}}
+@media print{#topic-07 .network-playback{display:none}}

@@ -32,11 +32,11 @@ class HomeImageMarkupTests(unittest.TestCase):
         cls.images = parser.images
         cls.artwork = parser.artwork
 
-    def test_first_screen_has_four_eager_images_under_three_megabytes(self):
+    def test_first_screen_has_four_eager_images_under_1_2_megabytes(self):
         eager = [image for image in self.images if image.get('src') and image.get('loading') != 'lazy']
         self.assertEqual(len(eager), 4)
         self.assertTrue(all(image['topic'] == '01' for image in eager))
-        self.assertLess(sum((ROOT / image['src']).stat().st_size for image in eager), 3_000_000)
+        self.assertLess(sum((ROOT / image['src']).stat().st_size for image in eager), 1_200_000)
 
     def test_hidden_decorative_environments_have_no_initial_src(self):
         deferred = [image for image in self.images if image.get('data-src')]
@@ -61,6 +61,12 @@ class HomeImageMarkupTests(unittest.TestCase):
             self.assertNotIn('aria-pressed', link)
             self.assertNotIn('type', link)
             self.assertIn('閱讀案例', link['aria-label'])
+
+    def test_home_html_defers_the_large_article_data_bundle(self):
+        html = (ROOT / 'index.html').read_text()
+        self.assertLess(len(html.encode()), 200_000)
+        self.assertIn('data-src="home-atlas/covers/12-v02/scene-data.json"', html)
+        self.assertNotIn('id="map-motion-data"', html)
 
 
 if __name__ == '__main__':

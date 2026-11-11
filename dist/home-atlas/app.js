@@ -248,7 +248,7 @@
     const loaded=isEnvironmentLoaded(chosen),duration=animate&&!reduced.matches?.6:0;
     const source=chosen?elements.get(cases.get(chosen).assetIds[0]):null;
     const sourceRect=source?.getBoundingClientRect();
-    const credit=fieldStage.querySelector('.topic-footer p');
+    const credit=fieldStage.querySelector('.topic-footer .topic-credit');
     const creditText=chosen&&loaded?(chosen==='01-03'?'AI 生成環境示意・細胞為放大示意':'AI 生成環境示意・非研究現場'):'AI 生成概念插畫・各場景獨立・微觀形態放大';
     if(credit.textContent!==creditText)credit.textContent=creditText;
     fieldStage.classList.toggle('has-environment',loaded);
@@ -374,7 +374,8 @@
   function prepareTopicImages(id){
     const images=[...(sectionFor(id)?.querySelectorAll('img')||[])].filter(image=>!image.closest('.environment-layer'));
     images.forEach(image=>{image.loading='eager';});
-    return Promise.all(images.map(watchImage));
+    const coverData=id==='12'?window.MapMotionCover?.prepare?.().catch(()=>{}):null;
+    return Promise.all([...images.map(watchImage),coverData]);
   }
   function prepareEnvironment(caseId,animate=false){
     const image=fieldStage.querySelector(`[data-environment="${caseId}"] img`);
@@ -396,24 +397,41 @@
     });
   }
   function watchImage(image){
-    if(imagePromises.has(image))return imagePromises.get(image);
-    const pending=new Promise(resolve=>{
+    const source=image.getAttribute('src'),selectedSource=image.currentSrc||source,previous=imagePromises.get(image);
+    if(previous?.source===source&&previous.selectedSource===selectedSource)return previous.promise;
+    previous?.cancel();
+    failedImages.delete(image);
+    const observed={source,selectedSource,promise:null,cancel:null};
+    imagePromises.set(image,observed);
+    observed.promise=new Promise(resolve=>{
+      const cleanup=()=>{image.removeEventListener('load',loaded);image.removeEventListener('error',errored);};
+      observed.cancel=()=>{cleanup();resolve();};
       const finish=async failed=>{
-        if(failed)failedImages.add(image);
-        else{failedImages.delete(image);try{await image.decode();}catch{if(!image.naturalWidth)failedImages.add(image);}}
-        checkAssetStatus();
-        if(!image.closest('.environment-layer')&&image.closest('.topic')?.dataset.topic===activeTopic)scheduleLayout();
+        cleanup();
+        if(!failed){try{await image.decode();}catch{failed=!image.naturalWidth;}}
+        // Theme and responsive-picture changes can abort the previous decode.
+        if(imagePromises.get(image)===observed&&image.getAttribute('src')===source&&(image.currentSrc||source)===selectedSource){
+          if(failed)failedImages.add(image);else failedImages.delete(image);
+          checkAssetStatus();
+          if(!image.closest('.environment-layer')&&image.closest('.topic')?.dataset.topic===activeTopic)scheduleLayout();
+        }
         resolve();
       };
+      const loaded=()=>finish(false),errored=()=>finish(true);
       if(image.complete){finish(!image.naturalWidth);return;}
-      image.addEventListener('load',()=>finish(false),{once:true});image.addEventListener('error',()=>finish(true),{once:true});
+      image.addEventListener('load',loaded,{once:true});image.addEventListener('error',errored,{once:true});
     });
-    imagePromises.set(image,pending);return pending;
+    return observed.promise;
+  }
+  function watchChangedImage(event){
+    const image=event.target;
+    const observed=imagePromises.get(image),source=image.getAttribute?.('src');
+    if(imageList.includes(image)&&(observed?.source!==source||observed.selectedSource!==(image.currentSrc||source)))watchImage(image);
   }
   async function retryImages(){
     const pending=currentImages().filter(image=>failedImages.has(image));if(!pending.length)return;
     retryCount++;assetsReady=false;
-    for(const image of pending){failedImages.delete(image);imagePromises.delete(image);image.src=`${initialImageSources.get(image)}?retry=${retryCount}`;}
+    for(const image of pending){const source=new URL(image.src,assetBase);source.searchParams.set('retry',retryCount);image.src=source.href;}
     await Promise.all(pending.map(watchImage));checkAssetStatus();scheduleLayout();
   }
   function validate(content,metadata){
@@ -502,6 +520,9 @@
       // Asset loading never re-applies a stale hash or takes over native scrolling.
     }catch(error){initError=error.message||'互動未能啟動。';status(`${initError} 下方仍有全部案例連結。`);}
   }
+  document.addEventListener('load',watchChangedImage,true);
+  document.addEventListener('error',watchChangedImage,true);
+  addEventListener('ecologythemechange',()=>{if(initialized){prepareTopicImages(activeTopic);checkAssetStatus();}});
   addEventListener('scroll',()=>{
     if(document.hidden)return;
     if(scrollFrame)return;

@@ -51,6 +51,11 @@
   :where(html[data-reading-type="03-03"]) :is(.training-material > p, .learning-destination, .evaluation-overview > figcaption) { font-family: var(--reading-sans); font-weight: 600; }
 }
 
+/* These cases use continuous reading on phones. */
+@media screen and (max-width: 740px) {
+  :where(html[data-reading-type="09-03"], html[data-reading-type="10-01"], html[data-reading-type="11-02"], html[data-reading-type="12-01"]) #full-reading { display: none; }
+}
+
 /* Keep long selected cover titles inside the existing narrow landscape panel. */
 @media screen and (max-width: 700px) and (max-height: 560px) and (orientation: landscape) {
   :where(html[data-reading-type="home"]) .field-stage.has-environment .topic-title { font-size: 3.6vw; }

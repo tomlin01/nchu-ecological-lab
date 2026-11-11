@@ -26,12 +26,14 @@ function fixture(){
       if(selector==='.topic')return {dataset:{topic:this.topic}};
       return null;
     }
-    addEventListener(type,callback){(this.listeners[type]??=[]).push(callback);}
+    addEventListener(type,callback,options={}){(this.listeners[type]??=[]).push({callback,once:options.once});}
+    removeEventListener(type,callback){this.listeners[type]=(this.listeners[type]||[]).filter(listener=>listener.callback!==callback);}
     decode(){return Promise.resolve();}
     finish(ok=true){
       this.complete=true;this.naturalWidth=ok?100:0;
-      const type=ok?'load':'error',listeners=this.listeners[type]||[];this.listeners[type]=[];
-      listeners.forEach(callback=>callback());
+      const type=ok?'load':'error',listeners=this.listeners[type]||[];
+      this.listeners[type]=listeners.filter(listener=>!listener.once);
+      listeners.forEach(listener=>listener.callback());
     }
   }
   for(const id of ids)images.push(new Image(id));
@@ -57,7 +59,7 @@ function fixture(){
     setActive(id,chosen=null){activeTopic=id;selectedCases['01']=chosen;},
     ready(){return assetsReady;},failedCount(){return failedImages.size;}};\n})();`);
   vm.runInNewContext(source,context);
-  return {api:context.loadingTest,images,environment,callbacks,idle,requests,retry,status,document};
+  return {api:context.loadingTest,images,environment,callbacks,idle,requests,retry,status,document,context};
 }
 const settle=()=>new Promise(resolve=>setImmediate(resolve));
 
@@ -101,4 +103,66 @@ test('observing an image repeatedly does not attach duplicate download handlers'
   const f=fixture(),image=f.images[0];
   assert.equal(f.api.watchImage(image),f.api.watchImage(image));
   assert.equal(image.listeners.load.length,1);assert.equal(image.listeners.error.length,1);
+});
+test('source reloads after the initial image keep reporting the current status',async()=>{
+  const f=fixture(),image=f.images[4];f.api.setActive('05');
+  const initial=f.api.watchImage(image);image.finish();await initial;
+  image.src='05/dark.png';const dark=f.api.watchImage(image);image.finish(false);await dark;
+  assert.equal(f.api.failedCount(),1);
+  image.src='05/light.png';const light=f.api.watchImage(image);image.finish();await light;
+  assert.equal(f.api.failedCount(),0);assert.equal(f.api.ready(),true);
+  assert.equal(f.status.textContent,'');
+});
+test('a decode interrupted by a theme swap cannot mark the new source failed',async()=>{
+  const f=fixture(),image=f.images[4];f.api.setActive('05');
+  let rejectOld;image.decode=()=>new Promise((_,reject)=>{rejectOld=reject;});
+  const initial=f.api.watchImage(image);image.finish();
+  image.src='05/dark.png';const dark=f.api.watchImage(image);rejectOld(new Error('source changed'));await initial;
+  assert.equal(f.api.failedCount(),0);
+  image.decode=()=>Promise.resolve();image.finish();await dark;
+  assert.equal(f.api.ready(),true);
+});
+test('retry preserves the active theme image source',async()=>{
+  const f=fixture(),image=f.images[4];f.api.setActive('05');
+  image.src='05/dark.png';const initial=f.api.watchImage(image);image.finish(false);await initial;
+  const retry=f.api.retryImages();
+  assert.match(image.src,/05\/dark\.png\?retry=1$/);
+  image.finish();await retry;assert.equal(f.api.failedCount(),0);
+});
+test('responsive picture changes are observed even when the img src stays the same',async()=>{
+  const f=fixture(),image=f.images[5];f.api.setActive('06');
+  image.currentSrc='06/desktop.webp';
+  const first=f.api.watchImage(image);image.finish(false);await first;
+  assert.equal(f.api.failedCount(),1);
+  image.currentSrc='06/mobile.webp';
+  image.complete=false;image.naturalWidth=0;
+  const mobile=f.api.watchImage(image);image.finish();await mobile;
+  assert.equal(image.getAttribute('src'),'06/art.png');
+  assert.equal(f.api.failedCount(),0);assert.equal(f.api.ready(),true);
+});
+test('an interrupted responsive decode cannot mark the new candidate failed',async()=>{
+  const f=fixture(),image=f.images[5];f.api.setActive('06');
+  let rejectOld;image.currentSrc='06/desktop.webp';
+  image.decode=()=>new Promise((_,reject)=>{rejectOld=reject;});
+  const desktop=f.api.watchImage(image);image.finish();
+  image.currentSrc='06/mobile.webp';
+  image.complete=false;image.naturalWidth=0;
+  const mobile=f.api.watchImage(image);rejectOld(new Error('responsive candidate changed'));await desktop;
+  assert.equal(f.api.failedCount(),0);
+  image.decode=()=>Promise.resolve();image.finish();await mobile;
+  assert.equal(f.api.ready(),true);
+});
+test('article data preparation is limited to the requested article topic',async()=>{
+  const f=fixture();let requested=0;
+  f.context.MapMotionCover={prepare(){requested++;return Promise.resolve();}};
+  const first=f.api.prepareTopicImages('01');f.images[0].finish();await first;
+  assert.equal(requested,0);
+  const article=f.api.prepareTopicImages('12');f.images[11].finish();await article;
+  assert.equal(requested,1);
+});
+test('a speculative article data failure does not reject image preparation',async()=>{
+  const f=fixture();f.api.setActive('12');
+  f.context.MapMotionCover={prepare(){return Promise.reject(new Error('prefetch unavailable'));}};
+  const article=f.api.prepareTopicImages('12');f.images[11].finish();await article;
+  assert.equal(f.api.ready(),true);
 });

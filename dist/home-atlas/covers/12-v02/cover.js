@@ -1,13 +1,23 @@
 (() => {
   'use strict';
   const section=document.getElementById('topic-12'),host=section.querySelector('.map-art-host');
-  const data=JSON.parse(document.getElementById('map-motion-data').textContent),reduce=matchMedia('(prefers-reduced-motion: reduce)');
-  const articleData=JSON.parse(document.getElementById('map-article-data').textContent);
-  const puzzleData=JSON.parse(document.getElementById('map-puzzle-data').textContent);
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+  const dataURL=new URL(document.getElementById('map-cover-data').dataset.src,document.baseURI);
+  let data=null,articleData=null,puzzleData=null,dataPromise=null;
+  function prepare(){
+    if(!dataPromise)dataPromise=fetch(dataURL).then(response=>{
+      if(!response.ok)throw new Error('文章拼圖資料未能載入。');
+      return response.json();
+    }).then(bundle=>{data=bundle.map;articleData=bundle.articles;puzzleData=bundle.puzzle;})
+      .catch(error=>{dataPromise=null;throw error;});
+    return dataPromise;
+  }
   const DURATION=17,ease=gsap.parseEase('power2.inOut'),out=gsap.parseEase('power2.out');
   const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),mix=(a,b,p)=>a+(b-a)*p;
   const mode='motion';
+  const artwork=host.closest('.extension-art'),playbackButton=artwork.querySelector('[data-cover-playback]'),hover=matchMedia('(hover: hover)'),imageLink=artwork.querySelector('.extension-image-link');
   let ready=false,started=false,time=reduce.matches?DURATION:0,wantedPlaying=!reduce.matches,frame=0,lastFrame=0,scene=null,canvas=null,ctx=null;
+  let userPaused=false;
   let width=0,height=0,papers=[],textures=[],colors={},nodes={},phase='',active=false,wasOnTopic=false;
   function statePhase(){return time<1.8?'articles':time<3.2?'compress':time<8.2?'assemble':time<9.2?'world':time<12?'zoom':time<DURATION?'traces':'complete';}
   function isActive(){const state=window.AtlasHome?.getState();return ready&&!document.hidden&&state?.initialized&&state.activeTopic==='12'&&!state.topicNavigationPlaying;}
@@ -95,30 +105,34 @@
     if(next!==phase){phase=next;section.dataset.motionPhase=phase;}
   }
   function stop(){if(frame)cancelAnimationFrame(frame);frame=0;lastFrame=0;}
+  function interactionPaused(){return(hover.matches&&imageLink.matches(':hover'))||imageLink.contains(document.activeElement);}
+  function updateControl(){const hidden=!ready||reduce.matches,label=time>=DURATION?'重看動畫':userPaused?'繼續動畫':'暫停動畫';if(playbackButton.hidden!==hidden)playbackButton.hidden=hidden;if(playbackButton.textContent!==label)playbackButton.textContent=label;}
   function tick(now){
-    frame=0;active=isActive();if(!active||!wantedPlaying||reduce.matches)return;
+    frame=0;active=isActive();if(!active||!wantedPlaying||interactionPaused()||reduce.matches)return;
     if(lastFrame)time=Math.min(DURATION,time+(now-lastFrame)/1000);lastFrame=now;render();
-    if(time>=DURATION){wantedPlaying=false;lastFrame=0;return;}
+    if(time>=DURATION){wantedPlaying=false;lastFrame=0;updateControl();return;}
     frame=requestAnimationFrame(tick);
   }
   function syncPlayback(){
     const state=window.AtlasHome?.getState(),onTopic=!!state?.initialized&&state.activeTopic==='12';
-    if(onTopic&&!wasOnTopic&&time>=DURATION&&!reduce.matches){time=0;wantedPlaying=true;render();}
+    if(onTopic&&!wasOnTopic&&time>=DURATION&&!userPaused&&!reduce.matches){time=0;wantedPlaying=true;render();}
     wasOnTopic=onTopic;
     if(reduce.matches&&time!==DURATION){time=DURATION;wantedPlaying=false;render();}
     if(onTopic&&!started&&!document.hidden&&!state.topicNavigationPlaying)initialize().catch(console.error);
     active=isActive();
-    if(active&&wantedPlaying&&!reduce.matches&&time<DURATION){if(!frame){lastFrame=0;frame=requestAnimationFrame(tick);}}
+    if(active&&wantedPlaying&&!interactionPaused()&&!reduce.matches&&time<DURATION){if(!frame){lastFrame=0;frame=requestAnimationFrame(tick);}}
     else stop();
+    updateControl();
   }
-  function pause(){wantedPlaying=false;stop();return getState();}
-  function play(){if(reduce.matches)return seek(DURATION);if(time>=DURATION)time=0;wantedPlaying=true;render();syncPlayback();return getState();}
-  function seek(seconds){wantedPlaying=false;stop();time=reduce.matches?DURATION:clamp(Number(seconds)||0,0,DURATION);render();return getState();}
-  function replay(){stop();time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches;render();syncPlayback();return getState();}
-  function getState(){return{mode,ready,time,duration:DURATION,phase:statePhase(),playing:!!frame,active:isActive(),wantedPlaying,reducedMotion:reduce.matches,articleCount:papers.length,uniqueArticleCount:articleData.articles.length,pieceCount:papers.length,settledPieces:papers.filter(paper=>arrival(paper)>=1).length,compression:compression(),puzzleMode:'stacked-articles-to-pieces',sceneWidth:width,sceneHeight:height};}
+  function pause(){userPaused=true;wantedPlaying=false;stop();updateControl();return getState();}
+  function play(){if(reduce.matches)return seek(DURATION);userPaused=false;if(time>=DURATION)time=0;wantedPlaying=true;render();syncPlayback();return getState();}
+  function seek(seconds){userPaused=true;wantedPlaying=false;stop();time=reduce.matches?DURATION:clamp(Number(seconds)||0,0,DURATION);render();updateControl();return getState();}
+  function replay(){userPaused=false;stop();time=reduce.matches?DURATION:0;wantedPlaying=!reduce.matches;render();syncPlayback();return getState();}
+  function getState(){return{mode,ready,time,duration:DURATION,phase:statePhase(),playing:!!frame,active:isActive(),wantedPlaying,userPaused,interactionPaused:interactionPaused(),reducedMotion:reduce.matches,articleCount:papers.length,uniqueArticleCount:articleData?.articles.length||0,pieceCount:papers.length,settledPieces:papers.filter(paper=>arrival(paper)>=1).length,compression:compression(),puzzleMode:'stacked-articles-to-pieces',sceneWidth:width,sceneHeight:height};}
   let observer=null;
   async function initialize(){
     started=true;
+    await prepare();
     scene=host.querySelector('.map-scene');canvas=scene.querySelector('canvas');ctx=canvas.getContext('2d');
     nodes={camera:scene.querySelector('.map-camera'),world:scene.querySelector('.map-land-world'),europe:scene.querySelector('.map-land-europe'),geography:scene.querySelector('.map-geography'),wash:scene.querySelector('.map-region-wash'),label:scene.querySelector('.map-region-label'),traces:scene.querySelector('.map-word-traces'),hornet:scene.querySelector('.map-hornet'),caption:scene.querySelector('.map-final-caption')};
     resize();observer=new ResizeObserver(resize);observer.observe(scene);
@@ -128,11 +142,14 @@
     palette();render();ready=true;
     dispatchEvent(new Event('resize'));syncPlayback();return true;
   }
+  playbackButton.addEventListener('click',()=>time>=DURATION?replay():userPaused?play():pause());
+  for(const event of ['pointerenter','pointerleave','focusin'])artwork.addEventListener(event,syncPlayback);
+  artwork.addEventListener('focusout',()=>setTimeout(syncPlayback,0));
   addEventListener('ecologythemechange',()=>{if(scene){palette();render();}});
   document.addEventListener('visibilitychange',syncPlayback);
   document.addEventListener('atlas-hover-reset',()=>{stop();setTimeout(syncPlayback,0);});
   reduce.addEventListener('change',syncPlayback);
   setInterval(syncPlayback,180);
-  window.MapMotionCover={getState,play,pause,seek,replay};
+  window.MapMotionCover={getState,play,pause,seek,replay,prepare};
   syncPlayback();
 })();
