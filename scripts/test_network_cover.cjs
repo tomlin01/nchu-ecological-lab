@@ -187,11 +187,15 @@ test('manual pause during decode keeps time zero visible and the button resumes 
   assert.equal(cover.api.getState().playing, false);
 });
 
-test('hover and image-link focus can pause at zero without hiding nodes', async () => {
+test('pointer hover keeps playback running; keyboard image-link focus still pauses', async () => {
   const cover = loadCover({ hovered: true });
   await cover.decodeImages();
-  assert.equal(cover.api.getState().playing, false);
-  assert.equal(cover.api.getState().time, 0);
+  assert.equal(cover.api.getState().playing, true);
+  cover.artwork.emit('pointerenter');
+  cover.sync();
+  cover.frame(1000);cover.frame(1400);
+  assert.ok(cover.api.getState().time > .3);
+  assert.equal(cover.api.getState().interactionPaused, false);
   visibleNodes(cover);
   cover.imageLink.hovered = false;
   cover.artwork.emit('pointerleave');

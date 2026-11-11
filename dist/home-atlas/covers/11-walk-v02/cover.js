@@ -4,7 +4,7 @@
   const story=JSON.parse(document.getElementById('walk-story-data').textContent),DURATION=story.duration;
   const reduce=matchMedia('(prefers-reduced-motion: reduce)'),ease=gsap.parseEase('power2.inOut'),out=gsap.parseEase('power2.out'),clamp=x=>Math.max(0,Math.min(1,x));
   const atlasURL='home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.display-q90.webp',mode='walk';
-  const artwork=host.closest('.extension-art'),playbackButton=host.querySelector('[data-cover-playback]'),hover=matchMedia('(hover: hover)'),imageLink=artwork.querySelector('.walk-image-link');
+  const artwork=host.closest('.extension-art'),playbackButton=host.querySelector('[data-cover-playback]'),imageLink=artwork.querySelector('.walk-image-link');
   let ready=false,started=false,time=reduce.matches?DURATION:0,wantedPlaying=!reduce.matches;
   let userPaused=false;
   let frame=0,lastFrame=0,wasOnTopic=false,camera=null,replayButton=null,actors=[],pathNodes={},results=[];
@@ -63,7 +63,7 @@
     const current=phase();if(section.dataset.walkPhase!==current)section.dataset.walkPhase=current;
   }
   function stop(){if(frame)cancelAnimationFrame(frame);frame=0;lastFrame=0;}
-  function interactionPaused(){return(hover.matches&&imageLink.matches(':hover'))||imageLink.contains(document.activeElement);}
+  function interactionPaused(){return imageLink.contains(document.activeElement);}
   function updateControl(){const hidden=!ready||reduce.matches||time>=DURATION,label=userPaused?'繼續動畫':'暫停動畫';if(playbackButton.hidden!==hidden)playbackButton.hidden=hidden;if(playbackButton.textContent!==label)playbackButton.textContent=label;if(replayButton&&replayButton.hidden!==(!ready||reduce.matches))replayButton.hidden=!ready||reduce.matches;}
   function tick(now){frame=0;if(!active()||!wantedPlaying||interactionPaused()||reduce.matches)return;if(lastFrame)time=Math.min(DURATION,time+(now-lastFrame)/1000);lastFrame=now;render();if(time>=DURATION){wantedPlaying=false;lastFrame=0;updateControl();}else frame=requestAnimationFrame(tick);}
   function sync(){
@@ -96,7 +96,7 @@
     dispatchEvent(new Event('resize'));sync();return true;
   }
   playbackButton.addEventListener('click',()=>userPaused?play():pause());
-  for(const event of ['pointerenter','pointerleave','focusin'])artwork.addEventListener(event,sync);
+  artwork.addEventListener('focusin',sync);
   artwork.addEventListener('focusout',()=>setTimeout(sync,0));
   document.addEventListener('visibilitychange',sync);document.addEventListener('atlas-hover-reset',()=>{stop();setTimeout(sync,0);});reduce.addEventListener('change',sync);setInterval(sync,150);
   window.PatrolWalkCover={getState,seek,pause,play,replay};

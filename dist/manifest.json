@@ -6289,8 +6289,8 @@
       "sha256": "451b4fe7d80cb882ad758e4c71d95a3ef4743902eb45fb64e2eacf8bd00d9b2e"
     },
     "home-atlas/covers/07-v02/cover.js": {
-      "bytes": 6496,
-      "sha256": "19b0e07d4bf67e67e202b5f37a81788526cda32b62608b84a2d53aab68316e9f"
+      "bytes": 6359,
+      "sha256": "d804b228448c65975f2a4d4a9cc45249bf5abcf6d835b44bd05620187590532c"
     },
     "home-atlas/covers/08-v03/assets/08-flock-day-v01.webp": {
       "bytes": 564010,
@@ -6377,8 +6377,8 @@
       "sha256": "1d58ac8fae5318f799c2451c56f792821aad3735c852715466c4dc066fdecf44"
     },
     "home-atlas/covers/11-walk-v02/cover.js": {
-      "bytes": 8774,
-      "sha256": "98bb699b3f46791be8285603c23b1a451cdd64d5e718e39cbaddc765bc17e092"
+      "bytes": 8637,
+      "sha256": "16fbdf235a024397b6180d97a3ff1b5240c80ccd4c64ee0e4a104080098701a8"
     },
     "home-atlas/covers/12-v02/assets/hornet/hornet-cutout-v01.webp": {
       "bytes": 239608,
@@ -6393,8 +6393,8 @@
       "sha256": "ae646db73180f9ff98d05a98a005a4319e1bc5716002151de8b654bf11a36c90"
     },
     "home-atlas/covers/12-v02/cover.js": {
-      "bytes": 12071,
-      "sha256": "65c95394848115ac1d41a3a0303407bd187f092134770a28db5ee656d8e28e18"
+      "bytes": 11934,
+      "sha256": "f001346a294170b95ae95df6384583d3f04fff1f98499cdf7bd7d1c6e9f45359"
     },
     "home-atlas/covers/12-v02/scene-data.json": {
       "bytes": 130993,
@@ -6561,8 +6561,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 175971,
-      "sha256": "e3c79d587dfedb55746252972de8ac461f9221fd539f6ecf96ff930bdcf92091"
+      "bytes": 175974,
+      "sha256": "3f5f3fa5424466bdb1b148cdafb2be4b1d228666495c0cbcfe262ef227af9495"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -7189,5 +7189,6 @@
     "deployed": false,
     "media_bytes_unchanged": true
   },
-  "home_entry_performance_revision": "2026-11-11 high-quality-displays-visible-network-and-deferred-map-data"
+  "home_entry_performance_revision": "2026-11-11 high-quality-displays-visible-network-and-deferred-map-data",
+  "pointer_playback_revision": "2026-11-12 pointer hover no longer pauses"
 }

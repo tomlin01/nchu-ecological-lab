@@ -7,7 +7,7 @@
   const DURATION=8,starts=edges.map((_,i)=>i<3?.25+i*.7:3+(i-3)*.22),out=gsap.parseEase('power2.out');
   const clamp=x=>Math.min(1,Math.max(0,x));
   const mode='network';
-  const artwork=host.closest('.extension-art'),playbackButton=artwork.querySelector('[data-cover-playback]'),hover=matchMedia('(hover: hover)'),imageLink=artwork.querySelector('.extension-image-link');
+  const artwork=host.closest('.extension-art'),playbackButton=artwork.querySelector('[data-cover-playback]'),imageLink=artwork.querySelector('.extension-image-link');
   let ready=false,started=false,time=reduce.matches?DURATION:0;
   let userPaused=false;
   let wantedPlaying=!reduce.matches,frame=0,lastFrame=0,wasOnTopic=false,scene=null,board=null,nodes=[],paths=[],lengths=[],observer=null,currentLayout='desktop';
@@ -32,7 +32,7 @@
     render();
   }
   function stop(){if(frame)cancelAnimationFrame(frame);frame=0;lastFrame=0;}
-  function interactionPaused(){return(hover.matches&&imageLink.matches(':hover'))||imageLink.contains(document.activeElement);}
+  function interactionPaused(){return imageLink.contains(document.activeElement);}
   function updateControl(){const hidden=!ready||reduce.matches,label=time>=DURATION?'重看動畫':userPaused?'繼續動畫':'暫停動畫';if(playbackButton.hidden!==hidden)playbackButton.hidden=hidden;if(playbackButton.textContent!==label)playbackButton.textContent=label;}
   function tick(now){frame=0;if(!active()||!wantedPlaying||interactionPaused()||reduce.matches)return;if(lastFrame)time=Math.min(DURATION,time+(now-lastFrame)/1000);lastFrame=now;render();if(time>=DURATION){wantedPlaying=false;lastFrame=0;updateControl();}else frame=requestAnimationFrame(tick);}
   function sync(){
@@ -63,7 +63,7 @@
     dispatchEvent(new Event('resize'));sync();return true;
   }
   playbackButton.addEventListener('click',()=>time>=DURATION?replay():userPaused?play():pause());
-  for(const event of ['pointerenter','pointerleave','focusin'])artwork.addEventListener(event,sync);
+  artwork.addEventListener('focusin',sync);
   artwork.addEventListener('focusout',()=>setTimeout(sync,0));
   document.addEventListener('visibilitychange',sync);document.addEventListener('atlas-hover-reset',()=>{stop();setTimeout(sync,0);});reduce.addEventListener('change',sync);
   setInterval(sync,150);

@@ -15,7 +15,7 @@
   const DURATION=17,ease=gsap.parseEase('power2.inOut'),out=gsap.parseEase('power2.out');
   const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),mix=(a,b,p)=>a+(b-a)*p;
   const mode='motion';
-  const artwork=host.closest('.extension-art'),playbackButton=artwork.querySelector('[data-cover-playback]'),hover=matchMedia('(hover: hover)'),imageLink=artwork.querySelector('.extension-image-link');
+  const artwork=host.closest('.extension-art'),playbackButton=artwork.querySelector('[data-cover-playback]'),imageLink=artwork.querySelector('.extension-image-link');
   let ready=false,started=false,time=reduce.matches?DURATION:0,wantedPlaying=!reduce.matches,frame=0,lastFrame=0,scene=null,canvas=null,ctx=null;
   let userPaused=false;
   let width=0,height=0,papers=[],textures=[],colors={},nodes={},phase='',active=false,wasOnTopic=false;
@@ -105,7 +105,7 @@
     if(next!==phase){phase=next;section.dataset.motionPhase=phase;}
   }
   function stop(){if(frame)cancelAnimationFrame(frame);frame=0;lastFrame=0;}
-  function interactionPaused(){return(hover.matches&&imageLink.matches(':hover'))||imageLink.contains(document.activeElement);}
+  function interactionPaused(){return imageLink.contains(document.activeElement);}
   function updateControl(){const hidden=!ready||reduce.matches,label=time>=DURATION?'重看動畫':userPaused?'繼續動畫':'暫停動畫';if(playbackButton.hidden!==hidden)playbackButton.hidden=hidden;if(playbackButton.textContent!==label)playbackButton.textContent=label;}
   function tick(now){
     frame=0;active=isActive();if(!active||!wantedPlaying||interactionPaused()||reduce.matches)return;
@@ -143,7 +143,7 @@
     dispatchEvent(new Event('resize'));syncPlayback();return true;
   }
   playbackButton.addEventListener('click',()=>time>=DURATION?replay():userPaused?play():pause());
-  for(const event of ['pointerenter','pointerleave','focusin'])artwork.addEventListener(event,syncPlayback);
+  artwork.addEventListener('focusin',syncPlayback);
   artwork.addEventListener('focusout',()=>setTimeout(syncPlayback,0));
   addEventListener('ecologythemechange',()=>{if(scene){palette();render();}});
   document.addEventListener('visibilitychange',syncPlayback);
