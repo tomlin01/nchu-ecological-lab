@@ -1,17 +1,19 @@
 # NCHU Ecological Lab website
 
+2026-11-12已發布指標播放修正：07／11／12滑鼠移入或移出不改變播放狀態，仍保留獨立手動控制與鍵盤圖片焦點暫停。本輪9項線上檔案及15項瀏覽器檢查通過，以下91／25項為前一完整加速版的驗證紀錄。
+
 AI × 生態研究的唯一編輯與發布儲存庫，正式網站為[GitHub Pages](https://tomlin01.github.io/nchu-ecological-lab/)。
 
-2026-11-12已發布Hallmark修整與首頁加速版。網站commit `21fbab225f45aad140cdc4e3bf649e80a360231d`，
-[Actions 43061339249](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/43061339249)與deployment `7715908576`均success。
-內容為12主題／28案例、1,562檔、459,221,586 bytes，只發布`dist/`。
+2026-11-12已發布Hallmark修整與首頁加速版。網站commit `d69337dd3ef612d808432d9afa4f47cb227a47e4`，
+[Actions 43067615470](https://github.com/tomlin01/nchu-ecological-lab/actions/runs/43067615470)與deployment `7716794323`均success。
+內容為12主題／28案例、1,562檔、459,221,254 bytes，只發布`dist/`。
 README-only紀錄commit可能比網站commit新；以dist差異判定，不把文件commit當成新網站發布。
 
 ## 目前行為
 
 01–05第一次普通點圖先預覽，再點已選案例圖片進入；文字選案、配對圖、環境、Escape與空白重設保留。
 06–12單一封面一次進入。07／11／12暫停與繼續、主題10揭開量測、手機05來源排列及月曆卷邊保留。
-訪花九節點先保持可見，再展開十六連線；懸停或焦點暫停不會停成整圖空白。
+訪花九節點先保持可見，再展開十六連線；滑鼠移入不暫停；鍵盤圖片焦點與手動控制仍可暫停。
 
 首頁維持四張優先圖片，其餘延後載入。43份q90高品質顯示衍生檔及九圖responsive版本保留原圖，
 文章拼圖資料接近主題12時才載入。這是有損顯示壓縮，不能稱逐像素相同。
