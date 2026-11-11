@@ -32,6 +32,10 @@
   const galleryFor=id=>sectionFor(id).querySelector('.asset-gallery');
   const caseButtons=id=>[...sectionFor(id).querySelectorAll('.case-choice')];
   const assetButtons=id=>[...galleryFor(id).querySelectorAll('.asset-button')];
+  const nativeArtworkIntent=event=>event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey;
+  document.querySelectorAll('.asset-button[href]').forEach(link=>link.addEventListener('click',event=>{
+    if(!initialized&&!initError&&!nativeArtworkIntent(event))event.preventDefault();
+  },true));
 
   function status(message){const node=document.getElementById('load-status');if(node.textContent!==message)node.textContent=message;node.parentElement.classList.toggle('is-visible',Boolean(message));}
   function getState(){
@@ -60,12 +64,12 @@
     const read=section.querySelector('.read-case');
     if(current){read.href=current.href;read.textContent=`閱讀：${current.label}`;read.tabIndex=0;}
     else{read.removeAttribute('href');read.textContent='閱讀案例';read.tabIndex=-1;}
-    const message=id==='01'?(current?'點選其他案例，切換環境。':'點選案例名稱或插畫，走進環境。'): // taste-skill-ignore: internal chapter route key
+    const message=id==='01'?(current?'點選其他案例名稱，切換環境。':'點選案例名稱，走進環境。'): // taste-skill-ignore: internal chapter route key
       id==='03'?(current?'研究使用的照片、影片與錄音，都在案例裡。':'選一個問題，看看兩張圖的差別。'): // taste-skill-ignore: internal chapter route key
-      id==='05'?(current?(current.hint||'研究中的製圖方法與來源，都在案例裡。'):'點選案例名稱或圖片，看看研究怎麼描繪棲地。'):
-      id==='04'?(current?.id==='04-04'?'群聚平均是推估，圖中植物不是研究樣區':current?(current.hint||'研究中的量測方法與來源，都在案例裡。'):'點選案例名稱或插畫，放大查看。'):
-      current?'對應的圖片已標示出來，也可以直接選擇其他案例。':'點選案例名稱或插畫，查看對應的圖片。';
-    const hint=current?message+' 點空白處可回到總覽。':message;
+      id==='05'?(current?(current.hint||'研究中的製圖方法與來源，都在案例裡。'):'點選案例名稱，看看研究怎麼描繪棲地。'):
+      id==='04'?(current?.id==='04-04'?'群聚平均是推估，圖中植物不是研究樣區':current?(current.hint||'研究中的量測方法與來源，都在案例裡。'):'點選案例名稱，放大查看。'):
+      current?'對應的圖片已標示出來，也可以直接選擇其他案例。':'點選案例名稱，查看對應的圖片。';
+    const hint=current?message+' 再點圖片可閱讀這個案例。點空白處回到總覽。':'點圖片或案例名稱先預覽，再點已選圖片閱讀案例。';
     const live=section.querySelector('.selection-status');if(live.textContent!==hint)live.textContent=hint;
     if(id==='01')writeTitle(document.getElementById('title-01'),current?.question||chapters.get('01').title); // taste-skill-ignore: internal chapter route key
   }
@@ -110,7 +114,12 @@
     gsap.killTweensOf(button);
     button.style.zIndex=selected?'6':'1';button.style.pointerEvents=visible?'auto':'none';
     button.inert=!visible;button.tabIndex=visible?0:-1;
-    button.setAttribute('aria-hidden',String(!visible));button.setAttribute('aria-pressed',String(selected));
+    button.setAttribute('aria-hidden',String(!visible));
+    if(button.tagName==='BUTTON')button.setAttribute('aria-pressed',String(selected));
+    else{
+      button.removeAttribute('aria-pressed');button.setAttribute('aria-expanded',String(selected));
+      if(button.dataset.artLabel)button.setAttribute('aria-label',(selected?'閱讀案例：':'預覽案例：')+button.dataset.artLabel);
+    }
     button.classList.toggle('is-dimmed',opacity<1&&visible);
     const properties={x:target.x,y:target.y,scale:target.scale,rotation:target.rotation,autoAlpha:opacity,transformOrigin:'0 0',overwrite:true};
     if(animate&&!reduced.matches&&!printing)gsap.to(button,{...properties,duration:visible ? .24 : .14,ease:'power2.out'});
@@ -244,6 +253,12 @@
     if(credit.textContent!==creditText)credit.textContent=creditText;
     fieldStage.classList.toggle('has-environment',loaded);
     measureFieldPanel();
+    const environmentEntry=fieldStage.querySelector('.environment-entry');
+    if(environmentEntry){
+      const available=Boolean(chosen&&loaded);environmentEntry.hidden=!available;environmentEntry.tabIndex=available?0:-1;
+      if(available){const item=cases.get(chosen);environmentEntry.href=item.href;environmentEntry.dataset.case=chosen;environmentEntry.setAttribute('aria-label',`閱讀案例：${item.label}`);}
+      else{environmentEntry.removeAttribute('href');delete environmentEntry.dataset.case;}
+    }
     const targets=overviewTargets('01'),stage=fieldStage.getBoundingClientRect(),gallery=galleryFor('01').getBoundingClientRect(); // taste-skill-ignore: internal chapter route key
     const clipFor=(caseId,actual=false)=>{
       const target=targets.find(item=>item.asset.caseId===caseId);
@@ -273,7 +288,7 @@
         const box=isCompact()?{x:.34,y:.36,w:.64,h:.57}:{x:.47,y:.49,w:.5,h:.44};
         next={...next,...fit(target.asset,box,gallery.width,gallery.height),opacity:1,visible:true,rotation:0};microTarget=next;
       }
-      if(!next.visible&&target.button===document.activeElement&&chosen)caseButtons('01').find(button=>button.dataset.case===chosen)?.focus({preventScroll:true}); // taste-skill-ignore: internal chapter route key
+      if(!next.visible&&target.button===document.activeElement&&chosen)(environmentEntry&&!environmentEntry.hidden?environmentEntry:caseButtons('01').find(button=>button.dataset.case===chosen))?.focus({preventScroll:true}); // taste-skill-ignore: internal chapter route key
       target.button.classList.toggle('is-micro-inset',isMicro);setTarget(next,animate);
     });
     const label=document.getElementById('micro-label');gsap.killTweensOf(label);
@@ -433,7 +448,7 @@
       validate(content,metadata);
       chapters=new Map(content.chapters.map(chapter=>[chapter.id,chapter]));assets=new Map(metadata.assets.map(asset=>[asset.id,asset]));
       for(const chapter of content.chapters)for(const item of chapter.cases)cases.set(item.id,{...item,topic:chapter.id});
-      for(const asset of metadata.assets){const button=document.querySelector(`[data-asset-id="${CSS.escape(asset.id)}"]`);elements.set(asset.id,button);button.style.width=`${asset.width}px`;button.style.height=`${asset.height}px`;button.disabled=false;}
+      for(const asset of metadata.assets){const button=document.querySelector(`[data-asset-id="${CSS.escape(asset.id)}"]`);elements.set(asset.id,button);button.style.width=`${asset.width}px`;button.style.height=`${asset.height}px`;if(button.tagName==='BUTTON')button.disabled=false;else button.dataset.artLabel=button.getAttribute('aria-label').replace(/^閱讀案例：/,'');}
       root.classList.add('atlas-ready','atlas-book-ready');configuredReduced=reduced.matches;configuredWidth=innerWidth;configuredHeight=innerHeight;initialized=true;
       pager=createAtlasPager({ready:()=>initialized&&!printing&&!document.hidden,
         beforeTurn:id=>{prepareTopicImages(id);document.dispatchEvent(new Event('atlas-hover-reset'));stopTraitEntrance();habitatMotion?.suspend();},
@@ -450,8 +465,15 @@
       layoutAll();
       sections.forEach(section=>{
         const id=section.dataset.topic;
-        section.querySelectorAll('.case-choice,.asset-button').forEach(button=>button.addEventListener('click',event=>{if(!pager.ignoreClick())selectCase(id,button.dataset.case,{animate:event.detail!==0});}));
+        section.querySelectorAll('.case-choice').forEach(button=>button.addEventListener('click',event=>{if(!pager.ignoreClick())selectCase(id,button.dataset.case,{animate:event.detail!==0});}));
         let press=null,moved=false;
+        section.querySelectorAll('.asset-button[href],.environment-entry').forEach(link=>link.addEventListener('click',event=>{
+          if(pager.ignoreClick()||moved){event.preventDefault();return;}
+          if(nativeArtworkIntent(event))return;
+          const chosen=link.dataset.case;
+          if(!chosen){event.preventDefault();return;}
+          if(selectedCases[id]!==chosen){event.preventDefault();selectCase(id,chosen,{animate:event.detail!==0});}
+        }));
         section.addEventListener('pointerdown',event=>{press={x:event.clientX,y:event.clientY};moved=false;},{passive:true});
         section.addEventListener('pointermove',event=>{if(press&&Math.hypot(event.clientX-press.x,event.clientY-press.y)>7)moved=true;},{passive:true});
         section.addEventListener('pointercancel',()=>{moved=true;press=null;},{passive:true});
@@ -466,6 +488,7 @@
         const habitatReplay=section.querySelector('.replay-habitat');
         if(id==='05'&&habitatReplay&&habitatMotion){habitatReplay.hidden=false;habitatReplay.disabled=false;habitatReplay.addEventListener('click',()=>{if(!pager.ignoreClick()){selectCase('05',null,{animate:false});habitatMotion.replay();}});}
       });
+      document.querySelectorAll('.extension-art a[href^="cases/"]').forEach(link=>link.addEventListener('click',event=>{if(pager.ignoreClick())event.preventDefault();}));
       document.querySelectorAll('a[href^="#topic-"],a[href="#topics"]').forEach(link=>link.addEventListener('click',event=>{if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const id=link.getAttribute('href')==='#topics'?'topics':topicId(link.getAttribute('href'));if(id){event.preventDefault();const keyboard=event.detail===0;scrollToTopic(id,{focus:keyboard||link.classList.contains('skip-link'),animate:!keyboard&&!link.classList.contains('skip-link'),keyboard});}}));
       applyHash();
       const fontsReady=document.fonts?.ready||Promise.resolve();

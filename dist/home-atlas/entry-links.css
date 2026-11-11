@@ -1,0 +1,7 @@
+/* Artwork links retain the approved layout, grouping and focus treatment. */
+.asset-button[href]{display:block;color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+/* A selected Topic01 illustration becomes its full environmental picture. */
+.field-stage .environment-entry{position:absolute;z-index:2;top:var(--header-height);right:0;bottom:var(--field-footer-height,86px);left:0;display:block;color:inherit}
+.field-stage .environment-entry[hidden]{display:none!important}
+.field-stage .environment-entry:focus-visible{outline:2px solid var(--atlas-focus);outline-offset:-4px}
+.field-stage.has-environment .asset-gallery{pointer-events:none}

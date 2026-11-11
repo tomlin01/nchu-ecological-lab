@@ -5737,8 +5737,8 @@
       "sha256": "4fa4904f0e5946168d6cd315d9bfb90c1215af662ab9723625de6939c124e065"
     },
     "home-atlas/app.js": {
-      "bytes": 38779,
-      "sha256": "35f1624f4d1fe66e227e1f25c1b9101335d3b73e54f358a0271d04858389cb30"
+      "bytes": 40780,
+      "sha256": "a2428889cb62a0a24e0dd1e7e69e5956997e9fbee42a12ca6feca2f524b04ee4"
     },
     "home-atlas/assets/environments/01-01-grassland-wide-v01.png": {
       "bytes": 3652910,
@@ -6152,6 +6152,50 @@
       "bytes": 3884,
       "sha256": "94abc8288791b8fcfdbcd7e7277f126e366c14242240da5d442b729868b487a9"
     },
+    "home-atlas/covers/10-v02/assets/future-sans.woff2": {
+      "bytes": 4400,
+      "sha256": "c9cafc1305520fe192b70f46571f75b33b09eb59bd19fa57414b2acac0aa1c4c"
+    },
+    "home-atlas/covers/10-v02/assets/now-poster.webp": {
+      "bytes": 25286,
+      "sha256": "e4d39672f240fd40debca39a271d9de01cd0257f9a68f4d85f82ec6a23d267d3"
+    },
+    "home-atlas/covers/10-v02/cover.css": {
+      "bytes": 6719,
+      "sha256": "1e9cec54a8fab2324d9138363425de1654862124e75dc9e9d4064343d6bf4533"
+    },
+    "home-atlas/covers/10-v02/cover.mjs": {
+      "bytes": 6165,
+      "sha256": "5f029a489073db26733f0d5ab3dbc58decaa11f22d47fb2e41bde5ec1347a466"
+    },
+    "home-atlas/covers/10-v02/scene.mjs": {
+      "bytes": 16304,
+      "sha256": "a67f6a58041144ce645251020236024e2a98af148474ac096891ddaea7544195"
+    },
+    "home-atlas/covers/11-walk-v02/assets/11-empty-forest-v02.webp": {
+      "bytes": 1741118,
+      "sha256": "f03cc2e95dd2a4d5fe94aa87e05812dff0e904b43446ba09b697752b774d16df"
+    },
+    "home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.webp": {
+      "bytes": 552050,
+      "sha256": "10944dc7ad718bc0d0bea851f437f05e892a1faf539300e5716f02f3340c86d7"
+    },
+    "home-atlas/covers/11-walk-v02/assets/overview-poster.webp": {
+      "bytes": 221560,
+      "sha256": "d536f3be464c63d242eb42c0bb5d82298716f593aaa5760b7500bdbc923ca4a9"
+    },
+    "home-atlas/covers/11-walk-v02/assets/walk-sans.woff2": {
+      "bytes": 4840,
+      "sha256": "ed8169ee94bcc8fe70455cfe99b40090600f034c8bcb75c765e733291531ddd7"
+    },
+    "home-atlas/covers/11-walk-v02/cover.css": {
+      "bytes": 7404,
+      "sha256": "55ce348d163c0389ad7d01228e16e5231bb012b6284315e81bc8743d6c6e1037"
+    },
+    "home-atlas/covers/11-walk-v02/cover.js": {
+      "bytes": 7556,
+      "sha256": "ee763cb0a6c59e257c0233e7f79fea9cb06c3ed593157394d797361406e20b58"
+    },
     "home-atlas/covers/12-v02/assets/hornet/hornet-cutout-v01.webp": {
       "bytes": 239608,
       "sha256": "105c384a55df0ca5e6111ba7359757f2a7e92bc2e7f522436373f145610e2ceb"
@@ -6169,12 +6213,16 @@
       "sha256": "4379541c0f27defc79b2a0a46e11b49cd4ee2d9a6dd4615c7599ce4069283d11"
     },
     "home-atlas/covers/accepted-sources.json": {
-      "bytes": 5193,
-      "sha256": "c7adda245219dc2f612d49eee00ef8ecfe3209f902b0130c7c9bb48ac9507332"
+      "bytes": 6702,
+      "sha256": "6337eedf6f76e51a25e190fe9646f55ab628e7dd6a14e86e93ee69a381740ac6"
     },
     "home-atlas/directory-rows.css": {
       "bytes": 4723,
       "sha256": "6684dca9cf7f603d219aa22ef0095591417d28642d16b644f2fc90f14efc7011"
+    },
+    "home-atlas/entry-links.css": {
+      "bytes": 667,
+      "sha256": "fe343274b393643d5c60fa2334ebb39b79a246f65106109106734acdfb2b873a"
     },
     "home-atlas/environment-prompts.md": {
       "bytes": 9906,
@@ -6325,8 +6373,8 @@
       "sha256": "5a9aea079b40af183b0d178e8995ade4b80dc5b73feb44e8e5e7615bba57dddf"
     },
     "index.html": {
-      "bytes": 298741,
-      "sha256": "ab538cba3a8ace6d53c2deae183e97d141abdc701e5e8a3235a6b8699855932a"
+      "bytes": 303635,
+      "sha256": "dc14a8016bc5a19e41e05c36f20a09255beb82a567ad8b2b1ba9d88336ab329b"
     },
     "integration-verification.json": {
       "bytes": 4877,
@@ -6925,5 +6973,19 @@
     "forest_public_reuse_license_verified": false,
     "deployed": false
   },
-  "approved_cover_update": "2026-11-07: 06-v07,07-v02,08-v03,09-v01,12-v02"
+  "approved_cover_update": "2026-11-07: 06-v07,07-v02,08-v03,09-v01,12-v02",
+  "approved_cover_and_image_entry_20261111": {
+    "topics_updated": [
+      "10",
+      "11"
+    ],
+    "native_case_image_links": 34,
+    "available_cases": 28,
+    "text_selection_and_group_hover_preserved": true,
+    "case_files_unchanged": true,
+    "artwork_activation_01_to_05": "First select and preview; next activation of selected case image opens its case",
+    "featured_cover_activation_06_to_12": "One activation opens the featured case",
+    "heavy_topic10_and_topic11_resources_deferred_until_active": true,
+    "posters": "Still frames from the approved scenes; no new external image generation"
+  }
 }

@@ -20,9 +20,17 @@
     "12": {
       "folder": "topic-12-map-motion-v02",
       "acceptance": "work/ecology-ai-rollout/topic-12-map-motion-v02/review/user-acceptance-article-puzzle.json"
+    },
+    "10": {
+      "folder": "topic-10-optical-preview-trial-v02",
+      "acceptance": "work/ecology-ai-rollout/topic-10-optical-preview-trial-v02/review/user-acceptance-v02.json"
+    },
+    "11": {
+      "folder": "topic-11-patrol-walk-trial-v02",
+      "acceptance": "work/ecology-ai-rollout/topic-11-patrol-walk-trial-v02/review/user-acceptance-v02.json"
     }
   },
-  "note": "User-approved versions. Artwork is conceptual except the attributed topic09 photograph. Topic07 uses built-in generated/reused artwork, not API output.",
+  "note": "User-approved covers. Topic10 is native Three.js qualitative signal imagery; Topic11 uses API-generated forest and gait poses with illustrative counts and findings. Topic09 attribution is retained. Topic07 remains built-in-generated/reused, not API output.",
   "assets": [
     {
       "path": "home-atlas/covers/06-v07/assets/06-cg-api-dark-v07.webp",
@@ -119,6 +127,31 @@
     {
       "path": "home-atlas/covers/08-v03/assets/trend-sans.woff2",
       "sha256": "a22b321f027411d9a9a302589cf705d4825804bd0d9015cbd6753269d42ee30b"
+    },
+    {
+      "path": "home-atlas/covers/10-v02/assets/future-sans.woff2",
+      "sha256": "c9cafc1305520fe192b70f46571f75b33b09eb59bd19fa57414b2acac0aa1c4c"
+    },
+    {
+      "path": "home-atlas/covers/10-v02/assets/now-poster.webp",
+      "sha256": "e4d39672f240fd40debca39a271d9de01cd0257f9a68f4d85f82ec6a23d267d3"
+    },
+    {
+      "path": "home-atlas/covers/11-walk-v02/assets/11-empty-forest-v02.webp",
+      "sha256": "f03cc2e95dd2a4d5fe94aa87e05812dff0e904b43446ba09b697752b774d16df"
+    },
+    {
+      "path": "home-atlas/covers/11-walk-v02/assets/11-ranger-gait-v01.webp",
+      "sha256": "10944dc7ad718bc0d0bea851f437f05e892a1faf539300e5716f02f3340c86d7"
+    },
+    {
+      "path": "home-atlas/covers/11-walk-v02/assets/overview-poster.webp",
+      "sha256": "d536f3be464c63d242eb42c0bb5d82298716f593aaa5760b7500bdbc923ca4a9"
+    },
+    {
+      "path": "home-atlas/covers/11-walk-v02/assets/walk-sans.woff2",
+      "sha256": "ed8169ee94bcc8fe70455cfe99b40090600f034c8bcb75c765e733291531ddd7"
     }
-  ]
+  ],
+  "updated_at": "2026-11-11"
 }

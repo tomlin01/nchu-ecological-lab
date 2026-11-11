@@ -12,6 +12,7 @@ class Images(HTMLParser):
         super().__init__()
         self.topic = None
         self.images = []
+        self.artwork = []
 
     def handle_starttag(self, tag, attrs):
         values = dict(attrs)
@@ -19,6 +20,8 @@ class Images(HTMLParser):
             self.topic = values['data-topic']
         if tag == 'img':
             self.images.append({'topic': self.topic, **values})
+        if 'asset-button' in values.get('class', '').split():
+            self.artwork.append({'tag': tag, 'topic': self.topic, **values})
 
 
 class HomeImageMarkupTests(unittest.TestCase):
@@ -27,6 +30,7 @@ class HomeImageMarkupTests(unittest.TestCase):
         parser = Images()
         parser.feed((ROOT / 'index.html').read_text())
         cls.images = parser.images
+        cls.artwork = parser.artwork
 
     def test_first_screen_has_four_eager_images_under_three_megabytes(self):
         eager = [image for image in self.images if image.get('src') and image.get('loading') != 'lazy']
@@ -45,6 +49,18 @@ class HomeImageMarkupTests(unittest.TestCase):
         self.assertTrue(all(image.get('src') and image.get('width') and image.get('height') for image in gallery))
         self.assertTrue(all((ROOT / image['src']).is_file() for image in gallery))
         self.assertTrue(all(image.get('loading') == 'lazy' for image in gallery if image['topic'] != '01'))
+
+    def test_every_artwork_is_a_native_link_to_its_case(self):
+        self.assertEqual(len(self.artwork), 27)
+        for link in self.artwork:
+            case = link['data-case']
+            self.assertEqual(link['tag'], 'a')
+            self.assertEqual(link['href'], f'cases/{case}/{case}.html')
+            self.assertTrue((ROOT / link['href']).is_file())
+            self.assertNotIn('disabled', link)
+            self.assertNotIn('aria-pressed', link)
+            self.assertNotIn('type', link)
+            self.assertIn('閱讀案例', link['aria-label'])
 
 
 if __name__ == '__main__':

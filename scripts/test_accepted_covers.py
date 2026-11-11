@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1] / 'dist'
 class AcceptedCoverTests(unittest.TestCase):
     def test_selected_assets_retain_accepted_bytes(self):
         data = json.loads((ROOT / 'home-atlas/covers/accepted-sources.json').read_text())
-        self.assertEqual(set(data['topics']), {'06', '07', '08', '09', '12'})
+        self.assertEqual(set(data['topics']), {'06', '07', '08', '09', '10', '11', '12'})
         for asset in data['assets']:
             self.assertEqual(hashlib.sha256((ROOT / asset['path']).read_bytes()).hexdigest(), asset['sha256'], asset['path'])
 
